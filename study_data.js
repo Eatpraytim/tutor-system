@@ -1,0 +1,4147 @@
+const STUDY_DATA = {
+  "generated": "2026-04-03T13:29:47.617084",
+  "totalFiles": 84,
+  "modules": {
+    "ST2187": [
+      "2026-03-25_ST2187_linear-regression.md",
+      "2026-03-27_ST2187_multiple-regression.md",
+      "2026-03-29_ST2187_simple-regression-estimation-testing.md",
+      "2026-03-31_ST2187_time-series-analysis.md",
+      "2026-04-02_ST2187_sampling-distributions.md",
+      "2026-04-04_ST2187_monte-carlo-constrained-optimisation.md",
+      "2026-04-07_ST2187_past-exam-section.md",
+      "2026-04-09_ST2187_decision-tree-analysis.md",
+      "2026-04-12_ST2187_heteroskedasticity-probability.md",
+      "2026-04-14_ST2187_probability.md",
+      "2026-04-16_ST2187_data-visualisation.md",
+      "2026-04-19_ST2187_mini-mock-iv-2sls-intro.md",
+      "2026-04-20_ST2187_decision-under-uncertainty.md",
+      "2026-04-21_ST2187_past-exam-section.md",
+      "2026-04-22_ST2187_weak-topic-repair.md",
+      "2026-04-24_ST2187_monte-carlo-optimisation.md",
+      "2026-04-25_ST2187_full-mock.md",
+      "2026-04-27_ST2187_past-exam-section.md",
+      "2026-04-29_ST2187_final-heavy-repair.md",
+      "2026-05-01_ST2187_light-mixed-revision.md",
+      "2026-05-02_ST2187_final-mini-mocks.md",
+      "2026-05-03_ST2187_light-recap.md",
+      "2026-05-04_ST2187_pre-exam-light-review.md",
+      "2026-05-05_ST2187_exam-day.md"
+    ],
+    "ST3188": [
+      "2026-03-26_ST3188_cross-tabs-hypothesis-testing.md",
+      "2026-03-28_ST3188_anova-ancova.md",
+      "2026-03-30_ST3188_correlation-and-regression.md",
+      "2026-04-01_ST3188_sampling-design-procedures.md",
+      "2026-04-03_ST3188_research-design-and-types.md",
+      "2026-04-03_ST3188_sample-size-determination.md",
+      "2026-04-04_ST3188_qualitative-research.md",
+      "2026-04-04_ST3188_secondary-data-analytics.md",
+      "2026-04-05_ST3188_experimentation-causal-design.md",
+      "2026-04-05_ST3188_survey-observation-methods.md",
+      "2026-04-06_ST3188_measurement-and-scaling.md",
+      "2026-04-06_ST3188_questionnaire-design.md",
+      "2026-04-08_ST3188_spss-basics.md",
+      "2026-04-10_ST3188_discriminant-analysis.md",
+      "2026-04-11_ST3188_logit-analysis.md",
+      "2026-04-13_ST3188_factor-analysis.md",
+      "2026-04-15_ST3188_cluster-analysis.md",
+      "2026-04-17_ST3188_conjoint-analysis.md",
+      "2026-04-18_ST3188_mds-mixed-methods.md",
+      "2026-04-23_ST3188_weak-topic-repair.md",
+      "2026-04-26_ST3188_full-mock.md",
+      "2026-04-28_ST3188_preparing-for-exam.md",
+      "2026-04-30_ST3188_final-heavy-repair.md",
+      "2026-05-06_ST3188_exam-day.md"
+    ],
+    "EC2020": [
+      "2026-04-05_EC2020_multiple-regression-intro-ml.md",
+      "2026-05-07_EC2020_regression-core.md",
+      "2026-05-09_EC2020_heteroskedasticity.md",
+      "2026-05-11_EC2020_iv-2sls-measurement-error.md",
+      "2026-05-13_EC2020_binary-response-mle.md",
+      "2026-05-15_EC2020_time-series-core.md",
+      "2026-05-16_EC2020_full-mock.md",
+      "2026-05-17_EC2020_final-repair-maintenance.md",
+      "2026-05-18_EC2020_exam-day.md"
+    ],
+    "ST3189": [
+      "2026-05-08_ST3189_intro-ml-linear-regression.md",
+      "2026-05-10_ST3189_classification.md",
+      "2026-05-12_ST3189_model-selection-shrinkage.md",
+      "2026-05-14_ST3189_trees-ensembles.md",
+      "2026-05-19_ST3189_final-run-in.md",
+      "2026-05-20_ST3189_exam-day.md"
+    ],
+    "ST2134": [
+      "2026-05-21_ST2134_principles-of-sampling.md",
+      "2026-05-22_ST2134_moments-order-statistics.md",
+      "2026-05-23_ST2134_sampling-distributions-point-estimation.md",
+      "2026-05-24_ST2134_interval-estimation.md",
+      "2026-05-25_ST2134_hypothesis-testing-fundamentals.md",
+      "2026-05-26_ST2134_likelihood-testing-structure.md",
+      "2026-05-27_ST2134_score-information-mle.md",
+      "2026-05-28_ST2134_mle-properties-lr-test.md",
+      "2026-05-29_ST2134_mixed-repair.md",
+      "2026-05-30_ST2134_mock-1.md",
+      "2026-05-31_ST2134_sufficient-statistics.md",
+      "2026-06-01_ST2134_optimal-estimators-tests.md",
+      "2026-06-02_ST2134_proof-fluency.md",
+      "2026-06-03_ST2134_mixed-timed-set.md",
+      "2026-06-04_ST2134_mock-2.md",
+      "2026-06-05_ST2134_exam-prep-sheet.md",
+      "2026-06-06_ST2134_mock-3.md",
+      "2026-06-07_ST2134_light-revision.md",
+      "2026-06-08_ST2134_light-recap.md",
+      "2026-06-09_ST2134_very-light-recall.md",
+      "2026-06-10_ST2134_exam-day.md"
+    ]
+  },
+  "schedule": {
+    "2026-03-25": [
+      "2026-03-25_ST2187_linear-regression.md"
+    ],
+    "2026-03-26": [
+      "2026-03-26_ST3188_cross-tabs-hypothesis-testing.md"
+    ],
+    "2026-03-27": [
+      "2026-03-27_ST2187_multiple-regression.md"
+    ],
+    "2026-03-28": [
+      "2026-03-28_ST3188_anova-ancova.md"
+    ],
+    "2026-03-29": [
+      "2026-03-29_ST2187_simple-regression-estimation-testing.md"
+    ],
+    "2026-03-30": [
+      "2026-03-30_ST3188_correlation-and-regression.md"
+    ],
+    "2026-03-31": [
+      "2026-03-31_ST2187_time-series-analysis.md"
+    ],
+    "2026-04-01": [
+      "2026-04-01_ST3188_sampling-design-procedures.md"
+    ],
+    "2026-04-02": [
+      "2026-04-02_ST2187_sampling-distributions.md"
+    ],
+    "2026-04-03": [
+      "2026-04-03_ST3188_research-design-and-types.md",
+      "2026-04-03_ST3188_sample-size-determination.md"
+    ],
+    "2026-04-04": [
+      "2026-04-04_ST2187_monte-carlo-constrained-optimisation.md",
+      "2026-04-04_ST3188_qualitative-research.md",
+      "2026-04-04_ST3188_secondary-data-analytics.md"
+    ],
+    "2026-04-05": [
+      "2026-04-05_EC2020_multiple-regression-intro-ml.md",
+      "2026-04-05_ST3188_experimentation-causal-design.md",
+      "2026-04-05_ST3188_survey-observation-methods.md"
+    ],
+    "2026-04-06": [
+      "2026-04-06_ST3188_measurement-and-scaling.md",
+      "2026-04-06_ST3188_questionnaire-design.md"
+    ],
+    "2026-04-07": [
+      "2026-04-07_ST2187_past-exam-section.md"
+    ],
+    "2026-04-08": [
+      "2026-04-08_ST3188_spss-basics.md"
+    ],
+    "2026-04-09": [
+      "2026-04-09_ST2187_decision-tree-analysis.md"
+    ],
+    "2026-04-10": [
+      "2026-04-10_ST3188_discriminant-analysis.md"
+    ],
+    "2026-04-11": [
+      "2026-04-11_ST3188_logit-analysis.md"
+    ],
+    "2026-04-12": [
+      "2026-04-12_ST2187_heteroskedasticity-probability.md"
+    ],
+    "2026-04-13": [
+      "2026-04-13_ST3188_factor-analysis.md"
+    ],
+    "2026-04-14": [
+      "2026-04-14_ST2187_probability.md"
+    ],
+    "2026-04-15": [
+      "2026-04-15_ST3188_cluster-analysis.md"
+    ],
+    "2026-04-16": [
+      "2026-04-16_ST2187_data-visualisation.md"
+    ],
+    "2026-04-17": [
+      "2026-04-17_ST3188_conjoint-analysis.md"
+    ],
+    "2026-04-18": [
+      "2026-04-18_ST3188_mds-mixed-methods.md"
+    ],
+    "2026-04-19": [
+      "2026-04-19_ST2187_mini-mock-iv-2sls-intro.md"
+    ],
+    "2026-04-20": [
+      "2026-04-20_ST2187_decision-under-uncertainty.md"
+    ],
+    "2026-04-21": [
+      "2026-04-21_ST2187_past-exam-section.md"
+    ],
+    "2026-04-22": [
+      "2026-04-22_ST2187_weak-topic-repair.md"
+    ],
+    "2026-04-23": [
+      "2026-04-23_ST3188_weak-topic-repair.md"
+    ],
+    "2026-04-24": [
+      "2026-04-24_ST2187_monte-carlo-optimisation.md"
+    ],
+    "2026-04-25": [
+      "2026-04-25_ST2187_full-mock.md"
+    ],
+    "2026-04-26": [
+      "2026-04-26_ST3188_full-mock.md"
+    ],
+    "2026-04-27": [
+      "2026-04-27_ST2187_past-exam-section.md"
+    ],
+    "2026-04-28": [
+      "2026-04-28_ST3188_preparing-for-exam.md"
+    ],
+    "2026-04-29": [
+      "2026-04-29_ST2187_final-heavy-repair.md"
+    ],
+    "2026-04-30": [
+      "2026-04-30_ST3188_final-heavy-repair.md"
+    ],
+    "2026-05-01": [
+      "2026-05-01_ST2187_light-mixed-revision.md"
+    ],
+    "2026-05-02": [
+      "2026-05-02_ST2187_final-mini-mocks.md"
+    ],
+    "2026-05-03": [
+      "2026-05-03_ST2187_light-recap.md"
+    ],
+    "2026-05-04": [
+      "2026-05-04_ST2187_pre-exam-light-review.md"
+    ],
+    "2026-05-05": [
+      "2026-05-05_ST2187_exam-day.md"
+    ],
+    "2026-05-06": [
+      "2026-05-06_ST3188_exam-day.md"
+    ],
+    "2026-05-07": [
+      "2026-05-07_EC2020_regression-core.md"
+    ],
+    "2026-05-08": [
+      "2026-05-08_ST3189_intro-ml-linear-regression.md"
+    ],
+    "2026-05-09": [
+      "2026-05-09_EC2020_heteroskedasticity.md"
+    ],
+    "2026-05-10": [
+      "2026-05-10_ST3189_classification.md"
+    ],
+    "2026-05-11": [
+      "2026-05-11_EC2020_iv-2sls-measurement-error.md"
+    ],
+    "2026-05-12": [
+      "2026-05-12_ST3189_model-selection-shrinkage.md"
+    ],
+    "2026-05-13": [
+      "2026-05-13_EC2020_binary-response-mle.md"
+    ],
+    "2026-05-14": [
+      "2026-05-14_ST3189_trees-ensembles.md"
+    ],
+    "2026-05-15": [
+      "2026-05-15_EC2020_time-series-core.md"
+    ],
+    "2026-05-16": [
+      "2026-05-16_EC2020_full-mock.md"
+    ],
+    "2026-05-17": [
+      "2026-05-17_EC2020_final-repair-maintenance.md"
+    ],
+    "2026-05-18": [
+      "2026-05-18_EC2020_exam-day.md"
+    ],
+    "2026-05-19": [
+      "2026-05-19_ST3189_final-run-in.md"
+    ],
+    "2026-05-20": [
+      "2026-05-20_ST3189_exam-day.md"
+    ],
+    "2026-05-21": [
+      "2026-05-21_ST2134_principles-of-sampling.md"
+    ],
+    "2026-05-22": [
+      "2026-05-22_ST2134_moments-order-statistics.md"
+    ],
+    "2026-05-23": [
+      "2026-05-23_ST2134_sampling-distributions-point-estimation.md"
+    ],
+    "2026-05-24": [
+      "2026-05-24_ST2134_interval-estimation.md"
+    ],
+    "2026-05-25": [
+      "2026-05-25_ST2134_hypothesis-testing-fundamentals.md"
+    ],
+    "2026-05-26": [
+      "2026-05-26_ST2134_likelihood-testing-structure.md"
+    ],
+    "2026-05-27": [
+      "2026-05-27_ST2134_score-information-mle.md"
+    ],
+    "2026-05-28": [
+      "2026-05-28_ST2134_mle-properties-lr-test.md"
+    ],
+    "2026-05-29": [
+      "2026-05-29_ST2134_mixed-repair.md"
+    ],
+    "2026-05-30": [
+      "2026-05-30_ST2134_mock-1.md"
+    ],
+    "2026-05-31": [
+      "2026-05-31_ST2134_sufficient-statistics.md"
+    ],
+    "2026-06-01": [
+      "2026-06-01_ST2134_optimal-estimators-tests.md"
+    ],
+    "2026-06-02": [
+      "2026-06-02_ST2134_proof-fluency.md"
+    ],
+    "2026-06-03": [
+      "2026-06-03_ST2134_mixed-timed-set.md"
+    ],
+    "2026-06-04": [
+      "2026-06-04_ST2134_mock-2.md"
+    ],
+    "2026-06-05": [
+      "2026-06-05_ST2134_exam-prep-sheet.md"
+    ],
+    "2026-06-06": [
+      "2026-06-06_ST2134_mock-3.md"
+    ],
+    "2026-06-07": [
+      "2026-06-07_ST2134_light-revision.md"
+    ],
+    "2026-06-08": [
+      "2026-06-08_ST2134_light-recap.md"
+    ],
+    "2026-06-09": [
+      "2026-06-09_ST2134_very-light-recall.md"
+    ],
+    "2026-06-10": [
+      "2026-06-10_ST2134_exam-day.md"
+    ]
+  },
+  "topics": [
+    {
+      "filename": "2026-03-25_ST2187_linear-regression.md",
+      "date": "2026-03-25",
+      "module": "ST2187",
+      "topicSlug": "linear-regression",
+      "title": "ST2187 - Linear Regression & Bivariate Analysis (Exam Sheet)",
+      "sections": {
+        "0": "Imagine you notice that the more hours your shop is open, the more money it makes. You want to turn that hunch into a number: \"for every extra hour, we make roughly £X more.\" That is linear regression in one sentence.\n\nYou have a bunch of data points -- each one is a day, with the number of hours open (X) and the revenue that day (Y). You draw the single straight line that gets as close as possible to all those dots. \"As close as possible\" means you minimise the total squared distance from each dot to the line. That is what OLS (Ordinary Least Squares) does. It finds the best line.\n\nThe line has two numbers that define it: the **intercept** (where the line crosses the Y axis, i.e. your expected revenue on a day you're open zero hours -- often not meaningful) and the **slope** (how much Y changes when X goes up by one unit). The slope is the answer to your original question.\n\nBut how confident should you be in that slope? Maybe you just got lucky data. The **t-test** answers this: it checks whether the slope is far enough from zero that it's unlikely to be pure noise. If the p-value is small (below 0.05), you can trust the slope isn't just randomness.\n\n**R-squared** tells you what fraction of Y's ups and downs your line actually explains. R² = 0.80 means 80% of the variation in revenue is explained by hours open. The remaining 20% is other stuff you haven't measured.\n\nThe crucial caveat: just because two things move together doesn't mean one causes the other. Correlation is not causation. Your line measures association -- it doesn't prove that opening longer *causes* more revenue. Maybe busy days cause you to stay open longer. You'd need an experiment to prove causation.",
+        "1": "**Bivariate analysis** examines the relationship between two variables. **Correlation** measures the strength/direction of linear association. **Simple linear regression** models the conditional mean of Y given X.\n\n**Correlation coefficient r:**\n\n- Measures linear association; r \\in [-1, 1].\n- r = +1: perfect positive linear; r = -1: perfect negative linear; r = 0: no linear relationship.\n- r does NOT measure nonlinear association, causation, or slope magnitude.\n\n**Simple linear regression model:**\nY_i = \\beta_0 + \\beta_1 X_i + \\varepsilon_i\n\n- \\beta_1 (slope): expected change in Y for a one-unit increase in X.\n- \\beta_0 (intercept): expected Y when X = 0 (only meaningful if 0 is in the data range).\n- \\varepsilon_i: random error (deviation of observed from expected).\n\n**OLS (Ordinary Least Squares)** minimises \\sum \\varepsilon_i^2 to produce:\n\\hat{\\beta}*1 = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{\\sum(x_i - \\bar{x})^2} = r*{XY} \\frac{s_Y}{s_X}\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}\n\n**Key assumptions (Gauss-Markov for BLUE):**\n\n1. **Linearity:** the population regression is linear in parameters.\n2. **Random sampling / independence** of observations.\n3. **Zero conditional mean:** E(\\varepsilon|X) = 0 (no omitted variable bias).\n4. **Homoscedasticity:** \\text{Var}(\\varepsilon|X) = \\sigma^2 constant (no fan shape).\n5. **Normality of errors** (for exact t- and F-tests; CLT relaxes this for large n).\n6. **No exact multicollinearity** (relevant in multiple regression).\n\n**Violations and consequences:**\n\n\n| Assumption violated | Consequence                                     | Detection                                                |\n| ------------------- | ----------------------------------------------- | -------------------------------------------------------- |\n| Linearity           | Biased estimates, poor fit                      | Residual vs fitted plot (curved pattern)                 |\n| Homoscedasticity    | OLS still unbiased but SE wrong → invalid tests | Fan shape in residual plot                               |\n| Normality           | t/F tests invalid for small n                   | Histogram or QQ plot of residuals                        |\n| Independence        | SE underestimated → spurious significance       | Durbin-Watson statistic (< 2 = positive autocorrelation) |\n| Omitted variable    | Biased estimates                                | Theory / logic; no pure statistical test                 |",
+        "2": "| Concept                    | Formula                                                                           |\n| -------------------------- | --------------------------------------------------------------------------------- |\n| OLS slope                  | \\hat{\\beta}_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}        |\n| OLS intercept              | \\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}                                    |\n| Residual                   | \\hat{\\varepsilon}_i = y_i - \\hat{y}_i                                             |\n| Standard error of estimate | s_e = \\sqrt{\\frac{\\sum \\hat{\\varepsilon}_i^2}{n-2}}                               |\n| R^2                        | 1 - \\frac{SSE}{SST} = \\frac{SSR}{SST}; proportion of variance in Y explained by X |\n| Correlation squared        | R^2 = r^2 (in simple regression only)                                             |\n| t-test for slope           | t = \\frac{\\hat{\\beta}_1}{SE(\\hat{\\beta}_1)}, df = n − 2                           |\n| F-test (overall model)     | F = \\frac{MSR}{MSE} = \\frac{SSR/1}{SSE/(n-2)}; in SLR, F = t^2                    |\n| CI for slope               | \\hat{\\beta}*1 \\pm t*{\\alpha/2, n-2} \\cdot SE(\\hat{\\beta}_1)                       |\n| Prediction accuracy        | ~95% of observed Y values fall within \\pm 2 s_e of fitted values                  |",
+        "3": "**Given output:** \\hat{y} = 12.0 + 3.5x_1, SE(\\hat{\\beta}_1) = 1.2, n = 40, R^2 = 0.55, s_e = 4.5.\n\n**Step 1 — Interpret slope:**\n\"A one-unit increase in x_1 is associated with a 3.5-unit increase in expected Y, ceteris paribus.\"\n\n**Step 2 — Test H_0: \\beta_1 = 0:**\nt = 3.5 / 1.2 = 2.92, df = 38. Critical value t_{0.025, 38} \\approx 2.02.\nSince 2.92 > 2.02, reject H_0 at 5%. The slope is statistically significant.\n\n**Step 3 — 95% CI for slope:**\n3.5 \\pm 2.02(1.2) = 3.5 \\pm 2.42 = [1.08, 5.92].\nThe CI does not include 0, consistent with rejecting H_0 (duality principle).\n\n**Step 4 — Model fit:**\n\"R^2 = 0.55: 55% of the variation in Y is explained by X. This is a moderate fit — 45% of variation remains unexplained, suggesting other factors are at work.\"\n\n**Step 5 — Prediction accuracy:**\n\"About 95% of actual Y values will fall within \\pm 2(4.5) = \\pm 9.0 units of the predicted values.\"\n\n**Step 6 — Check ANOVA F-test:**\nF = t^2 = 2.92^2 = 8.53. With df = (1, 38), p < 0.01. The model has significant overall explanatory power.\n\n**Step 7 — Business recommendation:**\n\"The data suggest a significant positive relationship between x_1 and Y. Each additional unit of x_1 is associated with a £3.5k increase in Y. However, R^2 = 0.55 means the model is incomplete — additional predictors should be investigated.\"",
+        "4": "1. **(10 min)** List the 5 key assumptions of OLS. For homoscedasticity and independence, describe one consequence of violation and one detection method.\n2. **(10 min)** Given \\hat{\\beta}_0 = 25, \\hat{\\beta}_1 = -1.8, SE(\\hat{\\beta}_1) = 0.6, R^2 = 0.42, n = 50: interpret the slope, test significance, construct 95% CI, and evaluate model fit.\n3. **(15 min)** Interpret full regression output including: (a) ANOVA table (F-ratio, p-value for overall model), (b) coefficient table with p-values, (c) R^2 and s_e. Write a 5-sentence management recommendation. Include a dummy variable interpretation (e.g., \"1 = female, 0 = male; coefficient = average difference for females relative to males\").\n4. **(8 min)** Explain correlation vs regression: when would you use each? Why doesn't r = 0.9 prove causation?\n5. **(7 min)** What is the difference between a confidence interval for the mean response and a prediction interval for a new observation? Which is wider and why?",
+        "5": "1. **Write model and hypotheses:** Y = \\beta_0 + \\beta_1 X + \\varepsilon. State H_0: \\beta_1 = 0 vs H_1: \\beta_1 \\ne 0.\n2. **Check overall significance first:** quote the ANOVA F-statistic and its p-value to confirm the model has explanatory power.\n3. **Interpret coefficients:** \"For a one-unit increase in X, Y changes by \\hat{\\beta}_1 units on average.\" Remember units. For dummy variables: \"The coefficient represents the average difference between category 1 and the reference category.\"\n4. **Report t-stat, p-value, and CI** for the key slope coefficient.\n5. **Evaluate model fit:** R^2, adjusted R^2 (if multiple regression), and s_e.\n6. **State decision and translate to business context.**\n7. **Mention assumption caveats:** note if residuals look non-normal, if there's a fan shape (heteroscedasticity), or if Durbin-Watson signals autocorrelation.",
+        "6": "- **Ignoring multicollinearity:** highly correlated explanatory variables cause coefficients to have the \"wrong\" sign, t-values to drop, and p-values to spike. Check VIF; values > 10 signal serious multicollinearity.\n- **Confusing statistical significance with practical importance:** a very large n can produce tiny p-values for minuscule, practically useless slope estimates.\n- **Quoting R^2 as proof of causality:** high R^2 proves strong linear association, not that X causes Y. A third omitted variable could drive both.\n- **\"Fishing expeditions\":** mindlessly adding variables to inflate R^2. Always check if adjusted R^2 increases to justify adding a variable.\n- **Extrapolation:** predicting Y for X values far outside the sample range. The linear relationship may not hold outside the observed data.\n- **Forgetting \"holding all else constant\":** in regression interpretation, each coefficient assumes other X variables are fixed. Omitting this qualifier is a mark-losing error.\n- **Forgetting units:** \"β₁ = 3.5\" is incomplete; \"β₁ = 3.5 thousand £ per unit\" is correct."
+      },
+      "formulas": [
+        {
+          "concept": "OLS slope",
+          "formula": "\\hat{\\beta}_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}"
+        },
+        {
+          "concept": "OLS intercept",
+          "formula": "\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}"
+        },
+        {
+          "concept": "Residual",
+          "formula": "\\hat{\\varepsilon}_i = y_i - \\hat{y}_i"
+        },
+        {
+          "concept": "Standard error of estimate",
+          "formula": "s_e = \\sqrt{\\frac{\\sum \\hat{\\varepsilon}_i^2}{n-2}}"
+        },
+        {
+          "concept": "R^2",
+          "formula": "1 - \\frac{SSE}{SST} = \\frac{SSR}{SST}; proportion of variance in Y explained by X"
+        },
+        {
+          "concept": "Correlation squared",
+          "formula": "R^2 = r^2 (in simple regression only)"
+        },
+        {
+          "concept": "t-test for slope",
+          "formula": "t = \\frac{\\hat{\\beta}_1}{SE(\\hat{\\beta}_1)}, df = n − 2"
+        },
+        {
+          "concept": "F-test (overall model)",
+          "formula": "F = \\frac{MSR}{MSE} = \\frac{SSR/1}{SSE/(n-2)}; in SLR, F = t^2"
+        },
+        {
+          "concept": "CI for slope",
+          "formula": "\\hat{\\beta}*1 \\pm t*{\\alpha/2, n-2} \\cdot SE(\\hat{\\beta}_1)"
+        },
+        {
+          "concept": "Prediction accuracy",
+          "formula": "~95% of observed Y values fall within \\pm 2 s_e of fitted values"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "List the 5 key assumptions of OLS. For homoscedasticity and independence, describe one consequence of violation and one detection method."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given \\hat{\\beta}_0 = 25, \\hat{\\beta}_1 = -1.8, SE(\\hat{\\beta}_1) = 0.6, R^2 = 0.42, n = 50: interpret the slope, test significance, construct 95% CI, and evaluate model fit."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Interpret full regression output including: (a) ANOVA table (F-ratio, p-value for overall model), (b) coefficient table with p-values, (c) R^2 and s_e. Write a 5-sentence management recommendation. Include a dummy variable interpretation (e.g., \"1 = female, 0 = male; coefficient = average difference for females relative to males\")."
+        },
+        {
+          "time_minutes": 8,
+          "text": "Explain correlation vs regression: when would you use each? Why doesn't r = 0.9 prove causation?"
+        },
+        {
+          "time_minutes": 7,
+          "text": "What is the difference between a confidence interval for the mean response and a prediction interval for a new observation? Which is wider and why?"
+        }
+      ],
+      "feynmanText": "Imagine you notice that the more hours your shop is open, the more money it makes. You want to turn that hunch into a number: \"for every extra hour, we make roughly £X more.\" That is linear regression in one sentence.\n\nYou have a bunch of data points -- each one is a day, with the number of hours open (X) and the revenue that day (Y). You draw the single straight line that gets as close as possible to all those dots. \"As close as possible\" means you minimise the total squared distance from each dot to the line. That is what OLS (Ordinary Least Squares) does. It finds the best line.\n\nThe line has two numbers that define it: the **intercept** (where the line crosses the Y axis, i.e. your expected revenue on a day you're open zero hours -- often not meaningful) and the **slope** (how much Y changes when X goes up by one unit). The slope is the answer to your original question.\n\nBut how confident should you be in that slope? Maybe you just got lucky data. The **t-test** answers this: it checks whether the slope is far enough from zero that it's unlikely to be pure noise. If the p-value is small (below 0.05), you can trust the slope isn't just randomness.\n\n**R-squared** tells you what fraction of Y's ups and downs your line actually explains. R² = 0.80 means 80% of the variation in revenue is explained by hours open. The remaining 20% is other stuff you haven't measured.\n\nThe crucial caveat: just because two things move together doesn't mean one causes the other. Correlation is not causation. Your line measures association -- it doesn't prove that opening longer *causes* more revenue. Maybe busy days cause you to stay open longer. You'd need an experiment to prove causation.",
+      "feynmanKeyTerms": [
+        "intercept",
+        "slope",
+        "t-test",
+        "R-squared"
+      ],
+      "modelAnswer": "1. **Write model and hypotheses:** Y = \\beta_0 + \\beta_1 X + \\varepsilon. State H_0: \\beta_1 = 0 vs H_1: \\beta_1 \\ne 0.\n2. **Check overall significance first:** quote the ANOVA F-statistic and its p-value to confirm the model has explanatory power.\n3. **Interpret coefficients:** \"For a one-unit increase in X, Y changes by \\hat{\\beta}_1 units on average.\" Remember units. For dummy variables: \"The coefficient represents the average difference between category 1 and the reference category.\"\n4. **Report t-stat, p-value, and CI** for the key slope coefficient.\n5. **Evaluate model fit:** R^2, adjusted R^2 (if multiple regression), and s_e.\n6. **State decision and translate to business context.**\n7. **Mention assumption caveats:** note if residuals look non-normal, if there's a fan shape (heteroscedasticity), or if Durbin-Watson signals autocorrelation.",
+      "commonTraps": "- **Ignoring multicollinearity:** highly correlated explanatory variables cause coefficients to have the \"wrong\" sign, t-values to drop, and p-values to spike. Check VIF; values > 10 signal serious multicollinearity.\n- **Confusing statistical significance with practical importance:** a very large n can produce tiny p-values for minuscule, practically useless slope estimates.\n- **Quoting R^2 as proof of causality:** high R^2 proves strong linear association, not that X causes Y. A third omitted variable could drive both.\n- **\"Fishing expeditions\":** mindlessly adding variables to inflate R^2. Always check if adjusted R^2 increases to justify adding a variable.\n- **Extrapolation:** predicting Y for X values far outside the sample range. The linear relationship may not hold outside the observed data.\n- **Forgetting \"holding all else constant\":** in regression interpretation, each coefficient assumes other X variables are fixed. Omitting this qualifier is a mark-losing error.\n- **Forgetting units:** \"β₁ = 3.5\" is incomplete; \"β₁ = 3.5 thousand £ per unit\" is correct.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-03-26_ST3188_cross-tabs-hypothesis-testing.md",
+      "date": "2026-03-26",
+      "module": "ST3188",
+      "topicSlug": "cross-tabs-hypothesis-testing",
+      "title": "ST3188 - Cross-Tabulation and Hypothesis Testing (Exam Sheet)",
+      "sections": {
+        "0": "Imagine you survey 500 people and ask two things: \"Are you male or female?\" and \"Do you prefer Brand A or Brand B?\" You now have two categories for each person. A **cross-tabulation** is simply putting these into a grid and counting how many people fall into each box (e.g. 120 males who prefer A, 80 males who prefer B, etc.).\n\nThe question is: does gender matter for brand preference, or are the two unrelated? If they're unrelated (independent), then the proportion preferring Brand A should be roughly the same for males and females. You calculate what the counts *would* look like if gender didn't matter at all -- these are the **expected counts**. Then you compare the actual counts to the expected counts.\n\nThe **chi-square statistic** adds up how far off every cell is from what independence predicts. A big chi-square means the actual pattern is very different from what you'd see if the variables were unrelated. The **p-value** tells you how surprised you should be: if p < 0.05, the pattern is too strong to be just luck, so you conclude the variables are associated.\n\nBut \"associated\" doesn't tell you *how strongly*. **Cramer's V** gives you that -- it ranges from 0 (no association) to 1 (perfect association). And association is never causation: just because men prefer Brand A more doesn't mean being male *causes* that preference. Something else (age, income, exposure) might be the real driver.\n\nManagers love cross-tabs because they're dead simple to read. No equations needed -- just look at the percentages in each row and the pattern jumps out. That simplicity is also their limitation: they can only handle 2-3 variables before the table becomes unreadable.",
+        "1": "**Purpose:** Cross-tabulation describes two or more variables simultaneously, producing tables that reflect the **joint distribution** of variables with a limited number of categories. It is the most commonly used technique for examining relationships between categorical variables.\n\n**Why managers like cross-tabs:**\n- Easily interpreted and understood by managers without strong statistical backgrounds.\n- Clarity provides a strong link between research results and managerial action.\n- Versatile -- a series of cross-tabs may provide greater insights than a single multivariate analysis.\n- Simple to conduct and appealing to less sophisticated researchers.\n\n**Limitations:**\n- Seldom used for more than three variables (interpretation becomes too complex).\n- Cell counts drop as variables increase -- computed statistics become unreliable.\n- Not an efficient way to examine relationships when there are many variables.\n- Examines **association**, NOT causation.\n\n**Hypothesis Testing Procedure (8 steps):**\n1. Formulate H₀ and H₁.\n2. Select an appropriate test.\n3. Choose the significance level (α).\n4. Collect data and calculate the test statistic.\n5. Determine the critical value or p-value.\n6. Compare and make statistical decision.\n7. Draw a marketing research conclusion.\n8. Translate into commercial recommendation.",
+        "2": "### Expected Frequency\n\n$$f_e = \\frac{(\\text{row total}) \\times (\\text{column total})}{n}$$\n\nThis is the count expected in each cell **if the variables are independent**.\n\n### Chi-Square Test Statistic\n\n$$\\chi^2 = \\sum \\frac{(f_o - f_e)^2}{f_e}$$\n\nWhere $f_o$ = observed frequency, $f_e$ = expected frequency. Large $\\chi^2$ = observed counts differ substantially from independence.\n\n### Degrees of Freedom\n\n$$df = (r - 1) \\times (c - 1)$$\n\nWhere $r$ = number of rows, $c$ = number of columns.\n\n### Strength of Association Statistics\n\n| Statistic | Formula | When to use |\n|---|---|---|\n| **Phi coefficient (φ)** | $\\phi = \\sqrt{\\frac{\\chi^2}{n}}$ | 2x2 tables only |\n| **Contingency coefficient (C)** | $C = \\sqrt{\\frac{\\chi^2}{\\chi^2 + n}}$ | Tables of any size |\n| **Cramer's V** | $V = \\sqrt{\\frac{\\chi^2 / n}{\\min(r-1, c-1)}}$ | Tables larger than 2x2 (most versatile) |\n\n### Hypotheses for Cross-Tabulation\n\n- **H₀:** There is **no association** between the two variables (they are independent).\n- **H₁:** There **is an association** between the two variables.\n\n### Rule of Thumb\n\nThe expected frequency in each cell should be **at least 5** for the chi-square statistic to be reliable.\n\n### Direction of Percentages\n\nCompute percentages **in the direction of the independent variable**, across the dependent variable. Computing in the wrong direction can lead to implausible conclusions.",
+        "3": "### Introducing a Third Variable\n\nCross-tabulating two variables can be misleading until a third variable is introduced. Four possible outcomes:\n\n1. **Refine the relationship:** The third variable clarifies how the original variables interact (e.g. unmarried people buy more designer clothes, but the effect is much stronger for females than males).\n2. **Reveal a spurious relationship:** The initial association disappears when the third variable is controlled for -- the original association was false.\n3. **Reveal a suppressed association:** No association is initially observed, but one appears when the third variable is introduced -- the association was masked.\n4. **No change:** The third variable does not influence the relationship.\n\n### Example Output Interpretation\n\n> Given: χ² = 15.3, df = 4, p < 0.001, Cramer's V = 0.28, n = 200.\n>\n> **Decision:** p < 0.05, so reject H₀. There is a statistically significant association between the two variables.\n>\n> **Strength:** Cramer's V = 0.28 indicates a moderate association.\n>\n> **Business recommendation:** Since the association between customer segment and purchase behaviour is significant and moderate, the company should consider differentiated marketing strategies for each segment, particularly adjusting promotional offers (Promotion) and product range (Product) to match the identified purchase patterns.",
+        "4": "1. **(10 min)** Build expected counts from a 2x3 table and determine degrees of freedom.\n2. **(15 min)** Interpret SPSS output: state H₀ and H₁, report χ² value, df, and p-value, determine strength of association using Cramer's V, and make a statistical decision.\n3. **(25 min)** Draft a commercial recommendation linking findings to the marketing mix (4 P's: product, price, placement, promotion).",
+        "5": "An \"excellent answer\" requires sufficient depth of statistical explanation. Follow this structure:\n\n1. **State the hypotheses explicitly:** Write out H₀ (no association) and H₁ (association).\n2. **State the test statistic:** Identify the test (chi-square test of association).\n3. **Report values:** State the χ² value, degrees of freedom, and the exact p-value from SPSS output.\n4. **Statistical decision:** Compare p-value to α (usually 0.05). If p < α, reject H₀.\n5. **Determine strength of association:** If H₀ is rejected, report Cramer's V, phi, or contingency coefficient and interpret the magnitude.\n6. **Commercial insight:** Provide a clear business recommendation based on the findings, linking back to the marketing mix (the 4 P's).\n\n### For Part (b) -- \"Reasons for frequent use and limitations\" (10 marks)\n\n> Cross-tabulations are popular for the following reasons: **ease of comprehension** (results can be easily interpreted by managers with little statistical knowledge), **versatility** (a series of cross-tabs may provide greater insights than a single multivariate analysis), **clarity** (interpretations provide a stronger link between research results and managerial action), and **simplicity** (easy to conduct and appealing to less sophisticated researchers).\n>\n> However, cross-tabulation is seldom used for more than three variables because interpretation becomes complex. Since the number of cells increases multiplicatively, maintaining adequate respondent counts in each cell becomes problematic and the statistics computed could be unreliable. Cross-tabulation is also not an efficient way of examining relationships when there are several variables.",
+        "6": "- **Not writing out hypotheses:** Simply stating \"the result is significant\" loses marks. You must explicitly write H₀ and H₁ and cite the test statistic and p-value.\n- **Association vs causation:** Cross-tabulation examines association, not causation. Causal inferences require experimental research design. Never claim that cross-tab results prove one variable causes another.\n- **Wrong percentage direction:** Compute percentages in the direction of the **independent variable** (across the dependent variable). Computing based on the dependent variable leads to implausible conclusions.\n- **Too many variables:** Using cross-tabs for more than three variables makes interpretation too complex, cell counts drop too low, and statistics become unreliable.\n- **Ignoring the expected count rule:** If expected frequencies are below 5 in many cells, the chi-square statistic is unreliable. Note this if it applies to the data.\n- **Stopping at \"significant\":** After determining significance, you MUST report the strength of association (Cramer's V) and provide a commercial recommendation."
+      },
+      "formulas": [
+        {
+          "concept": "Statistic",
+          "formula": "Formula"
+        },
+        {
+          "concept": "**Phi coefficient (φ)**",
+          "formula": "$\\phi = \\sqrt{\\frac{\\chi^2}{n}}$"
+        },
+        {
+          "concept": "**Contingency coefficient (C)**",
+          "formula": "$C = \\sqrt{\\frac{\\chi^2}{\\chi^2 + n}}$"
+        },
+        {
+          "concept": "**Cramer's V**",
+          "formula": "$V = \\sqrt{\\frac{\\chi^2 / n}{\\min(r-1, c-1)}}$"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Build expected counts from a 2x3 table and determine degrees of freedom."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Interpret SPSS output: state H₀ and H₁, report χ² value, df, and p-value, determine strength of association using Cramer's V, and make a statistical decision."
+        },
+        {
+          "time_minutes": 25,
+          "text": "Draft a commercial recommendation linking findings to the marketing mix (4 P's: product, price, placement, promotion)."
+        }
+      ],
+      "feynmanText": "Imagine you survey 500 people and ask two things: \"Are you male or female?\" and \"Do you prefer Brand A or Brand B?\" You now have two categories for each person. A **cross-tabulation** is simply putting these into a grid and counting how many people fall into each box (e.g. 120 males who prefer A, 80 males who prefer B, etc.).\n\nThe question is: does gender matter for brand preference, or are the two unrelated? If they're unrelated (independent), then the proportion preferring Brand A should be roughly the same for males and females. You calculate what the counts *would* look like if gender didn't matter at all -- these are the **expected counts**. Then you compare the actual counts to the expected counts.\n\nThe **chi-square statistic** adds up how far off every cell is from what independence predicts. A big chi-square means the actual pattern is very different from what you'd see if the variables were unrelated. The **p-value** tells you how surprised you should be: if p < 0.05, the pattern is too strong to be just luck, so you conclude the variables are associated.\n\nBut \"associated\" doesn't tell you *how strongly*. **Cramer's V** gives you that -- it ranges from 0 (no association) to 1 (perfect association). And association is never causation: just because men prefer Brand A more doesn't mean being male *causes* that preference. Something else (age, income, exposure) might be the real driver.\n\nManagers love cross-tabs because they're dead simple to read. No equations needed -- just look at the percentages in each row and the pattern jumps out. That simplicity is also their limitation: they can only handle 2-3 variables before the table becomes unreadable.",
+      "feynmanKeyTerms": [
+        "cross-tabulation",
+        "expected counts",
+        "chi-square statistic",
+        "p-value",
+        "Cramer's V"
+      ],
+      "modelAnswer": "An \"excellent answer\" requires sufficient depth of statistical explanation. Follow this structure:\n\n1. **State the hypotheses explicitly:** Write out H₀ (no association) and H₁ (association).\n2. **State the test statistic:** Identify the test (chi-square test of association).\n3. **Report values:** State the χ² value, degrees of freedom, and the exact p-value from SPSS output.\n4. **Statistical decision:** Compare p-value to α (usually 0.05). If p < α, reject H₀.\n5. **Determine strength of association:** If H₀ is rejected, report Cramer's V, phi, or contingency coefficient and interpret the magnitude.\n6. **Commercial insight:** Provide a clear business recommendation based on the findings, linking back to the marketing mix (the 4 P's).\n\n### For Part (b) -- \"Reasons for frequent use and limitations\" (10 marks)\n\n> Cross-tabulations are popular for the following reasons: **ease of comprehension** (results can be easily interpreted by managers with little statistical knowledge), **versatility** (a series of cross-tabs may provide greater insights than a single multivariate analysis), **clarity** (interpretations provide a stronger link between research results and managerial action), and **simplicity** (easy to conduct and appealing to less sophisticated researchers).\n>\n> However, cross-tabulation is seldom used for more than three variables because interpretation becomes complex. Since the number of cells increases multiplicatively, maintaining adequate respondent counts in each cell becomes problematic and the statistics computed could be unreliable. Cross-tabulation is also not an efficient way of examining relationships when there are several variables.",
+      "commonTraps": "- **Not writing out hypotheses:** Simply stating \"the result is significant\" loses marks. You must explicitly write H₀ and H₁ and cite the test statistic and p-value.\n- **Association vs causation:** Cross-tabulation examines association, not causation. Causal inferences require experimental research design. Never claim that cross-tab results prove one variable causes another.\n- **Wrong percentage direction:** Compute percentages in the direction of the **independent variable** (across the dependent variable). Computing based on the dependent variable leads to implausible conclusions.\n- **Too many variables:** Using cross-tabs for more than three variables makes interpretation too complex, cell counts drop too low, and statistics become unreliable.\n- **Ignoring the expected count rule:** If expected frequencies are below 5 in many cells, the chi-square statistic is unreliable. Note this if it applies to the data.\n- **Stopping at \"significant\":** After determining significance, you MUST report the strength of association (Cramer's V) and provide a commercial recommendation.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-03-27_ST2187_multiple-regression.md",
+      "date": "2026-03-27",
+      "module": "ST2187",
+      "topicSlug": "multiple-regression",
+      "title": "ST2187 - Multiple Regression (Exam Sheet)",
+      "sections": {
+        "0": "Simple regression says \"Y depends on X.\" But in real life, things depend on many factors at once. A shop's revenue doesn't just depend on hours open -- it also depends on the weather, the day of the week, whether there's a sale running, and so on.\n\nMultiple regression is the same straight-line idea, but with multiple X's: Y = a + b₁X₁ + b₂X₂ + b₃X₃ + ... Each b tells you: \"holding everything else constant, if this one factor goes up by one unit, Y changes by this much.\" That phrase \"holding everything else constant\" is the magic of multiple regression -- it isolates the effect of each factor.\n\n**Adjusted R²** is like regular R² but with a penalty. Regular R² always goes up when you add more variables, even useless ones. Adjusted R² punishes you for adding variables that don't actually help. If adjusted R² drops when you add a variable, that variable is probably noise.\n\n**The F-test** asks: \"does this whole model, with all its variables, explain Y better than just using the average of Y?\" If the F-test p-value is small, the answer is yes -- your variables collectively matter.\n\n**Multicollinearity** is when two of your X variables are highly correlated with each other (e.g. \"years of education\" and \"income\" both move together). This makes it hard to tell which one is actually driving Y, because their effects are tangled up. The coefficients become unstable and hard to interpret. The fix: drop one of the correlated variables, or combine them.",
+        "1": "**Multiple regression** extends SLR to model Y as a function of k explanatory variables simultaneously. It isolates the partial effect of each X while controlling for all others.\n\n**Population model:**\n\\[Y = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\cdots + \\beta_k X_k + \\varepsilon\\]\n\n**Estimated equation:**\n\\[\\hat{Y} = b_0 + b_1 X_1 + b_2 X_2 + \\cdots + b_k X_k\\]\n\n**Ceteris paribus interpretation:** Each slope \\(b_j\\) represents the expected change in Y when \\(X_j\\) increases by one unit, **holding all other explanatory variables constant**. This is the defining feature of multiple regression — it isolates partial effects, not total unconditional effects.\n\n**Key model evaluation tools:**\n- **R²:** proportion of total variation in Y explained by all X variables combined. Can only increase (or stay the same) when variables are added.\n- **Adjusted R²:** penalises for adding weak predictors. \\(\\bar{R}^2 = 1 - \\frac{(1-R^2)(n-1)}{n-k-1}\\). Use this to decide whether adding a variable actually improves the model. Adjusted R² can decrease if a new variable adds noise.\n- **Standard error of estimate (\\(s_e\\)):** \\(s_e = \\sqrt{SSE/(n-k-1)}\\). Measures the typical prediction error. About 95% of observed Y values fall within \\(\\pm 2s_e\\) of predicted values.\n- **F-test for overall fit:** \\(H_0: \\beta_1 = \\beta_2 = \\cdots = \\beta_k = 0\\). If p-value < α, the model has significant explanatory power as a whole.\n- **Individual t-tests:** \\(t_j = b_j / SE(b_j)\\), df = n − k − 1. Tests whether each individual variable contributes significantly after controlling for all others.\n\n**Dummy variables:**\n- For a categorical variable with c categories, create c − 1 dummy (0/1) variables. The omitted category is the **reference group**.\n- Coefficient of a dummy = average difference in Y between that category and the reference category, holding other variables constant.\n- Example: if Female = 1 and Male = 0 (reference), then \\(b_{Female} = 4.2\\) means \"females score 4.2 units higher than males on average, holding other factors constant.\"\n\n**Interaction terms:**\n- \\(X_1 \\times X_2\\) allows the slope of one variable to depend on the level of another.\n- \"The effect of advertising on sales differs between regions\" → include an interaction term.\n\n**Parsimony principle:** explain the most with the fewest necessary variables. Prefer simpler models unless the additional variable produces a meaningful increase in adjusted R² and reduction in \\(s_e\\).",
+        "2": "| Concept | Formula |\n|---|---|\n| t-test for \\(\\beta_j\\) | \\(t = b_j / SE(b_j)\\), df = n − k − 1 |\n| F-test (overall) | \\(F = MSR/MSE\\), where MSR = SSR/k, MSE = SSE/(n−k−1) |\n| Standard error of estimate | \\(s_e = \\sqrt{SSE/(n-k-1)}\\) |\n| R² | \\(1 - SSE/SST\\) |\n| Adjusted R² | \\(1 - \\frac{(1-R^2)(n-1)}{n-k-1}\\) |\n| CI for \\(\\beta_j\\) | \\(b_j \\pm t_{\\alpha/2, n-k-1} \\cdot SE(b_j)\\) |\n| Partial F-test (nested models) | \\(F = \\frac{(SSE_R - SSE_U)/q}{SSE_U/(n-k-1)}\\), q = number of restrictions |\n| VIF | \\(VIF_j = 1/(1 - R_j^2)\\), where \\(R_j^2\\) = R² from regressing \\(X_j\\) on all other X's. VIF > 10 → serious multicollinearity |",
+        "3": "**Given output:** \\(\\hat{Y} = 5.0 + 2.0 X_1 - 0.8 X_2 + 4.2 D_{\\text{female}}\\)\n\n| Variable | Coefficient | SE | t-stat | p-value |\n|---|---|---|---|---|\n| Intercept | 5.0 | 1.5 | 3.33 | 0.002 |\n| \\(X_1\\) | 2.0 | 0.6 | 3.33 | 0.002 |\n| \\(X_2\\) | −0.8 | 0.5 | −1.60 | 0.118 |\n| \\(D_{\\text{female}}\\) | 4.2 | 1.8 | 2.33 | 0.025 |\n\nANOVA: F = 12.4, p < 0.001. R² = 0.62, Adjusted R² = 0.59, \\(s_e\\) = 3.8, n = 50.\n\n**Step 1 — Overall significance:**\nF = 12.4, p < 0.001. Reject \\(H_0: \\beta_1 = \\beta_2 = \\beta_3 = 0\\). The model has significant explanatory power.\n\n**Step 2 — Interpret slopes:**\n- \\(X_1\\): \"A one-unit increase in \\(X_1\\) is associated with a 2.0-unit increase in Y, holding \\(X_2\\) and gender constant.\" (p = 0.002: significant at 5%.)\n- \\(X_2\\): \"A one-unit increase in \\(X_2\\) is associated with a 0.8-unit decrease in Y, holding other variables constant.\" (p = 0.118: not significant at 5%. Consider dropping \\(X_2\\).)\n- \\(D_{\\text{female}}\\): \"Females score 4.2 units higher than males on average, holding \\(X_1\\) and \\(X_2\\) constant.\" (p = 0.025: significant at 5%.)\n\n**Step 3 — Model fit:**\n\"R² = 0.62: the three predictors explain 62% of the variation in Y. Adjusted R² = 0.59 is close to R², suggesting minimal overfitting. The standard error of 3.8 means predictions are typically within ±7.6 units of actual values.\"\n\n**Step 4 — Model comparison (removing \\(X_2\\)):**\nIf dropping \\(X_2\\) raises adjusted R² (e.g., from 0.59 to 0.60) and lowers \\(s_e\\), the simpler model is preferred by the parsimony principle.\n\n**Step 5 — Business recommendation:**\n\"\\(X_1\\) is the strongest driver of Y. The gender gap of 4.2 units is significant and should be explored further. \\(X_2\\) does not contribute significantly — the lean model with \\(X_1\\) and gender is recommended.\"",
+        "4": "1. **(10 min)** Explain the ceteris paribus interpretation with a concrete example: \"When we add variable \\(X_2\\) to a model with \\(X_1\\), the coefficient of \\(X_1\\) changes from 4.5 to 2.0. Explain why.\"\n2. **(10 min)** Given a full regression output table (6 variables, ANOVA, R², \\(s_e\\)), identify significant and non-significant variables. Propose a reduced model and justify using adjusted R² and parsimony.\n3. **(10 min)** Interpret a dummy variable and an interaction term: \"\\(\\hat{Y} = 10 + 3X + 5D + 2(X \\times D)\\)\". What is the equation for D = 0? For D = 1? Explain the interaction in business terms.\n4. **(10 min)** VIF values for 4 explanatory variables are: 1.2, 1.5, 8.3, 15.6. (a) Which variable has the multicollinearity problem? (b) What might happen to its coefficient and p-value? (c) What are two remedies?\n5. **(10 min)** Partial F-test: a model with k = 5 variables has SSE = 1200 (n = 60). A restricted model with 3 variables has SSE = 1400. Test whether the two dropped variables are jointly significant at 5%.",
+        "5": "1. **Define variable roles:** identify the single dependent variable and all explanatory variables (continuous, categorical/dummy, interaction).\n2. **Report overall model significance:** ANOVA F-test and p-value.\n3. **Interpret each coefficient ceteris paribus:** state direction, magnitude, and significance. For dummies: compare to reference category. For interactions: explain how the slope of one variable changes across groups.\n4. **Evaluate model fit:** R², adjusted R², \\(s_e\\).\n5. **Compare models if relevant:** does removing weak variables improve adjusted R²?\n6. **State business recommendation** tied to the significant coefficients.\n7. **Check diagnostics:** residual plot for non-linearity/heteroscedasticity, Durbin-Watson for autocorrelation, VIF for multicollinearity.",
+        "6": "- **Interpreting coefficients as unconditional effects:** \"β₁ = 2.0 means X₁ increases Y by 2.0\" — this is only true holding all other variables constant. In simple regression of Y on X₁ alone, the coefficient can be very different because of omitted variable bias.\n- **Ignoring multicollinearity warnings:** highly correlated X variables cause coefficients to flip sign, t-values to drop, and p-values to spike. Important variables appear \"insignificant.\" Always report VIF.\n- **Overfitting with too many weak regressors:** adding garbage variables inflates R² but decreases adjusted R². Monitor adjusted R² and \\(s_e\\) to avoid \"fishing expeditions.\"\n- **Assuming causation:** a significant coefficient proves linear association conditional on the other variables, not that X causes Y.\n- **Extrapolation:** predicting for X-combinations far outside the sample data is risky. The relationships may not hold outside the observed range.\n- **Forgetting the reference category for dummies:** \"the coefficient for Region B = 5\" is meaningless without stating \"relative to Region A (the reference category).\"\n- **Not checking if F-test is significant before interpreting individual t-tests:** if the overall model is not significant, individual coefficient interpretations are unreliable."
+      },
+      "formulas": [
+        {
+          "concept": "t-test for \\(\\beta_j\\)",
+          "formula": "\\(t = b_j / SE(b_j)\\), df = n − k − 1"
+        },
+        {
+          "concept": "F-test (overall)",
+          "formula": "\\(F = MSR/MSE\\), where MSR = SSR/k, MSE = SSE/(n−k−1)"
+        },
+        {
+          "concept": "Standard error of estimate",
+          "formula": "\\(s_e = \\sqrt{SSE/(n-k-1)}\\)"
+        },
+        {
+          "concept": "R²",
+          "formula": "\\(1 - SSE/SST\\)"
+        },
+        {
+          "concept": "Adjusted R²",
+          "formula": "\\(1 - \\frac{(1-R^2)(n-1)}{n-k-1}\\)"
+        },
+        {
+          "concept": "CI for \\(\\beta_j\\)",
+          "formula": "\\(b_j \\pm t_{\\alpha/2, n-k-1} \\cdot SE(b_j)\\)"
+        },
+        {
+          "concept": "Partial F-test (nested models)",
+          "formula": "\\(F = \\frac{(SSE_R - SSE_U)/q}{SSE_U/(n-k-1)}\\), q = number of restrictions"
+        },
+        {
+          "concept": "VIF",
+          "formula": "\\(VIF_j = 1/(1 - R_j^2)\\), where \\(R_j^2\\) = R² from regressing \\(X_j\\) on all other X's. VIF > 10 → serious multicollinearity"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Explain the ceteris paribus interpretation with a concrete example: \"When we add variable \\(X_2\\) to a model with \\(X_1\\), the coefficient of \\(X_1\\) changes from 4.5 to 2.0. Explain why.\""
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given a full regression output table (6 variables, ANOVA, R², \\(s_e\\)), identify significant and non-significant variables. Propose a reduced model and justify using adjusted R² and parsimony."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Interpret a dummy variable and an interaction term: \"\\(\\hat{Y} = 10 + 3X + 5D + 2(X \\times D)\\)\". What is the equation for D = 0? For D = 1? Explain the interaction in business terms."
+        },
+        {
+          "time_minutes": 10,
+          "text": "VIF values for 4 explanatory variables are: 1.2, 1.5, 8.3, 15.6. (a) Which variable has the multicollinearity problem? (b) What might happen to its coefficient and p-value? (c) What are two remedies?"
+        },
+        {
+          "time_minutes": 10,
+          "text": "Partial F-test: a model with k = 5 variables has SSE = 1200 (n = 60). A restricted model with 3 variables has SSE = 1400. Test whether the two dropped variables are jointly significant at 5%."
+        }
+      ],
+      "feynmanText": "Simple regression says \"Y depends on X.\" But in real life, things depend on many factors at once. A shop's revenue doesn't just depend on hours open -- it also depends on the weather, the day of the week, whether there's a sale running, and so on.\n\nMultiple regression is the same straight-line idea, but with multiple X's: Y = a + b₁X₁ + b₂X₂ + b₃X₃ + ... Each b tells you: \"holding everything else constant, if this one factor goes up by one unit, Y changes by this much.\" That phrase \"holding everything else constant\" is the magic of multiple regression -- it isolates the effect of each factor.\n\n**Adjusted R²** is like regular R² but with a penalty. Regular R² always goes up when you add more variables, even useless ones. Adjusted R² punishes you for adding variables that don't actually help. If adjusted R² drops when you add a variable, that variable is probably noise.\n\n**The F-test** asks: \"does this whole model, with all its variables, explain Y better than just using the average of Y?\" If the F-test p-value is small, the answer is yes -- your variables collectively matter.\n\n**Multicollinearity** is when two of your X variables are highly correlated with each other (e.g. \"years of education\" and \"income\" both move together). This makes it hard to tell which one is actually driving Y, because their effects are tangled up. The coefficients become unstable and hard to interpret. The fix: drop one of the correlated variables, or combine them.",
+      "feynmanKeyTerms": [
+        "Adjusted R²",
+        "The F-test",
+        "Multicollinearity"
+      ],
+      "modelAnswer": "1. **Define variable roles:** identify the single dependent variable and all explanatory variables (continuous, categorical/dummy, interaction).\n2. **Report overall model significance:** ANOVA F-test and p-value.\n3. **Interpret each coefficient ceteris paribus:** state direction, magnitude, and significance. For dummies: compare to reference category. For interactions: explain how the slope of one variable changes across groups.\n4. **Evaluate model fit:** R², adjusted R², \\(s_e\\).\n5. **Compare models if relevant:** does removing weak variables improve adjusted R²?\n6. **State business recommendation** tied to the significant coefficients.\n7. **Check diagnostics:** residual plot for non-linearity/heteroscedasticity, Durbin-Watson for autocorrelation, VIF for multicollinearity.",
+      "commonTraps": "- **Interpreting coefficients as unconditional effects:** \"β₁ = 2.0 means X₁ increases Y by 2.0\" — this is only true holding all other variables constant. In simple regression of Y on X₁ alone, the coefficient can be very different because of omitted variable bias.\n- **Ignoring multicollinearity warnings:** highly correlated X variables cause coefficients to flip sign, t-values to drop, and p-values to spike. Important variables appear \"insignificant.\" Always report VIF.\n- **Overfitting with too many weak regressors:** adding garbage variables inflates R² but decreases adjusted R². Monitor adjusted R² and \\(s_e\\) to avoid \"fishing expeditions.\"\n- **Assuming causation:** a significant coefficient proves linear association conditional on the other variables, not that X causes Y.\n- **Extrapolation:** predicting for X-combinations far outside the sample data is risky. The relationships may not hold outside the observed range.\n- **Forgetting the reference category for dummies:** \"the coefficient for Region B = 5\" is meaningless without stating \"relative to Region A (the reference category).\"\n- **Not checking if F-test is significant before interpreting individual t-tests:** if the overall model is not significant, individual coefficient interpretations are unreliable.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-03-28_ST3188_anova-ancova.md",
+      "date": "2026-03-28",
+      "module": "ST3188",
+      "topicSlug": "anova-ancova",
+      "title": "ST3188 - ANOVA and ANCOVA Analysis (Exam Sheet)",
+      "sections": {
+        "0": "You run three different ad campaigns (A, B, C) and measure customer spending for each. Campaign A customers spent £45 on average, B spent £52, and C spent £48. Are these differences real, or just random noise?\n\n**ANOVA** answers this in one test instead of comparing every pair separately. It works by splitting the total variation in the data into two parts: variation *between* the groups (do the group averages differ?) and variation *within* the groups (how much do individuals scatter around their own group's average?). If the between-group variation is much bigger than the within-group variation, the groups really are different. The **F-statistic** is literally this ratio: between/within. A large F means \"the group differences are too big to be noise.\"\n\n**Two-way ANOVA** adds a second factor. Maybe you also split customers by age group (young/old). Now you can ask three questions at once: does the campaign matter? Does age matter? And critically, does the *combination* matter -- maybe Campaign B works brilliantly for young people but terribly for old people. That's an **interaction effect**, and it's often the most interesting finding. When the interaction is significant, you can't just say \"Campaign B is best\" because the answer depends on who you're targeting.\n\n**ANCOVA** goes one step further by controlling for a continuous variable (a covariate) like income. If richer people spend more regardless of campaign, ANCOVA strips out that income effect so you can see the pure campaign effect more clearly.\n\nThe key assumption: the spread of data within each group should be roughly equal (checked with **Levene's test**). If this fails, your F-test might not be trustworthy.",
+        "1": "**Variables:**\n- Dependent variable: **metric** (interval or ratio scale).\n- Independent variables: **categorical** (non-metric), called **factors**.\n- A particular combination of factor levels is called a **treatment**.\n\n**Techniques:**\n\n| Technique | What it does | When to use |\n|---|---|---|\n| **One-way ANOVA** | Tests differences across levels of a single factor | One categorical IV, one metric DV |\n| **N-way ANOVA** | Tests main effects and interactions across 2+ factors simultaneously | Two or more categorical IVs, one metric DV |\n| **ANCOVA** | ANOVA with one or more metric covariates to remove extraneous variation | Categorical factors + metric covariate(s) |\n\n**Hypotheses:**\n- H₀: All group means are equal in the population ($\\mu_1 = \\mu_2 = \\dots = \\mu_c$).\n- H₁: Not all group means are equal (at least one differs).\n\n**Assumptions (check in SPSS output):**\n- Errors are normally distributed with zero mean.\n- Errors have **constant variance** (homoskedasticity) -- check via **Levene's test**.\n- Errors are uncorrelated.\n- Levene's test: We want this to be **insignificant** (p > 0.05), so we do NOT reject the null that error variances are equal.",
+        "2": "### Decomposition of Total Variation\n\n$$SS_Y = SS_{\\text{between}} + SS_{\\text{within}}$$\n\n- $SS_{\\text{between}}$ ($SS_X$): Variation in Y related to variation in the means of the categories of X.\n- $SS_{\\text{within}}$ ($SS_{\\text{error}}$): Variation in Y not accounted for by X.\n\n### Mean Square\n\n$$MS = \\frac{SS}{df}$$\n\n### F-Test Statistic\n\n$$F = \\frac{MS_X}{MS_{\\text{error}}}$$\n\nLarge F → evidence that at least one group mean differs.\n\n### Effect Size -- Eta-Squared (η²)\n\n$$\\eta^2 = \\frac{SS_X}{SS_Y}$$\n\nRanges from 0 to 1. Measures the proportion of total variation in Y explained by X.\n\n**Multiple η² (for n-way ANOVA):** Measures the strength of the **joint effect** of all factors:\n\n$$\\text{Multiple } \\eta^2 = \\frac{SS_{X_1} + SS_{X_2} + SS_{X_1 X_2}}{SS_Y}$$\n\nThe examiner expects you to calculate this from the SPSS output in every ANOVA question.\n\n### Omega-Squared (ω²) -- Relative Importance of Individual Factors\n\n$$\\omega^2 = \\frac{SS_X - (df_X \\times MS_{\\text{error}})}{SS_{\\text{total}} + MS_{\\text{error}}}$$\n\n**Interpretation guide:** 0.15 = large, 0.06 = medium, 0.01 = small.\n\nOnly interpret ω² for statistically significant effects.\n\n### Interaction Effects\n\n- **Ordinal interaction:** The rank order of effects of one factor does NOT change across levels of the other factor.\n- **Disordinal interaction:** The rank order DOES change (can be crossover or non-crossover).\n- **Critical rule:** If the interaction is significant, it is generally NOT meaningful to interpret the main effects in isolation, because the effect of one factor varies with the level of the other.\n\n### Post-Hoc Contrasts\n\nIf H₀ is rejected (at least one mean differs), run **a posteriori contrasts** to determine which specific pairs differ:\n- Least significant difference (LSD)\n- Tukey's procedure\n- Scheffé's test",
+        "3": "### Example: Two-way ANOVA (from 2022 Oct commentary)\n\n> **Multiple η²:** (569.867 + 0.867 + 122.067) / 710.000 = **0.9758**, indicating that age group, income level, and their interaction jointly explain almost all of the variation in satisfaction ratings.\n>\n> **Levene's test:** p = 0.788 (insignificant) → do not reject the null of equal variances. Assumption satisfied.\n>\n> **Main effects:** Age group is highly significant (p < 0.001). Income level is insignificant (p = 0.554).\n>\n> **Interaction:** Highly significant (p < 0.001). Since the interaction is significant, the effect of age varies with income level.\n>\n> **Marginal means plot:** Disordinal interaction with crossover. Among low-income customers, under-40s are much less satisfied (≈2.6) than over-40s (≈6.2). Among high-income customers, the situation reverses: under-40s are most satisfied (≈7.7), over-40s least (≈1.4).\n>\n> **Commercial recommendation:** Customer dissatisfaction is most problematic among younger low-income and older high-income customers. Further qualitative research (focus groups) should explore the reasons for these contrasting patterns, with remedial marketing action targeted at these specific segments.",
+        "4": "1. **(5 min)** Check Levene's test in SPSS output. State whether the equal variance assumption is satisfied.\n2. **(10 min)** Calculate multiple η² from the SPSS ANOVA table. Interpret the joint explanatory power.\n3. **(15 min)** Test significance of main effects and interaction. State H₀, H₁, F-statistic, and p-value for each. Interpret.\n4. **(10 min)** Examine the estimated marginal means plot. Determine if the interaction is ordinal or disordinal (crossover).\n5. **(10 min)** Draft a commercial recommendation linking the findings to specific marketing actions.",
+        "5": "Follow this structure for a 20-mark ANOVA question:\n\n1. **Define the variables:** Name the metric dependent variable, the categorical factors, and any covariates.\n2. **Assess assumptions:** Report Levene's test result. Note that errors should be normally distributed, have zero mean, and be uncorrelated.\n3. **Calculate multiple η²:** Report the joint explanatory power of all factors and their interaction.\n4. **State hypotheses explicitly:** Write H₀ (e.g. μ₁ = μ₂ = μ₃) and H₁ (not all means equal) for each main effect and the interaction.\n5. **Report the statistics:** State the F-statistic, degrees of freedom, and p-value for each main effect and the interaction.\n6. **Interpret the interaction:** If significant, describe the pattern (ordinal vs disordinal) using the marginal means plot. Note that main effects should NOT be interpreted in isolation when the interaction is significant.\n7. **Measure strength:** Report ω² for the relative importance of individual factors (if asked).\n8. **Commercial insight:** Link findings to marketing mix (Product, Price, Placement, Promotion) or suggest further research (e.g. focus groups to explore the reasons behind the patterns).",
+        "6": "- **Lacking statistical depth:** Stating \"the result is significant\" without writing out H₀, H₁, the F-statistic, and p-value loses marks. The examiner requires all of these explicitly.\n- **Interpreting main effects when interaction is significant:** If the interaction is highly significant, the effect of one factor varies with the level of the other. Broadly interpreting the main effect is misleading.\n- **Forgetting to calculate multiple η²:** This is the first thing the examiner expects you to compute. It shows the joint explanatory power of all factors.\n- **Ignoring Levene's test:** Failing to mention whether the equal variance assumption holds. Good answers note the Levene's test p-value and interpret it.\n- **Missing the commercial recommendation:** A purely statistical answer misses the point of this applied course. You MUST justify decisions based on the market research results and link to the 4 P's.\n- **Not describing the interaction pattern:** When the interaction is significant, describe whether it is ordinal or disordinal and what it means for different customer segments."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 5,
+          "text": "Check Levene's test in SPSS output. State whether the equal variance assumption is satisfied."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Calculate multiple η² from the SPSS ANOVA table. Interpret the joint explanatory power."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Test significance of main effects and interaction. State H₀, H₁, F-statistic, and p-value for each. Interpret."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Examine the estimated marginal means plot. Determine if the interaction is ordinal or disordinal (crossover)."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Draft a commercial recommendation linking the findings to specific marketing actions."
+        }
+      ],
+      "feynmanText": "You run three different ad campaigns (A, B, C) and measure customer spending for each. Campaign A customers spent £45 on average, B spent £52, and C spent £48. Are these differences real, or just random noise?\n\n**ANOVA** answers this in one test instead of comparing every pair separately. It works by splitting the total variation in the data into two parts: variation *between* the groups (do the group averages differ?) and variation *within* the groups (how much do individuals scatter around their own group's average?). If the between-group variation is much bigger than the within-group variation, the groups really are different. The **F-statistic** is literally this ratio: between/within. A large F means \"the group differences are too big to be noise.\"\n\n**Two-way ANOVA** adds a second factor. Maybe you also split customers by age group (young/old). Now you can ask three questions at once: does the campaign matter? Does age matter? And critically, does the *combination* matter -- maybe Campaign B works brilliantly for young people but terribly for old people. That's an **interaction effect**, and it's often the most interesting finding. When the interaction is significant, you can't just say \"Campaign B is best\" because the answer depends on who you're targeting.\n\n**ANCOVA** goes one step further by controlling for a continuous variable (a covariate) like income. If richer people spend more regardless of campaign, ANCOVA strips out that income effect so you can see the pure campaign effect more clearly.\n\nThe key assumption: the spread of data within each group should be roughly equal (checked with **Levene's test**). If this fails, your F-test might not be trustworthy.",
+      "feynmanKeyTerms": [
+        "ANOVA",
+        "F-statistic",
+        "Two-way ANOVA",
+        "interaction effect",
+        "ANCOVA",
+        "Levene's test"
+      ],
+      "modelAnswer": "Follow this structure for a 20-mark ANOVA question:\n\n1. **Define the variables:** Name the metric dependent variable, the categorical factors, and any covariates.\n2. **Assess assumptions:** Report Levene's test result. Note that errors should be normally distributed, have zero mean, and be uncorrelated.\n3. **Calculate multiple η²:** Report the joint explanatory power of all factors and their interaction.\n4. **State hypotheses explicitly:** Write H₀ (e.g. μ₁ = μ₂ = μ₃) and H₁ (not all means equal) for each main effect and the interaction.\n5. **Report the statistics:** State the F-statistic, degrees of freedom, and p-value for each main effect and the interaction.\n6. **Interpret the interaction:** If significant, describe the pattern (ordinal vs disordinal) using the marginal means plot. Note that main effects should NOT be interpreted in isolation when the interaction is significant.\n7. **Measure strength:** Report ω² for the relative importance of individual factors (if asked).\n8. **Commercial insight:** Link findings to marketing mix (Product, Price, Placement, Promotion) or suggest further research (e.g. focus groups to explore the reasons behind the patterns).",
+      "commonTraps": "- **Lacking statistical depth:** Stating \"the result is significant\" without writing out H₀, H₁, the F-statistic, and p-value loses marks. The examiner requires all of these explicitly.\n- **Interpreting main effects when interaction is significant:** If the interaction is highly significant, the effect of one factor varies with the level of the other. Broadly interpreting the main effect is misleading.\n- **Forgetting to calculate multiple η²:** This is the first thing the examiner expects you to compute. It shows the joint explanatory power of all factors.\n- **Ignoring Levene's test:** Failing to mention whether the equal variance assumption holds. Good answers note the Levene's test p-value and interpret it.\n- **Missing the commercial recommendation:** A purely statistical answer misses the point of this applied course. You MUST justify decisions based on the market research results and link to the 4 P's.\n- **Not describing the interaction pattern:** When the interaction is significant, describe whether it is ordinal or disordinal and what it means for different customer segments.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-03-29_ST2187_simple-regression-estimation-testing.md",
+      "date": "2026-03-29",
+      "module": "ST2187",
+      "topicSlug": "simple-regression-estimation-testing",
+      "title": "ST2187 - Estimation & Hypothesis Testing (Exam Sheet)",
+      "sections": {
+        "0": "You can't survey every person on Earth, so you take a sample and use it to guess things about the whole population. **Estimation** is making those guesses. **Hypothesis testing** is checking whether those guesses are trustworthy.\n\n**Estimation** comes in two flavours. A **point estimate** is a single number guess (\"the average height is 170cm\"). A **confidence interval** is a range (\"we're 95% confident the average height is between 168cm and 172cm\"). The interval is more honest because it admits you're not certain.\n\nThe width of the interval depends on three things: how confident you want to be (95% vs 99%), how variable your data is, and how many observations you have. More data = narrower interval = more precision.\n\n**Hypothesis testing** is like a court trial. You start with a presumption of innocence (the null hypothesis, H₀ -- \"nothing interesting is happening\"). You collect evidence (data). If the evidence is strong enough to be really unlikely under innocence, you reject H₀ and conclude something is going on.\n\nThe **p-value** is the probability of seeing evidence this extreme if H₀ were actually true. A small p-value (below 0.05) means \"this would be really surprising if nothing were going on\" -- so you reject H₀. A large p-value means \"this could easily happen by chance\" -- so you don't reject H₀.\n\n**Type I error** is convicting an innocent person (rejecting H₀ when it's true). **Type II error** is letting a guilty person go free (failing to reject H₀ when it's false). You control Type I error by choosing your significance level (α, usually 0.05).",
+        "1": "**Estimation** produces a best guess for an unknown parameter. **Hypothesis testing** evaluates whether data provide sufficient evidence against a claim. These are the two pillars of statistical inference.\n\n**Point estimation:**\n- A point estimator \\(\\hat{\\theta}\\) is a statistic that produces a single best guess for \\(\\theta\\).\n- **Desirable properties:**\n  - **Unbiased:** \\(E(\\hat{\\theta}) = \\theta\\). The sample mean \\(\\bar{X}\\) is unbiased for \\(\\mu\\); \\(s^2\\) (with n−1 denominator) is unbiased for \\(\\sigma^2\\).\n  - **Consistent:** \\(\\hat{\\theta} \\xrightarrow{P} \\theta\\) as \\(n \\to \\infty\\). More data → estimate converges to truth.\n  - **Efficient (MVUE):** among all unbiased estimators, it has the smallest variance.\n- **Mean Squared Error:** \\(MSE(\\hat{\\theta}) = \\text{Var}(\\hat{\\theta}) + [\\text{Bias}(\\hat{\\theta})]^2\\). Combines precision and accuracy.\n\n**Confidence intervals:**\n- A \\(100(1-\\alpha)\\%\\) CI is a random interval that, over repeated sampling, captures \\(\\theta\\) with probability \\(1-\\alpha\\).\n- **CI for mean (σ known):** \\(\\bar{X} \\pm z_{\\alpha/2} \\cdot \\sigma/\\sqrt{n}\\)\n- **CI for mean (σ unknown):** \\(\\bar{X} \\pm t_{\\alpha/2, n-1} \\cdot s/\\sqrt{n}\\)\n- **CI for proportion:** \\(\\hat{p} \\pm z_{\\alpha/2} \\sqrt{\\hat{p}(1-\\hat{p})/n}\\)\n- **Prediction interval (regression):** always wider than CI for the mean because it adds the natural variability of individual observations.\n\n**The duality principle:** A \\(100(1-\\alpha)\\%\\) CI contains all values \\(\\theta_0\\) for which \\(H_0: \\theta = \\theta_0\\) would not be rejected at level \\(\\alpha\\). If \\(\\theta_0\\) falls outside the CI → reject \\(H_0\\).\n\n**Hypothesis testing framework:**\n1. State \\(H_0\\) (null, status quo) and \\(H_1\\) (alternative, what you aim to prove).\n2. Choose significance level \\(\\alpha\\) (usually 0.05).\n3. Compute test statistic.\n4. Compare to critical value or compute p-value.\n5. Make decision and interpret in context.\n\n**Types of error:**\n| | \\(H_0\\) true | \\(H_0\\) false |\n|---|---|---|\n| Reject \\(H_0\\) | **Type I error** (prob = \\(\\alpha\\)) | Correct decision (prob = power = \\(1-\\beta\\)) |\n| Fail to reject \\(H_0\\) | Correct decision | **Type II error** (prob = \\(\\beta\\)) |\n\n**Power** = \\(1 - \\beta\\) = probability of correctly rejecting a false \\(H_0\\). Increases with: larger n, larger effect size, larger \\(\\alpha\\), smaller variance.",
+        "2": "| Test | Statistic | Distribution |\n|---|---|---|\n| One-sample z-test (σ known) | \\(z = \\frac{\\bar{X} - \\mu_0}{\\sigma/\\sqrt{n}}\\) | N(0,1) |\n| One-sample t-test (σ unknown) | \\(t = \\frac{\\bar{X} - \\mu_0}{s/\\sqrt{n}}\\) | t(n−1) |\n| Two-sample t-test (pooled) | \\(t = \\frac{\\bar{X}_1 - \\bar{X}_2}{s_p\\sqrt{1/n_1 + 1/n_2}}\\) | t(n₁+n₂−2) |\n| Pooled variance | \\(s_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}\\) | — |\n| Proportion z-test | \\(z = \\frac{\\hat{p} - p_0}{\\sqrt{p_0(1-p_0)/n}}\\) | N(0,1) |\n| CI for difference in means | \\((\\bar{X}_1 - \\bar{X}_2) \\pm t_{\\alpha/2} \\cdot s_p\\sqrt{1/n_1+1/n_2}\\) | — |\n| CI width factors | Width = \\(2 \\times z_{\\alpha/2} \\times SE\\); ↑confidence → ↑width; ↑n → ↓width; ↑σ → ↑width |",
+        "3": "**Problem:** A company claims mean delivery time is ≤ 5 days. A sample of n = 25 deliveries gives \\(\\bar{X} = 5.8\\) days, s = 2.0 days. Test at α = 0.05.\n\n**Step 1 — Hypotheses:**\n\\(H_0: \\mu \\le 5\\) (claim), \\(H_1: \\mu > 5\\) (one-sided upper-tail test).\n\n**Step 2 — Test statistic:**\n\\(t = \\frac{5.8 - 5.0}{2.0/\\sqrt{25}} = \\frac{0.8}{0.4} = 2.0\\), df = 24.\n\n**Step 3 — Critical value:**\n\\(t_{0.05, 24} = 1.711\\). Since 2.0 > 1.711, we are in the rejection region.\n\n**Step 4 — Decision:**\nReject \\(H_0\\) at the 5% significance level.\n\n**Step 5 — Interpretation:**\n\"There is statistically significant evidence that the mean delivery time exceeds 5 days (t = 2.0, df = 24, p < 0.05). Management should investigate the delivery process.\"\n\n**Step 6 — CI check (duality):**\n95% one-sided lower bound: \\(\\bar{X} - t_{0.05,24} \\cdot s/\\sqrt{n} = 5.8 - 1.711(0.4) = 5.8 - 0.684 = 5.12\\). Since 5.12 > 5.0, the bound excludes 5, consistent with rejecting \\(H_0\\).\n\n**Step 7 — Caveat:**\n\"Statistical significance at α = 0.05 does not mean the delay is practically important. The excess is 0.8 days — management should assess whether this matters operationally.\"",
+        "4": "1. **(8 min)** A CI for a mean is [12.3, 15.7]. (a) What is the point estimate? (b) What is the margin of error? (c) Would you reject \\(H_0: \\mu = 16\\) at the corresponding α level? Explain using duality.\n2. **(10 min)** Given \\(\\hat{\\beta}_1 = 1.8\\), SE = 0.7, n = 30, test \\(H_0: \\beta_1 = 0\\). Compute t-stat, state decision, construct 95% CI, and verify duality (CI should not contain 0).\n3. **(12 min)** Two groups: treatment (n=40, \\(\\bar{X}_1=78\\), \\(s_1=10\\)) and control (n=35, \\(\\bar{X}_2=72\\), \\(s_2=12\\)). Test \\(H_0: \\mu_1 = \\mu_2\\) vs \\(H_1: \\mu_1 > \\mu_2\\) at 5%. Report pooled SE, t-stat, decision, and practical significance.\n4. **(10 min)** A factory claims defect rate ≤ 3%. In a sample of 500, 22 are defective. Test the claim. Compute 99% CI for the true proportion.\n5. **(10 min)** Explain: (a) why a p-value of 0.03 does not mean \"3% probability that \\(H_0\\) is true,\" (b) the correct interpretation of a 95% CI, (c) why increasing n makes it easier to reject \\(H_0\\) even for trivially small effects.",
+        "5": "1. **State hypotheses explicitly:** write \\(H_0\\) and \\(H_1\\) with the parameter and direction.\n2. **Identify the correct test and distribution:** z vs t; one-tail vs two-tail.\n3. **Show the test statistic computation** with all substitutions visible.\n4. **State the decision in statistical terms:** \"Reject \\(H_0\\) at α = 0.05\" or \"Fail to reject \\(H_0\\).\"\n5. **Translate into business language:** \"There is sufficient evidence that...\"\n6. **Report effect size or CI** alongside p-value: statistical significance ≠ practical importance.\n7. **Caveat about assumptions:** independence, normality (or CLT justification), random sampling.",
+        "6": "- **Misinterpreting the confidence interval:** \"There is a 95% probability that μ is in [10.2, 12.8]\" is WRONG. The true μ is fixed; the CI is random. The correct statement: \"We are 95% confident that this interval captures μ\" (refers to the long-run reliability of the method).\n- **Misinterpreting the p-value:** the p-value is NOT P(\\(H_0\\) is true). It is P(observing data this extreme or more | \\(H_0\\) is true). The parameter is fixed; the data are random.\n- **Confusing statistical significance with practical importance:** a sample of n = 10,000 can produce a tiny p-value for a meaningless 0.1-unit difference. Always report effect size.\n- **Forgetting that significance depends on SE, not coefficient size:** a large coefficient with a large SE can be non-significant; a small coefficient with a tiny SE can be highly significant.\n- **Using z instead of t when σ is unknown:** always use t with df = n − 1 unless the question explicitly gives σ. For large n, z and t are nearly identical, but state which you used.\n- **Giving causal language without identification assumptions:** a significant test result shows association or a difference. Causation requires random assignment or other identification strategy.\n- **Confusing confidence level and precision:** increasing confidence from 95% to 99% makes the CI wider (less precise). There is an inherent trade-off."
+      },
+      "formulas": [
+        {
+          "concept": "Test",
+          "formula": "Statistic"
+        },
+        {
+          "concept": "One-sample z-test (σ known)",
+          "formula": "\\(z = \\frac{\\bar{X} - \\mu_0}{\\sigma/\\sqrt{n}}\\)"
+        },
+        {
+          "concept": "One-sample t-test (σ unknown)",
+          "formula": "\\(t = \\frac{\\bar{X} - \\mu_0}{s/\\sqrt{n}}\\)"
+        },
+        {
+          "concept": "Two-sample t-test (pooled)",
+          "formula": "\\(t = \\frac{\\bar{X}_1 - \\bar{X}_2}{s_p\\sqrt{1/n_1 + 1/n_2}}\\)"
+        },
+        {
+          "concept": "Pooled variance",
+          "formula": "\\(s_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}\\)"
+        },
+        {
+          "concept": "Proportion z-test",
+          "formula": "\\(z = \\frac{\\hat{p} - p_0}{\\sqrt{p_0(1-p_0)/n}}\\)"
+        },
+        {
+          "concept": "CI for difference in means",
+          "formula": "\\((\\bar{X}_1 - \\bar{X}_2) \\pm t_{\\alpha/2} \\cdot s_p\\sqrt{1/n_1+1/n_2}\\)"
+        },
+        {
+          "concept": "CI width factors",
+          "formula": "Width = \\(2 \\times z_{\\alpha/2} \\times SE\\); ↑confidence → ↑width; ↑n → ↓width; ↑σ → ↑width"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "A CI for a mean is [12.3, 15.7]. (a) What is the point estimate? (b) What is the margin of error? (c) Would you reject \\(H_0: \\mu = 16\\) at the corresponding α level? Explain using duality."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given \\(\\hat{\\beta}_1 = 1.8\\), SE = 0.7, n = 30, test \\(H_0: \\beta_1 = 0\\). Compute t-stat, state decision, construct 95% CI, and verify duality (CI should not contain 0)."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Two groups: treatment (n=40, \\(\\bar{X}_1=78\\), \\(s_1=10\\)) and control (n=35, \\(\\bar{X}_2=72\\), \\(s_2=12\\)). Test \\(H_0: \\mu_1 = \\mu_2\\) vs \\(H_1: \\mu_1 > \\mu_2\\) at 5%. Report pooled SE, t-stat, decision, and practical significance."
+        },
+        {
+          "time_minutes": 10,
+          "text": "A factory claims defect rate ≤ 3%. In a sample of 500, 22 are defective. Test the claim. Compute 99% CI for the true proportion."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain: (a) why a p-value of 0.03 does not mean \"3% probability that \\(H_0\\) is true,\" (b) the correct interpretation of a 95% CI, (c) why increasing n makes it easier to reject \\(H_0\\) even for trivially small effects."
+        }
+      ],
+      "feynmanText": "You can't survey every person on Earth, so you take a sample and use it to guess things about the whole population. **Estimation** is making those guesses. **Hypothesis testing** is checking whether those guesses are trustworthy.\n\n**Estimation** comes in two flavours. A **point estimate** is a single number guess (\"the average height is 170cm\"). A **confidence interval** is a range (\"we're 95% confident the average height is between 168cm and 172cm\"). The interval is more honest because it admits you're not certain.\n\nThe width of the interval depends on three things: how confident you want to be (95% vs 99%), how variable your data is, and how many observations you have. More data = narrower interval = more precision.\n\n**Hypothesis testing** is like a court trial. You start with a presumption of innocence (the null hypothesis, H₀ -- \"nothing interesting is happening\"). You collect evidence (data). If the evidence is strong enough to be really unlikely under innocence, you reject H₀ and conclude something is going on.\n\nThe **p-value** is the probability of seeing evidence this extreme if H₀ were actually true. A small p-value (below 0.05) means \"this would be really surprising if nothing were going on\" -- so you reject H₀. A large p-value means \"this could easily happen by chance\" -- so you don't reject H₀.\n\n**Type I error** is convicting an innocent person (rejecting H₀ when it's true). **Type II error** is letting a guilty person go free (failing to reject H₀ when it's false). You control Type I error by choosing your significance level (α, usually 0.05).",
+      "feynmanKeyTerms": [
+        "Estimation",
+        "Hypothesis testing",
+        "point estimate",
+        "confidence interval",
+        "p-value",
+        "Type I error",
+        "Type II error"
+      ],
+      "modelAnswer": "1. **State hypotheses explicitly:** write \\(H_0\\) and \\(H_1\\) with the parameter and direction.\n2. **Identify the correct test and distribution:** z vs t; one-tail vs two-tail.\n3. **Show the test statistic computation** with all substitutions visible.\n4. **State the decision in statistical terms:** \"Reject \\(H_0\\) at α = 0.05\" or \"Fail to reject \\(H_0\\).\"\n5. **Translate into business language:** \"There is sufficient evidence that...\"\n6. **Report effect size or CI** alongside p-value: statistical significance ≠ practical importance.\n7. **Caveat about assumptions:** independence, normality (or CLT justification), random sampling.",
+      "commonTraps": "- **Misinterpreting the confidence interval:** \"There is a 95% probability that μ is in [10.2, 12.8]\" is WRONG. The true μ is fixed; the CI is random. The correct statement: \"We are 95% confident that this interval captures μ\" (refers to the long-run reliability of the method).\n- **Misinterpreting the p-value:** the p-value is NOT P(\\(H_0\\) is true). It is P(observing data this extreme or more | \\(H_0\\) is true). The parameter is fixed; the data are random.\n- **Confusing statistical significance with practical importance:** a sample of n = 10,000 can produce a tiny p-value for a meaningless 0.1-unit difference. Always report effect size.\n- **Forgetting that significance depends on SE, not coefficient size:** a large coefficient with a large SE can be non-significant; a small coefficient with a tiny SE can be highly significant.\n- **Using z instead of t when σ is unknown:** always use t with df = n − 1 unless the question explicitly gives σ. For large n, z and t are nearly identical, but state which you used.\n- **Giving causal language without identification assumptions:** a significant test result shows association or a difference. Causation requires random assignment or other identification strategy.\n- **Confusing confidence level and precision:** increasing confidence from 95% to 99% makes the CI wider (less precise). There is an inherent trade-off.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-03-30_ST3188_correlation-and-regression.md",
+      "date": "2026-03-30",
+      "module": "ST3188",
+      "topicSlug": "correlation-and-regression",
+      "title": "ST3188 - Correlation and Regression (Exam Sheet)",
+      "sections": {
+        "0": "**Correlation** answers: \"when X goes up, does Y tend to go up too (or down)?\" The Pearson correlation coefficient (r) puts a single number on this: +1 means they move together perfectly, -1 means they move in exactly opposite directions, and 0 means knowing X tells you nothing about Y. Crucially, r only measures *linear* relationships -- X and Y could have a strong curved relationship and r would still be near zero.\n\n**Regression** goes further than correlation: it gives you the actual equation. Instead of just knowing that advertising spend and sales move together, regression tells you \"for every extra £1,000 spent on advertising, sales increase by approximately 150 units.\" The equation is a line: Y = a + bX. The intercept (a) is where the line starts, and the slope (b) is the rate of change -- the number that answers your question.\n\n**R-squared** tells you how much of Y's variation your equation explains. R² = 0.70 means 70% of the ups and downs in sales are explained by advertising spend. The other 30% is stuff you haven't measured.\n\n**Multiple regression** adds more predictors: sales = a + b₁(advertising) + b₂(price) + b₃(seasonality). Each coefficient tells you the effect of one factor *while holding the others constant*. **Standardised coefficients** let you compare which factor matters most, since they put all variables on the same scale.\n\nThe biggest trap: regression measures *association*, not *causation*. Ice cream sales and drownings are correlated because both increase in summer -- but ice cream doesn't cause drowning. You need an experiment to prove causation.",
+        "1": "**Pearson Product Moment Correlation (r):** Summarises the strength of the **linear association** between two metric (interval- or ratio-scaled) variables. Ranges from -1.0 to +1.0.\n\n**Regression analysis:** Derives a mathematical relationship (equation) between a single metric dependent (criterion) variable and one or more independent (predictor) variables.\n\n**Critical distinction:** Regression measures the nature and degree of **association** between variables. It does NOT imply or assume **causality**. The terms \"dependent\" and \"independent\" arise from the mathematical relationship, not from a causal claim.\n\n**Types:**\n- **Bivariate regression:** One dependent + one independent variable.\n- **Multiple regression:** One dependent + two or more independent variables.\n\n**ST3188 examiner emphasis:** Interpreting full SPSS regression output, writing both theoretical and estimated models, testing statistical significance, interpreting standardised coefficients for relative importance, and translating findings into commercial business decisions.",
+        "2": "### Pearson Correlation\n\n$$r = \\frac{COV_{xy}}{s_x s_y}$$\n\nWhere $COV_{xy}$ is the covariance of X and Y. Ranges from -1.0 to +1.0.\n\n### Coefficient of Determination\n\n$$R^2 = \\frac{SS_{\\text{regression}}}{SS_{\\text{total}}}$$\n\nMeasures the proportion of total variation in Y accounted for by the model. In bivariate regression, $R^2 = r^2$.\n\n### Adjusted R²\n\nAdjusts for the number of independent variables and sample size to account for diminishing returns -- additional variables do not always contribute meaningfully.\n\n### Bivariate Regression Model\n\n**Theoretical model (MUST write in exam):**\n\n$$Y_i = \\beta_0 + \\beta_1 X_i + \\varepsilon_i$$\n\nWhere $\\varepsilon_i$ is the error term.\n\n**Estimated model (MUST write with actual coefficients):**\n\n$$\\hat{Y}_i = a + b X_i$$\n\n### Multiple Regression Model\n\n**Theoretical model:**\n\n$$Y_i = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\dots + \\beta_k X_k + \\varepsilon_i$$\n\n### Regression Assumptions (MUST state explicitly)\n\nThe error term $\\varepsilon$:\n1. Is **normally distributed**.\n2. Has a **zero mean** ($E(\\varepsilon) = 0$).\n3. Has **constant variance** (homoskedasticity).\n4. Error terms are **uncorrelated** with each other.\n\nCheck these via the **histogram of standardised residuals** and **normal probability plot** in SPSS output.\n\n### Testing Correlation Significance\n\n$$t = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}}$$\n\nWith $n - 2$ degrees of freedom. Tests H₀: ρ = 0 (no linear relationship).\n\n### Overall Model Significance (F-test)\n\nTests H₀: $\\beta_1 = \\beta_2 = \\dots = \\beta_k = 0$ (all coefficients are zero).\n\n$$F = \\frac{MS_{\\text{regression}}}{MS_{\\text{residual}}}$$\n\nWith $k$ and $(n - k - 1)$ degrees of freedom.\n\n### Individual Predictor Significance (t-test)\n\nFor each predictor, tests H₀: $\\beta_j = 0$:\n\n$$t = \\frac{\\hat{\\beta}_j}{SE(\\hat{\\beta}_j)}$$\n\n### Standardised Coefficients (Beta Weights)\n\nPartial regression coefficients obtained when all variables are standardised (mean = 0, variance = 1). Used to determine the **relative importance** of predictor variables -- the predictor with the largest absolute standardised coefficient is the most important.\n\n### Dummy Variables\n\nWhen a categorical variable has $k$ levels, code it using $k - 1$ dummy variables. The estimated coefficient represents the expected difference in Y relative to the **reference category** (the omitted level), holding other variables constant.\n\n### Multicollinearity\n\nVery high intercorrelations among independent variables. Can result in:\n- Imprecise estimation of partial regression coefficients.\n- Coefficient signs may change across samples.\n- Extreme difficulty in assessing relative importance of predictors.",
+        "3": "**Scenario:** Credit card company, n = 5,000, predicting annual charges from income, age, household size, sex, and whether they exceeded their credit limit.\n\n> **Theoretical model:** Annual charge = β₀ + β₁(Income) + β₂(Age) + β₃(Household size) + β₄(Sex) + β₅(Credit limit) + ε\n>\n> **Estimated model:** Ŷ = 791.79 + 120.88(Income) - 9.26(Age) + 528.07(Household size) - 198.51(Sex) + 543.67(Credit limit)\n>\n> **Interpreting the dummy variable:** β̂₅ = 543.67 means the expected increase in annual charges (in dollars) for a customer who has exceeded their credit limit in the past 12 months, relative to one who has not, other things equal.\n>\n> **Relative importance:** Standardised coefficients show annual income is the most dominant predictor.\n>\n> **Model performance:** R² = 0.349 -- the model explains 34.9% of the variation. Moderate at best, suggesting important predictors are missing. Recommend adding additional variables (e.g. credit score, spending frequency) and removing insignificant ones (age, sex).\n>\n> **Assumptions:** Check the standardised residual histogram for normality of ε ~ N(0, σ²).",
+        "4": "1. **(5 min)** Write the full theoretical regression model with error term and all assumptions. Write the estimated model with actual coefficients from SPSS output.\n2. **(10 min)** Interpret R² and adjusted R². Report the overall F-test and its significance.\n3. **(10 min)** For each predictor, report the t-test and p-value. Identify significant and non-significant predictors.\n4. **(10 min)** Report standardised coefficients. Rank predictors by relative importance. Interpret any dummy variable coefficients.\n5. **(5 min)** Assess assumptions using the residual histogram and normal probability plot.\n6. **(10 min)** Propose model changes (add sensible predictors, remove insignificant ones) and provide a commercial recommendation.",
+        "5": "For full marks on a regression question, explicitly follow this structure:\n\n1. **Write out the models:** Write the full theoretical model (including ε) AND the estimated model with calculated coefficients. The examiner specifically deducts marks if you skip this.\n2. **State assumptions:** Explicitly state the regression assumptions: ε is normally distributed, zero mean, constant variance, uncorrelated errors.\n3. **Report overall significance:** Cite R² to explain proportion of variation accounted for. Report the overall F-test statistic and p-value.\n4. **Report individual significance and relative importance:** Use t-tests to evaluate individual predictors. Cite standardised coefficients to rank their relative impact on the dependent variable.\n5. **Interpret dummy variables:** If present, state the estimated coefficient as the expected difference relative to the reference category, other things equal.\n6. **Assess assumptions:** Reference the standardised residual histogram and normality.\n7. **Propose model changes:** Suggest adding sensible predictors or removing insignificant ones, with justification.\n8. **Give practical recommendations:** Translate findings into a clear business recommendation, linking to marketing mix or strategic actions.",
+        "6": "- **Forgetting to write both models:** The examiner explicitly requires both the theoretical model (with β coefficients and ε) AND the estimated model (with actual numbers). This is the most common source of lost marks.\n- **Interpreting correlation as causation:** Regression measures association, not causality. The examiner and textbook stress this repeatedly.\n- **Missing statistical depth:** Failing to cite specific test statistics alongside p-values. Simply saying \"income is significant\" without stating t = X.XX, p = 0.00X loses marks.\n- **Ignoring multicollinearity:** If independent variables are highly intercorrelated, note this as a limitation. It affects the precision and stability of coefficient estimates.\n- **Not interpreting dummy variables correctly:** State the coefficient as the expected change relative to the reference category, holding other variables constant. Don't interpret it like a continuous variable.\n- **Low R² without comment:** If R² is low (e.g. 0.35), explicitly note that the model has limited explanatory power and suggest additional predictors that could improve it.\n- **No commercial recommendation:** After all the statistical analysis, always explain what management should do based on the findings."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 5,
+          "text": "Write the full theoretical regression model with error term and all assumptions. Write the estimated model with actual coefficients from SPSS output."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Interpret R² and adjusted R². Report the overall F-test and its significance."
+        },
+        {
+          "time_minutes": 10,
+          "text": "For each predictor, report the t-test and p-value. Identify significant and non-significant predictors."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Report standardised coefficients. Rank predictors by relative importance. Interpret any dummy variable coefficients."
+        },
+        {
+          "time_minutes": 5,
+          "text": "Assess assumptions using the residual histogram and normal probability plot."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Propose model changes (add sensible predictors, remove insignificant ones) and provide a commercial recommendation."
+        }
+      ],
+      "feynmanText": "**Correlation** answers: \"when X goes up, does Y tend to go up too (or down)?\" The Pearson correlation coefficient (r) puts a single number on this: +1 means they move together perfectly, -1 means they move in exactly opposite directions, and 0 means knowing X tells you nothing about Y. Crucially, r only measures *linear* relationships -- X and Y could have a strong curved relationship and r would still be near zero.\n\n**Regression** goes further than correlation: it gives you the actual equation. Instead of just knowing that advertising spend and sales move together, regression tells you \"for every extra £1,000 spent on advertising, sales increase by approximately 150 units.\" The equation is a line: Y = a + bX. The intercept (a) is where the line starts, and the slope (b) is the rate of change -- the number that answers your question.\n\n**R-squared** tells you how much of Y's variation your equation explains. R² = 0.70 means 70% of the ups and downs in sales are explained by advertising spend. The other 30% is stuff you haven't measured.\n\n**Multiple regression** adds more predictors: sales = a + b₁(advertising) + b₂(price) + b₃(seasonality). Each coefficient tells you the effect of one factor *while holding the others constant*. **Standardised coefficients** let you compare which factor matters most, since they put all variables on the same scale.\n\nThe biggest trap: regression measures *association*, not *causation*. Ice cream sales and drownings are correlated because both increase in summer -- but ice cream doesn't cause drowning. You need an experiment to prove causation.",
+      "feynmanKeyTerms": [
+        "Correlation",
+        "Regression",
+        "R-squared",
+        "Multiple regression",
+        "Standardised coefficients"
+      ],
+      "modelAnswer": "For full marks on a regression question, explicitly follow this structure:\n\n1. **Write out the models:** Write the full theoretical model (including ε) AND the estimated model with calculated coefficients. The examiner specifically deducts marks if you skip this.\n2. **State assumptions:** Explicitly state the regression assumptions: ε is normally distributed, zero mean, constant variance, uncorrelated errors.\n3. **Report overall significance:** Cite R² to explain proportion of variation accounted for. Report the overall F-test statistic and p-value.\n4. **Report individual significance and relative importance:** Use t-tests to evaluate individual predictors. Cite standardised coefficients to rank their relative impact on the dependent variable.\n5. **Interpret dummy variables:** If present, state the estimated coefficient as the expected difference relative to the reference category, other things equal.\n6. **Assess assumptions:** Reference the standardised residual histogram and normality.\n7. **Propose model changes:** Suggest adding sensible predictors or removing insignificant ones, with justification.\n8. **Give practical recommendations:** Translate findings into a clear business recommendation, linking to marketing mix or strategic actions.",
+      "commonTraps": "- **Forgetting to write both models:** The examiner explicitly requires both the theoretical model (with β coefficients and ε) AND the estimated model (with actual numbers). This is the most common source of lost marks.\n- **Interpreting correlation as causation:** Regression measures association, not causality. The examiner and textbook stress this repeatedly.\n- **Missing statistical depth:** Failing to cite specific test statistics alongside p-values. Simply saying \"income is significant\" without stating t = X.XX, p = 0.00X loses marks.\n- **Ignoring multicollinearity:** If independent variables are highly intercorrelated, note this as a limitation. It affects the precision and stability of coefficient estimates.\n- **Not interpreting dummy variables correctly:** State the coefficient as the expected change relative to the reference category, holding other variables constant. Don't interpret it like a continuous variable.\n- **Low R² without comment:** If R² is low (e.g. 0.35), explicitly note that the model has limited explanatory power and suggest additional predictors that could improve it.\n- **No commercial recommendation:** After all the statistical analysis, always explain what management should do based on the findings.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-03-31_ST2187_time-series-analysis.md",
+      "date": "2026-03-31",
+      "module": "ST2187",
+      "topicSlug": "time-series-analysis",
+      "title": "ST2187 - Time Series Analysis & Forecasting (Exam Sheet)",
+      "sections": {
+        "0": "Most statistics looks at a snapshot -- 1,000 customers surveyed today. Time series looks at a movie -- the same measurement taken repeatedly over time (monthly sales, daily stock prices, quarterly GDP).\n\nThe big idea: past patterns can help predict the future, but only if you can separate the pattern from the noise.\n\nA time series has up to four components: **trend** (the long-run direction -- are sales generally going up or down?), **seasonality** (regular repeating patterns -- ice cream sales peak every summer), **cyclical** (longer waves tied to business cycles), and **irregular** (random noise you can't predict).\n\n**Moving averages** smooth out the noise by replacing each data point with the average of nearby points. A 12-month moving average removes monthly seasonality and shows you the underlying trend. The trade-off: more smoothing = clearer trend but slower to react to real changes.\n\n**Exponential smoothing** is a smarter moving average that gives more weight to recent observations (because yesterday's data is more relevant than data from 5 years ago). The smoothing parameter α controls how much weight goes to recent vs old data. α close to 1 = react quickly to changes. α close to 0 = smooth and stable.\n\n**Forecasting** means extending the pattern into the future. The critical question is always: \"will the pattern that held in the past continue?\" If the world changes (pandemic, new competitor, regulation), your historical pattern may be worthless. Always state this caveat.",
+        "1": "**Time series data** is a sequence of observations measured at successive time points. The goal is to identify patterns and project them into the future.\n\n**Four components:**\n1. **Trend (T):** systematic long-term increase or decrease — can be linear, exponential, or S-shaped.\n2. **Seasonality (S):** regular, predictable pattern repeating at fixed intervals (e.g., quarterly, monthly).\n3. **Cyclical variation (C):** irregular ups/downs driven by business cycles (recessions/booms). Harder to predict because cycle length varies.\n4. **Noise / irregular variation (I):** random, unpredictable fluctuation. The \"zigzag\" component.\n\n**Decomposition models:**\n- **Additive:** \\(Y_t = T_t + S_t + C_t + I_t\\) (when seasonal variation is constant in absolute terms).\n- **Multiplicative:** \\(Y_t = T_t \\times S_t \\times C_t \\times I_t\\) (when seasonal variation is proportional to level — most common in business).\n\n**Golden rule:** Always inspect a time series graph before modelling. If historical patterns are changing fundamentally, extrapolation methods will fail.\n\n**Forecasting methods taxonomy:**\n| Method | Best for | Parameters |\n|---|---|---|\n| Simple Moving Average (MA) | No trend, no seasonality | Span (number of periods) |\n| Simple Exponential Smoothing (SES) | No trend, no seasonality | α (level smoothing) |\n| Holt's Method (Double Exponential Smoothing) | Trend, no seasonality | α (level), β (trend) |\n| Winters' Method (Triple Exponential Smoothing) | Trend + seasonality | α (level), β (trend), γ (seasonality) |\n| Regression with time variable | Linear trend | slope, intercept |\n| Regression with dummies | Trend + seasonality | time + (c−1) seasonal dummies |\n| Deseasonalising (ratio-to-moving-averages) | Seasonal data | seasonal indices |",
+        "2": "| Concept | Formula |\n|---|---|\n| Simple Moving Average (span k) | \\(\\hat{Y}_{t+1} = \\frac{1}{k}\\sum_{i=0}^{k-1} Y_{t-i}\\) |\n| Simple Exponential Smoothing | \\(\\hat{Y}_{t+1} = \\alpha Y_t + (1-\\alpha)\\hat{Y}_t\\), \\(0 < \\alpha < 1\\) |\n| Holt's (level + trend) | Level: \\(L_t = \\alpha Y_t + (1-\\alpha)(L_{t-1} + T_{t-1})\\); Trend: \\(T_t = \\beta(L_t - L_{t-1}) + (1-\\beta)T_{t-1}\\); Forecast: \\(\\hat{Y}_{t+h} = L_t + hT_t\\) |\n| Winters' (additive seasonality) | Level: \\(L_t = \\alpha(Y_t - S_{t-c}) + (1-\\alpha)(L_{t-1}+T_{t-1})\\); Trend: \\(T_t = \\beta(L_t-L_{t-1})+(1-\\beta)T_{t-1}\\); Season: \\(S_t = \\gamma(Y_t-L_t)+(1-\\gamma)S_{t-c}\\) |\n| Seasonal index (multiplicative) | \\(SI_q = \\text{average of}\\ Y_t / \\text{centered MA}_t\\) for quarter q; normalise so indices average to 1.0 |\n| Deseasonalised value | \\(Y_t^{ds} = Y_t / SI_t\\) |\n| Reseasonalised forecast | \\(\\hat{Y}_t = \\hat{Y}_t^{ds} \\times SI_t\\) |\n| Durbin-Watson statistic | \\(DW = \\frac{\\sum_{t=2}^n (e_t - e_{t-1})^2}{\\sum_{t=1}^n e_t^2}\\); DW ≈ 2 → no autocorrelation; DW << 2 → positive autocorrelation |\n| MAE | \\(\\frac{1}{n}\\sum|Y_t - \\hat{Y}_t|\\) |\n| RMSE | \\(\\sqrt{\\frac{1}{n}\\sum(Y_t - \\hat{Y}_t)^2}\\) |\n| MAPE | \\(\\frac{100}{n}\\sum\\frac{|Y_t - \\hat{Y}_t|}{Y_t}\\%\\) |",
+        "3": "**Scenario:** Quarterly sales (£000s) show an upward trend with seasonal peaks in Q4.\n\n| Year | Q1 | Q2 | Q3 | Q4 |\n|---|---|---|---|---|\n| 2023 | 80 | 90 | 85 | 120 |\n| 2024 | 95 | 105 | 100 | 140 |\n\n**Step 1 — Identify components:**\n\"The time plot shows an upward linear trend and a regular seasonal pattern with Q4 consistently highest. There is no obvious cyclical component.\"\n\n**Step 2 — Compute centred moving averages (span = 4):**\n- CMA for 2023-Q3 = (80 + 90 + 85 + 120)/4 = 93.75 (needs centring: average of adjacent CMAs)\n- Continue for all interior points.\n\n**Step 3 — Compute seasonal indices (ratio-to-MA):**\n- For each quarter: divide actual by centred MA, then average across years.\n- Example result: Q1 = 0.88, Q2 = 0.98, Q3 = 0.93, Q4 = 1.21. (Sum = 4.00 ✓)\n- Interpretation: \"Q4 sales are typically 21% above the trend level; Q1 is 12% below.\"\n\n**Step 4 — Deseasonalise:**\n- 2024 Q4: \\(Y^{ds} = 140/1.21 = 115.7\\).\n- Fit a linear trend to the deseasonalised data: \\(\\hat{Y}^{ds}_t = 78 + 4.8t\\) (where t = 1, 2, ..., 8).\n\n**Step 5 — Forecast 2025 Q1 (t = 9):**\n- Deseasonalised forecast: \\(\\hat{Y}^{ds}_9 = 78 + 4.8(9) = 121.2\\).\n- Reseasonalise: \\(\\hat{Y}_9 = 121.2 \\times 0.88 = 106.7\\) (£000s).\n\n**Step 6 — Validate:**\n\"Holdout the last 2 quarters; compute MAPE on the holdout. MAPE = 4.2% → forecasts are off by about 4% on average, which is acceptable for planning purposes.\"",
+        "4": "1. **(8 min)** Given a time plot description (upward trend, quarterly pattern, fan-shaped spread), identify all components. What does the fan shape imply about the decomposition model (additive vs multiplicative)?\n2. **(10 min)** Given initial level L₀, trend T₀, and α = 0.3, β = 0.2, compute two periods of Holt's forecasts. Show all intermediate calculations.\n3. **(12 min)** Compute seasonal indices using ratio-to-moving-averages for 2 years of quarterly data. Deseasonalise the data, fit a trend, and produce a forecast for the next quarter.\n4. **(10 min)** A regression model \\(\\hat{Y}_t = 50 + 2.5t + 8D_2 - 3D_3 + 15D_4\\) uses time (t) and quarterly dummies (\\(D_2, D_3, D_4\\); Q1 = reference). Interpret each coefficient. Why are there only 3 dummies for 4 quarters? Forecast Y for t = 20 in Q4.\n5. **(10 min)** Explain: (a) what Durbin-Watson = 0.8 means, (b) one consequence of ignoring positive autocorrelation, (c) the difference between MAE and RMSE and when you'd prefer each.",
+        "5": "1. **Describe the data pattern:** state whether the time series plot exhibits a linear/exponential trend, seasonality, or is a random walk.\n2. **Select the appropriate method:** SES for no trend/no seasonality; Holt's for trend only; Winters' or deseasonalising for trend + seasonality.\n3. **Show calculations:** at least 2 periods of the updating formulas, or the full seasonal index table.\n4. **Report validation metric:** state RMSE or MAPE on a holdout period. \"The model achieves MAPE = 5% on the holdout, indicating forecasts are off by 5% on average.\"\n5. **Give one caveat:** \"If the market undergoes a structural change (e.g., new regulation), historical patterns will break and these extrapolation-based forecasts will fail.\"\n6. **Business recommendation:** \"Based on the forecast of £107k for Q1 2025, the firm should plan production at 110 units, allowing a 3% safety buffer.\"",
+        "6": "- **Treating TS data as IID observations:** time series data is rarely independent; current values depend on past values. Standard regression SE may be invalid without correcting for autocorrelation.\n- **Ignoring seasonality:** failing to adjust for seasonality makes it impossible to tell if a spike is real growth or just a seasonal phenomenon (e.g., Christmas shopping).\n- **Tracking the noise:** using a moving average span that is too small (span = 1 or 2) or α close to 1 forces the forecast to react to every random blip. The forecast should smooth the noise, not follow it.\n- **Blind extrapolation:** if a structural change occurs (new competitor, pandemic, regulation), historical patterns are invalid. Note this caveat explicitly.\n- **Not checking residuals for randomness:** after fitting a model, the residuals should look like white noise (no trend, no pattern). Use the Runs test or Durbin-Watson. If residuals show a pattern, the model has failed to capture a predictable component.\n- **Confusing additive and multiplicative models:** if seasonal swings grow with the level, use multiplicative. If seasonal swings are constant regardless of level, use additive. The wrong choice leads to poor forecasts.\n- **Forgetting to reseasonalise:** after forecasting on deseasonalised data, you must multiply by the seasonal index to get the final forecast. Reporting the deseasonalised forecast as the actual forecast is a common error."
+      },
+      "formulas": [
+        {
+          "concept": "Simple Moving Average (span k)",
+          "formula": "\\(\\hat{Y}_{t+1} = \\frac{1}{k}\\sum_{i=0}^{k-1} Y_{t-i}\\)"
+        },
+        {
+          "concept": "Simple Exponential Smoothing",
+          "formula": "\\(\\hat{Y}_{t+1} = \\alpha Y_t + (1-\\alpha)\\hat{Y}_t\\), \\(0 < \\alpha < 1\\)"
+        },
+        {
+          "concept": "Holt's (level + trend)",
+          "formula": "Level: \\(L_t = \\alpha Y_t + (1-\\alpha)(L_{t-1} + T_{t-1})\\); Trend: \\(T_t = \\beta(L_t - L_{t-1}) + (1-\\beta)T_{t-1}\\); Forecast: \\(\\hat{Y}_{t+h} = L_t + hT_t\\)"
+        },
+        {
+          "concept": "Winters' (additive seasonality)",
+          "formula": "Level: \\(L_t = \\alpha(Y_t - S_{t-c}) + (1-\\alpha)(L_{t-1}+T_{t-1})\\); Trend: \\(T_t = \\beta(L_t-L_{t-1})+(1-\\beta)T_{t-1}\\); Season: \\(S_t = \\gamma(Y_t-L_t)+(1-\\gamma)S_{t-c}\\)"
+        },
+        {
+          "concept": "Seasonal index (multiplicative)",
+          "formula": "\\(SI_q = \\text{average of}\\ Y_t / \\text{centered MA}_t\\) for quarter q; normalise so indices average to 1.0"
+        },
+        {
+          "concept": "Deseasonalised value",
+          "formula": "\\(Y_t^{ds} = Y_t / SI_t\\)"
+        },
+        {
+          "concept": "Reseasonalised forecast",
+          "formula": "\\(\\hat{Y}_t = \\hat{Y}_t^{ds} \\times SI_t\\)"
+        },
+        {
+          "concept": "Durbin-Watson statistic",
+          "formula": "\\(DW = \\frac{\\sum_{t=2}^n (e_t - e_{t-1})^2}{\\sum_{t=1}^n e_t^2}\\); DW ≈ 2 → no autocorrelation; DW << 2 → positive autocorrelation"
+        },
+        {
+          "concept": "MAE",
+          "formula": "\\(\\frac{1}{n}\\sum"
+        },
+        {
+          "concept": "RMSE",
+          "formula": "\\(\\sqrt{\\frac{1}{n}\\sum(Y_t - \\hat{Y}_t)^2}\\)"
+        },
+        {
+          "concept": "MAPE",
+          "formula": "\\(\\frac{100}{n}\\sum\\frac{"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Given a time plot description (upward trend, quarterly pattern, fan-shaped spread), identify all components. What does the fan shape imply about the decomposition model (additive vs multiplicative)?"
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given initial level L₀, trend T₀, and α = 0.3, β = 0.2, compute two periods of Holt's forecasts. Show all intermediate calculations."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Compute seasonal indices using ratio-to-moving-averages for 2 years of quarterly data. Deseasonalise the data, fit a trend, and produce a forecast for the next quarter."
+        },
+        {
+          "time_minutes": 10,
+          "text": "A regression model \\(\\hat{Y}_t = 50 + 2.5t + 8D_2 - 3D_3 + 15D_4\\) uses time (t) and quarterly dummies (\\(D_2, D_3, D_4\\); Q1 = reference). Interpret each coefficient. Why are there only 3 dummies for 4 quarters? Forecast Y for t = 20 in Q4."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain: (a) what Durbin-Watson = 0.8 means, (b) one consequence of ignoring positive autocorrelation, (c) the difference between MAE and RMSE and when you'd prefer each."
+        }
+      ],
+      "feynmanText": "Most statistics looks at a snapshot -- 1,000 customers surveyed today. Time series looks at a movie -- the same measurement taken repeatedly over time (monthly sales, daily stock prices, quarterly GDP).\n\nThe big idea: past patterns can help predict the future, but only if you can separate the pattern from the noise.\n\nA time series has up to four components: **trend** (the long-run direction -- are sales generally going up or down?), **seasonality** (regular repeating patterns -- ice cream sales peak every summer), **cyclical** (longer waves tied to business cycles), and **irregular** (random noise you can't predict).\n\n**Moving averages** smooth out the noise by replacing each data point with the average of nearby points. A 12-month moving average removes monthly seasonality and shows you the underlying trend. The trade-off: more smoothing = clearer trend but slower to react to real changes.\n\n**Exponential smoothing** is a smarter moving average that gives more weight to recent observations (because yesterday's data is more relevant than data from 5 years ago). The smoothing parameter α controls how much weight goes to recent vs old data. α close to 1 = react quickly to changes. α close to 0 = smooth and stable.\n\n**Forecasting** means extending the pattern into the future. The critical question is always: \"will the pattern that held in the past continue?\" If the world changes (pandemic, new competitor, regulation), your historical pattern may be worthless. Always state this caveat.",
+      "feynmanKeyTerms": [
+        "trend",
+        "seasonality",
+        "cyclical",
+        "irregular",
+        "Moving averages",
+        "Exponential smoothing",
+        "Forecasting"
+      ],
+      "modelAnswer": "1. **Describe the data pattern:** state whether the time series plot exhibits a linear/exponential trend, seasonality, or is a random walk.\n2. **Select the appropriate method:** SES for no trend/no seasonality; Holt's for trend only; Winters' or deseasonalising for trend + seasonality.\n3. **Show calculations:** at least 2 periods of the updating formulas, or the full seasonal index table.\n4. **Report validation metric:** state RMSE or MAPE on a holdout period. \"The model achieves MAPE = 5% on the holdout, indicating forecasts are off by 5% on average.\"\n5. **Give one caveat:** \"If the market undergoes a structural change (e.g., new regulation), historical patterns will break and these extrapolation-based forecasts will fail.\"\n6. **Business recommendation:** \"Based on the forecast of £107k for Q1 2025, the firm should plan production at 110 units, allowing a 3% safety buffer.\"",
+      "commonTraps": "- **Treating TS data as IID observations:** time series data is rarely independent; current values depend on past values. Standard regression SE may be invalid without correcting for autocorrelation.\n- **Ignoring seasonality:** failing to adjust for seasonality makes it impossible to tell if a spike is real growth or just a seasonal phenomenon (e.g., Christmas shopping).\n- **Tracking the noise:** using a moving average span that is too small (span = 1 or 2) or α close to 1 forces the forecast to react to every random blip. The forecast should smooth the noise, not follow it.\n- **Blind extrapolation:** if a structural change occurs (new competitor, pandemic, regulation), historical patterns are invalid. Note this caveat explicitly.\n- **Not checking residuals for randomness:** after fitting a model, the residuals should look like white noise (no trend, no pattern). Use the Runs test or Durbin-Watson. If residuals show a pattern, the model has failed to capture a predictable component.\n- **Confusing additive and multiplicative models:** if seasonal swings grow with the level, use multiplicative. If seasonal swings are constant regardless of level, use additive. The wrong choice leads to poor forecasts.\n- **Forgetting to reseasonalise:** after forecasting on deseasonalised data, you must multiply by the seasonal index to get the final forecast. Reporting the deseasonalised forecast as the actual forecast is a common error.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-01_ST3188_sampling-design-procedures.md",
+      "date": "2026-04-01",
+      "module": "ST3188",
+      "topicSlug": "sampling-design-procedures",
+      "title": "ST3188 - Sampling Design and Procedures (Exam Sheet)",
+      "sections": {
+        "0": "You want to know what 10 million customers think. You can't ask all of them, so you ask a smaller group and use their answers to represent everyone. The art of choosing that smaller group is **sampling design**.\n\nThe fundamental question is: does your sample *look like* the population? If you only survey people who walk past your Oxford Street store on a Tuesday afternoon, you'll miss online shoppers, rural customers, and anyone who works on Tuesdays. Your sample is biased.\n\n**Probability sampling** means every person in the population has a known chance of being selected. This lets you calculate how accurate your results are (the sampling error). Simple random sampling is the purest form -- names in a hat. Stratified sampling splits the population into groups (strata) first, then randomly selects from each group, guaranteeing every segment is represented. Cluster sampling randomly selects whole groups (clusters) rather than individuals -- cheaper, but less precise.\n\n**Non-probability sampling** relies on judgment or convenience. It's faster and cheaper, but you can't calculate how accurate your results are, and selection bias is always lurking. Quota sampling looks representative (you set targets for each demographic group) but the selection within each quota is still non-random.\n\nThe sampling frame is the list you actually sample from (e.g. your customer database). If it doesn't match your target population (e.g. the database misses casual shoppers), there's a gap -- and your results may not generalise to the people you actually care about.\n\nNo matter the method, the goal is always the same: a sample that represents the population well enough for you to trust the conclusions.",
+        "1": "### Sampling vs Census\n\nA **sample** is preferred when: budget and time are limited, the population is large, variance in the characteristic is small, and the cost of non-sampling errors is high. A census is preferred when the population is small or each element is very different.\n\n### The Sampling Design Process (6 Steps)\n\n1. **Define the target population** -- specify elements, sampling units, extent (geography), and time.\n2. **Determine the sampling frame** -- a list or representation of the target population (e.g. customer database, electoral register). Note: the sampling frame may not perfectly match the target population (sampling frame error).\n3. **Select a sampling technique** -- probability or non-probability.\n4. **Determine the sample size** -- statistical formulas (see sample-size-determination.md).\n5. **Execute the sampling process** -- implement the chosen technique.\n6. **Validate the sample** -- check representativeness, adjust for non-response.\n\n### Probability Sampling Methods\n\nEvery element has a **known, non-zero probability** of selection, allowing calculation of sampling error.\n\n| Method | How it works | Key strength | Key weakness |\n|---|---|---|---|\n| **Simple Random (SRS)** | Each element has a known and equal probability of selection | Unbiased; easy to understand | Requires complete sampling frame; may not be representative for small n |\n| **Systematic** | Random starting point, then select every *i*th element | Can increase representativeness if frame is ordered by characteristic of interest | Periodicity in the frame can introduce bias |\n| **Stratified** | Partition population into strata (internally homogeneous), then randomly select from every stratum | Increases precision without increasing cost; guarantees representation of all groups | Requires knowledge of stratification variables; strata must be mutually exclusive |\n| **Cluster** | Divide population into clusters (ideally internally heterogeneous), then randomly select a sample of clusters and survey all/some elements within | Decreases cost; useful when no complete sampling frame exists | Higher sampling error than SRS; requires clusters to be sufficiently homogeneous across clusters |\n\n**Stratified vs Cluster trade-off (frequently tested):**\n- **Stratified:** Strata should be **internally homogeneous, externally heterogeneous** → increases precision.\n- **Cluster:** Clusters should be **internally heterogeneous, externally homogeneous** → decreases cost.\n\n### Non-Probability Sampling Methods\n\nRelies on researcher judgment; estimates **cannot be statistically projected** to the population. All suffer from **selection bias**.\n\n| Method | How it works | When to use |\n|---|---|---|\n| **Convenience** | Selection left to the interviewer (e.g. street intercepts) | Quick, cheap; high selection bias |\n| **Judgmental** | Elements chosen based on researcher's expertise | Expert selection for B2B or niche populations |\n| **Quota** | Two-stage: establish quotas of population elements, then select within quotas by convenience/judgment | Ensures demographic representation; still non-random within quotas |\n| **Snowball** | Initial group selected; subsequent participants selected based on referrals | Ideal for finding rare characteristics (e.g. luxury car owners) |\n\n### Total Error\n\n$$\\text{Total Error} = \\text{Random sampling error} + \\text{Non-sampling error}$$\n\nNon-sampling error (non-response bias, response error, coding error) is often the **major contributor** to total error. This is why a well-conducted sample can be more accurate than a poorly-conducted census.",
+        "2": "**Applying methods to a specific scenario (this is how the exam works):**\n\nThe examiner ALWAYS gives a business context (e.g. airline, supermarket, cinema, car manufacturer) and asks you to explain how 4 named methods would be applied to that specific scenario. Generic textbook descriptions score poorly.\n\n**For each method, cover these 4 elements:**\n\n1. **Classify:** State whether it is probability or non-probability.\n2. **Mechanics:** Explain exactly how the method would work in this specific business context. Who are the elements? What is the sampling frame? How are selections made?\n3. **Merits:** State at least one specific advantage in context.\n4. **Limitations:** State at least one specific weakness in context.\n\n**For probability methods, additionally:**\n- Identify the **sampling frame** (e.g. customer database, loyalty scheme).\n- Note any **gap between target population and sampling population** (e.g. loyalty database omits casual shoppers).\n- Discuss **representativeness** -- to what extent does the method produce a representative sample?",
+        "3": "**Scenario:** ABC Air wants to survey all types of passengers (business/leisure; short/long-haul) about willingness to travel. Customer database with contact details and demographics is available.\n\n> **Quota sampling (non-probability):** Establish quotas based on passenger type (business/leisure) and route type (short/long-haul). Interviewers select respondents within each quota by convenience. **Merit:** Ensures all passenger types are represented. **Limitation:** Selection within quotas is non-random, introducing selection bias; results cannot be statistically projected to the population.\n>\n> **Snowball sampling (non-probability):** Select an initial group of passengers and ask them to refer others. **Merit:** Useful for reaching passengers who may not be in the database (e.g. those who booked through third-party agents). **Limitation:** Heavy selection bias; early referrals influence the composition of the entire sample.\n>\n> **Stratified sampling (probability):** Use the customer database as the sampling frame. Stratify by passenger type (business/leisure) and route type (short/long-haul). Randomly select passengers from each stratum. **Merit:** Guarantees representation of all passenger segments; increases precision. **Limitation:** The database may not include all passengers (those who booked through intermediaries are excluded), creating a gap between target and sampling population.\n>\n> **Cluster sampling (probability):** Define clusters by route (e.g. each international route is a cluster). Randomly select a sample of routes and survey all passengers on those routes. **Merit:** Reduces cost by concentrating data collection on selected routes. **Limitation:** Requires clusters to be internally heterogeneous (each route should contain a mix of passenger types) -- is this realistic in practice?",
+        "4": "1. **(20 min)** Given a business scenario: explain how each of 4 named sampling methods could be applied. For each, state whether probability or non-probability, describe the mechanics in context, and state one merit and one limitation. (~5 min per method.)\n2. **(10 min)** For the probability methods, identify the sampling frame, note any limitations (gap between target and sampling population), and discuss representativeness.\n3. **(10 min)** Explain the difference between stratified and cluster sampling in terms of the composition of strata vs clusters.\n4. **(10 min)** Define total error. Explain why non-sampling error is often the major contributor.",
+        "5": "The examiner asks you to apply 4 named sampling methods to a specific business scenario. For each method (~5 marks each):\n\n1. **Classify:** \"Quota sampling is a **non-probability** sampling method.\"\n2. **Describe mechanics in context:** \"In this scenario, the researcher would establish quotas based on [specific variable from the question]. For example, [apply to the business context].\"\n3. **State a merit:** \"A key advantage is [specific to this context].\"\n4. **State a limitation:** \"However, [specific weakness]. In particular, [relate to the business context].\"\n5. **For probability methods:** \"The sampling frame would be [identify it]. A potential limitation is [gap between target and sampling population].\"\n\n**Critical examiner advice (appears in every commentary):** \"Candidates should avoid generic 'textbook' descriptions of the named sampling techniques. Rather, it is necessary to explain how each sampling scheme may be used in the specified application.\"",
+        "6": "- **Generic textbook descriptions:** The single most common mistake. The examiner explicitly rewards answers that relate to the specific business context (e.g. passengers' willingness to travel, supermarket customers' household finances). Simply defining \"stratified sampling selects from strata\" without applying it scores poorly.\n- **Not distinguishing probability from non-probability:** Always state which category the method falls into. For probability methods, identify the sampling frame.\n- **Confusing strata and clusters:** Stratified sampling randomly selects elements from ALL strata (to increase precision). Cluster sampling randomly selects only a SAMPLE of clusters (to decrease cost). This distinction is tested frequently.\n- **Forgetting merits AND limitations:** The exam question explicitly asks for both. Providing only one loses marks.\n- **Ignoring the sampling frame gap:** When a database is used as the sampling frame, it may not include all members of the target population (e.g. casual shoppers not in the loyalty scheme, passengers who booked through third parties). Note this gap.\n- **Not addressing representativeness:** Different techniques achieve representativeness to varying degrees. The examiner expects you to discuss how representative the resulting sample is likely to be."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 20,
+          "text": "Given a business scenario: explain how each of 4 named sampling methods could be applied. For each, state whether probability or non-probability, describe the mechanics in context, and state one merit and one limitation. (~5 min per method.)"
+        },
+        {
+          "time_minutes": 10,
+          "text": "For the probability methods, identify the sampling frame, note any limitations (gap between target and sampling population), and discuss representativeness."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain the difference between stratified and cluster sampling in terms of the composition of strata vs clusters."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Define total error. Explain why non-sampling error is often the major contributor."
+        }
+      ],
+      "feynmanText": "You want to know what 10 million customers think. You can't ask all of them, so you ask a smaller group and use their answers to represent everyone. The art of choosing that smaller group is **sampling design**.\n\nThe fundamental question is: does your sample *look like* the population? If you only survey people who walk past your Oxford Street store on a Tuesday afternoon, you'll miss online shoppers, rural customers, and anyone who works on Tuesdays. Your sample is biased.\n\n**Probability sampling** means every person in the population has a known chance of being selected. This lets you calculate how accurate your results are (the sampling error). Simple random sampling is the purest form -- names in a hat. Stratified sampling splits the population into groups (strata) first, then randomly selects from each group, guaranteeing every segment is represented. Cluster sampling randomly selects whole groups (clusters) rather than individuals -- cheaper, but less precise.\n\n**Non-probability sampling** relies on judgment or convenience. It's faster and cheaper, but you can't calculate how accurate your results are, and selection bias is always lurking. Quota sampling looks representative (you set targets for each demographic group) but the selection within each quota is still non-random.\n\nThe sampling frame is the list you actually sample from (e.g. your customer database). If it doesn't match your target population (e.g. the database misses casual shoppers), there's a gap -- and your results may not generalise to the people you actually care about.\n\nNo matter the method, the goal is always the same: a sample that represents the population well enough for you to trust the conclusions.",
+      "feynmanKeyTerms": [
+        "sampling design",
+        "Probability sampling",
+        "Non-probability sampling"
+      ],
+      "modelAnswer": "The examiner asks you to apply 4 named sampling methods to a specific business scenario. For each method (~5 marks each):\n\n1. **Classify:** \"Quota sampling is a **non-probability** sampling method.\"\n2. **Describe mechanics in context:** \"In this scenario, the researcher would establish quotas based on [specific variable from the question]. For example, [apply to the business context].\"\n3. **State a merit:** \"A key advantage is [specific to this context].\"\n4. **State a limitation:** \"However, [specific weakness]. In particular, [relate to the business context].\"\n5. **For probability methods:** \"The sampling frame would be [identify it]. A potential limitation is [gap between target and sampling population].\"\n\n**Critical examiner advice (appears in every commentary):** \"Candidates should avoid generic 'textbook' descriptions of the named sampling techniques. Rather, it is necessary to explain how each sampling scheme may be used in the specified application.\"",
+      "commonTraps": "- **Generic textbook descriptions:** The single most common mistake. The examiner explicitly rewards answers that relate to the specific business context (e.g. passengers' willingness to travel, supermarket customers' household finances). Simply defining \"stratified sampling selects from strata\" without applying it scores poorly.\n- **Not distinguishing probability from non-probability:** Always state which category the method falls into. For probability methods, identify the sampling frame.\n- **Confusing strata and clusters:** Stratified sampling randomly selects elements from ALL strata (to increase precision). Cluster sampling randomly selects only a SAMPLE of clusters (to decrease cost). This distinction is tested frequently.\n- **Forgetting merits AND limitations:** The exam question explicitly asks for both. Providing only one loses marks.\n- **Ignoring the sampling frame gap:** When a database is used as the sampling frame, it may not include all members of the target population (e.g. casual shoppers not in the loyalty scheme, passengers who booked through third parties). Note this gap.\n- **Not addressing representativeness:** Different techniques achieve representativeness to varying degrees. The examiner expects you to discuss how representative the resulting sample is likely to be.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-02_ST2187_sampling-distributions.md",
+      "date": "2026-04-02",
+      "module": "ST2187",
+      "topicSlug": "sampling-distributions",
+      "title": "ST2187 - Sampling & Sampling Distributions (Exam Sheet)",
+      "sections": {
+        "0": "Imagine you want to know the average height of everyone in London. You can't measure 9 million people, so you measure 500 random people and calculate their average. That average is your **estimate**.\n\nBut here's the key insight: if you picked a *different* 500 people, you'd get a slightly different average. And a different 500 again, another slightly different average. The **sampling distribution** is the pattern of all those possible averages across all possible samples you *could* have taken.\n\nThe **Central Limit Theorem (CLT)** is the most important result in statistics: no matter what the population looks like (skewed, lumpy, weird), the sampling distribution of the average becomes approximately **normal** (bell-shaped) as long as your sample is big enough (roughly n > 30). This is why the normal distribution appears everywhere in statistics -- not because populations are normal, but because averages are.\n\nThe sampling distribution gets **narrower** as your sample gets bigger. With 50 people, your estimate could be quite far off. With 5,000 people, it's very precise. The **standard error** measures this precision: it's the standard deviation of the sampling distribution, and it equals σ/√n. Double your sample size, and the standard error shrinks by √2 ≈ 1.41.\n\nThis is the foundation of everything that follows: confidence intervals, hypothesis tests, regression -- they all depend on knowing the sampling distribution of the statistic you're using.",
+        "1": "**The big picture:** We observe a sample but want to know about the population. The sampling distribution tells us how a statistic (like \\(\\bar{X}\\)) varies across all possible samples — this is the bridge from data to inference.\n\n**Key definitions:**\n- **Parameter:** fixed (unknown) population quantity, e.g., \\(\\mu\\), \\(\\sigma^2\\), \\(p\\).\n- **Statistic:** quantity computed from sample data, e.g., \\(\\bar{X}\\), \\(s^2\\), \\(\\hat{p}\\).\n- **Sampling distribution:** the probability distribution of a statistic over all possible samples of size \\(n\\) from the population.\n- **Standard error (SE):** the standard deviation of a statistic's sampling distribution. Measures precision of the estimator.\n\n**Central Limit Theorem (CLT):**\nIf \\(X_1, \\ldots, X_n\\) are iid with mean \\(\\mu\\) and variance \\(\\sigma^2\\), then for large \\(n\\):\n\\[\\bar{X} \\stackrel{approx}{\\sim} N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\\]\nThis holds regardless of the population distribution. \"Large\" typically means \\(n \\ge 30\\), though for highly skewed populations, more may be needed. If the population is itself normal, \\(\\bar{X}\\) is exactly normal for any \\(n\\).\n\n**Law of Large Numbers (LLN):** As \\(n \\to \\infty\\), \\(\\bar{X} \\to \\mu\\) in probability. The sample mean converges to the population mean.\n\n**Sampling distribution of the proportion:**\nIf \\(\\hat{p} = X/n\\) where \\(X \\sim B(n,p)\\), then for large \\(n\\):\n\\[\\hat{p} \\stackrel{approx}{\\sim} N\\left(p, \\frac{p(1-p)}{n}\\right)\\]\nCondition: \\(np \\ge 5\\) and \\(n(1-p) \\ge 5\\).\n\n**Finite population correction (FPC):**\nWhen sampling without replacement from a finite population of size \\(N\\):\n\\[SE(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}} \\sqrt{\\frac{N-n}{N-1}}\\]\nFPC matters when \\(n/N > 0.05\\). For large populations or sampling with replacement, ignore FPC.\n\n**Estimation — point and interval:**\n- **Point estimate:** single best guess (e.g., \\(\\bar{x}\\) estimates \\(\\mu\\)).\n- **Interval estimate:** range capturing the parameter with stated confidence.\n- **Confidence interval for \\(\\mu\\)** (known \\(\\sigma\\)): \\(\\bar{x} \\pm z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}}\\)\n- **Confidence interval for \\(\\mu\\)** (unknown \\(\\sigma\\), use \\(s\\)): \\(\\bar{x} \\pm t_{\\alpha/2, n-1} \\frac{s}{\\sqrt{n}}\\)\n- **Confidence interval for \\(p\\):** \\(\\hat{p} \\pm z_{\\alpha/2} \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\\)\n\n**Correct interpretation of CI:** \"We are 95% confident that the true population mean lies within this interval.\" This means the procedure captures the true parameter 95% of the time across repeated samples. It does NOT mean there is a 95% probability that this specific interval contains the parameter.\n\n**Sample size determination:**\n- For estimating a mean: \\(n = \\left(\\frac{z_{\\alpha/2} \\cdot \\sigma}{E}\\right)^2\\), where \\(E\\) is the desired margin of error.\n- For estimating a proportion: \\(n = \\frac{z_{\\alpha/2}^2 \\cdot p(1-p)}{E^2}\\). If \\(p\\) unknown, use \\(p = 0.5\\) (maximises variance, most conservative).\n- Always round up to next integer.",
+        "2": "| Concept | Formula |\n|---|---|\n| SE of sample mean | \\(SE(\\bar{X}) = \\sigma/\\sqrt{n}\\) (or \\(s/\\sqrt{n}\\) when \\(\\sigma\\) unknown) |\n| SE of sample proportion | \\(SE(\\hat{p}) = \\sqrt{p(1-p)/n}\\) |\n| CLT standardisation | \\(Z = \\frac{\\bar{X} - \\mu}{\\sigma/\\sqrt{n}}\\) |\n| FPC | \\(\\sqrt{(N-n)/(N-1)}\\) multiplied by SE |\n| CI for mean (z) | \\(\\bar{x} \\pm z_{\\alpha/2} \\cdot \\sigma/\\sqrt{n}\\) |\n| CI for mean (t) | \\(\\bar{x} \\pm t_{\\alpha/2,n-1} \\cdot s/\\sqrt{n}\\) |\n| CI for proportion | \\(\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\hat{p}(1-\\hat{p})/n}\\) |\n| Sample size for mean | \\(n = (z_{\\alpha/2} \\cdot \\sigma / E)^2\\) |\n| Sample size for proportion | \\(n = z_{\\alpha/2}^2 \\cdot p(1-p) / E^2\\) |\n| CI width factors | Width increases with confidence level and variability; decreases with \\(n\\) |\n| Prediction interval | Always wider than CI for the mean (adds individual variability \\(s_e\\)) |",
+        "3": "**Scenario:** A bank wants to estimate average customer wait time. A random sample of \\(n = 36\\) customers yields \\(\\bar{x} = 8.2\\) minutes and \\(s = 3.6\\) minutes.\n\n**Part A — Sampling distribution:**\n- By CLT (\\(n = 36 \\ge 30\\)), \\(\\bar{X} \\sim N(\\mu, \\sigma^2/36)\\) approximately.\n- \\(SE = s/\\sqrt{n} = 3.6/\\sqrt{36} = 0.60\\) minutes.\n- Interpretation: if we repeated this sampling many times, sample means would vary with a standard deviation of 0.60 minutes.\n\n**Part B — 95% confidence interval:**\n- Using \\(t_{0.025, 35} \\approx 2.030\\) (or \\(z = 1.96\\) for large sample approximation):\n- \\(CI = 8.2 \\pm 2.030(0.60) = 8.2 \\pm 1.22 = \\mathbf{[6.98, 9.42]}\\) minutes.\n- Interpretation: \"We are 95% confident that the true mean wait time for all customers is between 6.98 and 9.42 minutes.\"\n\n**Part C — Sample size for margin of error ≤ 0.5 min at 99% confidence:**\n- \\(z_{0.005} = 2.576\\), \\(\\sigma \\approx s = 3.6\\)\n- \\(n = (2.576 \\times 3.6 / 0.5)^2 = (18.55)^2 = 344.1 \\Rightarrow n = \\mathbf{345}\\)\n- The bank needs to sample at least 345 customers.\n\n**Part D — Effect of sample size on precision:**\n\n| Sample size | SE | 95% CI half-width |\n|---|---|---|\n| \\(n = 36\\) | 0.60 | 1.18 |\n| \\(n = 100\\) | 0.36 | 0.71 |\n| \\(n = 400\\) | 0.18 | 0.35 |\n\nQuadrupling \\(n\\) halves the SE — precision improves with \\(\\sqrt{n}\\), not \\(n\\).",
+        "4": "1. **(8 min)** Given \\(\\mu = 50\\), \\(\\sigma = 12\\), \\(n = 64\\). State the sampling distribution of \\(\\bar{X}\\). Compute \\(P(\\bar{X} > 53)\\). Explain why the CLT applies regardless of population shape.\n2. **(8 min)** A factory knows 8% of items are defective. In a sample of 200, find the probability that the sample proportion of defectives exceeds 10%. State the conditions for the normal approximation.\n3. **(10 min)** Construct and interpret a 90% confidence interval for the population mean given \\(\\bar{x} = 74.3\\), \\(s = 9.1\\), \\(n = 25\\). Explain why you must use the t-distribution rather than z.\n4. **(12 min)** A polling firm wants to estimate the proportion of voters supporting a policy within ±3 percentage points at 95% confidence. With no prior estimate of \\(p\\), compute the required sample size. Then recompute assuming a pilot study found \\(\\hat{p} = 0.35\\).\n5. **(12 min)** Explain in plain English: (a) why the CI interpretation \"95% probability the true mean is in this interval\" is wrong, (b) the distinction between the sample distribution and the sampling distribution, (c) why increasing the confidence level from 95% to 99% makes the interval wider.",
+        "5": "1. **Identify the parameter and the statistic:** \"We are estimating the population mean \\(\\mu\\) using the sample mean \\(\\bar{x} = 8.2\\).\"\n2. **State the sampling distribution and justify:** \"By the CLT, since \\(n = 36 \\ge 30\\), \\(\\bar{X} \\approx N(\\mu, \\sigma^2/n)\\).\"\n3. **Compute SE and state its meaning:** \"SE = 0.60, meaning sample means vary by about 0.60 minutes across repeated samples.\"\n4. **Construct the interval or compute the probability:** show the formula, substitute, compute.\n5. **Interpret in context with correct wording:** never say \"95% probability\"; say \"95% confident.\"\n6. **State assumptions and caveats:** random sampling, adequate \\(n\\) for CLT, \\(\\sigma\\) known or unknown.",
+        "6": "- **Mixing up the sample distribution and the sampling distribution:** the sample distribution is the histogram of your data. The sampling distribution is the theoretical distribution of \\(\\bar{X}\\) over repeated samples. The CLT applies to the latter.\n- **Forgetting SE shrinks with \\(\\sqrt{n}\\), not \\(n\\):** to halve the margin of error, you need four times the sample size. Always show this in cost-benefit arguments.\n- **Using z instead of t when \\(\\sigma\\) is unknown and \\(n\\) is small:** for \\(n < 30\\) with unknown \\(\\sigma\\), the t-distribution with \\(n - 1\\) degrees of freedom is required. For large \\(n\\), \\(t\\) and \\(z\\) are nearly identical.\n- **The \"95% probability\" error:** after computing a CI, saying \"there is a 95% probability that \\(\\mu\\) is in [a, b]\" is technically incorrect. The parameter is fixed; the interval is random. \"95% confident\" refers to the procedure's long-run success rate.\n- **Ignoring FPC for large sampling fractions:** if you sample 20% of a finite population, failing to apply FPC overstates the standard error.\n- **Using \\(p = 0.5\\) in sample size formula when a better estimate is available:** \\(p = 0.5\\) is conservative (maximises variance). If a pilot study gives \\(\\hat{p}\\), use it — you'll need a smaller sample.\n- **Not rounding sample size UP:** \\(n = 344.1\\) becomes \\(n = 345\\), not 344. Always round up to ensure the margin of error requirement is met."
+      },
+      "formulas": [
+        {
+          "concept": "SE of sample mean",
+          "formula": "\\(SE(\\bar{X}) = \\sigma/\\sqrt{n}\\) (or \\(s/\\sqrt{n}\\) when \\(\\sigma\\) unknown)"
+        },
+        {
+          "concept": "SE of sample proportion",
+          "formula": "\\(SE(\\hat{p}) = \\sqrt{p(1-p)/n}\\)"
+        },
+        {
+          "concept": "CLT standardisation",
+          "formula": "\\(Z = \\frac{\\bar{X} - \\mu}{\\sigma/\\sqrt{n}}\\)"
+        },
+        {
+          "concept": "FPC",
+          "formula": "\\(\\sqrt{(N-n)/(N-1)}\\) multiplied by SE"
+        },
+        {
+          "concept": "CI for mean (z)",
+          "formula": "\\(\\bar{x} \\pm z_{\\alpha/2} \\cdot \\sigma/\\sqrt{n}\\)"
+        },
+        {
+          "concept": "CI for mean (t)",
+          "formula": "\\(\\bar{x} \\pm t_{\\alpha/2,n-1} \\cdot s/\\sqrt{n}\\)"
+        },
+        {
+          "concept": "CI for proportion",
+          "formula": "\\(\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\hat{p}(1-\\hat{p})/n}\\)"
+        },
+        {
+          "concept": "Sample size for mean",
+          "formula": "\\(n = (z_{\\alpha/2} \\cdot \\sigma / E)^2\\)"
+        },
+        {
+          "concept": "Sample size for proportion",
+          "formula": "\\(n = z_{\\alpha/2}^2 \\cdot p(1-p) / E^2\\)"
+        },
+        {
+          "concept": "CI width factors",
+          "formula": "Width increases with confidence level and variability; decreases with \\(n\\)"
+        },
+        {
+          "concept": "Prediction interval",
+          "formula": "Always wider than CI for the mean (adds individual variability \\(s_e\\))"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Given \\(\\mu = 50\\), \\(\\sigma = 12\\), \\(n = 64\\). State the sampling distribution of \\(\\bar{X}\\). Compute \\(P(\\bar{X} > 53)\\). Explain why the CLT applies regardless of population shape."
+        },
+        {
+          "time_minutes": 8,
+          "text": "A factory knows 8% of items are defective. In a sample of 200, find the probability that the sample proportion of defectives exceeds 10%. State the conditions for the normal approximation."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Construct and interpret a 90% confidence interval for the population mean given \\(\\bar{x} = 74.3\\), \\(s = 9.1\\), \\(n = 25\\). Explain why you must use the t-distribution rather than z."
+        },
+        {
+          "time_minutes": 12,
+          "text": "A polling firm wants to estimate the proportion of voters supporting a policy within ±3 percentage points at 95% confidence. With no prior estimate of \\(p\\), compute the required sample size. Then recompute assuming a pilot study found \\(\\hat{p} = 0.35\\)."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Explain in plain English: (a) why the CI interpretation \"95% probability the true mean is in this interval\" is wrong, (b) the distinction between the sample distribution and the sampling distribution, (c) why increasing the confidence level from 95% to 99% makes the interval wider."
+        }
+      ],
+      "feynmanText": "Imagine you want to know the average height of everyone in London. You can't measure 9 million people, so you measure 500 random people and calculate their average. That average is your **estimate**.\n\nBut here's the key insight: if you picked a *different* 500 people, you'd get a slightly different average. And a different 500 again, another slightly different average. The **sampling distribution** is the pattern of all those possible averages across all possible samples you *could* have taken.\n\nThe **Central Limit Theorem (CLT)** is the most important result in statistics: no matter what the population looks like (skewed, lumpy, weird), the sampling distribution of the average becomes approximately **normal** (bell-shaped) as long as your sample is big enough (roughly n > 30). This is why the normal distribution appears everywhere in statistics -- not because populations are normal, but because averages are.\n\nThe sampling distribution gets **narrower** as your sample gets bigger. With 50 people, your estimate could be quite far off. With 5,000 people, it's very precise. The **standard error** measures this precision: it's the standard deviation of the sampling distribution, and it equals σ/√n. Double your sample size, and the standard error shrinks by √2 ≈ 1.41.\n\nThis is the foundation of everything that follows: confidence intervals, hypothesis tests, regression -- they all depend on knowing the sampling distribution of the statistic you're using.",
+      "feynmanKeyTerms": [
+        "estimate",
+        "sampling distribution",
+        "Central Limit Theorem (CLT)",
+        "normal",
+        "narrower",
+        "standard error"
+      ],
+      "modelAnswer": "1. **Identify the parameter and the statistic:** \"We are estimating the population mean \\(\\mu\\) using the sample mean \\(\\bar{x} = 8.2\\).\"\n2. **State the sampling distribution and justify:** \"By the CLT, since \\(n = 36 \\ge 30\\), \\(\\bar{X} \\approx N(\\mu, \\sigma^2/n)\\).\"\n3. **Compute SE and state its meaning:** \"SE = 0.60, meaning sample means vary by about 0.60 minutes across repeated samples.\"\n4. **Construct the interval or compute the probability:** show the formula, substitute, compute.\n5. **Interpret in context with correct wording:** never say \"95% probability\"; say \"95% confident.\"\n6. **State assumptions and caveats:** random sampling, adequate \\(n\\) for CLT, \\(\\sigma\\) known or unknown.",
+      "commonTraps": "- **Mixing up the sample distribution and the sampling distribution:** the sample distribution is the histogram of your data. The sampling distribution is the theoretical distribution of \\(\\bar{X}\\) over repeated samples. The CLT applies to the latter.\n- **Forgetting SE shrinks with \\(\\sqrt{n}\\), not \\(n\\):** to halve the margin of error, you need four times the sample size. Always show this in cost-benefit arguments.\n- **Using z instead of t when \\(\\sigma\\) is unknown and \\(n\\) is small:** for \\(n < 30\\) with unknown \\(\\sigma\\), the t-distribution with \\(n - 1\\) degrees of freedom is required. For large \\(n\\), \\(t\\) and \\(z\\) are nearly identical.\n- **The \"95% probability\" error:** after computing a CI, saying \"there is a 95% probability that \\(\\mu\\) is in [a, b]\" is technically incorrect. The parameter is fixed; the interval is random. \"95% confident\" refers to the procedure's long-run success rate.\n- **Ignoring FPC for large sampling fractions:** if you sample 20% of a finite population, failing to apply FPC overstates the standard error.\n- **Using \\(p = 0.5\\) in sample size formula when a better estimate is available:** \\(p = 0.5\\) is conservative (maximises variance). If a pilot study gives \\(\\hat{p}\\), use it — you'll need a smaller sample.\n- **Not rounding sample size UP:** \\(n = 344.1\\) becomes \\(n = 345\\), not 344. Always round up to ensure the margin of error requirement is met.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-03_ST3188_research-design-and-types.md",
+      "date": "2026-04-03",
+      "module": "ST3188",
+      "topicSlug": "research-design-and-types",
+      "title": "ST3188 - Research Design and Types (Exam Sheet)",
+      "sections": {
+        "0": "Market research is just a systematic way of answering: \"what should we do, and why?\" Instead of guessing, you collect evidence and use it to make better business decisions.\n\nThe process has three stages, each answering a different type of question:\n\n**Exploratory research** is for when you don't even know what the problem is yet. You talk to people (focus groups, interviews), read existing reports, and look for patterns. It's like a detective gathering clues. You don't have a hypothesis yet -- you're forming one.\n\n**Descriptive research** is for when you know the question and need to measure the answer. \"How satisfied are our customers?\" \"What percentage prefer Brand A?\" You design a survey, collect structured data, and quantify things. This is the most common type.\n\n**Causal research** is for when you want to prove that X actually causes Y, not just that they move together. The only way to do this is an experiment: change one thing (the treatment), hold everything else constant, and measure the effect. \"Did our new ad actually increase sales, or would sales have gone up anyway?\" Without an experiment, you're just measuring correlation.\n\nThese three types aren't alternatives -- they're often sequential. You explore first to understand the problem, describe to measure it, and experiment to prove what fixes it.\n\nThe research brief is what the client gives you (the problem). The research proposal is what you give back (the plan to solve it). Good research always starts with a clear problem definition -- if you don't know what question you're answering, no amount of data will help.",
+        "1": "### The Market Research Process\n\nMarket research is the **systematic and objective identification, collection, analysis, dissemination, and use of information** for the purpose of improving decision making related to the identification and solution of problems and opportunities in marketing.\n\n**Two broad types of market research:**\n- **Problem-identification research:** Identifies problems that may not be apparent but exist or are likely to arise (e.g. market potential, market share, image, market characteristics, sales analysis, forecasting, trends).\n- **Problem-solving research:** Undertaken to help solve specific marketing problems (e.g. segmentation, product, pricing, promotion, distribution research).\n\n### The Simple Linear Market Research Process\n\n1. **Define the problem** — clarify objectives with management.\n2. **Develop an approach** — formulate framework, models, research questions, hypotheses.\n3. **Design the research** — choose methodology (exploratory, descriptive, causal), design questionnaire, determine sampling plan.\n4. **Collect data** — fieldwork and data gathering.\n5. **Analyse data** — prepare data, apply statistical techniques.\n6. **Report and present** — communicate findings and recommendations to management.\n\n### Three Types of Research Design (directly tested 2021 ZB)\n\n| Design | Purpose | Characteristics | Example |\n|---|---|---|---|\n| **Exploratory** | Gain background information, define terms, clarify problems and hypotheses, establish research priorities | Flexible, unstructured, qualitative (focus groups, depth interviews, projective techniques) | Understanding why customers have stopped visiting a store |\n| **Descriptive** | Describe and measure marketing phenomena at a point in time or over time | Structured, quantitative, pre-planned; can be cross-sectional or longitudinal | Survey measuring customer satisfaction ratings across demographics |\n| **Causal** | Determine causality; make \"if X then Y\" statements | Experiments (laboratory or field), manipulation of independent variables | Testing whether a new ad increases purchase intent vs a control group |\n\n### Cross-sectional vs Longitudinal\n\n- **Cross-sectional:** Data collected from a sample of the population at a single point in time. Can be single (one sample) or multiple (two or more samples).\n- **Longitudinal:** A fixed sample (panel) measured repeatedly over time. More expensive but can detect changes and trends. Prone to panel mortality and conditioning effects.\n\n### Access Panels\n\nAccess panels are large pre-recruited groups of respondents who have agreed to participate in market research studies. Advantages: faster data collection, known demographics. Disadvantages: self-selection bias, panel conditioning (behaviour changes because of repeated measurement), not representative of the general population.\n\n### Research Brief vs Research Proposal\n\n- **Research brief** (from client): Background, objectives, target audience, budget, timeline.\n- **Research proposal** (from supplier): Methodology, sampling plan, timeline, costs, team qualifications.",
+        "2": "**Choosing a design:**\n- Problem unclear → **Exploratory** first, then follow up with descriptive/causal.\n- Problem defined, need measurement → **Descriptive** (survey).\n- Need to prove cause and effect → **Causal** (experiment).\n\nDesigns are often used **sequentially**: exploratory → descriptive → causal.\n\n### Sources of Error in Research Design\n\n**Total error = Random sampling error + Non-sampling error**\n\nNon-sampling errors include: non-response error, response error, interviewer error, coding/data entry error, and sampling frame error. Minimise **total error**, not just any single source.",
+        "3": "### Three Types of Research Design (2021 ZB Q4(b) — 10 marks)\n\n> **Exploratory research:** Used to gain background information, define terms, clarify problems and hypotheses, and establish research priorities. Example: a retailer conducts focus groups with lapsed customers to understand why they stopped shopping there before designing a larger survey.\n>\n> **Descriptive research:** Used to describe and measure marketing phenomena. Example: a bank surveys 2,000 customers to measure satisfaction levels across different service channels (branch, online, telephone).\n>\n> **Causal research:** Used to determine causality and make \"if-then\" statements. Example: a food manufacturer runs an A/B test in selected stores to determine whether end-of-aisle displays increase sales compared to standard shelf placement.",
+        "4": "1. **(15 min)** Write a 250-word answer explaining the three types of research design with examples. (Mirrors 2021 ZB Q4(b).)\n2. **(10 min)** Describe the steps in the simple linear market research process.\n3. **(10 min)** Compare cross-sectional and longitudinal designs: advantages, disadvantages, and when each is appropriate.\n4. **(15 min)** Explain the difference between problem-identification and problem-solving research with examples.",
+        "5": "1. **Name and define each design type** in a single clear sentence.\n2. **State the purpose** of each (what question does it answer?).\n3. **Provide a concrete market research example** for each.\n4. **Note any key characteristic** that distinguishes it (structured vs unstructured, qualitative vs quantitative, manipulation vs observation).",
+        "6": "- **Confusing exploratory with descriptive:** Exploratory is qualitative, flexible, and hypothesis-generating. Descriptive is quantitative, structured, and hypothesis-testing. They serve different purposes.\n- **Forgetting examples:** The 2021 ZB examiner model answer explicitly provides examples for each design type. Abstract definitions without examples score lower.\n- **Ignoring the sequential nature:** Often these designs are used in sequence — explore first, then describe, then test causality. Mentioning this shows understanding.\n- **Not distinguishing cross-sectional from longitudinal** when asked about descriptive design. These are sub-types the examiner may probe specifically."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 15,
+          "text": "Write a 250-word answer explaining the three types of research design with examples. (Mirrors 2021 ZB Q4(b).)"
+        },
+        {
+          "time_minutes": 10,
+          "text": "Describe the steps in the simple linear market research process."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Compare cross-sectional and longitudinal designs: advantages, disadvantages, and when each is appropriate."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Explain the difference between problem-identification and problem-solving research with examples."
+        }
+      ],
+      "feynmanText": "Market research is just a systematic way of answering: \"what should we do, and why?\" Instead of guessing, you collect evidence and use it to make better business decisions.\n\nThe process has three stages, each answering a different type of question:\n\n**Exploratory research** is for when you don't even know what the problem is yet. You talk to people (focus groups, interviews), read existing reports, and look for patterns. It's like a detective gathering clues. You don't have a hypothesis yet -- you're forming one.\n\n**Descriptive research** is for when you know the question and need to measure the answer. \"How satisfied are our customers?\" \"What percentage prefer Brand A?\" You design a survey, collect structured data, and quantify things. This is the most common type.\n\n**Causal research** is for when you want to prove that X actually causes Y, not just that they move together. The only way to do this is an experiment: change one thing (the treatment), hold everything else constant, and measure the effect. \"Did our new ad actually increase sales, or would sales have gone up anyway?\" Without an experiment, you're just measuring correlation.\n\nThese three types aren't alternatives -- they're often sequential. You explore first to understand the problem, describe to measure it, and experiment to prove what fixes it.\n\nThe research brief is what the client gives you (the problem). The research proposal is what you give back (the plan to solve it). Good research always starts with a clear problem definition -- if you don't know what question you're answering, no amount of data will help.",
+      "feynmanKeyTerms": [
+        "Exploratory research",
+        "Descriptive research",
+        "Causal research"
+      ],
+      "modelAnswer": "1. **Name and define each design type** in a single clear sentence.\n2. **State the purpose** of each (what question does it answer?).\n3. **Provide a concrete market research example** for each.\n4. **Note any key characteristic** that distinguishes it (structured vs unstructured, qualitative vs quantitative, manipulation vs observation).",
+      "commonTraps": "- **Confusing exploratory with descriptive:** Exploratory is qualitative, flexible, and hypothesis-generating. Descriptive is quantitative, structured, and hypothesis-testing. They serve different purposes.\n- **Forgetting examples:** The 2021 ZB examiner model answer explicitly provides examples for each design type. Abstract definitions without examples score lower.\n- **Ignoring the sequential nature:** Often these designs are used in sequence — explore first, then describe, then test causality. Mentioning this shows understanding.\n- **Not distinguishing cross-sectional from longitudinal** when asked about descriptive design. These are sub-types the examiner may probe specifically.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-03_ST3188_sample-size-determination.md",
+      "date": "2026-04-03",
+      "module": "ST3188",
+      "topicSlug": "sample-size-determination",
+      "title": "ST3188 - Sample Size Determination (Exam Sheet)",
+      "sections": {
+        "0": "\"How many people do I need to survey?\" This is one of the most practical questions in market research, and there's a formula for it.\n\nThe intuition is simple: the more precise you want your answer to be, the more people you need. Three things determine the sample size:\n\n**1. How confident do you want to be?** 95% confidence is standard. This means if you repeated the survey 100 times, about 95 of those times your result would be within the margin of error. Want 99% confidence? You'll need more people.\n\n**2. How precise do you need the answer?** If you're happy knowing \"somewhere between 40% and 60% of customers prefer Brand A,\" you need fewer people than if you need \"between 48% and 52%.\" The precision (margin of error, e) is how narrow a range you want.\n\n**3. How variable is the population?** If everyone in the population is basically the same, a small sample captures the picture. If people vary wildly, you need more data to pin down the average. For proportions, the worst case is 50/50 -- maximum uncertainty -- so if you don't know the true proportion, assume 50% to be safe.\n\nPlug these three into the formula and out comes n, the minimum number of completed surveys you need. But that's the *final* sample size. In practice, not everyone you contact will qualify (incidence rate) or finish the survey (completion rate). So you have to contact more people than n to end up with n completed responses. If only 60% qualify and 80% of those finish, you need to contact n / (0.6 x 0.8) people initially.",
+        "1": "Sample size determination answers the question: **how many respondents do we need?** This is always tested in Section A part (b) and is worth 20 marks every year. The examiner expects you to derive the formula, define all terms, and discuss practical adjustments.\n\n**Key concept:** The sample size depends on three things:\n1. The desired **confidence level** (which determines $z_{\\alpha/2}$).\n2. The tolerable **sampling error** (precision, $e$).\n3. The **variability** in the population ($\\sigma^2$ for means, $\\pi(1-\\pi)$ for proportions).",
+        "2": "### Estimating a Population Mean\n\n**Estimator:** $\\bar{X} = \\frac{1}{n}\\sum_{i=1}^{n} X_i$\n\n**Sampling distribution:** $\\bar{X} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)$\n- Exactly, if $X_i \\sim N(\\mu, \\sigma^2)$.\n- Approximately, by the **Central Limit Theorem** as $n \\to \\infty$, if the population is non-normal with finite variance.\n\n**Confidence interval:** $\\bar{X} \\pm z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}$\n\n**Minimum sample size formula:** Starting from the requirement that the margin of error does not exceed $e$:\n\n$$z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}} \\leq e$$\n\nSolving for $n$:\n\n$$n \\geq \\frac{(z_{\\alpha/2})^2 \\sigma^2}{e^2}$$\n\n**Define all terms (examiner requires this):**\n- $n$ = minimum sample size required.\n- $z_{\\alpha/2}$ = critical value from the standard normal distribution for the desired confidence level (e.g. $z_{0.025} = 1.96$ for 95% confidence).\n- $\\sigma^2$ = population variance (unknown; must be estimated from a pilot study, prior research, or assumed).\n- $e$ = maximum tolerable sampling error (precision) -- the maximum acceptable difference between the sample estimate and the true population parameter.\n\n### Estimating a Population Proportion\n\n**Estimator:** $P = \\bar{X} = \\frac{1}{n}\\sum_{i=1}^{n} X_i$ where $X_i \\sim \\text{Bernoulli}(\\pi)$.\n\n**Sampling distribution:** $P \\sim N\\left(\\pi, \\frac{\\pi(1-\\pi)}{n}\\right)$ approximately, by CLT as $n \\to \\infty$.\n\n**Minimum sample size formula:**\n\n$$n \\geq \\frac{(z_{\\alpha/2})^2 \\pi(1-\\pi)}{e^2}$$\n\n**Define all terms:**\n- $\\pi$ = population proportion (unknown; use an assumed value, a pilot study estimate, or $\\pi = 0.5$ as the conservative estimate that maximises $\\pi(1-\\pi)$ and hence gives the largest required $n$).\n- All other terms as above.\n\n### Adjusting for Incidence and Completion Rates\n\nThe statistically calculated $n$ is the **final** sample size needed. But not everyone contacted will qualify or complete the survey. The **initial** number of contacts needed is:\n\n$$\\text{Initial sample size} = \\frac{\\text{Final sample size}}{\\text{Incidence rate} \\times \\text{Completion rate}}$$\n\n**Incidence rate:** The percentage of persons eligible to participate. If there are $c$ qualifying factors with incidences $Q_1, Q_2, \\dots, Q_c$ (each as a proportion):\n\n$$\\text{Incidence rate} = Q_1 \\times Q_2 \\times \\dots \\times Q_c$$\n\n**Completion rate:** The percentage of qualified participants who actually complete the interview. Accounts for anticipated refusals by people who qualify.\n\n### Finite Population Correction Factor\n\nWhen sampling without replacement from a finite population of size $N$, and $n \\geq 0.1N$, the standard error is overestimated. Apply the correction:\n\n$$\\sigma_{\\bar{X}} = \\frac{\\sigma}{\\sqrt{n}} \\times \\sqrt{\\frac{N-n}{N-1}}$$\n\n### How Variance Affects Sample Size\n\n$n$ is **increasing in $\\sigma^2$**: more variable populations require larger samples to achieve the same precision. This is intuitive -- if everyone in the population is similar, a small sample suffices; if the population is highly diverse, you need more observations to capture that diversity.",
+        "3": "### Example 1: Sample Size for a Mean (from 2022, 2023 commentaries)\n\n> Let $\\{X_1, X_2, \\dots, X_n\\}$ be a simple random sample of size $n$, where the $X_i$ are iid. We have:\n>\n> $\\bar{X} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)$\n>\n> exactly if $X_i \\sim N(\\mu, \\sigma^2)$, or approximately by the CLT as $n \\to \\infty$.\n>\n> For a 95% confidence interval: $z_{0.025} \\times \\frac{\\sigma}{\\sqrt{n}} \\leq e$\n>\n> Therefore: $n \\geq \\frac{(1.96)^2 \\sigma^2}{e^2}$\n>\n> If $\\sigma = 10$ and $e = 2$: $n \\geq \\frac{(1.96)^2 \\times 100}{4} = \\frac{384.16}{4} = 96.04$, so $n \\geq 97$.\n\n### Example 2: Sample Size for a Proportion (from 2020, 2021 commentaries)\n\n> Let $\\{X_1, \\dots, X_n\\}$ be a simple random sample from a Bernoulli($\\pi$) distribution. Then:\n>\n> $P = \\bar{X} \\sim N\\left(\\pi, \\frac{\\pi(1-\\pi)}{n}\\right)$ approximately, by CLT.\n>\n> For a 95% CI: $n \\geq \\frac{(1.96)^2 \\times 0.5 \\times 0.5}{(0.03)^2} = \\frac{0.9604}{0.0009} = 1067.1$, so $n \\geq 1068$.\n>\n> (Using $\\pi = 0.5$ as the conservative estimate.)\n\n### Example 3: Incidence and Completion Adjustment\n\n> A study requires a final sample of $n = 500$. The incidence rate is 60% (only 60% of people contacted are eligible), and the completion rate is 80%.\n>\n> Initial contacts needed: $\\frac{500}{0.60 \\times 0.80} = \\frac{500}{0.48} = 1042$.",
+        "4": "1. **(10 min)** State a suitable estimator of the population mean and its sampling distribution. Mention all assumptions. Define all terms.\n2. **(10 min)** Derive the minimum sample size formula for estimating a population mean to within $e$ units. Define all terms.\n3. **(10 min)** Explain how the population variance affects the minimum sample size, using a market research example.\n4. **(10 min)** Define incidence rate and completion rate. Show how they affect the initial sample size with a numerical example.\n5. **(10 min)** Repeat parts 1-2 for a population proportion instead of a mean.",
+        "5": "The examiner asks some variant of these sub-questions every year. Follow this structure:\n\n**Part (i) -- Estimator and sampling distribution (~5 marks):**\n1. Define the random sample: $\\{X_1, \\dots, X_n\\}$ iid.\n2. State the estimator: $\\bar{X}$ (for mean) or $P = \\bar{X}$ (for proportion).\n3. State the sampling distribution with the exact/approximate conditions (normality vs CLT).\n4. Define all terms ($\\mu$, $\\sigma^2$, $n$, $\\pi$).\n\n**Part (ii) -- Sample size derivation (~5 marks):**\n1. Start from the CI half-width: $z_{\\alpha/2} \\times \\text{SE} \\leq e$.\n2. Substitute the SE and solve for $n$.\n3. State the final formula clearly.\n4. Define all terms ($z_{\\alpha/2}$, $e$, $\\sigma^2$ or $\\pi$).\n\n**Part (iii) -- Variance impact or choosing values (~5 marks):**\n1. State that $n$ is increasing in $\\sigma^2$ (or $\\pi(1-\\pi)$).\n2. Explain intuitively: more variable populations need larger samples.\n3. Give a concrete market research example.\n\n**Part (iv) -- Incidence and completion rates (~5 marks):**\n1. Define incidence rate: percentage eligible; formula with qualifying factors.\n2. Define completion rate: percentage of qualified who complete.\n3. State the adjustment formula: initial size = final size / (incidence x completion).\n4. Give a numerical example.",
+        "6": "- **Not defining all terms:** The examiner commentary in every single year says \"all terms should be defined.\" You lose marks for writing the formula without defining $z_{\\alpha/2}$, $e$, $\\sigma^2$, etc.\n- **Forgetting the CLT condition:** State that the sampling distribution is normal exactly if the population is normal, or approximately by the CLT as $n \\to \\infty$ if the population is non-normal. Both conditions must be mentioned.\n- **Using $\\pi = 0.5$ without explaining why:** When estimating sample size for a proportion, $\\pi = 0.5$ maximises $\\pi(1-\\pi) = 0.25$, giving the most conservative (largest) sample size. State this reasoning explicitly.\n- **Ignoring incidence and completion rates:** The statistically calculated $n$ is the final sample size, not the initial number of contacts. You must divide by incidence and completion rates to get the true number of people to contact. Forgetting this is a common mark-losing error.\n- **Confusing the formulas for means vs proportions:** For means: $n \\geq (z_{\\alpha/2})^2 \\sigma^2 / e^2$. For proportions: $n \\geq (z_{\\alpha/2})^2 \\pi(1-\\pi) / e^2$. The variance term differs. Do not mix them up.\n- **Not rounding up:** Sample size must be a whole number. Always round up to the next integer (e.g. 96.04 becomes 97)."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "State a suitable estimator of the population mean and its sampling distribution. Mention all assumptions. Define all terms."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Derive the minimum sample size formula for estimating a population mean to within $e$ units. Define all terms."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain how the population variance affects the minimum sample size, using a market research example."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Define incidence rate and completion rate. Show how they affect the initial sample size with a numerical example."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Repeat parts 1-2 for a population proportion instead of a mean."
+        }
+      ],
+      "feynmanText": "\"How many people do I need to survey?\" This is one of the most practical questions in market research, and there's a formula for it.\n\nThe intuition is simple: the more precise you want your answer to be, the more people you need. Three things determine the sample size:\n\n**1. How confident do you want to be?** 95% confidence is standard. This means if you repeated the survey 100 times, about 95 of those times your result would be within the margin of error. Want 99% confidence? You'll need more people.\n\n**2. How precise do you need the answer?** If you're happy knowing \"somewhere between 40% and 60% of customers prefer Brand A,\" you need fewer people than if you need \"between 48% and 52%.\" The precision (margin of error, e) is how narrow a range you want.\n\n**3. How variable is the population?** If everyone in the population is basically the same, a small sample captures the picture. If people vary wildly, you need more data to pin down the average. For proportions, the worst case is 50/50 -- maximum uncertainty -- so if you don't know the true proportion, assume 50% to be safe.\n\nPlug these three into the formula and out comes n, the minimum number of completed surveys you need. But that's the *final* sample size. In practice, not everyone you contact will qualify (incidence rate) or finish the survey (completion rate). So you have to contact more people than n to end up with n completed responses. If only 60% qualify and 80% of those finish, you need to contact n / (0.6 x 0.8) people initially.",
+      "feynmanKeyTerms": [
+        "1. How confident do you want to be?",
+        "2. How precise do you need the answer?",
+        "3. How variable is the population?"
+      ],
+      "modelAnswer": "The examiner asks some variant of these sub-questions every year. Follow this structure:\n\n**Part (i) -- Estimator and sampling distribution (~5 marks):**\n1. Define the random sample: $\\{X_1, \\dots, X_n\\}$ iid.\n2. State the estimator: $\\bar{X}$ (for mean) or $P = \\bar{X}$ (for proportion).\n3. State the sampling distribution with the exact/approximate conditions (normality vs CLT).\n4. Define all terms ($\\mu$, $\\sigma^2$, $n$, $\\pi$).\n\n**Part (ii) -- Sample size derivation (~5 marks):**\n1. Start from the CI half-width: $z_{\\alpha/2} \\times \\text{SE} \\leq e$.\n2. Substitute the SE and solve for $n$.\n3. State the final formula clearly.\n4. Define all terms ($z_{\\alpha/2}$, $e$, $\\sigma^2$ or $\\pi$).\n\n**Part (iii) -- Variance impact or choosing values (~5 marks):**\n1. State that $n$ is increasing in $\\sigma^2$ (or $\\pi(1-\\pi)$).\n2. Explain intuitively: more variable populations need larger samples.\n3. Give a concrete market research example.\n\n**Part (iv) -- Incidence and completion rates (~5 marks):**\n1. Define incidence rate: percentage eligible; formula with qualifying factors.\n2. Define completion rate: percentage of qualified who complete.\n3. State the adjustment formula: initial size = final size / (incidence x completion).\n4. Give a numerical example.",
+      "commonTraps": "- **Not defining all terms:** The examiner commentary in every single year says \"all terms should be defined.\" You lose marks for writing the formula without defining $z_{\\alpha/2}$, $e$, $\\sigma^2$, etc.\n- **Forgetting the CLT condition:** State that the sampling distribution is normal exactly if the population is normal, or approximately by the CLT as $n \\to \\infty$ if the population is non-normal. Both conditions must be mentioned.\n- **Using $\\pi = 0.5$ without explaining why:** When estimating sample size for a proportion, $\\pi = 0.5$ maximises $\\pi(1-\\pi) = 0.25$, giving the most conservative (largest) sample size. State this reasoning explicitly.\n- **Ignoring incidence and completion rates:** The statistically calculated $n$ is the final sample size, not the initial number of contacts. You must divide by incidence and completion rates to get the true number of people to contact. Forgetting this is a common mark-losing error.\n- **Confusing the formulas for means vs proportions:** For means: $n \\geq (z_{\\alpha/2})^2 \\sigma^2 / e^2$. For proportions: $n \\geq (z_{\\alpha/2})^2 \\pi(1-\\pi) / e^2$. The variance term differs. Do not mix them up.\n- **Not rounding up:** Sample size must be a whole number. Always round up to the next integer (e.g. 96.04 becomes 97).",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-04_ST2187_monte-carlo-constrained-optimisation.md",
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topicSlug": "monte-carlo-constrained-optimisation",
+      "title": "ST2187 - Monte Carlo Simulation & Constrained Optimisation (Exam Sheet)",
+      "sections": {
+        "0": "**Monte Carlo simulation** is the brute-force approach to uncertainty. When a problem is too complex to solve with a formula, you simulate it thousands of times with random inputs and see what happens on average.\n\nImagine you run a coffee shop and want to know your expected daily profit, but customer arrivals are random, weather is random, and supplier costs fluctuate. You can't write one formula for this. Instead, you let a computer play out 10,000 random \"days\" -- each with a randomly generated number of customers, random weather, and random costs. After 10,000 simulations, you look at the distribution of profits. The average gives you your expected profit. The spread tells you your risk. You can answer questions like \"what's the probability I lose money on any given day?\" by counting how many of the 10,000 simulations gave a negative profit.\n\n**Constrained optimisation** is a completely different tool. It answers: \"what is the best I can do, given limits?\" For example: you have a fixed advertising budget and want to allocate it across TV, radio, and online to maximise sales. The budget is the **constraint**. The combination of spending that gives the highest sales, without exceeding the budget, is the **optimal solution**.\n\nThe key concepts are: the **objective function** (what you're trying to maximise or minimise), the **decision variables** (what you can control), and the **constraints** (the limits you can't exceed). Linear programming (LP) is the special case where everything is a straight-line relationship.",
+        "1": "### Monte Carlo Simulation\n\n**What it is:** A computational technique that uses random sampling from probability distributions to model uncertainty in business decisions. Instead of a single \"best guess,\" simulation produces a full distribution of possible outcomes.\n\n**When to use:** When inputs to a model are uncertain (demand, costs, returns) and you need to understand the range and likelihood of outcomes, not just the average.\n\n**Process:**\n1. **Define the model:** identify the deterministic relationships (e.g., Profit = Revenue − Cost).\n2. **Specify uncertain inputs:** assign probability distributions to each uncertain variable (e.g., Demand ~ Normal(1000, 150²), Unit Cost ~ Uniform(8, 12)).\n3. **Generate random values:** draw random numbers from each input distribution.\n4. **Compute the output:** plug random inputs into the model to get one simulated outcome.\n5. **Repeat many times (1,000–10,000 replications):** build a distribution of outcomes.\n6. **Analyse:** compute mean, SD, percentiles, P(loss), P(profit > target), and create histograms.\n\n**Random number generation:** Excel's RAND() generates Uniform(0,1). Transform to other distributions:\n- Normal: use NORM.INV(RAND(), μ, σ)\n- Discrete: use VLOOKUP with cumulative probabilities.\n\n**Key outputs to report:**\n- Mean and standard deviation of the output.\n- 5th and 95th percentiles (the \"90% simulation interval\").\n- P(outcome < threshold) — e.g., P(NPV < 0) = probability of loss.\n\n### Constrained Optimisation (Linear Programming)\n\n**What it is:** Finding the best value of an objective function subject to constraints. In ST2187, this means **linear programming (LP)** — linear objective, linear constraints.\n\n**LP formulation:**\n1. **Decision variables:** what you can control (e.g., quantities to produce: \\(x_1, x_2, \\ldots\\)).\n2. **Objective function:** maximise or minimise a linear expression (e.g., \\(\\max Z = 5x_1 + 8x_2\\)).\n3. **Constraints:** linear inequalities representing resource limits (e.g., \\(2x_1 + 3x_2 \\le 120\\)).\n4. **Non-negativity:** \\(x_1, x_2 \\ge 0\\).\n\n**Graphical method (2 variables):**\n1. Plot each constraint as a line; shade the feasible region.\n2. The optimal solution lies at a corner (vertex) of the feasible region.\n3. Evaluate the objective at each vertex; the best one is optimal.\n\n**Sensitivity analysis in LP:**\n- **Shadow price (dual value):** the increase in Z per one-unit increase in a constraint's RHS. Only valid within the range of feasibility.\n- **Allowable increase/decrease:** the range over which an objective coefficient can change without altering the optimal solution.\n- **Binding constraint:** a constraint where the LHS equals the RHS at the optimum. Only binding constraints have positive shadow prices.\n\n**Combining simulation and optimisation:** Optimise using expected values, then Monte Carlo stress-test the \"optimal\" solution under uncertainty. The deterministically optimal solution may perform poorly when inputs vary.",
+        "2": "| Concept | Formula |\n|---|---|\n| LP general form | \\(\\max/\\min\\ Z = \\sum c_j x_j\\) subject to \\(\\sum a_{ij} x_j \\le b_i\\) and \\(x_j \\ge 0\\) |\n| Profit simulation | Profit = (Price − Unit Cost) × Demand − Fixed Costs |\n| Standard error of simulation mean | \\(SE = s / \\sqrt{N}\\) where N = number of replications |\n| P(loss) from simulation | Count replications with Profit < 0, divide by N |\n| Shadow price | \\(\\Delta Z / \\Delta b_i\\) for constraint \\(i\\) (marginal value of one extra unit of resource) |\n| Normal random variate | \\(X = \\mu + \\sigma \\times Z\\) where \\(Z \\sim N(0,1)\\) |\n| Uniform random variate | \\(X = a + (b - a) \\times U\\) where \\(U \\sim \\text{Uniform}(0,1)\\) |",
+        "3": "### Part A: Monte Carlo\n\n**Scenario:** A firm launches a product. Price = £20, Fixed cost = £5,000. Unit cost ~ Uniform(£8, £12), Demand ~ Normal(500, 80²).\n\n**One replication:**\n- Draw: Unit cost = 8 + (12 − 8) × 0.73 = £10.92. Demand = NORM.INV(0.62, 500, 80) = 524.\n- Profit = (20 − 10.92) × 524 − 5000 = 9.08 × 524 − 5000 = 4758 − 5000 = **−£242** (a loss).\n\n**After 5,000 replications:**\n- Mean profit = £2,100; SD = £1,800.\n- P(loss) = 12.3% of replications had Profit < 0.\n- 5th percentile = −£800; 95th percentile = £5,200.\n\n**Interpretation:** \"Average profit is £2,100, but there is a 12% chance of loss. The worst 5% of scenarios result in losses exceeding £800. Management should consider whether this risk level is acceptable.\"\n\n### Part B: LP\n\n**Scenario:** A factory makes two products (A and B). Profit: £5/unit A, £8/unit B. Constraints:\n- Labour: \\(2x_A + 3x_B \\le 120\\) hours\n- Materials: \\(x_A + 2x_B \\le 80\\) kg\n- \\(x_A, x_B \\ge 0\\)\n\n**Graphical solution:**\n- Corner points of feasible region: (0, 0), (60, 0), (0, 40), (24, 24).\n  - At (24, 24): Labour = 2(24) + 3(24) = 120 ✓; Materials = 24 + 2(24) = 72 ≤ 80 ✓.\n- Objective at each vertex:\n  - (0, 0): Z = 0; (60, 0): Z = 300; (0, 40): Z = 320; **(24, 24): Z = 5(24) + 8(24) = 312**.\n- **Optimal: (0, 40) with Z = £320.** Produce 0 units of A and 40 units of B.\n\n**Sensitivity:** Labour constraint is binding (120 = 120). Shadow price: if one extra hour of labour is available, profit increases by the shadow price. Materials constraint has slack (80 − 80 = 0 → also binding in this case).",
+        "4": "1. **(10 min)** Formulate an LP from a word problem: a company makes 3 products with 2 resource constraints. Write the objective function, constraints, and non-negativity conditions. Identify decision variables.\n2. **(8 min)** Given a 2-variable LP with constraints graphed, identify the feasible region, list corner points, and find the optimal solution by evaluating the objective at each vertex.\n3. **(12 min)** Set up a Monte Carlo simulation for a newsvendor problem: a shop buys newspapers at £0.50, sells at £1.00, unsold papers are worthless. Daily demand ~ Poisson(λ=150). How many papers should the shop order? Show one replication, then interpret results from 1,000 replications (given as summary statistics).\n4. **(10 min)** Interpret Excel Solver sensitivity report: explain shadow price, binding vs non-binding constraints, and allowable increase/decrease. \"The shadow price for labour is £2.50. What does this mean? Should the manager pay £3/hour for overtime?\"\n5. **(10 min)** Explain how simulation can stress-test an LP solution: the optimal LP solution assumes demand = 500, but demand is uncertain. Run simulation with demand ~ Normal(500, 80). Report P(constraint violated) and expected profit under uncertainty. Does the \"optimal\" solution survive the stress test?",
+        "5": "1. **Define decision variables, objective function, and constraints** clearly. Label each constraint with its resource meaning.\n2. **For LP:** show the graphical solution or state the corner-point method. Report the optimal solution and objective value.\n3. **For simulation:** specify all input distributions with parameters. State the number of replications. Report mean, SD, percentiles, and P(adverse outcome).\n4. **Sensitivity analysis:** for LP, report shadow prices and their interpretation. For simulation, report how changes in assumptions affect outcomes.\n5. **Business recommendation:** \"Produce X units of A and Y units of B for maximum profit of £Z. However, simulation shows a 15% chance that demand uncertainty causes the plan to miss the profit target — management should maintain a safety buffer of...\"\n6. **Caveat:** \"The LP assumes deterministic inputs. In practice, costs and demand are uncertain, so the 'optimal' plan should be validated through simulation.\"",
+        "6": "- **Not specifying distributions clearly:** \"Demand is uncertain\" is not enough. State \"Demand ~ Normal(500, 80²)\" with parameters.\n- **One replication ≠ the answer:** a single simulation run is just one random outcome. You need 1,000+ replications to estimate the distribution. Report the mean and spread, not one number.\n- **Not reporting variability:** reporting only mean profit = £2,100 hides the risk. Always report SD, percentiles, or P(loss).\n- **Ignoring feasibility constraints in LP:** checking that all constraints are satisfied at the proposed solution. If a solution violates a constraint, it is infeasible and inadmissible.\n- **Confusing shadow price with selling price:** the shadow price is the marginal value of relaxing a constraint by one unit, not the price of the resource.\n- **Shadow price valid only within a range:** the shadow price changes if the RHS moves outside the allowable range. Don't extrapolate a shadow price of £2.50/hour to 1,000 extra hours.\n- **Treating LP and simulation as separate tools:** in practice, LP finds the \"optimal\" plan assuming certainty, and simulation tests whether that plan is robust under uncertainty. Present both together.\n- **Confusing Solver output in Excel:** Solver's sensitivity report uses specific terminology (reduced cost, shadow price, allowable increase). Know what each term means."
+      },
+      "formulas": [
+        {
+          "concept": "LP general form",
+          "formula": "\\(\\max/\\min\\ Z = \\sum c_j x_j\\) subject to \\(\\sum a_{ij} x_j \\le b_i\\) and \\(x_j \\ge 0\\)"
+        },
+        {
+          "concept": "Profit simulation",
+          "formula": "Profit = (Price − Unit Cost) × Demand − Fixed Costs"
+        },
+        {
+          "concept": "Standard error of simulation mean",
+          "formula": "\\(SE = s / \\sqrt{N}\\) where N = number of replications"
+        },
+        {
+          "concept": "P(loss) from simulation",
+          "formula": "Count replications with Profit < 0, divide by N"
+        },
+        {
+          "concept": "Shadow price",
+          "formula": "\\(\\Delta Z / \\Delta b_i\\) for constraint \\(i\\) (marginal value of one extra unit of resource)"
+        },
+        {
+          "concept": "Normal random variate",
+          "formula": "\\(X = \\mu + \\sigma \\times Z\\) where \\(Z \\sim N(0,1)\\)"
+        },
+        {
+          "concept": "Uniform random variate",
+          "formula": "\\(X = a + (b - a) \\times U\\) where \\(U \\sim \\text{Uniform}(0,1)\\)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Formulate an LP from a word problem: a company makes 3 products with 2 resource constraints. Write the objective function, constraints, and non-negativity conditions. Identify decision variables."
+        },
+        {
+          "time_minutes": 8,
+          "text": "Given a 2-variable LP with constraints graphed, identify the feasible region, list corner points, and find the optimal solution by evaluating the objective at each vertex."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Set up a Monte Carlo simulation for a newsvendor problem: a shop buys newspapers at £0.50, sells at £1.00, unsold papers are worthless. Daily demand ~ Poisson(λ=150). How many papers should the shop order? Show one replication, then interpret results from 1,000 replications (given as summary statistics)."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Interpret Excel Solver sensitivity report: explain shadow price, binding vs non-binding constraints, and allowable increase/decrease. \"The shadow price for labour is £2.50. What does this mean? Should the manager pay £3/hour for overtime?\""
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain how simulation can stress-test an LP solution: the optimal LP solution assumes demand = 500, but demand is uncertain. Run simulation with demand ~ Normal(500, 80). Report P(constraint violated) and expected profit under uncertainty. Does the \"optimal\" solution survive the stress test?"
+        }
+      ],
+      "feynmanText": "**Monte Carlo simulation** is the brute-force approach to uncertainty. When a problem is too complex to solve with a formula, you simulate it thousands of times with random inputs and see what happens on average.\n\nImagine you run a coffee shop and want to know your expected daily profit, but customer arrivals are random, weather is random, and supplier costs fluctuate. You can't write one formula for this. Instead, you let a computer play out 10,000 random \"days\" -- each with a randomly generated number of customers, random weather, and random costs. After 10,000 simulations, you look at the distribution of profits. The average gives you your expected profit. The spread tells you your risk. You can answer questions like \"what's the probability I lose money on any given day?\" by counting how many of the 10,000 simulations gave a negative profit.\n\n**Constrained optimisation** is a completely different tool. It answers: \"what is the best I can do, given limits?\" For example: you have a fixed advertising budget and want to allocate it across TV, radio, and online to maximise sales. The budget is the **constraint**. The combination of spending that gives the highest sales, without exceeding the budget, is the **optimal solution**.\n\nThe key concepts are: the **objective function** (what you're trying to maximise or minimise), the **decision variables** (what you can control), and the **constraints** (the limits you can't exceed). Linear programming (LP) is the special case where everything is a straight-line relationship.",
+      "feynmanKeyTerms": [
+        "Monte Carlo simulation",
+        "Constrained optimisation",
+        "constraint",
+        "optimal solution",
+        "objective function",
+        "decision variables",
+        "constraints"
+      ],
+      "modelAnswer": "1. **Define decision variables, objective function, and constraints** clearly. Label each constraint with its resource meaning.\n2. **For LP:** show the graphical solution or state the corner-point method. Report the optimal solution and objective value.\n3. **For simulation:** specify all input distributions with parameters. State the number of replications. Report mean, SD, percentiles, and P(adverse outcome).\n4. **Sensitivity analysis:** for LP, report shadow prices and their interpretation. For simulation, report how changes in assumptions affect outcomes.\n5. **Business recommendation:** \"Produce X units of A and Y units of B for maximum profit of £Z. However, simulation shows a 15% chance that demand uncertainty causes the plan to miss the profit target — management should maintain a safety buffer of...\"\n6. **Caveat:** \"The LP assumes deterministic inputs. In practice, costs and demand are uncertain, so the 'optimal' plan should be validated through simulation.\"",
+      "commonTraps": "- **Not specifying distributions clearly:** \"Demand is uncertain\" is not enough. State \"Demand ~ Normal(500, 80²)\" with parameters.\n- **One replication ≠ the answer:** a single simulation run is just one random outcome. You need 1,000+ replications to estimate the distribution. Report the mean and spread, not one number.\n- **Not reporting variability:** reporting only mean profit = £2,100 hides the risk. Always report SD, percentiles, or P(loss).\n- **Ignoring feasibility constraints in LP:** checking that all constraints are satisfied at the proposed solution. If a solution violates a constraint, it is infeasible and inadmissible.\n- **Confusing shadow price with selling price:** the shadow price is the marginal value of relaxing a constraint by one unit, not the price of the resource.\n- **Shadow price valid only within a range:** the shadow price changes if the RHS moves outside the allowable range. Don't extrapolate a shadow price of £2.50/hour to 1,000 extra hours.\n- **Treating LP and simulation as separate tools:** in practice, LP finds the \"optimal\" plan assuming certainty, and simulation tests whether that plan is robust under uncertainty. Present both together.\n- **Confusing Solver output in Excel:** Solver's sensitivity report uses specific terminology (reduced cost, shadow price, allowable increase). Know what each term means.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-04_ST3188_qualitative-research.md",
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topicSlug": "qualitative-research",
+      "title": "ST3188 - Qualitative Research (Exam Sheet)",
+      "sections": {
+        "0": "Surveys tell you *what* people do. Qualitative research tells you *why*.\n\nA **focus group** is a guided conversation with 8-12 people, led by a moderator. The moderator doesn't lecture -- they ask open-ended questions and let the group discuss. The magic happens when one person's comment sparks a reaction from another, revealing insights that a survey question could never capture. \"Why did you stop buying Brand X?\" might get a survey answer of \"too expensive,\" but in a focus group you'd hear \"well, it's not really about price -- it's that my friend told me about Brand Y, and then I noticed the packaging looked cheaper, and I just lost trust.\"\n\n**Projective techniques** go even deeper. Sometimes people can't or won't tell you what they really think. If you ask \"what do you think of people who buy luxury handbags?\" they'll give a polite answer. But if you show them an ambiguous picture and say \"tell me a story about this person,\" their real attitudes leak out. That's the idea behind techniques like word association (\"what's the first word that comes to mind when I say 'BMW'?\"), sentence completion (\"people who shop at Waitrose are ___\"), and role playing.\n\nThe trade-off is clear: qualitative methods give you depth and understanding, but from small samples that you can't generalise statistically. You use qualitative research early -- to explore, to generate hypotheses, to understand motivations -- and then follow up with quantitative research (surveys) to measure and test at scale.",
+        "1": "### Focus Groups\n\nA focus group is a small group discussion (typically 8-12 participants) conducted by a trained moderator in an unstructured and natural manner. The purpose is to gain insights by listening to a group of people from the target market talk about issues of interest to the researcher.\n\n**Key characteristics:**\n- Group size: 8-12 participants (small enough for everyone to contribute, large enough for diverse views).\n- Composition: Homogeneous in terms of demographic and socioeconomic characteristics to avoid conflicts and inhibitions.\n- Physical setting: Relaxed, informal atmosphere.\n- Duration: 1-3 hours.\n- Recording: Video/audio for subsequent analysis.\n- Moderator: Trained professional who guides discussion without leading.\n- Number of groups: Usually several groups (saturation principle — stop when no new insights emerge).\n\n**Online Focus Groups (tested 2022 Q3(b)):**\n- More potential participants can be recruited through the internet's global reach.\n- Participants can be made to feel comfortable contributing since physical appearance conflicts are avoided.\n- Greater breadth of information through geographic spread of participants.\n- Overcomes the practical difficulty of getting individuals together at the same time and place.\n- Each participant sets the conditions in which they feel comfortable.\n- Limitations: Technology barriers, harder to read body language, potential for distraction.\n\n**Uses in market research:**\n- Understanding consumer motivations, attitudes, and perceptions.\n- Generating hypotheses for subsequent quantitative testing.\n- Developing questionnaire items.\n- Interpreting previously obtained quantitative results.\n- Pilot testing new concepts, products, or advertisements.\n\n### Projective Techniques (tested 2022 Oct Q4(b))\n\nProjective techniques are an **unstructured and indirect form of questioning** that encourages participants to project their underlying motivations, beliefs, attitudes, or feelings regarding the issues of concern. Used when respondents may be unwilling or unable to answer direct questions.\n\n**Four types:**\n\n| Technique | How it works | Example |\n|---|---|---|\n| **Association** | Respondent says the first word/image that comes to mind | Word association: \"What comes to mind when I say 'BMW'?\" |\n| **Completion** | Respondent completes an incomplete stimulus | Sentence completion: \"People who shop at Waitrose are ___\" |\n| **Construction** | Respondent constructs a story, dialogue, or description from a stimulus | Thematic Apperception Test (TAT): show an ambiguous picture and ask respondent to tell a story about it |\n| **Expressive** | Respondent role-plays or acts out a situation | Role playing: \"Pretend you are a brand manager launching a new product. What would you do?\" |\n\n**Key advantages:** Elicit responses that subjects would be unwilling or unable to give in direct questioning; useful for uncovering subconscious motivations.\n\n**Key limitations:** Require highly trained interviewers; interpretation is subjective and can introduce researcher bias; difficult to analyse systematically; small samples limit generalisability.",
+        "2": "**When to use qualitative research:**\n- Early/exploratory stages of a project.\n- When the research problem is not well defined.\n- When deeper understanding of attitudes and motivations is needed.\n- When generating hypotheses to be tested quantitatively later.\n\n**Qualitative vs quantitative:**\n- Qualitative: small samples, unstructured, exploratory, provides depth and understanding.\n- Quantitative: large samples, structured, conclusive, provides measurement and statistical testing.",
+        "3": "### Example 1: Online Focus Groups (2022 Q3(b))\n\n> Online focus groups offer several advantages over traditional face-to-face groups. More potential participants can be recruited through the growing use of the internet, and the growing ease of conducting discussions online are key benefits. Participants can be made to feel that they have the ability to contribute, allowing their confidence to be quickly built up. Conflicts in face-to-face focus groups which may stem from participants taking a dislike to other participants due to their physical appearance can be avoided. A great breadth of information may be collected, through the types and the geographic spread of participants. The practical difficulties of getting individuals together at the same time in the same location can be overcome. The nature of a discussion location which is 'comfortable' to the participant is largely overcome by each participant setting the conditions in which they feel comfortable.\n\n### Example 2: Projective Techniques (2022 Oct Q4(b))\n\n> Projective techniques are an unstructured and indirect form of questioning which encourages participants to project their underlying motivations, beliefs, attitudes or feelings regarding the issues of concern. Types include: **association technique** (respondents present the first thing that comes to mind in response to a stimulus), **completion technique** (respondents complete an incomplete stimulus, e.g. sentence completion), **construction technique** (respondents construct a response from a visual stimulus, e.g. TAT), and **expressive technique** (respondents role-play or act out a situation). These are useful when respondents may not be able or willing to express their true feelings directly.",
+        "4": "1. **(15 min)** Write a 250-word answer explaining the purpose of online focus groups and their main characteristics.\n2. **(15 min)** Write a 250-word answer explaining projective techniques, naming and briefly describing all four types with one example each.\n3. **(10 min)** For a given scenario (e.g. \"a luxury brand wants to understand why young consumers perceive it as outdated\"), recommend either focus groups or projective techniques and justify.\n4. **(10 min)** List 5 uses of focus groups in market research with a one-sentence explanation for each.",
+        "5": "1. **Define the method:** State that it is qualitative, unstructured, and its core purpose.\n2. **Describe how it works:** Mechanics of the method (group size, moderator role, technique type).\n3. **List key characteristics:** 3-4 specific characteristics or advantages.\n4. **Note limitations:** At least 1-2 weaknesses.\n5. **Link to market research context:** State what kind of marketing decisions the insights would inform.",
+        "6": "- **Too vague:** Saying \"focus groups help understand consumers\" without explaining how they work operationally. State the group size, moderator role, setting, and recording process.\n- **Confusing the four projective types:** Association (first reaction), completion (finish the stimulus), construction (build a narrative from a stimulus), expressive (act it out). Learn the distinction clearly.\n- **Forgetting limitations:** Qualitative methods have inherent weaknesses (small samples, subjective interpretation, researcher bias, not statistically projectable). Examiners expect you to acknowledge these.\n- **Not linking to purpose:** State why this method is used — to explore, to generate hypotheses, to understand motivations — rather than just describing it mechanically."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 15,
+          "text": "Write a 250-word answer explaining the purpose of online focus groups and their main characteristics."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Write a 250-word answer explaining projective techniques, naming and briefly describing all four types with one example each."
+        },
+        {
+          "time_minutes": 10,
+          "text": "For a given scenario (e.g. \"a luxury brand wants to understand why young consumers perceive it as outdated\"), recommend either focus groups or projective techniques and justify."
+        },
+        {
+          "time_minutes": 10,
+          "text": "List 5 uses of focus groups in market research with a one-sentence explanation for each."
+        }
+      ],
+      "feynmanText": "Surveys tell you *what* people do. Qualitative research tells you *why*.\n\nA **focus group** is a guided conversation with 8-12 people, led by a moderator. The moderator doesn't lecture -- they ask open-ended questions and let the group discuss. The magic happens when one person's comment sparks a reaction from another, revealing insights that a survey question could never capture. \"Why did you stop buying Brand X?\" might get a survey answer of \"too expensive,\" but in a focus group you'd hear \"well, it's not really about price -- it's that my friend told me about Brand Y, and then I noticed the packaging looked cheaper, and I just lost trust.\"\n\n**Projective techniques** go even deeper. Sometimes people can't or won't tell you what they really think. If you ask \"what do you think of people who buy luxury handbags?\" they'll give a polite answer. But if you show them an ambiguous picture and say \"tell me a story about this person,\" their real attitudes leak out. That's the idea behind techniques like word association (\"what's the first word that comes to mind when I say 'BMW'?\"), sentence completion (\"people who shop at Waitrose are ___\"), and role playing.\n\nThe trade-off is clear: qualitative methods give you depth and understanding, but from small samples that you can't generalise statistically. You use qualitative research early -- to explore, to generate hypotheses, to understand motivations -- and then follow up with quantitative research (surveys) to measure and test at scale.",
+      "feynmanKeyTerms": [
+        "focus group",
+        "Projective techniques"
+      ],
+      "modelAnswer": "1. **Define the method:** State that it is qualitative, unstructured, and its core purpose.\n2. **Describe how it works:** Mechanics of the method (group size, moderator role, technique type).\n3. **List key characteristics:** 3-4 specific characteristics or advantages.\n4. **Note limitations:** At least 1-2 weaknesses.\n5. **Link to market research context:** State what kind of marketing decisions the insights would inform.",
+      "commonTraps": "- **Too vague:** Saying \"focus groups help understand consumers\" without explaining how they work operationally. State the group size, moderator role, setting, and recording process.\n- **Confusing the four projective types:** Association (first reaction), completion (finish the stimulus), construction (build a narrative from a stimulus), expressive (act it out). Learn the distinction clearly.\n- **Forgetting limitations:** Qualitative methods have inherent weaknesses (small samples, subjective interpretation, researcher bias, not statistically projectable). Examiners expect you to acknowledge these.\n- **Not linking to purpose:** State why this method is used — to explore, to generate hypotheses, to understand motivations — rather than just describing it mechanically.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-04_ST3188_secondary-data-analytics.md",
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topicSlug": "secondary-data-analytics",
+      "title": "ST3188 - Internal Secondary Data and Analytics (Exam Sheet)",
+      "sections": {
+        "0": "Before you spend money collecting new data, check what you already have. That's the principle behind **secondary data** -- information that already exists because someone collected it for a different purpose.\n\nEvery business sits on a goldmine of data it already owns. Your **operational data** -- invoices, transactions, loyalty card records, website analytics -- tells you what customers buy, when, how often, and how they pay. You didn't collect this for research, but a clever researcher can extract powerful insights from it. Which customers only appear during sales? Which ones repeat-buy every month? Which ones stopped buying six months ago? The answers are already in your systems.\n\nThe advantages are obvious: it's free (already collected), fast (no fieldwork needed), and the quality is usually known. The disadvantages: it was collected for a different purpose, so it might not answer your specific question perfectly. Definitions might not match what you need. And it might be out of date.\n\n**Geodemographic classification** is a clever trick: combine where people live (postcode) with census data about that area (average income, household type, education level) to infer what kind of person lives there. Systems like ACORN and MOSAIC do this at scale. It's useful for targeting direct mail, choosing store locations, and media planning. The limitation is the ecological fallacy -- not everyone in a wealthy postcode is wealthy.\n\nThe rule of thumb: always start with secondary data. It frames the problem and often answers the easy questions, so your expensive primary research (surveys, focus groups) can focus on what you still don't know.",
+        "1": "### What is Secondary Data?\n\nSecondary data are data that have **already been collected** for purposes other than the current research problem. Contrasted with primary data (collected specifically for the problem at hand).\n\n**Two types:**\n- **Internal secondary data:** Generated within the organisation (sales records, customer databases, CRM systems, financial reports, inventory data).\n- **External secondary data:** Generated outside the organisation (government statistics, industry reports, commercial databases, published research).\n\n### Operational Data (directly tested 2020 Q4(b))\n\nOperational data represent the **daily activities and transactions** of a business. Transactions may be held in different departments (sales, accounts, HR) and stored in different ways.\n\n**Why use operational data?**\n- Already collected → **no additional data collection costs**.\n- No access problems (though individual managers may resist for personal/political reasons).\n- Quality of data easier to establish (compared to external data).\n- Can be the **starting point** for many market research projects.\n\n**What customer behaviour questions can operational data answer?** (from examiner model answer):\n- What products do customers buy?\n- Which types of customer buy the most products?\n- Which types of customers repeat purchases?\n- Which types of customers appear only when there are special offers?\n- Where are these customers located?\n- How do these customers pay — by cash or credit?\n- Which types of customers are the most profitable?\n- Seasonal patterns of purchasing behaviour by product types and customer types.\n\n### Geodemographic Classification\n\nA geodemographic classification categorises consumers based on the **type of area in which they live**. It combines geographic data (postcode/ZIP) with demographic data (census information about the population in that area).\n\n**Examples:** ACORN (UK), PRIZM (US), MOSAIC (international).\n\n**Uses:** Target marketing, site selection for retail outlets, direct mail campaigns, media planning.\n\n**Limitation:** Assumes people living in similar areas have similar characteristics (ecological fallacy — not every individual matches the area profile).\n\n### Building a Customer Profile\n\nCombining different types of data helps build a strong picture of consumer characteristics:\n- **Transactional data** → what customers buy, when, how much.\n- **Demographic data** → who they are (age, gender, income).\n- **Geodemographic data** → where they live and what that implies.\n- **Behavioural data** → loyalty scheme activity, website browsing, app usage.\n- **Attitudinal data** → from surveys measuring satisfaction, preferences, intentions.",
+        "2": "**When to use secondary data:**\n- Always check secondary data **first** — it is cheaper and faster than primary data collection.\n- Use to understand the market context before designing primary research.\n- Use internal data to identify patterns that inform research questions.\n\n**Limitations of secondary data:**\n- Collected for a different purpose → may not fit current research needs exactly.\n- May be outdated.\n- Definitions and measurement units may differ.\n- Accuracy and reliability may be unknown (especially external sources).",
+        "3": "### Operational Data (2020 Q4(b) — 10 marks)\n\n> Operational data are data which represent the daily activities and transactions of a business. Transactions may be held in different departments such as sales, accounts or human resources and stored in different ways. Even in the days of transactions being recorded manually, it was the task of market researchers to track down different sources of data and analyse them.\n>\n> Locating and analysing internal sources of secondary data can be the starting point in many market research projects. The main reasons are that, as these data have already been collected, there are no additional data collection costs, there should be no access problems, and the quality of the data should be easier to establish.\n>\n> In building up an understanding of customer behaviour, operational data from invoices, for example, could answer: What products do customers buy? Which types of customer buy the most? Which types repeat purchases? Which appear only for special offers? Where are they located? How do they pay? Which are the most profitable? What seasonal patterns exist?\n>\n> Answers should be supported with real-world examples.",
+        "4": "1. **(15 min)** Write a 250-word answer explaining how operational data help organisations build an understanding of customer behaviour, with examples.\n2. **(10 min)** Distinguish between internal and external secondary data. Give 3 examples of each.\n3. **(10 min)** Explain what a geodemographic classification is and how it is used in marketing.\n4. **(15 min)** Discuss the advantages and limitations of using secondary data as a starting point for market research.",
+        "5": "1. **Define operational/secondary data** in one sentence.\n2. **Explain why it is valuable** (cost, speed, accessibility).\n3. **List specific questions it can answer** (the examiner explicitly rewards lists of customer-behaviour questions).\n4. **Provide concrete examples** (invoices, loyalty cards, CRM records).\n5. **Acknowledge limitations** if space permits (purpose mismatch, staleness).",
+        "6": "- **Too abstract:** The examiner rewards answers with specific examples of what operational data can reveal. Simply saying \"it helps understand customers\" is insufficient — list the specific questions it can answer.\n- **Forgetting the advantages:** No additional cost, no access problems, easier quality assessment. These are the three core advantages from the examiner model answer.\n- **Ignoring limitations:** Secondary data was collected for a different purpose, so it may not perfectly fit the current research problem. Always note this.\n- **Confusing internal with external:** Internal = generated within the firm. External = generated outside (government stats, industry reports). The exam can ask about either or both."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 15,
+          "text": "Write a 250-word answer explaining how operational data help organisations build an understanding of customer behaviour, with examples."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Distinguish between internal and external secondary data. Give 3 examples of each."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain what a geodemographic classification is and how it is used in marketing."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Discuss the advantages and limitations of using secondary data as a starting point for market research."
+        }
+      ],
+      "feynmanText": "Before you spend money collecting new data, check what you already have. That's the principle behind **secondary data** -- information that already exists because someone collected it for a different purpose.\n\nEvery business sits on a goldmine of data it already owns. Your **operational data** -- invoices, transactions, loyalty card records, website analytics -- tells you what customers buy, when, how often, and how they pay. You didn't collect this for research, but a clever researcher can extract powerful insights from it. Which customers only appear during sales? Which ones repeat-buy every month? Which ones stopped buying six months ago? The answers are already in your systems.\n\nThe advantages are obvious: it's free (already collected), fast (no fieldwork needed), and the quality is usually known. The disadvantages: it was collected for a different purpose, so it might not answer your specific question perfectly. Definitions might not match what you need. And it might be out of date.\n\n**Geodemographic classification** is a clever trick: combine where people live (postcode) with census data about that area (average income, household type, education level) to infer what kind of person lives there. Systems like ACORN and MOSAIC do this at scale. It's useful for targeting direct mail, choosing store locations, and media planning. The limitation is the ecological fallacy -- not everyone in a wealthy postcode is wealthy.\n\nThe rule of thumb: always start with secondary data. It frames the problem and often answers the easy questions, so your expensive primary research (surveys, focus groups) can focus on what you still don't know.",
+      "feynmanKeyTerms": [
+        "secondary data",
+        "operational data",
+        "Geodemographic classification"
+      ],
+      "modelAnswer": "1. **Define operational/secondary data** in one sentence.\n2. **Explain why it is valuable** (cost, speed, accessibility).\n3. **List specific questions it can answer** (the examiner explicitly rewards lists of customer-behaviour questions).\n4. **Provide concrete examples** (invoices, loyalty cards, CRM records).\n5. **Acknowledge limitations** if space permits (purpose mismatch, staleness).",
+      "commonTraps": "- **Too abstract:** The examiner rewards answers with specific examples of what operational data can reveal. Simply saying \"it helps understand customers\" is insufficient — list the specific questions it can answer.\n- **Forgetting the advantages:** No additional cost, no access problems, easier quality assessment. These are the three core advantages from the examiner model answer.\n- **Ignoring limitations:** Secondary data was collected for a different purpose, so it may not perfectly fit the current research problem. Always note this.\n- **Confusing internal with external:** Internal = generated within the firm. External = generated outside (government stats, industry reports). The exam can ask about either or both.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-05_EC2020_multiple-regression-intro-ml.md",
+      "date": "2026-04-05",
+      "module": "EC2020",
+      "topicSlug": "multiple-regression-intro-ml",
+      "title": "EC2020 + ST3189 — Multiple Regression Introduction and ML Bridge",
+      "sections": {
+        "0": "Econometrics and machine learning both start from the same place: you have data and you want to learn something from it. But they ask fundamentally different questions.\n\n**Econometrics** asks: \"What is the causal effect of X on Y?\" Did raising the minimum wage actually reduce employment? The goal is to isolate the effect of one specific variable while holding everything else constant. You care deeply about whether your model assumptions hold, because a wrong assumption means your answer is biased -- systematically off in a way that can mislead policy.\n\n**Machine learning** asks: \"Can I predict Y accurately for new, unseen data?\" It doesn't care which variable is \"causing\" what -- it just wants the best forecast. If throwing in 50 variables and a complicated algorithm gives you a better prediction, great. The test of success is out-of-sample performance: how well does the model do on data it's never seen?\n\nThe same regression equation can serve both purposes. A house price model Y = β₀ + β₁(sqft) + β₂(bedrooms) + u can either be interpreted as \"each extra square foot adds β₁ dollars to the price\" (econometrics) or \"this formula predicts house prices with an RMSE of $42,000\" (ML). Same math, different objective.\n\nThe **bias-variance tradeoff** is the ML side's version of the econometric tension between omitting variables (bias) and including too many (imprecision). A simple model is biased but stable; a complex model fits training data perfectly but falls apart on new data (overfitting). Cross-validation -- splitting your data and testing on the held-out part -- is how ML practitioners find the sweet spot.\n\nThe bridge idea: econometrics worries about whether the *right* variable is in the model (internal validity); ML worries about whether the model *works* on fresh data (external validity). Both are important, just in different contexts.",
+        "1": "### EC2020 Side\n\n**The MLR model.** Y = β₀ + β₁X₁ + β₂X₂ + ... + βₖXₖ + u, where u is an unobserved error term.\n\n**Coefficient interpretation.** β̂ⱼ is the estimated partial effect of Xⱼ on Y, holding all other regressors fixed (ceteris paribus). If log(Y) is the dependent variable and Xⱼ enters linearly, then a one-unit increase in Xⱼ is associated with a 100·β̂ⱼ percent change in Y. If both sides are in logs, β̂ⱼ is an elasticity.\n\n**OLS mechanics.** Choose β̂ to minimise RSS = Σᵢ(Yᵢ − Ŷᵢ)². The first-order conditions ∂RSS/∂β̂ⱼ = 0 yield k+1 normal equations. In matrix form: β̂ = (X'X)⁻¹X'Y.\n\n**Gauss-Markov theorem.** Under assumptions MLR.1–5, OLS is the Best Linear Unbiased Estimator (BLUE). \"Best\" = minimum variance among all linear unbiased estimators.\n\n**Omitted variable bias.** If the true model includes X₂ but we omit it:\nE(β̃₁|X) = β₁ + β₂ · δ̃₁, where δ̃₁ is the slope from regressing X₂ on X₁.\nBias direction = (sign of β₂) × (sign of Corr(X₁, X₂)).\n\n**Including an irrelevant variable.** If β₂ = 0 in truth but we include X₂ anyway: no bias (E(β̂₁) = β₁), but standard errors increase — loss of efficiency.\n\n**F-test.** Test joint significance of q restrictions: H₀: βⱼ₁ = βⱼ₂ = ... = βⱼq = 0. Requires estimating both restricted and unrestricted models.\n\n**Goodness of fit.** R² = 1 − SSR/SST = ESS/SST. Never decreases when adding regressors. Adjusted R² = 1 − (1−R²)(n−1)/(n−k−1) can decrease, penalising extra regressors.\n\n### ST3189 Side\n\n**ML framing.** The goal is prediction, not causal inference. We want a model that generalises to unseen data, not one that recovers structural parameters.\n\n**Train/test split.** Partition data into training set (fit model) and test set (evaluate). Typical split: 80/20 or 70/30. Never tune on the test set.\n\n**Cross-validation.** k-fold CV: split training data into k folds, train on k−1, validate on the held-out fold, rotate. Average the k validation errors. Reduces variance of the performance estimate.\n\n**Bias-variance tradeoff.** Complex model → low bias (fits training data well) but high variance (sensitive to training sample). Simple model → higher bias but lower variance. Overfitting = model captures noise rather than signal.\n\n**Metrics.** Regression: RMSE, MAE, R². Classification: accuracy, precision, recall, F1, AUC-ROC. Choose the metric that matches the loss you care about.\n\n### Bridge: Econometrics ↔ ML\n\n**Different questions, same data.** Econometrics asks \"What is the causal effect of X on Y?\" (internal validity). ML asks \"Which model predicts Y best on unseen data?\" (external validity / generalisation).\n\n**Variable selection.** In econometrics, include/exclude variables based on theory (omitted variable bias, irrelevant variable costs). In ML, use regularisation (lasso/ridge) or CV-based selection to optimise prediction.\n\n**Regularisation ↔ variable selection.** Lasso shrinks coefficients toward zero and sets some exactly to zero (automatic variable selection). Ridge shrinks but retains all variables. Neither addresses OVB — they optimise prediction, not causal identification.\n\n**Common foundation.** Both fields use linear regression as their starting point. OLS is the baseline model in both contexts. The difference is in what happens after fitting: econometrics tests hypotheses about β; ML evaluates out-of-sample prediction accuracy.",
+        "2": "### EC2020 Formulas\n\n| Formula | Expression |\n|---|---|\n| OLS (SLR) | β̂₁ = Σ(Xᵢ−X̄)(Yᵢ−Ȳ) / Σ(Xᵢ−X̄)² = SampleCov(X,Y) / SampleVar(X) |\n| OLS (MLR, matrix) | β̂ = (X'X)⁻¹X'Y |\n| Unbiasedness | E(β̂\\|X) = β, requires MLR.1–4 |\n| Consistency | plim β̂ = β when Cov(Xⱼ, u) = 0 |\n| OVB | E(β̃₁\\|X) = β₁ + β₂·δ̃₁, where δ̃₁ = Σ(X₁ᵢ−X̄₁)X₂ᵢ / Σ(X₁ᵢ−X̄₁)² |\n| R² | 1 − SSR/SST = 1 − Σûᵢ²/Σ(Yᵢ−Ȳ)² |\n| Adjusted R² | 1 − (1−R²)(n−1)/(n−k−1); can decrease when adding regressors |\n| F-statistic | F = [(R²ᵤᵣ − R²ᵣ)/q] / [(1−R²ᵤᵣ)/(n−k−1)], q = number of restrictions |\n| t-statistic | t = β̂ⱼ / se(β̂ⱼ) ~ t_{n−k−1} under CLM assumptions |\n\n### ST3189 Formulas\n\n| Formula | Expression |\n|---|---|\n| RMSE | √(1/n · Σ(yᵢ − ŷᵢ)²) |\n| Bias-variance decomposition | MSE(ŷ) = Bias(ŷ)² + Var(ŷ) + σ² (irreducible error) |\n| k-fold CV error | CV(k) = (1/k) Σⱼ MSEⱼ, averaged over k held-out folds |\n| Ridge penalty | minimise Σ(yᵢ − ŷᵢ)² + λΣβⱼ² |\n| Lasso penalty | minimise Σ(yᵢ − ŷᵢ)² + λΣ\\|βⱼ\\| |",
+        "3": "**Dataset.** House prices with variables: price, sqft, bedrooms, age, location.\n\n### Econometrics Approach (EC2020)\n\n**Model:** log(price) = β₀ + β₁log(sqft) + β₂bedrooms + β₃age + β₄location + u\n\n**Goal:** estimate the causal effect of house size on price.\n\n**Concern:** OVB from unobserved quality, school district, renovation status. If quality is positively correlated with sqft and positively affects price, then β̃₁ is biased upward.\n\n**Output:**\n\n| Variable | β̂ | se | t | p |\n|---|---|---|---|---|\n| log(sqft) | 0.70 | 0.05 | 14.00 | < 0.001 |\n| bedrooms | 0.04 | 0.02 | 2.00 | 0.046 |\n| age | −0.005 | 0.001 | −5.00 | < 0.001 |\n| location | 0.15 | 0.03 | 5.00 | < 0.001 |\n\n**Interpretation:** β̂₁ = 0.70 → a 1% increase in sqft is associated with a 0.70% increase in price, ceteris paribus. This is an elasticity (log-log).\n\n**Caveat:** this is not causal unless E(u|X) = 0, which is unlikely here — unobserved quality confounds the estimate.\n\n### ML Approach (ST3189)\n\n**Goal:** predict price for new (unseen) houses.\n\n**Pipeline:**\n1. Split data 80/20 (train/test), set random seed for reproducibility.\n2. Fit three models on training set: OLS, Ridge (λ chosen by 5-fold CV), Lasso (λ chosen by 5-fold CV).\n3. Evaluate each on the held-out test set.\n\n**Results:**\n\n| Model | Test RMSE |\n|---|---|\n| OLS | $45,000 |\n| Ridge | $43,000 |\n| Lasso | $42,000 |\n\n**Decision:** select Lasso — lowest test RMSE. Coefficient interpretability is not the objective.\n\n### Key Insight\n\nSame regression equation, different objectives, different evaluation criteria. The econometrician reports β̂ with standard errors and discusses threats to identification. The ML practitioner reports out-of-sample RMSE and selects the model that generalises best.",
+        "4": "**Task 1 (8 min).** Interpret a 4-variable regression output.\n\nYou estimate: log(wage) = 5.20 + 0.08·educ + 0.004·exper − 0.12·female + 0.03·tenure.\nAll coefficients significant at 5%. n = 526, R² = 0.36.\n\n(a) Interpret each coefficient with correct functional form and units.\n(b) Is the sign on female consistent with a gender wage gap? Explain.\n(c) Does R² = 0.36 mean the model is \"bad\"? Discuss.\n\n**Task 2 (8 min).** Derive the OVB formula.\n\nTrue model: Y = β₁X₁ + β₂X₂ + u. We regress Y on X₁ only, obtaining β̃₁.\n(a) Show that E(β̃₁|X) = β₁ + β₂·δ̃₁.\n(b) Suppose X₁ = education, X₂ = ability. Ability is positively correlated with education and positively affects wages. What is the direction of bias on β̃₁?\n\n**Task 3 (8 min).** Design an ML pipeline.\n\nYou have 10,000 observations of (Y, X₁, ..., X₂₀). Y is continuous.\n(a) State your evaluation metric and justify.\n(b) Describe your train/test split and cross-validation strategy.\n(c) Propose 3 candidate models and explain why each might perform well.\n(d) How do you select the final model?\n\n**Task 4 (8 min).** Write 5 sentences answering: \"When would I trust the econometric approach more? When the ML approach?\"\n\n**Task 5 (8 min).** Test joint significance using an F-test.\n\nUnrestricted: log(salary) = β₀ + β₁years + β₂gamesyr + β₃bavg + β₄hrunsyr + u, R² = 0.6278, n = 353.\nRestricted: log(salary) = β₀ + β₁years + β₂gamesyr + u, R² = 0.5971.\n(a) State H₀ and H₁.\n(b) Compute the F-statistic (q = 2, k = 4).\n(c) Compare to F₂,₃₄₈ critical value at 5% (≈ 3.02). Conclude.",
+        "5": "### For Econometrics Interpretation Questions\n\n1. **State objective.** \"We seek to estimate the causal effect of Xⱼ on Y.\"\n2. **Write the model.** State the population equation and identify the dependent and independent variables.\n3. **List assumptions.** At minimum: MLR.1 (linear in parameters), MLR.2 (random sampling), MLR.3 (no perfect collinearity), MLR.4 (zero conditional mean: E(u|X) = 0).\n4. **Interpret coefficients.** Use ceteris paribus. Get units right (level-level, log-level, level-log, log-log).\n5. **Test hypotheses.** Follow the 6-step protocol: (i) state H₀ and H₁, (ii) choose significance level, (iii) compute test statistic, (iv) find critical value or p-value, (v) decision rule, (vi) conclude in context.\n6. **Discuss threats.** OVB, measurement error, simultaneity, sample selection. State the direction of likely bias if possible.\n\n### For ML Comparison Questions\n\n1. **State objective.** \"We seek to predict Y on unseen data.\"\n2. **Describe data splitting.** Train/validation/test or k-fold CV. State proportions and rationale.\n3. **List candidate models.** At least 2–3 (e.g., OLS baseline, Ridge, Lasso, or tree-based methods).\n4. **Report evaluation metric on test set.** RMSE for regression. Justify choice.\n5. **Select model.** Choose the one with best out-of-sample performance. Note any tradeoffs (interpretability vs accuracy).",
+        "6": "**Mixing causal and predictive language.** Never say \"X causes Y\" in a prediction context. In ML, we say \"X is a useful predictor of Y.\" Causal claims require identification assumptions (E(u|X) = 0) that ML does not impose.\n\n**Reporting training performance as model quality.** A model with perfect training fit may be severely overfit. Always report test set or CV performance. Training R² = 0.99 with test R² = 0.40 signals overfitting.\n\n**Data leakage in preprocessing.** If you standardise or impute using the full dataset before splitting, information from the test set leaks into training. Always fit preprocessing on training data only, then apply to test data.\n\n**R² does not prove causation.** R² measures goodness of fit — how much variation in Y the model explains. A high R² with omitted variables still gives biased coefficients. A low R² can still have individually significant and unbiased coefficients.\n\n**Forgetting ceteris paribus.** Every coefficient interpretation must include \"holding all other variables constant.\" Without this qualifier, the interpretation is wrong — it confounds the partial effect with the total effect.\n\n**Ignoring OVB can invalidate significant coefficients.** A coefficient can be t = 10 and still meaningless if a confounding variable is omitted. Statistical significance ≠ causal validity.\n\n**Adjusted R² across different dependent variables.** You cannot compare adjusted R² between a model with Y and a model with log(Y). The dependent variable must be identical for R² comparisons to be valid.\n\n**Thinking regularisation fixes OVB.** Lasso and ridge improve prediction by shrinking coefficients, but they do not remove omitted variable bias. A confounded coefficient shrunk toward zero is still confounded — it is just smaller.\n\n**Statistical vs practical significance.** A coefficient of β̂ = 0.001 with t = 5.0 is statistically significant but may be practically irrelevant. Always assess economic magnitude alongside p-values. With large n, even tiny effects become significant."
+      },
+      "formulas": [
+        {
+          "concept": "Formula",
+          "formula": "Expression"
+        },
+        {
+          "concept": "OLS (SLR)",
+          "formula": "β̂₁ = Σ(Xᵢ−X̄)(Yᵢ−Ȳ) / Σ(Xᵢ−X̄)² = SampleCov(X,Y) / SampleVar(X)"
+        },
+        {
+          "concept": "OLS (MLR, matrix)",
+          "formula": "β̂ = (X'X)⁻¹X'Y"
+        },
+        {
+          "concept": "Unbiasedness",
+          "formula": "E(β̂|X) = β under MLR.1–MLR.4"
+        },
+        {
+          "concept": "Consistency",
+          "formula": "plim β̂ = β when Cov(Xⱼ, u) = 0"
+        },
+        {
+          "concept": "OVB",
+          "formula": "E(β̃₁|X) = β₁ + β₂·δ̃₁ where δ̃₁ = regression of X₂ on X₁"
+        },
+        {
+          "concept": "R²",
+          "formula": "1 − SSR/SST = 1 − Σûᵢ²/Σ(Yᵢ−Ȳ)²"
+        },
+        {
+          "concept": "Adjusted R²",
+          "formula": "1 − (1−R²)(n−1)/(n−k−1); can decrease when adding regressors"
+        },
+        {
+          "concept": "F-statistic",
+          "formula": "F = [(R²ᵤᵣ − R²ᵣ)/q] / [(1−R²ᵤᵣ)/(n−k−1)], q = number of restrictions"
+        },
+        {
+          "concept": "t-statistic",
+          "formula": "t = β̂ⱼ / se(β̂ⱼ) ~ t_{n−k−1} under CLM assumptions"
+        },
+        {
+          "concept": "RMSE",
+          "formula": "√(1/n · Σ(yᵢ − ŷᵢ)²)"
+        },
+        {
+          "concept": "Bias-variance decomposition",
+          "formula": "MSE(ŷ) = Bias(ŷ)² + Var(ŷ) + σ² (irreducible error)"
+        },
+        {
+          "concept": "k-fold CV error",
+          "formula": "CV(k) = (1/k) Σⱼ MSEⱼ, averaged over k held-out folds"
+        },
+        {
+          "concept": "Ridge penalty",
+          "formula": "minimise Σ(yᵢ − ŷᵢ)² + λΣβⱼ²"
+        },
+        {
+          "concept": "Lasso penalty",
+          "formula": "minimise Σ(yᵢ − ŷᵢ)² + λΣ|βⱼ|"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "(a) Interpret each coefficient with correct functional form and units.\n(b) Is the sign on female consistent with a gender wage gap? Explain.\n(c) Does R² = 0.36 mean the model is \"bad\"? Discuss.\n\n**Task 2 (8 min).** Derive the OVB formula.\n\nTrue model: Y = β₁X₁ + β₂X₂ + u. We regress Y on X₁ only, obtaining β̃₁.\n(a) Show that E(β̃₁|X) = β₁ + β₂·δ̃₁.\n(b) Suppose X₁ = education, X₂ = ability. Ability is positively correlated with education and positively affects wages. What is the direction of bias on β̃₁?\n\n**Task 3 (8 min).** Design an ML pipeline.\n\nYou have 10,000 observations of (Y, X₁, ..., X₂₀). Y is continuous.\n(a) State your evaluation metric and justify.\n(b) Describe your train/test split and cross-validation strategy.\n(c) Propose 3 candidate models and explain why each might perform well.\n(d) How do you select the final model?\n\n**Task 4 (8 min).** Write 5 sentences answering: \"When would I trust the econometric approach more? When the ML approach?\"\n\n**Task 5 (8 min).** Test joint significance using an F-test.\n\nUnrestricted: log(salary) = β₀ + β₁years + β₂gamesyr + β₃bavg + β₄hrunsyr + u, R² = 0.6278, n = 353.\nRestricted: log(salary) = β₀ + β₁years + β₂gamesyr + u, R² = 0.5971.\n(a) State H₀ and H₁.\n(b) Compute the F-statistic (q = 2, k = 4).\n(c) Compare to F₂,₃₄₈ critical value at 5% (≈ 3.02). Conclude."
+        }
+      ],
+      "feynmanText": "Econometrics and machine learning both start from the same place: you have data and you want to learn something from it. But they ask fundamentally different questions.\n\n**Econometrics** asks: \"What is the causal effect of X on Y?\" Did raising the minimum wage actually reduce employment? The goal is to isolate the effect of one specific variable while holding everything else constant. You care deeply about whether your model assumptions hold, because a wrong assumption means your answer is biased -- systematically off in a way that can mislead policy.\n\n**Machine learning** asks: \"Can I predict Y accurately for new, unseen data?\" It doesn't care which variable is \"causing\" what -- it just wants the best forecast. If throwing in 50 variables and a complicated algorithm gives you a better prediction, great. The test of success is out-of-sample performance: how well does the model do on data it's never seen?\n\nThe same regression equation can serve both purposes. A house price model Y = β₀ + β₁(sqft) + β₂(bedrooms) + u can either be interpreted as \"each extra square foot adds β₁ dollars to the price\" (econometrics) or \"this formula predicts house prices with an RMSE of $42,000\" (ML). Same math, different objective.\n\nThe **bias-variance tradeoff** is the ML side's version of the econometric tension between omitting variables (bias) and including too many (imprecision). A simple model is biased but stable; a complex model fits training data perfectly but falls apart on new data (overfitting). Cross-validation -- splitting your data and testing on the held-out part -- is how ML practitioners find the sweet spot.\n\nThe bridge idea: econometrics worries about whether the *right* variable is in the model (internal validity); ML worries about whether the model *works* on fresh data (external validity). Both are important, just in different contexts.",
+      "feynmanKeyTerms": [
+        "Econometrics",
+        "Machine learning",
+        "bias-variance tradeoff"
+      ],
+      "modelAnswer": "### For Econometrics Interpretation Questions\n\n1. **State objective.** \"We seek to estimate the causal effect of Xⱼ on Y.\"\n2. **Write the model.** State the population equation and identify the dependent and independent variables.\n3. **List assumptions.** At minimum: MLR.1 (linear in parameters), MLR.2 (random sampling), MLR.3 (no perfect collinearity), MLR.4 (zero conditional mean: E(u|X) = 0).\n4. **Interpret coefficients.** Use ceteris paribus. Get units right (level-level, log-level, level-log, log-log).\n5. **Test hypotheses.** Follow the 6-step protocol: (i) state H₀ and H₁, (ii) choose significance level, (iii) compute test statistic, (iv) find critical value or p-value, (v) decision rule, (vi) conclude in context.\n6. **Discuss threats.** OVB, measurement error, simultaneity, sample selection. State the direction of likely bias if possible.\n\n### For ML Comparison Questions\n\n1. **State objective.** \"We seek to predict Y on unseen data.\"\n2. **Describe data splitting.** Train/validation/test or k-fold CV. State proportions and rationale.\n3. **List candidate models.** At least 2–3 (e.g., OLS baseline, Ridge, Lasso, or tree-based methods).\n4. **Report evaluation metric on test set.** RMSE for regression. Justify choice.\n5. **Select model.** Choose the one with best out-of-sample performance. Note any tradeoffs (interpretability vs accuracy).",
+      "commonTraps": "**Mixing causal and predictive language.** Never say \"X causes Y\" in a prediction context. In ML, we say \"X is a useful predictor of Y.\" Causal claims require identification assumptions (E(u|X) = 0) that ML does not impose.\n\n**Reporting training performance as model quality.** A model with perfect training fit may be severely overfit. Always report test set or CV performance. Training R² = 0.99 with test R² = 0.40 signals overfitting.\n\n**Data leakage in preprocessing.** If you standardise or impute using the full dataset before splitting, information from the test set leaks into training. Always fit preprocessing on training data only, then apply to test data.\n\n**R² does not prove causation.** R² measures goodness of fit — how much variation in Y the model explains. A high R² with omitted variables still gives biased coefficients. A low R² can still have individually significant and unbiased coefficients.\n\n**Forgetting ceteris paribus.** Every coefficient interpretation must include \"holding all other variables constant.\" Without this qualifier, the interpretation is wrong — it confounds the partial effect with the total effect.\n\n**Ignoring OVB can invalidate significant coefficients.** A coefficient can be t = 10 and still meaningless if a confounding variable is omitted. Statistical significance ≠ causal validity.\n\n**Adjusted R² across different dependent variables.** You cannot compare adjusted R² between a model with Y and a model with log(Y). The dependent variable must be identical for R² comparisons to be valid.\n\n**Thinking regularisation fixes OVB.** Lasso and ridge improve prediction by shrinking coefficients, but they do not remove omitted variable bias. A confounded coefficient shrunk toward zero is still confounded — it is just smaller.\n\n**Statistical vs practical significance.** A coefficient of β̂ = 0.001 with t = 5.0 is statistically significant but may be practically irrelevant. Always assess economic magnitude alongside p-values. With large n, even tiny effects become significant.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-05_ST3188_experimentation-causal-design.md",
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topicSlug": "experimentation-causal-design",
+      "title": "ST3188 - Experimentation and Causal Research Design (Exam Sheet)",
+      "sections": {
+        "0": "Surveys and cross-tabs can show you that two things are associated, but they can't prove one *causes* the other. Experimentation can.\n\nThe logic is beautifully simple. Take two identical groups of people. Show one group your new ad (the treatment group). Don't show it to the other (the control group). Then measure whether the treatment group buys more. If they do, and the groups were identical to begin with, the *only* difference was the ad -- so the ad caused the increase.\n\nThe critical word is \"identical.\" In practice, no two groups are naturally identical. The solution is **random assignment (R)**: flip a coin to decide who goes into which group. With enough people, the random coin flip ensures the groups are balanced on everything -- age, income, attitudes, things you haven't even thought of. This is why randomisation is the gold standard for causal evidence.\n\nThe **post-test-only control group design** is the simplest true experiment: randomly assign people to two groups, expose one to the treatment, measure both afterwards. The difference in outcomes is your treatment effect. The **pre-test/post-test design** adds a measurement before the treatment, so you can see the change within each group.\n\n**Internal validity** means \"did the treatment actually cause the effect, or could something else explain it?\" Threats include: something else happened at the same time (history), people changed naturally (maturation), or the groups weren't truly comparable (selection bias). Good experimental design controls for these.\n\n**External validity** means \"can I generalise these results to the real world?\" A lab experiment has high internal validity but low external validity. A field experiment has the opposite trade-off.",
+        "1": "### Why Experimentation?\n\nExperimentation is the primary method for establishing **causation** in market research. Unlike surveys (which show association), experiments manipulate independent variables and measure the effect on dependent variables while controlling for extraneous factors.\n\n**Three conditions for causality:**\n1. **Concomitant variation:** X and Y must vary together.\n2. **Time order of occurrence:** X must precede Y.\n3. **Elimination of other explanations:** Other possible causes must be controlled for.\n\n### Validity\n\n- **Internal validity:** The extent to which observed effects are genuinely caused by the treatment (independent variable) rather than extraneous factors. Threats include history, maturation, testing effects, instrumentation, statistical regression, selection bias, and mortality.\n- **External validity:** The extent to which results can be generalised to the broader population and real-world settings.\n\n### Key Experimental Designs\n\n**Pre-experimental designs** (weak internal validity):\n- **One-shot case study:** X O₁ — no control, no baseline. Cannot infer causation.\n- **One-group pre-test/post-test:** O₁ X O₂ — TE = O₂ - O₁. Confounded by history, maturation, testing effects.\n- **Static group design:** EG: X O₁ / CG: O₂ — TE = O₁ - O₂. No randomisation, so selection bias threat.\n\n**True experimental designs** (strong internal validity — LEARN THESE):\n\n| Design | Symbolic notation | Treatment effect | Key feature |\n|---|---|---|---|\n| **Pre-test/post-test control group** | EG: R O₁ X O₂ / CG: R O₃ O₄ | TE = (O₂ - O₁) - (O₄ - O₃) | Controls for most threats via randomisation + pre-test |\n| **Post-test-only control group** | EG: R X O₁ / CG: R O₂ | TE = O₁ - O₂ | No pre-test; eliminates testing effect threat |\n| **Solomon four-group** | Combines both designs above with 4 groups | Controls for all major threats including testing × treatment interaction | Most rigorous but most expensive |\n\n### Notation Key (must define in exam)\n\n| Symbol | Meaning |\n|---|---|\n| **X** | Exposure of a group to an independent variable, treatment, or event whose effects are to be determined |\n| **O** | Process of observation or measurement of the dependent variable on the test units or group of units |\n| **R** | Random assignment of participants or groups to separate treatments |\n| **EG** | Experimental group |\n| **CG** | Control group |\n| **TE** | Treatment effect |",
+        "2": "**Choosing a design:**\n- Need maximum internal validity? → True experimental design with randomisation.\n- Concerned about testing effects (pre-test sensitising respondents)? → Post-test-only control group.\n- Need to control for testing × treatment interaction? → Solomon four-group.\n- Limited budget/access? → Pre-experimental design (but acknowledge weak internal validity).\n\n**Laboratory vs field experiments:**\n- **Laboratory:** High internal validity, low external validity (artificial setting).\n- **Field:** High external validity, low internal validity (harder to control extraneous variables).",
+        "3": "### Post-test-only control group design (2023 Q2(b) — 10 marks)\n\n> The steps involved in implementing the post-test-only control group design are as follows:\n>\n> 1. Select a sample of participants at random.\n> 2. Randomly assign the participants to two groups (experimental group and control group).\n> 3. Participants in the experimental group are exposed to the treatment.\n> 4. Post-treatment measurements are obtained from both groups using a measurement instrument like a questionnaire.\n>\n> The design is described symbolically as follows:\n>\n> **EG: R X O₁**\n> **CG: R O₂**\n>\n> The treatment effect is given by: **TE = O₁ - O₂**\n>\n> Where:\n> - X = the exposure of a group to an independent variable, treatment, or event, the effects of which are to be determined\n> - O = the process of observation or measurement of the dependent variable on the test units or group of units\n> - R = the random assignment of participants or groups to separate treatments",
+        "4": "1. **(15 min)** Write a 250-word answer listing the steps for the post-test-only control group design. Provide the symbolic description and define all terms (R, X, O). State the treatment effect formula.\n2. **(15 min)** Write a 250-word answer comparing the pre-test/post-test control group design with the post-test-only design. State symbolic notation for both. Explain when each is preferred.\n3. **(10 min)** Explain the difference between internal and external validity with one example each.\n4. **(10 min)** For a given scenario (e.g. \"testing whether a new ad campaign increases purchase intent\"), design an appropriate experiment and justify your choice.",
+        "5": "1. **List the steps** in logical sequence (select sample, randomise, expose to treatment, measure).\n2. **Write the symbolic notation** clearly on separate lines for EG and CG.\n3. **State the treatment effect formula** (TE = ...).\n4. **Define ALL symbols** (R, X, O) — the examiner explicitly requires this.\n5. **Note key advantage** of the chosen design (e.g. eliminates testing effect for post-test-only).",
+        "6": "- **Forgetting to define R, X, and O:** The examiner commentary for 2023 explicitly states \"All terms should be defined.\" Marks are lost when students write the symbolic notation without explaining what each letter means.\n- **Confusing pre-experimental and true experimental:** The key difference is **random assignment (R)**. Pre-experimental designs lack randomisation. True experimental designs include R.\n- **Mixing up treatment effects:** For pre-test/post-test: TE = (O₂ - O₁) - (O₄ - O₃). For post-test-only: TE = O₁ - O₂. Do not confuse them.\n- **Ignoring threats to validity:** When describing a design, briefly note which threats it controls and which it does not. This shows depth of understanding.\n- **Not relating to market research:** Apply the design to a marketing context (testing ad effectiveness, new packaging, pricing strategies) rather than describing it abstractly."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 15,
+          "text": "Write a 250-word answer listing the steps for the post-test-only control group design. Provide the symbolic description and define all terms (R, X, O). State the treatment effect formula."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Write a 250-word answer comparing the pre-test/post-test control group design with the post-test-only design. State symbolic notation for both. Explain when each is preferred."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain the difference between internal and external validity with one example each."
+        },
+        {
+          "time_minutes": 10,
+          "text": "For a given scenario (e.g. \"testing whether a new ad campaign increases purchase intent\"), design an appropriate experiment and justify your choice."
+        }
+      ],
+      "feynmanText": "Surveys and cross-tabs can show you that two things are associated, but they can't prove one *causes* the other. Experimentation can.\n\nThe logic is beautifully simple. Take two identical groups of people. Show one group your new ad (the treatment group). Don't show it to the other (the control group). Then measure whether the treatment group buys more. If they do, and the groups were identical to begin with, the *only* difference was the ad -- so the ad caused the increase.\n\nThe critical word is \"identical.\" In practice, no two groups are naturally identical. The solution is **random assignment (R)**: flip a coin to decide who goes into which group. With enough people, the random coin flip ensures the groups are balanced on everything -- age, income, attitudes, things you haven't even thought of. This is why randomisation is the gold standard for causal evidence.\n\nThe **post-test-only control group design** is the simplest true experiment: randomly assign people to two groups, expose one to the treatment, measure both afterwards. The difference in outcomes is your treatment effect. The **pre-test/post-test design** adds a measurement before the treatment, so you can see the change within each group.\n\n**Internal validity** means \"did the treatment actually cause the effect, or could something else explain it?\" Threats include: something else happened at the same time (history), people changed naturally (maturation), or the groups weren't truly comparable (selection bias). Good experimental design controls for these.\n\n**External validity** means \"can I generalise these results to the real world?\" A lab experiment has high internal validity but low external validity. A field experiment has the opposite trade-off.",
+      "feynmanKeyTerms": [
+        "random assignment (R)",
+        "post-test-only control group design",
+        "pre-test/post-test design",
+        "Internal validity",
+        "External validity"
+      ],
+      "modelAnswer": "1. **List the steps** in logical sequence (select sample, randomise, expose to treatment, measure).\n2. **Write the symbolic notation** clearly on separate lines for EG and CG.\n3. **State the treatment effect formula** (TE = ...).\n4. **Define ALL symbols** (R, X, O) — the examiner explicitly requires this.\n5. **Note key advantage** of the chosen design (e.g. eliminates testing effect for post-test-only).",
+      "commonTraps": "- **Forgetting to define R, X, and O:** The examiner commentary for 2023 explicitly states \"All terms should be defined.\" Marks are lost when students write the symbolic notation without explaining what each letter means.\n- **Confusing pre-experimental and true experimental:** The key difference is **random assignment (R)**. Pre-experimental designs lack randomisation. True experimental designs include R.\n- **Mixing up treatment effects:** For pre-test/post-test: TE = (O₂ - O₁) - (O₄ - O₃). For post-test-only: TE = O₁ - O₂. Do not confuse them.\n- **Ignoring threats to validity:** When describing a design, briefly note which threats it controls and which it does not. This shows depth of understanding.\n- **Not relating to market research:** Apply the design to a marketing context (testing ad effectiveness, new packaging, pricing strategies) rather than describing it abstractly.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-05_ST3188_survey-observation-methods.md",
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topicSlug": "survey-observation-methods",
+      "title": "ST3188 - Survey and Observation Methods (Exam Sheet)",
+      "sections": {
+        "0": "There are two ways to find out what people do: **ask them** (surveys) or **watch them** (observation).\n\n**Surveys** are the workhorse of market research. You write questions, give them to people, and collect their answers. The method of delivery creates trade-offs: face-to-face interviews are expensive but you get rich, detailed responses and can clarify confusion. Online surveys are cheap and fast but people may not take them seriously, and only internet users are reached. Phone surveys are in the middle. Mail surveys are slow and have low response rates but eliminate interviewer bias.\n\nThe biggest practical problem is **non-response**: people who don't answer your survey might be systematically different from those who do. If only happy customers respond to your satisfaction survey, you'll overestimate how satisfied your customers are. Strategies to reduce this: send reminders, offer incentives, keep the survey short, and personalise the invitation.\n\n**Observation** takes a completely different approach: instead of asking people what they do, you watch what they actually do. A supermarket tracks which aisles customers walk through. A website records which pages users click. Eye-tracking technology shows which part of an ad people look at first.\n\nThe advantage is that observation captures actual behaviour, not what people *say* they do (these are often very different). The limitation is that observation can tell you *what* people do but never *why*. You see that customers skip Aisle 7, but you don't know if it's because the products don't interest them or because the signage is confusing. For the \"why,\" you need a survey or qualitative research.",
+        "1": "### Survey Methods\n\nA survey is a **structured method of data collection** that involves interviewing (directly or indirectly) a large number of respondents using a pre-designed questionnaire.\n\n**Main survey methods:**\n\n| Method | How it works | Strengths | Weaknesses |\n|---|---|---|---|\n| **Personal (face-to-face)** | Interviewer administers questionnaire in person (in-home, mall intercept, CAPI) | High response rate, complex questions possible, interviewer can probe and clarify | Expensive, interviewer bias, slow, geographic limitations |\n| **Telephone** | Interview conducted by phone (traditional or CATI) | Fast, moderate cost, good geographic coverage | Declining response rates, limited question complexity, no visual aids |\n| **Mail/postal** | Self-administered questionnaire sent by post | Low cost, no interviewer bias, respondent convenience | Low response rate, no control over who fills it in, slow, no clarification possible |\n| **Electronic/online** | Web-based surveys, email surveys, mobile surveys | Very low cost, fast, large reach, automatic data capture | Self-selection bias, coverage bias (internet access), low response rates, questionnaire security |\n\n**CAPI** = Computer-Assisted Personal Interviewing\n**CATI** = Computer-Assisted Telephone Interviewing\n\n### Improving Response Rates\n\n- Prior notification (advance letter/email).\n- Incentives (monetary or non-monetary).\n- Good questionnaire design (clear, concise, well-structured).\n- Follow-up/reminders.\n- Personalised correspondence.\n- Guaranteed anonymity/confidentiality.\n\n### Observation Methods\n\nObservation involves **recording behavioural patterns** of people, objects, and events in a systematic manner to obtain information about the phenomenon of interest.\n\n**Structured vs unstructured:**\n- Structured: Researcher specifies in advance exactly what to observe and how to record it.\n- Unstructured: Researcher monitors all aspects of the phenomenon without specifying details in advance.\n\n**Disguised vs undisguised:**\n- Disguised: Respondents are unaware they are being observed (more natural behaviour).\n- Undisguised: Respondents know they are being observed (potential Hawthorne effect).\n\n**Natural vs contrived:**\n- Natural: Behaviour observed in the real environment.\n- Contrived: Behaviour observed in an artificial setting (e.g. lab).\n\n**Human vs mechanical:**\n- Human: Trained observers record behaviour.\n- Mechanical: Devices record behaviour (e.g. people counters, eye-tracking, website analytics, checkout scanners).\n\n### Key Limitation of Observation\n\nObservation can record **what people do** but cannot determine **why they do it** (cannot measure attitudes, motivations, or preferences). Often needs to be supplemented with survey or qualitative research.",
+        "2": "**Choosing a survey method:**\n- Need complex data + high response → personal interview (expensive).\n- Need speed + geographic coverage → telephone or online.\n- Need low cost + large sample → online or mail.\n- Need to minimise interviewer bias → mail or online (self-administered).\n\n**When to use observation:**\n- When behaviour is the primary variable of interest.\n- When respondents are unable or unwilling to report behaviour accurately (recall bias).\n- When unobtrusive measurement is needed.",
+        "3": "### Example 1: Choosing a Survey Method\n\n> A retailer wants to survey 5,000 loyalty card holders about their shopping habits. An **online survey** sent via email to loyalty card holders is recommended because: the email addresses are available in the loyalty database, costs are minimal per respondent, data capture is automatic, and the large sample size makes personal interviews prohibitively expensive. The key limitation is self-selection bias (only engaged customers may respond), which can be mitigated through incentives and reminders.\n\n### Example 2: Non-response and Adjustments (from 2021 ZB examiner commentary)\n\n> 'Response rate' = number of completions / number in survey. Non-response is refusal to respond. Two types: (i) unit non-response (refusal to participate) and (ii) item non-response (refusal to answer a specific question). Strategies for adjusting: subsampling of non-participants, replacement, substitution, subjective estimates, trend analysis, weighting, and imputation.",
+        "4": "1. **(15 min)** Compare personal, telephone, mail, and online survey methods — state one key advantage and one key disadvantage of each.\n2. **(10 min)** Define 'response rate' and 'non-response.' List strategies for minimising non-response and adjusting for it.\n3. **(10 min)** Explain the difference between structured and unstructured observation with an example of each.\n4. **(15 min)** For a given scenario (e.g. \"a fast-food chain wants to understand customer flow and ordering patterns\"), recommend observation or survey and justify.",
+        "5": "1. **Define the method** (survey or observation) and its core purpose.\n2. **Describe how it works operationally** (who, what, how, where).\n3. **State key advantages** (2-3 specific strengths).\n4. **State key limitations** (1-2 weaknesses).\n5. **Link to market research decision-making** — what can management do with the findings?",
+        "6": "- **Listing methods without comparison:** If asked to compare, explicitly state trade-offs (cost vs response rate, speed vs depth).\n- **Forgetting observation limitations:** Observation cannot measure attitudes, motivations, or reasons. Always note this.\n- **Ignoring non-response:** When discussing surveys, always address how non-response affects results and how to mitigate it. This is a favourite examiner topic.\n- **Not distinguishing survey modes clearly:** Each mode has a distinct profile. Be specific about what makes personal interviews different from telephone, etc."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 15,
+          "text": "Compare personal, telephone, mail, and online survey methods — state one key advantage and one key disadvantage of each."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Define 'response rate' and 'non-response.' List strategies for minimising non-response and adjusting for it."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain the difference between structured and unstructured observation with an example of each."
+        },
+        {
+          "time_minutes": 15,
+          "text": "For a given scenario (e.g. \"a fast-food chain wants to understand customer flow and ordering patterns\"), recommend observation or survey and justify."
+        }
+      ],
+      "feynmanText": "There are two ways to find out what people do: **ask them** (surveys) or **watch them** (observation).\n\n**Surveys** are the workhorse of market research. You write questions, give them to people, and collect their answers. The method of delivery creates trade-offs: face-to-face interviews are expensive but you get rich, detailed responses and can clarify confusion. Online surveys are cheap and fast but people may not take them seriously, and only internet users are reached. Phone surveys are in the middle. Mail surveys are slow and have low response rates but eliminate interviewer bias.\n\nThe biggest practical problem is **non-response**: people who don't answer your survey might be systematically different from those who do. If only happy customers respond to your satisfaction survey, you'll overestimate how satisfied your customers are. Strategies to reduce this: send reminders, offer incentives, keep the survey short, and personalise the invitation.\n\n**Observation** takes a completely different approach: instead of asking people what they do, you watch what they actually do. A supermarket tracks which aisles customers walk through. A website records which pages users click. Eye-tracking technology shows which part of an ad people look at first.\n\nThe advantage is that observation captures actual behaviour, not what people *say* they do (these are often very different). The limitation is that observation can tell you *what* people do but never *why*. You see that customers skip Aisle 7, but you don't know if it's because the products don't interest them or because the signage is confusing. For the \"why,\" you need a survey or qualitative research.",
+      "feynmanKeyTerms": [
+        "ask them",
+        "watch them",
+        "Surveys",
+        "non-response",
+        "Observation"
+      ],
+      "modelAnswer": "1. **Define the method** (survey or observation) and its core purpose.\n2. **Describe how it works operationally** (who, what, how, where).\n3. **State key advantages** (2-3 specific strengths).\n4. **State key limitations** (1-2 weaknesses).\n5. **Link to market research decision-making** — what can management do with the findings?",
+      "commonTraps": "- **Listing methods without comparison:** If asked to compare, explicitly state trade-offs (cost vs response rate, speed vs depth).\n- **Forgetting observation limitations:** Observation cannot measure attitudes, motivations, or reasons. Always note this.\n- **Ignoring non-response:** When discussing surveys, always address how non-response affects results and how to mitigate it. This is a favourite examiner topic.\n- **Not distinguishing survey modes clearly:** Each mode has a distinct profile. Be specific about what makes personal interviews different from telephone, etc.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-06_ST3188_measurement-and-scaling.md",
+      "date": "2026-04-06",
+      "module": "ST3188",
+      "topicSlug": "measurement-and-scaling",
+      "title": "ST3188 - Measurement and Scaling (Exam Sheet)",
+      "sections": {
+        "0": "When you ask someone a question in a survey, the type of answer you allow determines what statistics you can run later. This is what measurement and scaling is about.\n\nAt the simplest level, you have **nominal** data -- just labels. \"Male or female?\" \"Which brand did you buy?\" You can count how many are in each category, but you can't take an average of \"male\" and \"female.\" You can only do chi-square tests and cross-tabs.\n\n**Ordinal** data has a ranking: \"Rate this product as poor, fair, good, or excellent.\" You know \"excellent\" is better than \"good,\" but you don't know if the gap between \"poor\" and \"fair\" is the same as between \"good\" and \"excellent.\" You can rank, but you can't average meaningfully.\n\n**Interval** data has equal gaps: temperature in Celsius, or (arguably) a 7-point Likert scale. Now you can take averages, run regression, do ANOVA. This is why most market researchers use Likert scales with 5+ points -- it lets them treat the data as interval and unlock powerful statistical techniques.\n\n**Comparative scales** force respondents to compare objects directly: \"which do you prefer, A or B?\" (paired comparison), or \"rank these 5 brands\" (rank order), or \"allocate 100 points across these features\" (constant sum). These produce ordinal data.\n\n**Non-comparative scales** rate each object independently: \"rate Brand A on a 1-7 scale.\" The key ones are **Likert** (agree-disagree), **semantic differential** (bipolar adjectives, e.g. \"powerful -- weak\"), and **Stapel** (unipolar, -5 to +5, no zero). These can produce interval-like data, making them much more useful for statistical analysis.",
+        "1": "### Primary Scales of Measurement\n\n| Scale | Properties | Examples | Permissible statistics |\n|---|---|---|---|\n| **Nominal** | Labels only, no order | Gender, brand chosen | Mode, frequency, chi-square |\n| **Ordinal** | Labels + rank order | Preference ranking, education level | Median, percentiles, rank correlation |\n| **Interval** | Rank + equal intervals, arbitrary zero | Temperature (°C), Likert scales (debated) | Mean, SD, correlation, regression, ANOVA |\n| **Ratio** | Rank + equal intervals + true zero | Age, income, weight | All statistical techniques, geometric mean |\n\n### Comparative Scales (directly tested: 2022, 2022 Oct, 2023)\n\nComparative scales involve the **direct comparison** of stimulus objects. Data are **ordinal or rank-order** in nature.\n\n- **Paired comparison:** Present two objects; respondent selects one according to a criterion. With *n* brands, *n(n-1)/2* paired comparisons are required. Under the assumption of **transitivity of preference**, paired comparison data can be converted to rank order.\n- **Rank-order scaling:** Respondents rank objects simultaneously according to a criterion. Ordinal data. Commonly used because it is closer to the actual marketplace decision.\n- **Constant sum scaling:** Respondents allocate a constant sum of units (e.g. 100 points) across attributes to reflect relative importance. If an attribute is unimportant, assign zero. If one attribute is twice as important as another, it gets twice the points. Sum must equal 100.\n- **Q-sort:** Respondents sort cards (representing stimuli) into piles to discriminate among relatively large numbers of objects quickly.\n\n### Non-Comparative Scales (directly tested: 2021 ZB, 2022 Oct)\n\nNon-comparative scales evaluate each stimulus object **independently** of the others. Data can be assumed to be interval or ratio scaled.\n\n- **Continuous rating scale:** Respondents rate objects by placing a mark on a continuous line. Difficult to score, rarely used.\n- **Likert scale:** Typically 5 or 7 response categories from \"strongly disagree\" to \"strongly agree.\" Respondents indicate degree of agreement with a series of statements. Easy to construct and administer. Debate exists over whether data are ordinal or interval — more points (e.g. 9-point vs 5-point) strengthen the case for treating as interval.\n- **Semantic differential:** A 7-point scale with **bipolar labels** (e.g. \"powerful\" vs \"weak\"). Used for brand, product and company images. Versatile, though debate exists over whether data are truly interval.\n- **Stapel scale:** A **unipolar** 10-point scale ranging from **-5 to +5 without a neutral point** (no zero). Used to measure attitudes and images. Easy to construct but can be confusing and difficult to apply.",
+        "2": "**Paired comparisons needed:** For *n* brands, number of pairs = $\\frac{n(n-1)}{2}$\n\n**Constant sum:** All allocated points must sum to the fixed total (typically 100).\n\n**Choosing a scale type:**\n- If the analysis requires **means and standard deviations** → need at least interval-level data → use Likert, semantic differential, or continuous rating.\n- If only **ranks or frequencies** are needed → ordinal scales suffice → use paired comparison or rank order.\n- Comparative scales are **simpler** but produce only ordinal data. Non-comparative scales are **more versatile** and can produce interval-like data suitable for multivariate analysis.",
+        "3": "### Example 1: Semantic Differential vs Stapel (Oct 2022)\n\n> **Semantic differential:** 7-point bipolar scale used for brand/product/company images. Example: rate a hotel on \"Friendly [1] — Unfriendly [7].\"\n>\n> **Stapel scale:** Unipolar 10-point scale (-5 to +5, no zero) for attitudes. Example: rate \"Customer Service\" from +5 (describes very accurately) to -5 (does not describe at all). Easy to construct but can confuse respondents.\n\n### Example 2: Paired Comparison + Constant Sum (2022)\n\n> **Paired comparison:** Most widely used comparative technique. Present two brands; respondent picks preferred one. For 5 brands, need 5(4)/2 = 10 comparisons. Ordinal data; can convert to ranks if transitivity holds.\n>\n> **Constant sum:** Allocate 100 points to reflect importance. E.g., for a new laptop: Battery life = 35, Screen quality = 25, Price = 25, Weight = 15. Sum = 100.\n\n### Example 3: Likert Scale Debate (2021 ZB)\n\n> Should Likert data be treated as ordinal or interval? Strictly ordinal (categories are ranked but intervals may not be equal). However, treating as interval enables multivariate techniques (regression, ANOVA, factor analysis). More scale points (9 vs 5) strengthen the interval assumption. In practice, most market researchers treat 5+ point Likert scales as interval.",
+        "4": "1. **(10 min)** Write a 250-word answer explaining comparative scales with 3 specific examples (paired comparison, rank-order, constant sum). Include how each works, one advantage, and one limitation.\n2. **(10 min)** Write a 250-word answer explaining semantic differential and Stapel scales with market research examples.\n3. **(15 min)** For a given scenario (e.g. \"a retailer wants to evaluate customer perceptions of its brand image\"), recommend a specific scale type and justify why.\n4. **(15 min)** Discuss the Likert scale ordinal vs interval debate with reference to implications for statistical analysis.",
+        "5": "For the ST3188 part (b) scaling question, follow this template:\n\n1. **Define the scale type(s):** State whether comparative or non-comparative, and the key characteristic (bipolar, unipolar, direct comparison, etc.).\n2. **Explain the mechanics:** How does the respondent interact with the scale? How many points? What anchors?\n3. **State the purpose:** What is it used for in market research? (brand images, attribute importance, preference ranking).\n4. **Provide a concrete example:** Apply to a plausible market research context.\n5. **Note strengths and limitations:** Ease of use, data level produced, potential respondent confusion.",
+        "6": "- **Confusing comparative with non-comparative:** Paired comparison and constant sum are comparative (direct comparison between stimuli). Likert and semantic differential are non-comparative (each stimulus rated independently).\n- **Forgetting the mechanics:** Simply naming the scale without explaining how it works loses marks. State the number of points, the nature of anchors, and how respondents interact with it.\n- **Mixing up semantic differential and Stapel:** Semantic differential is **bipolar** (two opposite adjectives) with 7 points. Stapel is **unipolar** (one adjective) with 10 points (-5 to +5, no zero).\n- **Ignoring the data level produced:** Comparative scales yield ordinal data. Non-comparative scales can yield interval-like data. This determines which statistical analyses are appropriate.\n- **Generic answers:** The examiners reward answers that relate scales to specific market research applications, not textbook definitions alone."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Write a 250-word answer explaining comparative scales with 3 specific examples (paired comparison, rank-order, constant sum). Include how each works, one advantage, and one limitation."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Write a 250-word answer explaining semantic differential and Stapel scales with market research examples."
+        },
+        {
+          "time_minutes": 15,
+          "text": "For a given scenario (e.g. \"a retailer wants to evaluate customer perceptions of its brand image\"), recommend a specific scale type and justify why."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Discuss the Likert scale ordinal vs interval debate with reference to implications for statistical analysis."
+        }
+      ],
+      "feynmanText": "When you ask someone a question in a survey, the type of answer you allow determines what statistics you can run later. This is what measurement and scaling is about.\n\nAt the simplest level, you have **nominal** data -- just labels. \"Male or female?\" \"Which brand did you buy?\" You can count how many are in each category, but you can't take an average of \"male\" and \"female.\" You can only do chi-square tests and cross-tabs.\n\n**Ordinal** data has a ranking: \"Rate this product as poor, fair, good, or excellent.\" You know \"excellent\" is better than \"good,\" but you don't know if the gap between \"poor\" and \"fair\" is the same as between \"good\" and \"excellent.\" You can rank, but you can't average meaningfully.\n\n**Interval** data has equal gaps: temperature in Celsius, or (arguably) a 7-point Likert scale. Now you can take averages, run regression, do ANOVA. This is why most market researchers use Likert scales with 5+ points -- it lets them treat the data as interval and unlock powerful statistical techniques.\n\n**Comparative scales** force respondents to compare objects directly: \"which do you prefer, A or B?\" (paired comparison), or \"rank these 5 brands\" (rank order), or \"allocate 100 points across these features\" (constant sum). These produce ordinal data.\n\n**Non-comparative scales** rate each object independently: \"rate Brand A on a 1-7 scale.\" The key ones are **Likert** (agree-disagree), **semantic differential** (bipolar adjectives, e.g. \"powerful -- weak\"), and **Stapel** (unipolar, -5 to +5, no zero). These can produce interval-like data, making them much more useful for statistical analysis.",
+      "feynmanKeyTerms": [
+        "nominal",
+        "Ordinal",
+        "Interval",
+        "Comparative scales",
+        "Non-comparative scales",
+        "Likert",
+        "semantic differential",
+        "Stapel"
+      ],
+      "modelAnswer": "For the ST3188 part (b) scaling question, follow this template:\n\n1. **Define the scale type(s):** State whether comparative or non-comparative, and the key characteristic (bipolar, unipolar, direct comparison, etc.).\n2. **Explain the mechanics:** How does the respondent interact with the scale? How many points? What anchors?\n3. **State the purpose:** What is it used for in market research? (brand images, attribute importance, preference ranking).\n4. **Provide a concrete example:** Apply to a plausible market research context.\n5. **Note strengths and limitations:** Ease of use, data level produced, potential respondent confusion.",
+      "commonTraps": "- **Confusing comparative with non-comparative:** Paired comparison and constant sum are comparative (direct comparison between stimuli). Likert and semantic differential are non-comparative (each stimulus rated independently).\n- **Forgetting the mechanics:** Simply naming the scale without explaining how it works loses marks. State the number of points, the nature of anchors, and how respondents interact with it.\n- **Mixing up semantic differential and Stapel:** Semantic differential is **bipolar** (two opposite adjectives) with 7 points. Stapel is **unipolar** (one adjective) with 10 points (-5 to +5, no zero).\n- **Ignoring the data level produced:** Comparative scales yield ordinal data. Non-comparative scales can yield interval-like data. This determines which statistical analyses are appropriate.\n- **Generic answers:** The examiners reward answers that relate scales to specific market research applications, not textbook definitions alone.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-06_ST3188_questionnaire-design.md",
+      "date": "2026-04-06",
+      "module": "ST3188",
+      "topicSlug": "questionnaire-design",
+      "title": "ST3188 - Questionnaire Design (Exam Sheet)",
+      "sections": {
+        "0": "A questionnaire looks simple -- just a list of questions, right? But a badly designed questionnaire produces garbage data, and no amount of fancy statistics can fix garbage.\n\nThe most common mistake is asking **double-barrelled questions**: \"How satisfied are you with our fast and friendly service?\" If the service was fast but rude, the respondent can't answer. Split it into two questions.\n\n**Leading questions** push people toward an answer: \"Don't you agree that Brand X is the best?\" Of course they'll agree -- you practically told them to. **Ambiguous questions** use words like \"often\" or \"usually\" that mean different things to different people. \"Do you exercise regularly?\" -- someone who runs twice a week and someone who walks daily might both say \"yes.\"\n\nThe **order** of questions matters more than you'd think. Put easy, non-threatening questions first to build rapport. Save sensitive topics (income, age, personal habits) for the end. Use the **funnel approach**: start broad (\"What do you think about online shopping?\") and narrow to specifics (\"How much did you spend online last month?\").\n\nThe most overlooked step is **pre-testing**. Before launching to 5,000 people, test on 20. Watch them fill it out. Where do they pause? Which questions do they misunderstand? What do they skip? Every flaw you catch in the pilot saves you from collecting 5,000 useless responses.\n\nThe golden rule: every question must link to a research objective. If you can't explain why you're asking it, delete it. Shorter questionnaires get higher completion rates and better data.",
+        "1": "**Purpose:** A questionnaire is a formalised set of questions for obtaining information from respondents. Good design minimises measurement error and respondent burden while maximising the quality and relevance of data collected.\n\n**The Questionnaire Design Process:**\n\n1. **Specify the information needed** -- link every question to a research objective.\n2. **Specify the type of interviewing method** -- personal, telephone, mail, online (affects question complexity, length, and visual aids).\n3. **Determine the content of individual questions** -- is the question necessary? Does it capture the construct?\n4. **Design to overcome respondent inability and unwillingness to answer** -- filter questions, reduce sensitivity, use indirect questioning.\n5. **Decide on question structure** -- unstructured (open-ended) vs structured (multiple choice, dichotomous, scales).\n6. **Determine question wording** -- avoid leading, double-barrelled, ambiguous, and loaded questions.\n7. **Arrange questions in proper order** -- easy/general first, sensitive/demographic last; funnel approach (broad to specific).\n8. **Identify the form and layout** -- professional appearance, clear instructions, adequate spacing.\n9. **Reproduce the questionnaire** -- quality printing/formatting.\n10. **Pre-test and revise** -- pilot test with a small sample before full launch.\n\n### Question Structure Types\n\n| Type | Description | Example | Data level |\n|---|---|---|---|\n| **Open-ended (unstructured)** | Free-form response | \"What do you think about Brand X?\" | Qualitative |\n| **Multiple choice** | Select one or more from a list | \"Which of these brands have you purchased? (a) X (b) Y (c) Z\" | Nominal |\n| **Dichotomous** | Two response options | \"Have you purchased Brand X? Yes / No\" | Nominal |\n| **Scales** | Likert, semantic differential, etc. | \"Rate your satisfaction: 1 (very low) to 7 (very high)\" | Ordinal/Interval |\n\n### Question Wording Rules\n\n- **Avoid double-barrelled questions:** Ask about one thing at a time.\n  - Bad: \"How satisfied are you with our fast and friendly service?\"\n  - Good: \"How satisfied are you with service speed?\" + \"How satisfied are you with staff friendliness?\"\n- **Avoid leading questions:** Do not suggest a desired answer.\n  - Bad: \"Don't you agree that Brand X is the best?\"\n  - Good: \"How would you rate Brand X compared to other brands?\"\n- **Avoid ambiguous words:** \"Usually,\" \"normally,\" \"frequently\" mean different things to different people. Be specific.\n- **Avoid loaded questions:** Do not use emotionally charged language.\n- **Avoid implicit assumptions:** Do not assume the respondent has done something.\n  - Bad: \"How often do you shop at Waitrose?\" (assumes they do)\n  - Good: \"Have you shopped at Waitrose in the past month? If yes, how often?\"\n- **Avoid generalisations and estimates:** Ask specific, concrete questions rather than asking respondents to generalise their behaviour.\n\n### Question Order and Flow\n\n- **Opening questions:** Simple, interesting, non-threatening to build rapport.\n- **Funnel approach:** Start broad, narrow to specifics.\n- **Sensitive questions:** Place near the end (income, age, personal habits).\n- **Demographics:** Usually last, unless needed for screening.\n- **Logical flow:** Group related topics together; use transitions between sections.\n- **Filter/skip questions:** Route respondents past irrelevant sections.",
+        "2": "**Choosing question structure:**\n- Need rich, exploratory data → open-ended (but hard to code and analyse).\n- Need quantifiable, comparable data → structured (multiple choice, scales).\n- Need to measure attitudes/satisfaction → Likert or semantic differential scales.\n- Need quick screening → dichotomous.\n\n**Linking to analysis method:**\n- Nominal data (multiple choice, dichotomous) → cross-tabulation, chi-square.\n- Ordinal/interval data (Likert, semantic differential) → ANOVA, regression, factor analysis.\n- The scale choice in the questionnaire determines which statistical methods can be applied later.\n\n**Pre-testing checklist:**\n- Are all instructions clear?\n- Does every question link to a research objective?\n- Are there any double-barrelled, leading, or ambiguous questions?\n- Is the questionnaire the right length (respondent fatigue)?\n- Does the order flow logically?\n- Are filter/skip patterns correct?",
+        "3": "### Example 1: Critiquing and Rewriting Bad Questions\n\n> **Bad question:** \"How satisfied are you with our fast and friendly service?\"\n>\n> **Problem:** Double-barrelled -- asks about two attributes (speed and friendliness) in one question. If a respondent is satisfied with friendliness but dissatisfied with speed, they cannot answer accurately.\n>\n> **Rewrite:**\n> - Q1: \"How satisfied are you with the speed of service?\" (1 = very dissatisfied, 7 = very satisfied)\n> - Q2: \"How satisfied are you with the friendliness of staff?\" (1 = very dissatisfied, 7 = very satisfied)\n\n### Example 2: Matching Questions to Analysis\n\n> A retailer wants to determine whether satisfaction differs between age groups and income levels.\n>\n> - Satisfaction should be measured on a **Likert scale** (at least 5 points, ideally 7-9) to enable ANOVA.\n> - Age group and income level should be measured as **categorical variables** (the factors in ANOVA).\n> - This design allows a **two-way ANOVA** testing the main effects of age and income and their interaction on satisfaction.",
+        "4": "1. **(10 min)** Given 5 flawed survey questions, identify the specific problem in each (double-barrelled, leading, ambiguous, loaded, or implicit assumption) and rewrite each correctly.\n2. **(15 min)** Design a 6-question mini-questionnaire for a specific scenario (e.g. \"a hotel wants to measure guest satisfaction across different service attributes\"). Specify the scale type for each question and explain which statistical analysis each enables.\n3. **(10 min)** Explain the funnel approach to question ordering and why sensitive questions should be placed near the end.\n4. **(15 min)** Discuss why pre-testing a questionnaire is essential. List 5 specific things a pre-test should check for.",
+        "5": "If asked about questionnaire design in part (b):\n\n1. **State the purpose:** A questionnaire translates research objectives into specific questions.\n2. **Describe the design process:** List the key steps (specify information needed, choose structure, word carefully, order logically, pre-test).\n3. **Give a concrete example** of a design decision (e.g. choosing a 7-point Likert scale for satisfaction to enable multivariate analysis).\n4. **Note the link to analysis:** The question structure determines the data level, which determines the statistical methods available.\n5. **State key pitfalls:** Double-barrelled questions, leading questions, poor ordering, failure to pre-test.",
+        "6": "- **Writing questions without linking to objectives:** Every question must serve a purpose. If you cannot say which research objective a question addresses, delete it.\n- **Choosing the wrong scale for the analysis planned:** If you intend to run regression or factor analysis, you need interval-level data (Likert 5+ points), not simple yes/no dichotomous questions.\n- **Ignoring respondent burden:** Questionnaires that are too long lead to fatigue, dropout, and unreliable responses in later sections.\n- **Forgetting the pre-test:** The examiner expects you to mention pilot testing as a critical final step. A pre-test reveals problems that the designer cannot see.\n- **Order effects:** Asking a sensitive question early can cause respondents to drop out or give defensive answers throughout the rest of the questionnaire.\n- **Not mentioning the funnel approach:** General-to-specific ordering is a core design principle that examiners expect you to know."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Given 5 flawed survey questions, identify the specific problem in each (double-barrelled, leading, ambiguous, loaded, or implicit assumption) and rewrite each correctly."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Design a 6-question mini-questionnaire for a specific scenario (e.g. \"a hotel wants to measure guest satisfaction across different service attributes\"). Specify the scale type for each question and explain which statistical analysis each enables."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain the funnel approach to question ordering and why sensitive questions should be placed near the end."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Discuss why pre-testing a questionnaire is essential. List 5 specific things a pre-test should check for."
+        }
+      ],
+      "feynmanText": "A questionnaire looks simple -- just a list of questions, right? But a badly designed questionnaire produces garbage data, and no amount of fancy statistics can fix garbage.\n\nThe most common mistake is asking **double-barrelled questions**: \"How satisfied are you with our fast and friendly service?\" If the service was fast but rude, the respondent can't answer. Split it into two questions.\n\n**Leading questions** push people toward an answer: \"Don't you agree that Brand X is the best?\" Of course they'll agree -- you practically told them to. **Ambiguous questions** use words like \"often\" or \"usually\" that mean different things to different people. \"Do you exercise regularly?\" -- someone who runs twice a week and someone who walks daily might both say \"yes.\"\n\nThe **order** of questions matters more than you'd think. Put easy, non-threatening questions first to build rapport. Save sensitive topics (income, age, personal habits) for the end. Use the **funnel approach**: start broad (\"What do you think about online shopping?\") and narrow to specifics (\"How much did you spend online last month?\").\n\nThe most overlooked step is **pre-testing**. Before launching to 5,000 people, test on 20. Watch them fill it out. Where do they pause? Which questions do they misunderstand? What do they skip? Every flaw you catch in the pilot saves you from collecting 5,000 useless responses.\n\nThe golden rule: every question must link to a research objective. If you can't explain why you're asking it, delete it. Shorter questionnaires get higher completion rates and better data.",
+      "feynmanKeyTerms": [
+        "double-barrelled questions",
+        "Leading questions",
+        "Ambiguous questions",
+        "order",
+        "funnel approach",
+        "pre-testing"
+      ],
+      "modelAnswer": "If asked about questionnaire design in part (b):\n\n1. **State the purpose:** A questionnaire translates research objectives into specific questions.\n2. **Describe the design process:** List the key steps (specify information needed, choose structure, word carefully, order logically, pre-test).\n3. **Give a concrete example** of a design decision (e.g. choosing a 7-point Likert scale for satisfaction to enable multivariate analysis).\n4. **Note the link to analysis:** The question structure determines the data level, which determines the statistical methods available.\n5. **State key pitfalls:** Double-barrelled questions, leading questions, poor ordering, failure to pre-test.",
+      "commonTraps": "- **Writing questions without linking to objectives:** Every question must serve a purpose. If you cannot say which research objective a question addresses, delete it.\n- **Choosing the wrong scale for the analysis planned:** If you intend to run regression or factor analysis, you need interval-level data (Likert 5+ points), not simple yes/no dichotomous questions.\n- **Ignoring respondent burden:** Questionnaires that are too long lead to fatigue, dropout, and unreliable responses in later sections.\n- **Forgetting the pre-test:** The examiner expects you to mention pilot testing as a critical final step. A pre-test reveals problems that the designer cannot see.\n- **Order effects:** Asking a sensitive question early can cause respondents to drop out or give defensive answers throughout the rest of the questionnaire.\n- **Not mentioning the funnel approach:** General-to-specific ordering is a core design principle that examiners expect you to know.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-07_ST2187_past-exam-section.md",
+      "date": "2026-04-07",
+      "module": "ST2187",
+      "topicSlug": "past-exam-section",
+      "title": "ST2187 - Past Exam Section (Timed Strategy Sheet)",
+      "sections": {
+        "1": "1. 3 min scan: classify questions by confidence (High/Medium/Low).  \n2. Start with high-confidence marks first.  \n3. Keep 10 min buffer for one medium difficulty question.",
+        "2": "- State method choice before calculations.\n- Show key formula and substitutions cleanly.\n- End every answer with one interpretation sentence.",
+        "3": "1. Mark each error as: concept / formula / algebra / interpretation / time.  \n2. For each error, write “trigger rule” to avoid repeat.  \n3. Re-attempt only the wrong subparts without notes.",
+        "4": "- Attempt one complete past section under strict timer.\n- Target: >= 70% today.\n- If <70%, schedule immediate repair on top 2 weak subtopics.",
+        "5": "- Spending too long on first hard question.\n- Writing calculations without stating assumptions.\n- Skipping post-paper error analysis."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Spending too long on first hard question.\n- Writing calculations without stating assumptions.\n- Skipping post-paper error analysis.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-08_ST3188_spss-basics.md",
+      "date": "2026-04-08",
+      "module": "ST3188",
+      "topicSlug": "spss-basics",
+      "title": "ST3188 - SPSS Basics (Exam Sheet)",
+      "sections": {
+        "0": "SPSS is the calculator -- you don't need to know which buttons to press, but you need to read the receipt. The exam never asks you to *run* SPSS. It gives you SPSS output (tables of numbers) and asks you to *interpret* it. Every output table follows the same logic: there's a test statistic, degrees of freedom, and a p-value. Your job is to identify what test was run, what the numbers mean, and what business decision follows.",
+        "1": "- SPSS exam skill is mostly interpretation, not clicking.\n- Know variable types, coding, missing-value handling, and output navigation.\n- Always link output tables back to research question.",
+        "2": "- Check data setup before analysis (scale, labels, coding).\n- Verify assumptions/conditions before trusting output.\n- Choose test based on variable type and design.",
+        "3": "Output shows p=0.018 for group comparison.\nInterpretation: evidence of group difference at 5%; now report direction/magnitude from means/estimates.",
+        "4": "1. Interpret 3 common SPSS output snippets (descriptives, crosstab, regression).  \n2. For each snippet, state one limitation/assumption check.  \n3. Write a client-friendly 4-line summary from one output.",
+        "5": "1. Identify test and variables.  \n2. Quote key numbers (statistic, p-value, effect direction).  \n3. Give practical decision implication.",
+        "6": "- Copying table values without interpretation.\n- Reporting significance without effect size/context.\n- Ignoring data coding errors."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "Interpret 3 common SPSS output snippets (descriptives, crosstab, regression)."
+        },
+        {
+          "time_minutes": null,
+          "text": "For each snippet, state one limitation/assumption check."
+        },
+        {
+          "time_minutes": null,
+          "text": "Write a client-friendly 4-line summary from one output."
+        }
+      ],
+      "feynmanText": "SPSS is the calculator -- you don't need to know which buttons to press, but you need to read the receipt. The exam never asks you to *run* SPSS. It gives you SPSS output (tables of numbers) and asks you to *interpret* it. Every output table follows the same logic: there's a test statistic, degrees of freedom, and a p-value. Your job is to identify what test was run, what the numbers mean, and what business decision follows.",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "1. Identify test and variables.  \n2. Quote key numbers (statistic, p-value, effect direction).  \n3. Give practical decision implication.",
+      "commonTraps": "- Copying table values without interpretation.\n- Reporting significance without effect size/context.\n- Ignoring data coding errors.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-09_ST2187_decision-tree-analysis.md",
+      "date": "2026-04-09",
+      "module": "ST2187",
+      "topicSlug": "decision-tree-analysis",
+      "title": "ST2187 - Decision Tree Analysis & Game Theory (Exam Sheet)",
+      "sections": {
+        "0": "A **decision tree** is a map of choices and chance events laid out as a branching diagram. It helps you pick the best option when the future is uncertain.\n\nThink of it like this: you're deciding whether to launch a new product. If you launch, there's a 60% chance of high demand (profit £500k) and a 40% chance of low demand (loss £200k). If you don't launch, you make £0. Which do you choose?\n\nYou work backwards from the end. The **Expected Monetary Value (EMV)** of launching = 0.60 x £500k + 0.40 x (-£200k) = £300k - £80k = £220k. Since £220k > £0, you should launch.\n\nDecision trees have two types of nodes: **decision nodes** (squares -- you choose) and **chance nodes** (circles -- nature chooses). You **fold back** the tree from right to left: at chance nodes, calculate the EMV; at decision nodes, pick the option with the highest EMV.\n\n**Sensitivity analysis** asks: \"how much would the probabilities or payoffs need to change before my decision flips?\" If your decision only changes when demand probability drops below 10%, it's robust. If it flips at 55%, it's fragile.\n\n**Game theory** extends this to situations where your outcome depends on what someone else decides (a competitor, not nature). The **Nash equilibrium** is the outcome where neither player can improve by changing strategy alone -- everyone is doing the best they can given what the other is doing.",
+        "1": "**Decision tree analysis** is a graphical tool for sequential decision-making under uncertainty. It structures complex business problems into a tree of decisions and chance events, then uses EMV (Expected Monetary Value) to identify the optimal strategy.\n\n**Tree components:**\n- **Decision node (square □):** the decision-maker chooses among actions.\n- **Chance node (circle ○):** nature determines the outcome; each branch has a probability and payoff.\n- **Terminal node (triangle/end):** the final payoff (profit/cost/utility).\n- **Branches:** represent alternatives at decision nodes and outcomes at chance nodes.\n\n**Rollback (folding back) procedure:**\n1. Start at the terminal nodes (right side of the tree).\n2. At each **chance node:** compute EMV = \\(\\sum P_i \\times \\text{Payoff}_i\\).\n3. At each **decision node:** choose the branch with the highest EMV (or lowest expected cost). Cross out inferior branches.\n4. Work backwards to the root to identify the optimal strategy.\n\n**Sensitivity analysis:** How much can a probability or payoff change before the optimal decision switches? Find the crossover point by setting two branch EMVs equal and solving.\n\n**Expected Value of Perfect Information (EVPI):**\n\\[\\text{EVPI} = \\text{EMV with perfect info} - \\text{EMV without info}\\]\nEVPI sets the upper limit on what you'd pay for any information source.\n\n**Expected Value of Sample Information (EVSI):**\nWhen information is imperfect, use Bayes' theorem to update probabilities, then recompute EMV. \\(\\text{EVSI} = \\text{EMV with sample info} - \\text{EMV without info}\\). Always \\(0 \\le \\text{EVSI} \\le \\text{EVPI}\\).\n\n**Risk profiles:** Instead of just EMV, display the full probability distribution of outcomes for each decision alternative. A risk-averse decision-maker may prefer lower-variance options even with slightly lower EMV.\n\n**Game theory basics (examinable in ST2187):**\n- **Two-player zero-sum games:** Row player's gain = Column player's loss.\n- **Payoff matrix:** from Row player's perspective.\n- **Dominance:** if strategy A always gives ≥ payoff than strategy B regardless of opponent's action, B is dominated and can be eliminated.\n- **Saddle point (pure strategy equilibrium):** exists when maximin (Row) = minimax (Column). Both players have a single optimal pure strategy.\n- **Mixed strategy equilibrium:** when no saddle point, each player randomises. Set opponent's expected payoffs equal across their strategies and solve for the mixing probability.\n- **Value of the game:** the expected payoff under the equilibrium strategy. If value > 0, Row player has advantage; if < 0, Column player has advantage.",
+        "2": "| Concept | Formula |\n|---|---|\n| EMV at chance node | \\(\\text{EMV} = \\sum_{i=1}^{m} P(s_i) \\times V(s_i)\\) |\n| EVPI | \\(\\sum_j P(s_j) \\times \\max_i V(a_i, s_j) - \\max_i \\text{EMV}(a_i)\\) |\n| EVSI | \\(\\text{EMV with signal} - \\text{EMV without signal}\\) |\n| Bayes update for EVSI | \\(P(s_j|\\text{signal}) = \\frac{P(\\text{signal}|s_j) P(s_j)}{P(\\text{signal})}\\) |\n| Sensitivity crossover | Set \\(\\text{EMV}(a_1) = \\text{EMV}(a_2)\\), solve for the probability |\n| Mixed strategy (2×2 game) | Row mixes with prob \\(p\\): solve \\(p \\cdot a_{11} + (1-p) \\cdot a_{21} = p \\cdot a_{12} + (1-p) \\cdot a_{22}\\) |\n| Value of game | \\(V = p \\cdot a_{11} + (1-p) \\cdot a_{21}\\) using the equilibrium \\(p\\) |",
+        "3": "**Scenario:** A company must decide whether to launch a new product (cost £200k) or not. If launched, demand is High (P = 0.6, revenue £500k) or Low (P = 0.4, revenue £100k). Before deciding, they can commission a market study costing £30k.\n\n**Step 1 — Tree without market study:**\n- Launch: EMV = 0.6(500 − 200) + 0.4(100 − 200) = 0.6(300) + 0.4(−100) = 180 − 40 = **£140k**\n- Don't launch: EMV = **£0**\n- Decision: Launch (EMV = £140k).\n\n**Step 2 — EVPI:**\n- Perfect info: if High → Launch (£300k); if Low → Don't launch (£0).\n- EMV with perfect info = 0.6(300) + 0.4(0) = **£180k**.\n- EVPI = 180 − 140 = **£40k**. The market study (at £30k) is worth considering since £30k < EVPI.\n\n**Step 3 — Tree with market study (Bayesian update):**\nStudy signals: Positive (P(Pos|High) = 0.85, P(Pos|Low) = 0.20).\n- P(Pos) = 0.85(0.6) + 0.20(0.4) = 0.51 + 0.08 = 0.59\n- P(High|Pos) = 0.51/0.59 = 0.864; P(Low|Pos) = 0.08/0.59 = 0.136\n- EMV(Launch|Pos) = 0.864(300) + 0.136(−100) = 259.2 − 13.6 = £245.6k\n- P(Neg) = 0.41; P(High|Neg) = 0.09/0.41 = 0.220; P(Low|Neg) = 0.32/0.41 = 0.780\n- EMV(Launch|Neg) = 0.220(300) + 0.780(−100) = 66 − 78 = −£12k → Don't launch.\n\n**Step 4 — EMV of study strategy:**\n- If Pos (P = 0.59): launch, EMV = £245.6k; If Neg (P = 0.41): don't launch, EMV = £0.\n- Overall EMV = 0.59(245.6) + 0.41(0) − 30 = 144.9 − 30 = **£114.9k**.\n- Since £114.9k < £140k (no study, just launch), the study is **not worth it** at this price.\n\n**Step 5 — Sensitivity:**\nAt what study cost C does the study become worthwhile? Set 144.9 − C = 140 → C = £4.9k. The study is only worth commissioning if it costs ≤ £4.9k.",
+        "4": "1. **(10 min)** Draw a decision tree for a 2-stage problem: first decide whether to test-market (cost £50k), then decide whether to launch. Compute EMV at each node using given probabilities and payoffs. Identify the optimal strategy.\n2. **(8 min)** Compute EVPI for a 3-state decision problem. Interpret: \"The company should not pay more than £X for any forecast service.\"\n3. **(12 min)** A market research signal has known accuracy rates. Use Bayes' theorem to update prior probabilities. Recompute EMV for each decision branch conditional on the signal. Calculate EVSI. Is the research worth its quoted price?\n4. **(10 min)** Perform sensitivity analysis: for what probability of High Demand does the optimal decision switch from Launch to Don't Launch? Show the crossover calculation and interpret.\n5. **(10 min)** Two firms choose pricing strategies simultaneously. Write the 2×2 payoff matrix, check for dominated strategies, find the saddle point (if any), or compute the mixed strategy equilibrium and the value of the game.",
+        "5": "1. **Draw the tree** with clear labels: square for decisions, circles for chance nodes, terminal payoffs at the right.\n2. **Label all branches** with probabilities (chance) and decision labels.\n3. **Roll back from right to left:** show EMV calculation at each chance node; state decision at each decision node.\n4. **State the optimal strategy:** \"The optimal policy is: [do not conduct study] → [launch product], with EMV = £140k.\"\n5. **Compute EVPI** and interpret it as the ceiling on information value.\n6. **Sensitivity analysis:** \"The decision switches if P(High) drops below X.\" Show the algebra.\n7. **Risk discussion:** \"Although Launch has the highest EMV, the £100k loss in the worst case may be unacceptable. A risk-averse manager might prefer...\"",
+        "6": "- **Confusing decision nodes and chance nodes:** decisions are under your control (square); chance events are not (circle). Never assign probabilities to decision branches.\n- **Forgetting to subtract information costs:** the cost of a market study must be subtracted from the strategy's EMV, not ignored.\n- **EVSI > EVPI:** this is mathematically impossible. If your EVSI exceeds EVPI, you have a calculation error (usually in the Bayesian update).\n- **Rolling forward instead of backward:** always start from the terminal nodes and work left. Rolling forward ignores future optimal decisions.\n- **Not normalising Bayesian posteriors:** P(High|signal) + P(Low|signal) must = 1. Show the denominator P(signal) explicitly.\n- **Ignoring risk profiles when EMVs are close:** if two actions have EMVs of £140k and £138k but very different risk profiles, report this — the decision may depend on risk attitude.\n- **Game theory: confusing Row and Column player perspectives:** the payoff matrix is always from one player's perspective. Make sure you state whose.\n- **Confusing ST2187 decision trees with ML classification trees:** in ST2187, decision trees are about sequential business decisions under uncertainty (EMV-based), NOT about splitting data using Gini/entropy. Do not write about pruning or overfitting here."
+      },
+      "formulas": [
+        {
+          "concept": "EMV at chance node",
+          "formula": "\\(\\text{EMV} = \\sum_{i=1}^{m} P(s_i) \\times V(s_i)\\)"
+        },
+        {
+          "concept": "EVPI",
+          "formula": "\\(\\sum_j P(s_j) \\times \\max_i V(a_i, s_j) - \\max_i \\text{EMV}(a_i)\\)"
+        },
+        {
+          "concept": "EVSI",
+          "formula": "\\(\\text{EMV with signal} - \\text{EMV without signal}\\)"
+        },
+        {
+          "concept": "Bayes update for EVSI",
+          "formula": "\\(P(s_j"
+        },
+        {
+          "concept": "Sensitivity crossover",
+          "formula": "Set \\(\\text{EMV}(a_1) = \\text{EMV}(a_2)\\), solve for the probability"
+        },
+        {
+          "concept": "Mixed strategy (2×2 game)",
+          "formula": "Row mixes with prob \\(p\\): solve \\(p \\cdot a_{11} + (1-p) \\cdot a_{21} = p \\cdot a_{12} + (1-p) \\cdot a_{22}\\)"
+        },
+        {
+          "concept": "Value of game",
+          "formula": "\\(V = p \\cdot a_{11} + (1-p) \\cdot a_{21}\\) using the equilibrium \\(p\\)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Draw a decision tree for a 2-stage problem: first decide whether to test-market (cost £50k), then decide whether to launch. Compute EMV at each node using given probabilities and payoffs. Identify the optimal strategy."
+        },
+        {
+          "time_minutes": 8,
+          "text": "Compute EVPI for a 3-state decision problem. Interpret: \"The company should not pay more than £X for any forecast service.\""
+        },
+        {
+          "time_minutes": 12,
+          "text": "A market research signal has known accuracy rates. Use Bayes' theorem to update prior probabilities. Recompute EMV for each decision branch conditional on the signal. Calculate EVSI. Is the research worth its quoted price?"
+        },
+        {
+          "time_minutes": 10,
+          "text": "Perform sensitivity analysis: for what probability of High Demand does the optimal decision switch from Launch to Don't Launch? Show the crossover calculation and interpret."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Two firms choose pricing strategies simultaneously. Write the 2×2 payoff matrix, check for dominated strategies, find the saddle point (if any), or compute the mixed strategy equilibrium and the value of the game."
+        }
+      ],
+      "feynmanText": "A **decision tree** is a map of choices and chance events laid out as a branching diagram. It helps you pick the best option when the future is uncertain.\n\nThink of it like this: you're deciding whether to launch a new product. If you launch, there's a 60% chance of high demand (profit £500k) and a 40% chance of low demand (loss £200k). If you don't launch, you make £0. Which do you choose?\n\nYou work backwards from the end. The **Expected Monetary Value (EMV)** of launching = 0.60 x £500k + 0.40 x (-£200k) = £300k - £80k = £220k. Since £220k > £0, you should launch.\n\nDecision trees have two types of nodes: **decision nodes** (squares -- you choose) and **chance nodes** (circles -- nature chooses). You **fold back** the tree from right to left: at chance nodes, calculate the EMV; at decision nodes, pick the option with the highest EMV.\n\n**Sensitivity analysis** asks: \"how much would the probabilities or payoffs need to change before my decision flips?\" If your decision only changes when demand probability drops below 10%, it's robust. If it flips at 55%, it's fragile.\n\n**Game theory** extends this to situations where your outcome depends on what someone else decides (a competitor, not nature). The **Nash equilibrium** is the outcome where neither player can improve by changing strategy alone -- everyone is doing the best they can given what the other is doing.",
+      "feynmanKeyTerms": [
+        "decision tree",
+        "Expected Monetary Value (EMV)",
+        "decision nodes",
+        "chance nodes",
+        "fold back",
+        "Sensitivity analysis",
+        "Game theory",
+        "Nash equilibrium"
+      ],
+      "modelAnswer": "1. **Draw the tree** with clear labels: square for decisions, circles for chance nodes, terminal payoffs at the right.\n2. **Label all branches** with probabilities (chance) and decision labels.\n3. **Roll back from right to left:** show EMV calculation at each chance node; state decision at each decision node.\n4. **State the optimal strategy:** \"The optimal policy is: [do not conduct study] → [launch product], with EMV = £140k.\"\n5. **Compute EVPI** and interpret it as the ceiling on information value.\n6. **Sensitivity analysis:** \"The decision switches if P(High) drops below X.\" Show the algebra.\n7. **Risk discussion:** \"Although Launch has the highest EMV, the £100k loss in the worst case may be unacceptable. A risk-averse manager might prefer...\"",
+      "commonTraps": "- **Confusing decision nodes and chance nodes:** decisions are under your control (square); chance events are not (circle). Never assign probabilities to decision branches.\n- **Forgetting to subtract information costs:** the cost of a market study must be subtracted from the strategy's EMV, not ignored.\n- **EVSI > EVPI:** this is mathematically impossible. If your EVSI exceeds EVPI, you have a calculation error (usually in the Bayesian update).\n- **Rolling forward instead of backward:** always start from the terminal nodes and work left. Rolling forward ignores future optimal decisions.\n- **Not normalising Bayesian posteriors:** P(High|signal) + P(Low|signal) must = 1. Show the denominator P(signal) explicitly.\n- **Ignoring risk profiles when EMVs are close:** if two actions have EMVs of £140k and £138k but very different risk profiles, report this — the decision may depend on risk attitude.\n- **Game theory: confusing Row and Column player perspectives:** the payoff matrix is always from one player's perspective. Make sure you state whose.\n- **Confusing ST2187 decision trees with ML classification trees:** in ST2187, decision trees are about sequential business decisions under uncertainty (EMV-based), NOT about splitting data using Gini/entropy. Do not write about pruning or overfitting here.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-10_ST3188_discriminant-analysis.md",
+      "date": "2026-04-10",
+      "module": "ST3188",
+      "topicSlug": "discriminant-analysis",
+      "title": "ST3188 - Discriminant Analysis (Exam Sheet)",
+      "sections": {
+        "0": "Imagine you're a phone company trying to predict which customers will upgrade to a premium plan. You have data on existing customers -- their age, income, how long they've been with you -- and you know which ones upgraded and which didn't. **Discriminant analysis** finds the combination of these characteristics that best separates the two groups.\n\nThink of it as drawing a line through a crowd. On one side: likely upgraders. On the other side: non-upgraders. The **discriminant function** is the equation for that line: D = b₁(age) + b₂(income) + b₃(tenure) + ... Each customer gets a **discriminant score** based on this equation. If their score is above a cut-off, predict \"upgrade\"; below, predict \"no upgrade.\"\n\nTo figure out which factors matter most, you look at two things: the **standardised coefficients** (which variable has the biggest weight in the equation?) and the **structure correlations** (which variable correlates most strongly with the dividing line?). If age has the biggest coefficient and structure correlation, age is the strongest predictor.\n\nHow good is the model? The **hit ratio** tells you: what percentage of customers did it classify correctly? Always use the **cross-validated** results, not the original -- the original uses the same data to build and test the model, which inflates accuracy. It's like grading your own homework.\n\nThe key limitation: DA works best when predictors are continuous and normally distributed. Binary variables (gender: yes/no) are \"less than ideal\" -- logistic regression handles those better.",
+        "1": "**Purpose:** Discriminant analysis classifies observations into **two or more known groups** using a linear combination of metric predictor (independent) variables.\n\n**Variables:**\n- Dependent variable: **Categorical** (the group membership, e.g. upgrade/no upgrade, churn/no churn).\n- Independent variables: Should be **metric** (interval or ratio scale). Binary dummy variables can be included but are \"less than ideal\" and may be candidates for removal.\n\n**Number of discriminant functions:** The smaller of **(G - 1)** and **k**, where G = number of groups and k = number of predictor variables.\n- Two groups → **one** discriminant function.\n- Three groups → **two** discriminant functions (focus interpretation on the first, which has greater explanatory power).\n\n**Assumptions:**\n- Predictor variables are approximately normally distributed.\n- Group covariance matrices are approximately equal.\n- Predictor variables have interval or ratio level of measurement.",
+        "2": "### Theoretical Model (MUST write this in exam)\n\n$$D = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\dots + \\beta_k X_k$$\n\n### Estimated Model (MUST write this with actual coefficients)\n\n$$\\hat{D} = b_0 + b_1 X_1 + b_2 X_2 + \\dots + b_k X_k$$\n\nRead the unstandardised coefficients from the SPSS \"Canonical Discriminant Function Coefficients\" table.\n\n### Determining Variable Importance (BOTH needed)\n\n| Method | What it tells you | Where in SPSS |\n|---|---|---|\n| **Standardised coefficients** | Relative importance when variables are on the same scale | \"Standardized Canonical Discriminant Function Coefficients\" |\n| **Structure correlations** | Simple correlations between each predictor and the discriminant function; more robust to multicollinearity | \"Structure Matrix\" |\n\nThe examiner expects you to report **both** and draw a summary table like:\n\n| Predictor | Standardised coefficient | Structure correlation |\n|---|---|---|\n| Age | 0.728 | 0.868 |\n| Weeks | 0.516 | 0.755 |\n| Income | -0.046 | 0.372 |\n| ... | ... | ... |\n\n### Group Centroids and Decision Rule\n\nGroup centroids are the **average discriminant scores** for each group.\n\nFor two groups, the **cut-off point** for classification:\n$$\\text{Cut-off} = \\frac{\\text{Centroid}_1 + \\text{Centroid}_2}{2}$$\n\nAnyone with a discriminant score **below** the cut-off is classified into the group with the lower centroid, and vice versa.\n\n### Hit Ratio (Predictive Accuracy)\n\n$$\\text{Hit ratio} = \\frac{\\text{Number of correctly classified cases}}{\\text{Total number of cases}} \\times 100\\%$$\n\n**Critical:** Always use the **cross-validated** classification results, not the original. The original results are susceptible to **model overfitting** and hence inflate the true hit ratio.\n\n### Statistical Significance\n\n- **Wilks' lambda (Λ):** Tests whether the discriminant function significantly separates the groups. Λ ranges from 0 to 1; smaller values indicate better separation. Tested with a chi-square transformation.\n- **Eigenvalue:** Ratio of between-group to within-group sum of squares. Larger eigenvalues indicate better discrimination.",
+        "3": "**Scenario:** Mobile telecoms provider, 2 groups (upgrade/no upgrade), 5 predictors.\n\n> Since there are G = 2 groups and k = 5 predictors, we estimate **one** discriminant function.\n>\n> **Theoretical model:** D = β₀ + β₁(Age) + β₂(Gender) + β₃(Income) + β₄(Retired) + β₅(Weeks)\n>\n> **Estimated model:** D̂ = -3.503 + 0.059(Age) + 0.296(Gender) - 0.001(Income) - 0.266(Retired) + 0.025(Weeks)\n>\n> **Variable importance:**\n> | Predictor | Std. coefficient | Structure correlation |\n> |---|---|---|\n> | Age | 0.728 | 0.868 |\n> | Weeks | 0.516 | 0.755 |\n> | Income | -0.046 | 0.372 |\n> | Retired | -0.059 | 0.332 |\n> | Gender | 0.148 | 0.100 |\n>\n> Age is the most important predictor, marginally ahead of weeks as a customer. The two dummy variables (gender, retired) are notably the least important, in part due to their binary nature. A case could be made to exclude them.\n>\n> **Centroids:** Non-upgrade = 0.195, Upgrade = -0.708.\n> **Cut-off:** (-0.708 + 0.195) / 2 = -0.2565.\n> Anyone with D̂ < -0.2565 is classified as an upgrader.\n>\n> Since age and weeks have positive coefficients, older and more loyal customers have higher D scores → more likely to be non-upgraders. Younger/newer customers are more likely to upgrade.\n>\n> **Hit ratio (cross-validated):** (119 + 38) / 250 = **62.8%**. (Original: 63.6% — inflated.)",
+        "4": "1. **(5 min)** State the theoretical model with correct notation. State how many functions can be estimated for G groups and k predictors.\n2. **(15 min)** Given SPSS output: write the estimated model, build a variable importance table (standardised + structure), identify the most and least important predictors.\n3. **(10 min)** Calculate the cut-off from group centroids and explain the classification rule in the business context.\n4. **(10 min)** Calculate the hit ratio from the cross-validated classification matrix. Explain why cross-validated results are preferred.\n5. **(10 min)** Write a commercial recommendation: which customer segments should management target, based on the discriminant analysis findings?",
+        "5": "Follow this structure for a 20-mark discriminant analysis question:\n\n1. **State the theoretical model:** D = β₀ + β₁X₁ + ... + βₖXₖ. Define all variables.\n2. **State the estimated model:** Substitute actual coefficients from SPSS output.\n3. **Build the variable importance table:** Report both standardised coefficients AND structure correlations. Identify the most and least important predictors.\n4. **Comment on variable suitability:** Are any variables inappropriate? (Binary/dummy variables are \"less than ideal\" for DA since predictors should ideally be metric.) Consider excluding irrelevant variables.\n5. **State group centroids:** Report the centroid for each group and calculate the cut-off.\n6. **Interpret the direction:** Link the most important predictors' coefficients to which group they predict membership of.\n7. **Calculate the hit ratio:** Use cross-validated results. Note the original hit ratio is inflated due to overfitting.\n8. **Commercial recommendation:** Based on the predictors' importance and direction, recommend which customer segments to target and how.",
+        "6": "- **Forgetting to write both theoretical AND estimated models:** The examiner explicitly requires both. The theoretical model uses β coefficients; the estimated model uses the actual numbers.\n- **Using only standardised coefficients:** You must also report structure correlations. The examiner marks down if you only use one measure.\n- **Using original classification instead of cross-validated:** The original classification inflates accuracy due to overfitting. Always report the cross-validated hit ratio as the primary measure.\n- **Not commenting on variable suitability:** If dummy variables (binary: gender, retired) are included, note that DA technically requires metric predictors and that these variables may be candidates for exclusion.\n- **Missing the commercial insight:** After the statistical analysis, always explain what management should do. Which customers should be targeted? What marketing actions follow from the findings?\n- **Not explaining the centroid/cut-off rule:** State the cut-off calculation and explain in plain language how it determines classification."
+      },
+      "formulas": [
+        {
+          "concept": "Method",
+          "formula": "What it tells you"
+        },
+        {
+          "concept": "**Standardised coefficients**",
+          "formula": "Relative importance when variables are on the same scale"
+        },
+        {
+          "concept": "**Structure correlations**",
+          "formula": "Simple correlations between each predictor and the discriminant function; more robust to multicollinearity"
+        },
+        {
+          "concept": "Predictor",
+          "formula": "Standardised coefficient"
+        },
+        {
+          "concept": "Age",
+          "formula": "0.728"
+        },
+        {
+          "concept": "Weeks",
+          "formula": "0.516"
+        },
+        {
+          "concept": "Income",
+          "formula": "-0.046"
+        },
+        {
+          "concept": "...",
+          "formula": "..."
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 5,
+          "text": "State the theoretical model with correct notation. State how many functions can be estimated for G groups and k predictors."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Given SPSS output: write the estimated model, build a variable importance table (standardised + structure), identify the most and least important predictors."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Calculate the cut-off from group centroids and explain the classification rule in the business context."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Calculate the hit ratio from the cross-validated classification matrix. Explain why cross-validated results are preferred."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Write a commercial recommendation: which customer segments should management target, based on the discriminant analysis findings?"
+        }
+      ],
+      "feynmanText": "Imagine you're a phone company trying to predict which customers will upgrade to a premium plan. You have data on existing customers -- their age, income, how long they've been with you -- and you know which ones upgraded and which didn't. **Discriminant analysis** finds the combination of these characteristics that best separates the two groups.\n\nThink of it as drawing a line through a crowd. On one side: likely upgraders. On the other side: non-upgraders. The **discriminant function** is the equation for that line: D = b₁(age) + b₂(income) + b₃(tenure) + ... Each customer gets a **discriminant score** based on this equation. If their score is above a cut-off, predict \"upgrade\"; below, predict \"no upgrade.\"\n\nTo figure out which factors matter most, you look at two things: the **standardised coefficients** (which variable has the biggest weight in the equation?) and the **structure correlations** (which variable correlates most strongly with the dividing line?). If age has the biggest coefficient and structure correlation, age is the strongest predictor.\n\nHow good is the model? The **hit ratio** tells you: what percentage of customers did it classify correctly? Always use the **cross-validated** results, not the original -- the original uses the same data to build and test the model, which inflates accuracy. It's like grading your own homework.\n\nThe key limitation: DA works best when predictors are continuous and normally distributed. Binary variables (gender: yes/no) are \"less than ideal\" -- logistic regression handles those better.",
+      "feynmanKeyTerms": [
+        "Discriminant analysis",
+        "discriminant function",
+        "discriminant score",
+        "standardised coefficients",
+        "structure correlations",
+        "hit ratio",
+        "cross-validated"
+      ],
+      "modelAnswer": "Follow this structure for a 20-mark discriminant analysis question:\n\n1. **State the theoretical model:** D = β₀ + β₁X₁ + ... + βₖXₖ. Define all variables.\n2. **State the estimated model:** Substitute actual coefficients from SPSS output.\n3. **Build the variable importance table:** Report both standardised coefficients AND structure correlations. Identify the most and least important predictors.\n4. **Comment on variable suitability:** Are any variables inappropriate? (Binary/dummy variables are \"less than ideal\" for DA since predictors should ideally be metric.) Consider excluding irrelevant variables.\n5. **State group centroids:** Report the centroid for each group and calculate the cut-off.\n6. **Interpret the direction:** Link the most important predictors' coefficients to which group they predict membership of.\n7. **Calculate the hit ratio:** Use cross-validated results. Note the original hit ratio is inflated due to overfitting.\n8. **Commercial recommendation:** Based on the predictors' importance and direction, recommend which customer segments to target and how.",
+      "commonTraps": "- **Forgetting to write both theoretical AND estimated models:** The examiner explicitly requires both. The theoretical model uses β coefficients; the estimated model uses the actual numbers.\n- **Using only standardised coefficients:** You must also report structure correlations. The examiner marks down if you only use one measure.\n- **Using original classification instead of cross-validated:** The original classification inflates accuracy due to overfitting. Always report the cross-validated hit ratio as the primary measure.\n- **Not commenting on variable suitability:** If dummy variables (binary: gender, retired) are included, note that DA technically requires metric predictors and that these variables may be candidates for exclusion.\n- **Missing the commercial insight:** After the statistical analysis, always explain what management should do. Which customers should be targeted? What marketing actions follow from the findings?\n- **Not explaining the centroid/cut-off rule:** State the cut-off calculation and explain in plain language how it determines classification.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-11_ST3188_logit-analysis.md",
+      "date": "2026-04-11",
+      "module": "ST3188",
+      "topicSlug": "logit-analysis",
+      "title": "ST3188 - Logit Analysis (Exam Sheet)",
+      "sections": {
+        "0": "Logit analysis answers the same question as discriminant analysis -- \"which group will this person end up in?\" -- but instead of drawing a dividing line, it estimates the **probability** of membership.\n\nOrdinary regression predicts a number (how much will they spend?). But what if your outcome is yes/no (will they buy or not?)? You can't use ordinary regression because it might predict probabilities like -0.3 or 1.5, which are nonsensical. The **logistic function** solves this by squashing any number into the 0-to-1 range, so the output is always a valid probability.\n\nThe model says: \"the *log odds* of buying = a + b₁(income) + b₂(age) + ...\" Log odds sound abstract, but the **odds ratio** (Exp(b)) is intuitive: if Exp(b₁) = 1.5 for income, then every extra unit of income multiplies your odds of buying by 1.5 -- a 50% increase in odds.\n\nThe big advantage of logit over discriminant analysis: logit doesn't care whether your predictors are normal or continuous. You can throw in gender (binary), education level (ordinal), income (continuous) -- all in one model. DA technically requires all predictors to be continuous and normally distributed, which rarely holds in practice.\n\nModel fit is assessed by the **model chi-square** (does the model beat a coin flip?), classification accuracy (what percentage did it get right?), and pseudo-R² measures (how much of the variation does it explain?).",
+        "1": "**Purpose:** Logit (logistic regression) analysis estimates the **probability** that an event occurs (e.g. purchase/no purchase, churn/not churn) as a function of predictor variables. The dependent variable is **binary** (0 or 1).\n\n**Key difference from discriminant analysis:**\n- DA requires metric predictors and multivariate normality.\n- Logit is more **robust** — it can handle both metric and non-metric (categorical) predictors without assuming normality.\n- When assumptions are met, DA may be more powerful. When assumptions are violated (non-normal predictors, many categorical variables), logit is preferred.\n\n**Variables:**\n- Dependent variable: **Binary categorical** (e.g. buy = 1, not buy = 0).\n- Independent variables: Can be **metric or non-metric** (this is a key advantage over DA).",
+        "2": "### The Logit Model\n\nThe probability of the event occurring (Y = 1) is modelled as:\n\n$$P(Y = 1) = \\frac{1}{1 + e^{-(\\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\dots + \\beta_k X_k)}}$$\n\nThis is the **logistic function**, which ensures predicted probabilities are bounded between 0 and 1.\n\n### The Logit (Log Odds) Transformation\n\n$$\\text{logit}(P) = \\ln\\left(\\frac{P}{1-P}\\right) = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\dots + \\beta_k X_k$$\n\nThe logit is the **natural logarithm of the odds** of the event occurring.\n\n### Interpreting Coefficients\n\n- **βₖ:** A one-unit increase in Xₖ changes the **log odds** by βₖ, holding all other variables constant.\n- **Exp(βₖ) = odds ratio:** A one-unit increase in Xₖ **multiplies** the odds by Exp(βₖ). If Exp(βₖ) > 1, the odds increase; if < 1, the odds decrease.\n- Example: If Exp(β₁) = 1.5 for income, then a one-unit increase in income increases the odds of purchase by 50%.\n\n### Model Fit\n\n- **-2 Log Likelihood (-2LL):** Smaller values indicate better fit. Compare the model's -2LL with the null model (intercept only).\n- **Model chi-square:** Tests whether the model with predictors is significantly better than the null model. If p < 0.05, the model is significant.\n- **Hosmer-Lemeshow test:** Tests goodness of fit. We want this to be **non-significant** (p > 0.05), meaning the model fits the data adequately.\n- **Nagelkerke R²:** Pseudo R-squared measure (0 to 1) indicating explanatory power.\n\n### Classification Table\n\nLike DA, logit produces a classification table showing predicted vs actual group membership. Report the **overall percentage correctly classified** and examine accuracy by group.\n\n### Significance of Individual Predictors\n\n- **Wald statistic:** Tests H₀: βₖ = 0 for each predictor. If p < 0.05, the predictor is significant.",
+        "3": "**Scenario:** Bank wants to predict which customers will default on a loan (Y = 1) using income, age, and credit score.\n\n> **Model:** logit(P) = β₀ + β₁(Income) + β₂(Age) + β₃(Credit Score)\n>\n> **Estimated model:** logit(P̂) = 3.2 - 0.05(Income) - 0.02(Age) - 0.03(Credit Score)\n>\n> **Interpretation of Exp(β₁) = Exp(-0.05) = 0.951:** A one-unit increase in income multiplies the odds of defaulting by 0.951, i.e. reduces the odds by about 4.9%, holding age and credit score constant.\n>\n> **Model chi-square:** p < 0.001 → model is significantly better than the null model.\n>\n> **Classification accuracy:** 74% overall. 82% for non-defaulters, 58% for defaulters (weaker for the minority group).\n>\n> **Commercial recommendation:** The model identifies credit score and income as the strongest predictors. Management should target risk mitigation strategies at customers with low credit scores and low income. Consider supplementing with additional predictors (employment status, debt-to-income ratio) to improve accuracy for the defaulting group.",
+        "4": "1. **(5 min)** Write the logit model and the logistic function. Define all terms.\n2. **(10 min)** Explain the interpretation of Exp(β) as an odds ratio with an example.\n3. **(15 min)** Given SPSS-style output: assess model significance (model chi-square), individual predictor significance (Wald), and classification accuracy.\n4. **(10 min)** Compare logit analysis with discriminant analysis: when is each preferred?\n5. **(10 min)** Write a commercial recommendation based on logit results.",
+        "5": "1. **State the model:** Write the logit equation: logit(P) = β₀ + β₁X₁ + ... + βₖXₖ. State the estimated model with actual coefficients.\n2. **Assess overall model fit:** Report model chi-square (significant?), -2LL, Nagelkerke R².\n3. **Assess individual predictors:** Report Wald statistics and p-values. Identify significant and non-significant predictors.\n4. **Interpret key coefficients:** Use Exp(β) to give odds ratio interpretation in plain language.\n5. **Report classification accuracy:** Overall and by group. Note any imbalance.\n6. **Commercial recommendation:** Link findings to marketing actions.",
+        "6": "| Feature | Discriminant Analysis | Logit Analysis |\n|---|---|---|\n| Dependent variable | Categorical (2+ groups) | Binary (2 groups, though multinomial logit extends to more) |\n| Independent variables | Must be metric (interval/ratio) | Can be metric or non-metric |\n| Normality assumption | Requires multivariate normality | No normality assumption |\n| Output focus | Discriminant scores, centroids, structure correlations | Probabilities, odds ratios |\n| Preferred when | Assumptions met, continuous predictors | Assumptions violated, mix of variable types |\n| Variable importance | Standardised coefficients + structure correlations | Wald statistic + Exp(β) |",
+        "7": "- **Confusing odds with probability:** Odds = P/(1-P). Probability = P. They are related but not the same. Exp(β) is an odds ratio, not a probability change.\n- **Forgetting to interpret Exp(β):** Simply reporting β coefficients without the odds ratio interpretation misses the practical meaning. Always state what a one-unit change in X does to the odds.\n- **Not comparing with DA:** If the exam asks about logit, it may also expect a comparison with DA. Know when each is preferred.\n- **Ignoring model fit measures:** Report at least model chi-square and classification accuracy.\n- **Same classification trap as DA:** Report accuracy by group, not just overall. The model may perform poorly on the minority class."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 5,
+          "text": "Write the logit model and the logistic function. Define all terms."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Explain the interpretation of Exp(β) as an odds ratio with an example."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Given SPSS-style output: assess model significance (model chi-square), individual predictor significance (Wald), and classification accuracy."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Compare logit analysis with discriminant analysis: when is each preferred?"
+        },
+        {
+          "time_minutes": 10,
+          "text": "Write a commercial recommendation based on logit results."
+        }
+      ],
+      "feynmanText": "Logit analysis answers the same question as discriminant analysis -- \"which group will this person end up in?\" -- but instead of drawing a dividing line, it estimates the **probability** of membership.\n\nOrdinary regression predicts a number (how much will they spend?). But what if your outcome is yes/no (will they buy or not?)? You can't use ordinary regression because it might predict probabilities like -0.3 or 1.5, which are nonsensical. The **logistic function** solves this by squashing any number into the 0-to-1 range, so the output is always a valid probability.\n\nThe model says: \"the *log odds* of buying = a + b₁(income) + b₂(age) + ...\" Log odds sound abstract, but the **odds ratio** (Exp(b)) is intuitive: if Exp(b₁) = 1.5 for income, then every extra unit of income multiplies your odds of buying by 1.5 -- a 50% increase in odds.\n\nThe big advantage of logit over discriminant analysis: logit doesn't care whether your predictors are normal or continuous. You can throw in gender (binary), education level (ordinal), income (continuous) -- all in one model. DA technically requires all predictors to be continuous and normally distributed, which rarely holds in practice.\n\nModel fit is assessed by the **model chi-square** (does the model beat a coin flip?), classification accuracy (what percentage did it get right?), and pseudo-R² measures (how much of the variation does it explain?).",
+      "feynmanKeyTerms": [
+        "probability",
+        "logistic function",
+        "odds ratio",
+        "model chi-square"
+      ],
+      "modelAnswer": "1. **State the model:** Write the logit equation: logit(P) = β₀ + β₁X₁ + ... + βₖXₖ. State the estimated model with actual coefficients.\n2. **Assess overall model fit:** Report model chi-square (significant?), -2LL, Nagelkerke R².\n3. **Assess individual predictors:** Report Wald statistics and p-values. Identify significant and non-significant predictors.\n4. **Interpret key coefficients:** Use Exp(β) to give odds ratio interpretation in plain language.\n5. **Report classification accuracy:** Overall and by group. Note any imbalance.\n6. **Commercial recommendation:** Link findings to marketing actions.",
+      "commonTraps": "| Feature | Discriminant Analysis | Logit Analysis |\n|---|---|---|\n| Dependent variable | Categorical (2+ groups) | Binary (2 groups, though multinomial logit extends to more) |\n| Independent variables | Must be metric (interval/ratio) | Can be metric or non-metric |\n| Normality assumption | Requires multivariate normality | No normality assumption |\n| Output focus | Discriminant scores, centroids, structure correlations | Probabilities, odds ratios |\n| Preferred when | Assumptions met, continuous predictors | Assumptions violated, mix of variable types |\n| Variable importance | Standardised coefficients + structure correlations | Wald statistic + Exp(β) |",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-12_ST2187_heteroskedasticity-probability.md",
+      "date": "2026-04-12",
+      "module": "ST2187",
+      "topicSlug": "heteroskedasticity-probability",
+      "title": "ST2187 - ANOVA, Chi-Square Tests & Heteroskedasticity (Exam Sheet)",
+      "sections": {
+        "0": "This file covers three related tools. They all answer the same fundamental question: \"is there a real pattern in the data, or is it just noise?\"\n\n**ANOVA** asks: \"do different groups have different averages?\" Imagine you test three ad campaigns (A, B, C) and measure sales for each. ANOVA checks whether the differences in average sales across the three campaigns are bigger than you'd expect from random variation alone. The F-statistic compares \"variation between groups\" to \"variation within groups.\" If the between-group variation is much larger, the groups really are different.\n\n**Chi-square tests** ask the same question for categorical data. Instead of comparing averages, you compare counts. \"Do men and women choose different brands?\" You build a table of observed counts and compare them to what you'd expect if gender and brand choice were completely independent. If the observed counts are far from the expected counts, the variables are associated.\n\n**Heteroskedasticity** is a problem that breaks one of regression's key assumptions. Normally, regression assumes the scatter of data points around the line is roughly the same everywhere (homoskedasticity -- constant spread). Heteroskedasticity means the scatter changes -- maybe predictions are precise for small values of X but wildly inaccurate for large values. Think of predicting household spending: low-income households spend similar amounts, but high-income households vary enormously. This doesn't bias your coefficients, but it does make your standard errors wrong, which means your hypothesis tests and confidence intervals can't be trusted. The fix: use **robust standard errors** that work even when the spread isn't constant.",
+        "1": "### ANOVA (Analysis of Variance)\n\n**Purpose:** Compare means of a single dependent variable across several distinct groups. ANOVA tests whether at least one group mean differs significantly from the others.\n\n**One-way ANOVA hypotheses:**\n- \\(H_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_J\\) (all group means equal).\n- \\(H_1:\\) at least one pair of means differs.\n\n**Core logic:** Partition total variation into between-group variation (MSB) and within-group variation (MSW). If between-group variation is large relative to within-group variation → evidence that group means differ.\n\n**Two-way ANOVA:** Two factors; test for main effects of each factor AND their interaction. An **interaction** exists when the effect of one factor on Y depends on the level of the other factor. Always check for interaction before interpreting main effects.\n\n**Post-hoc tests:** A significant F-test says \"at least one difference exists\" but does not say which groups differ. Use Tukey, Bonferroni, or Scheffé methods to identify specific pairwise differences while controlling the overall Type I error rate.\n\n**Assumptions:** normality of residuals within each group, equal variances across groups (check with Levene's test), independence.\n\n### Chi-Square Test of Independence\n\n**Purpose:** Test whether two categorical variables are associated in a cross-tabulation (contingency table).\n\n- \\(H_0:\\) Variables are independent (knowing one gives no information about the other).\n- \\(H_1:\\) Variables are associated/dependent.\n\n**Key rule:** The chi-square test tells you WHETHER an association exists but not WHAT FORM it takes. To understand the pattern, examine row/column percentages.\n\n### Heteroskedasticity\n\n**Definition:** The variance of the error term \\(\\varepsilon\\) changes with the level of X or fitted values. Detected by a \"fan shape\" in the residual-vs-fitted plot.\n\n**Consequences for OLS:**\n- OLS coefficients remain **unbiased** and **consistent** — heteroskedasticity does NOT bias the estimates.\n- Standard errors are **wrong** (usually underestimated) → confidence intervals are too narrow, t-tests are unreliable, p-values are misleading.\n\n**Corrections:**\n- **Robust (White) standard errors:** valid inference without assuming homoscedasticity. Most common fix.\n- **Weighted Least Squares (WLS):** if the variance structure is known or estimable.\n- **Log transformation:** if variance increases proportionally with the level of Y.",
+        "2": "### ANOVA\n\n| Concept | Formula |\n|---|---|\n| SST (Total) | \\(\\sum_{i,j}(Y_{ij} - \\bar{Y})^2\\) |\n| SSB (Between) | \\(\\sum_j n_j(\\bar{Y}_j - \\bar{Y})^2\\) |\n| SSW (Within) | \\(\\sum_{i,j}(Y_{ij} - \\bar{Y}_j)^2\\) |\n| Identity | SST = SSB + SSW |\n| MSB | SSB / (J − 1) |\n| MSW | SSW / (n − J) |\n| F-statistic | F = MSB / MSW, df = (J−1, n−J) |\n| Effect size (η²) | \\(\\eta^2 = SSB/SST\\) (proportion of total variance explained by the factor) |\n\n### Chi-Square\n\n| Concept | Formula |\n|---|---|\n| Expected count | \\(E_{ij} = \\frac{\\text{Row total}_i \\times \\text{Col total}_j}{n}\\) |\n| Chi-square statistic | \\(\\chi^2 = \\sum \\frac{(O_{ij} - E_{ij})^2}{E_{ij}}\\) |\n| Degrees of freedom | \\((r-1)(c-1)\\) |\n| Cramér's V (effect size) | \\(V = \\sqrt{\\frac{\\chi^2}{n \\cdot \\min(r-1, c-1)}}\\); V ∈ [0,1] |\n\n### Heteroskedasticity\n\n| Concept | Formula / Rule |\n|---|---|\n| Detection (visual) | Plot residuals \\(\\hat{\\varepsilon}\\) vs fitted \\(\\hat{Y}\\) — fan shape = heteroscedasticity |\n| Breusch-Pagan test | Regress \\(\\hat{\\varepsilon}^2\\) on X's; test joint significance (F or LM test). Significant → reject homoscedasticity |\n| White test | More general: regress \\(\\hat{\\varepsilon}^2\\) on X's, X²'s, and cross-products; LM = nR² ~ χ²(q) |\n| Robust SE | \\(SE_{robust}(\\hat{\\beta}_j)\\) — usually larger than conventional SE, producing wider CIs and larger p-values |",
+        "3": "### ANOVA Example\n\n**Scenario:** Three advertising campaigns tested in different markets. Sales data:\n\n| Campaign A | Campaign B | Campaign C |\n|---|---|---|\n| 45, 50, 48, 52, 55 | 60, 62, 58, 65, 63 | 48, 50, 47, 53, 52 |\n\n- \\(\\bar{Y}_A = 50\\), \\(\\bar{Y}_B = 61.6\\), \\(\\bar{Y}_C = 50\\), \\(\\bar{Y} = 53.87\\)\n- SSB = 5[(50−53.87)² + (61.6−53.87)² + (50−53.87)²] = 5[14.98 + 59.75 + 14.98] = 448.5\n- SSW (sum of squared deviations within each group) = 62.0 + 30.8 + 26.0 = 118.8\n- MSB = 448.5/2 = 224.25; MSW = 118.8/12 = 9.9\n- F = 224.25/9.9 = **22.65**, df = (2, 12)\n\n**Decision:** p < 0.001. Reject \\(H_0\\). At least one campaign mean differs significantly from the others.\n\n**Post-hoc:** Tukey intervals show Campaign B is significantly higher than both A and C. No significant difference between A and C.\n\n**Effect size:** η² = 448.5/(448.5 + 118.8) = 0.79 → 79% of sales variation is explained by campaign type. Very large effect.\n\n**Business recommendation:** \"Campaign B significantly outperforms A and C. Recommend allocating the marketing budget to Campaign B. The effect size (η² = 0.79) indicates this is not just statistically significant but practically important.\"\n\n### Chi-Square Example\n\n**2×2 table:** Gender × Product preference\n\n| | Product X | Product Y | Row total |\n|---|---|---|---|\n| Male | 40 | 60 | 100 |\n| Female | 70 | 30 | 100 |\n| Col total | 110 | 90 | 200 |\n\n- Expected: E(Male, X) = 100 × 110/200 = 55. Similarly: E(Male, Y) = 45, E(Female, X) = 55, E(Female, Y) = 45.\n- χ² = (40−55)²/55 + (60−45)²/45 + (70−55)²/55 + (30−45)²/45 = 4.09 + 5.00 + 4.09 + 5.00 = **18.18**\n- df = (2−1)(2−1) = 1. Critical value at 5% = 3.841.\n- Decision: 18.18 > 3.841 → reject independence. Gender and product preference are significantly associated.\n- Cramér's V = √(18.18/(200 × 1)) = 0.302 → moderate association.\n\n**Pattern (from percentages):** 70% of females prefer Product X vs only 40% of males. Targeting: market Product X more to female segments.",
+        "4": "1. **(10 min)** Interpret a one-way ANOVA table: state hypotheses, identify F-ratio and p-value, make a decision. Report η² and explain its practical meaning. Name two post-hoc methods.\n2. **(10 min)** Two-way ANOVA: a company tests 3 package designs across 2 regions. The interaction F-test is significant (p = 0.02). Explain what this means in business terms. Why must you interpret interaction before main effects?\n3. **(10 min)** Given a 3×3 contingency table with observed counts: (a) compute all expected counts, (b) compute χ², (c) determine df, (d) make a decision at 5%, (e) identify the specific pattern by examining row percentages.\n4. **(10 min)** A regression of house prices on size shows a clear fan shape in the residual plot. (a) Name the problem. (b) Are the OLS coefficients biased? (c) What is wrong with the standard errors? (d) Propose two fixes. (e) Reinterpret a coefficient that was \"significant\" with conventional SE but \"not significant\" with robust SE.\n5. **(10 min)** Conceptual: explain why the ANOVA F-test and the regression F-test are mathematically the same concept (both compare explained vs unexplained variation). In what sense is ANOVA a special case of regression?",
+        "5": "### For ANOVA:\n1. State the dependent variable, the factor(s), and their levels.\n2. Write \\(H_0\\) and \\(H_1\\) explicitly.\n3. Report F-ratio, df, and p-value. Compare p to α.\n4. Report effect size (η²) — \"X% of variation in Y is explained by the factor.\"\n5. If significant, state which groups differ (post-hoc results) — not just \"at least one difference.\"\n6. Translate into a business recommendation.\n\n### For Chi-Square:\n1. State \\(H_0\\) (independence) and \\(H_1\\) (association).\n2. Show expected count computation for at least one cell.\n3. Report χ², df, and p-value.\n4. If significant, examine row/column percentages to describe the form of the association.\n5. Report Cramér's V for effect size.\n6. Caveat: association ≠ causation.\n\n### For Heteroskedasticity:\n1. Define the problem and state why it matters (SEs are wrong → tests are unreliable).\n2. Name the detection method (residual plot or formal test).\n3. State that OLS estimates remain unbiased — do not say heteroskedasticity biases coefficients.\n4. Propose a correction (robust SEs, WLS, log transform).\n5. Re-evaluate significance using corrected SEs.",
+        "6": "- **Treating significant ANOVA as identifying WHICH groups differ:** the F-test says \"at least one difference\" — you need post-hoc tests (Tukey/Bonferroni) to find which pairs.\n- **Ignoring the multiple comparison problem:** testing all pairs with uncorrected confidence intervals inflates the overall Type I error rate. Always use corrected methods.\n- **Using raw counts instead of percentages in chi-square interpretation:** the χ² test uses counts for the statistic, but interpretation of the association requires row/column percentages.\n- **Forgetting the expected-count rule of thumb:** expected counts should generally be ≥ 5 for the χ² approximation to be valid. If violated, consider Fisher's exact test or combine categories.\n- **Saying heteroskedasticity biases OLS coefficients:** WRONG. It biases the standard errors, not the coefficients themselves. This is a very common exam mistake.\n- **Ignoring diagnostics before inference:** always check the residual plot before reporting regression significance. If the residuals show a pattern, the model's SEs and p-values cannot be trusted.\n- **Confusing statistical significance with practical significance:** with large n, ANOVA can flag a tiny difference between means as significant. Report η² or ω² to assess whether the difference matters in practice.\n- **Claiming causal effects from cross-tabulation or ANOVA:** both show association or group differences, not causation (unless the study is a randomised experiment)."
+      },
+      "formulas": [
+        {
+          "concept": "SST (Total)",
+          "formula": "\\(\\sum_{i,j}(Y_{ij} - \\bar{Y})^2\\)"
+        },
+        {
+          "concept": "SSB (Between)",
+          "formula": "\\(\\sum_j n_j(\\bar{Y}_j - \\bar{Y})^2\\)"
+        },
+        {
+          "concept": "SSW (Within)",
+          "formula": "\\(\\sum_{i,j}(Y_{ij} - \\bar{Y}_j)^2\\)"
+        },
+        {
+          "concept": "Identity",
+          "formula": "SST = SSB + SSW"
+        },
+        {
+          "concept": "MSB",
+          "formula": "SSB / (J − 1)"
+        },
+        {
+          "concept": "MSW",
+          "formula": "SSW / (n − J)"
+        },
+        {
+          "concept": "F-statistic",
+          "formula": "F = MSB / MSW, df = (J−1, n−J)"
+        },
+        {
+          "concept": "Effect size (η²)",
+          "formula": "\\(\\eta^2 = SSB/SST\\) (proportion of total variance explained by the factor)"
+        },
+        {
+          "concept": "Expected count",
+          "formula": "\\(E_{ij} = \\frac{\\text{Row total}_i \\times \\text{Col total}_j}{n}\\)"
+        },
+        {
+          "concept": "Chi-square statistic",
+          "formula": "\\(\\chi^2 = \\sum \\frac{(O_{ij} - E_{ij})^2}{E_{ij}}\\)"
+        },
+        {
+          "concept": "Degrees of freedom",
+          "formula": "\\((r-1)(c-1)\\)"
+        },
+        {
+          "concept": "Cramér's V (effect size)",
+          "formula": "\\(V = \\sqrt{\\frac{\\chi^2}{n \\cdot \\min(r-1, c-1)}}\\); V ∈ [0,1]"
+        },
+        {
+          "concept": "Detection (visual)",
+          "formula": "Plot residuals \\(\\hat{\\varepsilon}\\) vs fitted \\(\\hat{Y}\\) — fan shape = heteroscedasticity"
+        },
+        {
+          "concept": "Breusch-Pagan test",
+          "formula": "Regress \\(\\hat{\\varepsilon}^2\\) on X's; test joint significance (F or LM test). Significant → reject homoscedasticity"
+        },
+        {
+          "concept": "White test",
+          "formula": "More general: regress \\(\\hat{\\varepsilon}^2\\) on X's, X²'s, and cross-products; LM = nR² ~ χ²(q)"
+        },
+        {
+          "concept": "Robust SE",
+          "formula": "\\(SE_{robust}(\\hat{\\beta}_j)\\) — usually larger than conventional SE, producing wider CIs and larger p-values"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 10,
+          "text": "Interpret a one-way ANOVA table: state hypotheses, identify F-ratio and p-value, make a decision. Report η² and explain its practical meaning. Name two post-hoc methods."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Two-way ANOVA: a company tests 3 package designs across 2 regions. The interaction F-test is significant (p = 0.02). Explain what this means in business terms. Why must you interpret interaction before main effects?"
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given a 3×3 contingency table with observed counts: (a) compute all expected counts, (b) compute χ², (c) determine df, (d) make a decision at 5%, (e) identify the specific pattern by examining row percentages."
+        },
+        {
+          "time_minutes": 10,
+          "text": "A regression of house prices on size shows a clear fan shape in the residual plot. (a) Name the problem. (b) Are the OLS coefficients biased? (c) What is wrong with the standard errors? (d) Propose two fixes. (e) Reinterpret a coefficient that was \"significant\" with conventional SE but \"not significant\" with robust SE."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Conceptual: explain why the ANOVA F-test and the regression F-test are mathematically the same concept (both compare explained vs unexplained variation). In what sense is ANOVA a special case of regression?"
+        }
+      ],
+      "feynmanText": "This file covers three related tools. They all answer the same fundamental question: \"is there a real pattern in the data, or is it just noise?\"\n\n**ANOVA** asks: \"do different groups have different averages?\" Imagine you test three ad campaigns (A, B, C) and measure sales for each. ANOVA checks whether the differences in average sales across the three campaigns are bigger than you'd expect from random variation alone. The F-statistic compares \"variation between groups\" to \"variation within groups.\" If the between-group variation is much larger, the groups really are different.\n\n**Chi-square tests** ask the same question for categorical data. Instead of comparing averages, you compare counts. \"Do men and women choose different brands?\" You build a table of observed counts and compare them to what you'd expect if gender and brand choice were completely independent. If the observed counts are far from the expected counts, the variables are associated.\n\n**Heteroskedasticity** is a problem that breaks one of regression's key assumptions. Normally, regression assumes the scatter of data points around the line is roughly the same everywhere (homoskedasticity -- constant spread). Heteroskedasticity means the scatter changes -- maybe predictions are precise for small values of X but wildly inaccurate for large values. Think of predicting household spending: low-income households spend similar amounts, but high-income households vary enormously. This doesn't bias your coefficients, but it does make your standard errors wrong, which means your hypothesis tests and confidence intervals can't be trusted. The fix: use **robust standard errors** that work even when the spread isn't constant.",
+      "feynmanKeyTerms": [
+        "ANOVA",
+        "Chi-square tests",
+        "Heteroskedasticity",
+        "robust standard errors"
+      ],
+      "modelAnswer": "### For ANOVA:\n1. State the dependent variable, the factor(s), and their levels.\n2. Write \\(H_0\\) and \\(H_1\\) explicitly.\n3. Report F-ratio, df, and p-value. Compare p to α.\n4. Report effect size (η²) — \"X% of variation in Y is explained by the factor.\"\n5. If significant, state which groups differ (post-hoc results) — not just \"at least one difference.\"\n6. Translate into a business recommendation.\n\n### For Chi-Square:\n1. State \\(H_0\\) (independence) and \\(H_1\\) (association).\n2. Show expected count computation for at least one cell.\n3. Report χ², df, and p-value.\n4. If significant, examine row/column percentages to describe the form of the association.\n5. Report Cramér's V for effect size.\n6. Caveat: association ≠ causation.\n\n### For Heteroskedasticity:\n1. Define the problem and state why it matters (SEs are wrong → tests are unreliable).\n2. Name the detection method (residual plot or formal test).\n3. State that OLS estimates remain unbiased — do not say heteroskedasticity biases coefficients.\n4. Propose a correction (robust SEs, WLS, log transform).\n5. Re-evaluate significance using corrected SEs.",
+      "commonTraps": "- **Treating significant ANOVA as identifying WHICH groups differ:** the F-test says \"at least one difference\" — you need post-hoc tests (Tukey/Bonferroni) to find which pairs.\n- **Ignoring the multiple comparison problem:** testing all pairs with uncorrected confidence intervals inflates the overall Type I error rate. Always use corrected methods.\n- **Using raw counts instead of percentages in chi-square interpretation:** the χ² test uses counts for the statistic, but interpretation of the association requires row/column percentages.\n- **Forgetting the expected-count rule of thumb:** expected counts should generally be ≥ 5 for the χ² approximation to be valid. If violated, consider Fisher's exact test or combine categories.\n- **Saying heteroskedasticity biases OLS coefficients:** WRONG. It biases the standard errors, not the coefficients themselves. This is a very common exam mistake.\n- **Ignoring diagnostics before inference:** always check the residual plot before reporting regression significance. If the residuals show a pattern, the model's SEs and p-values cannot be trusted.\n- **Confusing statistical significance with practical significance:** with large n, ANOVA can flag a tiny difference between means as significant. Report η² or ω² to assess whether the difference matters in practice.\n- **Claiming causal effects from cross-tabulation or ANOVA:** both show association or group differences, not causation (unless the study is a randomised experiment).",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-13_ST3188_factor-analysis.md",
+      "date": "2026-04-13",
+      "module": "ST3188",
+      "topicSlug": "factor-analysis",
+      "title": "ST3188 - Factor Analysis (Exam Sheet)",
+      "sections": {
+        "0": "You survey 1,000 customers on 20 satisfaction questions. But many of those questions are measuring the same underlying thing. \"The staff were helpful,\" \"the staff were knowledgeable,\" and \"the staff were friendly\" are three different questions, but they're all really measuring *staff quality*. **Factor analysis** discovers these hidden groupings automatically.\n\nIt works by looking at correlations. If three variables always move together (when one goes up, the others go up too), they probably share an underlying factor. The algorithm finds these clusters of correlated variables and names each cluster a \"factor.\" Instead of 20 separate variables, you might end up with 4 factors: staff quality, product range, store environment, and value for money.\n\n**Eigenvalues** tell you how important each factor is -- specifically, how much of the total variation in the data it explains. The rule of thumb: keep factors with eigenvalues above 1 (each factor should explain at least as much as a single original variable would).\n\n**Factor loadings** tell you which original variables belong to which factor. A loading of 0.85 between \"staff helpful\" and Factor 1 means that variable is strongly associated with that factor. You interpret the factor by looking at which variables load heavily on it and giving it a name that captures what they have in common.\n\nThe practical payoff: instead of putting 20 variables into a regression model (which would cause multicollinearity chaos), you put in 4 clean, uncorrelated factor scores. Data reduction makes everything downstream easier.",
+        "1": "**Purpose:** Factor analysis identifies **underlying dimensions (factors)** that explain the correlations among a set of observed variables. It reduces many correlated variables into a smaller number of uncorrelated factors.\n\n**Three main uses in market research (tested 2023 Q4(b)):**\n1. Identify underlying dimensions/factors that explain correlations among variables.\n2. Identify a new, smaller set of **uncorrelated** variables to replace the original correlated variables in subsequent multivariate analysis (regression, discriminant analysis).\n3. Identify a smaller set of **salient variables** from a larger set for use in subsequent analysis.\n\n**Key terms:**\n\n| Term | Definition |\n|---|---|\n| **Factor loading** | Correlation between an original variable and a factor. Determines which variables \"belong\" to which factor. |\n| **Eigenvalue** | Amount of variance in the data explained by a factor. Sum of squared loadings for that factor. |\n| **Communality** | Proportion of a variable's variance explained by the extracted factors. Ranges 0-1. |\n| **Factor score** | Composite score for each respondent on each factor. Can be used as input to regression or discriminant analysis. |\n| **Rotation** | Transformation of factors to improve interpretability without changing model fit. |\n\n**Principal components vs common factor analysis:**\n- **Principal components:** Considers total variance. Communalities on the diagonal of the correlation matrix are set to 1. Used when the goal is data reduction.\n- **Common factor analysis:** Considers only shared/common variance. Communalities are estimated and placed on the diagonal. Used when the goal is identifying latent constructs.",
+        "2": "### Step 1: Check Suitability for Factor Analysis\n\n- **Bartlett's test of sphericity:** Tests H₀ that the correlation matrix is an identity matrix (i.e. no correlations exist). We need to **reject** H₀ (p < 0.05) to confirm that factor analysis is appropriate.\n- **Kaiser-Meyer-Olkin (KMO) measure of sampling adequacy:** Ranges 0-1. Values ≥ 0.5 are acceptable; ≥ 0.8 is good. Indicates whether partial correlations among variables are small enough for factor analysis to work.\n\n### Step 2: Determine Number of Factors\n\n- **Eigenvalue > 1 rule (Kaiser criterion):** Retain factors with eigenvalues greater than 1 (each factor should explain at least as much variance as a single original variable).\n- **Scree plot:** Plot eigenvalues against factor number. Retain factors before the \"elbow\" where the curve flattens.\n- **Cumulative % variance explained:** Retain enough factors to explain a satisfactory cumulative percentage (commonly 60%+).\n\n### Step 3: Interpret Factors Using Rotated Component Matrix\n\n- **Varimax rotation** (most common): Orthogonal rotation that maximises the variance of squared loadings within each factor, making high loadings higher and low loadings lower.\n- Assign each variable to the factor on which it has the **highest loading**.\n- Variables with high loadings on the same factor share an underlying construct → **name the factor** based on what those variables have in common.\n\n### Step 4: Assess Model Fit\n\n- Examine the **reproduced correlation matrix** and the **residuals** (differences between observed and reproduced correlations).\n- If many residuals are ≥ 0.05 in absolute value, the model fit is poor.\n- Example from 2022: \"80% of the residuals exceed 0.05, possibly calling into question the model fit.\"\n\n### Surrogate Variables\n\nInstead of using factor scores, you can select a **surrogate variable** — the single original variable with the highest loading on a factor — to represent that factor in subsequent analysis. Useful when factor scores are not needed.",
+        "3": "**Scenario:** Retailer, 5 satisfaction attributes, n = 200, principal components with varimax rotation.\n\n> **Suitability:** Check Bartlett's test (significant → proceed) and KMO (adequate → proceed).\n>\n> **Number of factors:** Two factors have eigenvalues > 1, retaining 63.4% of the original variation.\n>\n> **Interpretation using rotated component matrix:**\n> - Factor 1 is highly correlated with product range (0.850), customer service (0.828), and product quality (0.771) → label: **\"Non-price satisfaction\"**.\n> - Factor 2 is highly correlated with price satisfaction (0.920) → label: **\"Price satisfaction\"**. Recommend using price satisfaction as a **surrogate variable** for Factor 2.\n>\n> **Model fit:** 80% of residuals exceed 0.05 in absolute value, possibly calling the model fit into question.\n>\n> **Uses:** The extracted factors or surrogate variables could be used as independent variables in subsequent regression or discriminant analysis.",
+        "4": "1. **(5 min)** State the purpose of factor analysis and its three main uses in market research.\n2. **(10 min)** From SPSS output: check Bartlett's test and KMO. Determine number of factors using eigenvalues and cumulative variance.\n3. **(15 min)** Interpret the rotated component matrix. Assign variables to factors. Name each factor with a meaningful label.\n4. **(10 min)** Assess model fit using the reproduced correlations residual matrix.\n5. **(10 min)** Recommend whether to use factor scores or surrogate variables and explain their potential uses in further analysis.",
+        "5": "Follow this structure for a 20-mark factor analysis question:\n\n1. **Check suitability:** Report Bartlett's test (significant? → proceed) and KMO (≥ 0.5? → proceed).\n2. **Determine number of factors:** Report eigenvalues, cumulative % variance explained, and reference the scree plot. State the Kaiser criterion (eigenvalue > 1).\n3. **Interpret factors:** Use the rotated component matrix. For each factor, list the variables with the highest loadings and **name the factor** meaningfully.\n4. **Comment on the component plot** if provided — visual confirmation of variable groupings.\n5. **Assess model fit:** Report on residuals from the reproduced correlation matrix. State what percentage exceed 0.05 and whether this is acceptable.\n6. **Discuss surrogate variables:** If one variable dominates a factor, recommend it as a surrogate.\n7. **State uses:** Factor scores or surrogates can be used in regression, discriminant analysis, or cluster analysis.\n8. **Note the Likert scale debate** if applicable: Likert data is technically ordinal, but treating it as interval enables factor analysis. More scale points strengthen this assumption.",
+        "6": "- **Not naming the factors:** Simply reporting loadings without giving factors meaningful names (like \"Price satisfaction\" or \"Product quality\") loses marks. The examiner specifically rewards good factor labels.\n- **Ignoring model fit:** Failing to discuss the residuals matrix. If many residuals are large, say so and note it as a limitation.\n- **Forgetting surrogate variables:** When one variable has a very high loading on a factor (e.g. 0.920), recommend it as a surrogate. This impressed the examiners (2022 commentary).\n- **Confusing principal components with common factor analysis:** Know the difference — principal components uses total variance (communalities = 1), common factor analysis uses shared variance only.\n- **Over-interpreting weak or cross-loadings:** If a variable loads moderately on two factors, note the cross-loading and discuss whether the variable should be assigned to either or excluded.\n- **Not stating how factors will be used:** Always mention that factor scores can feed into subsequent regression, discriminant analysis, or cluster analysis."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 5,
+          "text": "State the purpose of factor analysis and its three main uses in market research."
+        },
+        {
+          "time_minutes": 10,
+          "text": "From SPSS output: check Bartlett's test and KMO. Determine number of factors using eigenvalues and cumulative variance."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Interpret the rotated component matrix. Assign variables to factors. Name each factor with a meaningful label."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Assess model fit using the reproduced correlations residual matrix."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Recommend whether to use factor scores or surrogate variables and explain their potential uses in further analysis."
+        }
+      ],
+      "feynmanText": "You survey 1,000 customers on 20 satisfaction questions. But many of those questions are measuring the same underlying thing. \"The staff were helpful,\" \"the staff were knowledgeable,\" and \"the staff were friendly\" are three different questions, but they're all really measuring *staff quality*. **Factor analysis** discovers these hidden groupings automatically.\n\nIt works by looking at correlations. If three variables always move together (when one goes up, the others go up too), they probably share an underlying factor. The algorithm finds these clusters of correlated variables and names each cluster a \"factor.\" Instead of 20 separate variables, you might end up with 4 factors: staff quality, product range, store environment, and value for money.\n\n**Eigenvalues** tell you how important each factor is -- specifically, how much of the total variation in the data it explains. The rule of thumb: keep factors with eigenvalues above 1 (each factor should explain at least as much as a single original variable would).\n\n**Factor loadings** tell you which original variables belong to which factor. A loading of 0.85 between \"staff helpful\" and Factor 1 means that variable is strongly associated with that factor. You interpret the factor by looking at which variables load heavily on it and giving it a name that captures what they have in common.\n\nThe practical payoff: instead of putting 20 variables into a regression model (which would cause multicollinearity chaos), you put in 4 clean, uncorrelated factor scores. Data reduction makes everything downstream easier.",
+      "feynmanKeyTerms": [
+        "Factor analysis",
+        "Eigenvalues",
+        "Factor loadings"
+      ],
+      "modelAnswer": "Follow this structure for a 20-mark factor analysis question:\n\n1. **Check suitability:** Report Bartlett's test (significant? → proceed) and KMO (≥ 0.5? → proceed).\n2. **Determine number of factors:** Report eigenvalues, cumulative % variance explained, and reference the scree plot. State the Kaiser criterion (eigenvalue > 1).\n3. **Interpret factors:** Use the rotated component matrix. For each factor, list the variables with the highest loadings and **name the factor** meaningfully.\n4. **Comment on the component plot** if provided — visual confirmation of variable groupings.\n5. **Assess model fit:** Report on residuals from the reproduced correlation matrix. State what percentage exceed 0.05 and whether this is acceptable.\n6. **Discuss surrogate variables:** If one variable dominates a factor, recommend it as a surrogate.\n7. **State uses:** Factor scores or surrogates can be used in regression, discriminant analysis, or cluster analysis.\n8. **Note the Likert scale debate** if applicable: Likert data is technically ordinal, but treating it as interval enables factor analysis. More scale points strengthen this assumption.",
+      "commonTraps": "- **Not naming the factors:** Simply reporting loadings without giving factors meaningful names (like \"Price satisfaction\" or \"Product quality\") loses marks. The examiner specifically rewards good factor labels.\n- **Ignoring model fit:** Failing to discuss the residuals matrix. If many residuals are large, say so and note it as a limitation.\n- **Forgetting surrogate variables:** When one variable has a very high loading on a factor (e.g. 0.920), recommend it as a surrogate. This impressed the examiners (2022 commentary).\n- **Confusing principal components with common factor analysis:** Know the difference — principal components uses total variance (communalities = 1), common factor analysis uses shared variance only.\n- **Over-interpreting weak or cross-loadings:** If a variable loads moderately on two factors, note the cross-loading and discuss whether the variable should be assigned to either or excluded.\n- **Not stating how factors will be used:** Always mention that factor scores can feed into subsequent regression, discriminant analysis, or cluster analysis.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-14_ST2187_probability.md",
+      "date": "2026-04-14",
+      "module": "ST2187",
+      "topicSlug": "probability",
+      "title": "ST2187 - Probability & Probability Distributions (Exam Sheet)",
+      "sections": {
+        "0": "Probability is just a way of putting a number on uncertainty. \"There's a 30% chance of rain\" means that in the long run, roughly 30 out of 100 similar days would have rain.\n\nThe basic rules are simple. If two events can't both happen (mutually exclusive), the probability of either happening is the sum: P(A or B) = P(A) + P(B). If two events don't affect each other (independent), the probability of both happening is the product: P(A and B) = P(A) x P(B).\n\n**Conditional probability** answers: \"given that I know something, how does that change the odds?\" P(A|B) = \"the probability of A, given that B has happened.\" Bayes' theorem lets you flip this around: if you know P(B|A), you can calculate P(A|B). This is how you update your beliefs when you get new evidence.\n\n**Probability distributions** describe the full range of possible outcomes for a random variable. The **normal distribution** (bell curve) is the most important -- most naturally occurring measurements cluster around a mean with a symmetric spread. The **binomial** counts successes out of a fixed number of trials (e.g. how many of 100 customers buy). The **Poisson** counts rare events in a fixed time or space (e.g. how many complaints per day).\n\nEach distribution is defined by its **parameters** (the normal by its mean and variance, the binomial by n and p). If you know the distribution, you can calculate the probability of any outcome, build confidence intervals, and run hypothesis tests.",
+        "1": "**Why this matters:** Probability rules underpin all inference, testing, and decision-making in ST2187. You cannot construct a confidence interval, run a hypothesis test, or compute an EMV without probability.\n\n**Basic probability rules:**\n- **Complement:** \\(P(A') = 1 - P(A)\\)\n- **Addition (general):** \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\n- **Addition (mutually exclusive):** if \\(A \\cap B = \\emptyset\\), then \\(P(A \\cup B) = P(A) + P(B)\\)\n- **Multiplication (general):** \\(P(A \\cap B) = P(A|B) \\cdot P(B)\\)\n- **Multiplication (independent):** if \\(A \\perp B\\), then \\(P(A \\cap B) = P(A) \\cdot P(B)\\)\n\n**Conditional probability:** \\(P(A|B) = \\frac{P(A \\cap B)}{P(B)}\\). Measures the probability of A given that B has occurred. The denominator restricts the sample space to B.\n\n**Independence vs mutual exclusivity — the critical distinction:**\n- **Independent:** knowing B occurred does not change P(A). \\(P(A|B) = P(A)\\).\n- **Mutually exclusive:** A and B cannot both occur. \\(P(A \\cap B) = 0\\).\n- If two events with non-zero probability are mutually exclusive, they are **not** independent (knowing one occurred means the other definitely didn't).\n\n**Bayes' theorem:** Updates prior probabilities after observing new data.\n\\[P(A_i | B) = \\frac{P(B|A_i) \\cdot P(A_i)}{\\sum_j P(B|A_j) \\cdot P(A_j)}\\]\n\n**Law of total probability:** If \\(A_1, A_2, \\ldots, A_k\\) partition the sample space:\n\\[P(B) = \\sum_{i=1}^k P(B|A_i) \\cdot P(A_i)\\]\n\n**Key probability distributions:**\n\n| Distribution | Use case | Parameters | Mean | Variance |\n|---|---|---|---|---|\n| **Binomial** \\(B(n,p)\\) | Fixed n trials, success/fail | \\(n, p\\) | \\(np\\) | \\(np(1-p)\\) |\n| **Poisson** \\(\\text{Poi}(\\lambda)\\) | Count of rare events in fixed interval | \\(\\lambda\\) | \\(\\lambda\\) | \\(\\lambda\\) |\n| **Normal** \\(N(\\mu,\\sigma^2)\\) | Continuous, symmetric, bell-shaped | \\(\\mu, \\sigma^2\\) | \\(\\mu\\) | \\(\\sigma^2\\) |\n| **Exponential** \\(\\text{Exp}(\\lambda)\\) | Time between Poisson events | \\(\\lambda\\) | \\(1/\\lambda\\) | \\(1/\\lambda^2\\) |\n\n**Normal distribution properties:**\n- Symmetric about \\(\\mu\\); mean = median = mode.\n- Empirical rule: ~68% within \\(\\mu \\pm \\sigma\\), ~95% within \\(\\mu \\pm 2\\sigma\\), ~99.7% within \\(\\mu \\pm 3\\sigma\\).\n- Standard normal: \\(Z = (X - \\mu)/\\sigma\\); use z-tables to find probabilities.\n\n**Expected value and variance rules:**\n- \\(E(aX + b) = aE(X) + b\\)\n- \\(\\text{Var}(aX + b) = a^2 \\text{Var}(X)\\)\n- If \\(X \\perp Y\\): \\(E(X + Y) = E(X) + E(Y)\\), \\(\\text{Var}(X + Y) = \\text{Var}(X) + \\text{Var}(Y)\\)",
+        "2": "| Concept | Formula |\n|---|---|\n| Conditional probability | \\(P(A|B) = P(A \\cap B) / P(B)\\) |\n| Bayes' theorem | \\(P(A_i|B) = \\frac{P(B|A_i) P(A_i)}{\\sum_j P(B|A_j) P(A_j)}\\) |\n| Binomial PMF | \\(P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}\\) |\n| Poisson PMF | \\(P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}\\) |\n| Normal PDF | \\(f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\\) |\n| Standardisation | \\(Z = (X - \\mu)/\\sigma\\) |\n| Chebyshev's inequality | At least \\(1 - 1/k^2\\) of data within \\(k\\) SDs of mean (any distribution) |\n| Normal approximation to binomial | Use \\(N(np, np(1-p))\\) when \\(np \\ge 5\\) and \\(n(1-p) \\ge 5\\) |",
+        "3": "**Scenario:** A company's drug test has sensitivity \\(P(\\text{positive}|\\text{user}) = 0.95\\) and specificity \\(P(\\text{negative}|\\text{non-user}) = 0.90\\). The prevalence of drug use in the workforce is 3%.\n\n**Question:** An employee tests positive. What is the probability they actually use drugs?\n\n**Step 1 — Define events:**\n- \\(D\\) = drug user, \\(D'\\) = non-user\n- \\(+\\) = positive test, \\(-\\) = negative test\n- \\(P(D) = 0.03\\), \\(P(D') = 0.97\\)\n- \\(P(+|D) = 0.95\\), \\(P(+|D') = 0.10\\)\n\n**Step 2 — Total probability of positive test:**\n\\[P(+) = P(+|D)P(D) + P(+|D')P(D') = 0.95(0.03) + 0.10(0.97) = 0.0285 + 0.097 = 0.1255\\]\n\n**Step 3 — Bayes' theorem:**\n\\[P(D|+) = \\frac{P(+|D)P(D)}{P(+)} = \\frac{0.0285}{0.1255} = \\mathbf{0.227}\\]\n\n**Interpretation:** Despite the test being 95% sensitive, only 22.7% of positive results are true positives. The low base rate (3%) means false positives from the 97% non-user population dominate. This is the **base-rate fallacy** — a high-frequency exam topic.\n\n**Step 4 — Binomial follow-up:** If 20 employees are tested independently, what is the probability that exactly 2 test positive?\n- \\(p = P(+) = 0.1255\\), \\(n = 20\\)\n- \\(P(X = 2) = \\binom{20}{2}(0.1255)^2(0.8745)^{18} = 190 \\times 0.01576 \\times 0.0963 = \\mathbf{0.288}\\)",
+        "4": "1. **(8 min)** Given \\(P(A) = 0.4\\), \\(P(B) = 0.5\\), \\(P(A \\cap B) = 0.2\\). Compute \\(P(A|B)\\), \\(P(B|A)\\), \\(P(A \\cup B)\\). State whether A and B are independent. Justify.\n2. **(10 min)** A factory has 3 machines producing 30%, 45%, 25% of output with defect rates 2%, 3%, 4%. A randomly selected item is defective. Find the probability it came from Machine 2 (Bayes). Draw the probability tree.\n3. **(10 min)** A call centre receives an average of 4 calls per minute. Using the Poisson distribution, find: (a) P(exactly 3 calls in a minute), (b) P(at most 2 calls), (c) P(more than 5 calls). State the assumption that makes Poisson appropriate.\n4. **(10 min)** Delivery times are normally distributed with \\(\\mu = 5\\) days, \\(\\sigma = 1.2\\) days. Find: (a) P(delivery > 7 days), (b) the delivery time exceeded by only 5% of orders, (c) P(between 3.5 and 6.5 days).\n5. **(12 min)** Distinguish between independent and mutually exclusive events with one concrete business example of each. Explain why P(A|B) = P(A) cannot hold simultaneously with P(A∩B) = 0 (unless P(A) or P(B) is zero).",
+        "5": "1. **Define events clearly with notation:** \"Let A = customer purchases, B = customer saw advert.\"\n2. **State which rule/theorem applies:** \"By Bayes' theorem...\" or \"Since trials are independent, this follows a Binomial distribution with n = ... and p = ...\"\n3. **Write the formula before substituting numbers:** show the general formula, then plug in.\n4. **Compute step by step:** show intermediate arithmetic — never jump to the final answer.\n5. **Interpret the result in business context:** \"There is a 22.7% chance this positive-testing employee actually uses drugs, so a confirmatory test should be required before any HR action.\"\n6. **State assumptions and limitations:** independence of trials, validity of the Poisson rate being constant, normality assumption.",
+        "6": "- **Confusing \\(P(A|B)\\) with \\(P(B|A)\\):** the \"prosecutor's fallacy.\" \\(P(\\text{positive}|\\text{user})\\) ≠ \\(P(\\text{user}|\\text{positive})\\). Always check which event is the condition.\n- **Assuming independence without justification:** if the question does not state independence, you cannot use \\(P(A \\cap B) = P(A)P(B)\\).\n- **Forgetting to normalise Bayes posteriors:** \\(P(D|+) + P(D'|+)\\) must = 1. Always show the denominator \\(P(+)\\) via total probability.\n- **Applying the empirical rule to skewed data:** the 68-95-99.7 rule only applies to normal (or approximately normal) distributions. For arbitrary distributions, use Chebyshev.\n- **Normal approximation to binomial without checking conditions:** you need both \\(np \\ge 5\\) and \\(n(1-p) \\ge 5\\). State this check explicitly.\n- **Skipping event definitions:** exam answers must start by defining all events. Losing marks for jumping straight to computation is the most common error.\n- **Using \"or\" without clarifying inclusive/exclusive:** in probability, \\(P(A \\cup B)\\) is always inclusive or. State this explicitly if the question is ambiguous."
+      },
+      "formulas": [
+        {
+          "concept": "Conditional probability",
+          "formula": "\\(P(A"
+        },
+        {
+          "concept": "Bayes' theorem",
+          "formula": "\\(P(A_i"
+        },
+        {
+          "concept": "Binomial PMF",
+          "formula": "\\(P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}\\)"
+        },
+        {
+          "concept": "Poisson PMF",
+          "formula": "\\(P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}\\)"
+        },
+        {
+          "concept": "Normal PDF",
+          "formula": "\\(f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\\)"
+        },
+        {
+          "concept": "Standardisation",
+          "formula": "\\(Z = (X - \\mu)/\\sigma\\)"
+        },
+        {
+          "concept": "Chebyshev's inequality",
+          "formula": "At least \\(1 - 1/k^2\\) of data within \\(k\\) SDs of mean (any distribution)"
+        },
+        {
+          "concept": "Normal approximation to binomial",
+          "formula": "Use \\(N(np, np(1-p))\\) when \\(np \\ge 5\\) and \\(n(1-p) \\ge 5\\)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Given \\(P(A) = 0.4\\), \\(P(B) = 0.5\\), \\(P(A \\cap B) = 0.2\\). Compute \\(P(A|B)\\), \\(P(B|A)\\), \\(P(A \\cup B)\\). State whether A and B are independent. Justify."
+        },
+        {
+          "time_minutes": 10,
+          "text": "A factory has 3 machines producing 30%, 45%, 25% of output with defect rates 2%, 3%, 4%. A randomly selected item is defective. Find the probability it came from Machine 2 (Bayes). Draw the probability tree."
+        },
+        {
+          "time_minutes": 10,
+          "text": "A call centre receives an average of 4 calls per minute. Using the Poisson distribution, find: (a) P(exactly 3 calls in a minute), (b) P(at most 2 calls), (c) P(more than 5 calls). State the assumption that makes Poisson appropriate."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Delivery times are normally distributed with \\(\\mu = 5\\) days, \\(\\sigma = 1.2\\) days. Find: (a) P(delivery > 7 days), (b) the delivery time exceeded by only 5% of orders, (c) P(between 3.5 and 6.5 days)."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Distinguish between independent and mutually exclusive events with one concrete business example of each. Explain why P(A|B) = P(A) cannot hold simultaneously with P(A∩B) = 0 (unless P(A) or P(B) is zero)."
+        }
+      ],
+      "feynmanText": "Probability is just a way of putting a number on uncertainty. \"There's a 30% chance of rain\" means that in the long run, roughly 30 out of 100 similar days would have rain.\n\nThe basic rules are simple. If two events can't both happen (mutually exclusive), the probability of either happening is the sum: P(A or B) = P(A) + P(B). If two events don't affect each other (independent), the probability of both happening is the product: P(A and B) = P(A) x P(B).\n\n**Conditional probability** answers: \"given that I know something, how does that change the odds?\" P(A|B) = \"the probability of A, given that B has happened.\" Bayes' theorem lets you flip this around: if you know P(B|A), you can calculate P(A|B). This is how you update your beliefs when you get new evidence.\n\n**Probability distributions** describe the full range of possible outcomes for a random variable. The **normal distribution** (bell curve) is the most important -- most naturally occurring measurements cluster around a mean with a symmetric spread. The **binomial** counts successes out of a fixed number of trials (e.g. how many of 100 customers buy). The **Poisson** counts rare events in a fixed time or space (e.g. how many complaints per day).\n\nEach distribution is defined by its **parameters** (the normal by its mean and variance, the binomial by n and p). If you know the distribution, you can calculate the probability of any outcome, build confidence intervals, and run hypothesis tests.",
+      "feynmanKeyTerms": [
+        "Conditional probability",
+        "Probability distributions",
+        "normal distribution",
+        "binomial",
+        "Poisson",
+        "parameters"
+      ],
+      "modelAnswer": "1. **Define events clearly with notation:** \"Let A = customer purchases, B = customer saw advert.\"\n2. **State which rule/theorem applies:** \"By Bayes' theorem...\" or \"Since trials are independent, this follows a Binomial distribution with n = ... and p = ...\"\n3. **Write the formula before substituting numbers:** show the general formula, then plug in.\n4. **Compute step by step:** show intermediate arithmetic — never jump to the final answer.\n5. **Interpret the result in business context:** \"There is a 22.7% chance this positive-testing employee actually uses drugs, so a confirmatory test should be required before any HR action.\"\n6. **State assumptions and limitations:** independence of trials, validity of the Poisson rate being constant, normality assumption.",
+      "commonTraps": "- **Confusing \\(P(A|B)\\) with \\(P(B|A)\\):** the \"prosecutor's fallacy.\" \\(P(\\text{positive}|\\text{user})\\) ≠ \\(P(\\text{user}|\\text{positive})\\). Always check which event is the condition.\n- **Assuming independence without justification:** if the question does not state independence, you cannot use \\(P(A \\cap B) = P(A)P(B)\\).\n- **Forgetting to normalise Bayes posteriors:** \\(P(D|+) + P(D'|+)\\) must = 1. Always show the denominator \\(P(+)\\) via total probability.\n- **Applying the empirical rule to skewed data:** the 68-95-99.7 rule only applies to normal (or approximately normal) distributions. For arbitrary distributions, use Chebyshev.\n- **Normal approximation to binomial without checking conditions:** you need both \\(np \\ge 5\\) and \\(n(1-p) \\ge 5\\). State this check explicitly.\n- **Skipping event definitions:** exam answers must start by defining all events. Losing marks for jumping straight to computation is the most common error.\n- **Using \"or\" without clarifying inclusive/exclusive:** in probability, \\(P(A \\cup B)\\) is always inclusive or. State this explicitly if the question is ambiguous.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-15_ST3188_cluster-analysis.md",
+      "date": "2026-04-15",
+      "module": "ST3188",
+      "topicSlug": "cluster-analysis",
+      "title": "ST3188 - Cluster Analysis (Exam Sheet)",
+      "sections": {
+        "0": "Factor analysis groups *variables* that go together. Cluster analysis groups *people* (or objects) that are similar. It's the statistical version of \"birds of a feather flock together.\"\n\nImagine you survey 200 shoppers about their attitudes to price, quality, brand loyalty, and fashion. Some shoppers care deeply about price and nothing else. Others care only about brands. Others are balanced. Cluster analysis automatically sorts these 200 people into segments based on how similar their attitude patterns are.\n\n**Ward's method** (the one always used in the ST3188 exam) works from the bottom up. Start with every person as their own cluster. Find the two most similar people and merge them. Now find the next closest pair (or pair-to-cluster) and merge again. Keep going until everyone is in one giant cluster. At each step, Ward's method picks the merge that increases the within-cluster variance the least -- it tries to keep clusters as tight (internally similar) as possible.\n\nHow do you know when to stop merging? The **dendrogram** (tree diagram) shows you. When two clusters are merged that are very different, there's a big jump. Cut the tree just before that big jump, and the number of branches below the cut is your number of clusters. The **agglomeration schedule** shows the same thing numerically -- look for the big jump in the \"Coefficients\" column.\n\nAfter finding the clusters, you **profile** them using demographic variables that weren't used in the clustering itself (age, income, gender). Then you give each cluster a marketing-friendly name: \"Bargain Hunters,\" \"Brand Loyalists,\" \"Fashionistas.\" Now you have actionable segments to target differently.",
+        "1": "**Purpose:** Cluster analysis groups objects (respondents, products, countries) into segments (clusters) so that objects within the same cluster are **similar** and objects in different clusters are **dissimilar**.\n\n**Key principle:** Maximise **within-cluster homogeneity** and **between-cluster heterogeneity**.\n\n**Two main approaches:**\n\n| Approach | How it works | Key feature |\n|---|---|---|\n| **Hierarchical (agglomerative)** | Starts with each object as its own cluster; merges closest pairs step by step until one cluster remains | Produces a dendrogram; no need to pre-specify number of clusters |\n| **Non-hierarchical (k-means)** | Pre-specifies number of clusters; assigns objects iteratively to nearest cluster centre | Faster for large datasets; requires specifying k in advance |\n\n**ST3188 exams always use hierarchical (Ward's method)** with Euclidean or squared Euclidean distance.\n\n**Important:** The clustering variables (e.g. Likert-scale attitude ratings) are used to **form** the clusters. Demographic variables (age, gender, income) are used to **profile** the clusters after formation — they are NOT used in the clustering itself.",
+        "2": "### Distance Measures\n\n**Euclidean distance** between objects *i* and *j* based on *p* variables:\n\n$$\\delta_{ij} = \\sqrt{\\sum_{k=1}^{p} (x_{ik} - x_{jk})^2}$$\n\n**Squared Euclidean distance:**\n\n$$\\delta_{ij} = \\sum_{k=1}^{p} (x_{ik} - x_{jk})^2$$\n\nThe examiner may specify either. Write the correct formula matching what is stated in the question.\n\n### Ward's Method (always tested)\n\nWard's method is a **variance-based** agglomerative procedure that aims to **minimise the within-cluster variance** at each step.\n\n**How it works:**\n1. For each cluster, compute the means for all variables.\n2. For each object, calculate the squared Euclidean distance to the cluster means.\n3. Sum these distances for all objects.\n4. At each stage, merge the two clusters whose combination produces the **smallest increase** in the overall sum of squared within-cluster distances.\n\n### Determining the Number of Clusters\n\n**From the agglomeration schedule:**\n- Look at the \"Coefficients\" column.\n- A **large jump** in the coefficient from one stage to the next indicates that two dissimilar clusters are being forced together → the stage **before** the jump gives the appropriate number of clusters.\n- Example: If a big jump occurs from stage 23 to stage 24 (out of 24 stages for 25 objects), then a **2-cluster solution** is appropriate (25 - 24 + 1 = 2).\n\n**From the dendrogram:**\n- Read horizontally: long horizontal lines before a merge indicate distinct clusters.\n- Cut the dendrogram where there is a large gap between merges.\n\n**Note:** The choice is subjective. You may argue for either a 2-cluster or 3-cluster solution if you justify it using both the agglomeration schedule and dendrogram.\n\n### Profiling Clusters\n\nAfter determining clusters, use **descriptive statistics** (means and standard deviations) by cluster to profile them. Use demographic variables (age, income, gender) that were **NOT** used in the clustering:\n\n- Calculate the mean and SD of each demographic variable for each cluster.\n- Compare the cluster profiles to identify distinguishing characteristics.\n- **Name each cluster** with a descriptive, marketing-relevant label (e.g. \"Bargain hunters\", \"Fashionistas\", \"General shoppers\").",
+        "3": "**Scenario:** 10 consumers, 5 Likert-scale clothing statements, Ward's method, Euclidean distance.\n\n> **Ward's method:** A variance method that minimises within-cluster variance. At each stage, the two clusters with the smallest increase in the sum of squared distances are merged.\n>\n> **Euclidean distance:** δᵢⱼ = √(Σ(xᵢₖ - xⱼₖ)²) for p variables.\n>\n> **Number of clusters:** Valid arguments exist for a 2-cluster or 3-cluster solution based on the dendrogram and agglomeration schedule.\n>\n> **If three clusters:**\n> - Cluster 1: Two-thirds female, mean age 21.33. Very price-conscious, care little for trendy/designer clothes → **\"Bargain hunters\"**.\n> - Cluster 2: 60% female, mean age 35.40. Very into trendy/designer clothes, care little for price → **\"Fashionistas\"**.\n> - Cluster 3: 100% female, mean age 22.50. Moderate scores on all variables, no clear distinguishing features → **\"General clothes shoppers\"**.",
+        "4": "1. **(5 min)** Explain how Ward's method works in 4-5 sentences.\n2. **(5 min)** Write the Euclidean distance formula. Write the squared Euclidean distance formula.\n3. **(15 min)** Given an agglomeration schedule: identify the stage with the largest coefficient jump, determine the number of clusters, and justify using the dendrogram.\n4. **(15 min)** Given cluster descriptive statistics: profile each cluster using means on the Likert variables and demographic variables. Name each cluster.\n5. **(10 min)** Write a commercial recommendation: how should management use the identified segments for marketing strategy?",
+        "5": "Follow this structure for a 20-mark cluster analysis question:\n\n1. **Explain Ward's method:** State that it is a variance method aiming to minimise within-cluster variance. Describe the mechanics (compute cluster means → calculate squared distances → merge the pair with the smallest increase in total within-cluster distance).\n2. **State the distance formula:** Write the Euclidean or squared Euclidean distance formula, matching what the question specifies. Define all terms (xᵢₖ is the value of variable k for object i, p is the number of variables).\n3. **Determine number of clusters:** Reference both the agglomeration schedule (large jump in coefficients) AND the dendrogram. State your choice (2 or 3 clusters) with justification.\n4. **Profile the clusters:** Report the descriptive statistics (means) for the clustering variables AND the demographic/profiling variables. Note that demographic variables were not used to form the clusters.\n5. **Name each cluster:** Give each cluster a meaningful, marketing-relevant label based on its profile.\n6. **Commercial recommendation:** State how the identified segments could be used for targeted marketing, product development, or communication strategy.",
+        "6": "- **Forgetting the Ward's method explanation:** Simply saying \"Ward's method was used\" without explaining how it works loses marks. The examiner explicitly asks you to explain it.\n- **Wrong distance formula:** If the question says \"Euclidean distance\" write the square root version. If it says \"squared Euclidean distance\" omit the square root. Check the question carefully.\n- **Using only the dendrogram OR only the agglomeration schedule:** Use **both** to justify the number of clusters. The examiner rewards answers that reference both sources.\n- **Confusing clustering variables with profiling variables:** The Likert-scale attitudes are used to form clusters. Age, income, and gender are used to profile them afterwards. The examiner explicitly notes this distinction.\n- **Not naming the clusters:** Simply reporting \"Cluster 1 has mean 8.5 on price\" is insufficient. Give meaningful marketing labels like \"Bargain hunters\" or \"Fashionistas.\"\n- **Forgetting to discuss uses:** Briefly mention how the clusters could be used (segment-specific marketing, targeted promotions, product range decisions)."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 5,
+          "text": "Explain how Ward's method works in 4-5 sentences."
+        },
+        {
+          "time_minutes": 5,
+          "text": "Write the Euclidean distance formula. Write the squared Euclidean distance formula."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Given an agglomeration schedule: identify the stage with the largest coefficient jump, determine the number of clusters, and justify using the dendrogram."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Given cluster descriptive statistics: profile each cluster using means on the Likert variables and demographic variables. Name each cluster."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Write a commercial recommendation: how should management use the identified segments for marketing strategy?"
+        }
+      ],
+      "feynmanText": "Factor analysis groups *variables* that go together. Cluster analysis groups *people* (or objects) that are similar. It's the statistical version of \"birds of a feather flock together.\"\n\nImagine you survey 200 shoppers about their attitudes to price, quality, brand loyalty, and fashion. Some shoppers care deeply about price and nothing else. Others care only about brands. Others are balanced. Cluster analysis automatically sorts these 200 people into segments based on how similar their attitude patterns are.\n\n**Ward's method** (the one always used in the ST3188 exam) works from the bottom up. Start with every person as their own cluster. Find the two most similar people and merge them. Now find the next closest pair (or pair-to-cluster) and merge again. Keep going until everyone is in one giant cluster. At each step, Ward's method picks the merge that increases the within-cluster variance the least -- it tries to keep clusters as tight (internally similar) as possible.\n\nHow do you know when to stop merging? The **dendrogram** (tree diagram) shows you. When two clusters are merged that are very different, there's a big jump. Cut the tree just before that big jump, and the number of branches below the cut is your number of clusters. The **agglomeration schedule** shows the same thing numerically -- look for the big jump in the \"Coefficients\" column.\n\nAfter finding the clusters, you **profile** them using demographic variables that weren't used in the clustering itself (age, income, gender). Then you give each cluster a marketing-friendly name: \"Bargain Hunters,\" \"Brand Loyalists,\" \"Fashionistas.\" Now you have actionable segments to target differently.",
+      "feynmanKeyTerms": [
+        "Ward's method",
+        "dendrogram",
+        "agglomeration schedule",
+        "profile"
+      ],
+      "modelAnswer": "Follow this structure for a 20-mark cluster analysis question:\n\n1. **Explain Ward's method:** State that it is a variance method aiming to minimise within-cluster variance. Describe the mechanics (compute cluster means → calculate squared distances → merge the pair with the smallest increase in total within-cluster distance).\n2. **State the distance formula:** Write the Euclidean or squared Euclidean distance formula, matching what the question specifies. Define all terms (xᵢₖ is the value of variable k for object i, p is the number of variables).\n3. **Determine number of clusters:** Reference both the agglomeration schedule (large jump in coefficients) AND the dendrogram. State your choice (2 or 3 clusters) with justification.\n4. **Profile the clusters:** Report the descriptive statistics (means) for the clustering variables AND the demographic/profiling variables. Note that demographic variables were not used to form the clusters.\n5. **Name each cluster:** Give each cluster a meaningful, marketing-relevant label based on its profile.\n6. **Commercial recommendation:** State how the identified segments could be used for targeted marketing, product development, or communication strategy.",
+      "commonTraps": "- **Forgetting the Ward's method explanation:** Simply saying \"Ward's method was used\" without explaining how it works loses marks. The examiner explicitly asks you to explain it.\n- **Wrong distance formula:** If the question says \"Euclidean distance\" write the square root version. If it says \"squared Euclidean distance\" omit the square root. Check the question carefully.\n- **Using only the dendrogram OR only the agglomeration schedule:** Use **both** to justify the number of clusters. The examiner rewards answers that reference both sources.\n- **Confusing clustering variables with profiling variables:** The Likert-scale attitudes are used to form clusters. Age, income, and gender are used to profile them afterwards. The examiner explicitly notes this distinction.\n- **Not naming the clusters:** Simply reporting \"Cluster 1 has mean 8.5 on price\" is insufficient. Give meaningful marketing labels like \"Bargain hunters\" or \"Fashionistas.\"\n- **Forgetting to discuss uses:** Briefly mention how the clusters could be used (segment-specific marketing, targeted promotions, product range decisions).",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-16_ST2187_data-visualisation.md",
+      "date": "2026-04-16",
+      "module": "ST2187",
+      "topicSlug": "data-visualisation",
+      "title": "ST2187 - Data Visualisation & Descriptive Statistics (Exam Sheet)",
+      "sections": {
+        "0": "Before you run any fancy statistical test, you need to look at your data. Descriptive statistics and visualisation are how you look.\n\n**Descriptive statistics** summarise data with just a few numbers. The **mean** tells you the centre. The **standard deviation** tells you the spread (how far typical values are from the mean). The **median** tells you the middle value and is better than the mean when data is skewed (a few billionaires pull the mean income way up, but the median stays where most people are).\n\n**Data visualisation** turns numbers into pictures because humans process patterns visually faster than numerically. The right chart depends on what you're trying to show:\n\n- **Bar chart:** Compare categories (sales by region). Heights show values.\n- **Histogram:** Show the distribution of one variable (how many customers fall in each age bracket). Shape reveals skewness and outliers.\n- **Scatter plot:** Show the relationship between two continuous variables (price vs sales). The pattern reveals correlation.\n- **Line chart:** Show how something changes over time (monthly revenue). Trend and seasonality become visible.\n- **Box plot:** Show the spread and outliers of a distribution (compare salary distributions across departments).\n- **Pie chart:** Show proportions of a whole. Use sparingly -- bar charts are almost always better.\n\nThe cardinal rule of visualisation: the chart should make the pattern obvious without explanation. If someone has to read a paragraph to understand your chart, it's a bad chart. Label axes, include units, don't distort scales, and never use 3D effects.",
+        "1": "**Descriptive statistics** summarise and present data; **inferential statistics** generalise from sample to population. This topic is the foundation for everything else in ST2187.\n\n**Numerical summaries:**\n- **Central tendency:** mean (sensitive to outliers), median (robust), mode (categorical data).\n- **Spread:** range, IQR (Q3 − Q1), variance \\(s^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n-1}\\), standard deviation \\(s\\), coefficient of variation \\(CV = s/\\bar{x}\\).\n- **Shape:** skewness (left/right/symmetric), kurtosis. Right-skewed → mean > median. Left-skewed → mean < median.\n- **Position:** percentiles, quartiles, z-scores \\(z = (x - \\bar{x})/s\\).\n\n**Chart selection rules:**\n| Data / Goal | Chart Type |\n|---|---|\n| One categorical variable (counts/proportions) | Bar chart or pie chart |\n| Two categorical variables (association) | Clustered bar or stacked bar; cross-tab table |\n| One numerical variable (distribution shape) | Histogram, box plot |\n| Two numerical variables (relationship) | Scatter plot |\n| Numerical variable over time | Line chart / time plot |\n| Comparing groups on a numerical variable | Side-by-side box plots |\n| Many variables at once | Dashboard / small multiples |\n\n**Pivot tables:** Excel pivot tables slice and dice data by categorical variables — counts, sums, averages, percentages. They are the analyst's primary tool for initial exploration (Albright & Winston Ch 3).\n\n**Cross-tabulation:** A contingency table for two categorical variables. Convert raw counts to row/column percentages to reveal patterns. Association is tested with chi-square (covered in heteroskedasticity-probability sheet).",
+        "2": "| Measure | Formula |\n|---|---|\n| Sample mean | \\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\) |\n| Sample variance | \\(s^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n-1}\\) |\n| Sample standard deviation | \\(s = \\sqrt{s^2}\\) |\n| Coefficient of variation | \\(CV = s / \\bar{x}\\) (useful for comparing spread across different units) |\n| Z-score | \\(z_i = (x_i - \\bar{x})/s\\) |\n| IQR | \\(Q_3 - Q_1\\) |\n| Outlier rule (Tukey) | Below \\(Q_1 - 1.5 \\cdot IQR\\) or above \\(Q_3 + 1.5 \\cdot IQR\\) |\n| Empirical rule (bell-shaped) | ~68% within \\(\\bar{x} \\pm s\\), ~95% within \\(\\bar{x} \\pm 2s\\), ~99.7% within \\(\\bar{x} \\pm 3s\\) |\n| Chebyshev's rule (any shape) | At least \\(1 - 1/k^2\\) of data within \\(\\bar{x} \\pm ks\\) for \\(k > 1\\) |",
+        "3": "**Scenario:** Monthly sales data (in £000s) for 12 months: 45, 52, 48, 61, 55, 58, 63, 57, 49, 72, 66, 59.\n\n**Step 1 — Numerical summary:**\n- \\(\\bar{x} = (45+52+\\cdots+59)/12 = 685/12 = 57.08\\)\n- Ordered data: 45, 48, 49, 52, 55, 57, 58, 59, 61, 63, 66, 72\n- Median = (57 + 58)/2 = 57.5\n- Q1 = (49 + 52)/2 = 50.5, Q3 = (61 + 63)/2 = 62.0, IQR = 11.5\n- Mean ≈ Median → approximately symmetric.\n\n**Step 2 — Chart choice:**\n- Single numerical variable → **histogram** (distribution shape) or **box plot** (outlier detection).\n- Over time → **line chart** to check for trend/seasonality.\n\n**Step 3 — Interpretation for management:**\n\"Average monthly sales are £57k with moderate variability (IQR = £11.5k). The line chart shows a gradual upward trend with no obvious seasonality. The value £72k in month 10 is within the upper fence (62 + 1.5 × 11.5 = 79.25), so it is not a statistical outlier but warrants investigation as a one-off spike.\"\n\n**Step 4 — Misleading graph check:**\nIf the y-axis starts at £40k instead of £0, the visual difference between months is exaggerated by a factor of ~3. Always start the axis at zero for bar charts, or clearly label the truncation.",
+        "4": "1. **(8 min)** Compute mean, median, standard deviation, and IQR for a dataset of 10 values. State skewness direction and justify.\n2. **(8 min)** For 4 mini-scenarios (comparing groups, showing distribution, tracking time trend, exploring association), select the best chart type and state one reason.\n3. **(10 min)** Given a cross-tabulation of customer segment × purchase decision (counts), compute row percentages and state the business insight.\n4. **(12 min)** You receive a bar chart with (a) truncated y-axis, (b) 3D effect, (c) dual y-axes on different scales. For each, explain why it is misleading and how to fix it.\n5. **(12 min)** Write a management summary (5 sentences) interpreting a dashboard of 3 charts: a histogram, a box plot, and a line chart for the same variable.",
+        "5": "1. **State the variable(s) and their type(s):** \"Sales revenue is a continuous numerical variable; region is a categorical variable with 4 levels.\"\n2. **Choose appropriate summary/chart and justify:** \"A side-by-side box plot is appropriate because we are comparing the distribution of a numerical variable across groups.\"\n3. **Compute or read numerical summaries:** report mean, median, spread; note skewness or outliers.\n4. **Highlight the key pattern with evidence:** quote specific numbers — \"Region A's median (£62k) exceeds Region B's (£48k) by 29%.\"\n5. **Give one action-oriented conclusion:** \"Management should investigate Region B's underperformance and consider reallocating marketing budget.\"\n6. **Caveat:** note sample size, possible confounders, or the distinction between correlation and causation.",
+        "6": "- **Using mean for heavily skewed data:** median and IQR are more informative when outliers dominate. If the question mentions outliers or skewness, flag this.\n- **Pie charts for many categories:** pie charts are hard to read with >5 slices. Bar charts are almost always superior.\n- **3D charts / decorative clutter:** 3D effects distort visual perception of bar heights. Stick to 2D.\n- **Truncated y-axis on bar charts:** starting at a non-zero value exaggerates differences. Acceptable for line charts if clearly labelled, but never for bar charts in exam answers.\n- **Reporting visual pattern without numerical evidence:** \"the chart shows an upward trend\" is weak. \"Sales rose from £45k to £72k (+60%) over 12 months\" is strong.\n- **Confusing sample distribution with sampling distribution:** the histogram of raw data is the sample distribution. The distribution of \\(\\bar{x}\\) across repeated samples is the sampling distribution (next topic).\n- **Not defining what CV measures:** CV is unitless and useful for comparing variability across datasets with different means or units."
+      },
+      "formulas": [
+        {
+          "concept": "Measure",
+          "formula": "Formula"
+        },
+        {
+          "concept": "Sample mean",
+          "formula": "\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)"
+        },
+        {
+          "concept": "Sample variance",
+          "formula": "\\(s^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n-1}\\)"
+        },
+        {
+          "concept": "Sample standard deviation",
+          "formula": "\\(s = \\sqrt{s^2}\\)"
+        },
+        {
+          "concept": "Coefficient of variation",
+          "formula": "\\(CV = s / \\bar{x}\\) (useful for comparing spread across different units)"
+        },
+        {
+          "concept": "Z-score",
+          "formula": "\\(z_i = (x_i - \\bar{x})/s\\)"
+        },
+        {
+          "concept": "IQR",
+          "formula": "\\(Q_3 - Q_1\\)"
+        },
+        {
+          "concept": "Outlier rule (Tukey)",
+          "formula": "Below \\(Q_1 - 1.5 \\cdot IQR\\) or above \\(Q_3 + 1.5 \\cdot IQR\\)"
+        },
+        {
+          "concept": "Empirical rule (bell-shaped)",
+          "formula": "~68% within \\(\\bar{x} \\pm s\\), ~95% within \\(\\bar{x} \\pm 2s\\), ~99.7% within \\(\\bar{x} \\pm 3s\\)"
+        },
+        {
+          "concept": "Chebyshev's rule (any shape)",
+          "formula": "At least \\(1 - 1/k^2\\) of data within \\(\\bar{x} \\pm ks\\) for \\(k > 1\\)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Compute mean, median, standard deviation, and IQR for a dataset of 10 values. State skewness direction and justify."
+        },
+        {
+          "time_minutes": 8,
+          "text": "For 4 mini-scenarios (comparing groups, showing distribution, tracking time trend, exploring association), select the best chart type and state one reason."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given a cross-tabulation of customer segment × purchase decision (counts), compute row percentages and state the business insight."
+        },
+        {
+          "time_minutes": 12,
+          "text": "You receive a bar chart with (a) truncated y-axis, (b) 3D effect, (c) dual y-axes on different scales. For each, explain why it is misleading and how to fix it."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Write a management summary (5 sentences) interpreting a dashboard of 3 charts: a histogram, a box plot, and a line chart for the same variable."
+        }
+      ],
+      "feynmanText": "Before you run any fancy statistical test, you need to look at your data. Descriptive statistics and visualisation are how you look.\n\n**Descriptive statistics** summarise data with just a few numbers. The **mean** tells you the centre. The **standard deviation** tells you the spread (how far typical values are from the mean). The **median** tells you the middle value and is better than the mean when data is skewed (a few billionaires pull the mean income way up, but the median stays where most people are).\n\n**Data visualisation** turns numbers into pictures because humans process patterns visually faster than numerically. The right chart depends on what you're trying to show:\n\n- **Bar chart:** Compare categories (sales by region). Heights show values.\n- **Histogram:** Show the distribution of one variable (how many customers fall in each age bracket). Shape reveals skewness and outliers.\n- **Scatter plot:** Show the relationship between two continuous variables (price vs sales). The pattern reveals correlation.\n- **Line chart:** Show how something changes over time (monthly revenue). Trend and seasonality become visible.\n- **Box plot:** Show the spread and outliers of a distribution (compare salary distributions across departments).\n- **Pie chart:** Show proportions of a whole. Use sparingly -- bar charts are almost always better.\n\nThe cardinal rule of visualisation: the chart should make the pattern obvious without explanation. If someone has to read a paragraph to understand your chart, it's a bad chart. Label axes, include units, don't distort scales, and never use 3D effects.",
+      "feynmanKeyTerms": [
+        "Descriptive statistics",
+        "mean",
+        "standard deviation",
+        "median",
+        "Data visualisation",
+        "Bar chart:",
+        "Histogram:",
+        "Scatter plot:",
+        "Line chart:",
+        "Box plot:",
+        "Pie chart:"
+      ],
+      "modelAnswer": "1. **State the variable(s) and their type(s):** \"Sales revenue is a continuous numerical variable; region is a categorical variable with 4 levels.\"\n2. **Choose appropriate summary/chart and justify:** \"A side-by-side box plot is appropriate because we are comparing the distribution of a numerical variable across groups.\"\n3. **Compute or read numerical summaries:** report mean, median, spread; note skewness or outliers.\n4. **Highlight the key pattern with evidence:** quote specific numbers — \"Region A's median (£62k) exceeds Region B's (£48k) by 29%.\"\n5. **Give one action-oriented conclusion:** \"Management should investigate Region B's underperformance and consider reallocating marketing budget.\"\n6. **Caveat:** note sample size, possible confounders, or the distinction between correlation and causation.",
+      "commonTraps": "- **Using mean for heavily skewed data:** median and IQR are more informative when outliers dominate. If the question mentions outliers or skewness, flag this.\n- **Pie charts for many categories:** pie charts are hard to read with >5 slices. Bar charts are almost always superior.\n- **3D charts / decorative clutter:** 3D effects distort visual perception of bar heights. Stick to 2D.\n- **Truncated y-axis on bar charts:** starting at a non-zero value exaggerates differences. Acceptable for line charts if clearly labelled, but never for bar charts in exam answers.\n- **Reporting visual pattern without numerical evidence:** \"the chart shows an upward trend\" is weak. \"Sales rose from £45k to £72k (+60%) over 12 months\" is strong.\n- **Confusing sample distribution with sampling distribution:** the histogram of raw data is the sample distribution. The distribution of \\(\\bar{x}\\) across repeated samples is the sampling distribution (next topic).\n- **Not defining what CV measures:** CV is unitless and useful for comparing variability across datasets with different means or units.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-17_ST3188_conjoint-analysis.md",
+      "date": "2026-04-17",
+      "module": "ST3188",
+      "topicSlug": "conjoint-analysis",
+      "title": "ST3188 - Conjoint Analysis (Exam Sheet)",
+      "sections": {
+        "0": "When you buy a laptop, you make trade-offs: you might accept a smaller screen to get a lower price, or pay more for better battery life. **Conjoint analysis** figures out exactly how much each feature matters to consumers by watching which trade-offs they make.\n\nHere's how it works. You create hypothetical products that vary on key attributes (e.g. brand, price, screen size, battery life). You show consumers pairs or sets of these products and ask which they prefer. From their choices, you back-calculate how much each attribute level contributes to their overall preference. These contributions are called **part-worth utilities**.\n\nIf the part-worth for \"£500 price\" is +1.2 and for \"£800 price\" is -1.5, the range is 2.7. If the part-worth range for \"screen size\" is only 1.0, then price matters about 2.7 times more than screen size to this consumer. The **relative importance** normalises these ranges to sum to 100%, giving you a clean percentage: \"price accounts for 53% of the decision, screen size for 20%, brand for 15%, battery for 12%.\"\n\nThe commercial power is obvious: if price dominates, discounting is your best lever. If brand dominates, invest in brand building instead. You can also simulate market share for hypothetical new products: \"if we launched a mid-price, large-screen laptop with average battery, what share would it capture?\"\n\nThe key limitation: people's stated preferences in a conjoint study may not match their actual buying behaviour, especially for products they've never experienced.",
+        "1": "**Purpose:** Conjoint analysis determines the **relative importance** of product attributes and the **part-worth utilities** of different attribute levels, based on how consumers evaluate product profiles that vary systematically across attributes.\n\n**Core idea:** Consumers make trade-offs between attributes when choosing products. Conjoint analysis decomposes overall preference into the contribution of each attribute level.\n\n**Key terms:**\n\n| Term | Definition |\n|---|---|\n| **Attribute** | A product characteristic (e.g. price, brand, size) |\n| **Level** | A specific value of an attribute (e.g. price = £5, £10, £15) |\n| **Profile (stimulus)** | A specific combination of attribute levels representing a hypothetical product |\n| **Part-worth utility** | The utility (value) assigned to each level of each attribute. Higher utility = more preferred |\n| **Relative importance** | The percentage of total utility range attributable to each attribute. Sums to 100% |\n\n**Applications in market research:**\n- Product design: which attribute combinations are most preferred.\n- Pricing: how much utility is lost when price increases.\n- Market simulation: predicting market share for hypothetical products.\n- Segmentation: grouping consumers by their attribute trade-off patterns.",
+        "2": "### The Conjoint Model\n\nThe basic conjoint model assumes an **additive utility function:**\n\n$$U(X) = \\sum_{i=1}^{m} \\sum_{j=1}^{k_i} \\alpha_{ij} x_{ij}$$\n\nWhere:\n- $U(X)$ = overall utility of a product profile.\n- $\\alpha_{ij}$ = part-worth utility of the *j*th level of the *i*th attribute.\n- $x_{ij}$ = 1 if the *j*th level of the *i*th attribute is present, 0 otherwise.\n- *m* = number of attributes.\n- $k_i$ = number of levels for attribute *i*.\n\n### Estimating Part-Worths Using Regression\n\nRegression analysis (OLS) can be used to estimate part-worth utilities:\n- Dependent variable: Overall preference rating or ranking for each profile.\n- Independent variables: Dummy-coded attribute levels.\n- The estimated coefficients are the part-worth utilities.\n\n### Calculating Relative Importance\n\nFor each attribute, the **importance** is the range of its part-worths (max - min):\n\n$$I_i = \\max(\\alpha_{ij}) - \\min(\\alpha_{ij})$$\n\nThe **relative importance** is normalised so all attributes sum to 100%:\n\n$$RI_i = \\frac{I_i}{\\sum_{i=1}^{m} I_i} \\times 100\\%$$\n\n### Part-Worth Functions\n\nA **part-worth function** is a graph plotting the utility (y-axis) against the levels of an attribute (x-axis). The shape reveals the preference pattern:\n- **Linear:** Utility increases/decreases uniformly (e.g. more features = better).\n- **Ideal point:** Utility peaks at a middle level and drops at extremes (e.g. moderate sweetness preferred).\n- **Anti-ideal:** Utility dips at a middle level (unusual but possible).",
+        "3": "**Scenario:** A hotel chain tests 3 attributes: room size (small, medium, large), price (£80, £120, £160), and breakfast included (yes, no).\n\n> **Estimated part-worths:**\n>\n> | Attribute | Level | Part-worth |\n> |---|---|---|\n> | Room size | Small | -0.8 |\n> | Room size | Medium | 0.2 |\n> | Room size | Large | 0.6 |\n> | Price | £80 | 1.2 |\n> | Price | £120 | 0.3 |\n> | Price | £160 | -1.5 |\n> | Breakfast | Yes | 0.5 |\n> | Breakfast | No | -0.5 |\n>\n> **Importance ranges:**\n> - Room size: 0.6 - (-0.8) = 1.4\n> - Price: 1.2 - (-1.5) = 2.7\n> - Breakfast: 0.5 - (-0.5) = 1.0\n> - **Total = 5.1**\n>\n> **Relative importance:**\n> - Price: 2.7/5.1 = **52.9%**\n> - Room size: 1.4/5.1 = **27.5%**\n> - Breakfast: 1.0/5.1 = **19.6%**\n>\n> **Interpretation:** Price dominates consumer choice (52.9% importance). The most preferred product is: large room, £80 price, breakfast included. If the hotel cannot reduce price, offering breakfast and upgrading room size are the next best levers.",
+        "4": "**Internal validity:**\n- Compute the correlation between the observed and predicted preference ratings for the **estimation** profiles. High correlation (e.g. > 0.9) indicates good internal validity.\n\n**Predictive validity:**\n- Use **holdout profiles** (not used in estimation). Compute correlation between observed and predicted ratings for these holdouts. A high correlation indicates the model generalises well.\n\n**Test-retest reliability:**\n- Administer the conjoint task to the same respondents at two different times. High correlation between the two sets of part-worths indicates stability.",
+        "5": "1. **(10 min)** Given a part-worth table: calculate the importance range for each attribute and the relative importance percentages.\n2. **(10 min)** Compare two product profiles and predict which is preferred by calculating total utility for each.\n3. **(10 min)** Draw/describe the part-worth function for one attribute and explain the preference pattern.\n4. **(10 min)** Explain how regression can be used to estimate conjoint part-worths.\n5. **(10 min)** Recommend one product redesign based on the part-worth utilities, with commercial justification.",
+        "6": "1. **Report key part-worth utilities** in a clear table.\n2. **Calculate relative importance** for each attribute (show the range calculation).\n3. **Identify the most important attribute** and the most preferred level of each attribute.\n4. **Interpret trade-offs** in plain language (e.g. \"consumers are willing to trade down on room size if the price is significantly lower\").\n5. **Recommend a product configuration** based on the optimal combination of levels.\n6. **Discuss reliability/validity** if asked: internal (estimation correlations), predictive (holdout correlations), test-retest.",
+        "7": "- **Not calculating relative importance:** Simply listing part-worths without computing the percentage importance of each attribute is incomplete.\n- **Confusing utility with satisfaction:** Part-worths are relative utility values, not absolute satisfaction scores. They are meaningful only in comparison with other levels.\n- **Ignoring unrealistic combinations:** Some attribute-level combinations may be unrealistic (e.g. luxury brand + very low price). Note this as a limitation.\n- **Over-interpreting from small samples:** Conjoint studies with very few respondents have limited generalisability.\n- **Not linking to product/pricing decisions:** Always translate the statistical findings into actionable marketing strategy (product design, pricing, feature prioritisation)."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "When you buy a laptop, you make trade-offs: you might accept a smaller screen to get a lower price, or pay more for better battery life. **Conjoint analysis** figures out exactly how much each feature matters to consumers by watching which trade-offs they make.\n\nHere's how it works. You create hypothetical products that vary on key attributes (e.g. brand, price, screen size, battery life). You show consumers pairs or sets of these products and ask which they prefer. From their choices, you back-calculate how much each attribute level contributes to their overall preference. These contributions are called **part-worth utilities**.\n\nIf the part-worth for \"£500 price\" is +1.2 and for \"£800 price\" is -1.5, the range is 2.7. If the part-worth range for \"screen size\" is only 1.0, then price matters about 2.7 times more than screen size to this consumer. The **relative importance** normalises these ranges to sum to 100%, giving you a clean percentage: \"price accounts for 53% of the decision, screen size for 20%, brand for 15%, battery for 12%.\"\n\nThe commercial power is obvious: if price dominates, discounting is your best lever. If brand dominates, invest in brand building instead. You can also simulate market share for hypothetical new products: \"if we launched a mid-price, large-screen laptop with average battery, what share would it capture?\"\n\nThe key limitation: people's stated preferences in a conjoint study may not match their actual buying behaviour, especially for products they've never experienced.",
+      "feynmanKeyTerms": [
+        "Conjoint analysis",
+        "part-worth utilities",
+        "relative importance"
+      ],
+      "modelAnswer": "1. **(10 min)** Given a part-worth table: calculate the importance range for each attribute and the relative importance percentages.\n2. **(10 min)** Compare two product profiles and predict which is preferred by calculating total utility for each.\n3. **(10 min)** Draw/describe the part-worth function for one attribute and explain the preference pattern.\n4. **(10 min)** Explain how regression can be used to estimate conjoint part-worths.\n5. **(10 min)** Recommend one product redesign based on the part-worth utilities, with commercial justification.",
+      "commonTraps": "1. **Report key part-worth utilities** in a clear table.\n2. **Calculate relative importance** for each attribute (show the range calculation).\n3. **Identify the most important attribute** and the most preferred level of each attribute.\n4. **Interpret trade-offs** in plain language (e.g. \"consumers are willing to trade down on room size if the price is significantly lower\").\n5. **Recommend a product configuration** based on the optimal combination of levels.\n6. **Discuss reliability/validity** if asked: internal (estimation correlations), predictive (holdout correlations), test-retest.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-18_ST3188_mds-mixed-methods.md",
+      "date": "2026-04-18",
+      "module": "ST3188",
+      "topicSlug": "mds-mixed-methods",
+      "title": "ST3188 - Multidimensional Scaling and Mixed Methods (Exam Sheet)",
+      "sections": {
+        "0": "Ask 100 people \"how similar are Coca-Cola and Pepsi?\" Then ask \"how similar are Coca-Cola and Red Bull?\" Most people would say Coke and Pepsi are very similar, and Coke and Red Bull are quite different. **Multidimensional scaling** takes all these similarity judgments and draws a map where similar brands are close together and different brands are far apart.\n\nThe result is a **perceptual map** -- a 2D picture showing how consumers see the competitive landscape. If your brand is plotted right next to a competitor, consumers see you as interchangeable. If there's an empty space on the map, that's a gap in the market where no brand currently sits.\n\nThe tricky part is labelling the axes. Unlike factor analysis, MDS doesn't tell you what the dimensions represent. You have to infer it from context. If luxury brands cluster at the top and budget brands at the bottom, the vertical axis probably represents \"perceived prestige.\" If performance brands are on the right and comfort brands on the left, the horizontal axis might be \"performance vs comfort.\" But these labels are subjective -- you're interpreting, not reading off a table.\n\nThe **stress measure** tells you how well the 2D map represents the original similarity data. Low stress (below 0.05) = the map is a faithful representation. High stress (above 0.20) = the map is distorting the relationships, and you shouldn't trust the distances.\n\nThe commercial value: perceptual maps make competitive positioning visceral and visual. Executives who would never read a correlation matrix will immediately grasp a map showing their brand sandwiched between two competitors with a gap in the \"premium + innovative\" quadrant.",
+        "1": "**Purpose:** Multidimensional scaling (MDS) maps perceived **similarity or dissimilarity** between objects (brands, products, stimuli) into a **low-dimensional spatial representation** (typically 2D). Objects perceived as similar are plotted close together; dissimilar objects are plotted far apart.\n\n**Core idea:** The geometric distances between points on the MDS map reflect the psychological distances perceived by consumers.\n\n**Applications in market research:**\n- **Brand positioning:** Visualise how consumers perceive brands relative to competitors.\n- **Competitive analysis:** Identify which brands are perceived as close substitutes.\n- **Perceptual mapping:** Understand the dimensions consumers use to differentiate brands.\n- **Gap analysis:** Identify unoccupied positions in the market where a new product could be launched.",
+        "2": "### Input Data: Direct vs Derived Approaches\n\n| Approach | How it works | Data type |\n|---|---|---|\n| **Direct** | Respondents directly judge the similarity/dissimilarity of pairs of objects (e.g. \"rate the similarity of Brand A and Brand B on a 1-7 scale\") | Similarity/dissimilarity ratings |\n| **Derived** | Similarity is computed from respondents' ratings of objects on multiple attributes (e.g. rate each brand on quality, price, style) | Attribute ratings → compute distances |\n\n### Steps in Conducting MDS\n\n1. **Formulate the problem:** Select objects (brands) and determine whether to use direct or derived input.\n2. **Obtain input data:** Collect similarity judgments or attribute ratings.\n3. **Select an MDS procedure:** Metric (assumes interval data) or non-metric (assumes ordinal data).\n4. **Decide on the number of dimensions:** Use stress and R² to evaluate fit at different dimensionalities.\n5. **Label the dimensions:** Interpret what each axis represents (this is subjective and requires external validation).\n6. **Assess reliability and validity.**\n\n### Stress Measure (Goodness of Fit)\n\nStress measures the **discrepancy** between the original dissimilarity data and the distances in the MDS solution. Lower stress = better fit.\n\n$$\\text{Stress} = \\sqrt{\\frac{\\sum(d_{ij} - \\hat{d}_{ij})^2}{\\sum d_{ij}^2}}$$\n\nWhere $d_{ij}$ = distances in the MDS map and $\\hat{d}_{ij}$ = fitted distances from the original data.\n\n**Interpretation guidelines (Kruskal):**\n\n| Stress value | Goodness of fit |\n|---|---|\n| 0.20 | Poor |\n| 0.10 | Fair |\n| 0.05 | Good |\n| 0.025 | Excellent |\n| 0.00 | Perfect |\n\n### R-squared (RSQ)\n\nR² measures the proportion of variance in the original dissimilarity data accounted for by the MDS solution. Higher R² = better fit. Generally R² ≥ 0.60 is acceptable.\n\n### Choosing the Number of Dimensions\n\n- Plot stress against the number of dimensions (analogous to a scree plot in factor analysis).\n- Select the dimensionality where stress drops to an acceptable level (the \"elbow\").\n- **2 dimensions** is typically preferred for interpretability and visual communication.\n\n### Labelling Dimensions\n\n- Dimensions are not automatically labelled (unlike factor analysis loadings).\n- Interpretation requires examining which objects fall at the extremes of each axis and using **external attribute data** to infer what the axis represents.\n- Example: If luxury brands cluster at one end and budget brands at the other, the axis might represent \"perceived prestige.\"\n- **Caution:** Axis labels are subjective and require validation.",
+        "3": "**Scenario:** 9 luxury car brands rated on 4 attributes (prestige, performance, luxury, value).\n\n> **MDS map (2D):** Brands plotted in 2D space based on derived similarity.\n>\n> **Observation:** Ferrari, Jaguar, and BMW cluster together (perceived as similar — high performance). Bentley and Rolls Royce cluster separately (perceived as similar — high prestige/luxury, lower value). Audi, Lexus, and Porsche occupy a middle position.\n>\n> **Dimension 1 interpretation:** Appears to separate \"performance-oriented\" brands (right) from \"prestige-oriented\" brands (left). Could be labelled **\"Performance vs Prestige.\"**\n>\n> **Dimension 2 interpretation:** Appears to separate \"high value for money\" brands (top) from \"low value for money\" brands (bottom). Could be labelled **\"Perceived Value.\"**\n>\n> **Stress = 0.04 (good), R² = 0.92 (excellent).** The 2D solution adequately represents the original similarity data.\n>\n> **Commercial recommendation:** If launching a new luxury car, there is a potential gap in the \"high performance + high value\" quadrant. A brand positioned there would differentiate from both the performance cluster (Ferrari/BMW) and the prestige cluster (Bentley/Rolls Royce).",
+        "4": "| Feature | MDS | Factor Analysis | Discriminant Analysis |\n|---|---|---|---|\n| **Purpose** | Map perceptual similarity | Identify latent dimensions | Classify into known groups |\n| **Input** | Similarity/dissimilarity data or attribute ratings | Correlation matrix of variables | Group membership + predictor variables |\n| **Output** | Spatial map (perceptual positions) | Factor loadings, factor scores | Discriminant function, classification |\n| **Dimensions** | Determined by stress/fit | Determined by eigenvalues | Determined by min(G-1, k) |\n| **Axis labels** | Subjective, need external validation | Based on variable loadings | Based on standardised coefficients |\n| **Key limitation** | Labelling dimensions is subjective | Rotation is not unique | Assumes metric predictors + normality |\n\n**All three can \"simplify\" data into lower dimensions**, but they serve different purposes and use different input data.",
+        "5": "1. **(10 min)** Explain the difference between direct and derived input data for MDS with an example of each.\n2. **(10 min)** Interpret a 2D MDS map: identify clusters, suggest dimension labels, and justify with reference to brand positions.\n3. **(10 min)** Assess the fit of an MDS solution using stress and R² values. State whether the solution is acceptable.\n4. **(10 min)** Compare MDS with factor analysis: similarities, differences, and when each is preferred.\n5. **(10 min)** Write a commercial recommendation based on an MDS perceptual map (identify gaps, suggest positioning strategy).",
+        "6": "1. **Describe the MDS map structure:** Which objects cluster together? Which are far apart?\n2. **Interpret dimensions cautiously:** Suggest labels for each axis based on the positions of objects and any external attribute data. Note that labels are subjective.\n3. **Report fit statistics:** Stress value (with Kruskal interpretation) and R².\n4. **Identify clusters and gaps:** Group similar objects and note any unoccupied regions in the map.\n5. **Commercial recommendation:** Suggest positioning actions, competitive differentiation, or new product opportunities based on the map.\n6. **Note limitations:** Dimension labelling is subjective; small samples may produce unstable solutions; the map is a simplification of complex perceptions.",
+        "7": "- **Treating axis labels as objective:** MDS dimensions must be interpreted with external data or domain knowledge. They are NOT automatically labelled like factor analysis loadings.\n- **Ignoring stress/fit:** Always report and interpret the stress value. A stress of 0.20 or higher means the map may mislead.\n- **Over-interpreting tiny distance differences:** Small distances between brands on the map may not be meaningful, especially with small samples.\n- **Confusing MDS with factor analysis:** MDS works on similarity/dissimilarity data between objects. Factor analysis works on correlations between variables. They produce different outputs.\n- **Not identifying the gap:** The commercial value of MDS is in finding unoccupied positions where a new brand/product could be launched. Always look for market gaps."
+      },
+      "formulas": [
+        {
+          "concept": "Approach",
+          "formula": "How it works"
+        },
+        {
+          "concept": "**Direct**",
+          "formula": "Respondents directly judge the similarity/dissimilarity of pairs of objects (e.g. \"rate the similarity of Brand A and Brand B on a 1-7 scale\")"
+        },
+        {
+          "concept": "**Derived**",
+          "formula": "Similarity is computed from respondents' ratings of objects on multiple attributes (e.g. rate each brand on quality, price, style)"
+        },
+        {
+          "concept": "Stress value",
+          "formula": "Goodness of fit"
+        },
+        {
+          "concept": "0.20",
+          "formula": "Poor"
+        },
+        {
+          "concept": "0.10",
+          "formula": "Fair"
+        },
+        {
+          "concept": "0.05",
+          "formula": "Good"
+        },
+        {
+          "concept": "0.025",
+          "formula": "Excellent"
+        },
+        {
+          "concept": "0.00",
+          "formula": "Perfect"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "Ask 100 people \"how similar are Coca-Cola and Pepsi?\" Then ask \"how similar are Coca-Cola and Red Bull?\" Most people would say Coke and Pepsi are very similar, and Coke and Red Bull are quite different. **Multidimensional scaling** takes all these similarity judgments and draws a map where similar brands are close together and different brands are far apart.\n\nThe result is a **perceptual map** -- a 2D picture showing how consumers see the competitive landscape. If your brand is plotted right next to a competitor, consumers see you as interchangeable. If there's an empty space on the map, that's a gap in the market where no brand currently sits.\n\nThe tricky part is labelling the axes. Unlike factor analysis, MDS doesn't tell you what the dimensions represent. You have to infer it from context. If luxury brands cluster at the top and budget brands at the bottom, the vertical axis probably represents \"perceived prestige.\" If performance brands are on the right and comfort brands on the left, the horizontal axis might be \"performance vs comfort.\" But these labels are subjective -- you're interpreting, not reading off a table.\n\nThe **stress measure** tells you how well the 2D map represents the original similarity data. Low stress (below 0.05) = the map is a faithful representation. High stress (above 0.20) = the map is distorting the relationships, and you shouldn't trust the distances.\n\nThe commercial value: perceptual maps make competitive positioning visceral and visual. Executives who would never read a correlation matrix will immediately grasp a map showing their brand sandwiched between two competitors with a gap in the \"premium + innovative\" quadrant.",
+      "feynmanKeyTerms": [
+        "Multidimensional scaling",
+        "perceptual map",
+        "stress measure"
+      ],
+      "modelAnswer": "1. **(10 min)** Explain the difference between direct and derived input data for MDS with an example of each.\n2. **(10 min)** Interpret a 2D MDS map: identify clusters, suggest dimension labels, and justify with reference to brand positions.\n3. **(10 min)** Assess the fit of an MDS solution using stress and R² values. State whether the solution is acceptable.\n4. **(10 min)** Compare MDS with factor analysis: similarities, differences, and when each is preferred.\n5. **(10 min)** Write a commercial recommendation based on an MDS perceptual map (identify gaps, suggest positioning strategy).",
+      "commonTraps": "1. **Describe the MDS map structure:** Which objects cluster together? Which are far apart?\n2. **Interpret dimensions cautiously:** Suggest labels for each axis based on the positions of objects and any external attribute data. Note that labels are subjective.\n3. **Report fit statistics:** Stress value (with Kruskal interpretation) and R².\n4. **Identify clusters and gaps:** Group similar objects and note any unoccupied regions in the map.\n5. **Commercial recommendation:** Suggest positioning actions, competitive differentiation, or new product opportunities based on the map.\n6. **Note limitations:** Dimension labelling is subjective; small samples may produce unstable solutions; the map is a simplification of complex perceptions.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-19_ST2187_mini-mock-iv-2sls-intro.md",
+      "date": "2026-04-19",
+      "module": "ST2187",
+      "topicSlug": "mini-mock-iv-2sls-intro",
+      "title": "ST2187 + EC2020 - Mini-Mock + IV/2SLS Intro (Exam Sheet)",
+      "sections": {
+        "1": "1. Attempt one full mixed section under strict timing.  \n2. Mark immediately and classify errors by type.  \n3. Re-attempt only incorrect parts without notes.",
+        "2": "- Use IV when regressor is endogenous.\n- Instrument conditions:\n  - relevance (correlated with endogenous regressor)\n  - exogeneity (uncorrelated with structural error)\n- 2SLS intuition: isolate exogenous variation for causal effect estimation.",
+        "3": "If OLS and IV estimates differ materially, discuss possible endogeneity and why IV may be preferred (if instrument is credible).",
+        "4": "1. Short IV validity question (relevance vs exogeneity).  \n2. Explain 2SLS in 5 lines for a non-technical manager.  \n3. Mock correction drill: top 3 recurring mistakes from ST2187 section.",
+        "5": "- Calling any correlated variable a valid instrument.\n- Ignoring weak instrument concerns.\n- Doing mock without correction step."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "Short IV validity question (relevance vs exogeneity)."
+        },
+        {
+          "time_minutes": null,
+          "text": "Explain 2SLS in 5 lines for a non-technical manager."
+        },
+        {
+          "time_minutes": null,
+          "text": "Mock correction drill: top 3 recurring mistakes from ST2187 section."
+        }
+      ],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Calling any correlated variable a valid instrument.\n- Ignoring weak instrument concerns.\n- Doing mock without correction step.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-20_ST2187_decision-under-uncertainty.md",
+      "date": "2026-04-20",
+      "module": "ST2187",
+      "topicSlug": "decision-under-uncertainty",
+      "title": "ST2187 - Decision-Making Under Uncertainty (Exam Sheet)",
+      "sections": {
+        "0": "Every business decision involves uncertainty. Should you invest in a new factory? Expand to a new market? Hire more staff? The answer depends on things you don't know yet -- will demand be high or low? Will a competitor enter?\n\nDecision-making under uncertainty gives you a structured way to think through these choices instead of going with your gut.\n\n**Expected value** is the simplest rule: multiply each outcome by its probability and add them up. If a project has a 70% chance of making £100k and a 30% chance of losing £50k, the expected value is 0.7(100k) + 0.3(-50k) = £55k. Positive expected value = generally worth doing.\n\nBut expected value ignores risk. A cautious person might reject a project with a positive expected value if the downside is catastrophic. **Decision criteria** for different attitudes:\n- **Maximax** (optimist): pick the option with the best possible outcome.\n- **Maximin** (pessimist): pick the option whose worst case is least bad.\n- **Expected value** (neutral): pick the highest average outcome.\n- **Minimax regret**: pick the option that minimises your maximum \"what if I'd chosen differently\" regret.\n\n**The value of information:** before deciding, you might be able to gather more data (commission a market study, run a pilot). The **Expected Value of Perfect Information (EVPI)** tells you the maximum you should pay for information that eliminates all uncertainty. If EVPI is £20k, don't pay £50k for a market study -- even perfect knowledge isn't worth that much.",
+        "1": "**What this topic is:** Choosing the best action when outcomes depend on unknown states of nature. Combines probability with payoff analysis to make rational business decisions despite incomplete information.\n\n**Key frameworks:**\n- **Payoff table / matrix:** Rows = actions (decisions you control), Columns = states of nature (outcomes you don't control), Cells = payoffs (profit/loss).\n- **Decision criteria under uncertainty (no probabilities):**\n  - **Maximax** (optimistic): choose action with highest possible payoff.\n  - **Maximin** (pessimistic): choose action with highest worst-case payoff.\n  - **Minimax regret:** compute opportunity loss (regret) table; choose action with smallest maximum regret.\n  - **Hurwicz criterion:** weighted average of best and worst payoff using optimism coefficient \\(\\alpha\\).\n- **Decision criteria under risk (probabilities known):**\n  - **Expected Monetary Value (EMV):** \\(\\text{EMV}(a_i) = \\sum_j P(s_j) \\cdot V(a_i, s_j)\\). Choose action with highest EMV.\n  - **Expected Opportunity Loss (EOL):** equivalent ranking to EMV; minimise EOL.\n- **Risk aversion:** utility functions curve concavely — a risk-averse decision-maker may reject a positive-EMV gamble if downside is severe. Expected utility maximisation replaces EMV when risk attitudes matter.\n\n**Value of information:**\n- **Expected Value of Perfect Information (EVPI):** The maximum you'd pay for a perfect forecast. \\(\\text{EVPI} = \\text{EMV}|\\text{perfect info} - \\text{EMV}|\\text{no info}\\). Equivalently, EVPI = minimum EOL.\n- **Expected Value of Sample Information (EVSI):** The maximum you'd pay for an imperfect signal. Always \\(0 \\le \\text{EVSI} \\le \\text{EVPI}\\).\n\n**Bayesian updating:** When new sample information arrives, update prior probabilities using Bayes' theorem:\n\\[P(s_j | \\text{signal}) = \\frac{P(\\text{signal}|s_j) \\cdot P(s_j)}{P(\\text{signal})}\\]\nThen recompute EMV with posterior probabilities.\n\n**Game theory basics:**\n- **Two-player zero-sum games:** one player's gain = other's loss. Payoff matrix from Row player's perspective.\n- **Dominance:** eliminate strategies that are always worse than another.\n- **Saddle point / pure strategy Nash equilibrium:** maximin value (Row) = minimax value (Column). If they match, optimal pure strategies exist.\n- **Mixed strategies:** when no saddle point, each player randomises. Row player picks probability \\(p\\) to equalise Column's expected payoffs.",
+        "2": "| Concept | Formula |\n|---|---|\n| EMV | \\(\\text{EMV}(a_i) = \\sum_j P(s_j) \\cdot V(a_i, s_j)\\) |\n| Regret (opportunity loss) | \\(R(a_i, s_j) = \\max_k V(a_k, s_j) - V(a_i, s_j)\\) |\n| EVPI | \\(\\text{EMV under certainty} - \\text{best EMV without info}\\) |\n| Hurwicz | \\(H(a_i) = \\alpha \\cdot \\max_j V(a_i,s_j) + (1-\\alpha) \\cdot \\min_j V(a_i,s_j)\\) |\n| Bayes update | \\(P(s_j|\\text{data}) = \\frac{P(\\text{data}|s_j) P(s_j)}{\\sum_k P(\\text{data}|s_k) P(s_k)}\\) |\n| Expected utility | \\(E[U] = \\sum_j P(s_j) \\cdot U(V(a_i,s_j))\\) |\n| Mixed strategy (2×2) | Row player: \\(p = \\frac{d - c}{(a - b) - (c - d)}\\) where payoffs are \\(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\) |",
+        "3": "**Scenario:** A firm must decide whether to launch Product A (high cost, high potential) or Product B (low cost, moderate potential). States of nature: High demand (P = 0.6), Low demand (P = 0.4).\n\n| | High Demand | Low Demand |\n|---|---|---|\n| Product A | £500k | -£100k |\n| Product B | £200k | £80k |\n\n**Step 1 — EMV:**\n- EMV(A) = 0.6(500) + 0.4(-100) = 300 - 40 = **£260k**\n- EMV(B) = 0.6(200) + 0.4(80) = 120 + 32 = **£152k**\n- Decision: Choose Product A (higher EMV).\n\n**Step 2 — EVPI:**\n- Under perfect info: if High Demand → choose A (£500k); if Low Demand → choose B (£80k).\n- EMV with perfect info = 0.6(500) + 0.4(80) = 300 + 32 = £332k.\n- EVPI = 332 - 260 = **£72k** (max worth paying for perfect forecast).\n\n**Step 3 — Bayesian update:**\nA market test signals \"favourable\" with P(fav|High) = 0.8, P(fav|Low) = 0.3.\n- P(fav) = 0.8(0.6) + 0.3(0.4) = 0.48 + 0.12 = 0.60\n- P(High|fav) = 0.48/0.60 = **0.80**\n- P(Low|fav) = 0.12/0.60 = **0.20**\n- Revised EMV(A|fav) = 0.80(500) + 0.20(-100) = 400 - 20 = **£380k** → strengthens A.",
+        "4": "1. **(8 min)** Given a 3-action × 3-state payoff table with no probabilities, compute the maximax, maximin, and minimax regret decisions. State which you'd recommend to a risk-averse manager.\n2. **(10 min)** Given probabilities, compute EMV for all actions and calculate EVPI. Interpret EVPI in one sentence for management.\n3. **(12 min)** A consultant offers an imperfect test. Given likelihoods P(signal|state), use Bayes' theorem to compute posterior probabilities. Recompute EMV. State whether the test is worth its quoted price.\n4. **(10 min)** Two competitors choose pricing strategies simultaneously. Write the 2×2 payoff matrix, check for dominance, find the saddle point or mixed-strategy equilibrium.\n5. **(10 min)** A risk-averse decision-maker has utility function \\(U(x) = \\sqrt{x}\\). Recompute the product launch decision using expected utility. Does the recommendation change vs EMV?",
+        "5": "1. **Define the decision problem:** list actions, states of nature, and payoffs explicitly. State whether probabilities are known.\n2. **Apply the appropriate criterion:** if no probabilities → maximin/minimax regret. If probabilities known → EMV. If risk attitudes matter → expected utility.\n3. **Compute and display calculations clearly:** show each EMV computation. For Bayes, draw a probability tree or use a table showing prior × likelihood = joint, then normalise.\n4. **Interpret EVPI/EVSI:** \"The firm should pay at most £X for perfect/imperfect information.\"\n5. **Sensitivity analysis:** \"If the probability of High Demand drops below X, the optimal decision switches to Product B.\" Show the crossover calculation.\n6. **Business recommendation:** state the chosen action, the expected payoff, and the key risk. One line linking to business context.",
+        "6": "- **Confusing EVPI with EVSI:** EVPI is the ceiling; EVSI for any imperfect test must be ≤ EVPI. Never report EVSI > EVPI.\n- **Forgetting to normalise Bayes posteriors:** P(High|signal) + P(Low|signal) must = 1. Always show the denominator P(signal).\n- **Using EMV for a risk-averse decision-maker without acknowledging risk:** if the question mentions risk aversion, you must discuss utility or at least note the limitation of EMV.\n- **Game theory: confusing Row and Column perspectives:** the payoff matrix is from Row's view. Column minimises what Row gets.\n- **Not stating assumptions:** \"We assume the decision-maker is risk-neutral and probabilities are accurate\" is a required caveat.\n- **Maximising expected value while ignoring catastrophic downside:** if one action can bankrupt the firm, note this even if its EMV is highest."
+      },
+      "formulas": [
+        {
+          "concept": "EMV",
+          "formula": "\\(\\text{EMV}(a_i) = \\sum_j P(s_j) \\cdot V(a_i, s_j)\\)"
+        },
+        {
+          "concept": "Regret (opportunity loss)",
+          "formula": "\\(R(a_i, s_j) = \\max_k V(a_k, s_j) - V(a_i, s_j)\\)"
+        },
+        {
+          "concept": "EVPI",
+          "formula": "\\(\\text{EMV under certainty} - \\text{best EMV without info}\\)"
+        },
+        {
+          "concept": "Hurwicz",
+          "formula": "\\(H(a_i) = \\alpha \\cdot \\max_j V(a_i,s_j) + (1-\\alpha) \\cdot \\min_j V(a_i,s_j)\\)"
+        },
+        {
+          "concept": "Bayes update",
+          "formula": "\\(P(s_j"
+        },
+        {
+          "concept": "Expected utility",
+          "formula": "\\(E[U] = \\sum_j P(s_j) \\cdot U(V(a_i,s_j))\\)"
+        },
+        {
+          "concept": "Mixed strategy (2×2)",
+          "formula": "Row player: \\(p = \\frac{d - c}{(a - b) - (c - d)}\\) where payoffs are \\(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Given a 3-action × 3-state payoff table with no probabilities, compute the maximax, maximin, and minimax regret decisions. State which you'd recommend to a risk-averse manager."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Given probabilities, compute EMV for all actions and calculate EVPI. Interpret EVPI in one sentence for management."
+        },
+        {
+          "time_minutes": 12,
+          "text": "A consultant offers an imperfect test. Given likelihoods P(signal|state), use Bayes' theorem to compute posterior probabilities. Recompute EMV. State whether the test is worth its quoted price."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Two competitors choose pricing strategies simultaneously. Write the 2×2 payoff matrix, check for dominance, find the saddle point or mixed-strategy equilibrium."
+        },
+        {
+          "time_minutes": 10,
+          "text": "A risk-averse decision-maker has utility function \\(U(x) = \\sqrt{x}\\). Recompute the product launch decision using expected utility. Does the recommendation change vs EMV?"
+        }
+      ],
+      "feynmanText": "Every business decision involves uncertainty. Should you invest in a new factory? Expand to a new market? Hire more staff? The answer depends on things you don't know yet -- will demand be high or low? Will a competitor enter?\n\nDecision-making under uncertainty gives you a structured way to think through these choices instead of going with your gut.\n\n**Expected value** is the simplest rule: multiply each outcome by its probability and add them up. If a project has a 70% chance of making £100k and a 30% chance of losing £50k, the expected value is 0.7(100k) + 0.3(-50k) = £55k. Positive expected value = generally worth doing.\n\nBut expected value ignores risk. A cautious person might reject a project with a positive expected value if the downside is catastrophic. **Decision criteria** for different attitudes:\n- **Maximax** (optimist): pick the option with the best possible outcome.\n- **Maximin** (pessimist): pick the option whose worst case is least bad.\n- **Expected value** (neutral): pick the highest average outcome.\n- **Minimax regret**: pick the option that minimises your maximum \"what if I'd chosen differently\" regret.\n\n**The value of information:** before deciding, you might be able to gather more data (commission a market study, run a pilot). The **Expected Value of Perfect Information (EVPI)** tells you the maximum you should pay for information that eliminates all uncertainty. If EVPI is £20k, don't pay £50k for a market study -- even perfect knowledge isn't worth that much.",
+      "feynmanKeyTerms": [
+        "Expected value",
+        "Decision criteria",
+        "Maximax",
+        "Maximin",
+        "Minimax regret",
+        "The value of information:",
+        "Expected Value of Perfect Information (EVPI)"
+      ],
+      "modelAnswer": "1. **Define the decision problem:** list actions, states of nature, and payoffs explicitly. State whether probabilities are known.\n2. **Apply the appropriate criterion:** if no probabilities → maximin/minimax regret. If probabilities known → EMV. If risk attitudes matter → expected utility.\n3. **Compute and display calculations clearly:** show each EMV computation. For Bayes, draw a probability tree or use a table showing prior × likelihood = joint, then normalise.\n4. **Interpret EVPI/EVSI:** \"The firm should pay at most £X for perfect/imperfect information.\"\n5. **Sensitivity analysis:** \"If the probability of High Demand drops below X, the optimal decision switches to Product B.\" Show the crossover calculation.\n6. **Business recommendation:** state the chosen action, the expected payoff, and the key risk. One line linking to business context.",
+      "commonTraps": "- **Confusing EVPI with EVSI:** EVPI is the ceiling; EVSI for any imperfect test must be ≤ EVPI. Never report EVSI > EVPI.\n- **Forgetting to normalise Bayes posteriors:** P(High|signal) + P(Low|signal) must = 1. Always show the denominator P(signal).\n- **Using EMV for a risk-averse decision-maker without acknowledging risk:** if the question mentions risk aversion, you must discuss utility or at least note the limitation of EMV.\n- **Game theory: confusing Row and Column perspectives:** the payoff matrix is from Row's view. Column minimises what Row gets.\n- **Not stating assumptions:** \"We assume the decision-maker is risk-neutral and probabilities are accurate\" is a required caveat.\n- **Maximising expected value while ignoring catastrophic downside:** if one action can bankrupt the firm, note this even if its EMV is highest.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-04-21_ST2187_past-exam-section.md",
+      "date": "2026-04-21",
+      "module": "ST2187",
+      "topicSlug": "past-exam-section",
+      "title": "ST2187 - Past Exam Section (Timed Strategy Sheet 2)",
+      "sections": {
+        "1": "1. First 5 min: quick scan and mark easy/medium/hard.  \n2. Do easy first for guaranteed marks.  \n3. Cap time per question; move on if stuck.",
+        "2": "- Aim >= 72% on this section.\n- If below target: immediate repair on top 2 weak topics within 48h.",
+        "3": "1. Mark each error category: concept/formula/algebra/interpretation/time.  \n2. Create one trigger rule per repeated error.  \n3. Re-attempt hardest wrong question under a new 12-min timer.",
+        "4": "- Attempt one past section in strict exam conditions.\n- No notes, no pauses, no backtracking until first pass complete.",
+        "5": "- Spending >40% time on one hard part.\n- No interpretation sentence at the end.\n- Not converting mistakes into tomorrow’s plan."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Spending >40% time on one hard part.\n- No interpretation sentence at the end.\n- Not converting mistakes into tomorrow’s plan.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-22_ST2187_weak-topic-repair.md",
+      "date": "2026-04-22",
+      "module": "ST2187",
+      "topicSlug": "weak-topic-repair",
+      "title": "ST2187 - Weak Topic Repair (Exam Sheet)",
+      "sections": {
+        "1": "- Pick only top 2 weak topics from your error log.\n- Repair sequence: concept gap -> method steps -> timed retest.\n- No new content until weak topics hit minimum target.",
+        "2": "1. Write “why I got it wrong” for each repeated error.  \n2. Rebuild one-page method checklist for each weak topic.  \n3. Solve 2 representative questions slowly with full steps.  \n4. Retest 1 question per topic under time pressure.",
+        "3": "- 25 min: weak topic A retest  \n- 25 min: weak topic B retest\n- Target: >= 75% on retest attempts.",
+        "4": "1. Identify topic and method immediately.  \n2. State assumptions/conditions.  \n3. Execute core steps cleanly.  \n4. End with concise interpretation.",
+        "5": "- Doing more new questions before fixing root errors.\n- “Recognizing” solution without reproducing it from memory.\n- Skipping retest after correction."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "Identify topic and method immediately."
+        },
+        {
+          "time_minutes": null,
+          "text": "State assumptions/conditions."
+        },
+        {
+          "time_minutes": null,
+          "text": "Execute core steps cleanly."
+        },
+        {
+          "time_minutes": null,
+          "text": "End with concise interpretation."
+        }
+      ],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Doing more new questions before fixing root errors.\n- “Recognizing” solution without reproducing it from memory.\n- Skipping retest after correction.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-23_ST3188_weak-topic-repair.md",
+      "date": "2026-04-23",
+      "module": "ST3188",
+      "topicSlug": "weak-topic-repair",
+      "title": "ST3188 - Weak Topic Repair (Exam Sheet)",
+      "sections": {
+        "1": "- Select 2 weakest methods from Topics 12-20.\n- Focus on method selection and interpretation quality.\n- Convert each repeated mistake into a rule.",
+        "2": "1. For each weak area, write “When to use / When not to use.”  \n2. Solve one full question with full explanation text.  \n3. Re-solve under timer with minimal notes.  \n4. Log one improvement per question.",
+        "3": "- 20 min: method-choice scenarios\n- 30 min: one full exam-style interpretation question\n- Target: no method-selection errors.",
+        "4": "1. Define objective and variable types.  \n2. Justify chosen method.  \n3. Report result and managerial implication.",
+        "5": "- Using advanced method where simpler test is enough.\n- Forgetting business interpretation.\n- Repeating same wording without linking to data context."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "Define objective and variable types."
+        },
+        {
+          "time_minutes": null,
+          "text": "Justify chosen method."
+        },
+        {
+          "time_minutes": null,
+          "text": "Report result and managerial implication."
+        }
+      ],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Using advanced method where simpler test is enough.\n- Forgetting business interpretation.\n- Repeating same wording without linking to data context.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-24_ST2187_monte-carlo-optimisation.md",
+      "date": "2026-04-24",
+      "module": "ST2187",
+      "topicSlug": "monte-carlo-optimisation",
+      "title": "ST2187 - Monte Carlo + Optimisation (High-Yield Sprint Sheet)",
+      "sections": {
+        "1": "- Objective function and constraints must be explicit.\n- Simulation should show distribution, not just average.\n- Final recommendation should include risk trade-off.",
+        "2": "1. Build one constrained model from a business scenario.  \n2. Add uncertain inputs and define plausible ranges/distributions.  \n3. Simulate outcomes and report mean + downside quantile.",
+        "3": "1. 20 min: optimisation formulation question  \n2. 15 min: simulation interpretation question  \n3. 15 min: recommendation writing question",
+        "4": "1. Variables/objective/constraints.  \n2. Simulation assumptions + metrics reported.  \n3. Decision with caveat and sensitivity note.",
+        "5": "- Optimizing a model with unrealistic constraints.\n- Reporting expected value only.\n- No sensitivity discussion."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "Variables/objective/constraints."
+        },
+        {
+          "time_minutes": null,
+          "text": "Simulation assumptions + metrics reported."
+        },
+        {
+          "time_minutes": null,
+          "text": "Decision with caveat and sensitivity note."
+        }
+      ],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Optimizing a model with unrealistic constraints.\n- Reporting expected value only.\n- No sensitivity discussion.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-25_ST2187_full-mock.md",
+      "date": "2026-04-25",
+      "module": "ST2187",
+      "topicSlug": "full-mock",
+      "title": "ST2187 - Full Mock Day Sheet",
+      "sections": {
+        "1": "- Simulate exam conditions strictly: no notes, fixed timer, single sitting.\n- Start with quick scan and mark-confidence strategy.\n- Track time per question block.",
+        "2": "1. Score by topic (not only total score).  \n2. Categorize errors: concept/formula/algebra/interpretation/time.  \n3. Extract top 5 errors to fix before next mock.",
+        "3": "- Overall target today: >= 72%\n- At least 80% completion within time.",
+        "4": "- Re-attempt all wrong questions without looking at model answers first.\n- Then compare with model answers and create trigger rules.",
+        "5": "- Taking mock casually and inflating confidence.\n- Skipping topic-level score analysis.\n- Doing another mock before fixing repeated errors."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Taking mock casually and inflating confidence.\n- Skipping topic-level score analysis.\n- Doing another mock before fixing repeated errors.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-26_ST3188_full-mock.md",
+      "date": "2026-04-26",
+      "module": "ST3188",
+      "topicSlug": "full-mock",
+      "title": "ST3188 - Full Mock Day Sheet",
+      "sections": {
+        "1": "- Do one full paper/long section under strict timing.\n- Prioritize method-justification clarity and interpretation quality.\n- Write every final answer as if for examiner marking rubric.",
+        "2": "1. Score by method cluster (testing, ANOVA, regression, segmentation, etc.).  \n2. Identify interpretation marks lost (common in ST3188).  \n3. Build “Top 10 final-week mistakes” list.",
+        "3": "- Overall target today: >= 72%\n- Interpretation quality: >= 80% of answers include clear business implication.",
+        "4": "- Re-write weak answers in concise exam style.\n- For each weak method: write a 3-line method-choice rule.",
+        "5": "- Correct calculations but weak narrative explanation.\n- Choosing technique without checking variable type/design.\n- Not practicing concise executive-style conclusions."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Correct calculations but weak narrative explanation.\n- Choosing technique without checking variable type/design.\n- Not practicing concise executive-style conclusions.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-27_ST2187_past-exam-section.md",
+      "date": "2026-04-27",
+      "module": "ST2187",
+      "topicSlug": "past-exam-section",
+      "title": "ST2187 - Past Exam Section (Final Week Sheet)",
+      "sections": {
+        "1": "1. 4 min scan and triage questions.  \n2. Complete high-confidence parts first for guaranteed marks.  \n3. Leave 8-10 min final review buffer.",
+        "2": "- Section target >= 75%\n- Zero blank subparts.",
+        "3": "1. Rework wrong answers from memory.  \n2. Compare to mark scheme/model output.  \n3. Write 1-line trigger rule per mistake.",
+        "4": "- Method name early.\n- Key formula shown.\n- Final interpretation always present.\n- Mention assumptions when relevant.",
+        "5": "- Over-investing time in one difficult part.\n- Forgetting to answer the exact command word.\n- Calculation-heavy answers with no interpretation."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Over-investing time in one difficult part.\n- Forgetting to answer the exact command word.\n- Calculation-heavy answers with no interpretation.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-28_ST3188_preparing-for-exam.md",
+      "date": "2026-04-28",
+      "module": "ST3188",
+      "topicSlug": "preparing-for-exam",
+      "title": "ST3188 - Preparing for Exam (Final Consolidation Sheet)",
+      "sections": {
+        "1": "- Method map complete: which test/method for which scenario.\n- Top 10 mistakes list reviewed.\n- Interpretation templates ready for major method families.",
+        "2": "- Categorical association -> cross-tab/chi-square  \n- Mean comparison -> t-test/ANOVA/ANCOVA  \n- Relationship/prediction -> correlation/regression/logit/discriminant  \n- Segmentation/dimension reduction -> cluster/factor/MDS/conjoint",
+        "3": "1. One method-selection question (10 min)  \n2. One output interpretation question (20 min)  \n3. One short recommendation memo answer (20 min)",
+        "4": "1. Define business objective.  \n2. Choose and justify method.  \n3. Present result and plain-language implication.  \n4. Add one caveat/limitation.",
+        "5": "- Last-minute new methods instead of consolidating.\n- Weak linkage between stats output and decision.\n- Not rehearsing concise writing under time pressure."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "Define business objective."
+        },
+        {
+          "time_minutes": null,
+          "text": "Choose and justify method."
+        },
+        {
+          "time_minutes": null,
+          "text": "Present result and plain-language implication."
+        },
+        {
+          "time_minutes": null,
+          "text": "Add one caveat/limitation."
+        }
+      ],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Last-minute new methods instead of consolidating.\n- Weak linkage between stats output and decision.\n- Not rehearsing concise writing under time pressure.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-29_ST2187_final-heavy-repair.md",
+      "date": "2026-04-29",
+      "module": "ST2187",
+      "topicSlug": "final-heavy-repair",
+      "title": "ST2187 - Final Heavy Repair (Sheet)",
+      "sections": {
+        "1": "- Pick only 2 highest-impact weak areas from mock analysis.\n- No new topics today.\n- Goal: convert repeated errors into reliable routines.",
+        "2": "1. Re-do one previously wrong question per weak area without notes.  \n2. Build a one-page “if question type X -> method Y” checklist.  \n3. Drill 3 short questions under timer.",
+        "3": "- 25 min: weak area A  \n- 25 min: weak area B  \n- Target: >= 80% on corrected skills.",
+        "4": "- Top 5 ST2187 mistakes (final list)\n- One trigger rule per mistake\n- One confidence score (/5) per core topic",
+        "5": "- Cramming new content now.\n- Re-reading notes instead of re-solving questions.\n- No timed retest after repair."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Cramming new content now.\n- Re-reading notes instead of re-solving questions.\n- No timed retest after repair.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-04-30_ST3188_final-heavy-repair.md",
+      "date": "2026-04-30",
+      "module": "ST3188",
+      "topicSlug": "final-heavy-repair",
+      "title": "ST3188 - Final Heavy Repair (Sheet)",
+      "sections": {
+        "1": "- Prioritize method-selection and interpretation weaknesses.\n- Use your top 5 repeated mistakes list from mock day.\n- Keep answers concise and examiner-friendly.",
+        "2": "1. Re-write two weak answers in better exam structure.  \n2. For each method family, create a 2-line selection rule.  \n3. Solve one timed mixed mini-case.",
+        "3": "- 20 min: method-choice scenarios  \n- 30 min: interpretation-heavy question  \n- Target: no method mismatch errors.",
+        "4": "- “When to use” map for key ST3188 methods\n- 5 reusable interpretation sentence starters",
+        "5": "- Over-long explanations that run out time.\n- Stats language without managerial implication.\n- Confusing similar techniques under pressure."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Over-long explanations that run out time.\n- Stats language without managerial implication.\n- Confusing similar techniques under pressure.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-01_ST2187_light-mixed-revision.md",
+      "date": "2026-05-01",
+      "module": "ST2187",
+      "topicSlug": "light-mixed-revision",
+      "title": "ST2187 + ST3188 - Light Mixed Revision (Sheet)",
+      "sections": {
+        "1": "- Maintain sharpness without fatigue.\n- Keep intensity moderate: short bursts, high accuracy.\n- No deep new problem sets.",
+        "2": "1. 30-35 min timed set (ST2187 mixed).  \n2. 30-35 min timed set (ST3188 mixed).  \n3. 20 min targeted correction and trigger rules.",
+        "3": "- Method choice immediate and correct\n- Interpretation sentence present in each answer\n- Time spent per question controlled",
+        "4": "- Turning “light day” into 4+ hour grind.\n- Starting new weak topics last minute.\n- Skipping correction because score “felt okay.”"
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-02_ST2187_final-mini-mocks.md",
+      "date": "2026-05-02",
+      "module": "ST2187",
+      "topicSlug": "final-mini-mocks",
+      "title": "ST2187 + ST3188 - Final Mini-Mocks (Sheet)",
+      "sections": {
+        "1": "- One short ST2187 mock block (AM).\n- One short ST3188 mock block (PM).\n- Strict timing, but reduced volume to avoid burnout.",
+        "2": "1. Mark immediately.  \n2. Fix only high-impact errors (max 3 per module).  \n3. Stop heavy work by evening.",
+        "3": "- Completion rate >= 90%\n- Accuracy target >= 75%\n- Stress level controlled (no panic spiral)",
+        "4": "- Doing full new mocks and burning out.\n- Chasing every minor error.\n- Late-night cramming."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-03_ST2187_light-recap.md",
+      "date": "2026-05-03",
+      "module": "ST2187",
+      "topicSlug": "light-recap",
+      "title": "ST2187 + ST3188 - Light Recap (Sheet)",
+      "sections": {
+        "1": "- Formula and assumption sheets.\n- Top 10 mistakes list.\n- Method-choice flash review.",
+        "2": "1. 30 min ST2187 key points.  \n2. 30 min ST3188 key points.  \n3. 20-30 min confidence walk-through (no heavy new questions).",
+        "3": "- Can explain each core method in 2 lines.\n- Can name common traps from memory.\n- Logistics ready for exam week.",
+        "4": "- Mistaking anxiety for lack of preparation.\n- Re-opening hardest topics at night.\n- Poor sleep before exam week."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-04_ST2187_pre-exam-light-review.md",
+      "date": "2026-05-04",
+      "module": "ST2187",
+      "topicSlug": "pre-exam-light-review",
+      "title": "ST2187 - Pre-Exam Light Review (Sheet)",
+      "sections": {
+        "1": "- Core formulas and interpretation patterns.\n- Assumption checklist for regression/probability/stat tests.\n- Top 5 personal error triggers.",
+        "2": "1. One short confidence set (10-15 min).  \n2. Review one-page summary sheet.  \n3. Pack exam logistics and stop studying early.",
+        "3": "- Read command words carefully.\n- Show method before calculations.\n- Keep interpretation concise and explicit.\n- Move on if stuck >3 minutes.",
+        "4": "- Overstudying late night.\n- Last-minute new material.\n- Skipping rest and sleep."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-05_ST2187_exam-day.md",
+      "date": "2026-05-05",
+      "module": "ST2187",
+      "topicSlug": "exam-day",
+      "title": "ST2187 - Exam Day Protocol",
+      "sections": {
+        "1": "- Quick glance at formula/assumption sheet.\n- Read your top 5 trigger rules.\n- No new problems.",
+        "2": "1. 3-5 min scan and section time plan.  \n2. Start with high-confidence marks.  \n3. For each answer: method -> steps -> interpretation.  \n4. Leave final 10 min for checks.",
+        "3": "- Short decompression break.\n- Light ST3188 recall only (45-60 min), no deep grind.",
+        "4": "- Panic from one difficult question.\n- Overwriting clean answers with rushed edits.\n- Spending too long on first section."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-06_ST3188_exam-day.md",
+      "date": "2026-05-06",
+      "module": "ST3188",
+      "topicSlug": "exam-day",
+      "title": "ST3188 - Exam Day Protocol",
+      "sections": {
+        "1": "- Review method-selection map once.\n- Read top 5 trigger mistakes (especially interpretation errors).\n- No new topics or long calculations.",
+        "2": "1. 3-5 min full scan and timing plan.  \n2. Start with questions where method choice is clear.  \n3. Write in this order: objective -> method -> result -> business implication.  \n4. Keep final 10 min for clarity checks and missing interpretations.",
+        "3": "- Decompress first.\n- Light transition prep only if energy allows: 30-45 min EC2020 formula recall.",
+        "4": "- Rushing method selection under pressure.\n- Writing statistics without managerial implication.\n- Spending too long refining one answer."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-07_EC2020_regression-core.md",
+      "date": "2026-05-07",
+      "module": "EC2020",
+      "topicSlug": "regression-core",
+      "title": "EC2020 - Regression Core (SLR + MLR)",
+      "sections": {
+        "0": "You want to know how something -- say, a company's stock price -- depends on various factors like profit, R&D spending, and marketing. Regression is the tool that lets you say: \"holding everything else fixed, a 1% increase in profit is associated with roughly a 0.5% increase in stock price.\"\n\nOLS (Ordinary Least Squares) finds the line (or surface, with multiple factors) that fits your data best by making the sum of squared prediction errors as small as possible. The slope coefficients are the answers to your questions. The intercept is where the line starts -- often not very meaningful on its own.\n\nBut can you trust the answer? Two big checks. First, the **t-test** asks: \"is this slope big enough relative to its uncertainty that it's probably real, not just noise?\" If the p-value is below 0.05, you take it seriously. Second, the **F-test** asks: \"do ALL these factors together explain anything?\" -- it tests the whole model at once.\n\nTo prove OLS gives you the right answer on average, you plug the true model into the estimator formula and show that the \"junk\" cancels out in expectation. That only works if the error term u is unrelated to your X variables -- the zero conditional mean assumption. If you've left out an important factor that correlates with X, your slope estimate is contaminated. That's called **omitted variable bias**, and it's the biggest threat to trusting regression results.\n\nFinally, functional forms matter. If both Y and X are in logs, the coefficient is an elasticity (percentage change for percentage change). If only Y is in logs and X is a dummy variable, you need the exact formula (e^β̂ − 1) × 100% to interpret it correctly -- not just β̂ × 100%.",
+        "1": "**Model setup.** SLR: Y = β₀ + β₁X + u. MLR: Y = β₀ + β₁X₁ + ... + βₖXₖ + u, where u is the unobserved error capturing all factors affecting Y not in the model.\n\n**OLS interpretation.** β̂ⱼ estimates the partial effect of Xⱼ on Y, holding all other regressors fixed (ceteris paribus). In MLR this is a partial derivative, not a total effect.\n\n**Gauss-Markov assumptions (MLR.1--MLR.6):**\n\n| # | Assumption | Statement |\n|---|---|---|\n| MLR.1 | Linear in parameters | Y = β₀ + β₁X₁ + ... + βₖXₖ + u |\n| MLR.2 | Random sampling | {(Yᵢ, X₁ᵢ, ..., Xₖᵢ) : i = 1,...,n} are i.i.d. draws |\n| MLR.3 | No perfect collinearity | No regressor is a constant or exact linear function of others |\n| MLR.4 | Zero conditional mean | E(u\\|X₁, ..., Xₖ) = 0 |\n| MLR.5 | Homoskedasticity | Var(u\\|X₁, ..., Xₖ) = σ² (constant) |\n| MLR.6 | Normality | u\\|X ~ N(0, σ²) |\n\nMLR.1--MLR.4 → OLS is unbiased. MLR.1--MLR.5 → Gauss-Markov theorem: OLS is **BLUE** (Best Linear Unbiased Estimator -- lowest variance among all linear unbiased estimators). MLR.6 added → exact t and F distributions in finite samples (the **Classical Linear Model**, CLM).\n\n**R² and adjusted R².** R² = 1 - SSR/SST = ESS/SST measures the fraction of sample variation in Y explained by the regressors. It never decreases when a regressor is added. Adjusted R² = 1 - (SSR/(n-k-1))/(SST/(n-1)) penalises for additional regressors and *can decrease* if the added variable contributes little explanatory power.\n\n**Functional forms -- interpretation rules:**\n\n| Form | Model | Interpretation of β₁ |\n|---|---|---|\n| Level-level | Y = β₀ + β₁X + u | ΔX = 1 → ΔY = β₁ |\n| Log-level | log(Y) = β₀ + β₁X + u | ΔX = 1 → %ΔY ≈ 100β₁ |\n| Level-log | Y = β₀ + β₁log(X) + u | %ΔX = 1 → ΔY = β₁/100 |\n| Log-log | log(Y) = β₀ + β₁log(X) + u | %ΔX = 1 → %ΔY = β₁ (elasticity) |\n\n**Dummy variables.** A dummy D takes value 0 or 1. The coefficient β̂_D measures the difference in Y relative to the base category (D = 0), ceteris paribus. When the dependent variable is log(Y), the exact percentage effect of D = 1 vs D = 0 is **(eᵝ̂ - 1) × 100%**, not simply β̂ × 100%. The approximation β̂ × 100% is only reasonable when β̂ is small (say |β̂| < 0.1).\n\n**F-test.** For q joint restrictions under H₀, the F-statistic compares the restricted and unrestricted models. Used for: (i) joint significance of a subset of regressors, (ii) overall significance (H₀: β₁ = ... = βₖ = 0), (iii) structural break (Chow test). Under H₀ with CLM: F ~ F_{q, n-k-1}.",
+        "2": "**OLS estimator (SLR):**\nβ̂₁ = Σ(Xᵢ - X̄)(Yᵢ - Ȳ) / Σ(Xᵢ - X̄)² = SampleCov(X,Y) / SampleVar(X)\n\nThis is a ratio of *sample* moments, NOT population moments. Never write Cov(X,Y)/Var(X) for the estimator.\n\n**Unbiasedness proof skeleton** (MLR.1--MLR.4):\n1. Plug model: β̂₁ = β₁ + Σwᵢuᵢ where wᵢ = (Xᵢ - X̄)/Σ(Xᵢ - X̄)²\n2. Condition on X: E(β̂₁|X) = β₁ + Σwᵢ E(uᵢ|X) = β₁ (by MLR.4)\n3. LIE: E(β̂₁) = E[E(β̂₁|X)] = β₁\n\n**Consistency proof skeleton** (MLR.1--MLR.4, plus finite moments):\n1. β̂₁ = β₁ + (1/n)Σ(Xᵢ - X̄)uᵢ / (1/n)Σ(Xᵢ - X̄)²\n2. Apply plim (Slutsky): plim β̂₁ = β₁ + plim[(1/n)Σ(Xᵢ - X̄)uᵢ] / plim[(1/n)Σ(Xᵢ - X̄)²]\n3. By LLN: numerator →ᵖ Cov(X,u) = 0 (by MLR.4), denominator →ᵖ Var(X) > 0\n4. Therefore plim β̂₁ = β₁\n\n**Variance of β̂ (homoskedastic case, MLR.1--MLR.5):**\nVar(β̂ⱼ|X) = σ² / [SSTⱼ(1 - R²ⱼ)]\nwhere SSTⱼ = Σ(Xⱼᵢ - X̄ⱼ)² and R²ⱼ is the R² from regressing Xⱼ on all other regressors.\nSLR simplification: Var(β̂₁|X) = σ² / Σ(Xᵢ - X̄)²\n\n**t-statistic:** t = (β̂ⱼ - βⱼ,₀) / se(β̂ⱼ), where βⱼ,₀ is the null value. Under CLM: t ~ t_{n-k-1}.\n\n**Confidence interval:** β̂ⱼ ± t_{α/2, n-k-1} · se(β̂ⱼ)\n\n**F-statistic (q restrictions):**\nF = [(R²_ur - R²_r) / q] / [(1 - R²_ur) / (n - k - 1)]\nEquivalently: F = [(SSR_r - SSR_ur) / q] / [SSR_ur / (n - k - 1)]\nUnder H₀ (CLM): F ~ F_{q, n-k-1}\n\n**Chow test for structural break** (split sample into groups of size n₁, n₂; k regressors including intercept):\nF = [(SSR_pooled - SSR₁ - SSR₂) / k] / [(SSR₁ + SSR₂) / (n - 2k)]\nUnder H₀ (all coefficients equal across groups, CLM): F ~ F_{k, n-2k}\n\n**Omitted Variable Bias formula:**\nIf the true model is Y = β₀ + β₁X₁ + β₂X₂ + u but we omit X₂:\nE(β̃₁) = β₁ + β₂ · [SampleCov(X₁,X₂)/SampleVar(X₁)]\nBias direction = sign(β₂) × sign(Corr(X₁,X₂))",
+        "3": "*Based on 2022 paper Q6 (FTSE100 stock-price regression).*\n\n> log(stockₜ) = 0.86 + 0.54 log(profitₜ) - 0.65 log(researchₜ) - 1.34 log(marketingₜ)\n>              (1.12)  (0.24)               (0.30)                 (0.12)\n> n = 120, R² = 0.34, SSR = 1.29, F₃,₁₁₆ = 3.89\n\n**(a) Interpret the coefficient on log(profit).**\nLog-log model → elasticity. A 1% increase in profit is associated with a 0.54% increase in stock price, ceteris paribus. The positive sign is expected: higher profits should increase firm valuation. If profit units changed (e.g. to thousands), the log-log coefficient is **unchanged** because log(1000·X) = log(1000) + log(X) and the additive constant is absorbed by the intercept.\n\n**(b) Test H₀: β₃ = 2β₂ (marketing effect is twice research effect).**\nRewrite as H₀: β₃ - 2β₂ = 0 vs H₁: β₃ - 2β₂ ≠ 0 (or one-sided if question specifies direction).\nt = (β̂₃ - 2β̂₂) / se(β̂₃ - 2β̂₂)\nNumerator: -1.34 - 2(-0.65) = -1.34 + 1.30 = -0.04\nDenominator: se = √[Var(β̂₃) + 4·Var(β̂₂) - 4·Cov(β̂₂, β̂₃)]\n= √[(0.12)² + 4(0.30)² - 4·Cov(β̂₂, β̂₃)]\n**We need Cov(β̂₂, β̂₃) to complete the test** -- state this explicitly.\nUnder CLM: t ~ t₁₁₆. With n = 120 this is close to N(0,1); use t critical value from tables.\n\n**(c) Including an irrelevant variable (Bulgarian stock price).**\nIf it is truly irrelevant (β = 0 in the true model): OLS remains unbiased, but we lose efficiency -- standard errors increase because we waste a degree of freedom, and the added regressor may be correlated with existing Xⱼ, inflating VIFs. Adjusted R² will likely fall. If instead we are *omitting* a relevant variable: OVB arises. Direction: bias = β_omitted × [SampleCov(X₁, X_omitted)/SampleVar(X₁)].\n\n**(d) Chow test for structural break at 2016m6.**\nH₀: All coefficients are equal before and after 2016m6 (no structural break).\nH₁: At least one coefficient differs.\nProcedure: (i) Run pooled regression → SSR_pooled = 1.29. (ii) Run regression on pre-2016m6 subsample → SSR₁. (iii) Run regression on post-2016m6 subsample → SSR₂.\nF = [(1.29 - SSR₁ - SSR₂) / 4] / [(SSR₁ + SSR₂) / (120 - 8)]\nk = 4 (intercept + 3 slopes). Under H₀ (CLM assumptions in both subsamples): F ~ F_{4, 112}.\nReject H₀ if F > F_{4,112,0.05} ≈ 2.45.\n**Required CLM assumptions:** linearity, no perfect collinearity, zero conditional mean, homoskedasticity, normality of errors -- in *both* sub-samples.",
+        "4": "**Task 1 (8 min).** The following regression is estimated by OLS on n = 200 firms:\nlog(wage) = 4.20 + 0.092 educ + 0.041 exper - 0.0007 exper² + 0.15 female\n            (0.35) (0.008)       (0.012)       (0.0002)         (0.04)\nInterpret every coefficient with the correct functional form language, expected signs, and ceteris paribus clause. Is the return to experience diminishing? At what value of exper does the effect turn negative?\n\n**Task 2 (8 min).** Using the regression above, test H₀: β_educ = 10 · β_exper (the return to one year of education equals that of 10 years of experience). State H₀, H₁, the test statistic formula, what additional information is needed, the distribution under H₀, the critical value at 5%, and your conclusion.\n\n**Task 3 (8 min).** Consider the alternative estimator β̃₁ = Σzᵢyᵢ / Σzᵢxᵢ where zᵢ = xᵢ + vᵢ and E(vᵢ|X) = 0. The true model is yᵢ = β₁xᵢ + uᵢ with E(uᵢ|X) = 0. Show whether β̃₁ is unbiased. Steps: plug the model, condition on X, use E(uᵢ|X) = 0, invoke LIE.\n\n**Task 4 (10 min).** In the wage regression above, test joint significance of exper and exper². State the restricted and unrestricted models. Suppose SSR_ur = 85.3 and SSR_r = 93.1. Compute the F-statistic, state its distribution, give the critical value, and conclude.\n\n**Task 5 (11 min).** You suspect the wage equation differs for the public vs private sector (n₁ = 90, n₂ = 110). Describe the full Chow test: state hypotheses, the procedure for obtaining SSR_pooled, SSR₁, SSR₂, the F-statistic formula with degrees of freedom, the required CLM assumptions, and how to interpret the result.",
+        "5": "**For interpretation questions:**\n1. State \"ceteris paribus\" (or \"holding all other variables fixed\")\n2. Give magnitude with correct units and functional-form language (Δ vs %Δ)\n3. State expected sign with brief economic reasoning\n4. Note assumptions needed (GM conditions) for the interpretation to be valid\n\n**For testing questions:**\n1. H₀ and H₁ in terms of **true parameters** (not estimates)\n2. Test statistic formula in terms of estimates\n3. State any additional information needed (e.g. Cov(β̂₂, β̂₃))\n4. Distribution under H₀ with degrees of freedom\n5. Rejection rule: one-sided or two-sided, with correct critical value for your sample size\n6. Conclude: reject/fail to reject, and interpret in the context of the question\n\n**For OLS property proofs:**\n1. Plug the true model into the estimator expression\n2. Simplify algebraically (isolate β + remainder)\n3. Take conditional expectation E(·|X) or plim as appropriate\n4. Invoke the required assumption: E(u|X) = 0 for unbiasedness, or LLN for consistency\n5. If X is stochastic: apply LIE to obtain the unconditional result\n6. State the conclusion using the property name (unbiased / consistent / BLUE)\n\n**For Chow test questions:**\n1. State H₀ (all coefficients equal across groups) and H₁\n2. Describe the three regressions: pooled, sub-sample 1, sub-sample 2\n3. Write the F-statistic with correct numerator and denominator df\n4. State the distribution under H₀ and the CLM assumptions required\n5. Give the critical value, rejection rule, and interpretation",
+        "6": "**Estimation traps:**\n- Writing Cov(X,Y)/Var(X) for β̂₁ -- these are *population* moments. The estimator uses *sample* moments.\n- Writing E(X/Y) = E(X)/E(Y) -- false in general. Only plim(X/Y) = plim(X)/plim(Y) holds (Slutsky).\n- Omitting the LIE step when X is stochastic: you must first show E(β̂|X) = β, then apply E[E(β̂|X)] = E(β̂) = β.\n- Confusing (1/n)Σuᵢ = 0 (false, this is a random variable) with E(uᵢ) = 0 (an assumption).\n\n**Interpretation traps:**\n- Forgetting \"ceteris paribus\" -- the examiner marks this every year.\n- Treating R² as evidence of causality. R² measures goodness of fit, nothing about causal structure.\n- Dummy with log(Y): using β̂ × 100% instead of the exact formula (eᵝ̂ - 1) × 100%.\n- Saying multicollinearity causes bias or inconsistency. It only inflates standard errors (less precision). OLS remains unbiased and consistent under MLR.1--MLR.4.\n\n**Testing traps:**\n- Using z = 1.96 in small samples instead of the correct t_{n-k-1} critical value.\n- Not knowing when asymptotic tests apply: if normality is not assumed or robust SEs are used → N(0,1), not t.\n- Defaulting to two-sided tests when the question implies a direction (\"increases\", \"positive effect\" → one-sided).\n- Omitting the distribution, critical value, or rejection rule -- each is a separately marked step.\n\n**OVB and variable inclusion traps:**\n- Including an irrelevant variable: no bias, but larger SEs (loss of efficiency). Adjusted R² may fall.\n- Omitting a relevant variable: OVB. Direction = sign(β_omitted) × sign(Corr(X₁, X_omitted)).\n- Forgetting that OVB affects the coefficients of *included* variables, not the omitted one.\n\n**Chow test traps:**\n- Forgetting to state the CLM assumptions (especially homoskedasticity and normality) needed in *both* sub-samples.\n- Wrong degrees of freedom: numerator df = k (number of restrictions = number of parameters in one equation), denominator df = n - 2k.\n- Not explaining that the Chow test checks whether *all* coefficients differ, not just the intercept."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "The true model is yᵢ = β₁xᵢ + uᵢ with E(uᵢ|X) = 0. Show whether β̃₁ is unbiased. Steps: plug the model, condition on X, use E(uᵢ|X) = 0, invoke LIE.\n\n**Task 4 (10 min).** In the wage regression above, test joint significance of exper and exper². State the restricted and unrestricted models. Suppose SSR_ur = 85.3 and SSR_r = 93.1. Compute the F-statistic, state its distribution, give the critical value, and conclude.\n\n**Task 5 (11 min).** You suspect the wage equation differs for the public vs private sector (n₁ = 90, n₂ = 110). Describe the full Chow test: state hypotheses, the procedure for obtaining SSR_pooled, SSR₁, SSR₂, the F-statistic formula with degrees of freedom, the required CLM assumptions, and how to interpret the result."
+        }
+      ],
+      "feynmanText": "You want to know how something -- say, a company's stock price -- depends on various factors like profit, R&D spending, and marketing. Regression is the tool that lets you say: \"holding everything else fixed, a 1% increase in profit is associated with roughly a 0.5% increase in stock price.\"\n\nOLS (Ordinary Least Squares) finds the line (or surface, with multiple factors) that fits your data best by making the sum of squared prediction errors as small as possible. The slope coefficients are the answers to your questions. The intercept is where the line starts -- often not very meaningful on its own.\n\nBut can you trust the answer? Two big checks. First, the **t-test** asks: \"is this slope big enough relative to its uncertainty that it's probably real, not just noise?\" If the p-value is below 0.05, you take it seriously. Second, the **F-test** asks: \"do ALL these factors together explain anything?\" -- it tests the whole model at once.\n\nTo prove OLS gives you the right answer on average, you plug the true model into the estimator formula and show that the \"junk\" cancels out in expectation. That only works if the error term u is unrelated to your X variables -- the zero conditional mean assumption. If you've left out an important factor that correlates with X, your slope estimate is contaminated. That's called **omitted variable bias**, and it's the biggest threat to trusting regression results.\n\nFinally, functional forms matter. If both Y and X are in logs, the coefficient is an elasticity (percentage change for percentage change). If only Y is in logs and X is a dummy variable, you need the exact formula (e^β̂ − 1) × 100% to interpret it correctly -- not just β̂ × 100%.",
+      "feynmanKeyTerms": [
+        "t-test",
+        "F-test",
+        "omitted variable bias"
+      ],
+      "modelAnswer": "**For interpretation questions:**\n1. State \"ceteris paribus\" (or \"holding all other variables fixed\")\n2. Give magnitude with correct units and functional-form language (Δ vs %Δ)\n3. State expected sign with brief economic reasoning\n4. Note assumptions needed (GM conditions) for the interpretation to be valid\n\n**For testing questions:**\n1. H₀ and H₁ in terms of **true parameters** (not estimates)\n2. Test statistic formula in terms of estimates\n3. State any additional information needed (e.g. Cov(β̂₂, β̂₃))\n4. Distribution under H₀ with degrees of freedom\n5. Rejection rule: one-sided or two-sided, with correct critical value for your sample size\n6. Conclude: reject/fail to reject, and interpret in the context of the question\n\n**For OLS property proofs:**\n1. Plug the true model into the estimator expression\n2. Simplify algebraically (isolate β + remainder)\n3. Take conditional expectation E(·|X) or plim as appropriate\n4. Invoke the required assumption: E(u|X) = 0 for unbiasedness, or LLN for consistency\n5. If X is stochastic: apply LIE to obtain the unconditional result\n6. State the conclusion using the property name (unbiased / consistent / BLUE)\n\n**For Chow test questions:**\n1. State H₀ (all coefficients equal across groups) and H₁\n2. Describe the three regressions: pooled, sub-sample 1, sub-sample 2\n3. Write the F-statistic with correct numerator and denominator df\n4. State the distribution under H₀ and the CLM assumptions required\n5. Give the critical value, rejection rule, and interpretation",
+      "commonTraps": "**Estimation traps:**\n- Writing Cov(X,Y)/Var(X) for β̂₁ -- these are *population* moments. The estimator uses *sample* moments.\n- Writing E(X/Y) = E(X)/E(Y) -- false in general. Only plim(X/Y) = plim(X)/plim(Y) holds (Slutsky).\n- Omitting the LIE step when X is stochastic: you must first show E(β̂|X) = β, then apply E[E(β̂|X)] = E(β̂) = β.\n- Confusing (1/n)Σuᵢ = 0 (false, this is a random variable) with E(uᵢ) = 0 (an assumption).\n\n**Interpretation traps:**\n- Forgetting \"ceteris paribus\" -- the examiner marks this every year.\n- Treating R² as evidence of causality. R² measures goodness of fit, nothing about causal structure.\n- Dummy with log(Y): using β̂ × 100% instead of the exact formula (eᵝ̂ - 1) × 100%.\n- Saying multicollinearity causes bias or inconsistency. It only inflates standard errors (less precision). OLS remains unbiased and consistent under MLR.1--MLR.4.\n\n**Testing traps:**\n- Using z = 1.96 in small samples instead of the correct t_{n-k-1} critical value.\n- Not knowing when asymptotic tests apply: if normality is not assumed or robust SEs are used → N(0,1), not t.\n- Defaulting to two-sided tests when the question implies a direction (\"increases\", \"positive effect\" → one-sided).\n- Omitting the distribution, critical value, or rejection rule -- each is a separately marked step.\n\n**OVB and variable inclusion traps:**\n- Including an irrelevant variable: no bias, but larger SEs (loss of efficiency). Adjusted R² may fall.\n- Omitting a relevant variable: OVB. Direction = sign(β_omitted) × sign(Corr(X₁, X_omitted)).\n- Forgetting that OVB affects the coefficients of *included* variables, not the omitted one.\n\n**Chow test traps:**\n- Forgetting to state the CLM assumptions (especially homoskedasticity and normality) needed in *both* sub-samples.\n- Wrong degrees of freedom: numerator df = k (number of restrictions = number of parameters in one equation), denominator df = n - 2k.\n- Not explaining that the Chow test checks whether *all* coefficients differ, not just the intercept.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-08_ST3189_intro-ml-linear-regression.md",
+      "date": "2026-05-08",
+      "module": "ST3189",
+      "topicSlug": "intro-ml-linear-regression",
+      "title": "ST3189 - Intro ML + Linear Regression + Bayesian Inference (Exam Sheet)",
+      "sections": {
+        "0": "Machine learning is teaching a computer to make predictions by showing it examples instead of giving it explicit rules. You don't tell the computer \"if income > £50k and age > 30, approve the loan.\" Instead, you show it thousands of past loan decisions and let it figure out the pattern itself.\n\nEvery ML problem has three ingredients: **data** (the examples), a **model** (the pattern-finder), and a **loss function** (a score that tells the model how wrong it is, so it can improve). Training = adjusting the model to minimise the loss. The danger is **overfitting** -- the model memorises the training examples so perfectly that it fails on new data, like a student who memorises past exam answers word-for-word but can't handle a slightly different question.\n\nThe **bias-variance trade-off** is the core tension. A simple model (like a straight line) might be too rigid to capture the true pattern (high bias). A complex model (like a wiggly curve through every point) captures noise along with signal (high variance). The sweet spot is in between, and **cross-validation** helps you find it: split your data, train on part, test on the rest, and see which model complexity actually predicts well on data it hasn't seen.\n\n**Linear regression** fits a straight line (or plane) through data to predict a number. **Bayesian inference** flips the usual logic: instead of asking \"what's the single best parameter?\", it asks \"given the data, what's the probability distribution over all possible parameter values?\" This lets you combine prior beliefs with evidence. The exam's Q2 always asks you to do exactly this -- derive the posterior distribution, then show that the Bayesian answer connects to the frequentist one.",
+        "1": "**What is ML?** Methods that detect patterns in data and use them to predict future data (Murphy). Three components: **data**, **model** (input → output mapping), **cost/loss function** (minimised during training).\n\n**Supervised vs unsupervised:** Supervised uses labelled outputs — regression (continuous y) or classification (discrete y). Unsupervised uses unlabelled data — clustering, dimension reduction.\n\n**Bias-variance trade-off:** The central concept of the course.\n- **Bias** = error from oversimplified model (underfitting). High bias → misses true signal.\n- **Variance** = instability from model too flexible (overfitting). High variance → fits noise.\n- **MSE decomposition:** MSE(θ̂) = Var(θ̂) + [Bias(θ̂)]²\n- A biased estimator can beat an unbiased one on MSE if the variance reduction is large enough.\n\n**Train vs test error:** The goal is generalisation (low test error on unseen data). Training error always decreases with complexity. Test error has a U-shape.\n\n**Cross-validation methods:**\n\n| Method | Description | When to use |\n|---|---|---|\n| **Holdout** | Single train/test split | Quick but unstable (unlucky split risk) |\n| **K-fold CV** | Each of K folds serves as test once; average errors | Standard; K=5 or 10 typical |\n| **LOOCV** | K-fold with K=n; one observation left out each time | Small datasets; expensive |\n\n**The linear regression model:**\n\ny_i = β₀ + β₁x₁ᵢ + ··· + βₚxₚᵢ + εᵢ,  where εᵢ ~ N(0, σ²) iid\n\n- β₀ = mean y when all x = 0\n- βⱼ = expected change in y for one-unit increase in xⱼ, **holding other predictors fixed**\n- OLS / MLE: β̂ = (X'X)⁻¹X'y\n- Var(β̂) = σ̂²(X'X)⁻¹\n- Maximising likelihood ⟺ minimising RSS (sum of squared residuals)",
+        "2": "This is the single highest-yield topic. Q2 is always a 25-mark Bayesian inference question following an identical template.\n\n### The Bayesian workflow (memorise this skeleton)\n\n1. **Write the likelihood:** L(θ|x) = ∏ᵢ f(xᵢ|θ) — then drop constants and write ∝ form.\n2. **Jeffreys prior:** Compute Fisher information I(θ) = −E[∂²ℓ/∂θ²]. Then πⱼ(θ) ∝ I(θ)^(1/2). Often yields πⱼ(θ) ∝ 1 (flat).\n3. **Conjugate / Normal prior:** Given π(β) ~ N(0, ω²), compute posterior by completing the square.\n4. **Posterior = kernel recognition:** Multiply likelihood × prior, identify known distribution family.\n5. **Least squares:** Show that the LS estimator = the value maximising the likelihood. Penalised LS adds λβ² (ridge penalty).\n6. **Bayes estimator:** Posterior mean (= mode = median when posterior is Normal).\n7. **Connection:** Bayes estimator under Jeffreys prior = OLS/MLE. Bayes estimator under Normal prior = ridge with λ = σ²/ω².\n8. **Posterior predictive:** Integrate out θ from f(y_{n+1}|θ)π(θ|data).\n\n### Key formulas for the generic Q2 model: y_i = βh(xᵢ) + εᵢ\n\nEvery Q2 uses the model y_i = βh(xᵢ) + εᵢ where h(x) is some known function (exp(x), x², √x, log(x)):\n\n**Likelihood (always the same pattern):**\nL(β|x) ∝ exp[−(β²∑h(xᵢ)² − 2β∑yᵢh(xᵢ)) / (2σ²)]\n\n**Jeffreys prior:** πⱼ(β) ∝ 1 (flat prior — happens every time because the Fisher information is constant in β).\n\n**Posterior under Jeffreys prior:**\nβ|y,x ~ N(∑yᵢh(xᵢ) / ∑h(xᵢ)², σ² / ∑h(xᵢ)²)\n\n**Posterior under Normal(0, ω²) prior:**\nβ|y,x ~ N(ω²∑yᵢh(xᵢ) / (σ² + ω²∑h(xᵢ)²), σ²ω² / (σ² + ω²∑h(xᵢ)²))\n\n**LS estimator:** β̂_LS = ∑yᵢh(xᵢ) / ∑h(xᵢ)²\n**Penalised LS:** β̂_PLS = ∑yᵢh(xᵢ) / (λ + ∑h(xᵢ)²)\n\n**Connection:** Bayes mean under Jeffreys = β̂_LS. Bayes mean under Normal prior = β̂_PLS when ω² = σ²/λ.\n\n### Key formulas for non-linear Bayesian (Rayleigh, Gamma, etc.)\n\nWhen the model is not linear regression but a sampling distribution:\n\n**Conjugate analysis pattern:**\n- Likelihood: L(θ|x) ∝ θⁿ exp(−θ·S) where S = sufficient statistic\n- Gamma(α, β) prior → Gamma(n+α, β+S) posterior\n- Jeffreys prior: πⱼ(θ) ∝ θ⁻¹ → Gamma(n, S) posterior\n- Bayes estimator (posterior mean): (n+α)/(β+S) or n/S\n\n**Normal (Laplace) approximation to posterior:**\n- Find posterior mode θ_M by setting ∂ℓ/∂θ = 0\n- Compute H = −∂²ℓ/∂θ² at θ_M\n- Posterior ≈ N(θ_M, 1/H)",
+        "3": "**Model:** yᵢ = β√xᵢ + εᵢ, εᵢ ~ N(0, σ²), so h(x) = √x.\n\n**(a) Likelihood:**\nL(β|x) ∝ exp[−(β²∑xᵢ − 2β∑yᵢ√xᵢ) / (2σ²)]\n\n**(b) Jeffreys prior:**\nℓ = −(β²∑xᵢ − 2β∑yᵢ√xᵢ) / (2σ²)\n∂²ℓ/∂β² = −∑xᵢ/σ² → I(β) = ∑xᵢ/σ²\nπⱼ(β) ∝ 1\n\nPosterior: β|y,x ~ N(∑yᵢ√xᵢ / ∑xᵢ, σ²/∑xᵢ)\n\n**(c) Normal(0, ω²) prior:**\nPosterior: β|y,x ~ N(ω²∑yᵢ√xᵢ / (σ² + ω²∑xᵢ), σ²ω² / (σ² + ω²∑xᵢ))\n\n**(d) LS estimator:**\nβ̂_LS = ∑yᵢ√xᵢ / ∑xᵢ (same as MLE — show by equating ∂RSS/∂β = 0 to ∂ℓ/∂β = 0)\nβ̂_PLS = ∑yᵢ√xᵢ / (λ + ∑xᵢ)\n\n**(e) Bayes estimators:**\nJeffreys → posterior mean = β̂_LS ✓\nNormal prior → posterior mean = β̂_PLS when ω² = σ²/λ ✓",
+        "4": "1. **(8 min)** Define bias, variance, and MSE. State the MSE decomposition. Give one example where a biased estimator beats an unbiased one.\n2. **(7 min)** Describe K-fold CV. What is LOOCV? When is each preferred?\n3. **(15 min)** Full Q2 drill: Given y_i = β·log(xᵢ) + εᵢ with εᵢ ~ N(0, σ²), derive: (a) likelihood, (b) Jeffreys prior + posterior, (c) Normal(0,ω²) posterior, (d) LS and penalised LS estimators, (e) compare Bayes estimators to LS.\n4. **(10 min)** True/False with one-sentence justification: (i) A classifier trained on less data is more likely to overfit. (ii) BIC selects larger models than AIC for large n. (iii) K-fold CV cannot be applied to time-dependent data.\n5. **(10 min)** State the difference between a confidence interval and a credible interval. Derive a 95% credible interval for θ given a Gamma(n+α, β+S) posterior.",
+        "5": "### For Q2 Bayesian derivation (25 marks):\n\n```\nSTEP 1: Write the likelihood. Factor out constants. Express as ∝ exp(quadratic in β).\n         [3 marks]\n\nSTEP 2: Log-likelihood. First derivative (score). Second derivative.\n         Fisher information I(β). Jeffreys prior πⱼ(β) ∝ I(β)^(1/2).\n         [5-6 marks]\n\nSTEP 3: Multiply Jeffreys × likelihood. Complete the square in β.\n         Recognise Normal kernel. State mean and variance.\n         [included in step 2]\n\nSTEP 4: Multiply Normal(0,ω²) prior × likelihood. Complete the square.\n         Recognise Normal kernel. State mean and variance.\n         [5-6 marks]\n\nSTEP 5: LS estimator: differentiate RSS, set to 0, solve.\n         Show it equals the MLE (same first-order condition).\n         Penalised LS: differentiate RSS + λβ², solve.\n         Compare: PLS has extra λ in denominator → shrinkage.\n         [4-5 marks]\n\nSTEP 6: Bayes estimators = posterior means.\n         Compare: Jeffreys posterior mean = LS.\n         Normal prior posterior mean = PLS with ω² = σ²/λ.\n         [5 marks]\n\n(If part (f) exists): Posterior predictive.\n         Write y_{n+1}|β ~ N(βh(x_{n+1}), σ²).\n         Use β|data ~ N(m, v). Then y_{n+1}|data ~ N(m·h(x_{n+1}), σ² + v·h(x_{n+1})²).\n         [4 marks]\n```\n\n### For True/False conceptual (9 marks per set):\n\n```\n1. State TRUE or FALSE clearly.\n2. One-sentence justification — precise and technical.\n3. Do NOT write lengthy explanations.\n```",
+        "6": "- **Forgetting to show MLE = LS:** The examiner always asks you to \"show that the LS estimator also maximises the likelihood.\" You must explicitly show that setting ∂RSS/∂β = 0 gives the same equation as ∂ℓ/∂β = 0.\n- **Wrong sign in the exponent:** The likelihood has a **negative** exponent. Double-check signs.\n- **Not completing the square properly:** The key algebra step. Practice until automatic: β² − 2β(A/B) = (β − A/B)² − (A/B)².\n- **Forgetting the ω² = σ²/λ connection:** The examiner specifically rewards stating this link between Bayesian and frequentist shrinkage.\n- **True/False: writing too much.** The examiner says \"one sentence.\" Organise thoughts first. Long answers waste time and may contain errors.\n- **CV on time series data:** Basic K-fold CV breaks temporal dependence. This was poorly answered (2020 commentary). State \"theoretically cannot apply basic K-fold to time-dependent data.\"\n- **Random forests misconception:** Students frequently say RF discards \"internal nodes\" or \"observations\" — the correct answer is that a **random subset of predictors** (not nodes/observations) is considered at each split.\n- **Memorising plots from commentaries:** The examiner explicitly warns that copying plots from past commentaries without understanding is \"very easy to spot\" and pointless."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Define bias, variance, and MSE. State the MSE decomposition. Give one example where a biased estimator beats an unbiased one."
+        },
+        {
+          "time_minutes": 7,
+          "text": "Describe K-fold CV. What is LOOCV? When is each preferred?"
+        },
+        {
+          "time_minutes": 15,
+          "text": "Full Q2 drill: Given y_i = β·log(xᵢ) + εᵢ with εᵢ ~ N(0, σ²), derive: (a) likelihood, (b) Jeffreys prior + posterior, (c) Normal(0,ω²) posterior, (d) LS and penalised LS estimators, (e) compare Bayes estimators to LS."
+        },
+        {
+          "time_minutes": 10,
+          "text": "True/False with one-sentence justification: (i) A classifier trained on less data is more likely to overfit. (ii) BIC selects larger models than AIC for large n. (iii) K-fold CV cannot be applied to time-dependent data."
+        },
+        {
+          "time_minutes": 10,
+          "text": "State the difference between a confidence interval and a credible interval. Derive a 95% credible interval for θ given a Gamma(n+α, β+S) posterior."
+        }
+      ],
+      "feynmanText": "Machine learning is teaching a computer to make predictions by showing it examples instead of giving it explicit rules. You don't tell the computer \"if income > £50k and age > 30, approve the loan.\" Instead, you show it thousands of past loan decisions and let it figure out the pattern itself.\n\nEvery ML problem has three ingredients: **data** (the examples), a **model** (the pattern-finder), and a **loss function** (a score that tells the model how wrong it is, so it can improve). Training = adjusting the model to minimise the loss. The danger is **overfitting** -- the model memorises the training examples so perfectly that it fails on new data, like a student who memorises past exam answers word-for-word but can't handle a slightly different question.\n\nThe **bias-variance trade-off** is the core tension. A simple model (like a straight line) might be too rigid to capture the true pattern (high bias). A complex model (like a wiggly curve through every point) captures noise along with signal (high variance). The sweet spot is in between, and **cross-validation** helps you find it: split your data, train on part, test on the rest, and see which model complexity actually predicts well on data it hasn't seen.\n\n**Linear regression** fits a straight line (or plane) through data to predict a number. **Bayesian inference** flips the usual logic: instead of asking \"what's the single best parameter?\", it asks \"given the data, what's the probability distribution over all possible parameter values?\" This lets you combine prior beliefs with evidence. The exam's Q2 always asks you to do exactly this -- derive the posterior distribution, then show that the Bayesian answer connects to the frequentist one.",
+      "feynmanKeyTerms": [
+        "data",
+        "model",
+        "loss function",
+        "overfitting",
+        "bias-variance trade-off",
+        "cross-validation",
+        "Linear regression",
+        "Bayesian inference"
+      ],
+      "modelAnswer": "### For Q2 Bayesian derivation (25 marks):\n\n```\nSTEP 1: Write the likelihood. Factor out constants. Express as ∝ exp(quadratic in β).\n         [3 marks]\n\nSTEP 2: Log-likelihood. First derivative (score). Second derivative.\n         Fisher information I(β). Jeffreys prior πⱼ(β) ∝ I(β)^(1/2).\n         [5-6 marks]\n\nSTEP 3: Multiply Jeffreys × likelihood. Complete the square in β.\n         Recognise Normal kernel. State mean and variance.\n         [included in step 2]\n\nSTEP 4: Multiply Normal(0,ω²) prior × likelihood. Complete the square.\n         Recognise Normal kernel. State mean and variance.\n         [5-6 marks]\n\nSTEP 5: LS estimator: differentiate RSS, set to 0, solve.\n         Show it equals the MLE (same first-order condition).\n         Penalised LS: differentiate RSS + λβ², solve.\n         Compare: PLS has extra λ in denominator → shrinkage.\n         [4-5 marks]\n\nSTEP 6: Bayes estimators = posterior means.\n         Compare: Jeffreys posterior mean = LS.\n         Normal prior posterior mean = PLS with ω² = σ²/λ.\n         [5 marks]\n\n(If part (f) exists): Posterior predictive.\n         Write y_{n+1}|β ~ N(βh(x_{n+1}), σ²).\n         Use β|data ~ N(m, v). Then y_{n+1}|data ~ N(m·h(x_{n+1}), σ² + v·h(x_{n+1})²).\n         [4 marks]\n```\n\n### For True/False conceptual (9 marks per set):\n\n```\n1. State TRUE or FALSE clearly.\n2. One-sentence justification — precise and technical.\n3. Do NOT write lengthy explanations.\n```",
+      "commonTraps": "- **Forgetting to show MLE = LS:** The examiner always asks you to \"show that the LS estimator also maximises the likelihood.\" You must explicitly show that setting ∂RSS/∂β = 0 gives the same equation as ∂ℓ/∂β = 0.\n- **Wrong sign in the exponent:** The likelihood has a **negative** exponent. Double-check signs.\n- **Not completing the square properly:** The key algebra step. Practice until automatic: β² − 2β(A/B) = (β − A/B)² − (A/B)².\n- **Forgetting the ω² = σ²/λ connection:** The examiner specifically rewards stating this link between Bayesian and frequentist shrinkage.\n- **True/False: writing too much.** The examiner says \"one sentence.\" Organise thoughts first. Long answers waste time and may contain errors.\n- **CV on time series data:** Basic K-fold CV breaks temporal dependence. This was poorly answered (2020 commentary). State \"theoretically cannot apply basic K-fold to time-dependent data.\"\n- **Random forests misconception:** Students frequently say RF discards \"internal nodes\" or \"observations\" — the correct answer is that a **random subset of predictors** (not nodes/observations) is considered at each split.\n- **Memorising plots from commentaries:** The examiner explicitly warns that copying plots from past commentaries without understanding is \"very easy to spot\" and pointless.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-09_EC2020_heteroskedasticity.md",
+      "date": "2026-05-09",
+      "module": "EC2020",
+      "topicSlug": "heteroskedasticity",
+      "title": "EC2020 — Heteroskedasticity (Exam Revision Sheet)",
+      "sections": {
+        "0": "When you run a regression, you're assuming the \"noise\" around your line is roughly the same size everywhere. Sometimes that's wrong. Imagine predicting household spending from income: poor households spend pretty predictably (there's only so much variation when you're buying essentials), but rich households vary wildly (some save, some splurge on yachts). The scatter around your line is thin on the left and fat on the right. That's heteroskedasticity -- the spread of the errors changes depending on where you are along X.\n\nHere's the good news: your coefficient estimates (the slopes) are still correct on average. OLS doesn't lie about the direction or size of the effect. Here's the bad news: the standard errors -- the numbers you use to decide \"is this statistically significant?\" -- are wrong. They could be too small (making you think something is significant when it isn't) or too big (making you miss a real effect). So your t-tests, F-tests, and confidence intervals are all unreliable.\n\nThe fix is simple: use **robust standard errors** (also called White standard errors). These adjust the standard error formula to account for the uneven spread. With robust SEs, you then use a normal distribution (z-test with 1.96) instead of the t-distribution for critical values, because the correction is an asymptotic (large-sample) result.\n\nHow do you test whether heteroskedasticity is actually present? The **Breusch-Pagan test** regresses your squared residuals on the original X variables. If the X's can predict how big the residuals are, you have heteroskedasticity. The **White test** is even more general -- it also throws in squares and cross-products of the X's, catching patterns BP might miss.",
+        "1": "**Definition.** Heteroskedasticity means Var(u | X) depends on X. The error variance is not a constant σ² across observations — it changes with the level of one or more regressors.\n\n**Consequences for OLS under heteroskedasticity:**\n\n| Property | Status | Reason |\n|---|---|---|\n| Unbiased | YES | E(β̂) = β still holds; unbiasedness needs E(u\\|X) = 0, not constant variance |\n| Consistent | YES | plim β̂ = β; consistency also does not require homoskedasticity |\n| BLUE | NO | Gauss-Markov fails; OLS is no longer the minimum-variance linear unbiased estimator |\n| SEs valid | NO | Conventional SEs assume Var(u\\|X) = σ²; when this fails, all SEs are wrong |\n| t / F tests valid | NO | Invalid SEs → invalid test statistics → unreliable p-values and CIs |\n\n**Key distinction from autocorrelation.** Heteroskedasticity is a cross-sectional variance problem (different observations have different error variances). Autocorrelation is a time-series problem (errors are correlated across time periods). Both violate Gauss-Markov, both invalidate conventional SEs, but they arise in different data structures and require different diagnostics.\n\n**Inherent heteroskedasticity of the Linear Probability Model (LPM).**\nWhen y is binary (0/1), the LPM gives: Var(u | x) = Pr(y=1|x) · (1 − Pr(y=1|x)) = p(x)(1−p(x)). This depends on x by construction — heteroskedasticity is guaranteed, not merely possible. This is one motivation for using Probit/Logit instead.\n\n**Three solutions:**\n\n1. **Robust (White/Huber-White) standard errors** — replace conventional SEs with heteroskedasticity-robust SEs. Coefficients unchanged; only SEs, t-stats, and CIs change. Requires asymptotic justification → use N(0,1) critical values, not t-distribution.\n2. **WLS / GLS** — if the form of Var(u|X) = σ²h(X) is known, divide the entire equation by √h(X). The transformed model has homoskedastic errors → OLS on transformed model is BLUE.\n3. **Model transformation** — e.g., using log(y) instead of y often stabilises variance because proportional variation becomes additive. Not a guaranteed fix, but commonly effective.\n\n**Asymptotic testing with robust SEs.** When robust SEs are used, inference is justified by large-sample theory. Test statistics are compared to N(0,1) (for single coefficients) or χ²_q (for joint restrictions), not t or exact F distributions.",
+        "2": "### Breusch-Pagan (BP) Test\n\n**Purpose:** Test whether error variance is related to the regressors.\n\n**Steps:**\n1. Estimate the original model by OLS. Obtain residuals û.\n2. Run auxiliary regression: û² = δ₀ + δ₁X₁ + δ₂X₂ + ... + δₖXₖ + v\n3. Test H₀: δ₁ = δ₂ = ... = δₖ = 0 (homoskedasticity)\n\n**Test statistics (either is valid):**\n- F-test: F = (R²_aux / k) / ((1 − R²_aux) / (n − k − 1))  ~  F_{k, n−k−1}\n- LM test: LM = n · R²_aux  ~  χ²_k\n\n**Rejection rule:** Reject H₀ if F > F_{k, n−k−1, α} or LM > χ²_{k, α}\n\n### White Test\n\n**Purpose:** More general test — does not assume a specific functional form for heteroskedasticity.\n\n**Steps:**\n1. Same as BP Step 1.\n2. Auxiliary regression: û² = δ₀ + δ₁X₁ + ... + δₖXₖ + δ_{k+1}X₁² + ... + δ_{2k}Xₖ² + δ_{2k+1}X₁X₂ + ... + v\n   (Include all regressors, their squares, AND all pairwise cross-products)\n3. Test H₀: all slope δ's = 0\n\n**Test statistic:** LM = n · R²_aux  ~  χ²_q, where q = total number of regressors in auxiliary regression.\n\n**Key difference from BP:** White includes squares and cross-products → more general (detects nonlinear heteroskedasticity) but uses more degrees of freedom. BP is more powerful when heteroskedasticity is linear in the regressors.\n\n### Weighted Least Squares (WLS)\n\n**Setup:** Suppose Var(u | X) = σ² · h(X) where h(X) is known.\n\n**Transformation:** Divide the entire equation by √h(X):\n\nyᵢ / √h(Xᵢ) = β₀ / √h(Xᵢ) + β₁X₁ᵢ / √h(Xᵢ) + ... + uᵢ / √h(Xᵢ)\n\nLet uᵢ* = uᵢ / √h(Xᵢ). Then:\n\nVar(uᵢ* | X) = Var(uᵢ | X) / h(Xᵢ) = σ²h(Xᵢ) / h(Xᵢ) = σ²  ✓ (homoskedastic)\n\nOLS on the transformed model is BLUE.\n\n**Common case:** If Var(u | X) = σ²X², then h(X) = X², √h = X. Divide everything by X.\n\n### Robust Standard Errors\n\nse_robust(β̂ⱼ) replaces the conventional se(β̂ⱼ). The coefficient estimates β̂ⱼ are unchanged — only the standard errors change. All hypothesis tests then use:\n- Single coefficient: t_robust = β̂ⱼ / se_robust(β̂ⱼ), compare to N(0,1)\n- Joint test: use heteroskedasticity-robust F-statistic or χ²_q",
+        "3": "**Based on 2023 ZA Q7 — Movie ratings on IMDb.**\n\n**Estimated model (robust SEs in parentheses):**\n\nlog(Ratingsᵢ) = 0.123 + 1.51 log(costᵢ) + 0.507 SuperStarsᵢ + 0.501 Oscarsᵢ  \n                (0.114)  (0.231)              (0.156)              (0.123)\n\nn = 645, R² = 0.458\n\n**Context:** A manager claims that ratings are more (or less) variable for high-cost movies. This is a claim about heteroskedasticity — that Var(u | cost) changes with cost.\n\n### Testing for heteroskedasticity\n\n**BP test:**\n1. Run OLS on original model → obtain û\n2. Auxiliary regression: û² = δ₀ + δ₁ log(cost) + δ₂ SuperStars + δ₃ Oscars + v\n3. H₀: δ₁ = δ₂ = δ₃ = 0\n4. F ~ F_{3, 641} or LM = 645 · R²_aux ~ χ²_3\n5. Reject H₀ at 5% if F > 2.62 (approx) or LM > 7.815\n\n**White test:**\n1. Same residuals û\n2. Auxiliary regression includes: log(cost), SuperStars, Oscars, [log(cost)]², SuperStars², Oscars², log(cost)·SuperStars, log(cost)·Oscars, SuperStars·Oscars — that is 9 regressors\n3. H₀: all 9 slope coefficients = 0\n4. LM = 645 · R²_aux ~ χ²_9\n5. Reject H₀ at 5% if LM > 16.919\n\n### Important observation\n\nThe model already uses robust SEs and a log transformation. This means heteroskedasticity is already accounted for in inference. However, testing is still useful:\n- If H₀ is not rejected → homoskedasticity may hold → conventional SEs are valid and may actually be smaller (more efficient) than robust SEs\n- If H₀ is rejected → confirms that robust SEs were necessary\n- Robust SEs are not free: when homoskedasticity holds, they can be larger than conventional SEs, leading to less precise inference",
+        "4": "**Task 1 (6 min).** Define heteroskedasticity. State its consequences for OLS estimation: is OLS still unbiased? Consistent? Efficient (BLUE)? Are conventional standard errors valid? Are t-tests and F-tests reliable?\n\n**Task 2 (8 min).** Consider the model y = β₀ + β₁X₁ + β₂X₂ + β₃X₃ + u. Describe the Breusch-Pagan test for heteroskedasticity. Write the auxiliary regression, state H₀, give both test statistics and their distributions, and state the rejection rule at 5%.\n\n**Task 3 (8 min).** For the same model, describe the White test. How does the auxiliary regression differ from BP? How many regressors appear? What advantage does the White test have over BP? What is its disadvantage?\n\n**Task 4 (10 min).** Suppose Var(u | X) = σ²X₁². Show how to transform the model to obtain BLUE estimates via WLS. Write the transformed equation explicitly. Verify that the transformed error is homoskedastic.\n\n**Task 5 (8 min).** A colleague presents two sets of regression output: one with conventional SEs, one with robust SEs. For one coefficient, the conventional t-stat is 2.45 (significant at 5%) but the robust t-stat is 1.78 (not significant at 5%). Explain why this can happen. Which output should the colleague trust? What does this suggest about heteroskedasticity in the data?",
+        "5": "**Template for \"test for heteroskedasticity\" questions (the most common format):**\n\n1. **Define:** Heteroskedasticity means Var(u | X) ≠ constant σ². The error variance changes across observations, typically depending on one or more regressors.\n\n2. **State consequences:** OLS remains unbiased and consistent, but is no longer BLUE. Conventional standard errors are invalid → t-tests, F-tests, and confidence intervals are all unreliable.\n\n3. **Choose and specify test:**\n   - BP: auxiliary regression of û² on all original regressors\n   - White: auxiliary regression of û² on all regressors, their squares, and all cross-products\n   - Write the auxiliary regression equation explicitly\n\n4. **State hypotheses:** H₀: all slope coefficients in the auxiliary regression = 0 (homoskedasticity). H₁: at least one slope ≠ 0.\n\n5. **Compute and state test statistic:**\n   - F = (R²_aux / q) / ((1 − R²_aux) / (n − q − 1)) ~ F_{q, n−q−1}\n   - or LM = n · R²_aux ~ χ²_q\n\n6. **Decision rule:** Reject H₀ if the statistic exceeds the critical value at the chosen significance level.\n\n7. **If H₀ rejected → recommend remedy:**\n   - Use robust (White) standard errors for valid inference\n   - Or use WLS if variance form is known\n   - Note: with robust SEs, use asymptotic critical values — N(0,1) for single coefficient tests, χ²_q for joint tests\n\n**Template for \"apply WLS\" questions:**\n\n1. State the assumed variance form: Var(u|X) = σ²h(X)\n2. Identify h(X) and compute √h(X)\n3. Divide the entire equation by √h(X) — write every term\n4. Define uᵢ* = uᵢ / √h(Xᵢ) and show Var(uᵢ*|X) = σ²\n5. Conclude: OLS on the transformed model is BLUE",
+        "6": "**Trap 1 — \"Heteroskedasticity biases OLS coefficients.\"**\nFALSE. OLS is still unbiased and consistent under heteroskedasticity. What fails is efficiency (not BLUE) and validity of standard errors. Never say β̂ is biased due to heteroskedasticity.\n\n**Trap 2 — \"Heteroskedasticity causes inconsistency.\"**\nFALSE. plim β̂ = β regardless of heteroskedasticity. Consistency requires E(u|X) = 0, which is unrelated to the variance assumption.\n\n**Trap 3 — Using the Goldfeld-Quandt test.**\nThis test is no longer in the 2022 syllabus (Schafgans & Komarova). Use only BP or White. If the exam asks \"describe a test,\" default to BP (simpler) unless told otherwise.\n\n**Trap 4 — Forgetting that robust SEs require asymptotic critical values.**\nWhen you use robust standard errors, you must compare t-statistics to N(0,1) critical values (1.645, 1.960, 2.576), not the t-distribution. The justification for robust SEs is asymptotic, so exact small-sample t-distributions do not apply.\n\n**Trap 5 — \"A large SE proves heteroskedasticity.\"**\nA large standard error can result from multicollinearity, small sample size, or low variation in the regressor. A large SE alone says nothing about heteroskedasticity. Diagnosis requires a formal test (BP or White) or inspection of residual plots.\n\n**Trap 6 — Not writing the auxiliary regression equation.**\nExaminers expect you to write it out. Don't just say \"regress û² on the regressors.\" Write: û² = δ₀ + δ₁X₁ + δ₂X₂ + δ₃X₃ + v. For White, also write out the squared terms and cross-products.\n\n**Trap 7 — Confusing BP and White tests.**\nBP: auxiliary regression includes only the original regressors (k terms). White: includes regressors, their squares, and all pairwise cross-products (more terms, more df consumed). White is more general (detects nonlinear forms of heteroskedasticity) but less powerful when BP's simpler specification is correct.\n\n**Trap 8 — Forgetting LPM heteroskedasticity.**\nThe Linear Probability Model has heteroskedasticity by construction: Var(u|x) = p(x)(1 − p(x)), where p(x) = Pr(y=1|x). Since p(x) depends on x, the variance depends on x. If an exam question involves LPM, mention this. It is a reason to prefer Probit/Logit.\n\n**Trap 9 — After WLS, not verifying homoskedasticity.**\nWhen you transform the model for WLS, you must show that the transformed error uᵢ* = uᵢ/√h(Xᵢ) has constant variance: Var(uᵢ*|X) = Var(uᵢ|X)/h(Xᵢ) = σ²h(Xᵢ)/h(Xᵢ) = σ². Examiners award marks for this verification step.\n\n**Trap 10 — Using robust SEs unnecessarily.**\nIf homoskedasticity actually holds, robust SEs can be larger than conventional SEs, leading to wider confidence intervals and lower power. Robust SEs are not \"always better\" — they are a safeguard when heteroskedasticity is present or suspected, but they come at a cost in efficiency when the classical assumptions hold."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "When you run a regression, you're assuming the \"noise\" around your line is roughly the same size everywhere. Sometimes that's wrong. Imagine predicting household spending from income: poor households spend pretty predictably (there's only so much variation when you're buying essentials), but rich households vary wildly (some save, some splurge on yachts). The scatter around your line is thin on the left and fat on the right. That's heteroskedasticity -- the spread of the errors changes depending on where you are along X.\n\nHere's the good news: your coefficient estimates (the slopes) are still correct on average. OLS doesn't lie about the direction or size of the effect. Here's the bad news: the standard errors -- the numbers you use to decide \"is this statistically significant?\" -- are wrong. They could be too small (making you think something is significant when it isn't) or too big (making you miss a real effect). So your t-tests, F-tests, and confidence intervals are all unreliable.\n\nThe fix is simple: use **robust standard errors** (also called White standard errors). These adjust the standard error formula to account for the uneven spread. With robust SEs, you then use a normal distribution (z-test with 1.96) instead of the t-distribution for critical values, because the correction is an asymptotic (large-sample) result.\n\nHow do you test whether heteroskedasticity is actually present? The **Breusch-Pagan test** regresses your squared residuals on the original X variables. If the X's can predict how big the residuals are, you have heteroskedasticity. The **White test** is even more general -- it also throws in squares and cross-products of the X's, catching patterns BP might miss.",
+      "feynmanKeyTerms": [
+        "robust standard errors",
+        "Breusch-Pagan test",
+        "White test"
+      ],
+      "modelAnswer": "**Template for \"test for heteroskedasticity\" questions (the most common format):**\n\n1. **Define:** Heteroskedasticity means Var(u | X) ≠ constant σ². The error variance changes across observations, typically depending on one or more regressors.\n\n2. **State consequences:** OLS remains unbiased and consistent, but is no longer BLUE. Conventional standard errors are invalid → t-tests, F-tests, and confidence intervals are all unreliable.\n\n3. **Choose and specify test:**\n   - BP: auxiliary regression of û² on all original regressors\n   - White: auxiliary regression of û² on all regressors, their squares, and all cross-products\n   - Write the auxiliary regression equation explicitly\n\n4. **State hypotheses:** H₀: all slope coefficients in the auxiliary regression = 0 (homoskedasticity). H₁: at least one slope ≠ 0.\n\n5. **Compute and state test statistic:**\n   - F = (R²_aux / q) / ((1 − R²_aux) / (n − q − 1)) ~ F_{q, n−q−1}\n   - or LM = n · R²_aux ~ χ²_q\n\n6. **Decision rule:** Reject H₀ if the statistic exceeds the critical value at the chosen significance level.\n\n7. **If H₀ rejected → recommend remedy:**\n   - Use robust (White) standard errors for valid inference\n   - Or use WLS if variance form is known\n   - Note: with robust SEs, use asymptotic critical values — N(0,1) for single coefficient tests, χ²_q for joint tests\n\n**Template for \"apply WLS\" questions:**\n\n1. State the assumed variance form: Var(u|X) = σ²h(X)\n2. Identify h(X) and compute √h(X)\n3. Divide the entire equation by √h(X) — write every term\n4. Define uᵢ* = uᵢ / √h(Xᵢ) and show Var(uᵢ*|X) = σ²\n5. Conclude: OLS on the transformed model is BLUE",
+      "commonTraps": "**Trap 1 — \"Heteroskedasticity biases OLS coefficients.\"**\nFALSE. OLS is still unbiased and consistent under heteroskedasticity. What fails is efficiency (not BLUE) and validity of standard errors. Never say β̂ is biased due to heteroskedasticity.\n\n**Trap 2 — \"Heteroskedasticity causes inconsistency.\"**\nFALSE. plim β̂ = β regardless of heteroskedasticity. Consistency requires E(u|X) = 0, which is unrelated to the variance assumption.\n\n**Trap 3 — Using the Goldfeld-Quandt test.**\nThis test is no longer in the 2022 syllabus (Schafgans & Komarova). Use only BP or White. If the exam asks \"describe a test,\" default to BP (simpler) unless told otherwise.\n\n**Trap 4 — Forgetting that robust SEs require asymptotic critical values.**\nWhen you use robust standard errors, you must compare t-statistics to N(0,1) critical values (1.645, 1.960, 2.576), not the t-distribution. The justification for robust SEs is asymptotic, so exact small-sample t-distributions do not apply.\n\n**Trap 5 — \"A large SE proves heteroskedasticity.\"**\nA large standard error can result from multicollinearity, small sample size, or low variation in the regressor. A large SE alone says nothing about heteroskedasticity. Diagnosis requires a formal test (BP or White) or inspection of residual plots.\n\n**Trap 6 — Not writing the auxiliary regression equation.**\nExaminers expect you to write it out. Don't just say \"regress û² on the regressors.\" Write: û² = δ₀ + δ₁X₁ + δ₂X₂ + δ₃X₃ + v. For White, also write out the squared terms and cross-products.\n\n**Trap 7 — Confusing BP and White tests.**\nBP: auxiliary regression includes only the original regressors (k terms). White: includes regressors, their squares, and all pairwise cross-products (more terms, more df consumed). White is more general (detects nonlinear forms of heteroskedasticity) but less powerful when BP's simpler specification is correct.\n\n**Trap 8 — Forgetting LPM heteroskedasticity.**\nThe Linear Probability Model has heteroskedasticity by construction: Var(u|x) = p(x)(1 − p(x)), where p(x) = Pr(y=1|x). Since p(x) depends on x, the variance depends on x. If an exam question involves LPM, mention this. It is a reason to prefer Probit/Logit.\n\n**Trap 9 — After WLS, not verifying homoskedasticity.**\nWhen you transform the model for WLS, you must show that the transformed error uᵢ* = uᵢ/√h(Xᵢ) has constant variance: Var(uᵢ*|X) = Var(uᵢ|X)/h(Xᵢ) = σ²h(Xᵢ)/h(Xᵢ) = σ². Examiners award marks for this verification step.\n\n**Trap 10 — Using robust SEs unnecessarily.**\nIf homoskedasticity actually holds, robust SEs can be larger than conventional SEs, leading to wider confidence intervals and lower power. Robust SEs are not \"always better\" — they are a safeguard when heteroskedasticity is present or suspected, but they come at a cost in efficiency when the classical assumptions hold.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-10_ST3189_classification.md",
+      "date": "2026-05-10",
+      "module": "ST3189",
+      "topicSlug": "classification",
+      "title": "ST3189 - Classification + Generative Models (Exam Sheet)",
+      "sections": {
+        "0": "Classification is predicting which category something belongs to rather than predicting a number. Will this email be spam or not? Will this patient have the disease or not? Will this customer default on their loan?\n\nThere are two fundamentally different ways to build a classifier. The **discriminative** approach learns the boundary directly -- it asks \"given these features, which class is more likely?\" Logistic regression does this by fitting an S-shaped curve that outputs a probability between 0 and 1. The **generative** approach is more ambitious: it learns what each class \"looks like\" separately, then uses Bayes' theorem to figure out which class a new observation probably came from. LDA and QDA work this way -- they assume each class follows a bell curve (Normal distribution) and then calculate which bell curve the new point is most likely under.\n\nWhy would you ever use the harder generative approach? Because it can do things discriminative models can't. If you've built a generative model of \"what spam looks like\" and \"what real email looks like\", you can generate synthetic examples from each class. A logistic regression can only classify -- it can't generate.\n\n**K-nearest neighbours** is the simplest classifier: to classify a new point, just look at the K closest training points and take a majority vote. K=1 gives zero training error (every point is its own nearest neighbour) but often high test error. As K increases, the decision boundary smooths out -- more bias, less variance.\n\nThe hardest part of classification isn't building the model -- it's **evaluating** it correctly. Accuracy is misleading when classes are imbalanced (a model that always says \"no disease\" is 99% accurate if only 1% of people have the disease, but it's useless). Sensitivity, specificity, and the ROC curve give a much more honest picture.",
+        "1": "**Discriminative vs generative classifiers:**\n- **Discriminative:** Model P(y|X) directly. Examples: logistic regression, SVM.\n- **Generative:** Model P(X|y) and P(y) separately, then use Bayes' rule for P(y|X). Examples: LDA, QDA, naive Bayes.\n\n**Why not linear regression for classification?** Predictions not bounded in [0,1]; outliers can distort fit; logistic/sigmoid gives calibrated probabilities.\n\n**Logistic regression:**\n- Sigmoid: σ(z) = 1/(1 + e⁻ᶻ)\n- Model: log(π/(1−π)) = Xβ, so π = σ(Xβ)\n- βⱼ = change in **log-odds** per unit increase in xⱼ\n- Odds ratio = exp(βⱼ) for one-unit change\n- MLE: no closed form — maximise log-likelihood via Newton-Raphson / gradient descent\n\n**LDA (Linear Discriminant Analysis):**\n- Assume X|y=k ~ N(μₖ, Σ) with **common** covariance Σ\n- Decision boundary is **linear** in X\n- Classify to argmax_k [log π_k − ½(x−μₖ)'Σ⁻¹(x−μₖ)]\n\n**QDA (Quadratic Discriminant Analysis):**\n- Assume X|y=k ~ N(μₖ, Σₖ) with **class-specific** Σₖ\n- Decision boundary is **quadratic** in X\n- Can produce non-quadratic boundaries if polynomial features are added as covariates\n\n**K-Nearest Neighbours (KNN):**\n- Classify test point by majority vote of K closest training points (Euclidean distance)\n- K=1: training error = 0 (always), decision boundary = Voronoi diagram\n- As K increases: **bias increases**, variance decreases\n- LOOCV with KNN: remove each point, classify using remaining n−1\n\n**Support Vector Machines (maximal margin classifier):**\n- Find hyperplane that **maximally separates** classes\n- Only **support vectors** determine the boundary\n- Equation: β₀ + β₁X₁ + β₂X₂ = 0, with constraints on classification",
+        "2": "### Generative model MLE (tested every year in Q3)\n\n**Setup:** Binary y ∈ {0,1}. Each yᵢ ~ Bernoulli(π). Given yᵢ=k: xᵢ ~ N(μₖ, σₖ²).\n\n**Joint likelihood for one pair (yᵢ, xᵢ):**\nf(yᵢ, xᵢ) = [π·f(xᵢ|yᵢ=1)]^yᵢ · [(1−π)·f(xᵢ|yᵢ=0)]^(1−yᵢ)\n\nJustification: if yᵢ=1, the expression reduces to π·f(xᵢ|yᵢ=1); if yᵢ=0, it reduces to (1−π)·f(xᵢ|yᵢ=0).\n\n**Full log-likelihood:**\nℓ = ∑[yᵢ log π + (1−yᵢ)log(1−π)] + ∑[yᵢ log N(xᵢ|μ₁,σ₁²) + (1−yᵢ) log N(xᵢ|μ₀,σ₀²)]\n\n**MLEs (differentiate, set to 0):**\n\n| Parameter | MLE |\n|---|---|\n| π̂ | n₁/n (proportion of class 1) |\n| μ̂₁ | ∑yᵢxᵢ / n₁ (mean of x in class 1) |\n| μ̂₀ | ∑(1−yᵢ)xᵢ / n₀ (mean of x in class 0) |\n| σ̂₁² | (1/n) ∑yᵢ(xᵢ−μ̂₁)² |\n| σ̂₀² | (1/n) ∑(1−yᵢ)(xᵢ−μ̂₀)² |\n\n### Bayes decision rule (tested 2020 Q4b)\n\nGiven classes with known distributions:\n- Classify to class 1 if π₁·g₁(x) > π₂·g₂(x)\n- Take logs: log π₁ + log g₁(x) > log π₂ + log g₂(x)\n- Expand with Normal densities → quadratic inequality in x when σ₁ ≠ σ₂\n\n### Confusion matrix metrics\n\n| | Predicted + | Predicted − |\n|---|---|---|\n| **Actual +** | TP | FN |\n| **Actual −** | FP | TN |\n\n- **Sensitivity (TPR):** TP / (TP + FN) — \"of all actual positives, how many caught?\"\n- **Specificity (TNR):** TN / (TN + FP) — \"of all actual negatives, how many correct?\"\n- **Accuracy:** (TP + TN) / N — misleading under imbalance\n- **ROC curve:** Plot sensitivity vs (1 − specificity) across thresholds. AUC = area under ROC.\n\n**Key insight:** If sensitivity increases, specificity tends to **decrease** (trade-off). This is a tested True/False.\n\n### 1-nearest neighbour error at x (tested 2020, 2021 ZA, 2021 ZB, 2022, Oct 2023)\n\nGiven P(Y=0|X=x) and P(Y=0|X=x') where x' is nearest neighbour:\n\nError = P(Y=0|x)·P(Y=1|x') + P(Y=1|x)·P(Y=0|x')\n\nThis question appears in **every single paper.** Memorise the formula.\n\n### Maximal margin classifier (tested 2021 ZA, 2021 ZB)\n\nFor 2D data with classes Red/Blue:\n1. Plot all points, label classes.\n2. Identify support vectors (closest points between classes).\n3. Find midpoints between support vectors.\n4. Fit line through midpoints: slope = (Δy)/(Δx), intercept from point.\n5. Equation: β₀ + β₁X₁ + β₂X₂ > 0 for one class.\n\n### Majority vote vs average probability (tested 2020, 2021 ZA, 2021 ZB, Oct 2023)\n\nGiven B bootstrap tree probabilities P(class=A|X):\n- **Majority vote:** Count how many give P > 0.5 for class A. Majority wins.\n- **Average probability:** Compute mean of all B probabilities. If mean > 0.5, classify as A.\n\nThese can give **different results** — the examiner tested this explicitly in Oct 2023.",
+        "3": "**Setup:** yᵢ ~ Bernoulli(π), xᵢ|yᵢ=0 ~ N(μ₀, σ₀²), xᵢ|yᵢ=1 ~ N(μ₁, σ₁²).\n\n**(i)** The likelihood for (yᵢ, xᵢ) is [πf(xᵢ|yᵢ=1)]^yᵢ · [(1−π)f(xᵢ|yᵢ=0)]^(1−yᵢ) because:\n- When yᵢ=1: expression = πf(xᵢ|yᵢ=1) = P(yᵢ=1) × density of xᵢ given class 1\n- When yᵢ=0: expression = (1−π)f(xᵢ|yᵢ=0) = P(yᵢ=0) × density of xᵢ given class 0\n\n**(ii)** Maximise log-likelihood w.r.t. each parameter separately (terms separate cleanly):\n- π̂ = n₁/n\n- μ̂₁ = (∑yᵢxᵢ)/n₁, μ̂₀ = (∑(1−yᵢ)xᵢ)/n₀\n- σ̂₁² = (1/n)∑yᵢ(xᵢ−μ̂₁)², σ̂₀² = (1/n)∑(1−yᵢ)(xᵢ−μ̂₀)²\n\n**(iii)** When to prefer generative over logistic despite worse classification performance:\n\"If the future value of x is **unknown**, LDA/QDA can generate x (sample from the model), but logistic regression cannot — it only models P(y|x).\"",
+        "4": "1. **(8 min)** Write the likelihood for the generative model with yᵢ ~ Bernoulli(π), xᵢ|yᵢ=k ~ N(μₖ, σₖ²). Derive the MLE for π, μ₁, and σ₁².\n2. **(8 min)** Given P(Y=1|X=x) = 0.6 and P(Y=1|X=x') = p, find the values of p such that 1-NN error at x ≥ 0.5.\n3. **(10 min)** Bayes decision rule: X|Y=1 ~ N(3, 1), X|Y=2 ~ N(1, 4), P(Y=1)=1/2. Derive the rule classifying regions to classes 1 and 2.\n4. **(10 min)** Seven points given with coordinates and Red/Blue labels. Plot, find support vectors, derive the equation of the maximal margin classifier.\n5. **(7 min)** Given 10 bootstrap probabilities, compute majority vote and average probability classifications. Give an example where they differ.\n6. **(7 min)** True/False: (i) SVM decision boundary is determined only by support vectors. (ii) LDA can only produce a linear decision boundary. (iii) If sensitivity increases, so does specificity.",
+        "5": "### For Q3 Generative model MLE (14 marks):\n\n```\n1. STATE the model: yᵢ ~ Bernoulli(π), xᵢ|yᵢ ~ N(μₖ, σₖ²).\n\n2. WRITE the joint likelihood for one pair. Justify the exponent structure.\n\n3. WRITE the full log-likelihood. Separate terms by parameter.\n\n4. DIFFERENTIATE w.r.t. each parameter. Set to zero. Solve.\n   Present MLEs in a clean table.\n\n5. GENERATIVE vs DISCRIMINATIVE: State one advantage of generative\n   (can generate x when future x unknown).\n```\n\n### For maximal margin classifier (7 marks):\n\n```\n1. PLOT all data points with class labels.\n2. IDENTIFY the closest points between classes (support vectors).\n3. COMPUTE midpoints between opposing support vectors.\n4. FIT the separating line through midpoints. State slope and intercept.\n5. WRITE the hyperplane equation: β₀ + β₁X₁ + β₂X₂ > 0.\n6. ADD the line to the graph.\n```\n\n### For 1-NN error (4-6 marks):\n\n```\n1. STATE the formula: Error = P(Y=0|x)P(Y=1|x') + P(Y=1|x)P(Y=0|x')\n2. SUBSTITUTE the given probabilities.\n3. COMPUTE. If asked for values of p satisfying a condition, solve the inequality.\n```",
+        "6": "- **Generative model: confusing μ₀ and μ₁ subscripts.** Keep consistent: subscript matches the class label yᵢ=0 or yᵢ=1. The examiner uses the same notation in every paper.\n- **Forgetting to justify the likelihood structure.** Part (i) always asks \"describe why\" — you must explain the if-yᵢ=1 / if-yᵢ=0 logic, not just state the formula.\n- **1-NN error formula:** Students often compute P(error) = P(Y≠Ŷ) incorrectly. The correct formula sums two products: P(true=0)P(predict=1) + P(true=1)P(predict=0). This appears in every paper.\n- **SVM / maximal margin:** Students often forget to plot and label the graph. The examiner specifically says \"provide a graph of the data labelling the class of each point.\"\n- **LDA produces only linear boundaries:** TRUE for standard LDA. But QDA can produce non-quadratic boundaries if polynomial features are added — a subtle distinction tested in 2022.\n- **Sensitivity/specificity trade-off:** The statement \"if sensitivity increases, specificity also increases\" is FALSE. They trade off against each other as the threshold changes.\n- **Logistic vs generative:** When logistic performs better but x is unknown for future predictions, prefer generative (can sample from P(x|y)). This specific scenario is tested in 2021 ZA, ZB."
+      },
+      "formulas": [
+        {
+          "concept": "Parameter",
+          "formula": "MLE"
+        },
+        {
+          "concept": "π̂",
+          "formula": "n₁/n (proportion of class 1)"
+        },
+        {
+          "concept": "μ̂₁",
+          "formula": "∑yᵢxᵢ / n₁ (mean of x in class 1)"
+        },
+        {
+          "concept": "μ̂₀",
+          "formula": "∑(1−yᵢ)xᵢ / n₀ (mean of x in class 0)"
+        },
+        {
+          "concept": "σ̂₁²",
+          "formula": "(1/n) ∑yᵢ(xᵢ−μ̂₁)²"
+        },
+        {
+          "concept": "σ̂₀²",
+          "formula": "(1/n) ∑(1−yᵢ)(xᵢ−μ̂₀)²"
+        },
+        {
+          "concept": "| Predicted +",
+          "formula": "Predicted −"
+        },
+        {
+          "concept": "**Actual +**",
+          "formula": "TP"
+        },
+        {
+          "concept": "**Actual −**",
+          "formula": "FP"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Write the likelihood for the generative model with yᵢ ~ Bernoulli(π), xᵢ|yᵢ=k ~ N(μₖ, σₖ²). Derive the MLE for π, μ₁, and σ₁²."
+        },
+        {
+          "time_minutes": 8,
+          "text": "Given P(Y=1|X=x) = 0.6 and P(Y=1|X=x') = p, find the values of p such that 1-NN error at x ≥ 0.5."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Bayes decision rule: X|Y=1 ~ N(3, 1), X|Y=2 ~ N(1, 4), P(Y=1)=1/2. Derive the rule classifying regions to classes 1 and 2."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Seven points given with coordinates and Red/Blue labels. Plot, find support vectors, derive the equation of the maximal margin classifier."
+        },
+        {
+          "time_minutes": 7,
+          "text": "Given 10 bootstrap probabilities, compute majority vote and average probability classifications. Give an example where they differ."
+        },
+        {
+          "time_minutes": 7,
+          "text": "True/False: (i) SVM decision boundary is determined only by support vectors. (ii) LDA can only produce a linear decision boundary. (iii) If sensitivity increases, so does specificity."
+        }
+      ],
+      "feynmanText": "Classification is predicting which category something belongs to rather than predicting a number. Will this email be spam or not? Will this patient have the disease or not? Will this customer default on their loan?\n\nThere are two fundamentally different ways to build a classifier. The **discriminative** approach learns the boundary directly -- it asks \"given these features, which class is more likely?\" Logistic regression does this by fitting an S-shaped curve that outputs a probability between 0 and 1. The **generative** approach is more ambitious: it learns what each class \"looks like\" separately, then uses Bayes' theorem to figure out which class a new observation probably came from. LDA and QDA work this way -- they assume each class follows a bell curve (Normal distribution) and then calculate which bell curve the new point is most likely under.\n\nWhy would you ever use the harder generative approach? Because it can do things discriminative models can't. If you've built a generative model of \"what spam looks like\" and \"what real email looks like\", you can generate synthetic examples from each class. A logistic regression can only classify -- it can't generate.\n\n**K-nearest neighbours** is the simplest classifier: to classify a new point, just look at the K closest training points and take a majority vote. K=1 gives zero training error (every point is its own nearest neighbour) but often high test error. As K increases, the decision boundary smooths out -- more bias, less variance.\n\nThe hardest part of classification isn't building the model -- it's **evaluating** it correctly. Accuracy is misleading when classes are imbalanced (a model that always says \"no disease\" is 99% accurate if only 1% of people have the disease, but it's useless). Sensitivity, specificity, and the ROC curve give a much more honest picture.",
+      "feynmanKeyTerms": [
+        "discriminative",
+        "generative",
+        "K-nearest neighbours",
+        "evaluating"
+      ],
+      "modelAnswer": "### For Q3 Generative model MLE (14 marks):\n\n```\n1. STATE the model: yᵢ ~ Bernoulli(π), xᵢ|yᵢ ~ N(μₖ, σₖ²).\n\n2. WRITE the joint likelihood for one pair. Justify the exponent structure.\n\n3. WRITE the full log-likelihood. Separate terms by parameter.\n\n4. DIFFERENTIATE w.r.t. each parameter. Set to zero. Solve.\n   Present MLEs in a clean table.\n\n5. GENERATIVE vs DISCRIMINATIVE: State one advantage of generative\n   (can generate x when future x unknown).\n```\n\n### For maximal margin classifier (7 marks):\n\n```\n1. PLOT all data points with class labels.\n2. IDENTIFY the closest points between classes (support vectors).\n3. COMPUTE midpoints between opposing support vectors.\n4. FIT the separating line through midpoints. State slope and intercept.\n5. WRITE the hyperplane equation: β₀ + β₁X₁ + β₂X₂ > 0.\n6. ADD the line to the graph.\n```\n\n### For 1-NN error (4-6 marks):\n\n```\n1. STATE the formula: Error = P(Y=0|x)P(Y=1|x') + P(Y=1|x)P(Y=0|x')\n2. SUBSTITUTE the given probabilities.\n3. COMPUTE. If asked for values of p satisfying a condition, solve the inequality.\n```",
+      "commonTraps": "- **Generative model: confusing μ₀ and μ₁ subscripts.** Keep consistent: subscript matches the class label yᵢ=0 or yᵢ=1. The examiner uses the same notation in every paper.\n- **Forgetting to justify the likelihood structure.** Part (i) always asks \"describe why\" — you must explain the if-yᵢ=1 / if-yᵢ=0 logic, not just state the formula.\n- **1-NN error formula:** Students often compute P(error) = P(Y≠Ŷ) incorrectly. The correct formula sums two products: P(true=0)P(predict=1) + P(true=1)P(predict=0). This appears in every paper.\n- **SVM / maximal margin:** Students often forget to plot and label the graph. The examiner specifically says \"provide a graph of the data labelling the class of each point.\"\n- **LDA produces only linear boundaries:** TRUE for standard LDA. But QDA can produce non-quadratic boundaries if polynomial features are added — a subtle distinction tested in 2022.\n- **Sensitivity/specificity trade-off:** The statement \"if sensitivity increases, specificity also increases\" is FALSE. They trade off against each other as the threshold changes.\n- **Logistic vs generative:** When logistic performs better but x is unknown for future predictions, prefer generative (can sample from P(x|y)). This specific scenario is tested in 2021 ZA, ZB.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-11_EC2020_iv-2sls-measurement-error.md",
+      "date": "2026-05-11",
+      "module": "EC2020",
+      "topicSlug": "iv-2sls-measurement-error",
+      "title": "EC2020 - IV/2SLS, Measurement Error, and Simultaneous Equations",
+      "sections": {
+        "0": "OLS gives you the right answer only if the error term (all the stuff you didn't measure) is unrelated to your X variable. When that breaks, your estimate is contaminated -- not just noisy, but systematically wrong in a way that doesn't go away with more data. That contamination is called **endogeneity**, and it comes from three places.\n\nFirst, **omitted variables**: you left something important out, and it correlates with X. You're studying whether police reduce crime, but cities with more crime hire more police. The omitted \"crime-proneness\" of a city is in the error term and correlates with police numbers, so your OLS estimate is garbage.\n\nSecond, **reverse causality** (simultaneity): X affects Y, but Y also affects X. Supply and demand simultaneously determine price and quantity -- regressing one on the other gives a meaningless mush of both relationships.\n\nThird, **measurement error**: you can't measure X accurately. If the X you observe equals the true X plus random noise, OLS systematically underestimates the true effect. This is called **attenuation bias** -- your estimate shrinks toward zero.\n\nThe solution is to find an **instrument** Z -- a variable that (1) is correlated with X (it moves X around) but (2) has no direct effect on Y except through X. You use Z to isolate the \"clean\" variation in X -- the part that isn't contaminated by the error. This is **two-stage least squares (2SLS)**: in stage 1, predict X using Z; in stage 2, use those predictions instead of X. The trick works because the predicted X only contains variation driven by Z, which by assumption is unrelated to the error.\n\nFor simultaneous equations, the logic is the same but you need to check **identification**: do you have enough instruments (excluded exogenous variables) to untangle the system? Count the excluded instruments versus the endogenous regressors: if you have enough, you're identified; if not, the system can't be solved.",
+        "1": "**Three sources of endogeneity** (any one makes OLS inconsistent):\n1. **Omitted variables** -- a relevant variable in u is correlated with X\n2. **Simultaneity** -- Y feeds back into X (simultaneous equations)\n3. **Measurement error** -- observe X = X* + v instead of true X*\n\n**When Cov(X, u) ≠ 0:** OLS is biased AND inconsistent.\nplim β̂_OLS = β + Cov(X, u)/Var(X) ≠ β. Increasing n does NOT help.\n\n**Correct definition:** Endogeneity means Cov(regressor, error) ≠ 0. NOT \"variable determined inside the model.\"\n\n**IV requirements** (both must hold for a valid instrument Z):\n1. **Relevance:** Cov(Z, X) ≠ 0 — testable via first-stage F-statistic\n2. **Exogeneity/Exclusion:** Cov(Z, u) = 0 — Z affects Y only through X; not testable, argue economically\n\n**2SLS procedure:**\n- **Stage 1:** Regress X on Z and ALL exogenous regressors → obtain X̂\n- **Stage 2:** Regress Y on X̂ and ALL exogenous regressors\n- ALL exogenous regressors must appear in BOTH stages\n\n**Identification** (count excluded exogenous vars vs endogenous regressors in equation):\n- Under-identified: too few excluded instruments → cannot estimate\n- Exactly identified: equal → can estimate, cannot test over-identifying restrictions\n- Over-identified: more excluded instruments → can estimate and test validity\n\n**Measurement error:**\n- CEV in X → **attenuation bias** (toward zero); measurement error in Y → only more noise (consistent but less precise), UNLESS correlated with regressors\n\n**Durbin-Wu-Hausman test:** Compare OLS and IV. Significant difference → evidence of endogeneity.",
+        "2": "**IV estimator:** β̂_IV = SampleCov(Z,Y)/SampleCov(Z,X). Never write Cov(Z,Y)/Cov(Z,X) — those are population quantities.\n\n**Consistency:** plim β̂_IV = β + Cov(Z,u)/Cov(Z,X) = β when Cov(Z,u) = 0\n\n**Classical measurement error (CEV):**\nTrue: Y = α + βX* + u. Observe X = X* + v (v ⊥ X*, v ⊥ u).\nSubstituting: Y = α + βX + (u − βv). Composite error ε = u − βv.\nCov(X, ε) = Cov(X* + v, u − βv) = −βσ²_v ≠ 0.\nplim β̂_OLS = β · σ²_{X*}/(σ²_{X*} + σ²_v) — always attenuated toward zero.\n\n**Same measurement error w in both Y and X:**\nObserve y = y* + w, x = x* + w. Substituting: y = α + βx + [u + (1−β)w].\nplim β̂ = β + (1−β)·σ²_w/(σ²_{x*} + σ²_w). Direction depends on (1−β): upward if β < 1, downward if β > 1.\n\n**Reduced forms:** Solve system for each endogenous variable in terms of exogenous only. Check denominator ≠ 0.\n\n**Identification rule:** # excluded exogenous vars ≥ # endogenous regressors in equation.\n\n**Weak instruments:** First-stage F > 10 (rule of thumb), otherwise biased toward OLS with size distortions.",
+        "3": "### A. Simultaneous equations (2022 Oct Q4 — wheat market)\n\n**Demand:** wheat = α₁·price + α₂·GDP + u₁\n**Supply:** wheat = β₁·price + β₂·sunshine + β₃·sunshine² + β₄·flood + u₂\n\n**(a)** Demand includes GDP; excludes sunshine, sunshine², flood. Supply includes sunshine, sunshine², flood; excludes GDP.\n\n**(b) Reduced form for price** — set demand = supply:\n(α₁ − β₁)·price = β₂·sunshine + β₃·sunshine² + β₄·flood − α₂·GDP + (u₂ − u₁)\nprice = [β₂·sunshine + β₃·sunshine² + β₄·flood − α₂·GDP + (u₂ − u₁)]/(α₁ − β₁)\nRequires α₁ ≠ β₁. Since price depends on u₁ → Cov(price, u₁) ≠ 0 → OLS on demand is inconsistent.\n\n**(c) Identification:**\n- Demand: 3 excluded instruments for 1 endogenous regressor → **over-identified**\n- Supply: 1 excluded instrument for 1 endogenous regressor → **exactly identified**\n\n**(d) 2SLS for demand:**\nStage 1: Regress price on GDP, sunshine, sunshine², flood → price-hat.\nStage 2: Regress wheat on price-hat, GDP. (GDP in both stages — it is exogenous in demand.)\n\n### B. Measurement error with same error (2022 Q2)\n\nTrue: y* = α + βx* + u. Observe y = y* + w, x = x* + w.\nSubstituting: y = α + βx + [u + (1−β)w]. Composite error ε = u + (1−β)w.\nCov(x, ε) = Cov(x* + w, u + (1−β)w) = (1−β)σ²_w ≠ 0 when β ≠ 1 → OLS inconsistent.\nplim β̂ = β + (1−β)σ²_w/(σ²_{x*} + σ²_w).\nIf β < 1: overestimates. If β > 1: underestimates. If β = 1: no bias.",
+        "4": "**Task 1 (7 min):** List three sources of endogeneity with one-sentence economic examples. Define endogeneity using Cov(X, u).\n\n**Task 2 (10 min):** System: Eq 1: Y₁ = α₁Y₂ + α₂Z₁ + u₁; Eq 2: Y₂ = β₁Y₁ + β₂Z₂ + β₃Z₃ + u₂. Y₁, Y₂ endogenous; Z₁, Z₂, Z₃ exogenous. Derive reduced forms. State existence condition. Check identification of each equation.\n\n**Task 3 (10 min):** For Eq 1 above, describe full 2SLS. State both IV conditions, verify relevance from first stage, argue exogeneity.\n\n**Task 4 (10 min):** True model Y = β₀ + β₁X* + u, observe X = X* + v (v ⊥ X*, v ⊥ u). Derive attenuation bias step by step. State direction. Propose IV remedy with conditions.\n\n**Task 5 (8 min):** When is measurement error in Y (a) not a problem, (b) a problem? Give an example where measurement error in Y correlates with a regressor.",
+        "5": "**IV / endogeneity questions:**\n1. Identify the endogeneity source (OVB, simultaneity, or measurement error)\n2. Show OLS fails: Cov(X, u) ≠ 0 → biased and inconsistent; write plim β̂ ≠ β\n3. Propose instrument Z, state BOTH conditions with economic reasoning\n4. Argue relevance (economic logic + first-stage F > 10)\n5. Argue exogeneity (economic reasoning why Z has no direct effect on Y)\n6. Describe 2SLS steps — include ALL exogenous regressors in both stages\n7. If SEM: derive reduced forms, verify denominator ≠ 0, state identification\n\n**Measurement error questions:**\n1. State true model and observed variables (X = X* + v or Y = Y* + w)\n2. Substitute observed variables into true model\n3. Identify composite error term (e.g., ε = u − βv)\n4. Take plim of OLS estimator (divide by n, apply LLN)\n5. Show Cov(observed X, composite error) ≠ 0 — this is the key step\n6. Derive bias formula, state direction (attenuation for standard CEV)\n7. Propose remedy: IV (Z correlated with X* but not v or u), or better data\n\n**Simultaneous equations questions:**\n1. Write structural system; identify endogenous vs exogenous\n2. Derive reduced form algebraically; check denominator ≠ 0\n3. Check identification using counting rule for each equation\n4. Describe 2SLS: specify excluded instruments and included exogenous variables",
+        "6": "**Conceptual:**\n- Defining exogeneity as \"outside the model\" instead of Cov(X, u) = 0\n- Using E[·] when proving inconsistency — use plim, not expectations\n- Confusing IV validity conditions (relevance, exogeneity) with precision factors (sample size, R²)\n\n**2SLS mechanics:**\n- Not including ALL exogenous regressors in Stage 1\n- Using X̂ as dependent variable in Stage 2 (wrong — X̂ replaces the endogenous X as a regressor)\n- Not specifying WHICH variables are excluded instruments (counting alone is insufficient)\n\n**Identification:**\n- Not checking denominator ≠ 0 when deriving reduced forms\n- Confusing order condition (counting: necessary) with rank condition (sufficient)\n\n**Measurement error:**\n- Confusing error in Y (benign) with error in X (attenuation bias, inconsistent)\n- Not recognising that shared measurement error bias direction depends on β\n- Skipping the Cov(x, ε) ≠ 0 step — this is what proves OLS fails\n\n**Time series interaction:**\n- Lagged DV + autocorrelation → TS.3' violated → OLS inconsistent → need IV\n- Fixing autocorrelation alone does NOT fix inconsistency when lagged DV is present\n\n**Exam technique:**\n- Writing Cov(Z,Y)/Cov(Z,X) instead of SampleCov — estimator uses sample quantities\n- Not arguing exogeneity economically (it cannot be tested, must be reasoned)\n- Claiming \"IV is always better than OLS\" — IV has larger variance; use only when endogeneity present"
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "OLS gives you the right answer only if the error term (all the stuff you didn't measure) is unrelated to your X variable. When that breaks, your estimate is contaminated -- not just noisy, but systematically wrong in a way that doesn't go away with more data. That contamination is called **endogeneity**, and it comes from three places.\n\nFirst, **omitted variables**: you left something important out, and it correlates with X. You're studying whether police reduce crime, but cities with more crime hire more police. The omitted \"crime-proneness\" of a city is in the error term and correlates with police numbers, so your OLS estimate is garbage.\n\nSecond, **reverse causality** (simultaneity): X affects Y, but Y also affects X. Supply and demand simultaneously determine price and quantity -- regressing one on the other gives a meaningless mush of both relationships.\n\nThird, **measurement error**: you can't measure X accurately. If the X you observe equals the true X plus random noise, OLS systematically underestimates the true effect. This is called **attenuation bias** -- your estimate shrinks toward zero.\n\nThe solution is to find an **instrument** Z -- a variable that (1) is correlated with X (it moves X around) but (2) has no direct effect on Y except through X. You use Z to isolate the \"clean\" variation in X -- the part that isn't contaminated by the error. This is **two-stage least squares (2SLS)**: in stage 1, predict X using Z; in stage 2, use those predictions instead of X. The trick works because the predicted X only contains variation driven by Z, which by assumption is unrelated to the error.\n\nFor simultaneous equations, the logic is the same but you need to check **identification**: do you have enough instruments (excluded exogenous variables) to untangle the system? Count the excluded instruments versus the endogenous regressors: if you have enough, you're identified; if not, the system can't be solved.",
+      "feynmanKeyTerms": [
+        "endogeneity",
+        "omitted variables",
+        "reverse causality",
+        "measurement error",
+        "attenuation bias",
+        "instrument",
+        "two-stage least squares (2SLS)",
+        "identification"
+      ],
+      "modelAnswer": "**IV / endogeneity questions:**\n1. Identify the endogeneity source (OVB, simultaneity, or measurement error)\n2. Show OLS fails: Cov(X, u) ≠ 0 → biased and inconsistent; write plim β̂ ≠ β\n3. Propose instrument Z, state BOTH conditions with economic reasoning\n4. Argue relevance (economic logic + first-stage F > 10)\n5. Argue exogeneity (economic reasoning why Z has no direct effect on Y)\n6. Describe 2SLS steps — include ALL exogenous regressors in both stages\n7. If SEM: derive reduced forms, verify denominator ≠ 0, state identification\n\n**Measurement error questions:**\n1. State true model and observed variables (X = X* + v or Y = Y* + w)\n2. Substitute observed variables into true model\n3. Identify composite error term (e.g., ε = u − βv)\n4. Take plim of OLS estimator (divide by n, apply LLN)\n5. Show Cov(observed X, composite error) ≠ 0 — this is the key step\n6. Derive bias formula, state direction (attenuation for standard CEV)\n7. Propose remedy: IV (Z correlated with X* but not v or u), or better data\n\n**Simultaneous equations questions:**\n1. Write structural system; identify endogenous vs exogenous\n2. Derive reduced form algebraically; check denominator ≠ 0\n3. Check identification using counting rule for each equation\n4. Describe 2SLS: specify excluded instruments and included exogenous variables",
+      "commonTraps": "**Conceptual:**\n- Defining exogeneity as \"outside the model\" instead of Cov(X, u) = 0\n- Using E[·] when proving inconsistency — use plim, not expectations\n- Confusing IV validity conditions (relevance, exogeneity) with precision factors (sample size, R²)\n\n**2SLS mechanics:**\n- Not including ALL exogenous regressors in Stage 1\n- Using X̂ as dependent variable in Stage 2 (wrong — X̂ replaces the endogenous X as a regressor)\n- Not specifying WHICH variables are excluded instruments (counting alone is insufficient)\n\n**Identification:**\n- Not checking denominator ≠ 0 when deriving reduced forms\n- Confusing order condition (counting: necessary) with rank condition (sufficient)\n\n**Measurement error:**\n- Confusing error in Y (benign) with error in X (attenuation bias, inconsistent)\n- Not recognising that shared measurement error bias direction depends on β\n- Skipping the Cov(x, ε) ≠ 0 step — this is what proves OLS fails\n\n**Time series interaction:**\n- Lagged DV + autocorrelation → TS.3' violated → OLS inconsistent → need IV\n- Fixing autocorrelation alone does NOT fix inconsistency when lagged DV is present\n\n**Exam technique:**\n- Writing Cov(Z,Y)/Cov(Z,X) instead of SampleCov — estimator uses sample quantities\n- Not arguing exogeneity economically (it cannot be tested, must be reasoned)\n- Claiming \"IV is always better than OLS\" — IV has larger variance; use only when endogeneity present",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-12_ST3189_model-selection-shrinkage.md",
+      "date": "2026-05-12",
+      "module": "ST3189",
+      "topicSlug": "model-selection-shrinkage",
+      "title": "ST3189 - Model Selection + Shrinkage Methods (Exam Sheet)",
+      "sections": {
+        "0": "Imagine you're predicting house prices and you have 200 possible features -- square footage, number of bathrooms, distance to the nearest school, the colour of the front door, whether the house number is odd... Some of these matter; most are noise. If you throw all 200 into a regression, the model will latch onto random quirks in your training data and make terrible predictions on new houses. This is overfitting, and it gets worse the more variables you have.\n\nThere are two strategies to fix this. **Variable selection** picks a subset of predictors and throws the rest away. Best subset selection tries every possible combination (impossibly slow when you have many predictors). Stepwise selection is the practical compromise: it greedily adds or removes one variable at a time based on which improves the model most.\n\n**Shrinkage** keeps all predictors but squeezes their coefficients toward zero. **Ridge regression** adds a penalty proportional to the squared size of each coefficient -- this discourages large values but never makes them exactly zero. **Lasso** uses an absolute-value penalty instead, which can push coefficients all the way to zero -- effectively doing variable selection and shrinkage simultaneously. The **elastic net** combines both penalties.\n\nThe beautiful connection is to Bayesian statistics: ridge regression is mathematically identical to putting a Normal prior on each coefficient and computing the posterior mean. Lasso is equivalent to a Laplace (double exponential) prior. The tuning parameter λ that controls how much you shrink is the inverse of the prior variance. More shrinkage = stronger prior belief that coefficients are near zero. The exam tests this connection every year.\n\nHow do you choose λ? **Cross-validation.** Never on the test set -- that defeats the whole purpose. Split your training data, try different λ values, pick the one that predicts best on the held-out fold.",
+        "1": "**The problem:** With many predictors, MLE/OLS overfits. We need to either **select** a subset or **shrink** coefficients toward zero.\n\n### Subset selection methods\n\n| Method | Procedure | Complexity | Constraint |\n|---|---|---|---|\n| **Best subset** | For each size k, find best RSS among all C(p,k) models | 2ᵖ models — infeasible for large p | None |\n| **Forward stepwise** | Start with intercept, greedily add one predictor at each step | p(p+1)/2 models | Works for p > n |\n| **Backward stepwise** | Start with full model, greedily drop one predictor | p(p+1)/2 models | Requires n > p |\n\n**Key exam fact (tested 2022, May 2023):**\n- Lasso advantage over best subset: **computationally more efficient**.\n- Lasso disadvantage: **biased estimates** for large coefficients (shrinkage bias). Best subset gives unbiased estimates.\n- Forward ≠ backward in general (Oct 2023 True/False).\n\n### Information criteria (choose model size k)\n\n| Criterion | Formula | Penalty weight | Selects |\n|---|---|---|---|\n| **AIC** | −2 log L + 2p | 2 per parameter | Larger models |\n| **BIC** | −2 log L + log(n)·p | log(n) per parameter | Smaller models when n ≥ 8 |\n\n**Key exam fact (tested 2020 Q1a-iii):** BIC tends to select **smaller** models than AIC for large n because log(n) > 2 when n > 7.\n\n### Shrinkage methods\n\n**Ridge regression (L₂):**\n- Minimise: RSS + λ∑βⱼ²\n- Solution: β̂_ridge = (X'X + λI)⁻¹X'y\n- All coefficients shrink toward zero but **never exactly zero**\n- Bayesian interpretation: Normal(0, σ²/λ) prior on β → posterior mean = ridge estimator\n- **Must standardise predictors** before fitting\n\n**Lasso regression (L₁):**\n- Minimise: RSS + λ∑|βⱼ|\n- Can **zero out** coefficients → performs variable selection\n- No closed form (solved by coordinate descent)\n- Bayesian interpretation: Laplace (double exponential) prior on β → MAP = lasso\n\n**Elastic net:** Combines L₁ and L₂ penalties: λ₁∑|βⱼ| + λ₂∑βⱼ²\n\n**Choosing λ:** Always by cross-validation. Never tune on the test set.",
+        "2": "### The scalar soft-thresholding problem (tested 2020 Q1b, Oct 2023 Q4b)\n\n**Minimise:** ½(z − θ)² + pλ(|θ|)\n\n**Case 1: Ridge penalty** pλ(|θ|) = λθ²\n\nDifferentiate: (θ − z) + 2λθ = 0 → θ̂ = z/(1 + 2λ)\n\nFor the version with pλ(|θ|) = λθ² (factor of ½ absorbed): θ̂ = z/(1 + λ)\n\n**Case 2: Lasso penalty** pλ(|θ|) = λ|θ|\n\n**Solution (soft-thresholding operator):**\nθ̂ = sign(z)(|z| − λ)I(|z| > λ)\n\nwhere sign(z) is the sign of z, and I(·) is the indicator function.\n\n**Derivation sketch:**\n- If θ̂ = 0: need ½z² ≤ ½(z−θ)² + λ|θ| for all θ. This holds when |z| ≤ λ.\n- If θ̂ > 0 (so |z| > λ and z > 0): differentiate ½(z−θ)² + λθ → θ̂ − z + λ = 0 → θ̂ = z − λ.\n- If θ̂ < 0 (so |z| > λ and z < 0): differentiate ½(z−θ)² − λθ → θ̂ − z − λ = 0 → θ̂ = z + λ.\n- Combine: θ̂ = sign(z)(|z| − λ)I(|z| > λ).\n\n**Case 3: Elastic net** pλ(|θ|) = λ₁θ² + λ₂|θ| (tested 2020 Q1b-ii)\n\nRewrite as a lasso problem with rescaled variables:\n- z̃ = z/√(1 + 2λ₁), θ̃ = √(1 + 2λ₁)·θ, λ̃ = λ₂/√(1 + 2λ₁)\n- Apply soft-thresholding to get θ̃, then θ̂ = θ̃/√(1 + 2λ₁)\n- Result: θ̂ = (1/(1 + 2λ₁)) · sign(z)(|z| − λ₂)I(|z| > λ₂)\n\n### Penalised least squares ↔ Bayesian connection\n\n| Penalty | Prior | Estimator |\n|---|---|---|\n| λβ² (ridge) | β ~ N(0, σ²/λ) | Posterior mean |\n| λ|β| (lasso) | β ~ Laplace(0, 1/λ) | MAP (posterior mode) |\n\nThis connection is tested in **every** Q2 part (d)/(e).",
+        "3": "**Problem:** Minimise ½(z − θ)² + λ|θ| over θ ∈ ℝ.\n\n**Step 1:** Consider θ̂ = 0. This is optimal when:\n½z² ≤ ½(z − θ)² + λθ for all θ > 0\n→ z ≤ ½θ + λ for all θ > 0 → z ≤ λ\n\nSimilarly for θ < 0: z ≥ −λ.\nSo θ̂ = 0 when −λ ≤ z ≤ λ.\n\n**Step 2:** For z > λ, the minimum is at θ̂ > 0.\n∂/∂θ [½(z − θ)² + λθ] = θ − z + λ = 0\n→ θ̂ = z − λ > 0 ✓\n\n**Step 3:** For z < −λ, the minimum is at θ̂ < 0.\n∂/∂θ [½(z − θ)² − λθ] = θ − z − λ = 0\n→ θ̂ = z + λ < 0 ✓\n\n**Combined:** θ̂ = sign(z)(|z| − λ)I(|z| > λ) □",
+        "4": "1. **(8 min)** State the main advantage and disadvantage of lasso vs best subset selection. State the main advantage and disadvantage of forward vs backward stepwise.\n2. **(10 min)** Derive the soft-thresholding solution for minimising ½(z − θ)² + λ|θ|.\n3. **(10 min)** Derive the ridge solution for minimising ½(z − θ)² + λθ² and show θ̂ = z/(1+2λ).\n4. **(8 min)** Elastic net: given pλ(|θ|) = λ₁θ² + λ₂|θ|, use the substitution trick from 2020 Q1b-ii to derive the solution.\n5. **(7 min)** True/False: (i) BIC selects larger models than AIC for large n. (ii) Forward and backward stepwise always select the same predictors. (iii) The best model of size 2 must contain a variable from the best model of size 1.\n6. **(7 min)** Explain the Bayesian interpretation of ridge regression. What prior on β gives a posterior mean equal to the ridge estimator?",
+        "5": "### For lasso/ridge derivation (6-7 marks per part):\n\n```\n1. STATE the objective function clearly.\n2. CONSIDER cases: θ = 0, θ > 0, θ < 0 (for lasso).\n   Or: differentiate directly (for ridge).\n3. SHOW the first-order condition. Solve for θ̂.\n4. COMBINE cases using sign(z) and indicator I(|z| > λ).\n5. STATE the final formula boxed.\n```\n\n### For elastic net derivation (6 marks):\n\n```\n1. REWRITE the objective by completing the square to isolate a lasso form.\n2. DEFINE rescaled variables z̃, θ̃, λ̃.\n3. APPLY the lasso result from part (i).\n4. BACK-SUBSTITUTE to get θ̂ in original variables.\n```\n\n### For lasso vs best subset comparison (4 marks):\n\n```\n1. ADVANTAGE of lasso: Computationally efficient — solved by convex \n   optimisation (coordinate descent), unlike best subset which is \n   combinatorial (2ᵖ models).\n   \n2. DISADVANTAGE of lasso: Estimates are biased for large coefficients \n   due to shrinkage. Best subset gives unbiased OLS estimates within \n   the selected model.\n```",
+        "6": "- **\"BIC selects larger models\" is FALSE.** BIC penalty is heavier than AIC when n > 7 (since log n > 2), so BIC selects **smaller** models. This was tested in 2020 Q1a-iii and many students got it wrong.\n- **Confusing lasso with ridge in derivation:** Ridge shrinks smoothly (divide by 1+λ). Lasso uses the indicator function and sets coefficients **exactly to zero.** Do not mix up.\n- **Best subset at size k does not nest:** The best 2-variable model may not contain either variable from the best 1-variable model. The examiner may test awareness of this.\n- **Forgetting absolute value cases in lasso:** You must handle θ > 0, θ < 0, and θ = 0 separately because |θ| is not differentiable at 0. Students who differentiate λ|θ| directly as λ·sign(θ) lose marks.\n- **Elastic net algebra:** The key trick is completing the square to reduce to a lasso-form problem. Practice this substitution until fluent — it appeared in 2020 Q1b-ii.\n- **Not standardising predictors for ridge/lasso:** The penalty applies equally to all coefficients, so predictors must be on the same scale. The examiner may ask about this conceptually.\n- **Tuning λ on test set:** This is a common conceptual error. λ must be chosen by cross-validation on training/validation data, never on the test set."
+      },
+      "formulas": [
+        {
+          "concept": "Penalty",
+          "formula": "Prior"
+        },
+        {
+          "concept": "λβ² (ridge)",
+          "formula": "β ~ N(0, σ²/λ)"
+        },
+        {
+          "concept": "λ",
+          "formula": "β"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "State the main advantage and disadvantage of lasso vs best subset selection. State the main advantage and disadvantage of forward vs backward stepwise."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Derive the soft-thresholding solution for minimising ½(z − θ)² + λ|θ|."
+        },
+        {
+          "time_minutes": 10,
+          "text": "Derive the ridge solution for minimising ½(z − θ)² + λθ² and show θ̂ = z/(1+2λ)."
+        },
+        {
+          "time_minutes": 8,
+          "text": "Elastic net: given pλ(|θ|) = λ₁θ² + λ₂|θ|, use the substitution trick from 2020 Q1b-ii to derive the solution."
+        },
+        {
+          "time_minutes": 7,
+          "text": "True/False: (i) BIC selects larger models than AIC for large n. (ii) Forward and backward stepwise always select the same predictors. (iii) The best model of size 2 must contain a variable from the best model of size 1."
+        },
+        {
+          "time_minutes": 7,
+          "text": "Explain the Bayesian interpretation of ridge regression. What prior on β gives a posterior mean equal to the ridge estimator?"
+        }
+      ],
+      "feynmanText": "Imagine you're predicting house prices and you have 200 possible features -- square footage, number of bathrooms, distance to the nearest school, the colour of the front door, whether the house number is odd... Some of these matter; most are noise. If you throw all 200 into a regression, the model will latch onto random quirks in your training data and make terrible predictions on new houses. This is overfitting, and it gets worse the more variables you have.\n\nThere are two strategies to fix this. **Variable selection** picks a subset of predictors and throws the rest away. Best subset selection tries every possible combination (impossibly slow when you have many predictors). Stepwise selection is the practical compromise: it greedily adds or removes one variable at a time based on which improves the model most.\n\n**Shrinkage** keeps all predictors but squeezes their coefficients toward zero. **Ridge regression** adds a penalty proportional to the squared size of each coefficient -- this discourages large values but never makes them exactly zero. **Lasso** uses an absolute-value penalty instead, which can push coefficients all the way to zero -- effectively doing variable selection and shrinkage simultaneously. The **elastic net** combines both penalties.\n\nThe beautiful connection is to Bayesian statistics: ridge regression is mathematically identical to putting a Normal prior on each coefficient and computing the posterior mean. Lasso is equivalent to a Laplace (double exponential) prior. The tuning parameter λ that controls how much you shrink is the inverse of the prior variance. More shrinkage = stronger prior belief that coefficients are near zero. The exam tests this connection every year.\n\nHow do you choose λ? **Cross-validation.** Never on the test set -- that defeats the whole purpose. Split your training data, try different λ values, pick the one that predicts best on the held-out fold.",
+      "feynmanKeyTerms": [
+        "Variable selection",
+        "Shrinkage",
+        "Ridge regression",
+        "Lasso",
+        "elastic net",
+        "Cross-validation."
+      ],
+      "modelAnswer": "### For lasso/ridge derivation (6-7 marks per part):\n\n```\n1. STATE the objective function clearly.\n2. CONSIDER cases: θ = 0, θ > 0, θ < 0 (for lasso).\n   Or: differentiate directly (for ridge).\n3. SHOW the first-order condition. Solve for θ̂.\n4. COMBINE cases using sign(z) and indicator I(|z| > λ).\n5. STATE the final formula boxed.\n```\n\n### For elastic net derivation (6 marks):\n\n```\n1. REWRITE the objective by completing the square to isolate a lasso form.\n2. DEFINE rescaled variables z̃, θ̃, λ̃.\n3. APPLY the lasso result from part (i).\n4. BACK-SUBSTITUTE to get θ̂ in original variables.\n```\n\n### For lasso vs best subset comparison (4 marks):\n\n```\n1. ADVANTAGE of lasso: Computationally efficient — solved by convex \n   optimisation (coordinate descent), unlike best subset which is \n   combinatorial (2ᵖ models).\n   \n2. DISADVANTAGE of lasso: Estimates are biased for large coefficients \n   due to shrinkage. Best subset gives unbiased OLS estimates within \n   the selected model.\n```",
+      "commonTraps": "- **\"BIC selects larger models\" is FALSE.** BIC penalty is heavier than AIC when n > 7 (since log n > 2), so BIC selects **smaller** models. This was tested in 2020 Q1a-iii and many students got it wrong.\n- **Confusing lasso with ridge in derivation:** Ridge shrinks smoothly (divide by 1+λ). Lasso uses the indicator function and sets coefficients **exactly to zero.** Do not mix up.\n- **Best subset at size k does not nest:** The best 2-variable model may not contain either variable from the best 1-variable model. The examiner may test awareness of this.\n- **Forgetting absolute value cases in lasso:** You must handle θ > 0, θ < 0, and θ = 0 separately because |θ| is not differentiable at 0. Students who differentiate λ|θ| directly as λ·sign(θ) lose marks.\n- **Elastic net algebra:** The key trick is completing the square to reduce to a lasso-form problem. Practice this substitution until fluent — it appeared in 2020 Q1b-ii.\n- **Not standardising predictors for ridge/lasso:** The penalty applies equally to all coefficients, so predictors must be on the same scale. The examiner may ask about this conceptually.\n- **Tuning λ on test set:** This is a common conceptual error. λ must be chosen by cross-validation on training/validation data, never on the test set.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-13_EC2020_binary-response-mle.md",
+      "date": "2026-05-13",
+      "module": "EC2020",
+      "topicSlug": "binary-response-mle",
+      "title": "EC2020 — Binary Response Models & Maximum Likelihood Estimation",
+      "sections": {
+        "0": "Sometimes the thing you're trying to predict is a yes/no outcome: Does a person vote? Does a firm default on its loan? Does a married woman work for wages? The dependent variable is 0 or 1.\n\nYou could just run OLS on this 0/1 variable -- that's called the **Linear Probability Model**. The coefficient tells you: \"one more unit of X raises the probability of Y = 1 by β percentage points.\" It's simple and easy to interpret. But it has a problem: the predicted \"probability\" can go below 0 or above 1, which is nonsensical. And the errors are automatically heteroskedastic (the variance of a coin flip depends on how fair the coin is), so your standard errors are wrong by default.\n\n**Logit and probit** fix this by squishing the prediction through an S-shaped curve that stays between 0 and 1. Probit uses the normal distribution's S-curve; logit uses the logistic function. The coefficients no longer directly tell you \"how many percentage points.\" Instead, you need to multiply the coefficient by the height of the S-curve at a particular point -- that gives you the **marginal effect**, which depends on where you are along the curve. Near the middle (probability around 50%), effects are biggest; near the extremes (probability near 0 or 1), effects shrink. This is more realistic than assuming a constant effect everywhere.\n\nThese models are estimated by **maximum likelihood**: the computer finds the parameter values that make the observed data (the pattern of 0s and 1s you actually see) as probable as possible. MLE has nice properties in large samples -- it's consistent, efficient, and approximately normal -- but only asymptotically. So you use z-tests (not t-tests) and likelihood ratio tests (not F-tests).\n\nOne crucial exam trap: the logit/probit coefficient is NOT the marginal effect. You must compute ∂P/∂x = β · g(xβ), where g is the density function. The sign is the same as the coefficient's sign (since g > 0), but the magnitude depends on all the other variables too.",
+        "1": "**Linear Probability Model (LPM)**\n\nPr(y = 1 | x) = β₀ + β₁x₁ + ··· + βₖxₖ\n\n- Estimated by OLS on a 0/1 dependent variable.\n- Direct interpretation: a one-unit increase in xⱼ changes Pr(y = 1) by βⱼ percentage points.\n- Three problems:\n  1. Predicted probabilities can fall outside [0, 1].\n  2. Inherent heteroskedasticity: Var(u | x) = p(1 − p) where p = Pr(y = 1 | x). This invalidates conventional SEs.\n  3. Constant marginal effects are unrealistic — the effect of x should diminish near 0 and 1.\n\n**Probit**\n\nPr(y = 1 | x) = Φ(xβ)\n\nwhere Φ is the standard normal CDF.\n\n**Logit**\n\nPr(y = 1 | x) = Λ(xβ) = exp(xβ) / (1 + exp(xβ))\n\nwhere Λ is the logistic CDF.\n\n**Interpreting coefficients in probit/logit**\n\n- Coefficients are NOT direct marginal effects. Must compute:\n  ∂Pr(y = 1 | x)/∂xⱼ = βⱼ · g(xβ)\n  where g is the PDF — φ(·) for probit, Λ(·)(1 − Λ(·)) for logit.\n- Since g(·) > 0 always, the **sign** of βⱼ equals the sign of the marginal effect.\n- For dummy variables: compute G(xβ with d = 1) − G(xβ with d = 0), not βⱼ · g(xβ).\n- Percentage points vs % change: a marginal effect of 0.05 means 5 pp, not 5%.\n\n**Maximum Likelihood Estimation (MLE)**\n\n- Choose β to maximise the joint probability of observing the sample data.\n- No closed-form solution; solved iteratively (Newton-Raphson).\n- Asymptotic properties (large-sample only):\n  1. **Consistent** — β̂ →ᵖ β₀\n  2. **Asymptotically normal** — √n(β̂ − β₀) →ᵈ N(0, V)\n  3. **Asymptotically efficient** — achieves the Cramér-Rao lower bound\n- Because properties are asymptotic: use **z-tests** (not t-tests), **LR tests** (not F-tests).\n- MLE automatically accounts for the heteroskedastic structure of binary data → conventional SEs are valid by default (no need for robust SEs unless the model is misspecified).",
+        "2": "**Likelihood and log-likelihood**\n\nL(β | data) = ∏_{yᵢ=1} G(xᵢβ) · ∏_{yᵢ=0} [1 − G(xᵢβ)]\n\nℓ(β) = Σ_{yᵢ=1} log G(xᵢβ) + Σ_{yᵢ=0} log[1 − G(xᵢβ)]\n\nCompact form: ℓ(β) = Σᵢ { yᵢ log G(xᵢβ) + (1 − yᵢ) log[1 − G(xᵢβ)] }\n\n**Link functions**\n\n| Model  | G(z)                     | g(z) = G′(z)                       |\n|--------|--------------------------|-------------------------------------|\n| Logit  | exp(z) / (1 + exp(z))   | exp(z) / (1 + exp(z))²             |\n| Probit | Φ(z)                    | φ(z) = (1/√2π) exp(−z²/2)          |\n\n**Marginal effects**\n\n- Continuous xⱼ: ∂Pr(y = 1 | x)/∂xⱼ = βⱼ · g(xβ)\n- Dummy xⱼ: G(xβ | xⱼ = 1) − G(xβ | xⱼ = 0)\n- Partial Effect at the Average (PEA): evaluate at x = x̄ → βⱼ · g(x̄β̂)\n- Average Partial Effect (APE): (1/n) Σᵢ βⱼ · g(xᵢβ̂)\n\n**Testing**\n\n- LR test for q restrictions: LR = 2(ℓ_ur − ℓ_r) ∼ χ²_q under H₀\n- Individual coefficient: z = β̂ⱼ / se(β̂ⱼ) — reject if |z| > 1.96 at 5%\n\n**LPM heteroskedasticity**\n\nVar(u | x) = Pr(y = 1 | x) · [1 − Pr(y = 1 | x)]\n\n**Recoding the dependent variable**\n\n- If y* = y + 1 in LPM: slope coefficients unchanged, intercept shifts by 1.\n- In logit/probit: recoding y has no effect on slope parameters because Pr(y = 1) = Pr(y* = 2).",
+        "3": "**Based on Oct 2023 Q8 — Twitter usage by economics professors**\n\n**LPM estimates:**\n\nTwitter̂ᵢ = 0.138 − 0.011 ageᵢ − 0.135 maleᵢ + 0.754 headᵢ + 0.064 pubᵢ\n           (0.114) (0.023)       (0.415)       (0.312)       (0.005)\n\nn = 2123, R² = 0.19, conventional SEs\n\n**Logit estimates:**\n\nPr(Twitter = 1) = Λ(0.238 − 0.021 age − 0.125 male + 0.854 head + 0.054 pub)\n                  (0.114) (0.013)       (0.215)       (0.012)      (0.022)\n\nn = 2123, Pseudo R² = 0.034, log L = −316.60, conventional SEs\n\n---\n\n**(a) Interpret the LPM intercept.**\n\nβ̂₀ = 0.138 → a female, age-0, non-head professor with 0 publications has a 13.8% predicted probability of using Twitter. This is meaningless in practice since no such professor exists; it is pure extrapolation.\n\n**(b) Should we trust the claim that \"head\" is significant in the LPM?**\n\nThe LPM has inherent heteroskedasticity: Var(u | x) = p(1 − p). Conventional SEs are therefore invalid, which means the reported t-statistic for head is unreliable. Fix: use heteroskedasticity-robust SEs or WLS.\n\n**(c) Advantages and drawbacks of logit over LPM.**\n\nAdvantages:\n1. Predicted probabilities constrained to [0, 1].\n2. MLE handles heteroskedasticity automatically → conventional SEs valid.\n3. Non-constant marginal effects (more realistic — effects diminish near extremes).\n\nDrawback: coefficients not directly interpretable as marginal effects; must compute βⱼ · Λ(xβ)(1 − Λ(xβ)) at specific x values.\n\n**(d) Test H₀: β_age = β_pub = 0 in the logit.**\n\nUse the LR test (not F-test, since MLE):\nLR = 2(ℓ_ur − ℓ_r) ∼ χ²₂ under H₀\n\nGiven ℓ_ur = −316.60. Need to estimate the restricted model (dropping age and pub) to get ℓ_r. Compare LR to χ²₂ critical value = 5.991 at 5%. Reject H₀ if LR > 5.991.\n\n**(e) Effect of being department head for a 40-year-old female with 10 publications.**\n\nCompute z with head = 1 vs head = 0:\n\nz₁ = 0.238 − 0.021(40) − 0.125(0) + 0.854(1) + 0.054(10) = 0.992\nz₀ = 0.238 − 0.021(40) − 0.125(0) + 0.854(0) + 0.054(10) = 0.138\n\nΛ(0.992) = exp(0.992)/(1 + exp(0.992)) = 0.729\nΛ(0.138) = exp(0.138)/(1 + exp(0.138)) = 0.534\n\nEffect = 0.729 − 0.534 = **0.195 → a 19.5 percentage-point increase** in the probability of using Twitter.",
+        "4": "**Task 1 (7 min) — LPM heteroskedasticity**\nExplain why the LPM has inherent heteroskedasticity. Derive Var(u | x) = p(1 − p) from the Bernoulli structure. State the consequences for OLS inference and the available fixes.\n\n**Task 2 (10 min) — Log-likelihood and MLE**\nWrite the log-likelihood function for a probit model with 3 regressors (y on x₁, x₂, x₃). Explain the intuition behind MLE in 2–3 sentences. State and briefly explain the 3 asymptotic properties of MLE.\n\n**Task 3 (10 min) — Marginal effects**\nGiven logit output with β̂ = (−1.2, 0.35, −0.08, 0.62) and an individual with x = (1, 5, 30, 1), compute the marginal effect of x₂ at this point. Then write the formula for the APE of x₂ and explain how it differs from the PEA.\n\n**Task 4 (10 min) — LR test**\nUsing the logit output from the worked example, test H₀: β_age = β_pub = 0. State the null, write the LR statistic formula, state its distribution under H₀, and explain what additional information you need to complete the test.\n\n**Task 5 (8 min) — LPM vs Probit/Logit comparison**\nCompare LPM and Probit/Logit across 4 dimensions: (i) interpretation, (ii) predicted probabilities, (iii) heteroskedasticity, (iv) marginal effects. Why don't we need robust SEs for correctly specified logit/probit?",
+        "5": "**Template for any binary-response question:**\n\n1. **State the model.** Write Pr(y = 1 | x) = G(xβ) and specify G:\n   - LPM: G(z) = z (identity)\n   - Probit: G(z) = Φ(z)\n   - Logit: G(z) = Λ(z) = exp(z)/(1 + exp(z))\n\n2. **Write the likelihood.** L = ∏ G(xᵢβ)^{yᵢ} · [1 − G(xᵢβ)]^{1−yᵢ}. Take logs to get ℓ(β).\n\n3. **Explain MLE.** \"We choose β̂ to maximise ℓ(β). There is no closed-form solution; estimation proceeds iteratively via Newton-Raphson.\"\n\n4. **State MLE properties.** Consistent, asymptotically normal, asymptotically efficient. Stress: these hold in large samples only.\n\n5. **Marginal effects.** For continuous xⱼ: ∂Pr/∂xⱼ = βⱼ · g(xβ). For dummies: difference in predicted probabilities. Specify whether you evaluate at a point (PEA) or average over the sample (APE).\n\n6. **Testing.** Individual: z-test (not t). Joint: LR test with LR = 2(ℓ_ur − ℓ_r) ∼ χ²_q (not F-test).\n\n7. **Compare to LPM if asked.** LPM: easy interpretation, but can predict outside [0,1], has heteroskedasticity, assumes constant marginal effects. Probit/Logit: theory-consistent but harder to interpret.",
+        "6": "1. **Treating logit/probit coefficients as marginal effects.** Must multiply by g(xβ) and evaluate at specific x values. The coefficient alone tells you only the sign and relative magnitude.\n\n2. **Confusing percentage points with % changes.** A marginal effect of 0.05 means a 5 percentage-point change in probability, not a 5% change.\n\n3. **Using LPM coefficients for probit/logit marginal effects.** The two models produce completely different objects — never mix them.\n\n4. **Leaving z = xβ unevaluated.** When computing a marginal effect, you must plug in specific x values. Writing βⱼ · g(xβ) without specifying x gets zero marks.\n\n5. **Forgetting LPM heteroskedasticity.** Var(u | x) = p(1 − p) is inherent, not optional. Conventional SEs are invalid; this must be flagged when interpreting LPM output.\n\n6. **Using the F-test for joint restrictions in MLE models.** MLE requires the LR test: LR = 2(ℓ_ur − ℓ_r) ∼ χ²_q. The F-test belongs to OLS.\n\n7. **Claiming logit \"fixes bias.\"** LPM is not biased under correct specification. Logit/probit address prediction bounds and heteroskedasticity, not bias.\n\n8. **Forgetting MLE properties are asymptotic.** Consistency, normality, and efficiency hold only as n → ∞. In finite samples, MLE has no guaranteed optimality.\n\n9. **Mishandling recoded dependent variables.** In LPM: if y* = y + 1, slopes stay the same and the intercept shifts by 1. In logit/probit: recoding has no effect on parameters because Pr(y = 1) = Pr(y* = 2).\n\n10. **Reporting the coefficient for a dummy variable instead of computing predicted probabilities.** For a dummy xⱼ in logit/probit, the effect is G(xβ | xⱼ = 1) − G(xβ | xⱼ = 0), evaluated at chosen x values. Never just report β̂ⱼ.\n\n11. **Claiming robust SEs are needed for logit/probit.** The MLE for correctly specified binary models already accounts for the heteroskedastic variance structure. Robust SEs are only needed if the model is misspecified."
+      },
+      "formulas": [
+        {
+          "concept": "Model",
+          "formula": "G(z)"
+        },
+        {
+          "concept": "Logit",
+          "formula": "exp(z) / (1 + exp(z))"
+        },
+        {
+          "concept": "Probit",
+          "formula": "Φ(z)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": null,
+          "text": "State the null, write the LR statistic formula, state its distribution under H₀, and explain what additional information you need to complete the test.\n\n**Task 5 (8 min) — LPM vs Probit/Logit comparison**\nCompare LPM and Probit/Logit across 4 dimensions: (i) interpretation, (ii) predicted probabilities, (iii) heteroskedasticity, (iv) marginal effects. Why don't we need robust SEs for correctly specified logit/probit?"
+        }
+      ],
+      "feynmanText": "Sometimes the thing you're trying to predict is a yes/no outcome: Does a person vote? Does a firm default on its loan? Does a married woman work for wages? The dependent variable is 0 or 1.\n\nYou could just run OLS on this 0/1 variable -- that's called the **Linear Probability Model**. The coefficient tells you: \"one more unit of X raises the probability of Y = 1 by β percentage points.\" It's simple and easy to interpret. But it has a problem: the predicted \"probability\" can go below 0 or above 1, which is nonsensical. And the errors are automatically heteroskedastic (the variance of a coin flip depends on how fair the coin is), so your standard errors are wrong by default.\n\n**Logit and probit** fix this by squishing the prediction through an S-shaped curve that stays between 0 and 1. Probit uses the normal distribution's S-curve; logit uses the logistic function. The coefficients no longer directly tell you \"how many percentage points.\" Instead, you need to multiply the coefficient by the height of the S-curve at a particular point -- that gives you the **marginal effect**, which depends on where you are along the curve. Near the middle (probability around 50%), effects are biggest; near the extremes (probability near 0 or 1), effects shrink. This is more realistic than assuming a constant effect everywhere.\n\nThese models are estimated by **maximum likelihood**: the computer finds the parameter values that make the observed data (the pattern of 0s and 1s you actually see) as probable as possible. MLE has nice properties in large samples -- it's consistent, efficient, and approximately normal -- but only asymptotically. So you use z-tests (not t-tests) and likelihood ratio tests (not F-tests).\n\nOne crucial exam trap: the logit/probit coefficient is NOT the marginal effect. You must compute ∂P/∂x = β · g(xβ), where g is the density function. The sign is the same as the coefficient's sign (since g > 0), but the magnitude depends on all the other variables too.",
+      "feynmanKeyTerms": [
+        "Linear Probability Model",
+        "Logit and probit",
+        "marginal effect",
+        "maximum likelihood"
+      ],
+      "modelAnswer": "**Template for any binary-response question:**\n\n1. **State the model.** Write Pr(y = 1 | x) = G(xβ) and specify G:\n   - LPM: G(z) = z (identity)\n   - Probit: G(z) = Φ(z)\n   - Logit: G(z) = Λ(z) = exp(z)/(1 + exp(z))\n\n2. **Write the likelihood.** L = ∏ G(xᵢβ)^{yᵢ} · [1 − G(xᵢβ)]^{1−yᵢ}. Take logs to get ℓ(β).\n\n3. **Explain MLE.** \"We choose β̂ to maximise ℓ(β). There is no closed-form solution; estimation proceeds iteratively via Newton-Raphson.\"\n\n4. **State MLE properties.** Consistent, asymptotically normal, asymptotically efficient. Stress: these hold in large samples only.\n\n5. **Marginal effects.** For continuous xⱼ: ∂Pr/∂xⱼ = βⱼ · g(xβ). For dummies: difference in predicted probabilities. Specify whether you evaluate at a point (PEA) or average over the sample (APE).\n\n6. **Testing.** Individual: z-test (not t). Joint: LR test with LR = 2(ℓ_ur − ℓ_r) ∼ χ²_q (not F-test).\n\n7. **Compare to LPM if asked.** LPM: easy interpretation, but can predict outside [0,1], has heteroskedasticity, assumes constant marginal effects. Probit/Logit: theory-consistent but harder to interpret.",
+      "commonTraps": "1. **Treating logit/probit coefficients as marginal effects.** Must multiply by g(xβ) and evaluate at specific x values. The coefficient alone tells you only the sign and relative magnitude.\n\n2. **Confusing percentage points with % changes.** A marginal effect of 0.05 means a 5 percentage-point change in probability, not a 5% change.\n\n3. **Using LPM coefficients for probit/logit marginal effects.** The two models produce completely different objects — never mix them.\n\n4. **Leaving z = xβ unevaluated.** When computing a marginal effect, you must plug in specific x values. Writing βⱼ · g(xβ) without specifying x gets zero marks.\n\n5. **Forgetting LPM heteroskedasticity.** Var(u | x) = p(1 − p) is inherent, not optional. Conventional SEs are invalid; this must be flagged when interpreting LPM output.\n\n6. **Using the F-test for joint restrictions in MLE models.** MLE requires the LR test: LR = 2(ℓ_ur − ℓ_r) ∼ χ²_q. The F-test belongs to OLS.\n\n7. **Claiming logit \"fixes bias.\"** LPM is not biased under correct specification. Logit/probit address prediction bounds and heteroskedasticity, not bias.\n\n8. **Forgetting MLE properties are asymptotic.** Consistency, normality, and efficiency hold only as n → ∞. In finite samples, MLE has no guaranteed optimality.\n\n9. **Mishandling recoded dependent variables.** In LPM: if y* = y + 1, slopes stay the same and the intercept shifts by 1. In logit/probit: recoding has no effect on parameters because Pr(y = 1) = Pr(y* = 2).\n\n10. **Reporting the coefficient for a dummy variable instead of computing predicted probabilities.** For a dummy xⱼ in logit/probit, the effect is G(xβ | xⱼ = 1) − G(xβ | xⱼ = 0), evaluated at chosen x values. Never just report β̂ⱼ.\n\n11. **Claiming robust SEs are needed for logit/probit.** The MLE for correctly specified binary models already accounts for the heteroskedastic variance structure. Robust SEs are only needed if the model is misspecified.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-14_ST3189_trees-ensembles.md",
+      "date": "2026-05-14",
+      "module": "ST3189",
+      "topicSlug": "trees-ensembles",
+      "title": "ST3189 - Trees, Ensembles + Clustering (Exam Sheet)",
+      "sections": {
+        "0": "A **decision tree** is the simplest model to explain to anyone. It's a flowchart: \"Is the house bigger than 150m²? Yes → Is it in zone A? Yes → predict £400k. No → predict £280k.\" At each step, the tree picks the single question (variable and cutpoint) that best separates the data into more homogeneous groups. It keeps splitting until the groups are small enough, then predicts the average outcome in each final group.\n\nTrees are wonderfully interpretable but have a fatal flaw: they're **high-variance** learners. Change a few data points and the whole tree structure can shift dramatically. The predictions are unstable.\n\n**Ensembles** fix this by combining many trees. The insight is from the \"wisdom of crowds\" -- averaging the opinions of many independent but imperfect judges gives a better answer than any single judge. **Bagging** (bootstrap aggregating) trains each tree on a random resample of the data, then averages the predictions. This slashes variance.\n\n**Random forests** go further: at each split, they only consider a random subset of predictors. This **decorrelates** the trees -- if one strong predictor dominates, bagging produces similar trees that are highly correlated, and averaging correlated things doesn't reduce variance much. By forcing each tree to ignore some predictors, random forests ensure genuine diversity. The variance formula makes this precise: Var(average) = ρσ² + (1−ρ)σ²/B. Decreasing the correlation ρ (by using fewer predictors per split) reduces the first term, which is the irreducible floor.\n\n**Boosting** takes a different angle: instead of training trees independently, it trains them sequentially. Each new tree focuses on the mistakes of the previous ones. It's like a tutor who keeps drilling you on the questions you got wrong.\n\n**Clustering** is unsupervised -- no labels, just \"find groups.\" **K-means** iterates between assigning points to the nearest centre and recomputing centres. **Hierarchical clustering** builds a tree (dendrogram) by repeatedly merging the two closest clusters. The linkage rule (single/complete/average) determines what \"closest\" means and dramatically affects the result.",
+        "1": "### Decision trees\n\n**Regression trees:** Partition predictor space into regions R₁,...,Rₘ. Predict ĉⱼ = mean(yᵢ : i ∈ Rⱼ) for each region. Minimise RSS = ∑ⱼ ∑ᵢ∈Rⱼ (yᵢ − ĉⱼ)².\n\n**Classification trees:** Same partition structure. Predict majority class in each region.\n- Impurity measures: **misclassification error**, **Gini index**, **cross-entropy/deviance**\n- Gini and cross-entropy preferred for tree growing; misclassification for pruning\n\n**Recursive binary splitting algorithm:**\n1. Consider all predictors and all possible cutpoints.\n2. Choose the split (predictor j, cutpoint s) that gives the greatest reduction in RSS.\n3. Split the region into R₁ = {X: Xⱼ ≤ s} and R₂ = {X: Xⱼ > s}.\n4. Repeat within each region until **stopping criterion** met (e.g., \"all nodes have < k observations\").\n\n**Key exam fact:** Recursive binary splitting produces **axis-aligned** splits only. If a diagram shows a non-axis-aligned boundary, it **cannot** have been generated by recursive binary splitting (tested 2021 ZA/ZB Q1a-iii, Q4a-i).\n\n**Pruning:** Grow a large tree T₀, then choose subtree minimising C_α(T) = C(T) + α|T|, where |T| = number of terminal nodes and α chosen by CV.\n\n### Ensemble methods\n\n**Bagging (Bootstrap Aggregating):**\n- Generate B bootstrap samples (sample with replacement, same n)\n- Train one tree on each bootstrap sample\n- Average predictions (regression) or majority vote (classification)\n- Bootstrap probability: P(jth obs NOT in sample) = (1 − 1/n)ⁿ ≈ e⁻¹ ≈ 0.368\n- Out-of-bag (OOB) observations → natural test set → OOB error\n\n**Random forests = bagging + random predictor subsetting:**\n- At each split, randomly select m predictors (typically m ≈ √p for classification, m ≈ p/3 for regression)\n- This **decorrelates** the trees → reduces variance of the average\n\n**Variance of the average of B correlated predictions:**\nVar(X̄) = ρσ² + (1−ρ)/B · σ²\n- As B → ∞, second term → 0, but ρσ² remains (irreducible)\n- Decreasing m decreases ρ → decreases Var(X̄) for large B\n- This formula is tested in 2021 ZA Q4b, 2021 ZB Q1b.\n\n**Boosting (AdaBoost sketch):**\n- Sequential: fit weak learner (often stump), upweight misclassified observations\n- αₘ = log((1−εₘ)/εₘ) where εₘ = weighted misclassification rate\n- Final classifier: sign(∑ₘ αₘfₘ(x))\n- Gradient boosting: fit trees to pseudo-residuals with learning rate λ < 1\n\n**Random forests misconception (tested EVERY year):**\n- WRONG: \"a random selection of internal nodes are discarded\"\n- WRONG: \"a random selection of observations are discarded\"\n- CORRECT: \"a random selection of **input variables (predictors)** at each split are considered\"\n\n### Clustering\n\n**K-means:**\n1. Initialise K cluster centres (randomly or given).\n2. **Assign** each observation to nearest centre (Euclidean distance).\n3. **Recompute** each centre as mean of assigned observations.\n4. Repeat until no assignments change.\n- Minimises within-cluster distortion ∑ₖ ∑ᵢ∈Cₖ ‖xᵢ − μₖ‖²\n- Sensitive to initialisation\n\n**Hierarchical clustering (agglomerative):**\n1. Start with n singleton clusters.\n2. Compute pairwise distances.\n3. Merge the two closest clusters.\n4. Recompute distances using chosen linkage.\n5. Repeat until one cluster remains.\n6. Draw dendrogram showing merge heights.\n\n**Linkage types:**\n\n| Linkage | D(A,B) = | Properties |\n|---|---|---|\n| **Single** | min d(a,b) | Chaining effect; good for non-convex shapes |\n| **Complete** | max d(a,b) | Compact clusters; sensitive to outliers |\n| **Average** | mean d(a,b) | Compromise; most similar to k-means |\n\n**Correlation-based distance:** D = 1 − correlation. Convert the correlation matrix FIRST before applying the algorithm.",
+        "2": "### Recursive binary splitting — exam computation template\n\nFor each candidate cutpoint s for predictor Xⱼ:\n1. Split data into R₁ = {i: Xⱼᵢ ≤ s} and R₂ = {i: Xⱼᵢ > s}\n2. Compute ĉ₁ = mean(yᵢ : i ∈ R₁) and ĉ₂ = mean(yᵢ : i ∈ R₂)\n3. Compute RSS = ∑ᵢ∈R₁ (yᵢ − ĉ₁)² + ∑ᵢ∈R₂ (yᵢ − ĉ₂)²\n4. Choose cutpoint with **minimum RSS** (greatest reduction from unsplit RSS)\n\n### K-means — exam computation template\n\n| Step | Action |\n|---|---|\n| 0 | Record initial centres |\n| 1 | Compute distance from each obs to each centre; assign to nearest |\n| 2 | Recompute centres as mean of each cluster |\n| 3 | Reassign observations | \n| 4 | If assignments unchanged → STOP |\n\n### Bootstrap probability\n\nP(jth obs in sample of size n) = 1 − (1 − 1/n)ⁿ\n\nFor n=5: 1 − (4/5)⁵ = 1 − 0.32768 = 0.672\n\n### Bagging variance formula\n\nVar(X̄_B) = ρσ² + ((1−ρ)/B)σ²\n\n**Proof:** Let Var(Xᵢ) = σ², Cov(Xᵢ,Xⱼ) = ρσ² for i ≠ j.\nVar(∑Xᵢ/B) = (∑Var(Xᵢ))/B² + (∑ᵢ≠ⱼ Cov(Xᵢ,Xⱼ))/B²\n= Bσ²/B² + B(B−1)ρσ²/B² = σ²/B + ρσ²(B−1)/B = ρσ² + (1−ρ)σ²/B",
+        "3": "**Data:** (Y, X) = (7,8), (6,9), (8,7), (3,1), (4,0). Stopping: nodes < 4 obs.\n\n**Step 1:** Compute unsplit RSS.\nȲ = (7+6+8+3+4)/5 = 5.6\nRSS_total = (7−5.6)² + (6−5.6)² + (8−5.6)² + (3−5.6)² + (4−5.6)² = 1.96+0.16+5.76+6.76+2.56 = 17.2\n\n**Step 2:** Try all cutpoints for X:\n- X ≤ 0.5: R₁={4}, R₂={7,6,8,3}. ĉ₁=4, ĉ₂=6. RSS = 0 + (1+0+4+9) = 14\n- X ≤ 4: R₁={3,4}, R₂={7,6,8}. ĉ₁=3.5, ĉ₂=7. RSS = (0.25+0.25) + (0+1+1) = 2.5 ← **minimum**\n- X ≤ 7.5: R₁={8,3,4}, R₂={7,6}. ĉ₁=5, ĉ₂=6.5. RSS = (9+4+1) + (0.25+0.25) = 14.5\n- X ≤ 8.5: R₁={7,8,3,4}, R₂={6}. ĉ₁=5.5, ĉ₂=6. RSS = (2.25+6.25+6.25+2.25) + 0 = 17 (note: recalculate) ... actually: ĉ₁ = 22/4=5.5. RSS₁ = (1.5²+0.5²+2.5²+1.5²) = 2.25+0.25+6.25+2.25=11. RSS₂=0. Total=11. Let me fix: still X ≤ 4 wins with RSS=2.5.\n\n**Step 3:** Best split at X = 4 (cutpoint between X=1 and X=7).\nR₁ = {X < 4} = obs (3,1),(4,0) → ĉ₁ = 3.5\nR₂ = {X ≥ 4} = obs (7,8),(6,9),(8,7) → ĉ₂ = 7\n\nBoth regions have < 4 observations → **STOP.**\n\n**Tree diagram:**\n```\n         X < 4?\n        /      \\\n      Yes       No\n    ĉ = 3.5   ĉ = 7\n```",
+        "4": "1. **(15 min)** Recursive binary splitting: Given 5 data points with (Y, X₁, X₂), try all candidate splits on both predictors. Find the optimal first split. Draw the tree diagram.\n2. **(10 min)** K-means with K=2: Given 5 observations and initial centres, show the algorithm step by step until convergence. State final cluster assignments and centres.\n3. **(12 min)** Hierarchical clustering: Given a 5×5 distance matrix, perform agglomerative clustering with average linkage. Show each merge step and draw the dendrogram.\n4. **(5 min)** Prove: Var(X̄) = ρσ² + (1−ρ)σ²/B for B identically distributed, pairwise correlated variables.\n5. **(8 min)** True/False: (i) Recursive binary splitting produces axis-aligned splits. (ii) In random forests, a random selection of observations are discarded to decorrelate trees. (iii) For k=1 KNN, training error is 0. (iv) For a fixed k, k-means always converges to the same centroids regardless of initialisation.",
+        "5": "### For recursive binary splitting (13 marks):\n\n```\n1. COMPUTE unsplit RSS (Ȳ, then ∑(yᵢ−Ȳ)²).\n\n2. LIST all candidate cutpoints (midpoints between consecutive X values).\n\n3. For EACH cutpoint:\n   - State R₁ and R₂ (which obs in each).\n   - Compute ĉ₁ and ĉ₂ (means).\n   - Compute RSS₁ + RSS₂.\n\n4. SELECT the cutpoint with minimum total RSS.\n\n5. CHECK stopping criterion in each child node.\n   If not met, repeat splitting within that node.\n\n6. DRAW the tree diagram with split rules and leaf predictions.\n```\n\n### For k-means (8 marks):\n\n```\n1. STATE initial centres.\n2. COMPUTE distances from each obs to each centre.\n3. ASSIGN each obs to nearest centre.\n4. RECOMPUTE centres as cluster means.\n5. REASSIGN. If no change → STOP.\n6. STATE final clusters and centres.\n```\n\n### For hierarchical clustering (13 marks):\n\n```\n1. CONVERT to distance matrix if given correlations (D = 1 − corr).\n2. FIND minimum distance → merge those two clusters.\n3. RECOMPUTE distances using chosen linkage (show the calculation).\n4. REPEAT until all merged.\n5. DRAW dendrogram with correct heights.\n6. If asked to cut at k clusters, state which obs are in each.\n```",
+        "6": "- **Recursive binary splitting: forgetting to try all cutpoints.** You must try every possible split, not just intuitive ones. The examiner shows full calculations for each.\n- **K-means: wrong distance calculation.** Use Euclidean distance. When data is multidimensional, d((x₁,y₁),(x₂,y₂)) = √((x₁−x₂)² + (y₁−y₂)²). Some papers use squared Euclidean — read carefully.\n- **Hierarchical clustering: forgetting to convert correlation to distance.** If given a correlation matrix, compute D = 1 − correlation FIRST. Students who cluster on raw correlations get the wrong dendrogram.\n- **Linkage confusion:** Single = min, Complete = max, Average = mean. Students swap single and complete. The examiner tests awareness of which linkage produces which cluster shapes.\n- **Average linkage: computing the average distance vs distance between averages.** Average linkage computes the mean of all pairwise distances between the two clusters, NOT the distance between cluster centroids.\n- **Random forests: saying \"observations\" or \"nodes\" instead of \"variables/predictors.\"** This is tested in True/False every year and candidates consistently get it wrong (noted in 2021 ZA/ZB commentary). The correct statement: \"a random selection of **predictors** at each split.\"\n- **K-means initialisation:** Different starting points can give different final clusters. The statement \"k-means always converges to the same centroids\" is FALSE (Oct 2023 True/False).\n- **Bagging variance proof:** Show each step. Students skip the Cov(Xᵢ,Xⱼ) = ρσ² substitution and the algebraic simplification. The examiner awards marks for intermediate steps.\n- **1-KNN training error = 0:** Because each point's nearest neighbour IS itself (when in the training set). But LOOCV error for 1-KNN can be high — don't confuse training with CV.\n- **Tree interpretation:** When asked to \"provide an interpretation,\" narrate in words what each split means in context (e.g., \"cars with ≤ 5 cylinders have higher MPG\"). Do not just restate the split values."
+      },
+      "formulas": [
+        {
+          "concept": "Step",
+          "formula": "Action"
+        },
+        {
+          "concept": "0",
+          "formula": "Record initial centres"
+        },
+        {
+          "concept": "1",
+          "formula": "Compute distance from each obs to each centre; assign to nearest"
+        },
+        {
+          "concept": "2",
+          "formula": "Recompute centres as mean of each cluster"
+        },
+        {
+          "concept": "3",
+          "formula": "Reassign observations"
+        },
+        {
+          "concept": "4",
+          "formula": "If assignments unchanged → STOP"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 15,
+          "text": "Recursive binary splitting: Given 5 data points with (Y, X₁, X₂), try all candidate splits on both predictors. Find the optimal first split. Draw the tree diagram."
+        },
+        {
+          "time_minutes": 10,
+          "text": "K-means with K=2: Given 5 observations and initial centres, show the algorithm step by step until convergence. State final cluster assignments and centres."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Hierarchical clustering: Given a 5×5 distance matrix, perform agglomerative clustering with average linkage. Show each merge step and draw the dendrogram."
+        },
+        {
+          "time_minutes": 5,
+          "text": "Prove: Var(X̄) = ρσ² + (1−ρ)σ²/B for B identically distributed, pairwise correlated variables."
+        },
+        {
+          "time_minutes": 8,
+          "text": "True/False: (i) Recursive binary splitting produces axis-aligned splits. (ii) In random forests, a random selection of observations are discarded to decorrelate trees. (iii) For k=1 KNN, training error is 0. (iv) For a fixed k, k-means always converges to the same centroids regardless of initialisation."
+        }
+      ],
+      "feynmanText": "A **decision tree** is the simplest model to explain to anyone. It's a flowchart: \"Is the house bigger than 150m²? Yes → Is it in zone A? Yes → predict £400k. No → predict £280k.\" At each step, the tree picks the single question (variable and cutpoint) that best separates the data into more homogeneous groups. It keeps splitting until the groups are small enough, then predicts the average outcome in each final group.\n\nTrees are wonderfully interpretable but have a fatal flaw: they're **high-variance** learners. Change a few data points and the whole tree structure can shift dramatically. The predictions are unstable.\n\n**Ensembles** fix this by combining many trees. The insight is from the \"wisdom of crowds\" -- averaging the opinions of many independent but imperfect judges gives a better answer than any single judge. **Bagging** (bootstrap aggregating) trains each tree on a random resample of the data, then averages the predictions. This slashes variance.\n\n**Random forests** go further: at each split, they only consider a random subset of predictors. This **decorrelates** the trees -- if one strong predictor dominates, bagging produces similar trees that are highly correlated, and averaging correlated things doesn't reduce variance much. By forcing each tree to ignore some predictors, random forests ensure genuine diversity. The variance formula makes this precise: Var(average) = ρσ² + (1−ρ)σ²/B. Decreasing the correlation ρ (by using fewer predictors per split) reduces the first term, which is the irreducible floor.\n\n**Boosting** takes a different angle: instead of training trees independently, it trains them sequentially. Each new tree focuses on the mistakes of the previous ones. It's like a tutor who keeps drilling you on the questions you got wrong.\n\n**Clustering** is unsupervised -- no labels, just \"find groups.\" **K-means** iterates between assigning points to the nearest centre and recomputing centres. **Hierarchical clustering** builds a tree (dendrogram) by repeatedly merging the two closest clusters. The linkage rule (single/complete/average) determines what \"closest\" means and dramatically affects the result.",
+      "feynmanKeyTerms": [
+        "decision tree",
+        "high-variance",
+        "Ensembles",
+        "Bagging",
+        "Random forests",
+        "decorrelates",
+        "Boosting",
+        "Clustering",
+        "K-means",
+        "Hierarchical clustering"
+      ],
+      "modelAnswer": "### For recursive binary splitting (13 marks):\n\n```\n1. COMPUTE unsplit RSS (Ȳ, then ∑(yᵢ−Ȳ)²).\n\n2. LIST all candidate cutpoints (midpoints between consecutive X values).\n\n3. For EACH cutpoint:\n   - State R₁ and R₂ (which obs in each).\n   - Compute ĉ₁ and ĉ₂ (means).\n   - Compute RSS₁ + RSS₂.\n\n4. SELECT the cutpoint with minimum total RSS.\n\n5. CHECK stopping criterion in each child node.\n   If not met, repeat splitting within that node.\n\n6. DRAW the tree diagram with split rules and leaf predictions.\n```\n\n### For k-means (8 marks):\n\n```\n1. STATE initial centres.\n2. COMPUTE distances from each obs to each centre.\n3. ASSIGN each obs to nearest centre.\n4. RECOMPUTE centres as cluster means.\n5. REASSIGN. If no change → STOP.\n6. STATE final clusters and centres.\n```\n\n### For hierarchical clustering (13 marks):\n\n```\n1. CONVERT to distance matrix if given correlations (D = 1 − corr).\n2. FIND minimum distance → merge those two clusters.\n3. RECOMPUTE distances using chosen linkage (show the calculation).\n4. REPEAT until all merged.\n5. DRAW dendrogram with correct heights.\n6. If asked to cut at k clusters, state which obs are in each.\n```",
+      "commonTraps": "- **Recursive binary splitting: forgetting to try all cutpoints.** You must try every possible split, not just intuitive ones. The examiner shows full calculations for each.\n- **K-means: wrong distance calculation.** Use Euclidean distance. When data is multidimensional, d((x₁,y₁),(x₂,y₂)) = √((x₁−x₂)² + (y₁−y₂)²). Some papers use squared Euclidean — read carefully.\n- **Hierarchical clustering: forgetting to convert correlation to distance.** If given a correlation matrix, compute D = 1 − correlation FIRST. Students who cluster on raw correlations get the wrong dendrogram.\n- **Linkage confusion:** Single = min, Complete = max, Average = mean. Students swap single and complete. The examiner tests awareness of which linkage produces which cluster shapes.\n- **Average linkage: computing the average distance vs distance between averages.** Average linkage computes the mean of all pairwise distances between the two clusters, NOT the distance between cluster centroids.\n- **Random forests: saying \"observations\" or \"nodes\" instead of \"variables/predictors.\"** This is tested in True/False every year and candidates consistently get it wrong (noted in 2021 ZA/ZB commentary). The correct statement: \"a random selection of **predictors** at each split.\"\n- **K-means initialisation:** Different starting points can give different final clusters. The statement \"k-means always converges to the same centroids\" is FALSE (Oct 2023 True/False).\n- **Bagging variance proof:** Show each step. Students skip the Cov(Xᵢ,Xⱼ) = ρσ² substitution and the algebraic simplification. The examiner awards marks for intermediate steps.\n- **1-KNN training error = 0:** Because each point's nearest neighbour IS itself (when in the training set). But LOOCV error for 1-KNN can be high — don't confuse training with CV.\n- **Tree interpretation:** When asked to \"provide an interpretation,\" narrate in words what each split means in context (e.g., \"cars with ≤ 5 cylinders have higher MPG\"). Do not just restate the split values.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-15_EC2020_time-series-core.md",
+      "date": "2026-05-15",
+      "module": "EC2020",
+      "topicSlug": "time-series-core",
+      "title": "EC2020 - Time Series Core (Static/Dynamic, AR/MA, Serial Correlation, HAC, Unit Roots, Cointegration, ECM)",
+      "sections": {
+        "0": "Time series data is different from cross-sectional data because order matters. Today's GDP is related to yesterday's GDP. That dependence over time creates both opportunities (you can use the past to predict the future) and traps (the usual statistical rules can break).\n\n**Stationarity** means the process behaves the same regardless of when you look at it -- same average, same spread, same pattern of dependence. Think of a river that fluctuates around a stable level: sometimes it's above, sometimes below, but it keeps coming back. A stationary process is \"well-behaved\" and you can use standard statistics.\n\nA **non-stationary** process (like a random walk) has no stable level. Each shock pushes it permanently in one direction. Stock prices are a classic example: there's no \"normal\" level they revert to. If you regress one random walk on another, you'll get a beautiful-looking fit (high R², significant t-stats) that is completely **spurious** -- meaningless.\n\nTwo non-stationary series can genuinely move together in the long run -- that's **cointegration**. Consumption and income are both non-stationary, but they can't diverge forever because you can't spend more than you earn indefinitely. The **Error Correction Model** formalises this: in the short run, things can drift apart, but there's a force (the error correction term) that pulls them back toward equilibrium. The speed-of-adjustment parameter tells you how fast that pull-back happens.\n\n**Autocorrelation** is when today's error is correlated with yesterday's error. By itself, it doesn't bias your coefficient estimates -- but it makes your standard errors wrong (just like heteroskedasticity). The danger zone is when you have a lagged dependent variable (yesterday's Y as a regressor) AND autocorrelation simultaneously: then OLS becomes inconsistent, not just inefficient. You need instrumental variables to fix it.\n\nTo test whether a series is non-stationary, you use the **Dickey-Fuller test**. The key gotcha: the test statistic does NOT follow the usual t-distribution. It follows the Dickey-Fuller distribution, which has different (more negative) critical values. Using 1.96 here is a guaranteed mark-loser.",
+        "1": "**Stationarity.** A process {yₜ} is (covariance) stationary if: (i) E(yₜ) is constant for all t, (ii) Var(yₜ) is constant for all t, (iii) Cov(yₜ, yₜ₊ₕ) depends only on h, not on t. All three must hold simultaneously.\n\n**Weak dependence.** Corr(yₜ, yₜ₊ₕ) → 0 as h → ∞. This is what makes the LLN and CLT apply to time series data. Stationarity and weak dependence together replace the random sampling assumption (MLR.2) used in cross-sectional analysis.\n\n**Trend-stationary vs difference-stationary.** Trend-stationary: yₜ = α + δt + uₜ where uₜ is stationary. Detrending (regressing out the trend) recovers a stationary process. Shocks are temporary -- the series reverts to trend. Difference-stationary (I(1)): first-differencing ∆yₜ = yₜ - yₜ₋₁ is needed to achieve stationarity. Shocks are permanent -- no reversion to a deterministic path. The distinction matters for forecasting, inference, and model specification.\n\n**ADL model.** yₜ = α + ρyₜ₋₁ + β₁xₜ + β₂xₜ₋₁ + εₜ. Short-run (impact) effect of a unit change in x: β₁. Long-run (equilibrium) effect: (β₁ + β₂)/(1 - ρ), derived by setting yₜ = yₜ₋₁ = y* and xₜ = xₜ₋₁ = x* and solving. Requires |ρ| < 1 for the long-run to exist (stability).\n\n**Lagged dependent variable and exogeneity.** With yₜ₋₁ on the RHS, strict exogeneity (TS.3: E(εₜ|X₁,...,X_T) = 0 for all t) is violated because yₜ₋₁ depends on εₜ₋₁. OLS is biased in finite samples. However, OLS is consistent if TS.3' (contemporaneous exogeneity: E(εₜ|xₜ, yₜ₋₁) = 0) holds AND there is no autocorrelation in εₜ.\n\n**Autocorrelation (serial correlation).** E(εₜεₛ) ≠ 0 for some t ≠ s. Consequences without lagged DV: OLS is still unbiased and consistent, but standard errors are invalid (not BLUE). With lagged DV: autocorrelation violates TS.3' → OLS is INCONSISTENT (not just biased). This is because εₜ is correlated with εₜ₋₁, which feeds into yₜ₋₁. The remedy is IV estimation, not just HAC standard errors.\n\n**Testing for AR(1) autocorrelation.** Suppose εₜ = ρεₜ₋₁ + vₜ. Procedure: (1) Estimate the original model by OLS, obtain residuals ε̂ₜ. (2) Regress ε̂ₜ on all original regressors plus ε̂ₜ₋₁. (3) Test H₀: ρ = 0 using t = ρ̂/se(ρ̂), asymptotically N(0,1), or equivalently the LM statistic = (T - 1)R² ~ χ²₁. Including the original regressors in step (2) is essential to avoid spurious correlation.\n\n**HAC standard errors.** Under autocorrelation (without lagged DV), OLS remains consistent but SEs are wrong. HAC (Heteroskedasticity and Autocorrelation Consistent, Newey-West) standard errors correct for both heteroskedasticity and autocorrelation. They fix inference but do not fix the coefficient estimates -- those are already consistent.\n\n**Unit root / I(1).** A process yₜ = yₜ₋₁ + εₜ (random walk) has ρ = 1 in the AR(1) representation. It is non-stationary: Var(yₜ) = tσ² → ∞, so it exhibits strong dependence rather than weak dependence. Standard OLS inference breaks down entirely.\n\n**Dickey-Fuller test.** Reparameterise yₜ = ρyₜ₋₁ + εₜ as ∆yₜ = α + γyₜ₋₁ + εₜ where γ = ρ - 1. H₀: γ = 0 (unit root, non-stationary). H₁: γ < 0 (stationary). The test statistic γ̂/se(γ̂) does NOT follow the t-distribution under H₀; it follows the Dickey-Fuller distribution with critical values: -2.86 (no trend, 5%), -3.41 (with trend, 5%). Reject H₀ only if the test statistic is more negative than the critical value.\n\n**Augmented Dickey-Fuller (ADF).** Add lagged differences ∆yₜ₋₁, ..., ∆yₜ₋ₚ to the DF test equation to absorb autocorrelation in the errors: ∆yₜ = α + γyₜ₋₁ + Σⱼ γⱼ∆yₜ₋ⱼ + εₜ. The test and critical values are otherwise identical to DF.\n\n**Spurious regression.** Regressing one I(1) series on another unrelated I(1) series produces high R², significant t-statistics, but the relationship is meaningless. The errors from such a regression are themselves I(1), so all inference is invalid.\n\n**Cointegration.** Two I(1) variables yₜ and xₜ are cointegrated if there exists a linear combination yₜ - β₀ - β₁xₜ that is I(0). This I(0) combination represents a stable long-run equilibrium relationship. If cointegrated, OLS on the levels is super-consistent: the bias vanishes asymptotically faster than in the stationary case (at rate T, not √T).\n\n**Error Correction Model (ECM).** ∆yₜ = ρ(yₜ₋₁ - γ₁ - γ₂xₜ₋₁) + γ₃∆xₜ + uₜ. The term in parentheses is the disequilibrium at t-1. ρ is the speed of adjustment (should be negative: the system corrects back toward equilibrium). γ₃ is the short-run effect of ∆x. The ECM combines short-run dynamics with long-run adjustment in a single equation.\n\n**Engle-Granger 2-step procedure.** Step 1: Estimate the cointegrating regression yₜ = β₀ + β₁xₜ + êₜ by OLS. Get residuals ê = disequilibrium. Step 2: Test ê for stationarity using ADF. If I(0), cointegration is confirmed. Step 3: Estimate the ECM using êₜ₋₁ as the error correction term: ∆yₜ = ρêₜ₋₁ + γ₃∆xₜ + uₜ.",
+        "2": "**Short-run and long-run effects (ADL):**\n- Short-run effect: β₁\n- Long-run effect: (β₁ + β₂)/(1 - ρ), requires |ρ| < 1\n\n**AR(1) stationarity and variance:**\n- Stationarity condition: |ρ| < 1\n- Var(yₜ) = σ²/(1 - ρ²)\n\n**Autocorrelation test (AR(1) errors):**\n- t-test: ρ̂/se(ρ̂) ~ N(0,1) asymptotically\n- LM test: (T - 1)R² ~ χ²₁ where R² is from the auxiliary regression of ε̂ₜ on regressors + ε̂ₜ₋₁\n\n**Dickey-Fuller test equations:**\n- Without trend: ∆yₜ = α + γyₜ₋₁ + εₜ\n- With trend: ∆yₜ = α + δt + γyₜ₋₁ + εₜ\n- ADF extension: add Σⱼ₌₁ᵖ γⱼ∆yₜ₋ⱼ to either equation\n\n**DF critical values (5%):**\n- No trend: -2.86\n- With trend: -3.41\n\n**ECM derivation from ADL(1,1):** Starting from yₜ = β₀ + β₁yₜ₋₁ + β₂xₜ + β₃xₜ₋₁ + uₜ:\n- ρ = β₁ - 1 (speed of adjustment)\n- γ₁ = β₀/(1 - β₁) (long-run intercept)\n- γ₂ = (β₂ + β₃)/(1 - β₁) (long-run effect of x)\n- γ₃ = β₂ (short-run effect of ∆x)\n\n**MA(q) covariance structure:**\n- Cov(yₜ, yₜ₊ₕ) = 0 for all |h| > q (autocorrelation cuts off after q lags)\n\n**Cointegration test:**\n- ADF on residuals from cointegrating regression (critical values differ from standard ADF tables)",
+        "3": "*Based on 2022 Oct Q6 (stock price and dividends ECM).*\n\n> priceₜ = β₀ + β₁priceₜ₋₁ + β₂log(divₜ) + β₃log(divₜ₋₁) + uₜ\n\nBoth price and log(div) are I(1). Assume |β₁| < 1.\n\n**(a) Spurious regression vs cointegration.**\nIf price and log(div) are unrelated I(1) processes, OLS produces a spurious regression: high R² and significant t-stats, but errors are I(1) and the relationship is meaningless. If they are cointegrated, a linear combination is I(0), errors are stationary, and OLS is super-consistent (bias → 0 at rate T). The distinction is testable via ADF on the OLS residuals.\n\n**(b) ECM derivation.**\nSubtract priceₜ₋₁ from both sides and add/subtract β₂log(divₜ₋₁):\n\n∆priceₜ = (β₁ - 1)[priceₜ₋₁ - β₀/(1-β₁) - (β₂+β₃)/(1-β₁) · log(divₜ₋₁)] + β₂∆log(divₜ) + uₜ\n\nComponents: ρ = β₁ - 1 is the adjustment speed. The bracketed term is the disequilibrium at t-1 (deviation from long-run equilibrium). β₂ is the short-run effect of dividend growth on price changes.\n\n**(c) Engle-Granger 2-step.**\nStep 1: OLS regression of price on log(div) in levels. Obtain residuals ê = estimated disequilibrium. Step 2: ADF test on ê. If stationary (reject unit root), cointegration is confirmed. Step 3: Estimate ∆priceₜ = ρêₜ₋₁ + γ₃∆log(divₜ) + uₜ by OLS.\n\n**(d) Interpreting ρ̂ = -0.5.**\nHalf of any disequilibrium is corrected each quarter. After a shock, the system returns approximately to equilibrium within ~2 quarters. The negative sign is correct: it implies the system pulls back toward equilibrium rather than diverging.\n\n*Also from 2022 Q4 (stationarity proof).*\n\n> yₜ = yₜ₋₁ + εₜ + λεₜ₋₁\n\nShow non-stationary unless λ = -1. By recursive substitution: yₜ = y₀ + Σₛ₌₁ᵗ εₛ + λΣₛ₌₀ᵗ⁻¹ εₛ. Then Var(yₜ) = (1+λ)²(t-1)σ² + σ²(1+λ²) which grows with t unless (1+λ) = 0, i.e. λ = -1. When λ = -1: yₜ = yₜ₋₁ + εₜ - εₜ₋₁ simplifies to a stationary MA(1) in differences, but the levels reduce to yₜ = y₀ + εₜ which is stationary.",
+        "4": "**Task 1 (8 min).** Define covariance stationarity (state all 3 conditions). Distinguish trend-stationary from difference-stationary processes. Why does the distinction matter for modelling and inference?\n\n**Task 2 (10 min).** Consider the ADL(1,1) model: yₜ = 2.4 + 0.6yₜ₋₁ + 1.2xₜ - 0.8xₜ₋₁ + εₜ. Compute the short-run and long-run effects of x on y. Under what conditions is OLS biased? Under what conditions is OLS consistent? What additional problem arises if εₜ is autocorrelated?\n\n**Task 3 (10 min).** Describe the full procedure for testing AR(1) autocorrelation in a time series regression. State H₀, the auxiliary regression, the test statistic and its distribution, and what to do if autocorrelation is detected (with and without a lagged dependent variable).\n\n**Task 4 (12 min).** A researcher has quarterly GDP data and suspects a unit root. (i) Write the Dickey-Fuller test equation (with and without a deterministic trend). (ii) State H₀ and H₁. (iii) State the distribution of the test statistic under H₀ and explain why it is not the t-distribution. (iv) Give the 5% critical value and state the rejection rule. (v) What modification produces the ADF test, and why is it needed?\n\n**Task 5 (10 min).** Two I(1) series yₜ and xₜ are believed to be cointegrated. (i) Derive the ECM from the ADL(1,1) model yₜ = β₀ + β₁yₜ₋₁ + β₂xₜ + β₃xₜ₋₁ + uₜ. (ii) Identify the adjustment speed and short-run effect. (iii) Describe the Engle-Granger 2-step procedure for estimation and testing.",
+        "5": "**For stationarity / unit root questions:**\n1. Define stationarity: constant mean, constant variance, autocovariance depends only on lag h\n2. Check each condition for the given process (compute E(yₜ), Var(yₜ), Cov(yₜ, yₜ₊ₕ) explicitly)\n3. For DF/ADF: write the test equation, state H₀: γ = 0 (unit root) vs H₁: γ < 0 (stationary)\n4. State the DF distribution (NOT the t-distribution) and give the critical value (-2.86 or -3.41)\n5. Rejection rule: reject H₀ if test stat < critical value (i.e. more negative)\n6. Conclude: reject → stationary; fail to reject → unit root (I(1))\n\n**For ECM / cointegration questions:**\n1. Verify both series are I(1) (apply DF/ADF to each)\n2. Test for cointegration: ADF on residuals from the cointegrating regression\n3. If cointegrated: derive the ECM algebraically from the ADL by subtracting yₜ₋₁ and rearranging\n4. Identify components: error correction term (disequilibrium), adjustment speed ρ, short-run effect γ₃\n5. Describe the Engle-Granger 2-step: (i) OLS on levels → residuals, (ii) ADF on residuals, (iii) estimate ECM\n6. Interpret ρ: sign should be negative (corrective), magnitude = fraction of disequilibrium corrected per period\n\n**For autocorrelation questions:**\n1. State consequences: SEs invalid, not BLUE (but still consistent if no lagged DV)\n2. Describe the test: auxiliary regression of ε̂ₜ on regressors + ε̂ₜ₋₁, test ρ = 0\n3. State both test statistics (t-ratio and LM) and their distributions\n4. Remedy without lagged DV: HAC standard errors\n5. Remedy with lagged DV: IV estimation (HAC alone insufficient because OLS is inconsistent)",
+        "6": "- **Using the t-distribution for DF/ADF.** The test statistic γ̂/se(γ̂) follows the Dickey-Fuller distribution, not t. The DF distribution has much larger critical values in absolute terms. Using t critical values (e.g. -1.96) leads to over-rejection.\n\n- **Confusing DF and ADF test equations.** ADF adds lagged differences ∆yₜ₋₁, ..., ∆yₜ₋ₚ to absorb autocorrelation in the test equation errors. The test on γ is identical; only the auxiliary terms differ.\n\n- **Not including a time trend when data has a trend.** If the data exhibits a deterministic trend, the DF equation must include δt, and the critical value changes from -2.86 to -3.41. Omitting the trend leads to incorrect inference.\n\n- **Lagged DV + autocorrelation = INCONSISTENCY.** With a lagged dependent variable and autocorrelated errors, OLS is inconsistent (not just biased). HAC fixes standard errors but cannot fix an inconsistent estimator. The remedy is IV estimation.\n\n- **Computing the long-run effect as β₁ + β₂.** The correct formula is (β₁ + β₂)/(1 - ρ). The denominator accounts for the feedback through the lagged dependent variable. Forgetting it understates the long-run effect.\n\n- **Saying autocorrelation causes bias.** Without a lagged DV, autocorrelation does not bias OLS -- it only invalidates standard errors. Bias/inconsistency arises only when autocorrelation combines with a lagged dependent variable.\n\n- **ECM derivation errors.** The most common mistakes: wrong sign on ρ (it should be β₁ - 1, which is negative for |β₁| < 1), dropping terms when rearranging, and confusing the short-run coefficient (β₂) with the long-run coefficient ((β₂ + β₃)/(1 - β₁)).\n\n- **Not distinguishing trend-stationary from difference-stationary.** Trend-stationary: detrend. Difference-stationary: first-difference. Applying the wrong transformation leads to either over-differencing (losing long-run information) or under-differencing (non-stationary errors).\n\n- **Confusing weak dependence with stationarity.** Stationarity concerns whether moments are time-invariant. Weak dependence concerns whether correlations die out. A process can be stationary but strongly dependent (e.g. AR(1) with ρ close to 1), or non-stationary but weakly dependent in some transformed sense.\n\n- **Skipping the cointegration test before estimating the ECM.** The ECM is only valid if the variables are cointegrated (the error correction term must be I(0)). Without testing, the ECM may be based on a spurious relationship.\n\n- **Misinterpreting ρ in the ECM.** ρ should be negative (corrective: pulls back to equilibrium). A positive ρ implies an explosive process. The magnitude |ρ| gives the fraction of disequilibrium corrected each period.\n\n- **Treating time series data as cross-sectional.** Time series requires TS assumptions (weak dependence, contemporaneous exogeneity) rather than CS assumptions (random sampling, strict exogeneity). Applying cross-sectional reasoning to time series data invalidates inference."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "Time series data is different from cross-sectional data because order matters. Today's GDP is related to yesterday's GDP. That dependence over time creates both opportunities (you can use the past to predict the future) and traps (the usual statistical rules can break).\n\n**Stationarity** means the process behaves the same regardless of when you look at it -- same average, same spread, same pattern of dependence. Think of a river that fluctuates around a stable level: sometimes it's above, sometimes below, but it keeps coming back. A stationary process is \"well-behaved\" and you can use standard statistics.\n\nA **non-stationary** process (like a random walk) has no stable level. Each shock pushes it permanently in one direction. Stock prices are a classic example: there's no \"normal\" level they revert to. If you regress one random walk on another, you'll get a beautiful-looking fit (high R², significant t-stats) that is completely **spurious** -- meaningless.\n\nTwo non-stationary series can genuinely move together in the long run -- that's **cointegration**. Consumption and income are both non-stationary, but they can't diverge forever because you can't spend more than you earn indefinitely. The **Error Correction Model** formalises this: in the short run, things can drift apart, but there's a force (the error correction term) that pulls them back toward equilibrium. The speed-of-adjustment parameter tells you how fast that pull-back happens.\n\n**Autocorrelation** is when today's error is correlated with yesterday's error. By itself, it doesn't bias your coefficient estimates -- but it makes your standard errors wrong (just like heteroskedasticity). The danger zone is when you have a lagged dependent variable (yesterday's Y as a regressor) AND autocorrelation simultaneously: then OLS becomes inconsistent, not just inefficient. You need instrumental variables to fix it.\n\nTo test whether a series is non-stationary, you use the **Dickey-Fuller test**. The key gotcha: the test statistic does NOT follow the usual t-distribution. It follows the Dickey-Fuller distribution, which has different (more negative) critical values. Using 1.96 here is a guaranteed mark-loser.",
+      "feynmanKeyTerms": [
+        "Stationarity",
+        "non-stationary",
+        "spurious",
+        "cointegration",
+        "Error Correction Model",
+        "Autocorrelation",
+        "Dickey-Fuller test"
+      ],
+      "modelAnswer": "**For stationarity / unit root questions:**\n1. Define stationarity: constant mean, constant variance, autocovariance depends only on lag h\n2. Check each condition for the given process (compute E(yₜ), Var(yₜ), Cov(yₜ, yₜ₊ₕ) explicitly)\n3. For DF/ADF: write the test equation, state H₀: γ = 0 (unit root) vs H₁: γ < 0 (stationary)\n4. State the DF distribution (NOT the t-distribution) and give the critical value (-2.86 or -3.41)\n5. Rejection rule: reject H₀ if test stat < critical value (i.e. more negative)\n6. Conclude: reject → stationary; fail to reject → unit root (I(1))\n\n**For ECM / cointegration questions:**\n1. Verify both series are I(1) (apply DF/ADF to each)\n2. Test for cointegration: ADF on residuals from the cointegrating regression\n3. If cointegrated: derive the ECM algebraically from the ADL by subtracting yₜ₋₁ and rearranging\n4. Identify components: error correction term (disequilibrium), adjustment speed ρ, short-run effect γ₃\n5. Describe the Engle-Granger 2-step: (i) OLS on levels → residuals, (ii) ADF on residuals, (iii) estimate ECM\n6. Interpret ρ: sign should be negative (corrective), magnitude = fraction of disequilibrium corrected per period\n\n**For autocorrelation questions:**\n1. State consequences: SEs invalid, not BLUE (but still consistent if no lagged DV)\n2. Describe the test: auxiliary regression of ε̂ₜ on regressors + ε̂ₜ₋₁, test ρ = 0\n3. State both test statistics (t-ratio and LM) and their distributions\n4. Remedy without lagged DV: HAC standard errors\n5. Remedy with lagged DV: IV estimation (HAC alone insufficient because OLS is inconsistent)",
+      "commonTraps": "- **Using the t-distribution for DF/ADF.** The test statistic γ̂/se(γ̂) follows the Dickey-Fuller distribution, not t. The DF distribution has much larger critical values in absolute terms. Using t critical values (e.g. -1.96) leads to over-rejection.\n\n- **Confusing DF and ADF test equations.** ADF adds lagged differences ∆yₜ₋₁, ..., ∆yₜ₋ₚ to absorb autocorrelation in the test equation errors. The test on γ is identical; only the auxiliary terms differ.\n\n- **Not including a time trend when data has a trend.** If the data exhibits a deterministic trend, the DF equation must include δt, and the critical value changes from -2.86 to -3.41. Omitting the trend leads to incorrect inference.\n\n- **Lagged DV + autocorrelation = INCONSISTENCY.** With a lagged dependent variable and autocorrelated errors, OLS is inconsistent (not just biased). HAC fixes standard errors but cannot fix an inconsistent estimator. The remedy is IV estimation.\n\n- **Computing the long-run effect as β₁ + β₂.** The correct formula is (β₁ + β₂)/(1 - ρ). The denominator accounts for the feedback through the lagged dependent variable. Forgetting it understates the long-run effect.\n\n- **Saying autocorrelation causes bias.** Without a lagged DV, autocorrelation does not bias OLS -- it only invalidates standard errors. Bias/inconsistency arises only when autocorrelation combines with a lagged dependent variable.\n\n- **ECM derivation errors.** The most common mistakes: wrong sign on ρ (it should be β₁ - 1, which is negative for |β₁| < 1), dropping terms when rearranging, and confusing the short-run coefficient (β₂) with the long-run coefficient ((β₂ + β₃)/(1 - β₁)).\n\n- **Not distinguishing trend-stationary from difference-stationary.** Trend-stationary: detrend. Difference-stationary: first-difference. Applying the wrong transformation leads to either over-differencing (losing long-run information) or under-differencing (non-stationary errors).\n\n- **Confusing weak dependence with stationarity.** Stationarity concerns whether moments are time-invariant. Weak dependence concerns whether correlations die out. A process can be stationary but strongly dependent (e.g. AR(1) with ρ close to 1), or non-stationary but weakly dependent in some transformed sense.\n\n- **Skipping the cointegration test before estimating the ECM.** The ECM is only valid if the variables are cointegrated (the error correction term must be I(0)). Without testing, the ECM may be based on a spurious relationship.\n\n- **Misinterpreting ρ in the ECM.** ρ should be negative (corrective: pulls back to equilibrium). A positive ρ implies an explosive process. The magnitude |ρ| gives the fraction of disequilibrium corrected each period.\n\n- **Treating time series data as cross-sectional.** Time series requires TS assumptions (weak dependence, contemporaneous exogeneity) rather than CS assumptions (random sampling, strict exogeneity). Applying cross-sectional reasoning to time series data invalidates inference.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-16_EC2020_full-mock.md",
+      "date": "2026-05-16",
+      "module": "EC2020",
+      "topicSlug": "full-mock",
+      "title": "EC2020 - Full Mock Day Sheet",
+      "sections": {
+        "1": "- One full paper/long section under strict exam conditions.\n- No notes, fixed timer, one sitting.\n- Track time by question for pacing diagnostics.",
+        "2": "1. Score by block: regression core, heteroskedasticity, IV, binary response, TS.  \n2. Categorize errors by root cause.  \n3. Identify top 5 final-week fixes.",
+        "3": "- Overall target >= 75%\n- Completion rate >= 90%\n- Interpretation quality >= 80% answers with clear meaning.",
+        "4": "- Re-attempt wrong questions before viewing full solutions.\n- Convert each repeated mistake into a trigger rule.",
+        "5": "- Reviewing score only, not topic-level weaknesses.\n- Skipping re-attempt phase.\n- Doing another mock before repairing weak blocks."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Reviewing score only, not topic-level weaknesses.\n- Skipping re-attempt phase.\n- Doing another mock before repairing weak blocks.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-17_EC2020_final-repair-maintenance.md",
+      "date": "2026-05-17",
+      "module": "EC2020",
+      "topicSlug": "final-repair-maintenance",
+      "title": "EC2020 + ST3189 - Final Repair + Maintenance (Sheet)",
+      "sections": {
+        "1": "- 75% time: EC2020 final weak-area fixes.\n- 25% time: ST3189 maintenance (classification + trees + shrinkage recap).",
+        "2": "1. Repair top 3 recurring errors from mock day.  \n2. Run one short timed mixed set.  \n3. Re-check IV and TS interpretation language.",
+        "3": "- One 30-45 min mixed mini-set.\n- Focus on metric choice and model comparison confidence.",
+        "4": "- Spending equal time on both modules this day.\n- Ignoring error logs from full mock.\n- Overloading with new topics."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-18_EC2020_exam-day.md",
+      "date": "2026-05-18",
+      "module": "EC2020",
+      "topicSlug": "exam-day",
+      "title": "EC2020 - Exam Day Protocol",
+      "sections": {
+        "1": "- Quick review: assumptions, robust inference reminders, IV conditions.\n- Read top 5 personal trigger mistakes.\n- No heavy new questions.",
+        "2": "1. Scan and allocate time by section marks.  \n2. Start with strongest block for momentum.  \n3. For each answer: model/setup -> test/stat -> interpretation -> caveat.  \n4. Keep final 10 min for checking signs, units, and logic.",
+        "3": "- Decompress.\n- 60-90 min light ST3189 recall only (classification/trees/shrinkage).",
+        "4": "- Losing time on algebra perfection early.\n- Missing interpretation sentence after computations.\n- Forgetting assumptions/caveats in inference answers."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-19_ST3189_final-run-in.md",
+      "date": "2026-05-19",
+      "module": "ST3189",
+      "topicSlug": "final-run-in",
+      "title": "ST3189 - Final Run-In (Sheet)",
+      "sections": {
+        "1": "- Classification metrics and threshold logic.\n- Model selection/shrinkage intuition.\n- Trees/ensembles comparison rules.",
+        "2": "1. 30-40 min mixed timed mini-set.  \n2. 20-30 min correction + trigger rules.  \n3. 20 min formula/concept flash review.",
+        "3": "- Use task-appropriate metric in comparisons.\n- Explain trade-offs (performance vs interpretability).\n- Avoid over-detail; write crisp model-choice justifications.",
+        "4": "- Last-minute deep dives into niche topics.\n- Confusing train vs validation vs test performance.\n- Studying too late before exam day."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-20_ST3189_exam-day.md",
+      "date": "2026-05-20",
+      "module": "ST3189",
+      "topicSlug": "exam-day",
+      "title": "ST3189 - Exam Day Protocol",
+      "sections": {
+        "1": "- Quick recap: metrics map (RMSE/MAE/F1/AUC), threshold logic, model selection rules.\n- Read your top trigger mistakes.\n- No heavy new questions.",
+        "2": "1. Scan all questions and allocate time by marks.  \n2. Start with high-confidence sections (usually classification/regression basics).  \n3. Structure answers: objective -> method -> metric -> interpretation.  \n4. Reserve final 10 min for consistency checks and missing justification lines.",
+        "3": "- Full decompression.\n- No heavy study tonight unless you feel fresh.",
+        "4": "- Choosing metrics without matching business objective.\n- Comparing models on inconsistent evaluation sets.\n- Writing technical details without final recommendation."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-21_ST2134_principles-of-sampling.md",
+      "date": "2026-05-21",
+      "module": "ST2134",
+      "topicSlug": "principles-of-sampling",
+      "title": "ST2134 - Principles of Sampling (Exam Sheet)",
+      "sections": {
+        "0": "Imagine a giant jar full of millions of marbles, each with a number on it. You want to know the average number across all the marbles, but you can't look at every single one. So you reach in, grab a handful, and use that handful to make a guess about the whole jar.\n\nThat is statistical inference in one sentence: use a small sample to say something about a big population.\n\nThe key rule is that your grab has to be *fair* -- every marble must have the same chance of being picked, and picking one marble shouldn't affect which others you get. Statisticians call this an \"iid random sample\" (independent and identically distributed). If your grab isn't fair -- say you only scoop from the top -- your conclusions about the whole jar will be wrong.\n\nOnce you have your handful, you compute things like the average of your sample. The beautiful result is the **Central Limit Theorem**: no matter how weird the numbers on the marbles are distributed, the average of a big enough sample will behave like a bell curve. This is why the normal distribution shows up everywhere in statistics -- it's not because everything in the world is bell-shaped, it's because *averages* of things are approximately bell-shaped.\n\nOne last subtlety: your sample average is itself a random variable -- if you grabbed a different handful, you'd get a different number. The spread of those possible averages (across all possible handfuls) is what lets you say how confident you are in your guess. Bigger handfuls mean less spread, which means more confidence.",
+        "1": "**Central idea:** Statistical inference draws conclusions about unknown population parameters from observed data. The bridge is the **random sample** -- a collection of iid random variables from a common distribution.\n\n### Key Definitions (Examiner Expects Precision)\n\n| Term | Definition |\n|---|---|\n| **Population** | The complete collection of units under study, described by a probability distribution F_X(x; θ) with unknown parameter(s) θ. |\n| **Random sample** | X = {X₁, X₂, ..., Xₙ} where each Xᵢ is drawn independently from the same distribution F_X(x; θ). Written: Xᵢ iid ~ F_X(x; θ). |\n| **Observed sample** | x = {x₁, x₂, ..., xₙ} -- the realised values (numbers, not random variables). |\n| **Statistic** | Any function T(X) of the sample that does not depend on unknown parameters. E.g., X̄, S², X₍₁₎, X₍ₙ₎. |\n| **Parameter** | Unknown constant θ ∈ Θ describing the population. We estimate it using statistics. |\n| **Estimator** | A statistic T(X) used specifically to estimate a parameter θ. It is a **random variable**. |\n| **Estimate** | The numerical value t(x) obtained by substituting observed data into the estimator. It is a **number**. |\n\n**The examiner explicitly warns:** \"You should always be able to distinguish a **statistic** from a **parameter** and be clear on what they represent.\"\n\n### The Joint Distribution of a Random Sample\n\nBecause {X₁, ..., Xₙ} are iid, their joint pdf/pmf factors:\n\n\\[\nf_{\\mathbf{X}}(\\mathbf{x}; \\theta) = \\prod_{i=1}^{n} f_{X_i}(x_i; \\theta)\n\\]\n\n**Critical notation rule (from commentary):** Write f_{X_i}(x_i; θ), NOT f_X(x; θ) inside the product. The subscript i on both the random variable and the argument matters.\n\n### Sampling Distribution vs Sample Distribution\n\n| Concept | What it is |\n|---|---|\n| **Sample distribution** | The empirical distribution of the observed data x₁, ..., xₙ. |\n| **Sampling distribution** | The probability distribution of a statistic T(X) over all possible samples. This is what drives inference. |",
+        "2": "### Sample Mean and Variance\n\n\\[\n\\bar{X} = \\frac{1}{n} \\sum_{i=1}^{n} X_i, \\qquad S^2 = \\frac{1}{n-1} \\sum_{i=1}^{n} (X_i - \\bar{X})^2\n\\]\n\n### Key Properties (for any iid sample from a population with mean μ and variance σ²)\n\n| Property | Result |\n|---|---|\n| E(X̄) | μ (unbiased for μ) |\n| Var(X̄) | σ²/n |\n| E(S²) | σ² (unbiased for σ²) |\n| Var(S²) for normal | 2σ⁴/(n-1) |\n\n### Connection to Inference\n\n- **Law of Large Numbers:** X̄ →ᵖ μ as n → ∞ (consistency of X̄ for μ).\n- **Central Limit Theorem:** √n(X̄ - μ)/σ →ᵈ N(0,1) as n → ∞ (motivates normal-based inference).\n\n### Alternative Sample Variance (Biased)\n\nThe MLE of σ² under normality uses divisor n:\n\n\\[\n\\hat{\\sigma}^2 = \\frac{1}{n} \\sum_{i=1}^{n} (X_i - \\bar{X})^2 = \\frac{n-1}{n} S^2\n\\]\n\nThis has MSE = (2n-1)σ⁴/n² which is **smaller** than MSE(S²) = 2σ⁴/(n-1) for n > 1. (Tested 2020 Q1c.)",
+        "3": "**Question:** Let {X₁,...,Xₙ} ~ N(μ, σ²). Given (n-1)S²/σ² ~ χ²_{n-1} with E(χ²_{n-1}) = n-1, Var(χ²_{n-1}) = 2(n-1).\n\n**(i) Find MSE(S²).**\n\nSince E(S²) = σ² (unbiased), Bias = 0. Using the chi-squared:\n- Var(S²) = Var(σ²χ²_{n-1}/(n-1)) = σ⁴·2(n-1)/(n-1)² = 2σ⁴/(n-1).\n- MSE(S²) = 2σ⁴/(n-1).\n\n**(ii) Find MSE((n-1)S²/n) and compare.**\n\n- Bias = E((n-1)S²/n) - σ² = (n-1)σ²/n - σ² = -σ²/n.\n- Var = ((n-1)/n)² · Var(S²) = (n-1)²/n² · 2σ⁴/(n-1) = 2(n-1)σ⁴/n².\n- MSE = 2(n-1)σ⁴/n² + σ⁴/n² = (2n-1)σ⁴/n².\n\n**Conclusion:** MSE((n-1)S²/n) < MSE(S²) for all n > 1. The biased estimator has lower MSE.\n\n**Examiner lesson:** Unbiased ≠ best. MSE combines both bias and variance.",
+        "4": "1. **(8 min)** Define: random sample, statistic, estimator, estimate. Give the correct joint pdf factorisation with proper indexing.\n2. **(12 min)** Derive E(X̄) and Var(X̄) for a random sample from a population with mean μ, variance σ². State whether X̄ is unbiased and consistent.\n3. **(15 min)** Given the Bernoulli(θ) distribution p(x; θ) = θˣ(1-θ)^{1-x}, x ∈ {0,1}: compute the method of moments estimate of θ from the sample {0, 0, 1, 0, 1}. (From 2020 Q1b.)\n4. **(15 min)** Compare MSE(S²) and MSE((n-1)S²/n) for estimating σ² under normality. State which is better and why.",
+        "5": "For any \"define/derive a sampling property\" question:\n\n```\n1. STATE: The formal definition with notation (population, sample, parameter).\n2. DERIVE: Show each algebraic step. Use E(·) and Var(·) rules carefully.\n   Use the correct joint density factorisation.\n3. CONCLUDE: State the property name (unbiased, consistent, etc.)\n   and its inference implication.\n```",
+        "6": "- **Wrong product notation:** Writing ∏ f_X(x; θ) instead of ∏ f_{X_i}(x_i; θ). The examiner flags this in every single commentary.\n- **Confusing estimator/estimate:** An estimator is a random variable (before data is seen); an estimate is a number (after plugging in data).\n- **Confusing sample/sampling distribution:** The sample distribution is the histogram of observed data; the sampling distribution is the theoretical distribution of a statistic T(X).\n- **Forgetting support:** When writing a pdf/pmf, always state the sample space (e.g., \"for x > 0\" or \"for x = 0, 1, 2, ...\").\n- **Claiming unbiased is always best:** The 2020 Q1c example shows a biased estimator with lower MSE. Always compare on MSE, not just bias."
+      },
+      "formulas": [
+        {
+          "concept": "Property",
+          "formula": "Result"
+        },
+        {
+          "concept": "E(X̄)",
+          "formula": "μ (unbiased for μ)"
+        },
+        {
+          "concept": "Var(X̄)",
+          "formula": "σ²/n"
+        },
+        {
+          "concept": "E(S²)",
+          "formula": "σ² (unbiased for σ²)"
+        },
+        {
+          "concept": "Var(S²) for normal",
+          "formula": "2σ⁴/(n-1)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Define: random sample, statistic, estimator, estimate. Give the correct joint pdf factorisation with proper indexing."
+        },
+        {
+          "time_minutes": 12,
+          "text": "Derive E(X̄) and Var(X̄) for a random sample from a population with mean μ, variance σ². State whether X̄ is unbiased and consistent."
+        },
+        {
+          "time_minutes": 15,
+          "text": "Given the Bernoulli(θ) distribution p(x; θ) = θˣ(1-θ)^{1-x}, x ∈ {0,1}: compute the method of moments estimate of θ from the sample {0, 0, 1, 0, 1}. (From 2020 Q1b.)"
+        },
+        {
+          "time_minutes": 15,
+          "text": "Compare MSE(S²) and MSE((n-1)S²/n) for estimating σ² under normality. State which is better and why."
+        }
+      ],
+      "feynmanText": "Imagine a giant jar full of millions of marbles, each with a number on it. You want to know the average number across all the marbles, but you can't look at every single one. So you reach in, grab a handful, and use that handful to make a guess about the whole jar.\n\nThat is statistical inference in one sentence: use a small sample to say something about a big population.\n\nThe key rule is that your grab has to be *fair* -- every marble must have the same chance of being picked, and picking one marble shouldn't affect which others you get. Statisticians call this an \"iid random sample\" (independent and identically distributed). If your grab isn't fair -- say you only scoop from the top -- your conclusions about the whole jar will be wrong.\n\nOnce you have your handful, you compute things like the average of your sample. The beautiful result is the **Central Limit Theorem**: no matter how weird the numbers on the marbles are distributed, the average of a big enough sample will behave like a bell curve. This is why the normal distribution shows up everywhere in statistics -- it's not because everything in the world is bell-shaped, it's because *averages* of things are approximately bell-shaped.\n\nOne last subtlety: your sample average is itself a random variable -- if you grabbed a different handful, you'd get a different number. The spread of those possible averages (across all possible handfuls) is what lets you say how confident you are in your guess. Bigger handfuls mean less spread, which means more confidence.",
+      "feynmanKeyTerms": [
+        "Central Limit Theorem"
+      ],
+      "modelAnswer": "For any \"define/derive a sampling property\" question:\n\n```\n1. STATE: The formal definition with notation (population, sample, parameter).\n2. DERIVE: Show each algebraic step. Use E(·) and Var(·) rules carefully.\n   Use the correct joint density factorisation.\n3. CONCLUDE: State the property name (unbiased, consistent, etc.)\n   and its inference implication.\n```",
+      "commonTraps": "- **Wrong product notation:** Writing ∏ f_X(x; θ) instead of ∏ f_{X_i}(x_i; θ). The examiner flags this in every single commentary.\n- **Confusing estimator/estimate:** An estimator is a random variable (before data is seen); an estimate is a number (after plugging in data).\n- **Confusing sample/sampling distribution:** The sample distribution is the histogram of observed data; the sampling distribution is the theoretical distribution of a statistic T(X).\n- **Forgetting support:** When writing a pdf/pmf, always state the sample space (e.g., \"for x > 0\" or \"for x = 0, 1, 2, ...\").\n- **Claiming unbiased is always best:** The 2020 Q1c example shows a biased estimator with lower MSE. Always compare on MSE, not just bias.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-22_ST2134_moments-order-statistics.md",
+      "date": "2026-05-22",
+      "module": "ST2134",
+      "topicSlug": "moments-order-statistics",
+      "title": "ST2134 - Moments + Order Statistics (Exam Sheet)",
+      "sections": {
+        "0": "You have a bag of exam scores. You can summarise them with a few key numbers: the average (first moment), how spread out they are (second moment / variance), whether they're lopsided (skewness), and whether they have extreme outliers (kurtosis). These are **moments** -- successive levels of summary that compress your data into a few useful numbers.\n\nNow imagine you line up all the scores from smallest to largest. The smallest score is the \"first order statistic,\" the largest is the \"nth order statistic,\" and the median is somewhere in the middle. **Order statistics** are just your data sorted in order.\n\nWhy do statisticians care so much about the minimum and maximum? Because for some distributions, the best way to estimate the unknown parameter is not the average -- it's the largest or smallest value you observed. For example, if you know your data comes from a uniform distribution between 0 and some unknown upper limit θ, then the largest value in your sample is the most informative single number about θ. It's the closest you've seen to the edge.\n\nThe formulas for order statistics look complicated, but the intuition is simple: the probability that the maximum of your sample is below some value x equals the probability that *every single observation* is below x. Since the observations are independent, you just multiply those probabilities together. That's why the CDF of the maximum is [F(x)]^n -- it's just \"all n of them fell below x.\"",
+        "1": "### Sample Moments\n\nThe **rth sample moment** about the origin:\n\n\\[\nM_r = \\frac{1}{n} \\sum_{i=1}^{n} X_i^r\n\\]\n\nThe **rth population moment** about the origin:\n\n\\[\n\\mu_r = E(X^r)\n\\]\n\nMethod of moments: set μ̂_r = M_r for r = 1, 2, ..., p (where p = number of unknown parameters) and solve.\n\n### Order Statistics\n\nGiven a random sample {X₁, ..., Xₙ}, the **order statistics** are the sorted values:\n\n\\[\nX_{(1)} \\leq X_{(2)} \\leq \\cdots \\leq X_{(n)}\n\\]\n\n- X₍₁₎ = min(X₁, ..., Xₙ) -- the **sample minimum**\n- X₍ₙ₎ = max(X₁, ..., Xₙ) -- the **sample maximum**",
+        "2": "### PDF of the Sample Maximum X₍ₙ₎\n\n\\[\nf_{X_{(n)}}(x) = n \\cdot f_X(x) \\cdot [F_X(x)]^{n-1}\n\\]\n\n**Derivation:** P(X₍ₙ₎ ≤ x) = P(all Xᵢ ≤ x) = [F_X(x)]ⁿ. Differentiate to get the pdf.\n\n### PDF of the Sample Minimum X₍₁₎\n\n\\[\nf_{X_{(1)}}(x) = n \\cdot f_X(x) \\cdot [1 - F_X(x)]^{n-1}\n\\]\n\n**Derivation:** P(X₍₁₎ > x) = P(all Xᵢ > x) = [1-F_X(x)]ⁿ. Hence F_{X₍₁₎}(x) = 1 - [1-F_X(x)]ⁿ. Differentiate.\n\n### Moments of Order Statistics\n\nTo find E(X₍ₙ₎) or Var(X₍ₙ₎), integrate using the pdf above:\n\n\\[\nE(X_{(n)}^r) = \\int x^r \\cdot f_{X_{(n)}}(x) \\, dx\n\\]\n\n### Key Template: Bias of X₍ₙ₎ as Estimator of θ (Uniform[0,θ])\n\nFor X ~ Uniform[0, θ]: F_X(x) = x/θ, f_X(x) = 1/θ.\n\n- f_{X₍ₙ₎}(x) = n·(1/θ)·(x/θ)^{n-1} = nx^{n-1}/θⁿ for 0 ≤ x ≤ θ.\n- E(X₍ₙ₎) = nθ/(n+1). Bias = -θ/(n+1).\n- Unbiased correction: θ̃ = (n+1)X₍ₙ₎/n.\n\n### Key Template: Bias of X₍ₙ₎ (Power Distribution f(x;θ) = 4x³/θ⁴)\n\nTested in 2022 and 2023. F_X(x) = (x/θ)⁴.\n\n- f_{X₍ₙ₎}(x) = 4nx^{4n-1}/θ^{4n}.\n- E(X₍ₙ₎) = 4nθ/(4n+1). Bias = -θ/(4n+1).\n- Unbiased correction: θ̃ = (4n+1)X₍ₙ₎/(4n).\n\n### Key Template: X₍₁₎ from Pareto (tested 2021 ZA/ZB)\n\nFor Pareto with f_X(x; α, k) = αk^α/x^{α+1}, x ≥ k:\n\n- f_{X₍₁₎}(x) = nαk^{nα}/x^{nα+1} for x ≥ k.\n- E(X₍₁₎) = nαk/(nα-1). Bias = k/(nα-1) → 0.\n- Var(X₍₁₎) = nαk²/[(nα-1)²(nα-2)] → 0. Hence X₍₁₎ is consistent for k.",
+        "3": "**Given:** f(x; θ) = 4x³/θ⁴ for 0 ≤ x ≤ θ.\n\n**(a) PDF of X₍ₙ₎:**\n\nF_X(x) = x⁴/θ⁴. Hence:\n\nf_{X₍ₙ₎}(x) = n · (4x³/θ⁴) · (x⁴/θ⁴)^{n-1} = 4nx^{4n-1}/θ^{4n} for x ∈ [0, θ].\n\n**(b) Sufficient statistic:** By factorisation theorem on the joint density:\n\nf_X(x; θ) = (4ⁿ/θ^{4n}) · (∏xᵢ)³ · I(x₍ₙ₎ ≤ θ) → X₍ₙ₎ is sufficient for θ.\n\n**(c) MLE:** L(θ) ∝ θ^{-4n} · I(θ ≥ x₍ₙ₎) is decreasing in θ for θ ≥ x₍ₙ₎. Maximised at θ̂ = X₍ₙ₎.\n\nBias: E(X₍ₙ₎) = 4nθ/(4n+1) ≠ θ. Negatively biased.\n\n**(d) Unbiased estimator:** θ̃ = (4n+1)X₍ₙ₎/(4n). Check: E(θ̃) = θ.\n\nVar(X₍ₙ₎) = E(X²₍ₙ₎) - [E(X₍ₙ₎)]² = 4nθ²/(4n+2) - [4nθ/(4n+1)]² = 4nθ²/[(4n+2)(4n+1)²].\n\nMSE(θ̃) = [(4n+1)/(4n)]² · Var(X₍ₙ₎) = θ²/[4n(4n+2)] → 0. Mean-square consistent.",
+        "4": "1. **(8 min)** Write the pdf of X₍ₙ₎ and X₍₁₎ for a general continuous distribution. State the CDF approach.\n2. **(12 min)** For X ~ Uniform[0, θ]: derive E(X₍ₙ₎), show X₍ₙ₎ is biased for θ, construct an unbiased correction.\n3. **(15 min)** For f(x; θ) = 2θ²/x³, x ≥ θ: find the pdf of X₍₁₎, compute E(X₍₁₎) and Var(X₍₁₎), check consistency. (From 2022 Q3.)\n4. **(15 min)** Pareto distribution: derive the method of moments estimators of α and k using the hint μ̂₂/μ̂₁² - 1. (From 2021 ZA Q3.)",
+        "5": "### For \"Derive pdf of X₍ₙ₎/X₍₁₎\" Questions\n\n```\n1. CDF: Write F_X(x) by integrating f_X(x).\n2. ORDER STAT CDF: F_{X₍ₙ₎}(x) = [F_X(x)]ⁿ  (or  1-[1-F_X(x)]ⁿ for X₍₁₎).\n3. DIFFERENTIATE: f_{X₍ₙ₎}(x) = d/dx F_{X₍ₙ₎}(x).\n4. STATE SUPPORT: Always specify the range of x.\n```\n\n### For \"Bias + Unbiased Correction\" Questions\n\n```\n1. COMPUTE E(X₍ₙ₎) by integrating x · f_{X₍ₙ₎}(x).\n2. BIAS = E(X₍ₙ₎) - θ. State sign.\n3. CORRECTION: θ̃ = [1/coefficient] · X₍ₙ₎ such that E(θ̃) = θ.\n4. VARIANCE: Compute Var(θ̃). Need E(X²₍ₙ₎) first.\n5. CONSISTENCY: MSE(θ̃) = Var(θ̃) → 0 ⟹ consistent.\n```\n\n---\n\n### Method of Moments: The Two-Parameter Template (Pareto, from 2021 ZA/ZB Q3)\n\n**Given:** Pareto pdf: f(x; α, k) = αk^α/x^{α+1}, x ≥ k, where α > 2.\n\n**Population moments:**\n\nμ₁ = E(X) = αk/(α-1), μ₂ = E(X²) = αk²/(α-2).\n\n**The hint trick:** Consider μ₂/μ₁² - 1:\n\nμ₂/μ₁² = (α-1)²/[α(α-2)] → μ₂/μ₁² - 1 = 1/[α(α-2)].\n\nSetting μ̂₂/μ̂₁² - 1 = ((n-1)/n) S²/X̄² gives:\n\n1/[α̂(α̂-2)] = ((n-1)/n) S²/X̄².\n\nThen from the first moment equation: k̂ = (α̂-1)X̄/α̂.\n\n**Examiner lesson:** The hint \"consider μ̂₂/μ̂₁² - 1\" is essential. Without it, solving the two MoM equations simultaneously is extremely difficult.",
+        "6": "- **Forgetting the support/indicator function:** When f(x; θ) = 0 outside [0, θ], the joint density includes I(x₍ₙ₎ ≤ θ). This is crucial for sufficiency and MLE.\n- **Not deriving E(X²₍ₙ₎) for Var:** You need both E(X₍ₙ₎) and E(X²₍ₙ₎) to compute Var = E(X²) - [E(X)]².\n- **Wrong integration limits:** The pdf of X₍ₙ₎ for Uniform[0,θ] has support [0, θ], not [0, ∞).\n- **Claiming consistency from bias → 0 alone:** You need Var → 0 AND asymptotic unbiasedness (or just MSE → 0).\n- **Mixing up X₍₁₎ and X₍ₙ₎ formulas:** X₍ₙ₎ uses [F_X(x)]^{n-1}, X₍₁₎ uses [1-F_X(x)]^{n-1}. Getting these backwards is fatal.\n- **Method of moments -- not using the hint:** When the examiner gives a hint like \"consider μ̂₂/μ̂₁² - 1\", USE IT. Direct algebra without the hint is error-prone and time-consuming."
+      },
+      "formulas": [],
+      "questions": [
+        {
+          "time_minutes": 8,
+          "text": "Write the pdf of X₍ₙ₎ and X₍₁₎ for a general continuous distribution. State the CDF approach."
+        },
+        {
+          "time_minutes": 12,
+          "text": "For X ~ Uniform[0, θ]: derive E(X₍ₙ₎), show X₍ₙ₎ is biased for θ, construct an unbiased correction."
+        },
+        {
+          "time_minutes": 15,
+          "text": "For f(x; θ) = 2θ²/x³, x ≥ θ: find the pdf of X₍₁₎, compute E(X₍₁₎) and Var(X₍₁₎), check consistency. (From 2022 Q3.)"
+        },
+        {
+          "time_minutes": 15,
+          "text": "Pareto distribution: derive the method of moments estimators of α and k using the hint μ̂₂/μ̂₁² - 1. (From 2021 ZA Q3.)"
+        }
+      ],
+      "feynmanText": "You have a bag of exam scores. You can summarise them with a few key numbers: the average (first moment), how spread out they are (second moment / variance), whether they're lopsided (skewness), and whether they have extreme outliers (kurtosis). These are **moments** -- successive levels of summary that compress your data into a few useful numbers.\n\nNow imagine you line up all the scores from smallest to largest. The smallest score is the \"first order statistic,\" the largest is the \"nth order statistic,\" and the median is somewhere in the middle. **Order statistics** are just your data sorted in order.\n\nWhy do statisticians care so much about the minimum and maximum? Because for some distributions, the best way to estimate the unknown parameter is not the average -- it's the largest or smallest value you observed. For example, if you know your data comes from a uniform distribution between 0 and some unknown upper limit θ, then the largest value in your sample is the most informative single number about θ. It's the closest you've seen to the edge.\n\nThe formulas for order statistics look complicated, but the intuition is simple: the probability that the maximum of your sample is below some value x equals the probability that *every single observation* is below x. Since the observations are independent, you just multiply those probabilities together. That's why the CDF of the maximum is [F(x)]^n -- it's just \"all n of them fell below x.\"",
+      "feynmanKeyTerms": [
+        "moments",
+        "Order statistics"
+      ],
+      "modelAnswer": "### For \"Derive pdf of X₍ₙ₎/X₍₁₎\" Questions\n\n```\n1. CDF: Write F_X(x) by integrating f_X(x).\n2. ORDER STAT CDF: F_{X₍ₙ₎}(x) = [F_X(x)]ⁿ  (or  1-[1-F_X(x)]ⁿ for X₍₁₎).\n3. DIFFERENTIATE: f_{X₍ₙ₎}(x) = d/dx F_{X₍ₙ₎}(x).\n4. STATE SUPPORT: Always specify the range of x.\n```\n\n### For \"Bias + Unbiased Correction\" Questions\n\n```\n1. COMPUTE E(X₍ₙ₎) by integrating x · f_{X₍ₙ₎}(x).\n2. BIAS = E(X₍ₙ₎) - θ. State sign.\n3. CORRECTION: θ̃ = [1/coefficient] · X₍ₙ₎ such that E(θ̃) = θ.\n4. VARIANCE: Compute Var(θ̃). Need E(X²₍ₙ₎) first.\n5. CONSISTENCY: MSE(θ̃) = Var(θ̃) → 0 ⟹ consistent.\n```\n\n---\n\n### Method of Moments: The Two-Parameter Template (Pareto, from 2021 ZA/ZB Q3)\n\n**Given:** Pareto pdf: f(x; α, k) = αk^α/x^{α+1}, x ≥ k, where α > 2.\n\n**Population moments:**\n\nμ₁ = E(X) = αk/(α-1), μ₂ = E(X²) = αk²/(α-2).\n\n**The hint trick:** Consider μ₂/μ₁² - 1:\n\nμ₂/μ₁² = (α-1)²/[α(α-2)] → μ₂/μ₁² - 1 = 1/[α(α-2)].\n\nSetting μ̂₂/μ̂₁² - 1 = ((n-1)/n) S²/X̄² gives:\n\n1/[α̂(α̂-2)] = ((n-1)/n) S²/X̄².\n\nThen from the first moment equation: k̂ = (α̂-1)X̄/α̂.\n\n**Examiner lesson:** The hint \"consider μ̂₂/μ̂₁² - 1\" is essential. Without it, solving the two MoM equations simultaneously is extremely difficult.",
+      "commonTraps": "- **Forgetting the support/indicator function:** When f(x; θ) = 0 outside [0, θ], the joint density includes I(x₍ₙ₎ ≤ θ). This is crucial for sufficiency and MLE.\n- **Not deriving E(X²₍ₙ₎) for Var:** You need both E(X₍ₙ₎) and E(X²₍ₙ₎) to compute Var = E(X²) - [E(X)]².\n- **Wrong integration limits:** The pdf of X₍ₙ₎ for Uniform[0,θ] has support [0, θ], not [0, ∞).\n- **Claiming consistency from bias → 0 alone:** You need Var → 0 AND asymptotic unbiasedness (or just MSE → 0).\n- **Mixing up X₍₁₎ and X₍ₙ₎ formulas:** X₍ₙ₎ uses [F_X(x)]^{n-1}, X₍₁₎ uses [1-F_X(x)]^{n-1}. Getting these backwards is fatal.\n- **Method of moments -- not using the hint:** When the examiner gives a hint like \"consider μ̂₂/μ̂₁² - 1\", USE IT. Direct algebra without the hint is error-prone and time-consuming.",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-23_ST2134_sampling-distributions-point-estimation.md",
+      "date": "2026-05-23",
+      "module": "ST2134",
+      "topicSlug": "sampling-distributions-point-estimation",
+      "title": "ST2134 - Sampling Distributions + Point Estimation (Exam Sheet)",
+      "sections": {
+        "0": "You want to know something about the world -- say, the true average height of adults in a country. You can't measure everyone, so you measure a sample and compute the sample average. That number is your **estimate** -- your best guess.\n\nBut how good is your guess? That depends on three things. First, **bias**: does your method systematically overshoot or undershoot the truth? If you only measured basketball players, your average would be too high -- that's bias. Second, **variance**: if you took a different sample tomorrow, how different would your answer be? High variance means your guess is unreliable. Third, the **mean squared error** (MSE) combines both: it measures total inaccuracy as variance plus bias-squared. A slightly biased estimator with very low variance can actually be more accurate overall than an unbiased one that jumps around a lot.\n\n**Consistency** is the reassuring property that as your sample gets bigger and bigger, your estimate gets closer and closer to the truth. Almost all sensible estimators have this property.\n\nThe **method of moments** is the simplest recipe for building an estimator: if you know that the population average equals some function of the unknown parameter, just set the sample average equal to that function and solve. It's like reverse-engineering the parameter from the data.",
+        "1": "**Purpose:** Point estimation provides a single \"best guess\" for an unknown parameter. The quality of that guess is measured by bias, variance, MSE, and consistency. Method of moments gives a constructive recipe for producing estimators from equating sample and population moments.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **Statistic** | Any function \\(T = g(X_1, \\ldots, X_n)\\) of the sample that does **not** depend on unknown parameters |\n| **Estimator** | A statistic used to estimate a parameter — it is a **random variable** |\n| **Estimate** | The numerical value of an estimator at the observed sample — it is a **number** |\n| **Bias** | \\(\\text{Bias}(\\hat\\theta) = E(\\hat\\theta) - \\theta\\). Unbiased if bias = 0 for all \\(\\theta\\) |\n| **Variance** | \\(\\text{Var}(\\hat\\theta) = E[(\\hat\\theta - E(\\hat\\theta))^2]\\) |\n| **MSE** | \\(\\text{MSE}(\\hat\\theta) = E[(\\hat\\theta - \\theta)^2] = \\text{Var}(\\hat\\theta) + [\\text{Bias}(\\hat\\theta)]^2\\) |\n| **Consistency** | \\(\\hat\\theta_n \\xrightarrow{p} \\theta\\) as \\(n \\to \\infty\\). Sufficient condition: \\(\\text{MSE}(\\hat\\theta_n) \\to 0\\) |\n| **Asymptotic unbiasedness** | \\(\\text{Bias}(\\hat\\theta_n) \\to 0\\) as \\(n \\to \\infty\\) |\n\n**Examiner's warning (verbatim):** \"Make sure that you are able to distinguish a **statistic** from a **parameter** and an **estimator** from an **estimate**.\"",
+        "2": "### Bias-Variance-MSE Decomposition (Proved in 2020 Q1a, 7 marks)\n\n\\[\n\\text{MSE}(\\hat\\theta) = E[(\\hat\\theta - \\theta)^2] = \\text{Var}(\\hat\\theta) + [\\text{Bias}(\\hat\\theta)]^2\n\\]\n\n**Proof sketch:** Expand \\((\\hat\\theta - \\theta)^2 = (\\hat\\theta - E\\hat\\theta + E\\hat\\theta - \\theta)^2\\), cross-term vanishes since \\(E[\\hat\\theta - E\\hat\\theta] = 0\\).\n\n### Three Competing Estimators of \\(\\sigma^2\\) (Normal population)\n\n| Estimator | Formula | Bias | MSE |\n|---|---|---|---|\n| \\(S^2\\) | \\(\\frac{1}{n-1}\\sum(X_i - \\bar X)^2\\) | 0 | \\(\\frac{2\\sigma^4}{n-1}\\) |\n| \\(\\hat\\sigma^2_{ML} = \\frac{n-1}{n}S^2\\) | \\(\\frac{1}{n}\\sum(X_i - \\bar X)^2\\) | \\(-\\sigma^2/n\\) | \\(\\frac{(2n-1)\\sigma^4}{n^2}\\) |\n\nKey fact: \\(\\text{MSE}(\\hat\\sigma^2_{ML}) < \\text{MSE}(S^2)\\) for all \\(n > 1\\), so the biased MLE has lower MSE. But \\(S^2\\) is the unique MVUE.\n\nUses: \\((n-1)S^2/\\sigma^2 \\sim \\chi^2_{n-1}\\), so \\(\\text{Var}(S^2) = 2\\sigma^4/(n-1)\\) and \\(E(S^4) = \\sigma^4(n+1)/(n-1)\\).\n\n### Method of Moments (MoM)\n\nEquate the first \\(k\\) population moments to sample moments and solve for \\(k\\) unknowns:\n\n\\[\n\\mu_r' = E(X^r) = M_r = \\frac{1}{n}\\sum_{i=1}^n X_i^r, \\quad r = 1, \\ldots, k\n\\]\n\n**Standard MoM results:**\n\n| Distribution | MoM estimator(s) |\n|---|---|\n| Bernoulli(\\(\\pi\\)) | \\(\\hat\\pi = \\bar X\\) |\n| Poisson(\\(\\lambda\\)) | \\(\\hat\\lambda = \\bar X\\) |\n| Uniform\\([0, \\theta]\\) | \\(\\hat\\theta = 2\\bar X\\) |\n| Exp(\\(\\lambda\\)) | \\(\\hat\\lambda = 1/\\bar X\\) |\n| Gamma(\\(\\alpha, \\beta\\)) | \\(\\hat\\alpha = \\bar X^2/(M_2 - \\bar X^2)\\), \\(\\hat\\beta = \\bar X/(M_2 - \\bar X^2)\\) |\n\n### Consistency via MSE\n\nAn estimator \\(\\hat\\theta_n\\) is consistent if \\(\\text{MSE}(\\hat\\theta_n) \\to 0\\) as \\(n \\to \\infty\\). This requires **both**:\n- \\(\\text{Bias}(\\hat\\theta_n) \\to 0\\) (asymptotically unbiased)\n- \\(\\text{Var}(\\hat\\theta_n) \\to 0\\)\n\nAlternatively, if \\(\\hat\\theta_n\\) is unbiased, consistency follows from \\(\\text{Var}(\\hat\\theta_n) \\to 0\\) alone.",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n \\sim N(\\mu, \\sigma^2)\\). Compare \\(\\hat\\sigma_1^2 = S^2\\) with \\(\\hat\\sigma_2^2 = \\frac{n-1}{n}S^2\\) as estimators of \\(\\sigma^2\\).\n\n**Step 1 — Bias:**\n- \\(E(S^2) = \\sigma^2\\), so \\(\\text{Bias}(S^2) = 0\\) (unbiased)\n- \\(E(\\hat\\sigma_2^2) = \\frac{n-1}{n}\\sigma^2\\), so \\(\\text{Bias}(\\hat\\sigma_2^2) = -\\sigma^2/n\\) (biased)\n\n**Step 2 — Variance:**\n\nUsing \\((n-1)S^2/\\sigma^2 \\sim \\chi^2_{n-1}\\) with \\(\\text{Var}(\\chi^2_k) = 2k\\):\n- \\(\\text{Var}(S^2) = \\frac{2\\sigma^4}{n-1}\\)\n- \\(\\text{Var}(\\hat\\sigma_2^2) = \\left(\\frac{n-1}{n}\\right)^2 \\cdot \\frac{2\\sigma^4}{n-1} = \\frac{2(n-1)\\sigma^4}{n^2}\\)\n\n**Step 3 — MSE:**\n- \\(\\text{MSE}(S^2) = \\frac{2\\sigma^4}{n-1}\\)\n- \\(\\text{MSE}(\\hat\\sigma_2^2) = \\frac{2(n-1)\\sigma^4}{n^2} + \\frac{\\sigma^4}{n^2} = \\frac{(2n-1)\\sigma^4}{n^2}\\)\n\n**Step 4 — Compare:**\n\n\\(\\text{MSE}(\\hat\\sigma_2^2) < \\text{MSE}(S^2)\\) iff \\(\\frac{2n-1}{n^2} < \\frac{2}{n-1}\\), which simplifies to \\(n > 1\\). So the biased estimator has **strictly lower MSE** for all practical sample sizes.\n\n**Step 5 — Consistency:**\n\nBoth are consistent since both MSE → 0 as \\(n \\to \\infty\\).",
+        "4": "1. **(7 min)** State the MSE decomposition and prove it from the definition \\(E[(\\hat\\theta - \\theta)^2]\\).\n2. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Uniform}[0, \\theta]\\). Derive the MoM estimator. Compute its bias, variance, and MSE. Is it consistent?\n3. **(15 min)** Two estimators of \\(\\mu\\): \\(\\hat\\mu_1 = \\bar X\\) and \\(\\hat\\mu_2 = \\sum X_i / (n+c)\\) for constant \\(c > 0\\). Find bias, MSE of each. For what values of \\(\\mu/\\sigma\\) does the biased \\(\\hat\\mu_2\\) beat \\(\\bar X\\) in MSE?\n4. **(10 min)** \\(X_1, \\ldots, X_n \\sim \\text{Gamma}(\\alpha, \\beta)\\) with both unknown. Derive MoM estimators of \\(\\alpha\\) and \\(\\beta\\) by equating \\(\\mu_1'\\) and \\(\\mu_2'\\).\n5. **(6 min)** Explain why the MLE of \\(\\sigma^2\\) is biased downward while the MoM estimator \\(S^2\\) is unbiased. State which has lower MSE and why.",
+        "5": "```\n1. DEFINE: State the parameter, the two estimators, and the sample model.\n\n2. BIAS: Compute E(θ̂) for each. State bias = E(θ̂) - θ.\n   Report whether each is unbiased or not.\n\n3. VARIANCE: Compute Var(θ̂) for each.\n   Use known distribution results (χ², Gamma moments, etc.)\n\n4. MSE: MSE = Var + Bias².\n   Write both MSEs explicitly as functions of θ and n.\n\n5. COMPARE: Form the ratio or difference.\n   State conditions (on θ, n, or other parameters) under which\n   one is better than the other.\n\n6. CONSISTENCY: Show MSE → 0 as n → ∞ for each.\n   If biased, verify bias → 0 AND Var → 0 separately.\n\n7. CONCLUDE: State which estimator is preferred and under what\n   criterion (MSE, unbiasedness, or asymptotic efficiency).\n```",
+        "6": "1. **Ranking by variance alone when bias differs.** The MSE is the correct criterion for comparing estimators with different biases. Saying \"lower variance = better\" is only valid when both estimators are unbiased.\n\n2. **Claiming consistency without showing both conditions.** You must show bias → 0 AND variance → 0 (or equivalently MSE → 0). Showing only one is incomplete.\n\n3. **Writing \\((f_X(x; \\theta))^n\\) instead of \\(\\prod_{i=1}^n f_{X_i}(x_i; \\theta)\\).** The examiner explicitly warns against this in every commentary. Each observation has its own subscript.\n\n4. **Forgetting to state the support.** When writing any pdf/pmf, always state the range of \\(x\\). E.g., \"\\(f(x; \\theta) = 1/\\theta\\) for \\(0 \\leq x \\leq \\theta\\)\" — the support matters for indicator functions in sufficiency.\n\n5. **MoM vs MLE confusion.** MoM uses \\(E(X^r) = M_r\\); MLE maximises the likelihood. They often give different estimators (e.g., for \\(\\sigma^2\\): MoM gives \\(S^2\\), MLE gives \\(\\frac{n-1}{n}S^2\\)). Know which is which.\n\n6. **Weak asymptotic arguments.** When asked to \"show consistency,\" do not just write \"\\(\\hat\\theta \\to \\theta\\).\" Explicitly compute MSE as a function of \\(n\\) and show the limit is 0, or use the sufficient condition (unbiased + variance → 0)."
+      },
+      "formulas": [
+        {
+          "concept": "Estimator",
+          "formula": "Formula"
+        },
+        {
+          "concept": "\\(S^2\\)",
+          "formula": "\\(\\frac{1}{n-1}\\sum(X_i - \\bar X)^2\\)"
+        },
+        {
+          "concept": "\\(\\hat\\sigma^2_{ML} = \\frac{n-1}{n}S^2\\)",
+          "formula": "\\(\\frac{1}{n}\\sum(X_i - \\bar X)^2\\)"
+        },
+        {
+          "concept": "Distribution",
+          "formula": "MoM estimator(s)"
+        },
+        {
+          "concept": "Bernoulli(\\(\\pi\\))",
+          "formula": "\\(\\hat\\pi = \\bar X\\)"
+        },
+        {
+          "concept": "Poisson(\\(\\lambda\\))",
+          "formula": "\\(\\hat\\lambda = \\bar X\\)"
+        },
+        {
+          "concept": "Uniform\\([0, \\theta]\\)",
+          "formula": "\\(\\hat\\theta = 2\\bar X\\)"
+        },
+        {
+          "concept": "Exp(\\(\\lambda\\))",
+          "formula": "\\(\\hat\\lambda = 1/\\bar X\\)"
+        },
+        {
+          "concept": "Gamma(\\(\\alpha, \\beta\\))",
+          "formula": "\\(\\hat\\alpha = \\bar X^2/(M_2 - \\bar X^2)\\), \\(\\hat\\beta = \\bar X/(M_2 - \\bar X^2)\\)"
+        }
+      ],
+      "questions": [
+        {
+          "time_minutes": 7,
+          "text": "State the MSE decomposition and prove it from the definition \\(E[(\\hat\\theta - \\theta)^2]\\)."
+        },
+        {
+          "time_minutes": 12,
+          "text": "\\(X_1, \\ldots, X_n \\sim \\text{Uniform}[0, \\theta]\\). Derive the MoM estimator. Compute its bias, variance, and MSE. Is it consistent?"
+        },
+        {
+          "time_minutes": 15,
+          "text": "Two estimators of \\(\\mu\\): \\(\\hat\\mu_1 = \\bar X\\) and \\(\\hat\\mu_2 = \\sum X_i / (n+c)\\) for constant \\(c > 0\\). Find bias, MSE of each. For what values of \\(\\mu/\\sigma\\) does the biased \\(\\hat\\mu_2\\) beat \\(\\bar X\\) in MSE?"
+        },
+        {
+          "time_minutes": 10,
+          "text": "\\(X_1, \\ldots, X_n \\sim \\text{Gamma}(\\alpha, \\beta)\\) with both unknown. Derive MoM estimators of \\(\\alpha\\) and \\(\\beta\\) by equating \\(\\mu_1'\\) and \\(\\mu_2'\\)."
+        },
+        {
+          "time_minutes": 6,
+          "text": "Explain why the MLE of \\(\\sigma^2\\) is biased downward while the MoM estimator \\(S^2\\) is unbiased. State which has lower MSE and why."
+        }
+      ],
+      "feynmanText": "You want to know something about the world -- say, the true average height of adults in a country. You can't measure everyone, so you measure a sample and compute the sample average. That number is your **estimate** -- your best guess.\n\nBut how good is your guess? That depends on three things. First, **bias**: does your method systematically overshoot or undershoot the truth? If you only measured basketball players, your average would be too high -- that's bias. Second, **variance**: if you took a different sample tomorrow, how different would your answer be? High variance means your guess is unreliable. Third, the **mean squared error** (MSE) combines both: it measures total inaccuracy as variance plus bias-squared. A slightly biased estimator with very low variance can actually be more accurate overall than an unbiased one that jumps around a lot.\n\n**Consistency** is the reassuring property that as your sample gets bigger and bigger, your estimate gets closer and closer to the truth. Almost all sensible estimators have this property.\n\nThe **method of moments** is the simplest recipe for building an estimator: if you know that the population average equals some function of the unknown parameter, just set the sample average equal to that function and solve. It's like reverse-engineering the parameter from the data.",
+      "feynmanKeyTerms": [
+        "estimate",
+        "bias",
+        "variance",
+        "mean squared error",
+        "Consistency",
+        "method of moments"
+      ],
+      "modelAnswer": "```\n1. DEFINE: State the parameter, the two estimators, and the sample model.\n\n2. BIAS: Compute E(θ̂) for each. State bias = E(θ̂) - θ.\n   Report whether each is unbiased or not.\n\n3. VARIANCE: Compute Var(θ̂) for each.\n   Use known distribution results (χ², Gamma moments, etc.)\n\n4. MSE: MSE = Var + Bias².\n   Write both MSEs explicitly as functions of θ and n.\n\n5. COMPARE: Form the ratio or difference.\n   State conditions (on θ, n, or other parameters) under which\n   one is better than the other.\n\n6. CONSISTENCY: Show MSE → 0 as n → ∞ for each.\n   If biased, verify bias → 0 AND Var → 0 separately.\n\n7. CONCLUDE: State which estimator is preferred and under what\n   criterion (MSE, unbiasedness, or asymptotic efficiency).\n```",
+      "commonTraps": "1. **Ranking by variance alone when bias differs.** The MSE is the correct criterion for comparing estimators with different biases. Saying \"lower variance = better\" is only valid when both estimators are unbiased.\n\n2. **Claiming consistency without showing both conditions.** You must show bias → 0 AND variance → 0 (or equivalently MSE → 0). Showing only one is incomplete.\n\n3. **Writing \\((f_X(x; \\theta))^n\\) instead of \\(\\prod_{i=1}^n f_{X_i}(x_i; \\theta)\\).** The examiner explicitly warns against this in every commentary. Each observation has its own subscript.\n\n4. **Forgetting to state the support.** When writing any pdf/pmf, always state the range of \\(x\\). E.g., \"\\(f(x; \\theta) = 1/\\theta\\) for \\(0 \\leq x \\leq \\theta\\)\" — the support matters for indicator functions in sufficiency.\n\n5. **MoM vs MLE confusion.** MoM uses \\(E(X^r) = M_r\\); MLE maximises the likelihood. They often give different estimators (e.g., for \\(\\sigma^2\\): MoM gives \\(S^2\\), MLE gives \\(\\frac{n-1}{n}S^2\\)). Know which is which.\n\n6. **Weak asymptotic arguments.** When asked to \"show consistency,\" do not just write \"\\(\\hat\\theta \\to \\theta\\).\" Explicitly compute MSE as a function of \\(n\\) and show the limit is 0, or use the sufficient condition (unbiased + variance → 0).",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-24_ST2134_interval-estimation.md",
+      "date": "2026-05-24",
+      "module": "ST2134",
+      "topicSlug": "interval-estimation",
+      "title": "ST2134 - Interval Estimation (Exam Sheet)",
+      "sections": {
+        "0": "A point estimate says \"I think the true value is 5.2.\" A confidence interval says \"I think it's somewhere between 4.1 and 6.3, and I'm 95% confident about that.\"\n\nWhat does \"95% confident\" actually mean? It does NOT mean there's a 95% chance the true value is inside your interval. The true value is a fixed number -- it's either in there or it isn't. Instead, \"95% confident\" means: if you repeated this whole process many times -- new sample, new interval -- then 95% of those intervals would contain the true value. It's a statement about the *method*, not about any single interval.\n\nThe trick to building confidence intervals is finding a **pivotal function** -- a formula that depends on both your data and the unknown parameter, but whose probability distribution is completely known (like a standard normal or a chi-squared). You then rearrange the formula to trap the unknown parameter between two data-dependent bounds.\n\nFor example, if your data are normal with known variance, then (sample mean - true mean) / (σ/√n) follows a standard normal distribution. You know that 95% of the time a standard normal falls between -1.96 and +1.96. So you rearrange: the true mean is between (sample mean - 1.96σ/√n) and (sample mean + 1.96σ/√n). That's your 95% CI.\n\nWhen you don't have an exact pivot, you can use the MLE's asymptotic normality to build an approximate CI. These work well for large samples but can be unreliable for small ones.",
+        "1": "**Purpose:** An interval estimator gives a range of plausible values for an unknown parameter, with a stated confidence level. The pivotal function method is the standard construction tool.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **Interval estimator** | A pair of statistics \\([L(\\mathbf{X}), U(\\mathbf{X})]\\) forming a random interval for \\(\\theta\\) |\n| **Coverage probability** | \\(C(\\theta) = P_\\theta(L(\\mathbf{X}) \\leq \\theta \\leq U(\\mathbf{X}))\\) — may depend on \\(\\theta\\) |\n| **Confidence coefficient** | \\(\\gamma = \\inf_\\theta C(\\theta)\\) — the minimum coverage over all \\(\\theta\\) |\n| **\\(100(1-\\alpha)\\%\\) CI** | An interval with confidence coefficient \\(\\gamma = 1 - \\alpha\\) |\n| **Pivotal function** | \\(Q(\\mathbf{X}, \\theta)\\) whose distribution does **not** depend on \\(\\theta\\) or any other unknown |\n| **Asymptotic pivot** | A quantity whose distribution converges to a known distribution as \\(n \\to \\infty\\) |\n\n**Frequentist interpretation (examiner warns against Bayesian phrasing):** \"If we repeated the sampling process many times, \\(100(1-\\alpha)\\%\\) of the constructed intervals would contain the true \\(\\theta\\).\" Do NOT write \"the probability that \\(\\theta\\) is in the interval is \\(1-\\alpha\\).\"",
+        "2": "### Standard Pivotal Functions (Must Memorise)\n\n| Setting | Pivot | Distribution | CI for parameter |\n|---|---|---|---|\n| \\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known | \\(Z = \\frac{\\bar X - \\mu}{\\sigma/\\sqrt{n}}\\) | \\(N(0,1)\\) | \\(\\bar X \\pm z_{\\alpha/2} \\cdot \\sigma/\\sqrt{n}\\) |\n| \\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) unknown | \\(T = \\frac{\\bar X - \\mu}{S/\\sqrt{n}}\\) | \\(t_{n-1}\\) | \\(\\bar X \\pm t_{n-1,\\alpha/2} \\cdot S/\\sqrt{n}\\) |\n| \\(N(\\mu, \\sigma^2)\\), \\(\\mu\\) known | \\(\\frac{\\sum(X_i - \\mu)^2}{\\sigma^2}\\) | \\(\\chi^2_n\\) | \\(\\left[\\frac{\\sum(X_i-\\mu)^2}{\\chi^2_{n,\\alpha/2}},\\; \\frac{\\sum(X_i-\\mu)^2}{\\chi^2_{n,1-\\alpha/2}}\\right]\\) |\n| \\(N(\\mu, \\sigma^2)\\), \\(\\mu\\) unknown | \\(\\frac{(n-1)S^2}{\\sigma^2}\\) | \\(\\chi^2_{n-1}\\) | \\(\\left[\\frac{(n-1)S^2}{\\chi^2_{n-1,\\alpha/2}},\\; \\frac{(n-1)S^2}{\\chi^2_{n-1,1-\\alpha/2}}\\right]\\) |\n| \\(\\text{Exp}(\\lambda)\\) | \\(2\\lambda\\sum X_i\\) | \\(\\chi^2_{2n}\\) | \\(\\left[\\frac{\\chi^2_{2n,1-\\alpha/2}}{2\\sum X_i},\\; \\frac{\\chi^2_{2n,\\alpha/2}}{2\\sum X_i}\\right]\\) |\n\n### Pivotal Method — The 3-Step Recipe\n\n1. **Find a pivot:** Identify a function \\(Q(\\mathbf{X}, \\theta)\\) whose distribution is known and free of all unknowns.\n2. **Find percentiles:** Choose \\(a, b\\) such that \\(P(a \\leq Q \\leq b) = 1 - \\alpha\\).\n3. **Invert:** Rearrange the inequality \\(a \\leq Q(\\mathbf{X}, \\theta) \\leq b\\) to isolate \\(\\theta\\) between functions of the data only.\n\n### Asymptotic Pivotal Functions from MLE\n\nUnder regularity conditions, the MLE \\(\\hat\\theta\\) satisfies:\n\n\\[\n\\sqrt{I(\\theta)}(\\hat\\theta - \\theta) \\xrightarrow{d} N(0,1)\n\\]\n\n**Two versions for practical use:**\n- **Exact info version:** \\(\\hat\\theta \\pm z_{\\alpha/2} / \\sqrt{I(\\theta)}\\) — requires knowing \\(I(\\theta)\\) in terms of \\(\\theta\\)\n- **Estimated info version:** \\(\\hat\\theta \\pm z_{\\alpha/2} / \\sqrt{I(\\hat\\theta)}\\) — replaces \\(\\theta\\) with \\(\\hat\\theta\\) in the information\n\nThe second version is more common in practice since the first still contains the unknown \\(\\theta\\).\n\n### Confidence Intervals for Quantiles (Order Statistics)\n\nFor the \\(p\\)-th quantile \\(q_p\\): \\(P(X_{(i)} \\leq q_p \\leq X_{(j)}) = \\sum_{k=i}^{j-1} \\binom{n}{k} p^k (1-p)^{n-k}\\)\n\nThis is a binomial probability since each \\(X_i\\) independently falls below \\(q_p\\) with probability \\(p\\).",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\), \\(f(x; \\lambda) = \\lambda e^{-\\lambda x}\\) for \\(x > 0\\).\n\n**Step 1 — Identify the pivot:**\n\nLet \\(Y = \\lambda \\sum_{i=1}^n X_i\\). Using MGFs:\n\n\\[M_Y(t) = \\prod_{i=1}^n M_{\\lambda X_i}(t) = \\prod_{i=1}^n (1-t)^{-1} = (1-t)^{-n}\\]\n\nThis is the MGF of \\(\\text{Gamma}(n, 1)\\), equivalently \\(2Y \\sim \\chi^2_{2n}\\). Since the distribution of \\(Y\\) does not depend on \\(\\lambda\\), it is a valid pivot.\n\n**Step 2 — Find percentiles:**\n\n\\[P\\left(\\chi^2_{2n, 1-\\alpha/2} \\leq 2\\lambda\\sum X_i \\leq \\chi^2_{2n, \\alpha/2}\\right) = 1 - \\alpha\\]\n\n**Step 3 — Invert to isolate \\(\\lambda\\):**\n\n\\[\n\\frac{\\chi^2_{2n, 1-\\alpha/2}}{2\\sum X_i} \\leq \\lambda \\leq \\frac{\\chi^2_{2n, \\alpha/2}}{2\\sum X_i}\n\\]\n\n**Numerical example (n = 10, \\(\\sum x_i = 15\\), 95% CI):**\n\nFrom \\(\\chi^2_{20}\\) tables: \\(\\chi^2_{20, 0.025} = 34.17\\), \\(\\chi^2_{20, 0.975} = 9.591\\).\n\n\\[\n\\left[\\frac{9.591}{30}, \\frac{34.17}{30}\\right] = [0.320, 1.139]\n\\]",
+        "4": "**Setup:** \\(X_1, \\ldots, X_n \\sim \\text{Gamma}(k, \\alpha)\\) with \\(k\\) known. MLE: \\(\\hat\\alpha = k/\\bar X\\).\n\n**Fisher information:** \\(I(\\alpha) = nk/\\alpha^2\\).\n\n**Asymptotic distribution:** \\(\\hat\\alpha \\dot\\sim N(\\alpha, \\alpha^2/(nk))\\).\n\n**95% CI:** \\(\\hat\\alpha \\pm 1.96 \\cdot \\hat\\alpha/\\sqrt{nk}\\).\n\n**Numerical example (n = 20, k = 3, \\(\\bar x = 4.5\\)):**\n- \\(\\hat\\alpha = 3/4.5 = 0.667\\)\n- SE = \\(0.667/\\sqrt{60} = 0.0861\\)\n- CI: \\([0.667 - 0.169, 0.667 + 0.169] = [0.498, 0.836]\\)",
+        "5": "1. **(5 min)** Define: pivotal function, coverage probability, confidence coefficient. State the correct frequentist interpretation of a 95% CI.\n2. **(10 min)** \\(X \\sim N(0, \\sigma^2)\\), single observation. Construct an exact \\(100(1-\\alpha)\\%\\) CI for \\(\\sigma^2\\) using the pivot \\(X^2/\\sigma^2 \\sim \\chi^2_1\\). (Tested 2021 ZA Q1b, 2021 ZB Q1b)\n3. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\). Show that \\(2\\lambda\\sum X_i \\sim \\chi^2_{2n}\\). Use this to construct a \\(95\\%\\) CI for \\(\\lambda\\). Compute numerically for \\(n = 8\\), \\(\\sum x_i = 12\\).\n4. **(12 min)** \\(X_1, \\ldots, X_n \\sim f(x; \\theta) = (1/\\theta^2)xe^{-x/\\theta}\\) for \\(x > 0\\). MLE is \\(\\hat\\theta = \\bar X/2\\). Fisher info is \\(I(\\theta) = 2n/\\theta^2\\). Construct an asymptotic 95% CI for \\(\\theta\\).\n5. **(8 min)** A friend writes: \"There is a 95% probability that \\(\\mu\\) lies in \\([2.1, 3.7]\\).\" Explain why this is wrong and give the correct interpretation. (3 min) Then: explain why asymptotic CIs are approximate and state when the approximation is most likely to be poor. (5 min)",
+        "6": "```\n1. IDENTIFY PIVOT: State Q(X, θ) and its distribution.\n   Verify: distribution does not depend on θ.\n\n2. DERIVE DISTRIBUTION: Show by MGF, CDF, or transformation\n   that Q has the claimed distribution. State support.\n\n3. PERCENTILES: Write P(a ≤ Q ≤ b) = 1 - α.\n   Identify a, b from tables (χ², t, or z tables as appropriate).\n\n4. INVERT: Rearrange a ≤ Q(X, θ) ≤ b to get L(X) ≤ θ ≤ U(X).\n   Show all algebra steps.\n\n5. COMPUTE: Substitute observed values. State numerical CI.\n\n6. INTERPRET: \"We are 100(1-α)% confident that θ lies in [L, U].\"\n   Never say \"θ is in [L, U] with probability 1-α.\"\n```\n\n### For Asymptotic CI Questions\n\n```\n1. MLE: State θ̂ and how it was derived.\n\n2. FISHER INFORMATION: Compute I(θ) = -E[ℓ''(θ)].\n\n3. ASYMPTOTIC DISTRIBUTION: θ̂ ~ N(θ, 1/I(θ)) for large n.\n\n4. CI: θ̂ ± z_{α/2} / √I(θ̂).\n\n5. CAVEAT: Note this is approximate, valid for large n.\n   Comment on suitability if n is small.\n```",
+        "7": "1. **Bayesian interpretation of CI.** Writing \"the probability that \\(\\theta\\) is in the interval is 95%\" loses marks. The parameter is fixed; the interval is random. The correct statement is about the procedure's long-run coverage.\n\n2. **Wrong quantile notation.** The \\(\\chi^2\\) table convention varies. Some sources define \\(\\chi^2_{n,\\alpha}\\) as the upper \\(\\alpha\\) quantile (area \\(\\alpha\\) to the right), others as the CDF value. The examiner uses upper-tail notation: \\(P(\\chi^2 > \\chi^2_{n,\\alpha}) = \\alpha\\). Check which convention is in use.\n\n3. **Forgetting to invert the inequality correctly.** When the pivot involves \\(1/\\theta\\) or \\(\\theta^2\\), dividing or taking roots may reverse the inequality direction. Show every step of the rearrangement.\n\n4. **Using asymptotic CI when an exact CI exists.** If the distribution is normal and \\(\\sigma\\) is known, use the exact \\(z\\)-interval. The examiner notes that asymptotic methods are for settings where exact pivots are unavailable.\n\n5. **Not commenting on suitability for small \\(n\\).** When asked to construct an asymptotic test or CI with small \\(n\\) (especially \\(n < 30\\) or discrete data), the examiner always expects a comment like \"the \\(\\chi^2\\) approximation may be poor for this sample size.\"\n\n6. **Missing the MGF step when deriving the pivot.** The examiner awards marks for showing that the pivot has the claimed distribution. Compute the MGF of \\(Q\\), identify it as a known distribution's MGF, and conclude."
+      },
+      "formulas": [
+        {
+          "concept": "Setting",
+          "formula": "Pivot"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known",
+          "formula": "\\(Z = \\frac{\\bar X - \\mu}{\\sigma/\\sqrt{n}}\\)"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) unknown",
+          "formula": "\\(T = \\frac{\\bar X - \\mu}{S/\\sqrt{n}}\\)"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\mu\\) known",
+          "formula": "\\(\\frac{\\sum(X_i - \\mu)^2}{\\sigma^2}\\)"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\mu\\) unknown",
+          "formula": "\\(\\frac{(n-1)S^2}{\\sigma^2}\\)"
+        },
+        {
+          "concept": "\\(\\text{Exp}(\\lambda)\\)",
+          "formula": "\\(2\\lambda\\sum X_i\\)"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "A point estimate says \"I think the true value is 5.2.\" A confidence interval says \"I think it's somewhere between 4.1 and 6.3, and I'm 95% confident about that.\"\n\nWhat does \"95% confident\" actually mean? It does NOT mean there's a 95% chance the true value is inside your interval. The true value is a fixed number -- it's either in there or it isn't. Instead, \"95% confident\" means: if you repeated this whole process many times -- new sample, new interval -- then 95% of those intervals would contain the true value. It's a statement about the *method*, not about any single interval.\n\nThe trick to building confidence intervals is finding a **pivotal function** -- a formula that depends on both your data and the unknown parameter, but whose probability distribution is completely known (like a standard normal or a chi-squared). You then rearrange the formula to trap the unknown parameter between two data-dependent bounds.\n\nFor example, if your data are normal with known variance, then (sample mean - true mean) / (σ/√n) follows a standard normal distribution. You know that 95% of the time a standard normal falls between -1.96 and +1.96. So you rearrange: the true mean is between (sample mean - 1.96σ/√n) and (sample mean + 1.96σ/√n). That's your 95% CI.\n\nWhen you don't have an exact pivot, you can use the MLE's asymptotic normality to build an approximate CI. These work well for large samples but can be unreliable for small ones.",
+      "feynmanKeyTerms": [
+        "pivotal function"
+      ],
+      "modelAnswer": "1. **(5 min)** Define: pivotal function, coverage probability, confidence coefficient. State the correct frequentist interpretation of a 95% CI.\n2. **(10 min)** \\(X \\sim N(0, \\sigma^2)\\), single observation. Construct an exact \\(100(1-\\alpha)\\%\\) CI for \\(\\sigma^2\\) using the pivot \\(X^2/\\sigma^2 \\sim \\chi^2_1\\). (Tested 2021 ZA Q1b, 2021 ZB Q1b)\n3. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\). Show that \\(2\\lambda\\sum X_i \\sim \\chi^2_{2n}\\). Use this to construct a \\(95\\%\\) CI for \\(\\lambda\\). Compute numerically for \\(n = 8\\), \\(\\sum x_i = 12\\).\n4. **(12 min)** \\(X_1, \\ldots, X_n \\sim f(x; \\theta) = (1/\\theta^2)xe^{-x/\\theta}\\) for \\(x > 0\\). MLE is \\(\\hat\\theta = \\bar X/2\\). Fisher info is \\(I(\\theta) = 2n/\\theta^2\\). Construct an asymptotic 95% CI for \\(\\theta\\).\n5. **(8 min)** A friend writes: \"There is a 95% probability that \\(\\mu\\) lies in \\([2.1, 3.7]\\).\" Explain why this is wrong and give the correct interpretation. (3 min) Then: explain why asymptotic CIs are approximate and state when the approximation is most likely to be poor. (5 min)",
+      "commonTraps": "```\n1. IDENTIFY PIVOT: State Q(X, θ) and its distribution.\n   Verify: distribution does not depend on θ.\n\n2. DERIVE DISTRIBUTION: Show by MGF, CDF, or transformation\n   that Q has the claimed distribution. State support.\n\n3. PERCENTILES: Write P(a ≤ Q ≤ b) = 1 - α.\n   Identify a, b from tables (χ², t, or z tables as appropriate).\n\n4. INVERT: Rearrange a ≤ Q(X, θ) ≤ b to get L(X) ≤ θ ≤ U(X).\n   Show all algebra steps.\n\n5. COMPUTE: Substitute observed values. State numerical CI.\n\n6. INTERPRET: \"We are 100(1-α)% confident that θ lies in [L, U].\"\n   Never say \"θ is in [L, U] with probability 1-α.\"\n```\n\n### For Asymptotic CI Questions\n\n```\n1. MLE: State θ̂ and how it was derived.\n\n2. FISHER INFORMATION: Compute I(θ) = -E[ℓ''(θ)].\n\n3. ASYMPTOTIC DISTRIBUTION: θ̂ ~ N(θ, 1/I(θ)) for large n.\n\n4. CI: θ̂ ± z_{α/2} / √I(θ̂).\n\n5. CAVEAT: Note this is approximate, valid for large n.\n   Comment on suitability if n is small.\n```",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-25_ST2134_hypothesis-testing-fundamentals.md",
+      "date": "2026-05-25",
+      "module": "ST2134",
+      "topicSlug": "hypothesis-testing-fundamentals",
+      "title": "ST2134 - Hypothesis Testing Fundamentals (Exam Sheet)",
+      "sections": {
+        "0": "Hypothesis testing is like a trial in court. The null hypothesis (H₀) is \"innocent until proven guilty\" -- it's the default assumption. The alternative hypothesis (H₁) is the prosecution's claim. Your data is the evidence. The test statistic is a summary of how strongly the evidence points against innocence.\n\nYou set a threshold in advance: \"I'll only convict if the evidence is this strong.\" That threshold is the significance level α (usually 5%). If your evidence exceeds the threshold, you \"reject H₀\" -- guilty. If it doesn't, you \"fail to reject H₀\" -- not proven, which is different from saying innocent.\n\nTwo kinds of mistakes can happen. A **Type I error** is convicting an innocent person -- rejecting H₀ when it's actually true. The probability of this is α, which you control. A **Type II error** is letting a guilty person go free -- failing to reject H₀ when H₁ is actually true. The probability of catching a guilty person (1 minus Type II error) is called **power**.\n\nThe **p-value** is the probability of seeing evidence as extreme as yours, assuming innocence. A small p-value means \"this evidence would be very surprising if H₀ were true,\" so you reject. A large p-value means \"this evidence is quite compatible with innocence,\" so you don't reject.\n\nThe fundamental trade-off: if you make it easier to convict (larger α), you catch more guilty people (higher power) but also convict more innocents. If you want to be very sure before convicting (smaller α), you'll miss more guilty ones. Increasing sample size is the only way to improve power without increasing α.",
+        "1": "**Purpose:** Hypothesis testing provides a systematic framework for deciding between competing claims about a parameter, with controlled error probabilities.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **Simple hypothesis** | Specifies \\(\\theta\\) completely: \\(H_0: \\theta = \\theta_0\\) |\n| **Composite hypothesis** | Does not fully specify \\(\\theta\\): \\(H_1: \\theta > \\theta_0\\) |\n| **Test / Decision rule** | A partition of the sample space into rejection region \\(C\\) and its complement |\n| **Test statistic** | \\(T(\\mathbf{X})\\) — a function of data used to decide between \\(H_0\\) and \\(H_1\\) |\n| **Type I error** | Rejecting \\(H_0\\) when it is true. Probability = \\(\\alpha\\) |\n| **Type II error** | Failing to reject \\(H_0\\) when \\(H_1\\) is true. Probability = \\(\\beta\\) |\n| **Size** | \\(\\alpha = \\sup_{\\theta \\in \\Theta_0} P_\\theta(\\mathbf{X} \\in C)\\) — worst-case Type I probability |\n| **Power function** | \\(W(\\theta) = P_\\theta(\\mathbf{X} \\in C)\\) for all \\(\\theta \\in \\Theta\\) |\n| **Power** | \\(W(\\theta_1) = 1 - \\beta\\) — probability of correctly rejecting when \\(H_1\\) is true |\n| **p-value** | \\(p = P_{H_0}(T \\geq T_{\\text{obs}})\\) — probability under \\(H_0\\) of observing a result at least as extreme |\n\n**Critical distinction:** \"Fail to reject \\(H_0\\)\" is NOT the same as \"accept \\(H_0\\).\" The examiner specifically penalises writing \"accept \\(H_0\\).\"",
+        "2": "### The Binomial Test Framework (Tested Every Year)\n\nFor \\(X \\sim \\text{Bin}(n, \\pi)\\), testing \\(H_0: \\pi = \\pi_0\\):\n\n**Size:** \\(\\alpha = P(X \\in C \\mid \\pi = \\pi_0) = \\sum_{x \\in C} \\binom{n}{x} \\pi_0^x (1-\\pi_0)^{n-x}\\)\n\n**Power at \\(\\pi_1\\):** \\(W(\\pi_1) = P(X \\in C \\mid \\pi = \\pi_1) = \\sum_{x \\in C} \\binom{n}{x} \\pi_1^x (1-\\pi_1)^{n-x}\\)\n\n**Type II error:** \\(\\beta = 1 - W(\\pi_1)\\)\n\n### Normal Mean Test (\\(\\sigma^2\\) known)\n\n\\(H_0: \\mu = \\mu_0\\) vs \\(H_1: \\mu < \\mu_0\\) (one-sided):\n- Test statistic: \\(Z = \\frac{\\bar X - \\mu_0}{\\sigma/\\sqrt{n}}\\)\n- Reject if \\(Z \\leq -z_\\alpha\\)\n- Power at \\(\\mu_1\\): \\(W(\\mu_1) = \\Phi\\left(\\frac{\\mu_1 - \\mu_0}{\\sigma/\\sqrt{n}} + z_\\alpha\\right)\\) for left-sided\n\n### Normal Mean Test (\\(\\sigma^2\\) unknown)\n\n\\(H_0: \\mu = \\mu_0\\) vs \\(H_1: \\mu \\neq \\mu_0\\):\n- Test statistic: \\(T = \\frac{\\bar X - \\mu_0}{S/\\sqrt{n}} \\sim t_{n-1}\\) under \\(H_0\\)\n- Reject if \\(|T| > t_{n-1, \\alpha/2}\\)\n\n### p-value Rules\n\n| Direction | p-value formula |\n|---|---|\n| \\(H_1: \\theta > \\theta_0\\) | \\(P_{H_0}(T \\geq t_{\\text{obs}})\\) |\n| \\(H_1: \\theta < \\theta_0\\) | \\(P_{H_0}(T \\leq t_{\\text{obs}})\\) |\n| \\(H_1: \\theta \\neq \\theta_0\\) | \\(2 \\min[P_{H_0}(T \\geq |t_{\\text{obs}}|), P_{H_0}(T \\leq -|t_{\\text{obs}}|)]\\) |\n\nReject \\(H_0\\) if \\(p \\leq \\alpha\\).\n\n### How to Increase Power\n\n1. Increase sample size \\(n\\) (always works)\n2. Increase significance level \\(\\alpha\\) (trades off Type I for Type II)\n3. Reduce noise \\(\\sigma\\) (if possible via experimental design)",
+        "3": "**Setup:** \\(X \\sim \\text{Bin}(6, \\pi)\\). Test \\(H_0: \\pi = 0.50\\) vs \\(H_1: \\pi = 0.75\\). Rejection region: \\(C = \\{x = 6\\}\\).\n\n**Part (i) — Size:**\n\n\\[\n\\alpha = P(X = 6 \\mid \\pi = 0.50) = \\binom{6}{6}(0.5)^6(0.5)^0 = (0.5)^6 = \\frac{1}{64} \\approx 0.0156\n\\]\n\n**Part (ii) — Power:**\n\n\\[\nW(0.75) = P(X = 6 \\mid \\pi = 0.75) = \\binom{6}{6}(0.75)^6(0.25)^0 = (0.75)^6 \\approx 0.1780\n\\]\n\n**Part (iii) — Type II error:**\n\n\\[\n\\beta = 1 - W(0.75) = 1 - 0.1780 = 0.8220\n\\]\n\n**Comment:** Power is very low (17.8%), meaning the test is unlikely to detect the alternative even if \\(\\pi = 0.75\\). The small sample size (\\(n = 6\\)) and very strict rejection region (only \\(x = 6\\)) both contribute.",
+        "4": "**Setup:** \\(X_1, \\ldots, X_{25} \\sim N(\\mu, 1)\\). Test \\(H_0: \\mu = 4\\) vs \\(H_1: \\mu = 3\\). Reject if \\(\\bar X < 3.5\\).\n\n**Size:**\n\n\\[\n\\alpha = P(\\bar X < 3.5 \\mid \\mu = 4) = P\\left(Z < \\frac{3.5 - 4}{1/\\sqrt{25}}\\right) = P(Z < -2.5) = \\Phi(-2.5) = 0.0062\n\\]\n\n**Power:**\n\n\\[\nW(3) = P(\\bar X < 3.5 \\mid \\mu = 3) = P\\left(Z < \\frac{3.5 - 3}{1/\\sqrt{25}}\\right) = P(Z < 2.5) = \\Phi(2.5) = 0.9938\n\\]\n\n**Type II error:** \\(\\beta = 1 - 0.9938 = 0.0062\\).",
+        "5": "1. **(5 min)** Define: size, power, p-value, Type I error, Type II error. State the relationship between power and Type II error.\n2. **(10 min)** \\(X \\sim \\text{Bin}(8, \\pi)\\). \\(H_0: \\pi = 0.50\\) vs \\(H_1: \\pi = 0.25\\). Rejection region: \\(X \\leq 1\\). Compute size and power. (2021 ZB Q1c)\n3. **(12 min)** \\(X \\sim \\text{Bin}(12, \\pi)\\). \\(H_0: \\pi = 0.5\\) vs \\(H_1: \\pi > 0.5\\). Compute the p-value when \\(X = 9\\). Would you reject at the 5% level? At 10%? (2020 Q4b)\n4. **(10 min)** \\(X_1, \\ldots, X_n \\sim N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known. \\(H_0: \\mu = \\mu_0\\) vs \\(H_1: \\mu < \\mu_0\\). Derive the rejection region from the test statistic \\(Z = (\\bar X - \\mu_0)/(\\sigma/\\sqrt{n})\\). Express the power function \\(W(\\mu)\\) in terms of \\(\\Phi\\).\n5. **(8 min)** The examiner asks: \"Suggest two ways to increase the power of your test.\" Provide the answer, explaining the trade-offs of each approach.\n6. **(5 min)** Explain why we say \"fail to reject \\(H_0\\)\" rather than \"accept \\(H_0\\).\"",
+        "6": "```\n1. STATE: H₀, H₁, and the rejection region C.\n   Identify whether the test is one-sided or two-sided.\n\n2. DISTRIBUTION UNDER H₀: State the distribution of the test\n   statistic (or X directly) under H₀.\n\n3. SIZE: Compute α = P(X ∈ C | H₀).\n   For binomial: sum the relevant binomial probabilities.\n   For normal: standardise and use Φ.\n\n4. DISTRIBUTION UNDER H₁: State the distribution under H₁.\n\n5. POWER: Compute W(θ₁) = P(X ∈ C | θ = θ₁).\n   Same calculation as size but with the alternative parameter.\n\n6. TYPE II ERROR: β = 1 - W(θ₁).\n\n7. COMMENT: Is the power adequate? What drives low power?\n   (Small n, strict C, small effect size.)\n```",
+        "7": "1. **Saying \"accept \\(H_0\\)\" instead of \"fail to reject \\(H_0\\).\"** The examiner explicitly flags this in every commentary. Failure to reject does not prove \\(H_0\\) is true.\n\n2. **Confusing size with significance level.** Size is the supremum of the power function over \\(\\Theta_0\\). When \\(H_0\\) is simple (\\(\\theta = \\theta_0\\)), size equals the significance level. For composite \\(H_0\\), size is the maximum Type I error probability.\n\n3. **Wrong tail direction.** For \\(H_1: \\pi > \\pi_0\\), large values of \\(X\\) are evidence against \\(H_0\\) — the rejection region is upper-tailed. For \\(H_1: \\pi < \\pi_0\\), it is lower-tailed. Swapping these is a common error.\n\n4. **Confusing p-value with \\(\\alpha\\).** The p-value is a statistic computed from data. The significance level \\(\\alpha\\) is pre-set before seeing data. You compare p to \\(\\alpha\\) to make a decision.\n\n5. **Not computing binomial probabilities carefully.** The examiner expects exact sums like \\(P(X \\leq 1 \\mid \\pi = 0.5) = \\binom{8}{0}(0.5)^8 + \\binom{8}{1}(0.5)^8\\). Do not round intermediate steps.\n\n6. **Forgetting the effect of \\(n\\) on power.** When discussing power, always note that larger samples increase power. The examiner's expected answer to \"how to increase power\" is always (1) increase \\(n\\) and (2) increase \\(\\alpha\\)."
+      },
+      "formulas": [
+        {
+          "concept": "Direction",
+          "formula": "p-value formula"
+        },
+        {
+          "concept": "\\(H_1: \\theta > \\theta_0\\)",
+          "formula": "\\(P_{H_0}(T \\geq t_{\\text{obs}})\\)"
+        },
+        {
+          "concept": "\\(H_1: \\theta < \\theta_0\\)",
+          "formula": "\\(P_{H_0}(T \\leq t_{\\text{obs}})\\)"
+        },
+        {
+          "concept": "\\(H_1: \\theta \\neq \\theta_0\\)",
+          "formula": "\\(2 \\min[P_{H_0}(T \\geq"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "Hypothesis testing is like a trial in court. The null hypothesis (H₀) is \"innocent until proven guilty\" -- it's the default assumption. The alternative hypothesis (H₁) is the prosecution's claim. Your data is the evidence. The test statistic is a summary of how strongly the evidence points against innocence.\n\nYou set a threshold in advance: \"I'll only convict if the evidence is this strong.\" That threshold is the significance level α (usually 5%). If your evidence exceeds the threshold, you \"reject H₀\" -- guilty. If it doesn't, you \"fail to reject H₀\" -- not proven, which is different from saying innocent.\n\nTwo kinds of mistakes can happen. A **Type I error** is convicting an innocent person -- rejecting H₀ when it's actually true. The probability of this is α, which you control. A **Type II error** is letting a guilty person go free -- failing to reject H₀ when H₁ is actually true. The probability of catching a guilty person (1 minus Type II error) is called **power**.\n\nThe **p-value** is the probability of seeing evidence as extreme as yours, assuming innocence. A small p-value means \"this evidence would be very surprising if H₀ were true,\" so you reject. A large p-value means \"this evidence is quite compatible with innocence,\" so you don't reject.\n\nThe fundamental trade-off: if you make it easier to convict (larger α), you catch more guilty people (higher power) but also convict more innocents. If you want to be very sure before convicting (smaller α), you'll miss more guilty ones. Increasing sample size is the only way to improve power without increasing α.",
+      "feynmanKeyTerms": [
+        "Type I error",
+        "Type II error",
+        "power",
+        "p-value"
+      ],
+      "modelAnswer": "1. **(5 min)** Define: size, power, p-value, Type I error, Type II error. State the relationship between power and Type II error.\n2. **(10 min)** \\(X \\sim \\text{Bin}(8, \\pi)\\). \\(H_0: \\pi = 0.50\\) vs \\(H_1: \\pi = 0.25\\). Rejection region: \\(X \\leq 1\\). Compute size and power. (2021 ZB Q1c)\n3. **(12 min)** \\(X \\sim \\text{Bin}(12, \\pi)\\). \\(H_0: \\pi = 0.5\\) vs \\(H_1: \\pi > 0.5\\). Compute the p-value when \\(X = 9\\). Would you reject at the 5% level? At 10%? (2020 Q4b)\n4. **(10 min)** \\(X_1, \\ldots, X_n \\sim N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known. \\(H_0: \\mu = \\mu_0\\) vs \\(H_1: \\mu < \\mu_0\\). Derive the rejection region from the test statistic \\(Z = (\\bar X - \\mu_0)/(\\sigma/\\sqrt{n})\\). Express the power function \\(W(\\mu)\\) in terms of \\(\\Phi\\).\n5. **(8 min)** The examiner asks: \"Suggest two ways to increase the power of your test.\" Provide the answer, explaining the trade-offs of each approach.\n6. **(5 min)** Explain why we say \"fail to reject \\(H_0\\)\" rather than \"accept \\(H_0\\).\"",
+      "commonTraps": "```\n1. STATE: H₀, H₁, and the rejection region C.\n   Identify whether the test is one-sided or two-sided.\n\n2. DISTRIBUTION UNDER H₀: State the distribution of the test\n   statistic (or X directly) under H₀.\n\n3. SIZE: Compute α = P(X ∈ C | H₀).\n   For binomial: sum the relevant binomial probabilities.\n   For normal: standardise and use Φ.\n\n4. DISTRIBUTION UNDER H₁: State the distribution under H₁.\n\n5. POWER: Compute W(θ₁) = P(X ∈ C | θ = θ₁).\n   Same calculation as size but with the alternative parameter.\n\n6. TYPE II ERROR: β = 1 - W(θ₁).\n\n7. COMMENT: Is the power adequate? What drives low power?\n   (Small n, strict C, small effect size.)\n```",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-26_ST2134_likelihood-testing-structure.md",
+      "date": "2026-05-26",
+      "module": "ST2134",
+      "topicSlug": "likelihood-testing-structure",
+      "title": "ST2134 - Likelihood + Testing Structure (Exam Sheet)",
+      "sections": {
+        "0": "The likelihood function answers a simple question: \"Given the data I observed, how plausible is each possible value of the unknown parameter?\"\n\nSuppose you flip a coin 10 times and get 7 heads. If the coin were fair (p = 0.5), getting 7 heads is somewhat unlikely. If p = 0.7, getting 7 heads is quite likely. If p = 0.99, getting 7 heads is somewhat unlikely again (you'd expect more). The likelihood function assigns a \"plausibility score\" to every possible value of p, given your data of 7 heads in 10 flips. The peak of this function -- the value of p that makes your data most plausible -- is the maximum likelihood estimate (MLE).\n\nThe **likelihood ratio test** extends this idea to hypothesis testing. Suppose someone claims p = 0.5. You ask: \"How much more plausible is the best-fitting p compared to p = 0.5?\" If the best-fitting p (the MLE) makes the data much more plausible than p = 0.5 does, then you reject the claim. The ratio of the two plausibilities is the likelihood ratio. A big ratio means the restricted model fits badly compared to the unrestricted one.\n\nWilks' theorem gives you a remarkable shortcut: twice the log of this ratio follows a chi-squared distribution for large samples. So you don't need to figure out the exact distribution of your test statistic -- you just compute one number and compare it to a chi-squared table. This is why the LR test appears in every exam paper.",
+        "1": "**Purpose:** The likelihood function summarises all the information the data provide about the parameter. Log-likelihood simplifies computation. The likelihood ratio test compares the fit of restricted vs unrestricted models.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **Likelihood function** | \\(L(\\theta; \\mathbf{x}) = f(\\mathbf{x}; \\theta) = \\prod_{i=1}^n f_{X_i}(x_i; \\theta)\\), viewed as a function of \\(\\theta\\) |\n| **Log-likelihood** | \\(\\ell(\\theta; \\mathbf{x}) = \\ln L(\\theta; \\mathbf{x}) = \\sum_{i=1}^n \\ln f_{X_i}(x_i; \\theta)\\) |\n| **Likelihood equation** | \\(U(\\hat\\theta) = \\frac{\\partial \\ell}{\\partial \\theta}\\bigg|_{\\hat\\theta} = 0\\) |\n| **LR statistic** | \\(\\Lambda = \\frac{L(\\hat\\theta_0)}{L(\\hat\\theta)}\\) where \\(\\hat\\theta_0\\) = restricted MLE, \\(\\hat\\theta\\) = unrestricted MLE |\n| **Log-LR statistic** | \\(-2\\ln\\Lambda = 2[\\ell(\\hat\\theta) - \\ell(\\hat\\theta_0)] \\geq 0\\) |\n| **Nuisance parameter** | A parameter present in the model but not of inferential interest |\n\n**Examiner's product/sum warning (verbatim, repeated every year):**\n\nCORRECT: \\(\\prod_{i=1}^n f_{X_i}(x_i; \\theta)\\) — each observation has its own subscript.\n\nWRONG: \\((f_X(x; \\theta))^n\\) or \\(\\prod f_X(x; \\theta)\\) — loses marks.",
+        "2": "### Standard Likelihoods and Log-Likelihoods\n\n| Distribution | \\(\\ell(\\theta)\\) | Score \\(U(\\theta) = \\ell'(\\theta)\\) |\n|---|---|---|\n| \\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known | \\(-\\frac{n}{2}\\ln(2\\pi\\sigma^2) - \\frac{\\sum(x_i - \\mu)^2}{2\\sigma^2}\\) | \\(\\frac{\\sum(x_i - \\mu)}{\\sigma^2} = \\frac{n(\\bar x - \\mu)}{\\sigma^2}\\) |\n| Poisson(\\(\\lambda\\)) | \\(-n\\lambda + (\\sum x_i)\\ln\\lambda - \\sum\\ln(x_i!)\\) | \\(-n + \\frac{\\sum x_i}{\\lambda}\\) |\n| Exp(\\(\\lambda\\)) | \\(n\\ln\\lambda - \\lambda\\sum x_i\\) | \\(\\frac{n}{\\lambda} - \\sum x_i\\) |\n| Bernoulli(\\(\\pi\\)) | \\((\\sum x_i)\\ln\\pi + (n - \\sum x_i)\\ln(1-\\pi)\\) | \\(\\frac{\\sum x_i}{\\pi} - \\frac{n - \\sum x_i}{1-\\pi}\\) |\n| Geometric(\\(\\pi\\)) | \\(n\\ln\\pi + (\\sum x_i - n)\\ln(1-\\pi)\\) | \\(\\frac{n}{\\pi} - \\frac{\\sum x_i - n}{1-\\pi}\\) |\n| Bin(\\(m, \\pi\\)), \\(m\\) known | \\(\\sum\\ln\\binom{m}{x_i} + (\\sum x_i)\\ln\\pi + (nm-\\sum x_i)\\ln(1-\\pi)\\) | \\(\\frac{\\sum x_i}{\\pi} - \\frac{nm - \\sum x_i}{1-\\pi}\\) |\n| Uniform\\([0, \\theta]\\) | \\(-n\\ln\\theta\\) for \\(x_{(n)} \\leq \\theta\\) | \\(-n/\\theta\\) (no interior solution; MLE = \\(X_{(n)}\\)) |\n\n### The Likelihood Ratio Test\n\n**Hypotheses:** \\(H_0: \\theta \\in \\Theta_0\\) vs \\(H_1: \\theta \\in \\Theta \\setminus \\Theta_0\\)\n\n**Procedure:**\n1. Find \\(\\hat\\theta\\) = MLE over full parameter space \\(\\Theta\\)\n2. Find \\(\\hat\\theta_0\\) = MLE restricted to \\(\\Theta_0\\)\n3. Compute \\(-2\\ln\\Lambda = 2[\\ell(\\hat\\theta) - \\ell(\\hat\\theta_0)]\\)\n4. Under \\(H_0\\) for large \\(n\\): \\(-2\\ln\\Lambda \\xrightarrow{d} \\chi^2_q\\) where \\(q = \\dim(\\Theta) - \\dim(\\Theta_0)\\)\n5. Reject \\(H_0\\) if \\(-2\\ln\\Lambda > \\chi^2_{q, \\alpha}\\)\n\n**Key properties:**\n- \\(\\Lambda \\in [0, 1]\\) since \\(L(\\hat\\theta_0) \\leq L(\\hat\\theta)\\)\n- Small \\(\\Lambda\\) = evidence against \\(H_0\\)\n- \\(q\\) = number of free parameters eliminated by \\(H_0\\)",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n \\sim \\text{Poisson}(\\lambda)\\) with \\(\\bar x = 4.5\\), and \\(Y_1, \\ldots, Y_n \\sim \\text{Poisson}(\\mu)\\) with \\(\\bar y = 2.5\\), independent. Test \\(H_0: \\lambda = \\mu\\) vs \\(H_1: \\lambda \\neq \\mu\\) at 5%.\n\n**Step 1 — Unrestricted MLEs:**\n\n\\(\\hat\\lambda = \\bar x = 4.5\\), \\(\\hat\\mu = \\bar y = 2.5\\).\n\n**Step 2 — Restricted MLE under \\(H_0: \\lambda = \\mu\\):**\n\nCommon parameter: \\(\\hat\\theta_0 = (\\sum x_i + \\sum y_i)/(2n) = (\\bar x + \\bar y)/2 = 3.5\\).\n\n**Step 3 — Log-LR statistic:**\n\n\\[\n-2\\ln\\Lambda = 2n[\\bar x \\ln(\\bar x / \\hat\\theta_0) + \\bar y \\ln(\\bar y / \\hat\\theta_0) - (\\bar x + \\bar y) + 2\\hat\\theta_0]\n\\]\n\nWith \\(n = 10\\): numerically compute\n\n\\[\n= 2 \\times 10 \\times [4.5\\ln(4.5/3.5) + 2.5\\ln(2.5/3.5) - 7 + 7]\n\\]\n\\[\n= 20 \\times [4.5 \\times 0.2513 + 2.5 \\times (-0.3365)]\n\\]\n\\[\n= 20 \\times [1.131 - 0.841] = 20 \\times 0.2244 = 4.489\n\\]\n\n**Step 4 — Decision:**\n\nUnder \\(H_0\\): \\(-2\\ln\\Lambda \\sim \\chi^2_1\\). Critical value \\(\\chi^2_{1, 0.05} = 3.841\\).\n\nSince \\(4.489 > 3.841\\), reject \\(H_0\\) at 5%. Evidence that \\(\\lambda \\neq \\mu\\).\n\n**Step 5 — p-value:** \\(P(\\chi^2_1 > 4.489)\\) lies between 0.025 and 0.05, consistent with rejection at 5% but not at 2.5%.",
+        "4": "**Setup:** Three independent samples from \\(\\text{Bin}(100, \\pi_i)\\), \\(i = 1,2,3\\). Observed: \\(x_1 = 48, x_2 = 56, x_3 = 52\\). Test \\(H_0: \\pi_1 = \\pi_2 = \\pi_3\\) at 5%.\n\n**Unrestricted MLEs:** \\(\\hat\\pi_i = x_i/100\\), so \\(\\hat\\pi_1 = 0.48, \\hat\\pi_2 = 0.56, \\hat\\pi_3 = 0.52\\).\n\n**Restricted MLE:** \\(\\hat\\pi_0 = (48 + 56 + 52)/300 = 156/300 = 0.52\\).\n\n**Log-LR:**\n\n\\[\n-2\\ln\\Lambda = 2\\sum_{i=1}^3 [x_i \\ln(\\hat\\pi_i/\\hat\\pi_0) + (100 - x_i)\\ln((1-\\hat\\pi_i)/(1-\\hat\\pi_0))]\n\\]\n\nNumerically: \\(-2\\ln\\Lambda = 1.283\\).\n\n**Decision:** \\(q = 3 - 1 = 2\\) restrictions. \\(\\chi^2_{2, 0.05} = 5.991\\). Since \\(1.283 < 5.991\\), do not reject \\(H_0\\). No evidence the proportions differ.",
+        "5": "1. **(5 min)** Write the likelihood and log-likelihood for a random sample from the Geometric(\\(\\pi\\)) distribution. State the support.\n2. **(8 min)** For the Exponential(\\(\\lambda\\)), derive the score function and set it to zero to find the MLE. Verify the second derivative is negative.\n3. **(15 min)** \\(X_1, \\ldots, X_n \\sim \\text{Bin}(m, \\pi)\\) with \\(m\\) known. \\(H_0: \\pi = 0.5\\) vs \\(H_1: \\pi \\neq 0.5\\). Derive the LR statistic. State the asymptotic distribution and degrees of freedom. For \\(n = 12, m = 1, X = 9\\), compute \\(-2\\ln\\Lambda\\) and decide at 5%. (2020 Q4b pattern)\n4. **(12 min)** Three independent Poisson samples with means \\(\\lambda_1, \\lambda_2, \\lambda_3\\). Test \\(H_0: \\lambda_1 = \\lambda_2 = \\lambda_3\\). State the restricted MLE, the df, and the decision framework.\n5. **(10 min)** Explain: Why is \\(\\Lambda \\leq 1\\)? What does a small \\(\\Lambda\\) mean? Why do we use \\(-2\\ln\\Lambda\\) rather than \\(\\Lambda\\) directly?",
+        "6": "```\n1. STATE: H₀ and H₁ with parameter spaces Θ₀ ⊂ Θ.\n   Count dimensions: dim(Θ) and dim(Θ₀).\n\n2. UNRESTRICTED MLE: Find θ̂ by maximising ℓ(θ) over all of Θ.\n\n3. RESTRICTED MLE: Find θ̂₀ by maximising ℓ(θ) subject to H₀.\n\n4. LOG-LR: Compute -2 ln Λ = 2[ℓ(θ̂) - ℓ(θ̂₀)].\n   Show the algebra clearly.\n\n5. WILKS' THEOREM: \"For large n, -2 ln Λ ~ χ²_q under H₀\"\n   where q = dim(Θ) - dim(Θ₀).\n\n6. DECISION: Compare -2 ln Λ to χ²_{q,α}. Reject or not.\n\n7. p-VALUE: If asked, state p = P(χ²_q > observed value).\n   Sketch the χ² curve with the observed value and\n   shade the area to the right.\n\n8. SUITABILITY: Comment on whether the χ² approximation is\n   appropriate (large n → good; small n or discrete → caution).\n```",
+        "7": "1. **Wrong degrees of freedom.** \\(q = \\dim(\\Theta) - \\dim(\\Theta_0)\\), i.e., the number of free parameters removed by \\(H_0\\). For \\(H_0: \\lambda_1 = \\lambda_2 = \\lambda_3\\), you go from 3 free parameters to 1, so \\(q = 2\\), NOT 3.\n\n2. **Confusing the LR ratio direction.** The examiner defines \\(\\Lambda = L(\\hat\\theta_0)/L(\\hat\\theta)\\) (restricted over unrestricted), so \\(\\Lambda \\leq 1\\). Some textbooks invert this. Be consistent and always check that your \\(-2\\ln\\Lambda \\geq 0\\).\n\n3. **Not commenting on the \\(\\chi^2\\) approximation for small \\(n\\).** Wilks' theorem is asymptotic. The examiner expects a caveat: \"For small \\(n\\), the \\(\\chi^2\\) approximation may be poor.\" This appears in 2020 Q4b(iii), 2022 Oct Q4b(iv).\n\n4. **Product/sum notation errors.** Write \\(\\sum_{i=1}^n \\ln f(x_i; \\theta)\\), NOT \\(n \\ln f(x; \\theta)\\). The examiner penalises this in every paper.\n\n5. **Forgetting the p-value sketch.** When asked for a p-value in a LR test, draw the \\(\\chi^2_q\\) curve, mark the observed \\(-2\\ln\\Lambda\\) value, and shade the area to the right. This is worth 2-3 marks.\n\n6. **Mixing up restricted and unrestricted log-likelihoods.** The unrestricted \\(\\ell(\\hat\\theta)\\) is always \\(\\geq \\ell(\\hat\\theta_0)\\). If your computation gives \\(-2\\ln\\Lambda < 0\\), you have swapped them."
+      },
+      "formulas": [
+        {
+          "concept": "Distribution",
+          "formula": "\\(\\ell(\\theta)\\)"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known",
+          "formula": "\\(-\\frac{n}{2}\\ln(2\\pi\\sigma^2) - \\frac{\\sum(x_i - \\mu)^2}{2\\sigma^2}\\)"
+        },
+        {
+          "concept": "Poisson(\\(\\lambda\\))",
+          "formula": "\\(-n\\lambda + (\\sum x_i)\\ln\\lambda - \\sum\\ln(x_i!)\\)"
+        },
+        {
+          "concept": "Exp(\\(\\lambda\\))",
+          "formula": "\\(n\\ln\\lambda - \\lambda\\sum x_i\\)"
+        },
+        {
+          "concept": "Bernoulli(\\(\\pi\\))",
+          "formula": "\\((\\sum x_i)\\ln\\pi + (n - \\sum x_i)\\ln(1-\\pi)\\)"
+        },
+        {
+          "concept": "Geometric(\\(\\pi\\))",
+          "formula": "\\(n\\ln\\pi + (\\sum x_i - n)\\ln(1-\\pi)\\)"
+        },
+        {
+          "concept": "Bin(\\(m, \\pi\\)), \\(m\\) known",
+          "formula": "\\(\\sum\\ln\\binom{m}{x_i} + (\\sum x_i)\\ln\\pi + (nm-\\sum x_i)\\ln(1-\\pi)\\)"
+        },
+        {
+          "concept": "Uniform\\([0, \\theta]\\)",
+          "formula": "\\(-n\\ln\\theta\\) for \\(x_{(n)} \\leq \\theta\\)"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "The likelihood function answers a simple question: \"Given the data I observed, how plausible is each possible value of the unknown parameter?\"\n\nSuppose you flip a coin 10 times and get 7 heads. If the coin were fair (p = 0.5), getting 7 heads is somewhat unlikely. If p = 0.7, getting 7 heads is quite likely. If p = 0.99, getting 7 heads is somewhat unlikely again (you'd expect more). The likelihood function assigns a \"plausibility score\" to every possible value of p, given your data of 7 heads in 10 flips. The peak of this function -- the value of p that makes your data most plausible -- is the maximum likelihood estimate (MLE).\n\nThe **likelihood ratio test** extends this idea to hypothesis testing. Suppose someone claims p = 0.5. You ask: \"How much more plausible is the best-fitting p compared to p = 0.5?\" If the best-fitting p (the MLE) makes the data much more plausible than p = 0.5 does, then you reject the claim. The ratio of the two plausibilities is the likelihood ratio. A big ratio means the restricted model fits badly compared to the unrestricted one.\n\nWilks' theorem gives you a remarkable shortcut: twice the log of this ratio follows a chi-squared distribution for large samples. So you don't need to figure out the exact distribution of your test statistic -- you just compute one number and compare it to a chi-squared table. This is why the LR test appears in every exam paper.",
+      "feynmanKeyTerms": [
+        "likelihood ratio test"
+      ],
+      "modelAnswer": "1. **(5 min)** Write the likelihood and log-likelihood for a random sample from the Geometric(\\(\\pi\\)) distribution. State the support.\n2. **(8 min)** For the Exponential(\\(\\lambda\\)), derive the score function and set it to zero to find the MLE. Verify the second derivative is negative.\n3. **(15 min)** \\(X_1, \\ldots, X_n \\sim \\text{Bin}(m, \\pi)\\) with \\(m\\) known. \\(H_0: \\pi = 0.5\\) vs \\(H_1: \\pi \\neq 0.5\\). Derive the LR statistic. State the asymptotic distribution and degrees of freedom. For \\(n = 12, m = 1, X = 9\\), compute \\(-2\\ln\\Lambda\\) and decide at 5%. (2020 Q4b pattern)\n4. **(12 min)** Three independent Poisson samples with means \\(\\lambda_1, \\lambda_2, \\lambda_3\\). Test \\(H_0: \\lambda_1 = \\lambda_2 = \\lambda_3\\). State the restricted MLE, the df, and the decision framework.\n5. **(10 min)** Explain: Why is \\(\\Lambda \\leq 1\\)? What does a small \\(\\Lambda\\) mean? Why do we use \\(-2\\ln\\Lambda\\) rather than \\(\\Lambda\\) directly?",
+      "commonTraps": "```\n1. STATE: H₀ and H₁ with parameter spaces Θ₀ ⊂ Θ.\n   Count dimensions: dim(Θ) and dim(Θ₀).\n\n2. UNRESTRICTED MLE: Find θ̂ by maximising ℓ(θ) over all of Θ.\n\n3. RESTRICTED MLE: Find θ̂₀ by maximising ℓ(θ) subject to H₀.\n\n4. LOG-LR: Compute -2 ln Λ = 2[ℓ(θ̂) - ℓ(θ̂₀)].\n   Show the algebra clearly.\n\n5. WILKS' THEOREM: \"For large n, -2 ln Λ ~ χ²_q under H₀\"\n   where q = dim(Θ) - dim(Θ₀).\n\n6. DECISION: Compare -2 ln Λ to χ²_{q,α}. Reject or not.\n\n7. p-VALUE: If asked, state p = P(χ²_q > observed value).\n   Sketch the χ² curve with the observed value and\n   shade the area to the right.\n\n8. SUITABILITY: Comment on whether the χ² approximation is\n   appropriate (large n → good; small n or discrete → caution).\n```",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-27_ST2134_score-information-mle.md",
+      "date": "2026-05-27",
+      "module": "ST2134",
+      "topicSlug": "score-information-mle",
+      "title": "ST2134 - Score, Information, and MLE (Exam Sheet)",
+      "sections": {
+        "0": "The **score function** is the slope of the log-likelihood hill at any given point. When you're standing on the side of the hill, the slope tells you which direction is uphill (toward the MLE). At the very top -- the MLE -- the slope is zero, because you've reached the peak.\n\n**Fisher information** measures how sharp the peak is. If the likelihood hill has a narrow, pointy peak, there's a lot of information in the data: you're very sure about the parameter's value. If the peak is broad and flat, there's little information: many parameter values look almost equally plausible.\n\nMathematically, Fisher information is the curvature (negative second derivative) of the log-likelihood, averaged over all possible data. More curvature = sharper peak = more information = smaller variance for your estimate. This is why Fisher information appears in the denominator of the Cramér-Rao lower bound: the more information you have, the lower the achievable variance.\n\nThe **MLE** is the value of the parameter at the top of the hill. You find it by setting the score (slope) to zero and solving. The beauty of the MLE is that for large samples, it's approximately normally distributed, centred on the true parameter, with variance equal to 1/I(θ). So the MLE is not just a good guess -- it comes with a built-in measure of its own uncertainty, driven directly by how much information the data contain.",
+        "1": "**Purpose:** The score function, Fisher information, and MLE form the core inference machinery. The score is the gradient of the log-likelihood. Fisher information measures the curvature (how \"peaked\" the likelihood is around the true parameter). The MLE is the parameter value maximising the likelihood.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **Score function** | \\(U(\\theta) = \\frac{\\partial \\ell(\\theta)}{\\partial \\theta}\\) — first derivative of log-likelihood |\n| **Observed information** | \\(J(\\theta) = -\\frac{\\partial^2 \\ell(\\theta)}{\\partial \\theta^2}\\) — negative second derivative |\n| **Fisher (expected) information** | \\(I(\\theta) = E_\\theta[U(\\theta)^2] = -E_\\theta\\left[\\frac{\\partial^2 \\ell}{\\partial \\theta^2}\\right]\\) |\n| **Single-observation information** | \\(i(\\theta)\\) — Fisher information from one observation |\n| **Total information** | \\(I(\\theta) = n \\cdot i(\\theta)\\) — for iid samples |\n| **MLE** | \\(\\hat\\theta = \\arg\\max_\\theta L(\\theta)\\) — solves \\(U(\\hat\\theta) = 0\\) |\n| **Invariance property** | If \\(\\hat\\theta\\) is MLE of \\(\\theta\\), then \\(g(\\hat\\theta)\\) is MLE of \\(g(\\theta)\\) |\n\n**Key property of the score:** \\(E_\\theta[U(\\theta)] = 0\\) under regularity conditions. This is why \\(I(\\theta) = \\text{Var}_\\theta[U(\\theta)] = E_\\theta[U(\\theta)^2]\\).",
+        "2": "### Score Function and Fisher Information for Standard Distributions\n\n| Distribution | Score \\(U(\\theta)\\) | Fisher info \\(I(\\theta)\\) | MLE \\(\\hat\\theta\\) |\n|---|---|---|---|\n| Bernoulli(\\(\\pi\\)) | \\(\\frac{\\sum x_i}{\\pi} - \\frac{n - \\sum x_i}{1-\\pi}\\) | \\(\\frac{n}{\\pi(1-\\pi)}\\) | \\(\\bar X\\) |\n| Poisson(\\(\\lambda\\)) | \\(-n + \\frac{\\sum x_i}{\\lambda}\\) | \\(\\frac{n}{\\lambda}\\) | \\(\\bar X\\) |\n| Exp(\\(\\lambda\\)) | \\(\\frac{n}{\\lambda} - \\sum x_i\\) | \\(\\frac{n}{\\lambda^2}\\) | \\(\\frac{1}{\\bar X}\\) |\n| Geometric(\\(\\pi\\)) | \\(\\frac{n}{\\pi} - \\frac{\\sum x_i - n}{1-\\pi}\\) | \\(\\frac{n}{\\pi^2(1-\\pi)}\\) | \\(\\frac{1}{\\bar X}\\) |\n| \\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known | \\(\\frac{n(\\bar x - \\mu)}{\\sigma^2}\\) | \\(\\frac{n}{\\sigma^2}\\) | \\(\\bar X\\) |\n| Gamma(\\(\\alpha, \\beta\\)), \\(\\alpha\\) known | \\(\\frac{n\\alpha}{\\beta} - \\sum x_i\\) | \\(\\frac{n\\alpha}{\\beta^2}\\) | \\(\\frac{\\alpha}{\\bar X}\\) |\n\n### MLE Derivation Template (5 Steps)\n\n1. **LIKELIHOOD:** Write \\(L(\\theta; \\mathbf{x}) = \\prod_{i=1}^n f_{X_i}(x_i; \\theta)\\) explicitly with support.\n2. **LOG-LIKELIHOOD:** Take \\(\\ell(\\theta) = \\sum_{i=1}^n \\ln f(x_i; \\theta)\\), simplify using log rules.\n3. **SCORE:** Differentiate \\(\\ell(\\theta)\\) w.r.t. \\(\\theta\\), set \\(U(\\hat\\theta) = 0\\), solve for \\(\\hat\\theta\\).\n4. **VERIFY:** Check \\(\\frac{\\partial^2 \\ell}{\\partial \\theta^2}\\Big|_{\\hat\\theta} < 0\\) (confirms maximum, not minimum).\n5. **STATE:** \"The MLE of \\(\\theta\\) is \\(\\hat\\theta = [\\text{expression}]\\).\"\n\n### Boundary/Constrained MLEs\n\nWhen the score has no interior root (e.g., Uniform\\([0, \\theta]\\)), the MLE occurs at the boundary:\n- Uniform\\([0, \\theta]\\): \\(\\ell(\\theta) = -n\\ln\\theta\\) is decreasing in \\(\\theta\\), so \\(\\hat\\theta = X_{(n)}\\) (the smallest permissible value).\n- The support constraint \\(\\theta \\geq x_{(n)}\\) determines the MLE.\n\n### Fisher Information Matrix (Vector Parameter)\n\nFor \\(\\boldsymbol\\theta = (\\theta_1, \\ldots, \\theta_p)^T\\):\n\n\\[\n[\\mathbf{I}(\\boldsymbol\\theta)]_{jk} = -E\\left[\\frac{\\partial^2 \\ell}{\\partial \\theta_j \\partial \\theta_k}\\right]\n\\]\n\nFor \\(N(\\mu, \\sigma^2)\\): \\(\\mathbf{I} = \\begin{pmatrix} n/\\sigma^2 & 0 \\\\ 0 & n/(2\\sigma^4) \\end{pmatrix}\\) — the zero off-diagonal means \\(\\hat\\mu\\) and \\(\\hat\\sigma^2\\) are asymptotically independent.",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n\\) iid with pdf \\(f(x; \\theta) = \\frac{1}{(\\alpha-1)!\\,\\theta^\\alpha} x^{\\alpha-1} e^{-x/\\theta}\\) for \\(x > 0\\), \\(\\alpha\\) known.\n\n**Step 1 — Log-likelihood:**\n\n\\[\n\\ell(\\theta) = -n\\alpha\\ln\\theta - \\frac{1}{\\theta}\\sum_{i=1}^n x_i + (\\alpha-1)\\sum_{i=1}^n \\ln x_i - n\\ln(\\alpha-1)!\n\\]\n\n**Step 2 — Score:**\n\n\\[\nU(\\theta) = -\\frac{n\\alpha}{\\theta} + \\frac{\\sum x_i}{\\theta^2}\n\\]\n\n**Step 3 — Solve \\(U(\\hat\\theta) = 0\\):**\n\n\\[\n\\frac{n\\alpha}{\\hat\\theta} = \\frac{\\sum x_i}{\\hat\\theta^2} \\implies \\hat\\theta = \\frac{\\bar X}{\\alpha}\n\\]\n\n**Step 4 — Verify maximum:**\n\n\\[\n\\frac{\\partial^2 \\ell}{\\partial \\theta^2} = \\frac{n\\alpha}{\\theta^2} - \\frac{2\\sum x_i}{\\theta^3} = \\frac{n\\alpha}{\\theta^2}\\left(1 - \\frac{2\\bar X}{\\alpha\\theta}\\right)\n\\]\n\nAt \\(\\hat\\theta = \\bar X/\\alpha\\): \\(= \\frac{n\\alpha^3}{\\bar X^2}(1 - 2) = -\\frac{n\\alpha^3}{\\bar X^2} < 0\\). Confirmed maximum.\n\n**Step 5 — Fisher information:**\n\n\\[\nI(\\theta) = -E\\left[\\frac{\\partial^2 \\ell}{\\partial \\theta^2}\\right] = -E\\left[\\frac{n\\alpha}{\\theta^2} - \\frac{2\\sum X_i}{\\theta^3}\\right] = -\\frac{n\\alpha}{\\theta^2} + \\frac{2n\\alpha}{\\theta^2} = \\frac{n\\alpha}{\\theta^2}\n\\]\n\n(using \\(E(\\bar X) = \\alpha\\theta\\))\n\n**Step 6 — Asymptotic distribution:**\n\n\\(\\hat\\theta \\dot\\sim N\\left(\\theta, \\frac{\\theta^2}{n\\alpha}\\right)\\)\n\n**Step 7 — Consistency:**\n\n\\(E(\\hat\\theta) = \\theta\\) (unbiased) and \\(\\text{Var}(\\hat\\theta) = \\theta^2/(n\\alpha) \\to 0\\). So \\(\\hat\\theta\\) is consistent.",
+        "4": "**Setup:** \\(X_1, \\ldots, X_n \\sim \\text{Geom}(\\pi)\\), pmf \\(f(x; \\pi) = (1-\\pi)^{x-1}\\pi\\) for \\(x = 1, 2, \\ldots\\).\n\n**Log-likelihood:**\n\n\\(\\ell(\\pi) = n\\ln\\pi + (\\sum x_i - n)\\ln(1-\\pi)\\)\n\n**Score:**\n\n\\(U(\\pi) = \\frac{n}{\\pi} - \\frac{\\sum x_i - n}{1-\\pi}\\)\n\n**Fisher information (via second derivative):**\n\n\\(\\frac{\\partial^2 \\ell}{\\partial \\pi^2} = -\\frac{n}{\\pi^2} - \\frac{\\sum x_i - n}{(1-\\pi)^2}\\)\n\n\\(I(\\pi) = -E\\left[-\\frac{n}{\\pi^2} - \\frac{\\sum X_i - n}{(1-\\pi)^2}\\right] = \\frac{n}{\\pi^2} + \\frac{n(1/\\pi - 1)}{(1-\\pi)^2} \\cdot (1-\\pi)\\)\n\nUsing \\(E(\\sum X_i) = n/\\pi\\): \\(I(\\pi) = \\frac{n}{\\pi^2} + \\frac{n(1-\\pi)/\\pi}{(1-\\pi)^2} = \\frac{n}{\\pi^2} + \\frac{n}{\\pi(1-\\pi)} = \\frac{n}{\\pi^2(1-\\pi)}\\)",
+        "5": "1. **(8 min)** Prove that \\(E[U(\\theta)] = 0\\) under regularity conditions. (Differentiate the identity \\(\\int f(x;\\theta)\\,dx = 1\\) w.r.t. \\(\\theta\\).)\n2. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\). Derive the MLE, compute Fisher information, and state the asymptotic distribution.\n3. **(12 min)** \\(X_1, \\ldots, X_n \\sim f(x;\\beta) = \\frac{1}{6\\beta^4}x^3 e^{-x/\\beta}\\) for \\(x > 0\\) (Gamma(4, \\(1/\\beta\\))). Derive likelihood, score, Fisher information, and MLE. (2022 Oct Q3 pattern)\n4. **(10 min)** For the Normal(\\(\\mu, \\sigma^2\\)) with both unknown, compute the Fisher information matrix. Explain what the zero off-diagonal entry means.\n5. **(8 min)** \\(\\hat\\theta\\) is the MLE of \\(\\theta\\). Use the invariance property to find the MLE of \\(g(\\theta) = 1/\\theta\\) for the Exponential(\\(\\lambda\\)) and Gamma(\\(\\alpha, \\beta\\)) with \\(\\alpha\\) known.",
+        "6": "```\n1. JOINT PDF: Write f(x₁,...,xₙ; θ) = ∏ f(xᵢ; θ) with support.\n   Use correct notation: f_{X_i}(xᵢ; θ), NOT f(x;θ)^n.\n\n2. LOG-LIKELIHOOD: ℓ(θ) = Σ ln f(xᵢ; θ). Simplify fully.\n\n3. SCORE: U(θ) = dℓ/dθ. Show the derivative clearly.\n\n4. MLE: Solve U(θ̂) = 0. State the solution.\n\n5. VERIFY: Show d²ℓ/dθ² |_{θ̂} < 0 (if asked).\n\n6. FISHER INFO: I(θ) = -E[d²ℓ/dθ²].\n   Use E(X) and E(X²) to evaluate expectations.\n   State I(θ) = n·i(θ) for the sample.\n\n7. ASYMPTOTIC DISTRIBUTION:\n   θ̂ ~ N(θ, 1/I(θ)) approximately for large n.\n\n8. IF ASKED: Check bias, consistency, CRLB attainment.\n```",
+        "7": "1. **Not checking the second-order condition.** The examiner specifically warns: \"Verify \\(d^2\\ell/d\\theta^2 < 0\\).\" Setting the score to zero only finds a stationary point; you must confirm it is a maximum.\n\n2. **Forgetting boundary MLEs.** For Uniform\\([0,\\theta]\\) or shifted distributions, the score has no interior solution. The MLE is an order statistic (\\(X_{(n)}\\) or \\(X_{(1)}\\)). Recognise when the likelihood is monotone in \\(\\theta\\).\n\n3. **Using the wrong Fisher information formula.** There are two forms: \\(E[U^2]\\) and \\(-E[\\ell'']\\). They are equal under regularity conditions but the second is usually easier to compute. Choose the simpler one.\n\n4. **Forgetting the invariance property.** If asked for the MLE of \\(g(\\theta)\\), do NOT re-derive from scratch. Simply apply \\(g(\\hat\\theta)\\). E.g., MLE of \\(\\lambda\\) in Exp is \\(1/\\bar X\\), so MLE of mean \\(1/\\lambda\\) is \\(\\bar X\\).\n\n5. **Product/sum notation errors.** Write \\(\\sum_{i=1}^n \\ln f(x_i; \\theta)\\), NOT \\(n\\ln f(x; \\theta)\\). The examiner deducts marks for this in every sitting.\n\n6. **Not stating the support of the distribution.** Always write \"for \\(x > 0\\)\" or \"for \\(x = 0, 1, \\ldots\\)\". Omitting the support loses marks, especially when it depends on \\(\\theta\\)."
+      },
+      "formulas": [
+        {
+          "concept": "Distribution",
+          "formula": "Score \\(U(\\theta)\\)"
+        },
+        {
+          "concept": "Bernoulli(\\(\\pi\\))",
+          "formula": "\\(\\frac{\\sum x_i}{\\pi} - \\frac{n - \\sum x_i}{1-\\pi}\\)"
+        },
+        {
+          "concept": "Poisson(\\(\\lambda\\))",
+          "formula": "\\(-n + \\frac{\\sum x_i}{\\lambda}\\)"
+        },
+        {
+          "concept": "Exp(\\(\\lambda\\))",
+          "formula": "\\(\\frac{n}{\\lambda} - \\sum x_i\\)"
+        },
+        {
+          "concept": "Geometric(\\(\\pi\\))",
+          "formula": "\\(\\frac{n}{\\pi} - \\frac{\\sum x_i - n}{1-\\pi}\\)"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known",
+          "formula": "\\(\\frac{n(\\bar x - \\mu)}{\\sigma^2}\\)"
+        },
+        {
+          "concept": "Gamma(\\(\\alpha, \\beta\\)), \\(\\alpha\\) known",
+          "formula": "\\(\\frac{n\\alpha}{\\beta} - \\sum x_i\\)"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "The **score function** is the slope of the log-likelihood hill at any given point. When you're standing on the side of the hill, the slope tells you which direction is uphill (toward the MLE). At the very top -- the MLE -- the slope is zero, because you've reached the peak.\n\n**Fisher information** measures how sharp the peak is. If the likelihood hill has a narrow, pointy peak, there's a lot of information in the data: you're very sure about the parameter's value. If the peak is broad and flat, there's little information: many parameter values look almost equally plausible.\n\nMathematically, Fisher information is the curvature (negative second derivative) of the log-likelihood, averaged over all possible data. More curvature = sharper peak = more information = smaller variance for your estimate. This is why Fisher information appears in the denominator of the Cramér-Rao lower bound: the more information you have, the lower the achievable variance.\n\nThe **MLE** is the value of the parameter at the top of the hill. You find it by setting the score (slope) to zero and solving. The beauty of the MLE is that for large samples, it's approximately normally distributed, centred on the true parameter, with variance equal to 1/I(θ). So the MLE is not just a good guess -- it comes with a built-in measure of its own uncertainty, driven directly by how much information the data contain.",
+      "feynmanKeyTerms": [
+        "score function",
+        "Fisher information",
+        "MLE"
+      ],
+      "modelAnswer": "1. **(8 min)** Prove that \\(E[U(\\theta)] = 0\\) under regularity conditions. (Differentiate the identity \\(\\int f(x;\\theta)\\,dx = 1\\) w.r.t. \\(\\theta\\).)\n2. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\). Derive the MLE, compute Fisher information, and state the asymptotic distribution.\n3. **(12 min)** \\(X_1, \\ldots, X_n \\sim f(x;\\beta) = \\frac{1}{6\\beta^4}x^3 e^{-x/\\beta}\\) for \\(x > 0\\) (Gamma(4, \\(1/\\beta\\))). Derive likelihood, score, Fisher information, and MLE. (2022 Oct Q3 pattern)\n4. **(10 min)** For the Normal(\\(\\mu, \\sigma^2\\)) with both unknown, compute the Fisher information matrix. Explain what the zero off-diagonal entry means.\n5. **(8 min)** \\(\\hat\\theta\\) is the MLE of \\(\\theta\\). Use the invariance property to find the MLE of \\(g(\\theta) = 1/\\theta\\) for the Exponential(\\(\\lambda\\)) and Gamma(\\(\\alpha, \\beta\\)) with \\(\\alpha\\) known.",
+      "commonTraps": "```\n1. JOINT PDF: Write f(x₁,...,xₙ; θ) = ∏ f(xᵢ; θ) with support.\n   Use correct notation: f_{X_i}(xᵢ; θ), NOT f(x;θ)^n.\n\n2. LOG-LIKELIHOOD: ℓ(θ) = Σ ln f(xᵢ; θ). Simplify fully.\n\n3. SCORE: U(θ) = dℓ/dθ. Show the derivative clearly.\n\n4. MLE: Solve U(θ̂) = 0. State the solution.\n\n5. VERIFY: Show d²ℓ/dθ² |_{θ̂} < 0 (if asked).\n\n6. FISHER INFO: I(θ) = -E[d²ℓ/dθ²].\n   Use E(X) and E(X²) to evaluate expectations.\n   State I(θ) = n·i(θ) for the sample.\n\n7. ASYMPTOTIC DISTRIBUTION:\n   θ̂ ~ N(θ, 1/I(θ)) approximately for large n.\n\n8. IF ASKED: Check bias, consistency, CRLB attainment.\n```",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-28_ST2134_mle-properties-lr-test.md",
+      "date": "2026-05-28",
+      "module": "ST2134",
+      "topicSlug": "mle-properties-lr-test",
+      "title": "ST2134 - MLE Properties + LR Test (Exam Sheet)",
+      "sections": {
+        "0": "The MLE has three promises that kick in when your sample is large enough.\n\nFirst, **consistency**: as you collect more data, the MLE converges to the true value. Your estimate doesn't wander off -- it homes in on the truth.\n\nSecond, **asymptotic normality**: for large samples, the MLE behaves like a normal distribution centred on the truth. This is incredibly useful because it means you can build confidence intervals and tests using the familiar normal/chi-squared tables, no matter how exotic your original distribution was.\n\nThird, **efficiency**: among all well-behaved estimators, the MLE wastes the least information. Its variance hits the theoretical minimum (the Cramér-Rao bound) as n grows. You literally cannot do better in the long run.\n\nThe **likelihood ratio test** exploits these properties. It compares two models: the \"full\" model (where the parameter can be anything) and the \"restricted\" model (where the parameter is forced to satisfy H₀). The statistic -2 ln(Λ) measures how much worse the restricted fit is. If it's much worse, you reject H₀.\n\nThere are actually three tests that do essentially the same thing for large samples: the **LR test** (compares both fits), the **Wald test** (asks how far the MLE is from the null value), and the **Score test** (asks how steep the likelihood hill is at the null value). They give nearly identical answers for big samples, but the LR test is the one the examiner always asks for.",
+        "1": "**Purpose:** This topic covers the asymptotic properties of MLEs (consistency, efficiency, asymptotic normality) and their use in constructing confidence intervals and hypothesis tests. The LR test is the examiner's most-tested topic.\n\n**Key properties of MLE (under regularity conditions):**\n\n| Property | Statement |\n|---|---|\n| **Consistency** | \\(\\hat\\theta_n \\xrightarrow{P} \\theta\\) as \\(n \\to \\infty\\) |\n| **Asymptotic normality** | \\(\\hat\\theta \\dot\\sim N(\\theta, 1/I(\\theta))\\) for large \\(n\\) |\n| **Asymptotic efficiency** | The MLE achieves the Cramér-Rao lower bound asymptotically |\n| **Invariance** | MLE of \\(g(\\theta)\\) is \\(g(\\hat\\theta)\\) |\n| **Function of sufficient statistic** | The MLE is always a function of any sufficient statistic |\n\n**Three asymptotically equivalent tests:**\n\n| Test | Statistic | What's needed |\n|---|---|---|\n| **Likelihood ratio** | \\(-2\\ln\\Lambda = 2[\\ell(\\hat\\theta) - \\ell(\\hat\\theta_0)]\\) | Both \\(\\hat\\theta\\) and \\(\\hat\\theta_0\\) |\n| **Wald** | \\(W = (\\hat\\theta - \\theta_0)^2 I(\\hat\\theta)\\) | Only \\(\\hat\\theta\\) |\n| **Score (Rao)** | \\(S = U(\\theta_0)^2 / I(\\theta_0)\\) | Only \\(\\theta_0\\) |\n\nAll three are asymptotically \\(\\chi^2_q\\) under \\(H_0\\), where \\(q\\) = number of restrictions.",
+        "2": "### MLE Asymptotic Distribution\n\n\\[\n\\sqrt{I(\\theta)}(\\hat\\theta - \\theta) \\xrightarrow{d} N(0, 1) \\quad \\text{or equivalently} \\quad \\hat\\theta \\dot\\sim N\\left(\\theta, \\frac{1}{I(\\theta)}\\right)\n\\]\n\nStandard error: \\(\\text{SE}(\\hat\\theta) \\approx 1/\\sqrt{I(\\hat\\theta)}\\)\n\n### Asymptotic Confidence Interval\n\n\\[\n\\hat\\theta \\pm z_{\\alpha/2} \\cdot \\frac{1}{\\sqrt{I(\\hat\\theta)}}\n\\]\n\nwhere \\(I(\\hat\\theta) = n \\cdot i(\\hat\\theta)\\) and \\(i(\\hat\\theta)\\) is the per-observation Fisher information evaluated at the MLE.\n\n### Proving Consistency (Two Approaches)\n\n**Approach 1 (MSE → 0):** Show that \\(E(\\hat\\theta) \\to \\theta\\) and \\(\\text{Var}(\\hat\\theta) \\to 0\\).\n\n**Approach 2 (Direct):** If \\(\\hat\\theta\\) is unbiased, then \\(\\text{Var}(\\hat\\theta) \\to 0\\) suffices. Often use exact expressions for \\(\\text{Var}(\\hat\\theta)\\) from the distribution.\n\n### Wilks' Theorem\n\nUnder \\(H_0\\) and regularity conditions:\n\n\\[\n-2\\ln\\Lambda \\xrightarrow{d} \\chi^2_q \\quad \\text{where } q = \\dim(\\Theta) - \\dim(\\Theta_0)\n\\]\n\n### LR Test for Common Scenarios\n\n| Scenario | \\(H_0\\) | df \\(q\\) | Restricted MLE |\n|---|---|---|---|\n| One normal mean = \\(\\mu_0\\) | \\(\\mu = \\mu_0\\) | 1 | \\(\\hat\\mu_0 = \\mu_0\\) |\n| Two Poisson means equal | \\(\\lambda_1 = \\lambda_2\\) | 1 | \\(\\hat\\lambda_0 = (\\bar x + \\bar y)/2\\) |\n| \\(k\\) binomial proportions equal | \\(\\pi_1 = \\cdots = \\pi_k\\) | \\(k-1\\) | \\(\\hat\\pi_0 = \\sum x_i / \\sum n_i\\) |\n| \\(k\\) Poisson means equal | \\(\\lambda_1 = \\cdots = \\lambda_k\\) | \\(k-1\\) | \\(\\hat\\lambda_0 = \\sum \\bar x_i / k\\) |",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n\\) iid with pdf \\(f(x; \\theta) = \\frac{1}{\\theta^2} x e^{-x/\\theta}\\) for \\(x > 0\\) (Gamma(2, \\(1/\\theta\\))). Given: \\(E(X) = 2\\theta\\), \\(\\text{Var}(X) = 2\\theta^2\\).\n\n**Part (i) — MLE:**\n\n\\(\\ell(\\theta) = -2n\\ln\\theta - \\frac{1}{\\theta}\\sum x_i + \\sum \\ln x_i\\)\n\n\\(U(\\theta) = -\\frac{2n}{\\theta} + \\frac{\\sum x_i}{\\theta^2} = 0 \\implies \\hat\\theta = \\frac{\\bar X}{2}\\)\n\n**Part (ii) — Consistency:**\n\n\\(E(\\hat\\theta) = E(\\bar X/2) = 2\\theta/2 = \\theta\\) — unbiased.\n\n\\(\\text{Var}(\\hat\\theta) = \\text{Var}(\\bar X/2) = \\frac{\\text{Var}(X)}{4n} = \\frac{2\\theta^2}{4n} = \\frac{\\theta^2}{2n} \\to 0\\)\n\nSince bias = 0 and variance → 0, MSE → 0, so \\(\\hat\\theta\\) is consistent.\n\n**Part (iii) — Fisher information + asymptotic distribution:**\n\n\\(\\frac{\\partial^2 \\ell}{\\partial \\theta^2} = \\frac{2n}{\\theta^2} - \\frac{2\\sum X_i}{\\theta^3}\\)\n\n\\(I(\\theta) = -E\\left[\\frac{2n}{\\theta^2} - \\frac{2\\sum X_i}{\\theta^3}\\right] = -\\frac{2n}{\\theta^2} + \\frac{2n \\cdot 2\\theta}{\\theta^3} = \\frac{2n}{\\theta^2}\\)\n\nAsymptotic distribution: \\(\\hat\\theta \\dot\\sim N\\left(\\theta, \\frac{\\theta^2}{2n}\\right)\\)",
+        "4": "**Setup:** \\(X_1, \\ldots, X_n\\) iid with \\(f(x; \\beta) = \\beta x^{\\beta-1}\\) for \\(0 \\leq x \\leq 1\\), \\(\\beta > 0\\). Test \\(H_0: \\beta = \\beta_0\\) vs \\(H_1: \\beta \\neq \\beta_0\\).\n\n**MLE:** \\(\\ell(\\beta) = n\\ln\\beta + (\\beta-1)\\sum \\ln x_i\\)\n\n\\(U(\\beta) = \\frac{n}{\\beta} + \\sum \\ln x_i = 0 \\implies \\hat\\beta = \\frac{-n}{\\sum \\ln x_i}\\)\n\n(Note: \\(\\ln x_i < 0\\) since \\(0 < x_i \\leq 1\\), so \\(\\hat\\beta > 0\\).)\n\n**LR statistic:**\n\n\\[\n-2\\ln\\Lambda = 2[\\ell(\\hat\\beta) - \\ell(\\beta_0)] = 2\\left[n\\ln\\frac{\\hat\\beta}{\\beta_0} + (\\hat\\beta - \\beta_0)\\sum\\ln x_i\\right]\n\\]\n\n**Decision at multiple levels:** Under \\(H_0\\): \\(-2\\ln\\Lambda \\sim \\chi^2_1\\).\n\n| Level \\(\\alpha\\) | Critical value \\(\\chi^2_{1,\\alpha}\\) |\n|---|---|\n| 0.10 | 2.706 |\n| 0.05 | 3.841 |\n| 0.01 | 6.635 |\n\n**p-value:** \\(P(\\chi^2_1 > \\text{observed value})\\). Sketch the \\(\\chi^2_1\\) curve, mark the observed value, shade right tail.",
+        "5": "1. **(5 min)** State the three asymptotic properties of the MLE. What \"regularity conditions\" are needed?\n2. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Gamma}(k, \\alpha)\\), \\(k\\) known. MLE is \\(\\hat\\alpha = k/\\bar X\\). Show it is consistent. Derive Fisher information. Construct an asymptotic 95% CI for \\(\\alpha\\). (2020 Q3 pattern)\n3. **(15 min)** \\(X_1, \\ldots, X_n \\sim \\text{Poisson}(\\lambda)\\), \\(Y_1, \\ldots, Y_m \\sim \\text{Poisson}(\\mu)\\), independent. Derive the LR test of \\(H_0: \\lambda = \\mu\\) vs \\(H_1: \\lambda \\neq \\mu\\). Find the restricted MLE, compute \\(-2\\ln\\Lambda\\), state the asymptotic distribution.\n4. **(10 min)** Compare the LR, Wald, and Score tests: what does each require? When might you prefer Score over LR?\n5. **(8 min)** The examiner says: \"Comment on the suitability of the asymptotic test for this sample size.\" Practice writing a 3-sentence answer for \\(n = 9\\) with a discrete distribution.",
+        "6": "```\n1. MLE: State θ̂ and how it was found (from score equation).\n\n2. UNBIASEDNESS: Compute E(θ̂). If biased, state bias.\n\n3. VARIANCE: Compute Var(θ̂) using distribution properties.\n   Express as function of θ and n.\n\n4. CONSISTENCY: Show MSE = Var + Bias² → 0 as n → ∞.\n   Or: unbiased + Var → 0 suffices.\n\n5. FISHER INFORMATION: I(θ) = n·i(θ).\n   State i(θ) = -E[d²ln f(x;θ)/dθ²] for one observation.\n\n6. ASYMPTOTIC DISTRIBUTION: θ̂ ~ N(θ, 1/I(θ)).\n   State SE(θ̂) = 1/√I(θ̂).\n\n7. ASYMPTOTIC CI (if asked): θ̂ ± z_{α/2}/√I(θ̂).\n```",
+        "7": "1. **Claiming consistency without computing MSE.** Writing \"\\(\\hat\\theta\\) is consistent because it's the MLE\" is not enough. You must show bias → 0 and variance → 0, or compute MSE directly.\n\n2. **Wrong df in LR test.** \\(q = \\dim(\\Theta) - \\dim(\\Theta_0)\\). For testing \\(k\\) means are equal, \\(q = k - 1\\), not \\(k\\). Counting the number of restrictions, not the number of groups.\n\n3. **Forgetting to mention the approximation quality.** When \\(n\\) is small or the distribution is discrete, always add: \"The \\(\\chi^2\\) approximation may be unreliable for this sample size.\"\n\n4. **Mixing up \\(I(\\theta)\\) and \\(i(\\theta)\\).** Total Fisher information is \\(I(\\theta) = n \\cdot i(\\theta)\\). The asymptotic variance of the MLE is \\(1/I(\\theta) = 1/(n \\cdot i(\\theta))\\), not \\(1/i(\\theta)\\).\n\n5. **Not using invariance.** If asked for the MLE of \\(g(\\theta)\\), apply \\(g(\\hat\\theta)\\) directly. Do not re-derive from the likelihood of \\(g(\\theta)\\).\n\n6. **Confusing the three tests.** The LR test needs both \\(\\hat\\theta\\) and \\(\\hat\\theta_0\\). The Wald test needs only \\(\\hat\\theta\\). The Score test needs only \\(\\theta_0\\). In exams, the LR test is always asked — memorise the Wald/Score distinction for theory questions."
+      },
+      "formulas": [
+        {
+          "concept": "Scenario",
+          "formula": "\\(H_0\\)"
+        },
+        {
+          "concept": "One normal mean = \\(\\mu_0\\)",
+          "formula": "\\(\\mu = \\mu_0\\)"
+        },
+        {
+          "concept": "Two Poisson means equal",
+          "formula": "\\(\\lambda_1 = \\lambda_2\\)"
+        },
+        {
+          "concept": "\\(k\\) binomial proportions equal",
+          "formula": "\\(\\pi_1 = \\cdots = \\pi_k\\)"
+        },
+        {
+          "concept": "\\(k\\) Poisson means equal",
+          "formula": "\\(\\lambda_1 = \\cdots = \\lambda_k\\)"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "The MLE has three promises that kick in when your sample is large enough.\n\nFirst, **consistency**: as you collect more data, the MLE converges to the true value. Your estimate doesn't wander off -- it homes in on the truth.\n\nSecond, **asymptotic normality**: for large samples, the MLE behaves like a normal distribution centred on the truth. This is incredibly useful because it means you can build confidence intervals and tests using the familiar normal/chi-squared tables, no matter how exotic your original distribution was.\n\nThird, **efficiency**: among all well-behaved estimators, the MLE wastes the least information. Its variance hits the theoretical minimum (the Cramér-Rao bound) as n grows. You literally cannot do better in the long run.\n\nThe **likelihood ratio test** exploits these properties. It compares two models: the \"full\" model (where the parameter can be anything) and the \"restricted\" model (where the parameter is forced to satisfy H₀). The statistic -2 ln(Λ) measures how much worse the restricted fit is. If it's much worse, you reject H₀.\n\nThere are actually three tests that do essentially the same thing for large samples: the **LR test** (compares both fits), the **Wald test** (asks how far the MLE is from the null value), and the **Score test** (asks how steep the likelihood hill is at the null value). They give nearly identical answers for big samples, but the LR test is the one the examiner always asks for.",
+      "feynmanKeyTerms": [
+        "consistency",
+        "asymptotic normality",
+        "efficiency",
+        "likelihood ratio test",
+        "LR test",
+        "Wald test",
+        "Score test"
+      ],
+      "modelAnswer": "1. **(5 min)** State the three asymptotic properties of the MLE. What \"regularity conditions\" are needed?\n2. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Gamma}(k, \\alpha)\\), \\(k\\) known. MLE is \\(\\hat\\alpha = k/\\bar X\\). Show it is consistent. Derive Fisher information. Construct an asymptotic 95% CI for \\(\\alpha\\). (2020 Q3 pattern)\n3. **(15 min)** \\(X_1, \\ldots, X_n \\sim \\text{Poisson}(\\lambda)\\), \\(Y_1, \\ldots, Y_m \\sim \\text{Poisson}(\\mu)\\), independent. Derive the LR test of \\(H_0: \\lambda = \\mu\\) vs \\(H_1: \\lambda \\neq \\mu\\). Find the restricted MLE, compute \\(-2\\ln\\Lambda\\), state the asymptotic distribution.\n4. **(10 min)** Compare the LR, Wald, and Score tests: what does each require? When might you prefer Score over LR?\n5. **(8 min)** The examiner says: \"Comment on the suitability of the asymptotic test for this sample size.\" Practice writing a 3-sentence answer for \\(n = 9\\) with a discrete distribution.",
+      "commonTraps": "```\n1. MLE: State θ̂ and how it was found (from score equation).\n\n2. UNBIASEDNESS: Compute E(θ̂). If biased, state bias.\n\n3. VARIANCE: Compute Var(θ̂) using distribution properties.\n   Express as function of θ and n.\n\n4. CONSISTENCY: Show MSE = Var + Bias² → 0 as n → ∞.\n   Or: unbiased + Var → 0 suffices.\n\n5. FISHER INFORMATION: I(θ) = n·i(θ).\n   State i(θ) = -E[d²ln f(x;θ)/dθ²] for one observation.\n\n6. ASYMPTOTIC DISTRIBUTION: θ̂ ~ N(θ, 1/I(θ)).\n   State SE(θ̂) = 1/√I(θ̂).\n\n7. ASYMPTOTIC CI (if asked): θ̂ ± z_{α/2}/√I(θ̂).\n```",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-05-29_ST2134_mixed-repair.md",
+      "date": "2026-05-29",
+      "module": "ST2134",
+      "topicSlug": "mixed-repair",
+      "title": "ST2134 - Mixed Repair Day (Exam Sheet)",
+      "sections": {
+        "1": "- Target top 3 recurring mistakes from recent sessions:\n  1. derivation errors\n  2. wrong test setup\n  3. weak interpretation wording",
+        "2": "1. Rework one failed derivation from scratch.  \n2. Rewrite one weak test answer in full exam structure.  \n3. Build a one-page “test selection + decision” cheat map.",
+        "3": "- 25 min: derivation question\n- 25 min: hypothesis-testing question\n- Target: >= 80% on corrected skills",
+        "4": "- Doing new problems before fixing repeats.\n- Skipping the re-attempt step.\n- No explicit assumption statement in answers."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-30_ST2134_mock-1.md",
+      "date": "2026-05-30",
+      "module": "ST2134",
+      "topicSlug": "mock-1",
+      "title": "ST2134 - Mock #1 Day Sheet",
+      "sections": {
+        "1": "- Strict exam simulation: timer, no notes, one sitting.\n- Mark confidence per question at start (H/M/L).\n- Stick to section time budgets.",
+        "2": "1. Score by topic block (sampling, estimation, testing, likelihood, MLE).  \n2. Classify mistakes: concept / derivation / algebra / interpretation / time.  \n3. Build “Top 5 final-phase fixes” list.",
+        "3": "- Overall target >= 75%\n- Completion rate >= 90%\n- At least one interpretation line in every full answer",
+        "4": "- Re-attempt all wrong subparts from memory before checking solutions.\n- Turn each repeat error into a trigger rule.",
+        "5": "- Looking only at total score.\n- No topic-level repair plan.\n- Cramming another mock before repairs."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Looking only at total score.\n- No topic-level repair plan.\n- Cramming another mock before repairs.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-05-31_ST2134_sufficient-statistics.md",
+      "date": "2026-05-31",
+      "module": "ST2134",
+      "topicSlug": "sufficient-statistics",
+      "title": "ST2134 - Sufficient Statistics (Exam Sheet)",
+      "sections": {
+        "0": "Suppose you have 1,000 coin flips and you want to know if the coin is biased. Do you need to remember every single flip in order? No -- all you need is the total number of heads. That total captures *everything* the 1,000 flips can tell you about the coin's bias. The individual sequence (HHTHT...) adds no extra information once you know the total. That total is a **sufficient statistic**.\n\nSufficiency means: once you know the value of the sufficient statistic, learning the rest of the data doesn't help you estimate the parameter any better. It's the ultimate data compression -- you throw away the raw data and keep only the summary, with zero loss of information about the parameter.\n\nThe **factorisation theorem** gives you a mechanical test: if you can split the joint probability of your data into one piece that depends on the parameter and the data only through T, and another piece that doesn't depend on the parameter at all, then T is sufficient. It's like saying: all the \"parameter signal\" lives inside T; everything else is pure noise.\n\nThe **Rao-Blackwell theorem** tells you why sufficiency matters for estimation: if you have any estimator, you can always improve it (or at least not make it worse) by conditioning it on a sufficient statistic. Start with a crude estimator like X₁ (just the first observation), condition on the sufficient statistic, and you get the sample mean -- a better estimator. Sufficiency is the engine that drives estimator improvement.",
+        "1": "**Purpose:** A sufficient statistic captures all the information in the sample about the parameter. Once you know the sufficient statistic, the remaining data tells you nothing more about \\(\\theta\\). The factorisation theorem is the standard tool for proving sufficiency.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **Sufficient statistic** | \\(T(\\mathbf{X})\\) is sufficient for \\(\\theta\\) if \\(P(\\mathbf{X} = \\mathbf{x} \\mid T = t)\\) does not depend on \\(\\theta\\) |\n| **Factorisation theorem** | \\(T(\\mathbf{X})\\) is sufficient for \\(\\theta\\) iff \\(f(\\mathbf{x}; \\theta) = g(T(\\mathbf{x}), \\theta) \\cdot h(\\mathbf{x})\\) |\n| **Minimal sufficient** | A sufficient statistic that is a function of every other sufficient statistic — achieves greatest data reduction |\n| **Lehmann-Scheffé criterion** | \\(T\\) is minimal sufficient iff \\(\\frac{f(\\mathbf{x};\\theta)}{f(\\mathbf{y};\\theta)}\\) is free of \\(\\theta \\iff T(\\mathbf{x}) = T(\\mathbf{y})\\) |\n| **Sufficiency principle** | Inference about \\(\\theta\\) should depend on data only through sufficient statistics |\n\n**Why it matters:** The MLE is always a function of sufficient statistics. The Rao-Blackwell theorem uses sufficiency to improve estimators. The LR test can be expressed through sufficient statistics.",
+        "2": "### Standard Sufficient Statistics (Must Memorise)\n\n| Distribution | Sufficient statistic for \\(\\theta\\) | Via factorisation |\n|---|---|---|\n| Bernoulli(\\(\\pi\\)) | \\(\\sum X_i\\) | \\(\\pi^{\\sum x_i}(1-\\pi)^{n-\\sum x_i} \\cdot 1\\) |\n| Bin(\\(m, \\pi\\)), \\(m\\) known | \\(\\sum X_i\\) | Same structure |\n| Poisson(\\(\\lambda\\)) | \\(\\sum X_i\\) | \\(e^{-n\\lambda}\\lambda^{\\sum x_i} \\cdot \\prod(1/x_i!)\\) |\n| \\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known | \\(\\sum X_i\\) (or \\(\\bar X\\)) | Exponent splits into \\(\\mu\\)-terms and remainder |\n| \\(N(\\mu, \\sigma^2)\\), both unknown | \\((\\sum X_i, \\sum X_i^2)\\) | Two-dimensional |\n| Exp(\\(\\lambda\\)) | \\(\\sum X_i\\) | \\(\\lambda^n e^{-\\lambda\\sum x_i} \\cdot 1\\) |\n| Gamma(\\(\\alpha, \\beta\\)), \\(\\alpha\\) known | \\(\\sum X_i\\) | \\(\\beta^{n\\alpha} e^{-\\beta\\sum x_i} \\cdot \\prod x_i^{\\alpha-1}/\\Gamma(\\alpha)^n\\) |\n| Uniform\\([0, \\theta]\\) | \\(X_{(n)} = \\max(X_i)\\) | \\(\\theta^{-n} \\cdot \\mathbb{1}(x_{(n)} \\leq \\theta) \\cdot 1\\) |\n| Shifted Exp: \\(\\lambda e^{-\\lambda(x-\\theta)}\\), \\(x \\geq \\theta\\) | See below (depends on which parameter) | Requires indicator functions |\n\n### The Indicator Function Rule (Critical for Support-Dependent Distributions)\n\nWhen the support depends on \\(\\theta\\), the sufficient statistic involves an **indicator function**. The examiner specifically tests this.\n\n**Shifted Exponential:** \\(f(x; \\lambda, \\theta) = \\lambda e^{-\\lambda(x-\\theta)}\\) for \\(x \\geq \\theta\\).\n\n- For \\(\\lambda\\) (with \\(\\theta\\) known): \\(T = \\sum X_i\\) is sufficient.\n- For \\(\\theta\\) (with \\(\\lambda\\) known): \\(T = X_{(1)} = \\min(X_i)\\) is sufficient.\n  - Joint pdf: \\(\\lambda^n e^{-\\lambda\\sum(x_i - \\theta)} \\cdot \\prod \\mathbb{1}(x_i \\geq \\theta)\\)\n  - Key: \\(\\prod \\mathbb{1}(x_i \\geq \\theta) = \\mathbb{1}(x_{(1)} \\geq \\theta)\\)\n  - So: \\(g(x_{(1)}, \\theta) = \\lambda^n e^{n\\lambda\\theta} \\cdot \\mathbb{1}(x_{(1)} \\geq \\theta)\\) and \\(h(\\mathbf{x}) = e^{-\\lambda\\sum x_i}\\)\n- For \\((\\lambda, \\theta)\\) jointly: \\(T = (\\sum X_i, X_{(1)})\\) is sufficient.\n\nThis pattern was tested: 2020 Q2b, 2023 Q1a — same distribution, same structure.\n\n### The Rao-Blackwell Theorem\n\nIf \\(\\tilde\\theta\\) is any unbiased estimator and \\(T\\) is sufficient for \\(\\theta\\), define:\n\n\\[\n\\hat\\theta^* = E[\\tilde\\theta \\mid T]\n\\]\n\nThen:\n1. \\(\\hat\\theta^*\\) is unbiased: \\(E[\\hat\\theta^*] = \\theta\\)\n2. \\(\\text{Var}(\\hat\\theta^*) \\leq \\text{Var}(\\tilde\\theta)\\) for all \\(\\theta\\)\n3. \\(\\hat\\theta^*\\) is a function of \\(T\\) alone\n\n**Proof uses:** Law of iterated expectations (\\(E[E[Y|T]] = E[Y]\\)) and conditional variance formula (\\(\\text{Var}(Y) = E[\\text{Var}(Y|T)] + \\text{Var}(E[Y|T]) \\geq \\text{Var}(E[Y|T])\\)).\n\n**Classic application:** Start with \\(\\tilde\\mu = X_1\\). Sufficient statistic: \\(S = \\sum X_i\\). By symmetry of iid sample: \\(E[X_1 \\mid \\sum X_i = s] = s/n = \\bar X\\). So the Rao-Blackwellized estimator is \\(\\bar X\\), which has smaller variance than \\(X_1\\).",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n\\) iid with \\(f(x; \\lambda, \\theta) = \\lambda e^{-\\lambda(x - \\theta)}\\) for \\(x \\geq \\theta\\), \\(\\lambda > 0\\), \\(\\theta \\in \\mathbb{R}\\).\n\n**Part (i) — Sufficient statistic for \\(\\lambda\\) when \\(\\theta\\) is known (3 marks):**\n\nJoint pdf: \\(\\lambda^n e^{-\\lambda\\sum(x_i - \\theta)} \\cdot \\prod \\mathbb{1}(x_i \\geq \\theta)\\)\n\nSince \\(\\theta\\) is known, the indicator is a known constant. Factor as:\n\n\\(g(\\sum x_i, \\lambda) = \\lambda^n e^{-\\lambda(\\sum x_i - n\\theta)}\\) and \\(h(\\mathbf{x}) = \\prod \\mathbb{1}(x_i \\geq \\theta)\\)\n\nBy factorisation theorem, \\(T = \\sum X_i\\) is sufficient for \\(\\lambda\\).\n\n**Part (ii) — Sufficient statistic for \\(\\theta\\) when \\(\\lambda\\) is known (4 marks):**\n\nNow \\(\\lambda\\) is fixed. The joint pdf is:\n\n\\(\\lambda^n e^{-\\lambda\\sum x_i} \\cdot e^{n\\lambda\\theta} \\cdot \\prod \\mathbb{1}(x_i \\geq \\theta)\\)\n\nKey step: \\(\\prod_{i=1}^n \\mathbb{1}(x_i \\geq \\theta) = \\mathbb{1}(\\min(x_i) \\geq \\theta) = \\mathbb{1}(x_{(1)} \\geq \\theta)\\)\n\nFactor as: \\(g(x_{(1)}, \\theta) = e^{n\\lambda\\theta} \\cdot \\mathbb{1}(x_{(1)} \\geq \\theta)\\) and \\(h(\\mathbf{x}) = \\lambda^n e^{-\\lambda\\sum x_i}\\)\n\nBy factorisation theorem, \\(T = X_{(1)}\\) is sufficient for \\(\\theta\\).\n\n**Part (iii) — Joint sufficient statistic (3 marks):**\n\nBoth \\(\\lambda\\) and \\(\\theta\\) unknown: \\(T = (\\sum X_i, X_{(1)})\\) is jointly sufficient for \\((\\lambda, \\theta)\\).",
+        "4": "**Statement:** Let \\(\\tilde\\theta\\) be an unbiased estimator of \\(\\theta\\) and \\(T\\) sufficient for \\(\\theta\\). Define \\(\\hat\\theta^* = E[\\tilde\\theta \\mid T]\\). Then:\n- \\(E[\\hat\\theta^*] = \\theta\\) (unbiased)\n- \\(\\text{Var}(\\hat\\theta^*) \\leq \\text{Var}(\\tilde\\theta)\\)\n\n**Proof — Unbiasedness:**\n\nBy iterated expectations: \\(E[\\hat\\theta^*] = E[E[\\tilde\\theta \\mid T]] = E[\\tilde\\theta] = \\theta\\).\n\n**Proof — Variance reduction:**\n\nBy the law of total variance:\n\n\\(\\text{Var}(\\tilde\\theta) = E[\\text{Var}(\\tilde\\theta \\mid T)] + \\text{Var}(E[\\tilde\\theta \\mid T])\\)\n\nSince \\(\\text{Var}(\\tilde\\theta \\mid T) \\geq 0\\):\n\n\\(\\text{Var}(\\tilde\\theta) \\geq \\text{Var}(E[\\tilde\\theta \\mid T]) = \\text{Var}(\\hat\\theta^*)\\)",
+        "5": "1. **(5 min)** State the factorisation theorem. Define sufficient statistic and minimal sufficient statistic.\n2. **(10 min)** \\(X_1, \\ldots, X_n \\sim \\text{Poisson}(\\lambda)\\). Show \\(\\sum X_i\\) is sufficient for \\(\\lambda\\) using the factorisation theorem.\n3. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Uniform}[0, \\theta]\\). Show \\(X_{(n)}\\) is sufficient for \\(\\theta\\). Explain why the indicator function \\(\\mathbb{1}(x_{(n)} \\leq \\theta)\\) is essential. (Tested in multiple papers)\n4. **(12 min)** \\(X_1, \\ldots, X_n\\) iid with \\(f(x; \\lambda, \\theta) = \\lambda e^{-\\lambda(x-\\theta)}\\), \\(x \\geq \\theta\\). Find the sufficient statistic for (a) \\(\\lambda\\) alone, (b) \\(\\theta\\) alone, (c) \\((\\lambda, \\theta)\\) jointly.\n5. **(8 min)** State the Rao-Blackwell theorem. Apply it: start with \\(\\tilde\\mu = X_1\\), condition on the sufficient statistic \\(\\sum X_i\\), to show that \\(\\bar X\\) is the improved estimator.\n6. **(3 min)** The examiner says \"state the factorisation theorem.\" Write a model answer. Do NOT provide the proof — the examiner warns this wastes time.",
+        "6": "```\n1. JOINT PDF/PMF: Write f(x₁,...,xₙ; θ) = ∏ f(xᵢ; θ).\n   State the support explicitly. Use correct subscript notation.\n\n2. SIMPLIFY: Combine terms. Collect all θ-dependent terms.\n   If support depends on θ, express as indicator function.\n\n3. FACTORISE: Write as g(T(x), θ) × h(x).\n   - g contains ALL θ-dependent terms and data only through T.\n   - h contains all terms free of θ.\n\n4. INDICATOR STEP (if needed): Show that\n   ∏ 𝟙(xᵢ ≥ θ) = 𝟙(x₍₁₎ ≥ θ) or\n   ∏ 𝟙(xᵢ ≤ θ) = 𝟙(x₍ₙ₎ ≤ θ).\n\n5. CONCLUDE: \"By the factorisation theorem, T(X) = [expression]\n   is sufficient for θ.\"\n   State WHICH PARAMETER T is sufficient for.\n```",
+        "7": "1. **Incomplete factorisation.** Not clearly separating \\(g(T, \\theta)\\) from \\(h(\\mathbf{x})\\). Every term in \\(g\\) must depend on \\(\\mathbf{x}\\) only through \\(T\\). Every term in \\(h\\) must be free of \\(\\theta\\).\n\n2. **Forgetting the indicator function.** When the support depends on \\(\\theta\\) (Uniform\\([0,\\theta]\\), shifted exponential), omitting \\(\\mathbb{1}(x_{(n)} \\leq \\theta)\\) or \\(\\mathbb{1}(x_{(1)} \\geq \\theta)\\) is a fatal error. The examiner flags this in commentaries for 2020, 2022, and 2023.\n\n3. **Not stating which parameter the statistic is sufficient for.** The examiner says: \"When deriving a sufficient statistic, also state the parameter to which it corresponds.\" Writing \"\\(T = \\sum X_i\\) is sufficient\" without saying \"for \\(\\lambda\\)\" loses marks.\n\n4. **Confusing sufficiency with unbiasedness.** A sufficient statistic need not be an unbiased estimator. \\(X_{(n)}\\) is sufficient for \\(\\theta\\) in Uniform\\([0,\\theta]\\) but is biased (since \\(E[X_{(n)}] = n\\theta/(n+1) \\neq \\theta\\)).\n\n5. **Over-answering \"state the theorem\" questions.** The examiner explicitly warns: \"When asked to state a theorem, do not give the proof as well — this simply wastes time.\" State the theorem cleanly and stop.\n\n6. **Not using the law of iterated expectations in Rao-Blackwell.** The proof requires \\(E[E[\\tilde\\theta | T]] = E[\\tilde\\theta]\\). Not citing this identity costs marks in proof questions."
+      },
+      "formulas": [
+        {
+          "concept": "Distribution",
+          "formula": "Sufficient statistic for \\(\\theta\\)"
+        },
+        {
+          "concept": "Bernoulli(\\(\\pi\\))",
+          "formula": "\\(\\sum X_i\\)"
+        },
+        {
+          "concept": "Bin(\\(m, \\pi\\)), \\(m\\) known",
+          "formula": "\\(\\sum X_i\\)"
+        },
+        {
+          "concept": "Poisson(\\(\\lambda\\))",
+          "formula": "\\(\\sum X_i\\)"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), \\(\\sigma^2\\) known",
+          "formula": "\\(\\sum X_i\\) (or \\(\\bar X\\))"
+        },
+        {
+          "concept": "\\(N(\\mu, \\sigma^2)\\), both unknown",
+          "formula": "\\((\\sum X_i, \\sum X_i^2)\\)"
+        },
+        {
+          "concept": "Exp(\\(\\lambda\\))",
+          "formula": "\\(\\sum X_i\\)"
+        },
+        {
+          "concept": "Gamma(\\(\\alpha, \\beta\\)), \\(\\alpha\\) known",
+          "formula": "\\(\\sum X_i\\)"
+        },
+        {
+          "concept": "Uniform\\([0, \\theta]\\)",
+          "formula": "\\(X_{(n)} = \\max(X_i)\\)"
+        },
+        {
+          "concept": "Shifted Exp: \\(\\lambda e^{-\\lambda(x-\\theta)}\\), \\(x \\geq \\theta\\)",
+          "formula": "See below (depends on which parameter)"
+        }
+      ],
+      "questions": [],
+      "feynmanText": "Suppose you have 1,000 coin flips and you want to know if the coin is biased. Do you need to remember every single flip in order? No -- all you need is the total number of heads. That total captures *everything* the 1,000 flips can tell you about the coin's bias. The individual sequence (HHTHT...) adds no extra information once you know the total. That total is a **sufficient statistic**.\n\nSufficiency means: once you know the value of the sufficient statistic, learning the rest of the data doesn't help you estimate the parameter any better. It's the ultimate data compression -- you throw away the raw data and keep only the summary, with zero loss of information about the parameter.\n\nThe **factorisation theorem** gives you a mechanical test: if you can split the joint probability of your data into one piece that depends on the parameter and the data only through T, and another piece that doesn't depend on the parameter at all, then T is sufficient. It's like saying: all the \"parameter signal\" lives inside T; everything else is pure noise.\n\nThe **Rao-Blackwell theorem** tells you why sufficiency matters for estimation: if you have any estimator, you can always improve it (or at least not make it worse) by conditioning it on a sufficient statistic. Start with a crude estimator like X₁ (just the first observation), condition on the sufficient statistic, and you get the sample mean -- a better estimator. Sufficiency is the engine that drives estimator improvement.",
+      "feynmanKeyTerms": [
+        "sufficient statistic",
+        "factorisation theorem",
+        "Rao-Blackwell theorem"
+      ],
+      "modelAnswer": "1. **(5 min)** State the factorisation theorem. Define sufficient statistic and minimal sufficient statistic.\n2. **(10 min)** \\(X_1, \\ldots, X_n \\sim \\text{Poisson}(\\lambda)\\). Show \\(\\sum X_i\\) is sufficient for \\(\\lambda\\) using the factorisation theorem.\n3. **(12 min)** \\(X_1, \\ldots, X_n \\sim \\text{Uniform}[0, \\theta]\\). Show \\(X_{(n)}\\) is sufficient for \\(\\theta\\). Explain why the indicator function \\(\\mathbb{1}(x_{(n)} \\leq \\theta)\\) is essential. (Tested in multiple papers)\n4. **(12 min)** \\(X_1, \\ldots, X_n\\) iid with \\(f(x; \\lambda, \\theta) = \\lambda e^{-\\lambda(x-\\theta)}\\), \\(x \\geq \\theta\\). Find the sufficient statistic for (a) \\(\\lambda\\) alone, (b) \\(\\theta\\) alone, (c) \\((\\lambda, \\theta)\\) jointly.\n5. **(8 min)** State the Rao-Blackwell theorem. Apply it: start with \\(\\tilde\\mu = X_1\\), condition on the sufficient statistic \\(\\sum X_i\\), to show that \\(\\bar X\\) is the improved estimator.\n6. **(3 min)** The examiner says \"state the factorisation theorem.\" Write a model answer. Do NOT provide the proof — the examiner warns this wastes time.",
+      "commonTraps": "```\n1. JOINT PDF/PMF: Write f(x₁,...,xₙ; θ) = ∏ f(xᵢ; θ).\n   State the support explicitly. Use correct subscript notation.\n\n2. SIMPLIFY: Combine terms. Collect all θ-dependent terms.\n   If support depends on θ, express as indicator function.\n\n3. FACTORISE: Write as g(T(x), θ) × h(x).\n   - g contains ALL θ-dependent terms and data only through T.\n   - h contains all terms free of θ.\n\n4. INDICATOR STEP (if needed): Show that\n   ∏ 𝟙(xᵢ ≥ θ) = 𝟙(x₍₁₎ ≥ θ) or\n   ∏ 𝟙(xᵢ ≤ θ) = 𝟙(x₍ₙ₎ ≤ θ).\n\n5. CONCLUDE: \"By the factorisation theorem, T(X) = [expression]\n   is sufficient for θ.\"\n   State WHICH PARAMETER T is sufficient for.\n```",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-06-01_ST2134_optimal-estimators-tests.md",
+      "date": "2026-06-01",
+      "module": "ST2134",
+      "topicSlug": "optimal-estimators-tests",
+      "title": "ST2134 - Optimal Estimators and Tests (Exam Sheet)",
+      "sections": {
+        "0": "This topic asks two beautiful questions: what is the *best possible* estimate, and what is the *best possible* test?\n\nFor estimation, the **Cramér-Rao lower bound** says there's a speed limit on accuracy. No unbiased estimator can have variance below 1/I(θ), where I(θ) is the Fisher information. It's a law of nature: the data only contain so much information, and no clever trick can squeeze out more than what's there. An estimator that actually hits this speed limit is called \"efficient\" -- it extracts every last drop of information from the data.\n\nFor testing, the **Neyman-Pearson lemma** answers: if you're choosing between two specific hypotheses, the best possible test (highest power for a given size) is to look at the likelihood ratio. You compute how much more plausible the data are under H₁ than under H₀. If that ratio is big enough, reject H₀. No other test of the same size can have higher power -- it's mathematically impossible.\n\nThe beautiful connection: just as the Cramér-Rao bound sets a floor on estimator variance, the Neyman-Pearson lemma sets a ceiling on test power. Both are optimality results that tell you the best you can possibly do, and both are achievable.\n\nA **UMP test** extends Neyman-Pearson to composite alternatives: if the most powerful test happens to be the *same test* regardless of which specific alternative value you're considering, then that test is uniformly most powerful -- the best against every alternative simultaneously. This works for one-sided tests in exponential families, but for two-sided tests, UMP usually doesn't exist, and you fall back to the likelihood ratio test.",
+        "1": "**Purpose:** This topic answers two fundamental questions: (1) What is the best possible unbiased estimator? (2) What is the best possible test? The Cramér-Rao bound gives a lower limit on estimator variance. The Neyman-Pearson lemma identifies the most powerful test.\n\n**Key definitions:**\n\n| Term | Formal definition |\n|---|---|\n| **CRLB** | \\(\\text{Var}(\\hat\\theta) \\geq \\frac{1}{I(\\theta)}\\) for unbiased \\(\\hat\\theta\\); more generally \\(\\text{Var}(T) \\geq \\frac{[g'(\\theta)]^2}{I(\\theta)}\\) for \\(E(T) = g(\\theta)\\) |\n| **Efficient estimator** | An unbiased estimator achieving the CRLB — i.e., with \\(\\text{Var} = 1/I(\\theta)\\) |\n| **MVUE** | Minimum variance unbiased estimator — smallest variance among all unbiased estimators |\n| **Most powerful test** | A test of size \\(\\alpha\\) that maximises power against a specific alternative |\n| **UMP test** | Uniformly most powerful — most powerful against every alternative in \\(\\Theta_1\\) |\n| **Neyman-Pearson lemma** | For simple \\(H_0\\) vs simple \\(H_1\\): the MP test rejects when \\(L(\\theta_1)/L(\\theta_0) \\geq k\\) |",
+        "2": "### Cramér-Rao Inequality\n\n**For unbiased estimator \\(\\hat\\theta\\) of \\(\\theta\\):**\n\n\\[\n\\text{Var}(\\hat\\theta) \\geq \\frac{1}{I(\\theta)} = \\frac{1}{n \\cdot i(\\theta)}\n\\]\n\n**For unbiased estimator \\(T\\) of \\(g(\\theta)\\):**\n\n\\[\n\\text{Var}(T) \\geq \\frac{[g'(\\theta)]^2}{I(\\theta)}\n\\]\n\n### When is the CRLB Attained?\n\nThe bound is attained (equality holds) iff the score function can be written as:\n\n\\[\nU(\\theta) = a(\\theta)[T(\\mathbf{X}) - g(\\theta)]\n\\]\n\nfor some function \\(a(\\theta)\\). If this holds, \\(T\\) is the unique MVUE of \\(g(\\theta)\\).\n\n**Practical check:** Compute the score function. If it is a linear function of some statistic \\(T\\), then \\(T\\) (suitably scaled) attains the CRLB.\n\n### CRLB Proof Sketch (Tested 2023 Q1b — 10 marks)\n\nUses the **Cauchy-Schwarz inequality**:\n\n\\[[\\text{Cov}(T, U)]^2 \\leq \\text{Var}(T) \\cdot \\text{Var}(U)\\]\n\nKey steps:\n1. Differentiate \\(E_\\theta[T(\\mathbf{X})] = g(\\theta)\\) under the integral sign to get \\(\\text{Cov}(T, U) = g'(\\theta)\\).\n2. Use \\(\\text{Var}(U) = I(\\theta)\\) and \\(E[U] = 0\\).\n3. Apply Cauchy-Schwarz: \\([g'(\\theta)]^2 \\leq \\text{Var}(T) \\cdot I(\\theta)\\).\n4. Rearrange: \\(\\text{Var}(T) \\geq [g'(\\theta)]^2 / I(\\theta)\\).\n\n### Neyman-Pearson Lemma\n\n**Setup:** Simple \\(H_0: \\theta = \\theta_0\\) vs simple \\(H_1: \\theta = \\theta_1\\).\n\n**Statement:** The most powerful test of size \\(\\alpha\\) has rejection region:\n\n\\[\nC^* = \\left\\{\\mathbf{x} : \\frac{L(\\theta_1; \\mathbf{x})}{L(\\theta_0; \\mathbf{x})} \\geq k\\right\\}\n\\]\n\nwhere \\(k\\) is chosen so that \\(P_{\\theta_0}(\\mathbf{X} \\in C^*) = \\alpha\\).\n\n### Extending to UMP Tests\n\nA test is **UMP** of size \\(\\alpha\\) for \\(H_0: \\theta = \\theta_0\\) vs \\(H_1: \\theta \\in \\Theta_1\\) if:\n1. The MP rejection region from N-P does **not depend** on the specific \\(\\theta_1 \\in \\Theta_1\\)\n2. The size condition holds: \\(P_{\\theta_0}(\\mathbf{X} \\in C^*) \\leq \\alpha\\)\n\n**When UMP tests exist:** One-parameter exponential families with one-sided alternatives (monotone likelihood ratio property).\n\n**When UMP tests do NOT exist:** Two-sided alternatives (\\(H_1: \\theta \\neq \\theta_0\\)) for most families. Use the LR test instead.",
+        "3": "**Setup:** \\(X_1, \\ldots, X_n \\sim \\text{Gamma}(k, \\alpha)\\) with \\(k\\) known. MLE: \\(\\hat\\alpha = k/\\bar X\\).\n\n**Step 1 — Fisher information:**\n\n\\(i(\\alpha) = k/\\alpha^2\\), so \\(I(\\alpha) = nk/\\alpha^2\\).\n\n**Step 2 — CRLB for unbiased estimator of \\(\\alpha\\):**\n\n\\(\\text{Var}(\\hat\\alpha) \\geq \\frac{1}{I(\\alpha)} = \\frac{\\alpha^2}{nk}\\)\n\n**Step 3 — Does the MLE attain the CRLB?**\n\nCheck the score: \\(U(\\alpha) = \\frac{nk}{\\alpha} - \\sum X_i = \\frac{nk}{\\alpha}\\left(1 - \\frac{\\bar X}{k/\\alpha}\\right)\\)\n\nThis is \\(\\frac{nk}{\\alpha}(1 - \\alpha\\bar X/k)\\). Not quite in the form \\(a(\\alpha)(\\hat\\alpha - \\alpha)\\), so the MLE of \\(\\alpha\\) does NOT attain the CRLB exactly (it attains it only asymptotically).\n\n**However:** The MLE of \\(1/\\alpha\\) (i.e., \\(\\bar X/k\\)) IS unbiased and the score is \\(U = \\frac{nk}{\\alpha}(1 - \\alpha \\cdot \\bar X/k)\\), which has the form \\(a(\\alpha)[T - g(\\alpha)]\\) with \\(T = \\bar X/k\\) and \\(g(\\alpha) = 1/\\alpha\\). So \\(\\bar X/k\\) is the MVUE of \\(1/\\alpha\\) and attains the CRLB.",
+        "4": "**Setup:** \\(X_1, \\ldots, X_n \\sim N(0, \\sigma^2)\\). Test \\(H_0: \\sigma^2 = \\sigma_0^2\\) vs \\(H_1: \\sigma^2 = \\sigma_1^2\\) where \\(\\sigma_1^2 > \\sigma_0^2\\).\n\n**Step 1 — Likelihood ratio:**\n\n\\[\n\\frac{L(\\sigma_1^2)}{L(\\sigma_0^2)} = \\left(\\frac{\\sigma_0}{\\sigma_1}\\right)^n \\exp\\left[-\\frac{1}{2}\\left(\\frac{1}{\\sigma_1^2} - \\frac{1}{\\sigma_0^2}\\right)\\sum X_i^2\\right]\n\\]\n\n**Step 2 — Monotonicity:**\n\nSince \\(\\sigma_1^2 > \\sigma_0^2\\), the coefficient \\(-\\frac{1}{2}(1/\\sigma_1^2 - 1/\\sigma_0^2) > 0\\), so the ratio is **increasing** in \\(\\sum X_i^2\\).\n\nTherefore: \\(\\frac{L(\\sigma_1^2)}{L(\\sigma_0^2)} \\geq k \\iff \\sum X_i^2 \\geq c\\).\n\n**Step 3 — Find \\(c\\):**\n\nUnder \\(H_0\\): \\(\\sum X_i^2/\\sigma_0^2 \\sim \\chi^2_n\\), so \\(c = \\sigma_0^2 \\chi^2_{n, \\alpha}\\).\n\n**Step 4 — UMP property:**\n\nThe rejection region \\(\\{\\sum X_i^2 \\geq c\\}\\) does **not depend on \\(\\sigma_1^2\\)** (only requires \\(\\sigma_1^2 > \\sigma_0^2\\)). Therefore the same test is MP for every \\(\\sigma_1^2 > \\sigma_0^2\\), making it **UMP** for:\n- \\(H_0: \\sigma^2 = \\sigma_0^2\\) vs \\(H_1: \\sigma^2 > \\sigma_0^2\\)",
+        "5": "**Setup:** \\(X_1, \\ldots, X_n\\) with \\(f(x; \\beta) = \\frac{1}{6\\beta^4}x^3 e^{-x/\\beta}\\) for \\(x > 0\\). Given \\(E(X) = 4\\beta\\).\n\n**Score function:** \\(U(\\beta) = -\\frac{4n}{\\beta} + \\frac{\\sum X_i}{\\beta^2} = \\frac{n}{\\beta^2}\\left(\\frac{\\sum X_i}{n} - 4\\beta\\right) = \\frac{n}{\\beta^2}(\\bar X - 4\\beta)\\)\n\nThis has the form \\(a(\\beta)[T - g(\\beta)]\\) with \\(T = \\bar X\\), \\(g(\\beta) = 4\\beta\\), \\(a(\\beta) = n/\\beta^2\\).\n\nSo \\(\\bar X\\) is the MVUE of \\(4\\beta\\), and by linearity, \\(\\hat\\beta = \\bar X/4\\) is the MVUE of \\(\\beta\\).\n\n**Verify:** CRLB for \\(\\beta\\): \\(\\text{Var}(\\hat\\beta) \\geq [g'(\\beta)]^2/I(\\beta)\\). With \\(g(\\beta) = \\beta\\), \\(g'=1\\), \\(I(\\beta) = 4n/\\beta^2\\): CRLB = \\(\\beta^2/(4n)\\).\n\nActual variance: \\(\\text{Var}(\\bar X/4) = \\text{Var}(X)/(16n) = 4\\beta^2/(16n) = \\beta^2/(4n)\\). Equals the CRLB — confirmed MVUE.",
+        "6": "1. **(8 min)** State the Cramér-Rao inequality for (a) unbiased estimator of \\(\\theta\\), (b) unbiased estimator of \\(g(\\theta)\\). State the condition for attainment.\n2. **(12 min)** Prove the CRLB using Cauchy-Schwarz. (Tested 2023 Q1b — 10 marks)\n3. **(10 min)** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\). MLE is \\(\\hat\\lambda = 1/\\bar X\\). Fisher info: \\(I(\\lambda) = n/\\lambda^2\\). Check whether the MLE of \\(\\lambda\\) attains the CRLB. Check whether \\(\\bar X\\) attains the CRLB for \\(1/\\lambda\\).\n4. **(10 min)** State the Neyman-Pearson lemma. For \\(X_1, \\ldots, X_n \\sim N(\\mu, \\sigma^2)\\) with \\(\\sigma^2\\) known, derive the MP test of \\(H_0: \\mu = \\mu_0\\) vs \\(H_1: \\mu = \\mu_1\\) where \\(\\mu_1 > \\mu_0\\). Show it is UMP against \\(H_1: \\mu > \\mu_0\\).\n5. **(10 min)** State and prove the Rao-Blackwell theorem. (Tested 2022 Q1c — 12 marks)",
+        "7": "### For CRLB Questions\n\n```\n1. FISHER INFO: Compute I(θ) = n·i(θ).\n\n2. CRLB: State Var(T) ≥ [g'(θ)]² / I(θ) for E(T) = g(θ).\n   If g(θ) = θ, the bound is 1/I(θ).\n\n3. ACTUAL VARIANCE: Compute Var(θ̂) from the distribution.\n\n4. COMPARE: Does Var = CRLB?\n   If YES: \"θ̂ is efficient / is the MVUE of g(θ).\"\n   If NO: \"θ̂ does not attain the CRLB.\"\n   Note: MLE always attains CRLB asymptotically.\n\n5. SCORE CHECK (optional): If score = a(θ)[T - g(θ)],\n   then T is the MVUE of g(θ) and attains the CRLB.\n```\n\n### For Neyman-Pearson Questions\n\n```\n1. STATE: H₀: θ = θ₀ (simple) vs H₁: θ = θ₁ (simple).\n\n2. LIKELIHOOD RATIO: Write L(θ₁)/L(θ₀) explicitly.\n\n3. SIMPLIFY: Reduce to a function of a known statistic.\n   Show the ratio is ≥ k iff T(X) ≥ c (or ≤ c).\n\n4. DISTRIBUTION UNDER H₀: State the distribution of T|H₀.\n\n5. CRITICAL VALUE: Choose c so that P_{θ₀}(T ∈ C) = α.\n\n6. UMP (if applicable): If C does not depend on θ₁,\n   the test is UMP for the composite alternative.\n```",
+        "8": "1. **Not connecting CRLB to Cauchy-Schwarz in the proof.** The proof's key step is: differentiate \\(E[T] = g(\\theta)\\) under the integral sign to get \\(\\text{Cov}(T, U) = g'(\\theta)\\). Then apply C-S. Skipping the differentiation step loses marks.\n\n2. **Claiming the MLE always attains the CRLB.** The MLE attains it **asymptotically**, not necessarily for finite \\(n\\). For example, the MLE of \\(\\alpha\\) in Gamma(\\(k, \\alpha\\)) does not attain the CRLB for finite \\(n\\), but the MLE of \\(1/\\alpha\\) does.\n\n3. **Not correctly defining the rejection region in N-P.** The rejection region is \\(\\{L(\\theta_1)/L(\\theta_0) \\geq k\\}\\), not \\(\\leq k\\). Large likelihood ratios favour \\(H_1\\).\n\n4. **Claiming UMP exists for two-sided alternatives.** For \\(H_1: \\theta \\neq \\theta_0\\), UMP tests generally do not exist (the MP test for \\(\\theta_1 > \\theta_0\\) differs from the MP test for \\(\\theta_1 < \\theta_0\\)). Use the LR test instead.\n\n5. **Writing overly long proofs.** The examiner warns: \"When asked to state a theorem, do not give the proof as well.\" And when asked to prove, follow the Subject Guide proof structure — do not improvise a longer proof.\n\n6. **Forgetting the score-function characterisation of MVUE.** If the score equals \\(a(\\theta)(T - g(\\theta))\\), then \\(T\\) is the MVUE of \\(g(\\theta)\\). This is the fastest way to check CRLB attainment."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "This topic asks two beautiful questions: what is the *best possible* estimate, and what is the *best possible* test?\n\nFor estimation, the **Cramér-Rao lower bound** says there's a speed limit on accuracy. No unbiased estimator can have variance below 1/I(θ), where I(θ) is the Fisher information. It's a law of nature: the data only contain so much information, and no clever trick can squeeze out more than what's there. An estimator that actually hits this speed limit is called \"efficient\" -- it extracts every last drop of information from the data.\n\nFor testing, the **Neyman-Pearson lemma** answers: if you're choosing between two specific hypotheses, the best possible test (highest power for a given size) is to look at the likelihood ratio. You compute how much more plausible the data are under H₁ than under H₀. If that ratio is big enough, reject H₀. No other test of the same size can have higher power -- it's mathematically impossible.\n\nThe beautiful connection: just as the Cramér-Rao bound sets a floor on estimator variance, the Neyman-Pearson lemma sets a ceiling on test power. Both are optimality results that tell you the best you can possibly do, and both are achievable.\n\nA **UMP test** extends Neyman-Pearson to composite alternatives: if the most powerful test happens to be the *same test* regardless of which specific alternative value you're considering, then that test is uniformly most powerful -- the best against every alternative simultaneously. This works for one-sided tests in exponential families, but for two-sided tests, UMP usually doesn't exist, and you fall back to the likelihood ratio test.",
+      "feynmanKeyTerms": [
+        "Cramér-Rao lower bound",
+        "Neyman-Pearson lemma",
+        "UMP test"
+      ],
+      "modelAnswer": "**Setup:** \\(X_1, \\ldots, X_n\\) with \\(f(x; \\beta) = \\frac{1}{6\\beta^4}x^3 e^{-x/\\beta}\\) for \\(x > 0\\). Given \\(E(X) = 4\\beta\\).\n\n**Score function:** \\(U(\\beta) = -\\frac{4n}{\\beta} + \\frac{\\sum X_i}{\\beta^2} = \\frac{n}{\\beta^2}\\left(\\frac{\\sum X_i}{n} - 4\\beta\\right) = \\frac{n}{\\beta^2}(\\bar X - 4\\beta)\\)\n\nThis has the form \\(a(\\beta)[T - g(\\beta)]\\) with \\(T = \\bar X\\), \\(g(\\beta) = 4\\beta\\), \\(a(\\beta) = n/\\beta^2\\).\n\nSo \\(\\bar X\\) is the MVUE of \\(4\\beta\\), and by linearity, \\(\\hat\\beta = \\bar X/4\\) is the MVUE of \\(\\beta\\).\n\n**Verify:** CRLB for \\(\\beta\\): \\(\\text{Var}(\\hat\\beta) \\geq [g'(\\beta)]^2/I(\\beta)\\). With \\(g(\\beta) = \\beta\\), \\(g'=1\\), \\(I(\\beta) = 4n/\\beta^2\\): CRLB = \\(\\beta^2/(4n)\\).\n\nActual variance: \\(\\text{Var}(\\bar X/4) = \\text{Var}(X)/(16n) = 4\\beta^2/(16n) = \\beta^2/(4n)\\). Equals the CRLB — confirmed MVUE.",
+      "commonTraps": "1. **(8 min)** State the Cramér-Rao inequality for (a) unbiased estimator of \\(\\theta\\), (b) unbiased estimator of \\(g(\\theta)\\). State the condition for attainment.\n2. **(12 min)** Prove the CRLB using Cauchy-Schwarz. (Tested 2023 Q1b — 10 marks)\n3. **(10 min)** \\(X_1, \\ldots, X_n \\sim \\text{Exp}(\\lambda)\\). MLE is \\(\\hat\\lambda = 1/\\bar X\\). Fisher info: \\(I(\\lambda) = n/\\lambda^2\\). Check whether the MLE of \\(\\lambda\\) attains the CRLB. Check whether \\(\\bar X\\) attains the CRLB for \\(1/\\lambda\\).\n4. **(10 min)** State the Neyman-Pearson lemma. For \\(X_1, \\ldots, X_n \\sim N(\\mu, \\sigma^2)\\) with \\(\\sigma^2\\) known, derive the MP test of \\(H_0: \\mu = \\mu_0\\) vs \\(H_1: \\mu = \\mu_1\\) where \\(\\mu_1 > \\mu_0\\). Show it is UMP against \\(H_1: \\mu > \\mu_0\\).\n5. **(10 min)** State and prove the Rao-Blackwell theorem. (Tested 2022 Q1c — 12 marks)",
+      "hasFullSections": true
+    },
+    {
+      "filename": "2026-06-02_ST2134_proof-fluency.md",
+      "date": "2026-06-02",
+      "module": "ST2134",
+      "topicSlug": "proof-fluency",
+      "title": "ST2134 - Proof Fluency Day (Exam Sheet)",
+      "sections": {
+        "1": "- Improve structure, notation discipline, and step logic.\n- Reduce avoidable algebra slips.\n- Write concise but complete proofs under time pressure.",
+        "2": "1. State claim and assumptions.  \n2. Define notation and known results used.  \n3. Proceed in small logical steps (one line = one claim).  \n4. Finish with explicit conclusion marker.",
+        "3": "- 20 min: short derivation proof  \n- 20 min: sufficiency/likelihood proof fragment  \n- 20 min: test-property argument in prose + math",
+        "4": "- Logical flow (0-2)\n- Correct notation (0-2)\n- Correct math steps (0-3)\n- Clear conclusion (0-1)\n- Time control (0-2)",
+        "5": "- Jumping steps and losing logical chain.\n- Not stating assumptions upfront.\n- Spending too long polishing first proof."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Jumping steps and losing logical chain.\n- Not stating assumptions upfront.\n- Spending too long polishing first proof.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-03_ST2134_mixed-timed-set.md",
+      "date": "2026-06-03",
+      "module": "ST2134",
+      "topicSlug": "mixed-timed-set",
+      "title": "ST2134 - Mixed Timed Set (Exam Sheet)",
+      "sections": {
+        "1": "- Integrate all core blocks under exam timing.\n- Test retrieval speed, not just understanding.\n- Identify final recurring weak links before mock #2.",
+        "2": "1. 45-60 min mixed set (sampling, estimation, testing, likelihood).  \n2. 30 min mark + classify mistakes.  \n3. 20 min re-attempt worst error without notes.",
+        "3": "- Accuracy >= 78%\n- Completion >= 90%\n- <= 2 repeated error types",
+        "4": "- Spending too long on one derivation.\n- Leaving interpretation/conclusion lines blank.\n- Doing correction without re-attempt."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-04_ST2134_mock-2.md",
+      "date": "2026-06-04",
+      "module": "ST2134",
+      "topicSlug": "mock-2",
+      "title": "ST2134 - Mock #2 Day Sheet",
+      "sections": {
+        "1": "- Strict exam simulation conditions.\n- Use full pacing plan per section.\n- Mark confidence level per question at start.",
+        "2": "1. Score by topic block and question type (proof vs computational vs interpretation).  \n2. Compare with Mock #1: where improved, where stagnated.  \n3. Build final “top 3 urgent fixes” list for last days.",
+        "3": "- Overall >= 80%\n- Completion >= 92%\n- Proof clarity score improved from Mock #1",
+        "4": "- Rework all errors in top 3 urgent fixes.\n- Create concise trigger rules for each.",
+        "5": "- Reviewing score only, not error pattern trajectory.\n- Fatigue causing sloppy notation.\n- Ignoring time-budget overruns."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Reviewing score only, not error pattern trajectory.\n- Fatigue causing sloppy notation.\n- Ignoring time-budget overruns.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-05_ST2134_exam-prep-sheet.md",
+      "date": "2026-06-05",
+      "module": "ST2134",
+      "topicSlug": "exam-prep-sheet",
+      "title": "ST2134 - Final Exam Prep Sheet Build",
+      "sections": {
+        "1": "- Must include:\n  - key definitions\n  - estimator/test selection map\n  - common pivots/distributions\n  - top 10 personal error triggers",
+        "2": "- High-frequency formulas and decision rules only.\n- Compact proof skeletons for recurring derivation types.\n- Minimal examples for memory anchoring.",
+        "3": "- Rare edge-case content.\n- Long derivations you won’t recall in exam conditions.\n- Any topic not appearing in your recent mocks/errors.",
+        "4": "- Turning this into another heavy study day.\n- Overfilling the sheet with low-value detail.\n- Skipping trigger-rule list."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-06_ST2134_mock-3.md",
+      "date": "2026-06-06",
+      "module": "ST2134",
+      "topicSlug": "mock-3",
+      "title": "ST2134 - Mock #3 Day Sheet",
+      "sections": {
+        "1": "- Final exam simulation with highest discipline.\n- Validate pacing and mental stamina.\n- Confirm readiness across all core blocks.",
+        "2": "1. Full timer, no notes.  \n2. Use final pacing strategy you will use on exam day.  \n3. Keep answers concise but complete.",
+        "3": "- Mark immediately.\n- Fix only high-impact remaining errors (max 3).\n- Update final one-page prep sheet.",
+        "4": "- Overall >= 80%\n- No major collapse in any one topic block\n- Clear evidence of improved proof structure",
+        "5": "- Over-correcting tiny details and missing big errors.\n- Letting one hard question disrupt timing plan.\n- No immediate correction while memory is fresh."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "- Over-correcting tiny details and missing big errors.\n- Letting one hard question disrupt timing plan.\n- No immediate correction while memory is fresh.",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-07_ST2134_light-revision.md",
+      "date": "2026-06-07",
+      "module": "ST2134",
+      "topicSlug": "light-revision",
+      "title": "ST2134 - Light Revision Day",
+      "sections": {
+        "1": "- Re-test previously wrong questions only.\n- Brief pass through one-page prep sheet.\n- Keep stress low; maintain recall freshness.",
+        "2": "1. 30-40 min targeted re-attempt set.  \n2. 20-30 min corrections.  \n3. 20 min formula/definitions flash.",
+        "3": "- No new heavy topics.\n- Stop early if fatigue rises.\n- Prioritize sleep quality.",
+        "4": "- Turning light day into full mock day.\n- Last-minute topic expansion.\n- Ignoring recovery."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-08_ST2134_light-recap.md",
+      "date": "2026-06-08",
+      "module": "ST2134",
+      "topicSlug": "light-recap",
+      "title": "ST2134 - Light Recap Day",
+      "sections": {
+        "1": "- Definitions and theorem conditions.\n- Estimator/test selection decision map.\n- Top 10 personal trigger mistakes.",
+        "2": "1. One quick mixed mini-set (20 min).  \n2. One-page sheet review (20 min).  \n3. Short confidence pass through hardest topic (20 min).",
+        "3": "- Can state assumptions before each method from memory.\n- Can outline proof structure quickly.\n- Can interpret conclusions in plain language.",
+        "4": "- New derivations at night.\n- Stress-driven overstudying.\n- Poor sleep discipline."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-09_ST2134_very-light-recall.md",
+      "date": "2026-06-09",
+      "module": "ST2134",
+      "topicSlug": "very-light-recall",
+      "title": "ST2134 - Very Light Recall (Day Before Exam)",
+      "sections": {
+        "1": "- 20-30 min max: flash definitions, trigger rules, method map.\n- No timed heavy sets.\n- Confirm exam logistics and cut off study early.",
+        "2": "- Shift from learning mode to execution mode.\n- Review only what stabilizes confidence.\n- Protect sleep and cognitive freshness.",
+        "3": "- Panic-cramming after evening.\n- Opening new topics.\n- Sacrificing rest for marginal gains."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    },
+    {
+      "filename": "2026-06-10_ST2134_exam-day.md",
+      "date": "2026-06-10",
+      "module": "ST2134",
+      "topicSlug": "exam-day",
+      "title": "ST2134 - Exam Day Protocol",
+      "sections": {
+        "1": "- Quick review of one-page prep sheet.\n- Read top trigger mistakes once.\n- No calculations beyond tiny warm-up.",
+        "2": "1. 3-5 min scan and time allocation by marks.  \n2. Start with strongest section for momentum.  \n3. For each question: assumptions -> method -> derivation -> conclusion.  \n4. Leave final 10 min for notation and logic checks.",
+        "3": "- Assumptions explicitly stated\n- Key steps shown\n- Final conclusion clearly written\n- Interpretation included where relevant",
+        "4": "- Over-investing time on first hard proof.\n- Skipping final interpretation/conclusion lines.\n- Not using final-check buffer."
+      },
+      "formulas": [],
+      "questions": [],
+      "feynmanText": "",
+      "feynmanKeyTerms": [],
+      "modelAnswer": "",
+      "commonTraps": "",
+      "hasFullSections": false
+    }
+  ]
+};

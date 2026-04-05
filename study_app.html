@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Revision 2026</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg0:#0d1117;--bg1:#161b22;--bg2:#21262d;--bg3:#30363d;
+  --border:#30363d;--text0:#e6edf3;--text1:#c9d1d9;--text2:#8b949e;--text3:#484f58;
+  --blue:#58a6ff;--green:#3fb950;--yellow:#d29922;--red:#f85149;
+  --purple:#bc8cff;--coral:#f97583;--orange:#f0883e;--radius:8px;
+}
+html,body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg0);color:var(--text1);line-height:1.6;min-height:100vh}
+header{background:var(--bg1);border-bottom:1px solid var(--border);padding:0 24px;position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:24px}
+.header-title{font-size:1.1rem;font-weight:600;color:var(--text0);white-space:nowrap;padding:12px 0}
+nav{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.nav-btn{background:none;border:none;color:var(--text2);padding:12px 14px;font-size:.85rem;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.nav-btn:hover{color:var(--text0)}.nav-btn.active{color:var(--blue);border-bottom-color:var(--blue)}
+#app{max-width:1200px;margin:0 auto;padding:24px;animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+.card{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:border-color .2s}
+.card:hover{border-color:var(--text3)}.card-click{cursor:pointer}.card-click:hover{border-color:var(--blue)}
+.btn{padding:8px 16px;border-radius:6px;border:1px solid var(--border);background:var(--bg2);color:var(--text1);cursor:pointer;font-size:.85rem;transition:all .2s;font-family:inherit}
+.btn:hover{background:var(--bg3)}.btn-p{background:var(--blue);color:#fff;border-color:var(--blue)}.btn-p:hover{opacity:.85}
+.btn-sm{padding:4px 10px;font-size:.8rem}.btn-d{border-color:var(--red);color:var(--red)}.btn-d:hover{background:var(--red);color:#fff}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.73rem;font-weight:500;border:1px solid}
+.grid{display:grid;gap:12px}.grid-2{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}.grid-3{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.stat-card{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;flex:1;min-width:120px}
+.stat-val{font-size:1.7rem;font-weight:700;line-height:1.2}.stat-lbl{font-size:.78rem;color:var(--text2);margin-top:2px}
+.section-hdr{display:flex;align-items:center;gap:10px;margin:24px 0 12px;cursor:pointer;user-select:none}
+.section-hdr h2{font-size:1.05rem;font-weight:600}.section-cnt{font-size:.8rem;color:var(--text2)}
+.topic-date{font-size:.73rem;color:var(--text2)}.topic-title{font-size:.88rem;font-weight:500;color:var(--text0);margin:4px 0}
+.topic-meta{display:flex;gap:6px;flex-wrap:wrap}
+.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
+.s-ns{background:var(--text3)}.s-ip{background:var(--yellow)}.s-c{background:var(--green)}
+
+.fc-container{display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 0}
+.fc{perspective:1000px;width:100%;max-width:600px;min-height:280px;cursor:pointer}
+.fc-inner{position:relative;width:100%;min-height:280px;transition:transform .5s;transform-style:preserve-3d}
+.fc.flipped .fc-inner{transform:rotateY(180deg)}
+.fc-front,.fc-back{position:absolute;width:100%;min-height:280px;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:12px;padding:32px;border:1px solid var(--border)}
+.fc-front{background:var(--bg1)}.fc-front .concept{font-size:1.4rem;font-weight:600;color:var(--text0);text-align:center}
+.fc-front .hint{margin-top:16px;font-size:.83rem;color:var(--text2)}
+.fc-back{background:var(--bg2);transform:rotateY(180deg)}
+.fc-back .formula{font-family:'Cambria Math','Latin Modern Math',Georgia,serif;font-size:1.15rem;color:var(--text0);text-align:center;line-height:2;word-break:break-word}
+.fc-controls{display:flex;gap:12px;align-items:center}
+.fc-progress{font-size:.88rem;color:var(--text2)}
+.frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 3px}
+.frac-num{padding:0 4px 2px;border-bottom:1.5px solid currentColor;text-align:center;line-height:1.3}
+.frac-den{padding:2px 4px 0;text-align:center;line-height:1.3}
+
+.quiz-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.timer{font-size:1.4rem;font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-weight:600}
+.timer.warn{color:var(--yellow)}.timer.danger{color:var(--red)}
+.quiz-q{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px;line-height:1.7}
+.quiz-ans{width:100%;min-height:150px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;color:var(--text1);font-family:inherit;font-size:.95rem;resize:vertical;margin-bottom:16px}
+.quiz-ans:focus{outline:none;border-color:var(--blue)}
+.model-ans{background:var(--bg1);border:1px solid var(--green);border-radius:var(--radius);padding:24px;margin-top:16px}
+.model-ans h3{color:var(--green);margin-bottom:12px;font-size:1rem}
+.traps-box{background:var(--bg1);border:1px solid var(--yellow);border-radius:var(--radius);padding:24px;margin-top:16px}
+.traps-box h3{color:var(--yellow);margin-bottom:12px;font-size:1rem}
+
+.feynman-text{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:24px;line-height:2.2;font-size:1rem}
+.feynman-blank{display:inline-block;min-width:100px;border:none;border-bottom:2px dashed var(--blue);padding:2px 4px;margin:0 4px;font-size:.88rem;background:transparent;color:var(--text0);outline:none;font-family:inherit}
+.feynman-blank.correct{border-bottom-color:var(--green);color:var(--green)}
+.feynman-blank.incorrect{border-bottom-color:var(--red);color:var(--red)}
+.feynman-score{margin-top:20px;padding:16px;background:var(--bg1);border-radius:var(--radius);text-align:center;font-size:1.1rem}
+
+.err-form{display:grid;gap:12px;margin-bottom:24px}
+.err-form select,.err-form textarea,.err-form input[type=text]{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text1);font-family:inherit;font-size:.9rem}
+.err-form select:focus,.err-form textarea:focus,.err-form input:focus{outline:none;border-color:var(--blue)}
+.err-form textarea{min-height:80px;resize:vertical}
+.err-entry{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:8px}
+.err-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.err-date{font-size:.78rem;color:var(--text2)}
+.err-mistake{color:var(--coral);margin-bottom:4px}.err-correction{color:var(--green)}
+
+.review-item{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;flex-wrap:wrap;gap:8px}
+.progress-bar{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden;width:100%}
+.progress-fill{height:100%;border-radius:3px;transition:width .3s}
+
+.back-btn{background:none;border:none;color:var(--text2);cursor:pointer;font-size:.88rem;padding:4px 0;margin-bottom:16px;display:flex;align-items:center;gap:6px}
+.back-btn:hover{color:var(--text0)}
+.filter-row{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;font-size:.8rem;transition:all .2s}
+.filter-btn:hover{border-color:var(--text2)}.filter-btn.active{background:var(--blue);border-color:var(--blue);color:#fff}
+
+.confidence-row{display:flex;gap:8px;align-items:center;margin-top:12px}
+.conf-btn{width:36px;height:36px;border-radius:50%;border:2px solid var(--border);background:transparent;color:var(--text2);font-weight:600;cursor:pointer;transition:all .2s;font-size:.9rem}
+.conf-btn:hover,.conf-btn.active{border-color:var(--blue);color:var(--blue);background:rgba(88,166,255,.1)}
+
+.toast{position:fixed;bottom:24px;right:24px;background:var(--bg2);border:1px solid var(--green);border-radius:var(--radius);padding:12px 20px;color:var(--text0);font-size:.88rem;transform:translateY(80px);opacity:0;transition:all .3s;z-index:200}
+.toast.show{transform:translateY(0);opacity:1}
+
+.topic-select{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:8px 12px;color:var(--text1);font-size:.88rem;min-width:260px;font-family:inherit}
+.topic-select:focus{outline:none;border-color:var(--blue)}
+
+.detail-hdr h1{font-size:1.3rem;margin-bottom:8px}.detail-actions{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 24px}
+.section-preview{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+.section-preview h3{font-size:.9rem;color:var(--text2);margin-bottom:12px}
+.section-preview .content{font-size:.88rem;line-height:1.7;max-height:400px;overflow:auto}
+
+.md strong{color:var(--text0)}.md code{background:var(--bg3);padding:2px 6px;border-radius:3px;font-size:.85em}
+.md ul,.md ol{padding-left:20px;margin:8px 0}.md li{margin:4px 0}
+.md table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.83rem}
+.md th,.md td{border:1px solid var(--border);padding:8px 12px;text-align:left}
+.md th{background:var(--bg2);color:var(--text0);font-weight:600}
+
+.empty{text-align:center;padding:48px 24px;color:var(--text2)}.empty h3{color:var(--text1);margin-bottom:8px}
+
+@media(max-width:768px){
+  header{padding:0 12px;flex-direction:column;align-items:flex-start}
+  .header-title{padding:8px 0 0}nav{width:100%;padding-bottom:4px}
+  .nav-btn{padding:8px 10px;font-size:.78rem}#app{padding:16px}
+  .stats{gap:8px}.stat-card{min-width:100px;padding:10px}.stat-val{font-size:1.3rem}
+  .grid-2,.grid-3{grid-template-columns:1fr}.detail-actions{flex-direction:column}
+  .quiz-hdr{flex-direction:column;align-items:flex-start}
+  .fc,.fc-inner,.fc-front,.fc-back{min-height:220px}
+}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg0)}
+::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:4px}::selection{background:rgba(88,166,255,.3)}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-title">Exam Revision 2026</div>
+  <nav id="nav"></nav>
+</header>
+<main id="app"></main>
+<div id="toast" class="toast"></div>
+<script src="study_data.js"></script>
+<script>
+'use strict';
+
+const MOD = {
+  ST2187:{fg:'#58a6ff',bg:'#1a3a5c',label:'Business Statistics'},
+  ST3188:{fg:'#bc8cff',bg:'#2d1b4e',label:'Research Methods'},
+  EC2020:{fg:'#3fb950',bg:'#1a3d22',label:'Econometrics'},
+  ST3189:{fg:'#d29922',bg:'#3d2e0f',label:'Machine Learning'},
+  ST2134:{fg:'#f97583',bg:'#3d1a1e',label:'Statistical Inference'}
+};
+const SR_INT = [1,3,7,21];
+const SKEY = 'examRevision2026';
+const GREEKS = {
+  varepsilon:'ε',epsilon:'ε',alpha:'α',beta:'β',gamma:'γ',delta:'δ',zeta:'ζ',eta:'η',
+  theta:'θ',iota:'ι',kappa:'κ',lambda:'λ',mu:'μ',nu:'ν',xi:'ξ',pi:'π',rho:'ρ',
+  sigma:'σ',tau:'τ',phi:'φ',varphi:'φ',chi:'χ',psi:'ψ',omega:'ω',
+  Gamma:'Γ',Delta:'Δ',Theta:'Θ',Lambda:'Λ',Sigma:'Σ',Phi:'Φ',Psi:'Ψ',Omega:'Ω'
+};
+const VIEWS = [
+  {id:'daily',label:'Today'},{id:'dashboard',label:'Dashboard'},{id:'flashcard',label:'Flashcards'},
+  {id:'quiz',label:'Quiz'},{id:'feynman',label:'Feynman'},{id:'spaced',label:'Reviews'},{id:'errors',label:'Error Log'}
+];
+
+let data, progress, errors;
+let view = 'daily', selTopic = null, modFilter = 'all';
+let fcIdx = 0, fcFlip = false;
+let qIdx = 0, qTimer = null, qSec = 0, qShow = false;
+let fChecked = false;
+
+function today() { return new Date().toISOString().split('T')[0]; }
+function fmtDate(s) {
+  const d = new Date(s + 'T00:00:00');
+  return d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+}
+function getTopic(fn) { return data.topics.find(t => t.filename === fn); }
+
+function loadStore() {
+  try {
+    const s = JSON.parse(localStorage.getItem(SKEY) || '{}');
+    progress = s.progress || {};
+    errors = s.errors || [];
+  } catch { progress = {}; errors = []; }
+}
+function saveStore() {
+  localStorage.setItem(SKEY, JSON.stringify({progress, errors}));
+}
+function prog(fn) { return progress[fn] || {}; }
+function setProg(fn, upd) {
+  progress[fn] = Object.assign(progress[fn] || {}, upd);
+  saveStore();
+}
+
+function nextReviewDate(cnt) {
+  const iv = SR_INT[Math.min(cnt, SR_INT.length - 1)];
+  const d = new Date(); d.setDate(d.getDate() + iv);
+  return d.toISOString().split('T')[0];
+}
+function isDue(fn) {
+  const p = prog(fn);
+  return p.nextReview && p.nextReview <= today();
+}
+
+// ==================== Formula Renderer ====================
+
+function extractBraced(text, pos) {
+  if (pos >= text.length || text[pos] !== '{') return {content:'',end:pos};
+  let depth = 0, i = pos;
+  while (i < text.length) {
+    if (text[i] === '{') depth++;
+    else if (text[i] === '}') { depth--; if (depth === 0) return {content:text.substring(pos+1,i),end:i+1}; }
+    i++;
+  }
+  return {content:text.substring(pos+1),end:i};
+}
+
+function procFrac(text) {
+  let r = '', i = 0;
+  while (i < text.length) {
+    if (text.substring(i,i+5) === '\\frac') {
+      i += 5;
+      while (i < text.length && text[i] === ' ') i++;
+      if (i < text.length && text[i] === '{') {
+        const num = extractBraced(text,i); i = num.end;
+        while (i < text.length && text[i] === ' ') i++;
+        if (i < text.length && text[i] === '{') {
+          const den = extractBraced(text,i); i = den.end;
+          r += `<span class="frac"><span class="frac-num">${renderF(num.content)}</span><span class="frac-den">${renderF(den.content)}</span></span>`;
+          continue;
+        }
+      }
+      r += '\\frac';
+    } else { r += text[i]; i++; }
+  }
+  return r;
+}
+
+function renderF(text) {
+  if (!text) return '';
+  text = fixArtifacts(text);
+  text = procFrac(text);
+  text = text.replace(/\\sqrt\{([^}]*)\}/g, (_,c) => '√(' + renderF(c) + ')');
+  text = text.replace(/\\text\{([^}]*)\}/g, '$1');
+  for (const [n,s] of Object.entries(GREEKS))
+    text = text.replace(new RegExp('\\\\'+n+'(?![a-zA-Z])','g'), s);
+  text = text.replace(/\\hat\{([^}]+)\}/g, '$1\u0302');
+  text = text.replace(/\\bar\{([^}]+)\}/g, '$1\u0304');
+  text = text.replace(/\\tilde\{([^}]+)\}/g, '$1\u0303');
+  text = text.replace(/\\overline\{([^}]+)\}/g, '$1\u0304');
+  text = text.replace(/\\sum/g,'∑').replace(/\\prod/g,'∏').replace(/\\int/g,'∫');
+  text = text.replace(/\\partial/g,'∂').replace(/\\infty/g,'∞');
+  text = text.replace(/\\pm/g,'±').replace(/\\mp/g,'∓');
+  text = text.replace(/\\cdot/g,'·').replace(/\\times/g,'×').replace(/\\div/g,'÷');
+  text = text.replace(/\\ne(?:q)?(?![a-zA-Z])/g,'≠');
+  text = text.replace(/\\leq/g,'≤').replace(/\\geq/g,'≥');
+  text = text.replace(/\\le(?![a-zA-Z])/g,'≤').replace(/\\ge(?![a-zA-Z])/g,'≥');
+  text = text.replace(/\\approx/g,'≈').replace(/\\sim(?![a-zA-Z])/g,'~');
+  text = text.replace(/\\in(?![a-zA-Z])/g,'∈');
+  text = text.replace(/\\rightarrow/g,'→').replace(/\\leftarrow/g,'←').replace(/\\Rightarrow/g,'⇒');
+  text = text.replace(/\\ldots/g,'…').replace(/\\cdots/g,'⋯');
+  text = text.replace(/_\{([^}]+)\}/g,'<sub>$1</sub>');
+  text = text.replace(/\^\{([^}]+)\}/g,'<sup>$1</sup>');
+  text = text.replace(/_([a-zA-Z0-9])/g,'<sub>$1</sub>');
+  text = text.replace(/\^([0-9])/g,'<sup>$1</sup>');
+  text = text.replace(/\\\s/g,' ');
+  return text;
+}
+
+// ==================== KaTeX Renderer ====================
+
+function fixArtifacts(text) {
+  return text.replace(/\*\{/g, '_{').replace(/\*(\d)/g, '_$1');
+}
+
+function renderLatex(text, display) {
+  if (!text) return '';
+  text = fixArtifacts(text);
+  if (!window.katex) return renderF(text);
+
+  // Strategy 1: full string as LaTeX
+  try {
+    return katex.renderToString(text, {throwOnError:true, displayMode:!!display});
+  } catch {}
+
+  // Strategy 2: split at semicolon (formula ; note)
+  const semi = text.indexOf(';');
+  if (semi > 0) {
+    try {
+      const r = katex.renderToString(text.substring(0,semi).trim(), {throwOnError:true, displayMode:!!display});
+      return r + `<span style="color:var(--text2);font-size:.85em;margin-left:8px">${text.substring(semi+1).trim()}</span>`;
+    } catch {}
+  }
+
+  // Strategy 3: split at parenthetical note
+  const paren = text.lastIndexOf(' (');
+  if (paren > 0) {
+    try {
+      const r = katex.renderToString(text.substring(0,paren).trim(), {throwOnError:true, displayMode:!!display});
+      return r + `<span style="color:var(--text2);font-size:.85em;margin-left:8px">${text.substring(paren).trim()}</span>`;
+    } catch {}
+  }
+
+  return renderF(text);
+}
+
+// ==================== Markdown Renderer ====================
+
+function mdTable(lines) {
+  const rows = lines.filter(l => !l.match(/^\|[\s\-:|]+\|$/));
+  if (!rows.length) return '';
+  let h = '<table>';
+  rows.forEach((row, ri) => {
+    const cells = row.split('|').slice(1, -1);
+    const tag = ri === 0 ? 'th' : 'td';
+    h += '<tr>';
+    cells.forEach(cell => {
+      let c = cell.trim();
+      c = c.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+      h += `<${tag}>${ri > 0 && (c.includes('\\') || c.match(/[_^]\{/)) ? renderLatex(c) : renderF(c)}</${tag}>`;
+    });
+    h += '</tr>';
+  });
+  return h + '</table>';
+}
+
+function renderMd(text) {
+  if (!text) return '';
+  let processed = text;
+  const mathBlocks = [];
+  processed = processed.replace(/\$\$([\s\S]+?)\$\$/g, (_, tex) => {
+    const idx = mathBlocks.length;
+    mathBlocks.push({tex: tex.trim(), display: true});
+    return `%%MATH_${idx}%%`;
+  });
+  processed = processed.replace(/\\\[([\s\S]+?)\\\]/g, (_, tex) => {
+    const idx = mathBlocks.length;
+    mathBlocks.push({tex: tex.trim(), display: true});
+    return `%%MATH_${idx}%%`;
+  });
+  function inlineMath(line) {
+    line = line.replace(/(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)/g, (_, tex) => renderLatex(tex.trim(), false));
+    line = line.replace(/\\\((.+?)\\\)/g, (_, tex) => renderLatex(tex.trim(), false));
+    return line;
+  }
+  const lines = processed.split('\n');
+  let parts = [];
+  let i = 0;
+  while (i < lines.length) {
+    const trimmed = lines[i].trim();
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      const tbl = [];
+      while (i < lines.length && lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|')) {
+        tbl.push(lines[i].trim());
+        i++;
+      }
+      parts.push(mdTable(tbl));
+      continue;
+    }
+    if (trimmed === '') { parts.push('<br>'); i++; continue; }
+    const displayMatch = trimmed.match(/^%%MATH_(\d+)%%$/);
+    if (displayMatch) {
+      const block = mathBlocks[parseInt(displayMatch[1])];
+      parts.push('<div style="text-align:center;margin:12px 0">' + renderLatex(block.tex, true) + '</div>');
+      i++; continue;
+    }
+    let line = lines[i];
+    line = line.replace(/%%MATH_(\d+)%%/g, (_, idx) => {
+      const block = mathBlocks[parseInt(idx)];
+      return renderLatex(block.tex, block.display);
+    });
+    line = inlineMath(line);
+    line = line.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+    if (!trimmed.includes('\\')) {
+      line = line.replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g,'<em>$1</em>');
+    }
+    line = line.replace(/`(.+?)`/g,'<code>$1</code>');
+    if (trimmed.startsWith('- ')) {
+      parts.push('<li>' + renderF(line.replace(/^[\s]*- /,'')) + '</li>');
+    } else if (trimmed.match(/^\d+\.\s/)) {
+      parts.push('<li>' + renderF(line.replace(/^[\s]*\d+\.\s+/,'')) + '</li>');
+    } else {
+      parts.push(renderF(line) + '<br>');
+    }
+    i++;
+  }
+  let h = parts.join('\n');
+  h = h.replace(/((?:<li>[\s\S]*?<\/li>\s*)+)/g,'<ul>$1</ul>');
+  return '<div class="md">' + h + '</div>';
+}
+
+// ==================== Navigation ====================
+
+function nav(v, topic) {
+  cleanup();
+  view = v;
+  if (topic !== undefined) selTopic = topic;
+  if (['flashcard','quiz','feynman'].includes(v)) {
+    fcIdx = 0; fcFlip = false; qIdx = 0; qSec = 0; qShow = false; fChecked = false;
+  }
+  render(); updateNav();
+}
+
+function goBack() {
+  if (['flashcard','quiz','feynman'].includes(view) && selTopic) nav('topic', selTopic);
+  else if (view === 'topic') nav('dashboard');
+  else nav('daily');
+}
+
+function cleanup() { if (qTimer) { clearInterval(qTimer); qTimer = null; } }
+
+function updateNav() {
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.view === view || (b.dataset.view === 'dashboard' && view === 'topic'));
+  });
+}
+
+function render() {
+  const app = document.getElementById('app');
+  app.style.animation = 'none'; app.offsetHeight; app.style.animation = '';
+  switch (view) {
+    case 'daily': app.innerHTML = vDaily(); break;
+    case 'dashboard': app.innerHTML = vDash(); break;
+    case 'topic': app.innerHTML = vTopic(); break;
+    case 'flashcard': app.innerHTML = vFlash(); break;
+    case 'quiz': app.innerHTML = vQuiz(); break;
+    case 'feynman': app.innerHTML = vFeynman(); break;
+    case 'spaced': app.innerHTML = vSpaced(); break;
+    case 'errors': app.innerHTML = vErrors(); break;
+  }
+}
+
+function toast(msg) {
+  const el = document.getElementById('toast'); el.textContent = msg;
+  el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2500);
+}
+
+function modBadge(m) {
+  const c = MOD[m] || {fg:'#888',bg:'#333'};
+  return `<span class="badge" style="color:${c.fg};border-color:${c.fg};background:${c.bg}">${m}</span>`;
+}
+
+function statusDot(fn) {
+  const s = (prog(fn).status || 'not_started');
+  const cls = s === 'completed' ? 's-c' : s === 'in_progress' ? 's-ip' : 's-ns';
+  return `<span class="status-dot ${cls}"></span>`;
+}
+
+function topicPicker(mode) {
+  const topics = data.topics.filter(t => {
+    if (mode === 'flashcard') return t.formulas.length > 0;
+    if (mode === 'quiz') return t.questions.length > 0;
+    if (mode === 'feynman') return t.feynmanKeyTerms.length > 0;
+    return true;
+  });
+  const byMod = {};
+  topics.forEach(t => (byMod[t.module] = byMod[t.module] || []).push(t));
+  let h = '<select class="topic-select">';
+  h += '<option value="">-- Select a topic --</option>';
+  for (const [m, ts] of Object.entries(byMod).sort((a,b) => a[0].localeCompare(b[0]))) {
+    h += `<optgroup label="${m} — ${(MOD[m]||{}).label||m}">`;
+    ts.forEach(t => {
+      const sel = selTopic === t.filename ? ' selected' : '';
+      h += `<option value="${t.filename}"${sel}>${t.topicSlug.replace(/-/g,' ')} (${fmtDate(t.date)})</option>`;
+    });
+    h += '</optgroup>';
+  }
+  return h + '</select>';
+}
+
+function confRow(fn) {
+  const c = prog(fn).confidence || 0;
+  return `<div class="confidence-row"><span style="color:var(--text2);font-size:.83rem">Confidence:</span>${
+    [1,2,3,4,5].map(n => `<button class="conf-btn${n===c?' active':''}" data-action="conf" data-topic="${fn}" data-val="${n}">${n}</button>`).join('')
+  }</div>`;
+}
+
+// ==================== Daily View ====================
+
+function vDaily() {
+  const t = today();
+  const scheduled = (data.schedule[t] || []).map(getTopic).filter(Boolean);
+  const due = data.topics.filter(tp => isDue(tp.filename));
+  const past = data.topics.filter(tp => tp.date < t && !prog(tp.filename).status);
+  let h = `<h1 style="margin-bottom:4px">${fmtDate(t)}</h1>
+    <p style="color:var(--text2);margin-bottom:24px">Your study plan for today</p>`;
+
+  if (scheduled.length) {
+    h += `<h2 style="font-size:1rem;margin-bottom:12px">Scheduled Today</h2><div class="grid grid-2">`;
+    scheduled.forEach(tp => { h += topicCard(tp); });
+    h += '</div>';
+  } else {
+    h += `<div class="card" style="margin-bottom:24px;text-align:center;padding:32px">
+      <p style="font-size:1.1rem;color:var(--text0)">No new topics scheduled today</p>
+      <p style="color:var(--text2);margin-top:8px">Check your reviews below, or catch up on missed topics.</p></div>`;
+  }
+
+  if (due.length) {
+    h += `<h2 style="font-size:1rem;margin:24px 0 12px">Due for Review (${due.length})</h2><div class="grid grid-2">`;
+    due.forEach(tp => { h += topicCard(tp, true); });
+    h += '</div>';
+  }
+
+  if (past.length > 0 && past.length <= 10) {
+    h += `<h2 style="font-size:1rem;margin:24px 0 12px;color:var(--yellow)">Missed Topics (${past.length})</h2><div class="grid grid-2">`;
+    past.slice(0,6).forEach(tp => { h += topicCard(tp); });
+    h += '</div>';
+    if (past.length > 6) h += `<p style="color:var(--text2);margin-top:8px">+ ${past.length-6} more — see Dashboard</p>`;
+  }
+  return h;
+}
+
+function topicCard(tp, isDueFlag) {
+  const p = prog(tp.filename);
+  const modes = [];
+  if (tp.formulas.length) modes.push('Flashcards');
+  if (tp.questions.length) modes.push('Quiz');
+  if (tp.feynmanKeyTerms.length) modes.push('Feynman');
+  return `<div class="card card-click" data-action="nav" data-view="topic" data-topic="${tp.filename}">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="topic-date">${fmtDate(tp.date)}</span>
+      ${modBadge(tp.module)}
+    </div>
+    <div class="topic-title">${statusDot(tp.filename)}${tp.topicSlug.replace(/-/g,' ')}</div>
+    <div class="topic-meta">
+      ${modes.map(m => `<span style="font-size:.7rem;color:var(--text3)">${m}</span>`).join(' · ')}
+      ${isDueFlag ? '<span style="font-size:.7rem;color:var(--yellow)">Review due</span>' : ''}
+      ${p.confidence ? `<span style="font-size:.7rem;color:var(--text3)">Confidence: ${p.confidence}/5</span>` : ''}
+    </div>
+  </div>`;
+}
+
+// ==================== Dashboard View ====================
+
+function vDash() {
+  const all = data.topics;
+  const filtered = modFilter === 'all' ? all : all.filter(t => t.module === modFilter);
+  const done = all.filter(t => prog(t.filename).status === 'completed').length;
+  const ip = all.filter(t => prog(t.filename).status === 'in_progress').length;
+  const dueN = all.filter(t => isDue(t.filename)).length;
+  const pct = Math.round((done / all.length) * 100);
+
+  let h = `<div class="stats">
+    <div class="stat-card"><div class="stat-val" style="color:var(--text0)">${all.length}</div><div class="stat-lbl">Total Topics</div></div>
+    <div class="stat-card"><div class="stat-val" style="color:var(--green)">${done}</div><div class="stat-lbl">Completed</div></div>
+    <div class="stat-card"><div class="stat-val" style="color:var(--yellow)">${ip}</div><div class="stat-lbl">In Progress</div></div>
+    <div class="stat-card"><div class="stat-val" style="color:var(--blue)">${dueN}</div><div class="stat-lbl">Due for Review</div></div>
+    <div class="stat-card"><div class="stat-val" style="color:var(--text0)">${pct}%</div><div class="stat-lbl">Overall Progress</div>
+      <div class="progress-bar" style="margin-top:8px"><div class="progress-fill" style="width:${pct}%;background:var(--green)"></div></div>
+    </div>
+  </div>`;
+
+  h += '<div class="filter-row">';
+  h += `<button class="filter-btn${modFilter==='all'?' active':''}" data-action="filter" data-mod="all">All</button>`;
+  for (const m of Object.keys(MOD))
+    h += `<button class="filter-btn${modFilter===m?' active':''}" data-action="filter" data-mod="${m}" style="${modFilter===m?'':'color:'+MOD[m].fg}">${m}</button>`;
+  h += '</div>';
+
+  const byMod = {};
+  filtered.forEach(t => (byMod[t.module] = byMod[t.module] || []).push(t));
+
+  for (const [m, topics] of Object.entries(byMod).sort((a,b) => a[0].localeCompare(b[0]))) {
+    const info = MOD[m] || {};
+    const mDone = topics.filter(t => prog(t.filename).status === 'completed').length;
+    h += `<div class="section-hdr"><h2 style="color:${info.fg||'#fff'}">${m}</h2>
+      <span class="section-cnt">${info.label||''} — ${mDone}/${topics.length} done</span></div>`;
+    h += '<div class="grid grid-3">';
+    topics.forEach(tp => { h += topicCard(tp); });
+    h += '</div>';
+  }
+
+  h += `<div style="margin-top:32px;text-align:center">
+    <button class="btn btn-sm" data-action="exportData">Export Progress</button>
+  </div>`;
+  return h;
+}
+
+// ==================== Topic Detail View ====================
+
+function vTopic() {
+  const tp = getTopic(selTopic);
+  if (!tp) return '<div class="empty"><h3>Topic not found</h3></div>';
+  const p = prog(tp.filename);
+
+  let h = `<button class="back-btn" data-action="goBack">← Back</button>`;
+  h += `<div class="detail-hdr">
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px">${modBadge(tp.module)}<span class="topic-date">${fmtDate(tp.date)}</span></div>
+    <h1>${tp.title}</h1>
+  </div>`;
+
+  h += '<div class="detail-actions">';
+  if (tp.formulas.length) h += `<button class="btn btn-p" data-action="nav" data-view="flashcard" data-topic="${tp.filename}">Flashcards (${tp.formulas.length})</button>`;
+  if (tp.questions.length) h += `<button class="btn btn-p" data-action="nav" data-view="quiz" data-topic="${tp.filename}">Quiz (${tp.questions.length} Qs)</button>`;
+  if (tp.feynmanKeyTerms.length) h += `<button class="btn btn-p" data-action="nav" data-view="feynman" data-topic="${tp.filename}">Feynman (${tp.feynmanKeyTerms.length} terms)</button>`;
+  const st = p.status || 'not_started';
+  const nextSt = st === 'completed' ? 'not_started' : st === 'in_progress' ? 'completed' : 'in_progress';
+  const stLabel = {not_started:'Mark In Progress',in_progress:'Mark Completed',completed:'Reset Status'};
+  h += `<button class="btn" data-action="setStatus" data-topic="${tp.filename}" data-val="${nextSt}">${stLabel[st]}</button>`;
+  h += '</div>';
+  h += confRow(tp.filename);
+
+  if (p.lastStudied) h += `<p style="color:var(--text2);font-size:.83rem;margin-top:12px">Last studied: ${fmtDate(p.lastStudied)}${p.nextReview ? ' · Next review: ' + fmtDate(p.nextReview) : ''}</p>`;
+
+  const sectionNames = {'0':'Feynman Explanation','1':'High-Yield Core','2':'Formula Bank','3':'Worked Example','4':'Timed Test','5':'Model Answer Structure','6':'Common Traps'};
+  for (const [num, name] of Object.entries(sectionNames)) {
+    if (tp.sections[num]) {
+      h += `<div class="section-preview"><h3>${num}) ${name}</h3><div class="content">${renderMd(tp.sections[num])}</div></div>`;
+    }
+  }
+  return h;
+}
+
+// ==================== Flashcard View ====================
+
+function vFlash() {
+  let h = `<button class="back-btn" data-action="goBack">← Back</button>
+    <h2 style="margin-bottom:16px">Flashcards</h2>`;
+  h += topicPicker('flashcard');
+
+  const tp = selTopic ? getTopic(selTopic) : null;
+  if (!tp || !tp.formulas.length) {
+    return h + '<div class="empty"><h3>Select a topic with formulas to start</h3><p>Choose from the dropdown above</p></div>';
+  }
+
+  const cards = tp.formulas;
+  const card = cards[fcIdx];
+  h += `<div class="fc-container">
+    <div class="fc-progress">${fcIdx+1} / ${cards.length}</div>
+    <div class="progress-bar" style="max-width:600px"><div class="progress-fill" style="width:${((fcIdx+1)/cards.length)*100}%;background:var(--blue)"></div></div>
+    <div class="fc${fcFlip?' flipped':''}" data-action="flip">
+      <div class="fc-inner">
+        <div class="fc-front"><div class="concept">${card.concept}</div><div class="hint">Click or press Space to reveal</div></div>
+        <div class="fc-back"><div class="formula">${renderLatex(card.formula, true)}</div></div>
+      </div>
+    </div>
+    <div class="fc-controls">
+      <button class="btn" data-action="prevCard" ${fcIdx===0?'disabled':''}>← Prev</button>
+      <button class="btn" data-action="nextCard" ${fcIdx>=cards.length-1?'disabled':''}>${fcIdx>=cards.length-1?'Done':'Next →'}</button>
+    </div>
+  </div>`;
+
+  if (fcIdx >= cards.length - 1 && fcFlip) {
+    h += `<div style="text-align:center;margin-top:16px">
+      ${confRow(tp.filename)}
+      <button class="btn btn-p" style="margin-top:16px" data-action="markStudied" data-topic="${tp.filename}">Mark as Studied</button>
+    </div>`;
+  }
+  return h;
+}
+
+// ==================== Quiz View ====================
+
+function vQuiz() {
+  let h = `<button class="back-btn" data-action="goBack">← Back</button>
+    <h2 style="margin-bottom:16px">Quiz Mode</h2>`;
+  h += topicPicker('quiz');
+
+  const tp = selTopic ? getTopic(selTopic) : null;
+  if (!tp || !tp.questions.length) {
+    return h + '<div class="empty"><h3>Select a topic with questions to start</h3></div>';
+  }
+
+  const qs = tp.questions;
+  const q = qs[qIdx];
+  const alloc = q.time_minutes;
+  const timerClass = alloc ? (qSec > alloc*60*0.75 ? ' danger' : qSec > alloc*60*0.5 ? ' warn' : '') : '';
+  const mins = Math.floor(qSec/60), secs = qSec%60;
+  const timeStr = `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+
+  h += `<div class="quiz-hdr">
+    <span style="color:var(--text2)">Question ${qIdx+1} of ${qs.length}${alloc?' · '+alloc+' min allocated':''}</span>
+    <div style="display:flex;align-items:center;gap:12px">
+      <span class="timer${timerClass}">${timeStr}</span>
+      ${qTimer ? `<button class="btn btn-sm" data-action="pauseTimer">Pause</button>` : `<button class="btn btn-sm btn-p" data-action="startTimer">Start Timer</button>`}
+    </div>
+  </div>`;
+  h += `<div class="progress-bar" style="margin-bottom:20px"><div class="progress-fill" style="width:${((qIdx+1)/qs.length)*100}%;background:var(--blue)"></div></div>`;
+  h += `<div class="quiz-q">${renderMd(q.text)}</div>`;
+  h += `<textarea class="quiz-ans" id="quizAns" placeholder="Type your answer here...">${document.getElementById('quizAns')?.value||''}</textarea>`;
+
+  if (!qShow) {
+    h += `<button class="btn btn-p" data-action="showAns">Show Model Answer</button>`;
+  } else {
+    if (tp.modelAnswer) h += `<div class="model-ans"><h3>Model Answer Structure</h3>${renderMd(tp.modelAnswer)}</div>`;
+    if (tp.commonTraps) h += `<div class="traps-box"><h3>Common Traps</h3>${renderMd(tp.commonTraps)}</div>`;
+    h += `<div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap">`;
+    if (qIdx < qs.length - 1) h += `<button class="btn btn-p" data-action="nextQ">Next Question →</button>`;
+    else h += `<button class="btn btn-p" data-action="markStudied" data-topic="${tp.filename}">Finish & Mark Studied</button>`;
+    h += '</div>';
+  }
+  return h;
+}
+
+// ==================== Feynman View ====================
+
+function vFeynman() {
+  let h = `<button class="back-btn" data-action="goBack">← Back</button>
+    <h2 style="margin-bottom:16px">Feynman Mode</h2>
+    <p style="color:var(--text2);margin-bottom:20px">Fill in the blanked-out key terms from memory</p>`;
+  h += topicPicker('feynman');
+
+  const tp = selTopic ? getTopic(selTopic) : null;
+  if (!tp || !tp.feynmanKeyTerms.length) {
+    return h + '<div class="empty"><h3>Select a topic with Feynman text to start</h3></div>';
+  }
+
+  let text = tp.feynmanText;
+  const terms = tp.feynmanKeyTerms;
+  let idx = 0;
+  text = text.replace(/\*\*(.+?)\*\*/g, (_, term) => {
+    const i = idx++;
+    const cls = fChecked ? (document.getElementById('fb'+i)?.dataset.correct === '1' ? ' correct' : ' incorrect') : '';
+    const val = fChecked ? term : '';
+    return `<input class="feynman-blank${cls}" id="fb${i}" data-term="${term}" data-idx="${i}" placeholder="???" ${fChecked?'value="'+term+'" readonly':''}>`;
+  });
+  text = text.replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
+
+  h += `<div class="feynman-text">${text}</div>`;
+  h += `<div style="margin-top:20px;display:flex;gap:12px">`;
+  if (!fChecked) {
+    h += `<button class="btn btn-p" data-action="checkFeynman">Check Answers</button>`;
+  } else {
+    h += `<button class="btn" data-action="resetFeynman">Try Again</button>
+      <button class="btn btn-p" data-action="markStudied" data-topic="${tp.filename}">Mark as Studied</button>`;
+  }
+  h += '</div>';
+  return h;
+}
+
+// ==================== Spaced Repetition View ====================
+
+function vSpaced() {
+  const dueToday = data.topics.filter(t => isDue(t.filename));
+  const upcoming = data.topics
+    .filter(t => { const p = prog(t.filename); return p.nextReview && p.nextReview > today(); })
+    .sort((a,b) => (prog(a.filename).nextReview||'').localeCompare(prog(b.filename).nextReview||''));
+  const studied = data.topics.filter(t => prog(t.filename).lastStudied);
+
+  let h = `<h2 style="margin-bottom:4px">Spaced Repetition Reviews</h2>
+    <p style="color:var(--text2);margin-bottom:24px">Intervals: 1 → 3 → 7 → 21 days</p>`;
+
+  h += `<div class="stats">
+    <div class="stat-card"><div class="stat-val" style="color:var(--red)">${dueToday.length}</div><div class="stat-lbl">Due Today</div></div>
+    <div class="stat-card"><div class="stat-val" style="color:var(--blue)">${upcoming.length}</div><div class="stat-lbl">Upcoming</div></div>
+    <div class="stat-card"><div class="stat-val" style="color:var(--green)">${studied.length}</div><div class="stat-lbl">Topics Studied</div></div>
+  </div>`;
+
+  if (dueToday.length) {
+    h += `<h3 style="margin-bottom:12px;color:var(--red)">Due Today</h3>`;
+    dueToday.forEach(tp => {
+      const p = prog(tp.filename);
+      h += `<div class="review-item">
+        <div style="flex:1;min-width:200px">
+          <div style="display:flex;gap:8px;align-items:center">${modBadge(tp.module)}<strong style="color:var(--text0)">${tp.topicSlug.replace(/-/g,' ')}</strong></div>
+          <div style="font-size:.78rem;color:var(--text2);margin-top:4px">Studied: ${fmtDate(p.lastStudied)} · Reviews: ${p.reviewCount||0}</div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-sm" data-action="nav" data-view="topic" data-topic="${tp.filename}">Study</button>
+          <button class="btn btn-sm btn-p" data-action="markReviewed" data-topic="${tp.filename}">Mark Reviewed</button>
+        </div>
+      </div>`;
+    });
+  }
+
+  if (upcoming.length) {
+    h += `<h3 style="margin:24px 0 12px">Upcoming Reviews</h3>`;
+    upcoming.slice(0,15).forEach(tp => {
+      const p = prog(tp.filename);
+      h += `<div class="review-item">
+        <div style="flex:1;min-width:200px">
+          <div style="display:flex;gap:8px;align-items:center">${modBadge(tp.module)}<span style="color:var(--text0)">${tp.topicSlug.replace(/-/g,' ')}</span></div>
+        </div>
+        <span style="font-size:.8rem;color:var(--text2)">${fmtDate(p.nextReview)}</span>
+      </div>`;
+    });
+    if (upcoming.length > 15) h += `<p style="color:var(--text2);margin-top:8px">+ ${upcoming.length-15} more</p>`;
+  }
+
+  if (!dueToday.length && !upcoming.length) {
+    h += '<div class="empty"><h3>No reviews scheduled yet</h3><p>Study topics and mark them as completed to start spaced repetition tracking.</p></div>';
+  }
+  return h;
+}
+
+// ==================== Error Log View ====================
+
+function vErrors() {
+  const mods = Object.keys(MOD);
+  let h = `<h2 style="margin-bottom:16px">Error Log</h2>
+    <p style="color:var(--text2);margin-bottom:20px">Record mistakes and corrections to review before exams</p>`;
+
+  h += `<div class="err-form card">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <select id="errMod"><option value="">Module...</option>${mods.map(m=>`<option value="${m}">${m}</option>`).join('')}</select>
+      <input type="text" id="errTopic" placeholder="Topic (e.g. linear regression)">
+    </div>
+    <textarea id="errMistake" placeholder="What I got wrong..."></textarea>
+    <textarea id="errCorrection" placeholder="The correct answer / what to remember..."></textarea>
+    <div style="display:flex;gap:12px">
+      <button class="btn btn-p" data-action="addError">Add to Error Log</button>
+      <button class="btn" data-action="triggerImport">Import Session JSON</button>
+      <input type="file" id="sessionFileInput" accept=".json" style="display:none">
+    </div>
+  </div>`;
+
+  if (errors.length) {
+    h += `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <span style="color:var(--text2)">${errors.length} entries</span>
+      <button class="btn btn-sm btn-d" data-action="clearErrors">Clear All</button>
+    </div>`;
+    const sorted = [...errors].sort((a,b) => b.date.localeCompare(a.date));
+    sorted.forEach(e => {
+      h += `<div class="err-entry">
+        <div class="err-hdr">
+          <div>${modBadge(e.module)} <span style="color:var(--text0);margin-left:8px">${e.topic}</span></div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <span class="err-date">${fmtDate(e.date)}</span>
+            <button class="btn btn-sm btn-d" data-action="delError" data-id="${e.id}">×</button>
+          </div>
+        </div>
+        <div class="err-mistake"><strong>Mistake:</strong> ${renderMd(e.mistake)}</div>
+        <div class="err-correction"><strong>Correction:</strong> ${renderMd(e.correction)}</div>
+      </div>`;
+    });
+  } else {
+    h += '<div class="empty"><h3>No errors logged yet</h3><p>That\'s either very good or very suspicious.</p></div>';
+  }
+  return h;
+}
+
+// ==================== Actions ====================
+
+function handleAction(e) {
+  const tgt = e.target.closest('[data-action]');
+  if (!tgt) return;
+  const a = tgt.dataset.action;
+
+  switch (a) {
+    case 'nav': nav(tgt.dataset.view, tgt.dataset.topic); break;
+    case 'goBack': goBack(); break;
+    case 'filter': modFilter = tgt.dataset.mod; render(); break;
+    case 'flip': fcFlip = !fcFlip; render(); break;
+    case 'prevCard': if (fcIdx > 0) { fcIdx--; fcFlip = false; render(); } break;
+    case 'nextCard': {
+      const tp = getTopic(selTopic);
+      if (tp && fcIdx < tp.formulas.length - 1) { fcIdx++; fcFlip = false; render(); }
+      break;
+    }
+    case 'showAns': cleanup(); qShow = true; render(); break;
+    case 'nextQ': {
+      const tp = getTopic(selTopic);
+      if (tp && qIdx < tp.questions.length - 1) { qIdx++; qSec = 0; qShow = false; render(); }
+      break;
+    }
+    case 'startTimer': {
+      if (qTimer) break;
+      qTimer = setInterval(() => { qSec++; updateTimer(); }, 1000);
+      render();
+      break;
+    }
+    case 'pauseTimer': cleanup(); render(); break;
+    case 'checkFeynman': {
+      const tp = getTopic(selTopic);
+      if (!tp) break;
+      const terms = tp.feynmanKeyTerms;
+      let correct = 0;
+      terms.forEach((term, i) => {
+        const input = document.getElementById('fb'+i);
+        if (input) {
+          const match = input.value.trim().toLowerCase() === term.toLowerCase();
+          input.dataset.correct = match ? '1' : '0';
+          if (match) correct++;
+        }
+      });
+      fChecked = true;
+      const el = document.getElementById('app');
+      document.querySelectorAll('.feynman-blank').forEach((inp, i) => {
+        if (i < terms.length) {
+          const match = inp.value.trim().toLowerCase() === terms[i].toLowerCase();
+          inp.classList.add(match ? 'correct' : 'incorrect');
+          if (!match) inp.value = terms[i];
+          inp.readOnly = true;
+        }
+      });
+      const score = document.createElement('div');
+      score.className = 'feynman-score';
+      score.innerHTML = `Score: <strong style="color:var(--blue)">${correct}/${terms.length}</strong> (${Math.round(correct/terms.length*100)}%)`;
+      document.querySelector('.feynman-text')?.after(score);
+      const btns = el.querySelector('[data-action="checkFeynman"]')?.parentElement;
+      if (btns) btns.innerHTML = `<button class="btn" data-action="resetFeynman">Try Again</button>
+        <button class="btn btn-p" data-action="markStudied" data-topic="${selTopic}">Mark as Studied</button>`;
+      break;
+    }
+    case 'resetFeynman': fChecked = false; render(); break;
+    case 'conf': {
+      const fn = tgt.dataset.topic, val = parseInt(tgt.dataset.val);
+      setProg(fn, {confidence: val});
+      toast('Confidence saved');
+      render();
+      break;
+    }
+    case 'setStatus': {
+      const fn = tgt.dataset.topic, val = tgt.dataset.val;
+      const updates = {status: val};
+      if (val === 'completed') {
+        updates.lastStudied = today();
+        const cnt = (prog(fn).reviewCount || 0);
+        updates.nextReview = nextReviewDate(cnt);
+      }
+      if (val === 'not_started') {
+        updates.lastStudied = null; updates.nextReview = null; updates.reviewCount = 0; updates.confidence = 0;
+      }
+      setProg(fn, updates);
+      toast(val === 'completed' ? 'Marked complete' : val === 'in_progress' ? 'Marked in progress' : 'Status reset');
+      render();
+      break;
+    }
+    case 'markStudied': {
+      const fn = tgt.dataset.topic;
+      const cnt = (prog(fn).reviewCount || 0);
+      setProg(fn, {status:'completed', lastStudied:today(), nextReview:nextReviewDate(cnt)});
+      toast('Topic marked as studied');
+      nav('topic', fn);
+      break;
+    }
+    case 'markReviewed': {
+      const fn = tgt.dataset.topic;
+      const cnt = (prog(fn).reviewCount || 0) + 1;
+      setProg(fn, {lastStudied:today(), reviewCount:cnt, nextReview:nextReviewDate(cnt)});
+      toast('Review recorded — next in ' + SR_INT[Math.min(cnt, SR_INT.length-1)] + ' days');
+      render();
+      break;
+    }
+    case 'addError': {
+      const mod = document.getElementById('errMod').value;
+      const topic = document.getElementById('errTopic').value.trim();
+      const mistake = document.getElementById('errMistake').value.trim();
+      const correction = document.getElementById('errCorrection').value.trim();
+      if (!mod || !topic || !mistake) { toast('Fill in module, topic, and mistake'); break; }
+      errors.push({id:Date.now(),date:today(),module:mod,topic,mistake,correction:correction||'(none)'});
+      saveStore();
+      toast('Error logged');
+      render();
+      break;
+    }
+    case 'delError': {
+      errors = errors.filter(e => String(e.id) !== tgt.dataset.id);
+      saveStore(); render();
+      break;
+    }
+    case 'clearErrors': {
+      if (confirm('Clear all error log entries?')) { errors = []; saveStore(); render(); }
+      break;
+    }
+    case 'exportData': {
+      const blob = new Blob([JSON.stringify({progress,errors},null,2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'study_progress_backup.json'; a.click();
+      URL.revokeObjectURL(url);
+      toast('Progress exported');
+      break;
+    }
+    case 'triggerImport': {
+      document.getElementById('sessionFileInput')?.click();
+      break;
+    }
+  }
+}
+
+function updateTimer() {
+  const el = document.querySelector('.timer');
+  if (!el) return;
+  const mins = Math.floor(qSec/60), secs = qSec%60;
+  el.textContent = `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+  const tp = getTopic(selTopic);
+  if (tp) {
+    const q = tp.questions[qIdx];
+    if (q && q.time_minutes) {
+      const alloc = q.time_minutes * 60;
+      el.className = 'timer' + (qSec > alloc*0.75 ? ' danger' : qSec > alloc*0.5 ? ' warn' : '');
+    }
+  }
+}
+
+// ==================== Keyboard Shortcuts ====================
+
+function handleKeys(e) {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+  if (view === 'flashcard') {
+    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); fcFlip = !fcFlip; render(); }
+    if (e.key === 'ArrowRight' || e.key === 'l') {
+      const tp = getTopic(selTopic);
+      if (tp && fcIdx < tp.formulas.length - 1) { fcIdx++; fcFlip = false; render(); }
+    }
+    if (e.key === 'ArrowLeft' || e.key === 'h') {
+      if (fcIdx > 0) { fcIdx--; fcFlip = false; render(); }
+    }
+  }
+  if (e.key === 'Escape') goBack();
+}
+
+// ==================== Init ====================
+
+function init() {
+  if (typeof STUDY_DATA === 'undefined') {
+    document.getElementById('app').innerHTML = `<div class="empty" style="padding:80px 24px">
+      <h3 style="font-size:1.3rem">Study Data Not Found</h3>
+      <p style="margin-top:12px">Run the extraction script first:</p>
+      <p style="margin-top:8px"><code style="background:var(--bg3);padding:8px 16px;border-radius:6px;font-size:1rem">python3 extract_study_data.py</code></p>
+      <p style="margin-top:12px;color:var(--text2)">Then refresh this page.</p>
+    </div>`;
+    return;
+  }
+
+  data = STUDY_DATA;
+  loadStore();
+
+  const navEl = document.getElementById('nav');
+  navEl.innerHTML = VIEWS.map(v => `<button class="nav-btn${v.id===view?' active':''}" data-view="${v.id}">${v.label}</button>`).join('');
+  navEl.addEventListener('click', e => {
+    const btn = e.target.closest('.nav-btn');
+    if (btn) { selTopic = null; nav(btn.dataset.view); }
+  });
+
+  const app = document.getElementById('app');
+  app.addEventListener('click', handleAction);
+  app.addEventListener('change', e => {
+    if (e.target.classList.contains('topic-select')) {
+      selTopic = e.target.value || null;
+      fcIdx = 0; fcFlip = false; qIdx = 0; qSec = 0; qShow = false; fChecked = false;
+      render();
+    }
+    if (e.target.id === 'sessionFileInput' && e.target.files.length) {
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        try {
+          const imported = JSON.parse(ev.target.result);
+          let errCount = 0, progCount = 0;
+          if (imported.errors && Array.isArray(imported.errors)) {
+            imported.errors.forEach(err => {
+              err.id = err.id || Date.now() + Math.random();
+              errors.push(err);
+              errCount++;
+            });
+          }
+          if (imported.progress && typeof imported.progress === 'object') {
+            for (const [fn, updates] of Object.entries(imported.progress)) {
+              progress[fn] = Object.assign(progress[fn] || {}, updates);
+              progCount++;
+            }
+          }
+          saveStore();
+          toast(`Imported ${errCount} errors, ${progCount} topic updates`);
+          render();
+        } catch (ex) { toast('Invalid JSON file'); }
+      };
+      reader.readAsText(e.target.files[0]);
+      e.target.value = '';
+    }
+  });
+  document.addEventListener('keydown', handleKeys);
+
+  render();
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
