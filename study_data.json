@@ -1,4 +1,4 @@
-const STUDY_DATA = {
+{
   "generated": "2026-04-06T14:30:26.486738",
   "totalFiles": 84,
   "modules": {
@@ -4128,4 +4128,4 @@ const STUDY_DATA = {
       "hasFullSections": false
     }
   ]
-};
+}

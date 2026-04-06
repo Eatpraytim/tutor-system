@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-title" content="Revision">
 <meta name="theme-color" content="#0d1117">
 <link rel="manifest" href="manifest.json">
-<title>Exam Revision 2026</title>
+<title>whatchamacallit</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
 <style>
@@ -19,8 +19,9 @@
   --blue:#58a6ff;--green:#3fb950;--yellow:#d29922;--red:#f85149;
   --purple:#bc8cff;--coral:#f97583;--orange:#f0883e;--radius:8px;
 }
-html,body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg0);color:var(--text1);line-height:1.6;min-height:100vh}
-header{background:var(--bg1);border-bottom:1px solid var(--border);padding:0 24px;position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:24px}
+html,body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg0);color:var(--text1);line-height:1.6;min-height:100vh;
+  padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+header{background:var(--bg1);border-bottom:1px solid var(--border);padding:0 24px;padding-top:env(safe-area-inset-top);position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:24px}
 .header-title{font-size:1.1rem;font-weight:600;color:var(--text0);white-space:nowrap;padding:12px 0}
 nav{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .nav-btn{background:none;border:none;color:var(--text2);padding:12px 14px;font-size:.85rem;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
@@ -135,7 +136,7 @@ nav{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 </head>
 <body>
 <header>
-  <div class="header-title">Exam Revision 2026</div>
+  <div class="header-title">whatchamacallit</div>
   <nav id="nav"></nav>
 </header>
 <main id="app"></main>
@@ -840,14 +841,14 @@ function handleAction(e) {
     case 'nav': nav(tgt.dataset.view, tgt.dataset.topic); break;
     case 'goBack': goBack(); break;
     case 'filter': modFilter = tgt.dataset.mod; render(); break;
-    case 'flip': fcFlip = !fcFlip; render(); break;
+    case 'flip': fcFlip = !fcFlip; haptic('Light'); render(); break;
     case 'prevCard': if (fcIdx > 0) { fcIdx--; fcFlip = false; render(); } break;
     case 'nextCard': {
       const tp = getTopic(selTopic);
       if (tp && fcIdx < tp.formulas.length - 1) { fcIdx++; fcFlip = false; render(); }
       break;
     }
-    case 'showAns': cleanup(); qShow = true; render(); break;
+    case 'showAns': cleanup(); qShow = true; haptic('Medium'); render(); break;
     case 'nextQ': {
       const tp = getTopic(selTopic);
       if (tp && qIdx < tp.questions.length - 1) { qIdx++; qSec = 0; qShow = false; render(); }
@@ -920,6 +921,7 @@ function handleAction(e) {
       const fn = tgt.dataset.topic;
       const cnt = (prog(fn).reviewCount || 0);
       setProg(fn, {status:'completed', lastStudied:today(), nextReview:nextReviewDate(cnt)});
+      haptic('Heavy');
       toast('Topic marked as studied');
       nav('topic', fn);
       break;
@@ -982,6 +984,52 @@ function updateTimer() {
     }
   }
 }
+
+// ==================== Native Enhancements ====================
+
+function haptic(style) {
+  if (window.Capacitor?.Plugins?.Haptics) {
+    window.Capacitor.Plugins.Haptics.impact({style: style || 'Light'});
+  } else if (navigator.vibrate) {
+    navigator.vibrate(style === 'Heavy' ? 40 : style === 'Medium' ? 20 : 10);
+  }
+}
+
+function scheduleNotifications() {
+  const LN = window.Capacitor?.Plugins?.LocalNotifications;
+  if (!LN) return;
+  LN.requestPermissions().then(perm => {
+    if (perm.display !== 'granted') return;
+    const dueCount = data.topics.filter(t => isDue(t.filename)).length;
+    const scheduled = (data.schedule[today()] || []).length;
+    const total = dueCount + scheduled;
+    if (total === 0) return;
+    const evening = new Date(); evening.setHours(18, 30, 0, 0);
+    if (evening < new Date()) { evening.setDate(evening.getDate() + 1); }
+    LN.schedule({notifications: [{
+      title: 'Study time',
+      body: `${scheduled ? scheduled + ' new topic' + (scheduled>1?'s':'') : ''}${scheduled && dueCount ? ' + ' : ''}${dueCount ? dueCount + ' review' + (dueCount>1?'s':'') + ' due' : ''}`,
+      id: 1, schedule: {at: evening}
+    }]});
+  });
+}
+
+(function initSwipe() {
+  let startX = 0, startY = 0;
+  document.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX; startY = e.touches[0].clientY;
+  }, {passive: true});
+  document.addEventListener('touchend', e => {
+    if (view !== 'flashcard' || !selTopic) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    const dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) < 60 || Math.abs(dy) > Math.abs(dx)) return;
+    const tp = getTopic(selTopic);
+    if (!tp) return;
+    if (dx < 0 && fcIdx < tp.formulas.length - 1) { fcIdx++; fcFlip = false; haptic('Light'); render(); }
+    else if (dx > 0 && fcIdx > 0) { fcIdx--; fcFlip = false; haptic('Light'); render(); }
+  }, {passive: true});
+})();
 
 // ==================== Keyboard Shortcuts ====================
 
@@ -1062,6 +1110,7 @@ function init() {
   document.addEventListener('keydown', handleKeys);
 
   render();
+  scheduleNotifications();
 }
 
 document.addEventListener('DOMContentLoaded', init);

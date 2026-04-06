@@ -1,6 +1,6 @@
 {
-  "name": "Exam Revision 2026",
-  "short_name": "Revision",
+  "name": "whatchamacallit",
+  "short_name": "whatchamacallit",
   "description": "Interactive study app for EMFSS exam revision",
   "start_url": "./study_app.html",
   "display": "standalone",

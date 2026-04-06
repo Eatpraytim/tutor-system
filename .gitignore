@@ -1,0 +1,4 @@
+node_modules/
+ios/
+.Rhistory
+*.DS_Store
