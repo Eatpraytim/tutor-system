@@ -1,0 +1,68 @@
+{
+  "progress": {
+    "2026-04-06_ST3188_questionnaire-design.md": {
+      "status": "completed",
+      "lastStudied": "2026-04-06",
+      "confidence": 3,
+      "reviewCount": 0,
+      "nextReview": "2026-04-07"
+    },
+    "2026-04-07_ST2187_multiple-regression.md": {
+      "status": "completed",
+      "lastStudied": "2026-04-07",
+      "confidence": 2,
+      "reviewCount": 0,
+      "nextReview": "2026-04-08"
+    }
+  },
+  "errors": [
+    {
+      "id": 1712444401,
+      "date": "2026-04-06",
+      "module": "ST3188",
+      "topic": "questionnaire design",
+      "mistake": "Confused leading with loaded questions",
+      "correction": "Leading = sentence structure pushes toward answer ('Don't you think/agree...'). Loaded = emotional adjectives ('excellent', 'reckless'). Different errors, different fixes."
+    },
+    {
+      "id": 1712444402,
+      "date": "2026-04-06",
+      "module": "ST3188",
+      "topic": "questionnaire design",
+      "mistake": "Missed implicit assumptions in 2 of 3 questions",
+      "correction": "Any question saying 'your last...', 'how often do you...', 'how much do you...' about a specific activity -- check if it assumes the respondent has done it. Fix with a filter question first."
+    },
+    {
+      "id": 1712444403,
+      "date": "2026-04-07",
+      "module": "ST2187",
+      "topic": "multiple regression",
+      "mistake": "Said R² = r² (only true in simple regression)",
+      "correction": "R² = 1 - SSE/SST. In multiple regression, R² measures proportion of total variation explained by all X variables combined."
+    },
+    {
+      "id": 1712444404,
+      "date": "2026-04-07",
+      "module": "ST2187",
+      "topic": "multiple regression",
+      "mistake": "Adjusted R² formula: used n-k instead of n-k-1",
+      "correction": "Adjusted R² = 1 - [SSE/(n-k-1)] / [SST/(n-1)]. Denominator is n-k-1 because you lose k slopes + 1 intercept = k+1 degrees of freedom."
+    },
+    {
+      "id": 1712444405,
+      "date": "2026-04-07",
+      "module": "ST2187",
+      "topic": "multiple regression",
+      "mistake": "F-test: said SST/SSE instead of MSR/MSE; called MSR 'mean square residuals'",
+      "correction": "F = MSR/MSE. MSR = Mean Square Regression = SSR/k. MSE = Mean Square Error = SSE/(n-k-1). Not raw sums -- divide by degrees of freedom first."
+    },
+    {
+      "id": 1712444406,
+      "date": "2026-04-07",
+      "module": "ST2187",
+      "topic": "multiple regression",
+      "mistake": "Said 'multiple dependent variables' instead of multiple independent variables",
+      "correction": "Multiple regression has ONE dependent variable (Y) and multiple independent/explanatory variables (X₁, X₂, ...). The 'multiple' refers to the predictors, not the outcome."
+    }
+  ]
+}
