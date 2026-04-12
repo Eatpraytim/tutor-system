@@ -1,5 +1,239 @@
 [
   {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Wrote hypotheses as 'the slope is/is not statistically significant at the 5% level'",
+    "why_i_got_it_wrong": "Used vague language instead of formal parameter statements",
+    "correct_rule": "H0: beta1 = 0 (slope is zero, X has no linear effect on Y). H1: beta1 != 0. Hypotheses are about the parameter value, not about significance.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Said '95% certainty of rejecting the null hypothesis'",
+    "why_i_got_it_wrong": "Confused frequentist inference with Bayesian probability",
+    "correct_rule": "Rejecting H0 at 5% means 'sufficient evidence at the 5% significance level'. It does NOT mean 95% probability H0 is false. Never assign a probability to the hypothesis.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Wrote t critical value as t_{0.0025, 28} instead of t_{0.025, 28}",
+    "why_i_got_it_wrong": "Added an extra zero — confused 0.025 with 0.0025",
+    "correct_rule": "Two-tailed at 5%: split alpha = 0.05 into two tails = 0.025 each. Critical value is t_{0.025, n-2}.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Could not produce the CI formula for the slope from memory",
+    "why_i_got_it_wrong": "Hadn't memorised the formula",
+    "correct_rule": "CI = beta1_hat +/- t_{alpha/2, n-2} x SE(beta1_hat). If 0 falls outside the CI, reject H0 (duality principle).",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Could not define SST, SSR, SSE",
+    "why_i_got_it_wrong": "Hadn't learned the decomposition",
+    "correct_rule": "SST = sum(yi - y_bar)^2 (total). SSR = sum(y_hat_i - y_bar)^2 (explained by regression). SSE = sum(yi - y_hat_i)^2 (unexplained error). SST = SSR + SSE.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Could not explain what s_e measures",
+    "why_i_got_it_wrong": "Got the formula but not the interpretation",
+    "correct_rule": "s_e measures the typical size of residuals in the units of Y. ~95% of observed Y values fall within +/- 2 x s_e of predicted values. It tells you about prediction accuracy.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Said heteroscedasticity means estimation is not consistent",
+    "why_i_got_it_wrong": "Confused the consequence — OLS is still unbiased",
+    "correct_rule": "OLS is still UNBIASED under heteroscedasticity, but standard errors are WRONG, making t-tests and CIs invalid. Detect via fan shape in residual vs fitted plot.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Could not state the consequence of autocorrelation",
+    "why_i_got_it_wrong": "Hadn't learned it",
+    "correct_rule": "Standard errors are UNDERESTIMATED, inflating t-statistics -> spurious significance. Detect with Durbin-Watson (near 2 = OK, below 2 = positive autocorrelation).",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Could not produce a business recommendation from regression output",
+    "why_i_got_it_wrong": "Didn't know the structure",
+    "correct_rule": "Three parts: (1) what the data show (significant or not, direction, size with UNITS), (2) the limitation (R^2 not high enough), (3) the action (investigate more variables, proceed with caution).",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST2187",
+    "topic": "Linear Regression",
+    "what_i_got_wrong": "Could not independently work through a regression question",
+    "why_i_got_it_wrong": "Needed step-by-step guidance throughout",
+    "correct_rule": "Follow the 6-step framework: (1) State model + hypotheses, (2) Interpret slope with units + direction, (3) Compute t, compare to critical value, state decision, (4) Construct CI, check if 0 is included, (5) Evaluate R^2 + s_e, (6) Business recommendation.",
+    "confidence": 1
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST3188",
+    "topic": "Sampling Design & Procedures",
+    "what_i_got_wrong": "Said non-probability sampling is 'completely left at random'",
+    "why_i_got_it_wrong": "Got probability and non-probability backwards",
+    "correct_rule": "Non-probability = researcher judgment or convenience, NOT random. Probability = random selection with known probabilities. Probability is the rigorous one.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST3188",
+    "topic": "Sampling Design & Procedures",
+    "what_i_got_wrong": "Said clusters are externally heterogeneous",
+    "why_i_got_it_wrong": "Confused strata and cluster composition",
+    "correct_rule": "Strata: internally homogeneous, externally heterogeneous -> precision. Clusters: internally heterogeneous, externally homogeneous -> cost savings. Sample from ALL strata, only SOME clusters.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST3188",
+    "topic": "Sampling Design & Procedures",
+    "what_i_got_wrong": "Quota and snowball answers were generic with no business context",
+    "why_i_got_it_wrong": "Gave textbook definitions instead of applying to the scenario",
+    "correct_rule": "Every sentence must reference the specific business: name the company, the population, the sampling frame. If the sentence could apply to any company, it is too generic.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST3188",
+    "topic": "Sampling Design & Procedures",
+    "what_i_got_wrong": "Did not identify the sampling frame gap",
+    "why_i_got_it_wrong": "Missed the cue in the question about unregistered customers",
+    "correct_rule": "Always ask: who is in my target population but NOT on this list? For a membership database, casual/unregistered customers are excluded. Flag this gap for every probability method.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-04",
+    "module": "ST3188",
+    "topic": "Sampling Design & Procedures",
+    "what_i_got_wrong": "Gave 'strata must be mutually exclusive' as a limitation",
+    "why_i_got_it_wrong": "Confused a property/requirement with a limitation",
+    "correct_rule": "Real limitations: requires knowledge of stratification variables in advance; sampling frame may not match target population. A limitation is something that could go wrong or restrict usefulness.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-05",
+    "module": "ST3188",
+    "topic": "Sample Size Determination",
+    "what_i_got_wrong": "Jumped straight to formula, skipped derivation",
+    "why_i_got_it_wrong": "Didn't know the 8-step structure was worth ~15 of 20 marks",
+    "correct_rule": "Follow the 8-step structure: sample -> estimator -> distribution (with CLT) -> CI -> derivation from half-width inequality -> define ALL terms -> calculate -> round up.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-05",
+    "module": "ST3188",
+    "topic": "Sample Size Determination",
+    "what_i_got_wrong": "Rounded 96.04 DOWN to 96",
+    "why_i_got_it_wrong": "Instinct was to round normally",
+    "correct_rule": "Sample size must always be rounded UP to the next whole number. 96.04 -> 97. Rounding down means you haven't met the precision requirement.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-05",
+    "module": "ST3188",
+    "topic": "Sample Size Determination",
+    "what_i_got_wrong": "Wrote e = 3^2 instead of (0.03)^2",
+    "why_i_got_it_wrong": "Forgot to convert percentage to decimal",
+    "correct_rule": "When the margin of error is a percentage, convert to decimal before plugging in: 3% -> e = 0.03. Write (0.03)^2 = 0.0009 in the formula.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-05",
+    "module": "ST3188",
+    "topic": "Sample Size Determination",
+    "what_i_got_wrong": "Wrote 'incidental %' instead of 'incidence rate'",
+    "why_i_got_it_wrong": "Misremembered the term",
+    "correct_rule": "Incidence rate = percentage of people contacted who are eligible. Completion rate = percentage of eligible who finish the survey. Use correct terminology.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-05",
+    "module": "ST3188",
+    "topic": "Sample Size Determination",
+    "what_i_got_wrong": "Defined all terms for mean formula but forgot to do the same for proportion",
+    "why_i_got_it_wrong": "Assumed it was only needed once",
+    "correct_rule": "Define ALL terms EVERY time: n, z_{alpha/2}, pi, e. The examiner commentary says 'all terms should be defined' in every single year. Do it for both mean and proportion.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-06",
+    "module": "ST3188",
+    "topic": "Questionnaire Design",
+    "what_i_got_wrong": "Confused leading with loaded questions",
+    "why_i_got_it_wrong": "Didn't know the distinction",
+    "correct_rule": "Leading = sentence structure pushes toward answer ('Don't you think/agree...'). Loaded = emotional adjectives ('excellent', 'reckless'). Different errors, different fixes.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-06",
+    "module": "ST3188",
+    "topic": "Questionnaire Design",
+    "what_i_got_wrong": "Missed implicit assumptions in 2 of 3 questions",
+    "why_i_got_it_wrong": "Didn't check whether the question assumes the respondent has done the activity",
+    "correct_rule": "Any question saying 'your last...', 'how often do you...', 'how much do you...' -- check if it assumes the respondent has done it. Fix with a filter question first.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-07",
+    "module": "ST2187",
+    "topic": "Multiple Regression",
+    "what_i_got_wrong": "Said R^2 = r^2 (only true in simple regression)",
+    "why_i_got_it_wrong": "Applied simple regression rule to multiple regression",
+    "correct_rule": "R^2 = 1 - SSE/SST. In multiple regression, R^2 measures proportion of total variation explained by all X variables combined.",
+    "confidence": 2
+  },
+  {
+    "date": "2026-04-07",
+    "module": "ST2187",
+    "topic": "Multiple Regression",
+    "what_i_got_wrong": "Adjusted R^2 formula: used n-k instead of n-k-1",
+    "why_i_got_it_wrong": "Forgot that you lose k slopes + 1 intercept",
+    "correct_rule": "Adjusted R^2 = 1 - [SSE/(n-k-1)] / [SST/(n-1)]. Denominator is n-k-1 because you lose k slopes + 1 intercept = k+1 degrees of freedom.",
+    "confidence": 2
+  },
+  {
+    "date": "2026-04-07",
+    "module": "ST2187",
+    "topic": "Multiple Regression",
+    "what_i_got_wrong": "F-test: said SST/SSE instead of MSR/MSE; called MSR 'mean square residuals'",
+    "why_i_got_it_wrong": "Confused the terms and didn't divide by df",
+    "correct_rule": "F = MSR/MSE. MSR = Mean Square Regression = SSR/k. MSE = Mean Square Error = SSE/(n-k-1). Not raw sums -- divide by degrees of freedom first.",
+    "confidence": 2
+  },
+  {
+    "date": "2026-04-07",
+    "module": "ST2187",
+    "topic": "Multiple Regression",
+    "what_i_got_wrong": "Said 'multiple dependent variables' instead of multiple independent variables",
+    "why_i_got_it_wrong": "Mixed up the terminology",
+    "correct_rule": "Multiple regression has ONE dependent variable (Y) and multiple independent/explanatory variables (X1, X2, ...). The 'multiple' refers to the predictors, not the outcome.",
+    "confidence": 2
+  },
+  {
     "date": "2026-04-08",
     "module": "ST3188",
     "topic": "Cross-Tabulation and Hypothesis Testing",
@@ -50,7 +284,7 @@
     "topic": "Estimation & Hypothesis Testing",
     "what_i_got_wrong": "Couldn't set up a proportion test from a word problem",
     "why_i_got_it_wrong": "Didn't know how to calculate p-hat or recognise 'at most' as one-tailed",
-    "correct_rule": "p-hat = count/n. 'At most' or 'no more than' → H0: p <= value, H1: p > value (upper-tail).",
+    "correct_rule": "p-hat = count/n. 'At most' or 'no more than' -> H0: p <= value, H1: p > value (upper-tail).",
     "confidence": 3
   },
   {
@@ -66,7 +300,7 @@
     "date": "2026-04-09",
     "module": "ST2187",
     "topic": "Estimation & Hypothesis Testing",
-    "what_i_got_wrong": "Only partially explained the big-n problem — said narrower CI but missed the key point",
+    "what_i_got_wrong": "Only partially explained the big-n problem",
     "why_i_got_it_wrong": "Knew the mechanics but not the implication",
     "correct_rule": "Large n can make trivially small effects statistically significant. Always report effect size alongside p-value. Statistical significance != practical importance.",
     "confidence": 3
@@ -75,8 +309,8 @@
     "date": "2026-04-12",
     "module": "ST3188",
     "topic": "ANOVA and ANCOVA",
-    "what_i_got_wrong": "Compared Levene's test p-value to 0.01 instead of 0.05, and used awkward phrasing",
-    "why_i_got_it_wrong": "Confused significance threshold and didn't know the clean interpretation pattern",
+    "what_i_got_wrong": "Compared Levene's test p-value to 0.01 instead of 0.05",
+    "why_i_got_it_wrong": "Confused significance threshold",
     "correct_rule": "Levene's test: compare to 0.05. p > 0.05 = do not reject = variances equal = assumption MET. p < 0.05 = reject = variances unequal = assumption VIOLATED. You WANT an insignificant result.",
     "confidence": 3
   },
@@ -85,7 +319,7 @@
     "module": "ST3188",
     "topic": "ANOVA and ANCOVA",
     "what_i_got_wrong": "Said you can rank which factor matters more by comparing eta-squared when interaction is significant",
-    "why_i_got_it_wrong": "Didn't apply the interaction rule — main effects can't be interpreted in isolation when interaction is significant",
+    "why_i_got_it_wrong": "Didn't apply the interaction rule",
     "correct_rule": "When interaction is significant, the effect of one factor depends on the level of the other. Don't rank main effects. Instead, describe the pattern per segment using the marginal means plot.",
     "confidence": 3
   }
