@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2026-04-08",
+    "module": "ST3188",
+    "topic": "Cross-Tabulation and Hypothesis Testing",
+    "what_i_got_wrong": "Said percentages should be computed in the direction of the dependent variable",
+    "why_i_got_it_wrong": "Confused independent and dependent direction",
+    "correct_rule": "Compute percentages in the direction of the INDEPENDENT variable, across the dependent variable. Ask: of the people in this group, what % chose each option?",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-08",
+    "module": "ST3188",
+    "topic": "Cross-Tabulation and Hypothesis Testing",
+    "what_i_got_wrong": "Calculated df by adding (r-1) + (c-1) instead of multiplying",
+    "why_i_got_it_wrong": "Mixed up the operation — instinct was to add",
+    "correct_rule": "df = (r-1) x (c-1). Think: how many cells are free to vary once you know the margins?",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-09",
+    "module": "ST2187",
+    "topic": "Estimation & Hypothesis Testing",
+    "what_i_got_wrong": "Said point estimate is 'any value in between' the CI",
+    "why_i_got_it_wrong": "Didn't know that the point estimate is a single specific number",
+    "correct_rule": "Point estimate = centre of the CI. Calculate as (lower + upper) / 2.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-09",
+    "module": "ST2187",
+    "topic": "Estimation & Hypothesis Testing",
+    "what_i_got_wrong": "Said margin of error is the difference between the two endpoints",
+    "why_i_got_it_wrong": "Confused width with margin of error",
+    "correct_rule": "Margin of error = HALF the width of the CI. Calculate as (upper - lower) / 2.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-09",
+    "module": "ST2187",
+    "topic": "Estimation & Hypothesis Testing",
+    "what_i_got_wrong": "Got Type I and Type II errors backwards",
+    "why_i_got_it_wrong": "Confused false positive and false negative descriptions",
+    "correct_rule": "Type I = false positive = convicting an innocent person (reject H0 when true). Type II = false negative = letting a guilty person go free (fail to reject H0 when false).",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-09",
+    "module": "ST2187",
+    "topic": "Estimation & Hypothesis Testing",
+    "what_i_got_wrong": "Couldn't set up a proportion test from a word problem",
+    "why_i_got_it_wrong": "Didn't know how to calculate p-hat or recognise 'at most' as one-tailed",
+    "correct_rule": "p-hat = count/n. 'At most' or 'no more than' → H0: p <= value, H1: p > value (upper-tail).",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-09",
+    "module": "ST2187",
+    "topic": "Estimation & Hypothesis Testing",
+    "what_i_got_wrong": "Didn't know when to use z-test vs t-test",
+    "why_i_got_it_wrong": "Hadn't learned the distinction",
+    "correct_rule": "z-test when sigma (population SD) is KNOWN. t-test when sigma is UNKNOWN and you use s (sample SD). In practice almost always t.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-09",
+    "module": "ST2187",
+    "topic": "Estimation & Hypothesis Testing",
+    "what_i_got_wrong": "Only partially explained the big-n problem — said narrower CI but missed the key point",
+    "why_i_got_it_wrong": "Knew the mechanics but not the implication",
+    "correct_rule": "Large n can make trivially small effects statistically significant. Always report effect size alongside p-value. Statistical significance != practical importance.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-12",
+    "module": "ST3188",
+    "topic": "ANOVA and ANCOVA",
+    "what_i_got_wrong": "Compared Levene's test p-value to 0.01 instead of 0.05, and used awkward phrasing",
+    "why_i_got_it_wrong": "Confused significance threshold and didn't know the clean interpretation pattern",
+    "correct_rule": "Levene's test: compare to 0.05. p > 0.05 = do not reject = variances equal = assumption MET. p < 0.05 = reject = variances unequal = assumption VIOLATED. You WANT an insignificant result.",
+    "confidence": 3
+  },
+  {
+    "date": "2026-04-12",
+    "module": "ST3188",
+    "topic": "ANOVA and ANCOVA",
+    "what_i_got_wrong": "Said you can rank which factor matters more by comparing eta-squared when interaction is significant",
+    "why_i_got_it_wrong": "Didn't apply the interaction rule — main effects can't be interpreted in isolation when interaction is significant",
+    "correct_rule": "When interaction is significant, the effect of one factor depends on the level of the other. Don't rank main effects. Instead, describe the pattern per segment using the marginal means plot.",
+    "confidence": 3
+  }
+]

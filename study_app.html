@@ -1048,6 +1048,37 @@ function handleKeys(e) {
   if (e.key === 'Escape') goBack();
 }
 
+// ==================== Error Log Auto-Import ====================
+
+function mergeErrorLogFromFile() {
+  fetch('error_log.json')
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(entries => {
+      if (!Array.isArray(entries)) return;
+      let added = 0;
+      entries.forEach(e => {
+        const key = e.date + '|' + e.module + '|' + (e.what_i_got_wrong || e.mistake);
+        const exists = errors.some(ex => {
+          const exKey = ex.date + '|' + ex.module + '|' + (ex.mistake || ex.what_i_got_wrong);
+          return exKey === key;
+        });
+        if (!exists) {
+          errors.push({
+            id: Date.now() + Math.random(),
+            date: e.date,
+            module: e.module,
+            topic: e.topic,
+            mistake: e.what_i_got_wrong || e.mistake || '',
+            correction: e.correct_rule || e.correction || ''
+          });
+          added++;
+        }
+      });
+      if (added > 0) { saveStore(); render(); }
+    })
+    .catch(() => {});
+}
+
 // ==================== Init ====================
 
 function init() {
@@ -1063,6 +1094,7 @@ function init() {
 
   data = STUDY_DATA;
   loadStore();
+  mergeErrorLogFromFile();
 
   const navEl = document.getElementById('nav');
   navEl.innerHTML = VIEWS.map(v => `<button class="nav-btn${v.id===view?' active':''}" data-view="${v.id}">${v.label}</button>`).join('');
