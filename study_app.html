@@ -88,6 +88,26 @@ nav{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .err-date{font-size:.78rem;color:var(--text2)}
 .err-mistake{color:var(--coral);margin-bottom:4px}.err-correction{color:var(--green)}
 
+.err-tabs{display:flex;gap:4px;margin-bottom:20px;background:var(--bg2);border-radius:8px;padding:3px}
+.err-tab{flex:1;text-align:center;padding:8px 12px;border-radius:6px;border:none;background:transparent;color:var(--text2);cursor:pointer;font-size:.85rem;font-family:inherit;transition:all .2s}
+.err-tab.active{background:var(--blue);color:#fff}
+.err-tab:hover:not(.active){color:var(--text0)}
+
+.err-rev-card{background:var(--bg1);border:1px solid var(--border);border-radius:12px;padding:32px;margin-bottom:20px;min-height:200px}
+.err-rev-prompt{font-size:.85rem;color:var(--text2);margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.err-rev-mistake{font-size:1.1rem;color:var(--coral);line-height:1.7;margin-bottom:20px}
+.err-rev-correction{font-size:1rem;color:var(--green);line-height:1.7;padding:16px;background:var(--bg2);border-radius:8px;border-left:3px solid var(--green);margin-bottom:16px}
+.err-rev-hidden{padding:24px;text-align:center;color:var(--text2);font-style:italic;font-size:.95rem}
+.err-rev-controls{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.err-rev-progress{text-align:center;color:var(--text2);font-size:.85rem;margin-bottom:16px}
+.err-rev-meta{display:flex;gap:8px;align-items:center;margin-bottom:16px}
+.btn-got-it{background:var(--green);color:#fff;border-color:var(--green)}.btn-got-it:hover{opacity:.85}
+.btn-struggle{background:var(--red);color:#fff;border-color:var(--red)}.btn-struggle:hover{opacity:.85}
+
+.err-summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.err-summary-card{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center}
+.err-summary-val{font-size:1.5rem;font-weight:700;line-height:1.2}.err-summary-lbl{font-size:.78rem;color:var(--text2);margin-top:4px}
+
 .review-item{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;flex-wrap:wrap;gap:8px}
 .progress-bar{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden;width:100%}
 .progress-fill{height:100%;border-radius:3px;transition:width .3s}
@@ -170,6 +190,7 @@ let view = 'daily', selTopic = null, modFilter = 'all';
 let fcIdx = 0, fcFlip = false;
 let qIdx = 0, qTimer = null, qSec = 0, qShow = false;
 let fChecked = false;
+let errView = 'list', errFilter = 'all', errRevIdx = 0, errRevShow = false, errRevQueue = [];
 
 function today() { return new Date().toISOString().split('T')[0]; }
 function fmtDate(s) {
@@ -786,12 +807,137 @@ function vSpaced() {
 
 // ==================== Error Log View ====================
 
+function getFilteredErrors() {
+  let list = [...errors];
+  if (errFilter !== 'all') list = list.filter(e => e.module === errFilter);
+  return list;
+}
+
+function buildReviewQueue() {
+  const filtered = getFilteredErrors();
+  const struggling = filtered.filter(e => e.reviewStatus === 'struggling');
+  const unreviewed = filtered.filter(e => !e.reviewStatus);
+  const gotIt = filtered.filter(e => e.reviewStatus === 'got_it');
+  errRevQueue = [...struggling, ...unreviewed, ...gotIt];
+  errRevIdx = 0;
+  errRevShow = false;
+}
+
 function vErrors() {
   const mods = Object.keys(MOD);
-  let h = `<h2 style="margin-bottom:16px">Error Log</h2>
-    <p style="color:var(--text2);margin-bottom:20px">Record mistakes and corrections to review before exams</p>`;
+  let h = `<h2 style="margin-bottom:16px">Error Log</h2>`;
 
-  h += `<div class="err-form card">
+  h += `<div class="err-tabs">
+    <button class="err-tab${errView==='review'?' active':''}" data-action="errSetView" data-errview="review">Review Mode</button>
+    <button class="err-tab${errView==='list'?' active':''}" data-action="errSetView" data-errview="list">Full List</button>
+    <button class="err-tab${errView==='add'?' active':''}" data-action="errSetView" data-errview="add">Add New</button>
+  </div>`;
+
+  h += `<div class="filter-row">
+    <button class="filter-btn${errFilter==='all'?' active':''}" data-action="errSetFilter" data-errfilter="all">All</button>
+    ${mods.map(m => {
+      const cnt = errors.filter(e => e.module === m).length;
+      return cnt ? `<button class="filter-btn${errFilter===m?' active':''}" data-action="errSetFilter" data-errfilter="${m}">${m} (${cnt})</button>` : '';
+    }).join('')}
+  </div>`;
+
+  if (errView === 'review') h += vErrorsReview();
+  else if (errView === 'add') h += vErrorsAdd(mods);
+  else h += vErrorsList();
+
+  return h;
+}
+
+function vErrorsReview() {
+  const filtered = getFilteredErrors();
+  if (!filtered.length) return '<div class="empty"><h3>No errors to review</h3><p>Change your filter or add some errors first.</p></div>';
+
+  if (!errRevQueue.length) buildReviewQueue();
+  const queue = errRevQueue;
+
+  const gotItCount = filtered.filter(e => e.reviewStatus === 'got_it').length;
+  const strugglingCount = filtered.filter(e => e.reviewStatus === 'struggling').length;
+  const unreviewedCount = filtered.filter(e => !e.reviewStatus).length;
+
+  let h = `<div class="err-summary">
+    <div class="err-summary-card"><div class="err-summary-val" style="color:var(--green)">${gotItCount}</div><div class="err-summary-lbl">Got it</div></div>
+    <div class="err-summary-card"><div class="err-summary-val" style="color:var(--red)">${strugglingCount}</div><div class="err-summary-lbl">Still struggling</div></div>
+    <div class="err-summary-card"><div class="err-summary-val" style="color:var(--text2)">${unreviewedCount}</div><div class="err-summary-lbl">Not reviewed</div></div>
+    <div class="err-summary-card"><div class="err-summary-val" style="color:var(--blue)">${filtered.length}</div><div class="err-summary-lbl">Total</div></div>
+  </div>`;
+
+  if (errRevIdx >= queue.length) {
+    h += `<div class="err-rev-card" style="text-align:center">
+      <h3 style="color:var(--green);margin-bottom:12px;font-size:1.2rem">Review complete</h3>
+      <p style="color:var(--text2);margin-bottom:8px">${gotItCount} correct, ${strugglingCount} need more work, ${unreviewedCount} skipped</p>
+      ${strugglingCount > 0 ? `<p style="color:var(--coral);margin-bottom:20px">Focus on the ${strugglingCount} you're still struggling with.</p>` : '<p style="color:var(--green);margin-bottom:20px">Strong session.</p>'}
+      <div class="err-rev-controls">
+        <button class="btn btn-p" data-action="errRestartReview">Review Again</button>
+        ${strugglingCount > 0 ? '<button class="btn btn-struggle" data-action="errReviewStruggling">Review Struggling Only</button>' : ''}
+      </div>
+    </div>`;
+    return h;
+  }
+
+  const e = queue[errRevIdx];
+  const pos = errRevIdx + 1;
+  const total = queue.length;
+
+  h += `<div class="err-rev-progress">${pos} of ${total}</div>`;
+
+  h += `<div class="err-rev-card">
+    <div class="err-rev-meta">${modBadge(e.module)} <span style="color:var(--text2);font-size:.85rem;margin-left:4px">${e.topic}</span> <span class="err-date" style="margin-left:auto">${fmtDate(e.date)}</span></div>
+    <div class="err-rev-prompt">You got this wrong:</div>
+    <div class="err-rev-mistake">${renderMd(e.mistake)}</div>
+    <div class="err-rev-prompt">What is the correct answer?</div>`;
+
+  if (errRevShow) {
+    h += `<div class="err-rev-correction">${renderMd(e.correction)}</div>
+      <div class="err-rev-controls">
+        <button class="btn btn-got-it" data-action="errGotIt">Got it</button>
+        <button class="btn btn-struggle" data-action="errStruggling">Still struggling</button>
+        <button class="btn" data-action="errSkip">Skip</button>
+      </div>`;
+  } else {
+    h += `<div class="err-rev-hidden">Think about it first... then reveal</div>
+      <div class="err-rev-controls">
+        <button class="btn btn-p" data-action="errReveal">Reveal Correction</button>
+        <button class="btn" data-action="errSkip">Skip</button>
+      </div>`;
+  }
+
+  h += '</div>';
+  return h;
+}
+
+function vErrorsList() {
+  const filtered = getFilteredErrors();
+  if (!filtered.length) return '<div class="empty"><h3>No errors to show</h3><p>Change your filter or add some errors first.</p></div>';
+
+  let h = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+    <span style="color:var(--text2)">${filtered.length} entries</span>
+    <button class="btn btn-sm btn-d" data-action="clearErrors">Clear All</button>
+  </div>`;
+  const sorted = [...filtered].sort((a,b) => b.date.localeCompare(a.date));
+  sorted.forEach(e => {
+    const statusDot = e.reviewStatus === 'got_it' ? 'var(--green)' : e.reviewStatus === 'struggling' ? 'var(--red)' : 'var(--text3)';
+    h += `<div class="err-entry">
+      <div class="err-hdr">
+        <div style="display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;background:${statusDot};display:inline-block"></span>${modBadge(e.module)} <span style="color:var(--text0);margin-left:4px">${e.topic}</span></div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span class="err-date">${fmtDate(e.date)}</span>
+          <button class="btn btn-sm btn-d" data-action="delError" data-id="${e.id}">×</button>
+        </div>
+      </div>
+      <div class="err-mistake"><strong>Mistake:</strong> ${renderMd(e.mistake)}</div>
+      <div class="err-correction"><strong>Correction:</strong> ${renderMd(e.correction)}</div>
+    </div>`;
+  });
+  return h;
+}
+
+function vErrorsAdd(mods) {
+  let h = `<div class="err-form card">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <select id="errMod"><option value="">Module...</option>${mods.map(m=>`<option value="${m}">${m}</option>`).join('')}</select>
       <input type="text" id="errTopic" placeholder="Topic (e.g. linear regression)">
@@ -804,29 +950,6 @@ function vErrors() {
       <input type="file" id="sessionFileInput" accept=".json" style="display:none">
     </div>
   </div>`;
-
-  if (errors.length) {
-    h += `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <span style="color:var(--text2)">${errors.length} entries</span>
-      <button class="btn btn-sm btn-d" data-action="clearErrors">Clear All</button>
-    </div>`;
-    const sorted = [...errors].sort((a,b) => b.date.localeCompare(a.date));
-    sorted.forEach(e => {
-      h += `<div class="err-entry">
-        <div class="err-hdr">
-          <div>${modBadge(e.module)} <span style="color:var(--text0);margin-left:8px">${e.topic}</span></div>
-          <div style="display:flex;gap:8px;align-items:center">
-            <span class="err-date">${fmtDate(e.date)}</span>
-            <button class="btn btn-sm btn-d" data-action="delError" data-id="${e.id}">×</button>
-          </div>
-        </div>
-        <div class="err-mistake"><strong>Mistake:</strong> ${renderMd(e.mistake)}</div>
-        <div class="err-correction"><strong>Correction:</strong> ${renderMd(e.correction)}</div>
-      </div>`;
-    });
-  } else {
-    h += '<div class="empty"><h3>No errors logged yet</h3><p>That\'s either very good or very suspicious.</p></div>';
-  }
   return h;
 }
 
@@ -953,6 +1076,63 @@ function handleAction(e) {
     }
     case 'clearErrors': {
       if (confirm('Clear all error log entries?')) { errors = []; saveStore(); render(); }
+      break;
+    }
+    case 'errSetView': {
+      errView = tgt.dataset.errview;
+      if (errView === 'review') buildReviewQueue();
+      render();
+      break;
+    }
+    case 'errSetFilter': {
+      errFilter = tgt.dataset.errfilter;
+      if (errView === 'review') buildReviewQueue();
+      render();
+      break;
+    }
+    case 'errReveal': {
+      errRevShow = true;
+      haptic('Light');
+      render();
+      break;
+    }
+    case 'errGotIt': {
+      const e = errRevQueue[errRevIdx];
+      if (e) { e.reviewStatus = 'got_it'; e.lastReviewed = today(); }
+      errRevIdx++;
+      errRevShow = false;
+      haptic('Light');
+      saveStore();
+      render();
+      break;
+    }
+    case 'errStruggling': {
+      const e = errRevQueue[errRevIdx];
+      if (e) { e.reviewStatus = 'struggling'; e.lastReviewed = today(); }
+      errRevIdx++;
+      errRevShow = false;
+      haptic('Medium');
+      saveStore();
+      render();
+      break;
+    }
+    case 'errSkip': {
+      errRevIdx++;
+      errRevShow = false;
+      render();
+      break;
+    }
+    case 'errRestartReview': {
+      buildReviewQueue();
+      render();
+      break;
+    }
+    case 'errReviewStruggling': {
+      const filtered = getFilteredErrors();
+      errRevQueue = filtered.filter(e => e.reviewStatus === 'struggling');
+      errRevIdx = 0;
+      errRevShow = false;
+      render();
       break;
     }
     case 'exportData': {
