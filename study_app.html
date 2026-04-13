@@ -80,6 +80,7 @@ nav{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .feynman-score{margin-top:20px;padding:16px;background:var(--bg1);border-radius:var(--radius);text-align:center;font-size:1.1rem}
 
 .err-form{display:grid;gap:12px;margin-bottom:24px}
+.err-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .err-form select,.err-form textarea,.err-form input[type=text]{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text1);font-family:inherit;font-size:.9rem}
 .err-form select:focus,.err-form textarea:focus,.err-form input:focus{outline:none;border-color:var(--blue)}
 .err-form textarea{min-height:80px;resize:vertical}
@@ -140,15 +141,92 @@ nav{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .md th{background:var(--bg2);color:var(--text0);font-weight:600}
 
 .empty{text-align:center;padding:48px 24px;color:var(--text2)}.empty h3{color:var(--text1);margin-bottom:8px}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:4px 0}
+.katex{overflow-wrap:break-word}
 
 @media(max-width:768px){
-  header{padding:0 12px;flex-direction:column;align-items:flex-start}
-  .header-title{padding:8px 0 0}nav{width:100%;padding-bottom:4px}
-  .nav-btn{padding:8px 10px;font-size:.78rem}#app{padding:16px}
-  .stats{gap:8px}.stat-card{min-width:100px;padding:10px}.stat-val{font-size:1.3rem}
-  .grid-2,.grid-3{grid-template-columns:1fr}.detail-actions{flex-direction:column}
+  /* Nav: hide title, bigger tap targets */
+  header{padding:0 8px;flex-direction:row;align-items:stretch;overflow:hidden}
+  .header-title{display:none}
+  nav{width:100%;padding:0;-ms-overflow-style:none;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  .nav-btn{padding:14px 12px;font-size:.82rem;min-height:44px}
+
+  /* Layout: prevent overflow */
+  #app{padding:12px}
+  .grid-2{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+  .grid-3{grid-template-columns:1fr}
+  .topic-select{width:100%;min-width:0}
+  .detail-actions{flex-direction:column}
+
+  /* Stats */
+  .stats{gap:8px;flex-direction:row;flex-wrap:wrap}
+  .stat-card{min-width:0;flex:1 1 45%;padding:10px}
+  .stat-val{font-size:1.3rem}
+
+  /* Touch targets: min 44px for all buttons */
+  .btn{min-height:44px;padding:10px 16px;font-size:.88rem}
+  .btn-sm{min-height:36px;padding:6px 12px;font-size:.82rem}
+  .conf-btn{width:44px;height:44px;font-size:1rem}
+
+  /* Flashcards */
+  .fc,.fc-inner,.fc-front,.fc-back{min-height:200px}
+  .fc-front,.fc-back{padding:20px}
+  .fc-front .concept{font-size:1.15rem}
+  .fc-back .formula{font-size:1rem}
+  .fc-controls{gap:8px;width:100%}
+  .fc-controls .btn{flex:1}
+
+  /* Quiz */
   .quiz-hdr{flex-direction:column;align-items:flex-start}
-  .fc,.fc-inner,.fc-front,.fc-back{min-height:220px}
+  .quiz-q{padding:16px}
+  .quiz-ans{min-height:180px;font-size:1rem}
+  .model-ans,.traps-box{padding:16px}
+
+  /* Feynman */
+  .feynman-text{padding:16px;line-height:2;font-size:.95rem}
+  .feynman-blank{min-width:80px;font-size:.85rem}
+
+  /* Error log: review mode */
+  .err-rev-card{padding:16px}
+  .err-rev-mistake{font-size:1rem}
+  .err-rev-correction{padding:12px;font-size:.95rem}
+  .err-rev-controls{flex-direction:column}
+  .err-rev-controls .btn{width:100%;min-height:48px;font-size:.95rem}
+  .err-rev-meta{flex-wrap:wrap;gap:6px}
+  .err-summary{grid-template-columns:1fr 1fr;gap:8px}
+  .err-summary-card{padding:10px}
+  .err-summary-val{font-size:1.3rem}
+  .err-tabs{gap:2px}
+  .err-tab{padding:10px 8px;font-size:.8rem;min-height:44px}
+
+  /* Error log: list + form */
+  .err-entry{padding:12px}
+  .err-hdr{flex-direction:column;align-items:flex-start;gap:6px}
+  .err-form-row{grid-template-columns:1fr}
+  .err-form select,.err-form textarea,.err-form input[type=text]{font-size:1rem;padding:12px}
+  .err-form textarea{min-height:100px}
+
+  /* Section previews (topic detail) */
+  .section-preview{padding:12px}
+  .section-preview .content{font-size:.85rem}
+
+  /* Tables: horizontal scroll */
+  .md table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+  /* Toast: respect safe area */
+  .toast{bottom:calc(16px + env(safe-area-inset-bottom));right:16px;left:16px;text-align:center}
+
+  /* Filter row */
+  .filter-row{gap:6px}
+  .filter-btn{padding:8px 12px;min-height:36px;font-size:.78rem}
+
+  /* Confidence row */
+  .confidence-row{gap:6px;flex-wrap:wrap}
+
+  /* Review items */
+  .review-item{flex-direction:column;align-items:flex-start;gap:8px}
+  .review-item .btn{width:100%}
 }
 ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg0)}
 ::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:4px}::selection{background:rgba(88,166,255,.3)}
@@ -962,7 +1040,7 @@ function vErrorsList() {
 
 function vErrorsAdd(mods) {
   let h = `<div class="err-form card">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div class="err-form-row">
       <select id="errMod"><option value="">Module...</option>${mods.map(m=>`<option value="${m}">${m}</option>`).join('')}</select>
       <input type="text" id="errTopic" placeholder="Topic (e.g. linear regression)">
     </div>
@@ -1224,14 +1302,25 @@ function scheduleNotifications() {
     startX = e.touches[0].clientX; startY = e.touches[0].clientY;
   }, {passive: true});
   document.addEventListener('touchend', e => {
-    if (view !== 'flashcard' || !selTopic) return;
     const dx = e.changedTouches[0].clientX - startX;
     const dy = e.changedTouches[0].clientY - startY;
     if (Math.abs(dx) < 60 || Math.abs(dy) > Math.abs(dx)) return;
-    const tp = getTopic(selTopic);
-    if (!tp) return;
-    if (dx < 0 && fcIdx < tp.formulas.length - 1) { fcIdx++; fcFlip = false; haptic('Light'); render(); }
-    else if (dx > 0 && fcIdx > 0) { fcIdx--; fcFlip = false; haptic('Light'); render(); }
+
+    if (view === 'flashcard' && selTopic) {
+      const tp = getTopic(selTopic);
+      if (!tp) return;
+      if (dx < 0 && fcIdx < tp.formulas.length - 1) { fcIdx++; fcFlip = false; haptic('Light'); render(); }
+      else if (dx > 0 && fcIdx > 0) { fcIdx--; fcFlip = false; haptic('Light'); render(); }
+    }
+
+    if (view === 'errors' && errView === 'review' && errRevQueue.length && errRevIdx < errRevQueue.length) {
+      if (dx < 0) {
+        if (!errRevShow) { errRevShow = true; haptic('Light'); render(); }
+        else { errRevIdx++; errRevShow = false; haptic('Light'); render(); }
+      } else if (dx > 0 && errRevIdx > 0) {
+        errRevIdx--; errRevShow = false; haptic('Light'); render();
+      }
+    }
   }, {passive: true});
 })();
 
