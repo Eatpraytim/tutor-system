@@ -290,6 +290,14 @@ function renderF(text) {
   return text;
 }
 
+function renderConceptName(text) {
+  if (!text) return '';
+  text = text.replace(/\*\*(.+?)\*\*/g,'$1');
+  text = text.replace(/\\\((.+?)\\\)/g, (_, tex) => renderLatex(tex, false));
+  text = text.replace(/\$(.+?)\$/g, (_, tex) => renderLatex(tex, false));
+  return renderF(text);
+}
+
 // ==================== KaTeX Renderer ====================
 
 function fixArtifacts(text) {
@@ -299,6 +307,11 @@ function fixArtifacts(text) {
 function renderLatex(text, display) {
   if (!text) return '';
   text = fixArtifacts(text);
+
+  // Strip wrapping delimiters: $...$, \(...\), \[...\]
+  text = text.replace(/^\$\$([\s\S]+)\$\$$/,'$1').replace(/^\$(.+)\$$/,'$1');
+  text = text.replace(/^\\\((.+)\\\)$/,'$1').replace(/^\\\[(.+)\\\]$/,'$1');
+
   if (!window.katex) return renderF(text);
 
   // Strategy 1: full string as LaTeX
@@ -322,6 +335,15 @@ function renderLatex(text, display) {
       const r = katex.renderToString(text.substring(0,paren).trim(), {throwOnError:true, displayMode:!!display});
       return r + `<span style="color:var(--text2);font-size:.85em;margin-left:8px">${text.substring(paren).trim()}</span>`;
     } catch {}
+  }
+
+  // Strategy 4: handle mixed \(...\) inline delimiters within text
+  if (text.includes('\\(') && text.includes('\\)')) {
+    let result = text.replace(/\\\((.+?)\\\)/g, (_, tex) => {
+      try { return katex.renderToString(tex, {throwOnError:true, displayMode:false}); }
+      catch { return renderF(tex); }
+    });
+    return result;
   }
 
   return renderF(text);
@@ -645,14 +667,16 @@ function vFlash() {
     return h + '<div class="empty"><h3>Select a topic with formulas to start</h3><p>Choose from the dropdown above</p></div>';
   }
 
-  const cards = tp.formulas;
+  const cards = tp.formulas.filter(f => f.formula && f.formula !== 'Formula' && f.formula !== 'Statistic' && f.concept !== 'Statistic' && f.concept !== 'Test');
+  if (!cards.length) return h + '<div class="empty"><h3>No formulas for this topic</h3></div>';
+  if (fcIdx >= cards.length) fcIdx = cards.length - 1;
   const card = cards[fcIdx];
   h += `<div class="fc-container">
     <div class="fc-progress">${fcIdx+1} / ${cards.length}</div>
     <div class="progress-bar" style="max-width:600px"><div class="progress-fill" style="width:${((fcIdx+1)/cards.length)*100}%;background:var(--blue)"></div></div>
     <div class="fc${fcFlip?' flipped':''}" data-action="flip">
       <div class="fc-inner">
-        <div class="fc-front"><div class="concept">${card.concept}</div><div class="hint">Click or press Space to reveal</div></div>
+        <div class="fc-front"><div class="concept">${renderConceptName(card.concept)}</div><div class="hint">Click or press Space to reveal</div></div>
         <div class="fc-back"><div class="formula">${renderLatex(card.formula, true)}</div></div>
       </div>
     </div>
