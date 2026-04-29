@@ -1,0 +1,46 @@
+{
+  "errors": [
+    {
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topic": "sample size — skipped derivation",
+      "mistake": "Jumped straight to the formula and plugged in numbers. Skipped stating the estimator, sampling distribution, CLT condition, and derivation from CI inequality.",
+      "correction": "Follow the 8-step structure: sample → estimator → distribution (with CLT) → CI → derivation from half-width inequality → define ALL terms → calculate → round up. The derivation is worth ~15 of the 20 marks."
+    },
+    {
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topic": "sample size — rounding",
+      "mistake": "Rounded 96.04 DOWN to 96.",
+      "correction": "Sample size must always be **rounded up** to the next whole number. 96.04 → **97**. Rounding down means you haven't met the precision requirement."
+    },
+    {
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topic": "sample size — notation for e",
+      "mistake": "Wrote e = 3^2 in the proportion formula when e = 3% = 0.03. Should be (0.03)^2 = 0.0009.",
+      "correction": "When the margin of error is a percentage, convert to decimal before plugging in: 3% → e = 0.03. Write (0.03)^2 in the formula, not 3^2."
+    },
+    {
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topic": "sample size — incidence rate terminology",
+      "mistake": "Wrote 'incidental %' instead of 'incidence rate'.",
+      "correction": "**Incidence rate** = percentage of people contacted who are **eligible** to participate. **Completion rate** = percentage of eligible who **finish** the survey. Use correct terminology."
+    },
+    {
+      "date": "2026-04-05",
+      "module": "ST3188",
+      "topic": "sample size — defining terms",
+      "mistake": "Defined all terms for the mean formula but forgot to do the same for the proportion formula.",
+      "correction": "Define ALL terms EVERY time: n, $z_{\\alpha/2}$, $\\pi$, e. The examiner commentary says 'all terms should be defined' in **every single year**. Do it for both mean and proportion."
+    }
+  ],
+  "progress": {
+    "2026-04-03_ST3188_sample-size-determination.md": {
+      "status": "in_progress",
+      "lastStudied": "2026-04-05",
+      "confidence": 3
+    }
+  }
+}

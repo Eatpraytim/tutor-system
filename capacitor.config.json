@@ -1,0 +1,14 @@
+{
+  "appId": "com.revision.examapp",
+  "appName": "whatchamacallit",
+  "webDir": ".",
+  "server": {
+    "iosScheme": "capacitor"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#58a6ff"
+    }
+  }
+}

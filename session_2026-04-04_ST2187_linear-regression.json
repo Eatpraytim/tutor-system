@@ -1,0 +1,81 @@
+{
+  "errors": [
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — hypotheses wording",
+      "mistake": "Wrote hypotheses as 'the slope is/is not statistically significant at the 5% level'. Vague and wrongly includes the significance level in the hypothesis.",
+      "correction": "H_0: \\beta_1 = 0 (slope is zero, X has no linear effect on Y). H_1: \\beta_1 \\neq 0. Hypotheses are about the parameter value, not about significance."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — interpreting rejection",
+      "mistake": "Said '95% certainty of rejecting the null hypothesis' and 'estimates within 95% of true values' after rejecting H_0.",
+      "correction": "Rejecting H_0 at 5% means 'sufficient evidence at the 5% significance level'. It does NOT mean 95% probability H_0 is false. Never assign a probability to the hypothesis in frequentist statistics."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — t critical value",
+      "mistake": "Wrote t critical value as t_{0.0025, 28} instead of t_{0.025, 28} for a 5% two-tailed test.",
+      "correction": "Two-tailed at 5%: split \\alpha = 0.05 into two tails = 0.025 each. Critical value is t_{0.025, n-2}, not t_{0.0025, n-2}."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — CI for slope",
+      "mistake": "Could not produce the confidence interval formula for the slope from memory.",
+      "correction": "CI = \\hat{\\beta}_1 \\pm t_{\\alpha/2, n-2} \\times SE(\\hat{\\beta}_1). If 0 falls outside the CI, reject H_0. This is the **duality principle**."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — SST/SSR/SSE definitions",
+      "mistake": "Could not define SST, SSR, SSE or state what each measures.",
+      "correction": "SST = \\sum(y_i - \\bar{y})^2 (total variation). SSR = \\sum(\\hat{y}_i - \\bar{y})^2 (explained by model). SSE = \\sum(y_i - \\hat{y}_i)^2 (unexplained). SST = SSR + SSE."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — s_e interpretation",
+      "mistake": "Got the formula for s_e but could not explain what it measures or how to use it.",
+      "correction": "s_e measures the typical size of residuals in the units of Y. ~95% of observed Y values fall within \\pm 2 \\times s_e of predicted values. It tells you about **prediction accuracy**."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — heteroscedasticity consequence",
+      "mistake": "Said heteroscedasticity means 'estimation is not consistent and variability of results will not be within 5%'. Incorrect.",
+      "correction": "OLS is still **unbiased** under heteroscedasticity, but **standard errors are wrong**, making t-tests and CIs invalid. Detect via **fan shape** in residual vs fitted plot."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — autocorrelation consequence",
+      "mistake": "Could not state the consequence of violating the independence assumption.",
+      "correction": "Standard errors are **underestimated**, inflating t-statistics → **spurious significance**. Detect with **Durbin-Watson** statistic (value near 2 = no autocorrelation, below 2 = positive autocorrelation)."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — business recommendation",
+      "mistake": "Could not produce a business recommendation translating regression output into managerial advice.",
+      "correction": "Three parts: (1) what the data show (significant or not, direction, size with **units**), (2) the limitation (R^2 not high enough), (3) the action (investigate more variables, proceed with caution)."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST2187",
+      "topic": "linear regression — exam answer framework",
+      "mistake": "Could not independently work through a regression interpretation question. Needed step-by-step guidance.",
+      "correction": "Follow the 6-step framework: (1) State model + hypotheses, (2) Interpret slope with **units** + direction, (3) Compute t, compare to critical value, state decision in full, (4) Construct CI, check if 0 is included, (5) Evaluate R^2 + s_e, (6) **Business recommendation**."
+    }
+  ],
+  "progress": {
+    "2026-03-25_ST2187_linear-regression.md": {
+      "status": "in_progress",
+      "lastStudied": "2026-04-04",
+      "confidence": 1
+    }
+  }
+}

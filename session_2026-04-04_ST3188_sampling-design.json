@@ -1,0 +1,46 @@
+{
+  "errors": [
+    {
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topic": "sampling design — probability vs non-probability",
+      "mistake": "Said non-probability sampling is 'completely left at random'. Got it backwards.",
+      "correction": "**Non-probability** = researcher judgment or convenience, NOT random. **Probability** = random selection with known probabilities. Probability is the rigorous one. Non-probability cannot be statistically projected to the population."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topic": "sampling design — stratified vs cluster composition",
+      "mistake": "Said clusters are externally heterogeneous. Wrong.",
+      "correction": "**Strata:** internally homogeneous, externally heterogeneous → increases **precision**. **Clusters:** internally heterogeneous, externally homogeneous → decreases **cost**. Sample from ALL strata. Sample only SOME clusters."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topic": "sampling design — contextual application",
+      "mistake": "Quota and snowball answers were generic textbook descriptions with no reference to the business scenario (StarScreen cinema chain). This is the examiner's #1 complaint.",
+      "correction": "Every sentence must reference the **specific business**: name the company, the population, the sampling frame. If the sentence could apply to any company, it is too generic. Mention the business name in every method description."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topic": "sampling design — sampling frame gap",
+      "mistake": "Did not identify the gap between sampling frame and target population, despite the question explicitly stating that many customers buy tickets without registering.",
+      "correction": "Always ask: **who is in my target population but NOT on this list?** For a membership database, casual/unregistered customers are excluded. Flag this gap for every probability method. Non-probability methods can actually reach these excluded people — state this as a merit."
+    },
+    {
+      "date": "2026-04-04",
+      "module": "ST3188",
+      "topic": "sampling design — stating limitations",
+      "mistake": "Gave 'strata must be mutually exclusive' as a limitation of stratified sampling. That is a property/requirement, not a limitation.",
+      "correction": "Real limitations: requires **knowledge of stratification variables** in advance; sampling frame may not match target population (database excludes unregistered customers). A limitation is something that could go wrong or restrict usefulness."
+    }
+  ],
+  "progress": {
+    "2026-04-01_ST3188_sampling-design-procedures.md": {
+      "status": "in_progress",
+      "lastStudied": "2026-04-04",
+      "confidence": 3
+    }
+  }
+}
