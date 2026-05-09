@@ -1,4 +1,4 @@
-const CACHE = 'revision-v1';
+const CACHE = 'revision-v2-2026-05-09';
 const ASSETS = [
   './study_app.html',
   './study_data.js',
