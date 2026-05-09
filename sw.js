@@ -1,4 +1,4 @@
-const CACHE = 'revision-v2-2026-05-09-fix1';
+const CACHE = 'revision-v2-2026-05-09-fix2';
 const ASSETS = [
   './study_app.html',
   './study_data.js',
